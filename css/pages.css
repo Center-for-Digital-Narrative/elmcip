@@ -104,10 +104,7 @@ div#site-name /* The name of the website */ {
 /*
  * Content
  */
-#content {
-
-    background-color:#fff;
-}
+#content {}
 
 #content .section {
 }
