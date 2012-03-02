@@ -70,7 +70,7 @@
 ?>
 
 <div id="page-wrapper"><div id="page">
-
+    <?php print render($page['header_top']); ?>
   <div id="header"><div class="section clearfix">
 
     <?php if ($logo): ?>
@@ -111,6 +111,7 @@
     )); ?>
 
     <?php print render($page['header']); ?>
+    <?php print render($page['header_bottom']); ?>
 
   </div></div><!-- /.section, /#header -->
 
