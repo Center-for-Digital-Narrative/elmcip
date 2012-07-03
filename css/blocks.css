@@ -57,12 +57,13 @@ h2.block-title /* Block title */ {
 #block-menu-menu-NAME /* Custom menu block  */ {
 }
 
-#block-menu-primary-links  /* main navigation */ {
+#block-menu-primary-links  /* main navigation/both main and secondary menu */ {
 
     background-color:#bba;
     float:left;
     width:100%;
     margin-top:0px;
+    color:#fff;
 }
 
 #block-menu-secondary-links  /* About | People | Partners */	{
@@ -133,11 +134,12 @@ h2.block-title /* Block title */ {
 
 	position:relative;	
 	float:right;
-	top:-122px; /*addition to logo top margin must be negatively increased here*/
+	top:-127px; /*addition to logo top margin must be negatively increased here*/
 	width:20%;
 	background-color:#bba;
 	clear:both;
 	z-index:10;
+	line-height: 1.5em;
 }
 
 #block-system-user-menu li.leaf a {
@@ -170,3 +172,4 @@ h2.block-title /* Block title */ {
 
 #block-user-online /* "Who's online" block for a list of the online users */ {
 }
+
