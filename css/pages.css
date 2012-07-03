@@ -50,12 +50,12 @@ body {
 #logo /* Wrapping link for logo */ {
 
 	float: left; /* LTR */
-	margin: 1.5em 0 0 0; /* changes here must be reflected in blocks.css */
+	margin: 1.7em 0 0 -14em; /* changes here must be reflected in blocks.css */
 }
 
 #logo img {
   vertical-align: bottom;
-  padding-top: 4px;
+  padding-top: 3px;
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {
@@ -126,11 +126,11 @@ h3.title /* Comment title */ {
 }
 
 tr.even /* Some tables have rows marked even or odd. */ {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  background-color: #FFFFFF; /* Knowledge Base odd table colors -updates */
 }
 
 tr.odd {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  background-color: #e2e2d2; /* Knowledge Base odd table colors -updates*/
 }
 
 div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
@@ -234,3 +234,4 @@ ul.links li {
  */
 .region-bottom /* Wrapper for any blocks placed in the page bottom region */ {
 }
+
