@@ -50,6 +50,23 @@ body {
 }
 
 .region-header {
+	line-height: 8.5;
+}
+
+.region-header-top .section {
+margin: 0 0 0 0;
+}
+
+.region-header-top  {
+float: left;
+}
+
+.region-header-bottom .section {
+margin: 0 0 0 0;
+}
+
+.region-header-bottom {
+float: left;
 }
 
 /*
@@ -95,6 +112,15 @@ body {
 #content .section {
   margin: 0;
   padding: 0;
+}
+
+#front-page-pane-one { /* CSS-ID for front page panel pane1 */
+ width: 400px;
+}
+
+#front-page-pane-two { /* CSS-ID for front page panel pane2 */
+ width: 400px;
+ margin: -13em 0 8em 40em;
 }
 
 /*
@@ -191,3 +217,4 @@ body {
   overflow-y: hidden;
 }
 */
+
