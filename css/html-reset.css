@@ -313,6 +313,7 @@ td {
 
 td.active {
 /* Added to override system.theme.css values */
+background-color: transparent;
 }
 
 /*
