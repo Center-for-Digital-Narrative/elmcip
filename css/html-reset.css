@@ -110,7 +110,7 @@ fieldset {
 
    */
 
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Lucida Grande,Tahoma,Helvetica, Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
 pre,
@@ -130,7 +130,7 @@ var {
  * the line heights of any larger fonts be a multiple of 1.5 ems. For more
  * information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
  */
-h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, 
 p, blockquote, pre,
 ul, ol, dl,
 hr, table, fieldset {
@@ -146,6 +146,7 @@ h1 {
   font-size: 2em;
   line-height: 1.5em;
   margin: 0.75em 0;
+  font-weight: inherit;
   /* 0.75em is equivalent to 1.5em in the page's base font. font. Remember, a
      margin specified in ems is relative to the element's font-size, not to the
      pages' base font size. So, for example, if we want a 1.5em margin (relative
@@ -154,8 +155,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
-  margin: 1em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+  font-size: 1.429em;
+  line-height: 1.4;
+  margin-bottom: 2px;
+  /* margin: 1em 0; Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
 }
 
 h3 {
@@ -165,10 +168,16 @@ h3 {
 
 h4,
 h5,
-h6 {
+ {
   font-size: 1.1em;
   margin: 1.364em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
 }
+
+h6 {
+  font-size: 0.8em;
+ font-weight: normal;
+}
+
 
 /* Other block-level elements */
 p {
@@ -345,13 +354,13 @@ button {
  */
 a:link {
 
-    color:#000;
-    font-weight:bold;
+    color:#713333;
+    font-weight:none;
 }
 
 a:visited {
 
-    color:#000;
+    color:#713333;
     font-weight:bold;
 }
 
@@ -413,3 +422,4 @@ sub {
 
 sup {
 }
+

@@ -50,7 +50,7 @@ body {
 #logo /* Wrapping link for logo */ {
 
 	float: left; /* LTR */
-	margin: 1.7em 0 0 -14em; /* changes here must be reflected in blocks.css */
+/*	margin: 1.7em 0 0 -14em; */ /* changes here must be reflected in blocks.css */
 }
 
 #logo img {
@@ -88,7 +88,7 @@ div#site-name /* The name of the website */ {
 
 }
 
-#header { background-color:#ddd;}
+#header { background-color:#E2E2D2;}
 
 /*
  * Main (container for everything else)

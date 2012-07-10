@@ -50,7 +50,8 @@ body {
 }
 
 .region-header {
-	line-height: 8.5;
+/* line-height: 8.5; */
+line-height: 0;
 }
 
 .region-header-top .section {
@@ -59,6 +60,8 @@ margin: 0 0 0 0;
 
 .region-header-top  {
 float: left;
+width: 100%;
+background-color: #bebdae;
 }
 
 .region-header-bottom .section {
@@ -67,6 +70,9 @@ margin: 0 0 0 0;
 
 .region-header-bottom {
 float: left;
+width: 100%;
+background-color: #bebdae;
+margin-top: -15px;
 }
 
 /*
@@ -114,14 +120,63 @@ float: left;
   padding: 0;
 }
 
+
+/*
+ * Front page panel pane selectors - styling of the different panes could be placed in html-reset.css - for now they are here
+ */
+
 #front-page-pane-one { /* CSS-ID for front page panel pane1 */
  width: 400px;
 }
 
-#front-page-pane-two { /* CSS-ID for front page panel pane2 */
- width: 400px;
- margin: -13em 0 8em 40em;
+#front-page-pane-one .pane-title { /*testing for selecting pane-title*/
+ color: red;
 }
+
+#front-page-pane-one .pane-content { /*testing for selecting pane content*/
+
+}
+
+#front-page-pane-two { /* CSS-ID for front page panel pane2 */
+ width: 400px; 
+ margin: -14.4em 0 8em 40em; /* forcing pane2 to to align with pane1 */
+}
+
+#front-page-pane-three { /* CSS-ID for front page panel pane3 */
+ width: 960px;
+background-color: #E2E2D2;
+margin: 10em 0em -11em 0em;
+}
+
+#front-page-pane-three .pane-title { /*position and style of ELMCIP KNOWLEDGE BASE pane-title*/
+height: 50px;
+line-height: 2.5em;
+margin-left: 10px;
+}
+
+#front-page-pane-four { /* CSS-ID for front page panel pane4 */
+ width: 318px;
+background-color: #bebdae;
+}
+
+#front-page-pane-five { /* CSS-ID for front page panel pane5 */
+ width: 310px;
+background-color: #bebdae;
+}
+#front-page-pane-six { /* CSS-ID for front page panel pane6 */
+ width: 318px;
+background-color: #bebdae;
+postiton: right;
+}
+
+#front-page-pane-seven { /* CSS-ID for front page panel pane3 */
+ width: 960px;
+background-color: #E2E2D2;
+/* margin: 10em 0em -11em 0em; */
+height: 15px;
+}
+
+
 
 /*
  * Navigation

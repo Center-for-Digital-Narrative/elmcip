@@ -59,16 +59,16 @@ h2.block-title /* Block title */ {
 
 #block-menu-primary-links  /* main navigation/both main and secondary menu */ {
 
-    background-color:#bba;
+    background-color:#bebdae;
     float:left;
-    width:100%;
+    width:960px;
     margin-top:0px;
     color:#fff;
 }
 
-#block-menu-secondary-links  /* About | People | Partners */	{
+#block-menu-secondary-links  /* About | Researchers | Partners */	{
 
-    background-color:#bba;
+    background-color:#bebdae;
     position:absolute;
     top:0px;
     width:960px;
@@ -79,9 +79,10 @@ h2.block-title /* Block title */ {
 #block-menu-secondary-links ul.menu, li.leaf a /* affects all menu items */ {
 
     color:#fff;
-    #background:red;
     padding:2px;
-#   top:-6px;
+/* #background:red; */
+/* #   top:-6px; */
+
 }
 
 #block-menu-primary-links li.leaf a {
@@ -106,8 +107,8 @@ h2.block-title /* Block title */ {
    
     position:relative;
 #   margin-top:2em; /* change value in forms.css */
-    background-color:#ddd;
-    top:20px;
+    background-color:#e2e2d2;
+    top:70px;
     width:20%;
     margin-left: 80%;
     text-align:left;
@@ -134,9 +135,9 @@ h2.block-title /* Block title */ {
 
 	position:relative;	
 	float:right;
-	top:-127px; /*addition to logo top margin must be negatively increased here*/
+	top:-124px; /*addition to logo top margin must be negatively increased here*/
 	width:20%;
-	background-color:#bba;
+	background-color:#bebdae;
 	clear:both;
 	z-index:10;
 	line-height: 1.5em;
