@@ -190,7 +190,8 @@ ul.links li {
 }
 
 .item-list .pager li /* Each page number in the pager list */ {
-  padding: 0 0.5em;
+  padding: 0;
+  text-align: center;
 }
 
 .feed-icon /* The link to the RSS or Atom feed for the current list of content */ {
