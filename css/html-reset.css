@@ -238,12 +238,12 @@ li.leaf,
 li.leaf a title
 
 /* Drupal override */ {
-  float: left;
+  float: center;
   margin:auto;
   padding: 0;
   display:block;
   text-decoration:none;
-  background-color:#bba;
+/*  background-color:#bba; */
 }
 
 
