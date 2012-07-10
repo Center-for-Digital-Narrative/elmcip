@@ -229,7 +229,8 @@ li {
   padding: 0;
 }
 
-.item-list ul li,
+
+/* .item-list ul li, */
 ul.menu,
 ul.menu li,
 li.expanded,
@@ -238,7 +239,7 @@ li.leaf,
 li.leaf a title
 
 /* Drupal override */ {
-  float: center;
+  float: left;
   margin:auto;
   padding: 0;
   display:block;
@@ -308,6 +309,10 @@ tr {
 }
 
 td {
+}
+
+td.active {
+/* Added to override system.theme.css values */
 }
 
 /*
