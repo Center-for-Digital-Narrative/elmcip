@@ -139,7 +139,7 @@ margin-top: -15px;
 
 #front-page-pane-two { /* CSS-ID for front page panel pane2 */
  width: 400px; 
- margin: -14.4em 0 8em 40em; /* forcing pane2 to to align with pane1 */
+ margin: -12.7em 0 8em 40em; /* forcing pane2 to to align with pane1 (From -14.4em to -12.7em to accommodate for reduced base font size*/
 }
 
 #front-page-pane-three { /* CSS-ID for front page panel pane3 */
@@ -160,13 +160,12 @@ background-color: #bebdae;
 }
 
 #front-page-pane-five { /* CSS-ID for front page panel pane5 */
- width: 310px;
+ width: 312px;
 background-color: #bebdae;
 }
 #front-page-pane-six { /* CSS-ID for front page panel pane6 */
- width: 318px;
+ width: 322px;
 background-color: #bebdae;
-postiton: right;
 }
 
 #front-page-pane-seven { /* CSS-ID for front page panel pane3 */
