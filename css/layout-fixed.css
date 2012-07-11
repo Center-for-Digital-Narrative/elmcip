@@ -158,20 +158,24 @@ padding-left: 8px;
 
 #front-page-pane-four { /* CSS-ID for front page panel pane4 */
  width: 309px;
+height: 350px;
 background-color: #bebdae;
 padding-left: 8px;
+
 }
 
 #front-page-pane-five { /* CSS-ID for front page panel pane5 */
  width: 296px;
+height: 350px;
 background-color: #bebdae;
-padding: 0px 8px 8px 8px;
+padding: 0px 8px 0px 8px;
 }
 
 #front-page-pane-six { /* CSS-ID for front page panel pane6 */
  width: 306px;
+height: 350px;
 background-color: #bebdae;
-padding: 0px 8px 8px 8px;
+padding: 0px 8px 0px 8px;
 }
 
 #front-page-pane-seven { /* CSS-ID for front page panel pane7 */
