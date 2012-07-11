@@ -127,6 +127,7 @@ margin-top: -15px;
 
 #front-page-pane-one { /* CSS-ID for front page panel pane1 */
  width: 400px;
+padding-left: 8px;
 }
 
 #front-page-pane-one .pane-title { /*testing for selecting pane-title*/
@@ -145,36 +146,43 @@ margin-top: -15px;
 #front-page-pane-three { /* CSS-ID for front page panel pane3 */
  width: 960px;
 background-color: #E2E2D2;
-margin: 10em 0em -11em 0em;
+margin: 9.5em 0em -11em 0em;
 }
 
 #front-page-pane-three .pane-title { /*position and style of ELMCIP KNOWLEDGE BASE pane-title*/
 height: 50px;
 line-height: 2.5em;
-margin-left: 10px;
+/* margin-left: 8px; */
+padding-left: 8px;
 }
 
 #front-page-pane-four { /* CSS-ID for front page panel pane4 */
- width: 318px;
+ width: 309px;
 background-color: #bebdae;
+padding-left: 8px;
 }
 
 #front-page-pane-five { /* CSS-ID for front page panel pane5 */
- width: 312px;
+ width: 296px;
 background-color: #bebdae;
-}
-#front-page-pane-six { /* CSS-ID for front page panel pane6 */
- width: 322px;
-background-color: #bebdae;
+padding: 0px 8px 8px 8px;
 }
 
-#front-page-pane-seven { /* CSS-ID for front page panel pane3 */
+#front-page-pane-six { /* CSS-ID for front page panel pane6 */
+ width: 306px;
+background-color: #bebdae;
+padding: 0px 8px 8px 8px;
+}
+
+#front-page-pane-seven { /* CSS-ID for front page panel pane7 */
  width: 960px;
 background-color: #E2E2D2;
 /* margin: 10em 0em -11em 0em; */
 height: 15px;
 }
-
+#front-page-pane-eight { /* CSS-ID for front page panel pane8 */
+padding-left: 8px;
+}
 
 
 /*
