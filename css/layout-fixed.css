@@ -146,7 +146,7 @@ padding-left: 8px;
 #front-page-pane-three { /* CSS-ID for front page panel pane3 */
  width: 960px;
 background-color: #E2E2D2;
-margin: 9.5em 0em -11em 0em;
+margin: 9.5em 0em -9.5em 0em;
 }
 
 #front-page-pane-three .pane-title { /*position and style of ELMCIP KNOWLEDGE BASE pane-title*/
@@ -157,37 +157,61 @@ padding-left: 8px;
 }
 
 #front-page-pane-four { /* CSS-ID for front page panel pane4 */
- width: 309px;
+ width: 322px;
 height: 350px;
 background-color: #bebdae;
-padding-left: 8px;
+/* padding: 8px 8px 0px 8px; */
+background-image:url("http://static4.depositphotos.com/1005951/369/i/450/dep_3699706-Books-collection.jpg");
+}
 
+#front-page-pane-four .pane-title { /*position and style of Knowledgebase pane-title*/
+color: #fff;
+background-color: rgba(0, 0, 0, 0.7);
+margin: -0.1em 0em 0em 0em;
+text-align: center;
 }
 
 #front-page-pane-five { /* CSS-ID for front page panel pane5 */
- width: 296px;
+ width: 316px;
 height: 350px;
 background-color: #bebdae;
-padding: 0px 8px 0px 8px;
+/* padding: 8px 8px 0px 8px; */
+}
+
+#front-page-pane-five .pane-title { /*position and style of Conference pane-title*/
+color: #fff;
+background-color: rgba(0, 0, 0, 0.7);
+margin: -0.1em 0em 0em 0em;
+text-align: center;
+}
+
+#front-page-pane-five .pane-content { /*position and style of Conference pane-content*/
+padding: 8px 8px 0px 8px;
 }
 
 #front-page-pane-six { /* CSS-ID for front page panel pane6 */
- width: 306px;
+ width: 323px;
 height: 350px;
 background-color: #bebdae;
-padding: 0px 8px 0px 8px;
+/* padding: 8px 8px 0px 8px; */
+background-image: url("http://chronicle.com/blogs/wiredcampus/files/2011/02/ELO_cover.png");
 }
+#front-page-pane-six .pane-title { /*position and style of Anthology pane-title*/
+color: #fff;
+background-color: rgba(0, 0, 0, 0.7);
+margin: -0.1em 0em 0em 0em;
+text-align: center;
+}
+
 
 #front-page-pane-seven { /* CSS-ID for front page panel pane7 */
  width: 960px;
 background-color: #E2E2D2;
-/* margin: 10em 0em -11em 0em; */
 height: 15px;
 }
 #front-page-pane-eight { /* CSS-ID for front page panel pane8 */
 padding-left: 8px;
 }
-
 
 /*
  * Navigation
