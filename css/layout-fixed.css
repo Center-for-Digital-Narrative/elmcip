@@ -36,7 +36,7 @@ body {
 }
 
 #page {
-
+background-color: white;
 }
 
 /*
@@ -125,78 +125,103 @@ margin-top: -15px;
  * Front page panel pane selectors - styling of the different panes could be placed in html-reset.css - for now they are here
  */
 
-#front-page-pane-one { /* CSS-ID for front page panel pane1 */
+#front-page-pane-about h2.pane-title { /* test test */
+color: blue;
+}
+
+#front-page-pane-about { /* CSS-ID for front page panel About pane */
  width: 400px;
 padding-left: 8px;
 }
 
-#front-page-pane-one .pane-title { /*testing for selecting pane-title*/
- color: red;
-}
-
-#front-page-pane-one .pane-content { /*testing for selecting pane content*/
+#front-page-pane-about .pane-title { /*testing for selecting pane-title*/
 
 }
 
-#front-page-pane-two { /* CSS-ID for front page panel pane2 */
+#front-page-pane-about .pane-content { /*testing for selecting pane content*/
+
+}
+
+#front-page-pane-news { /* CSS-ID for front page panel News-pane */
  width: 400px; 
- margin: -12.7em 0 8em 40em; /* forcing pane2 to to align with pane1 (From -14.4em to -12.7em to accommodate for reduced base font size*/
+ margin: -14em 0 8em 40em; /* forcing News-pane to to align with About-pane (From -14.4em to -14em to accommodate for reduced base font size*/
 }
 
-#front-page-pane-three { /* CSS-ID for front page panel pane3 */
+#front-page-pane-separator1 { /* CSS-ID for front page panel separator 1 */
  width: 960px;
-background-color: #E2E2D2;
+background-color: #333333;
+height: 8px;
 margin: 9.5em 0em -9.5em 0em;
 }
 
-#front-page-pane-three .pane-title { /*position and style of ELMCIP KNOWLEDGE BASE pane-title*/
-height: 50px;
-line-height: 2.5em;
-/* margin-left: 8px; */
-padding-left: 8px;
+#front-page-pane-conference { /* CSS-ID for front page panel conference pane */
+margin: 9.4em 0em -2.6em 0em;
 }
 
-#front-page-pane-four { /* CSS-ID for front page panel pane4 */
+.tdstyle {
+padding: 8px 8px 8px 8px;
+
+}
+
+#front-page-pane-conference .pane-content { /* CSS-ID for front page panel conference pane */
+
+}
+
+
+#front-page-pane-kbheader { /* CSS-ID for front page panel kbheader */
+ width: 960px;
+background-color: #333333;
+margin: 0em 0em -0.6em 0em;
+}
+
+#front-page-pane-kbheader .pane-title { /*position and style of ELMCIP KNOWLEDGE BASE pane-title*/
+height: 50px;
+line-height: 2.5em;
+padding-left: 8px;
+color: white;
+}
+
+#front-page-pane-kbleft { /* CSS-ID for front page panel KB left column */
  width: 322px;
 height: 350px;
 background-color: #bebdae;
 /* padding: 8px 8px 0px 8px; */
-background-image:url("http://static4.depositphotos.com/1005951/369/i/450/dep_3699706-Books-collection.jpg");
+/* background-image:url("http://static4.depositphotos.com/1005951/369/i/450/dep_3699706-Books-collection.jpg"); */
 }
 
-#front-page-pane-four .pane-title { /*position and style of Knowledgebase pane-title*/
+#front-page-pane-kbleft .pane-title { /*position and style of KB left pane-title*/
 color: #fff;
-background-color: rgba(0, 0, 0, 0.7);
+background-color: rgba(226, 226, 210, 0.7);
 margin: -0.1em 0em 0em 0em;
 text-align: center;
 }
 
-#front-page-pane-five { /* CSS-ID for front page panel pane5 */
+#front-page-pane-kbmiddle { /* CSS-ID for front page panel KB middle column */
  width: 316px;
 height: 350px;
-background-color: #bebdae;
+background-color: #e2e2d2;
 /* padding: 8px 8px 0px 8px; */
 }
 
-#front-page-pane-five .pane-title { /*position and style of Conference pane-title*/
+#front-page-pane-kbmiddle .pane-title { /*position and style of KB middle column pane-title*/
 color: #fff;
 background-color: rgba(0, 0, 0, 0.7);
 margin: -0.1em 0em 0em 0em;
 text-align: center;
 }
 
-#front-page-pane-five .pane-content { /*position and style of Conference pane-content*/
+#front-page-pane-kbmiddle .pane-content { /*position and style of KB middle column pane-content*/
 padding: 8px 8px 0px 8px;
 }
 
-#front-page-pane-six { /* CSS-ID for front page panel pane6 */
+#front-page-pane-kbright { /* CSS-ID for front page panel KB right column */
  width: 323px;
 height: 350px;
-background-color: #bebdae;
+background-color: #e2e2d2;
 /* padding: 8px 8px 0px 8px; */
 background-image: url("http://chronicle.com/blogs/wiredcampus/files/2011/02/ELO_cover.png");
 }
-#front-page-pane-six .pane-title { /*position and style of Anthology pane-title*/
+#front-page-pane-kbright .pane-title { /*position and style of KB right column pane-title*/
 color: #fff;
 background-color: rgba(0, 0, 0, 0.7);
 margin: -0.1em 0em 0em 0em;
@@ -204,13 +229,29 @@ text-align: center;
 }
 
 
-#front-page-pane-seven { /* CSS-ID for front page panel pane7 */
+#front-page-pane-separator2 { /* CSS-ID for front page panel separator beneath KB */
  width: 960px;
-background-color: #E2E2D2;
-height: 15px;
+background-color: #333333;
+height: 8px;
+margin: 0em 0em -1.6em 0em;
 }
-#front-page-pane-eight { /* CSS-ID for front page panel pane8 */
+
+#front-page-pane-anthology { /* CSS-ID for front page panel Anthology pane */
+margin: 0em 0em -2em 0em;
+}
+
+
+#front-page-pane-separator3 { /* CSS-ID for front page panel separator beneath anthology */
+ width: 960px;
+background-color: #333333;
+height: 8px;
+margin: 0em 0em -2em 0em;
+}
+
+
+#front-page-pane-sponsors { /* CSS-ID for front page panel sponsor pane */
 padding-left: 8px;
+background-color: #bebdae;
 }
 
 /*
