@@ -40,7 +40,7 @@ body {
   line-height: 1.5em; /* 12px x 1.5 = 18px */
 
   /* Use a 14px base font size with a 21px line height */
-  font-size: 0.825em; /* 16px x .875 = 14px */
+  font-size: 0.875em; /* 16px x .875 = 14px */
   line-height: 1.5em; /* 14px x 1.5 = 21px */
 }
 
@@ -209,7 +209,8 @@ address {
 ul,
 ol {
   margin-left: 0; /* LTR */
-  padding-left: 0; /* LTR */
+  padding-left: 20px;  /*LTR */
+
 }
 
 .item-list ul /* Drupal overrides */ {
@@ -230,7 +231,9 @@ li {
 }
 
 
-/* .item-list ul li, */
+.item-list ul li {
+}
+
 ul.menu,
 ul.menu li,
 li.expanded,
