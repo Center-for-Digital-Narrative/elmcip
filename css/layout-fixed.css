@@ -219,13 +219,13 @@ text-align: center;
 }
 
 #front-page-pane-kbmiddle .pane-content { /*position and style of KB middle column pane-content*/
-
+padding: 8px;
 }
 
 #front-page-pane-kbright { /* CSS-ID for front page panel KB right column */
 background-color: #e2e2d2;
 background-image: url("http://chronicle.com/blogs/wiredcampus/files/2011/02/ELO_cover.png");
-margin: 0.7em -0.7em 0em 0em;
+margin: -1.4em -0.7em 0em 0em;
 height: 320px;
 
 }
