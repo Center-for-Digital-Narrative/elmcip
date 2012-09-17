@@ -264,7 +264,8 @@ margin: -4em 0em 0em 0em;
 #front-page-pane-sponsors { /* CSS-ID for front page panel sponsor pane */
 padding-left: 8px;
 background-color: #bebdae;
-margin: -1em 0em 0em 0em;
+margin: -4.5em 0em 0em 0em;
+width: 936px;
 }
 
 /* Knowledge base front page */
