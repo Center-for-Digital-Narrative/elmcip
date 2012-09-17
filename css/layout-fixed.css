@@ -145,19 +145,19 @@ width: 400px;
 
 
 #front-page-pane-news { /* CSS-ID for front page panel News-pane */
- width: 400px; 
- margin: -15em 0 8em 39em; /* forcing News-pane to to align with About-pane */
+
 }
 
 #front-page-pane-news h2.pane-title { /* The font style of the News-title element */
 color: #333333;
 font-size: 13px;
+font-weight: normal;
 }
 
 
 h2.front-recent-posts { /* class for the news view of the recent posts */
 font-size: 10px;
-margin: 15px 0px 0px 0px;
+margin: 13px 0px 0px 0px;
 }
 
 
@@ -165,15 +165,17 @@ margin: 15px 0px 0px 0px;
  width: 960px;
 background-color: #333333;
 height: 8px;
+margin: -1.8em 0em 0em 0em;
 
 }
 
 #front-page-pane-conference1 { /* CSS-ID for front page panel conference pane */
-
+margin: 2em 0em 0em 0em;
 }
 
 #front-page-pane-conference2 { /* CSS-ID for front page panel conference pane */
-
+margin: 2em 0em 0em 0em;
+text-align:
 }
 
 
@@ -194,6 +196,7 @@ padding: 8px 8px 8px 8px;
 #front-page-pane-kbheader { /* CSS-ID for front page panel kbheader */
  width: 960px;
 background-color: #333333;
+margin: -4.5em 0em 0em 0em;
 
 }
 
@@ -205,15 +208,12 @@ color: white;
 }
 
 #front-page-pane-kbleft { /* CSS-ID for front page panel KB left column */
- width: 325px;
-height: 350px;
 background-color: #bebdae;
 }
 
 #front-page-pane-kbleft .pane-title { /*position and style of KB left pane-title*/
 color: #fff;
 background-color: rgba(226, 226, 210, 0.7);
-margin: -0.1em 0em 0em 0em;
 text-align: center;
 }
 
@@ -238,12 +238,11 @@ margin: 0em 0em 0em 0em;
 }
 
 #front-page-pane-kbright { /* CSS-ID for front page panel KB right column */
- width: 321px;
-height: 350px;
 background-color: #e2e2d2;
 /* padding: 8px 8px 0px 8px; */
 background-image: url("http://chronicle.com/blogs/wiredcampus/files/2011/02/ELO_cover.png");
 }
+
 #front-page-pane-kbright .pane-title { /*position and style of KB right column pane-title*/
 color: #fff;
 background-color: rgba(0, 0, 0, 0.7);
