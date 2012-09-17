@@ -180,7 +180,7 @@ margin: -2.2em 0em 0em 0em;
 #front-page-pane-kbheader { /* CSS-ID for front page panel kbheader */
  width: 944px;
 background-color: #333333;
-margin: -4.5em 0em 0em 0em;
+margin: -4.6em 0em 0em 0em;
 
 }
 
@@ -193,7 +193,7 @@ color: white;
 
 #front-page-pane-kbleft { /* CSS-ID for front page panel KB left column */
 background-color: #bebdae;
-margin: -1.4em 0em 0em 0em;
+margin: -1.5em 0em 0em 0em;
 }
 
 #front-page-pane-kbleft .pane-title { /*position and style of KB left pane-title*/
@@ -208,7 +208,7 @@ padding: 8px;
 
 #front-page-pane-kbmiddle { /* CSS-ID for front page panel KB middle column */
 background-color: #e2e2d2;
-margin: -1.4em 0em 0em 0em;
+margin: -1.5em 0em 0em 0em;
 }
 
 #front-page-pane-kbmiddle .pane-title { /*position and style of KB middle column pane-title*/
@@ -225,7 +225,7 @@ padding: 8px;
 #front-page-pane-kbright { /* CSS-ID for front page panel KB right column */
 background-color: #e2e2d2;
 background-image: url("http://chronicle.com/blogs/wiredcampus/files/2011/02/ELO_cover.png");
-margin: -1.4em -0.7em 0em 0em;
+margin: -1.5em -0.7em 0em 0em;
 height: 320px;
 
 }
@@ -241,7 +241,7 @@ text-align: center;
  width: 944px;
 background-color: #333333;
 height: 8px;
-margin: -2em 0em 0em 0em;
+margin: -2.1em 0em 0em 0em;
 }
 
 #front-page-pane-anthology1 { /* CSS-ID for front page panel Anthology pane */
