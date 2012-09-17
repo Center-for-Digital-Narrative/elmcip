@@ -162,7 +162,7 @@ margin: 13px 0px 0px 0px;
 
 
 #front-page-pane-separator1 { /* CSS-ID for front page panel separator 1 */
- width: 960px;
+width: 960px;
 background-color: #333333;
 height: 8px;
 margin: -1.8em 0em 0em 0em;
@@ -170,11 +170,11 @@ margin: -1.8em 0em 0em 0em;
 }
 
 #front-page-pane-conference1 { /* CSS-ID for front page panel conference pane */
-margin: 2em 0em 0em 0em;
+margin: -2em 0em 0em 0em;
 }
 
 #front-page-pane-conference2 { /* CSS-ID for front page panel conference pane */
-margin: 2em 0em 0em 0em;
+margin: -2em 0em 0em 0em;
 text-align:
 }
 
