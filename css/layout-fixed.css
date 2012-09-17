@@ -162,7 +162,7 @@ margin: 13px 0px 0px 0px;
 
 
 #front-page-pane-separator1 { /* CSS-ID for front page panel separator 1 */
-width: 960px;
+width: 944px;
 background-color: #333333;
 height: 8px;
 margin: -1.8em 0em 0em 0em;
@@ -178,7 +178,7 @@ margin: -2.2em 0em 0em 0em;
 }
 
 #front-page-pane-kbheader { /* CSS-ID for front page panel kbheader */
- width: 960px;
+ width: 944px;
 background-color: #333333;
 margin: -4.5em 0em 0em 0em;
 
@@ -238,7 +238,7 @@ text-align: center;
 
 
 #front-page-pane-separator2 { /* CSS-ID for front page panel separator beneath KB */
- width: 960px;
+ width: 944px;
 background-color: #333333;
 height: 8px;
 margin: -2em 0em 0em 0em;
@@ -254,7 +254,7 @@ margin: -2.2em 0em 0em 0em;
 
 
 #front-page-pane-separator3 { /* CSS-ID for front page panel separator beneath anthology */
- width: 960px;
+ width: 944px;
 background-color: #333333;
 height: 8px;
 margin: -4em 0em 0em 0em;
@@ -264,6 +264,7 @@ margin: -4em 0em 0em 0em;
 #front-page-pane-sponsors { /* CSS-ID for front page panel sponsor pane */
 padding-left: 8px;
 background-color: #bebdae;
+margin: -1em 0em 0em 0em;
 }
 
 /* Knowledge base front page */
