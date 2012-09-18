@@ -225,7 +225,7 @@ padding: 8px;
 #front-page-pane-kbright { /* CSS-ID for front page panel KB right column */
 background-color: #e2e2d2;
 background-image: url("http://chronicle.com/blogs/wiredcampus/files/2011/02/ELO_cover.png");
-margin: -1.5em -0.7em 0em 0em;
+margin: -1.5em -0.65em 0em 0em;
 height: 320px;
 
 }
@@ -245,7 +245,7 @@ margin: -2.1em 0em 0em 0em;
 }
 
 #front-page-pane-anthology1 { /* CSS-ID for front page panel Anthology pane */
-margin: -2em 0em 0em 0em;
+margin: -2.1em 0em 0em 0em;
 }
 
 #front-page-pane-anthology2 { /* CSS-ID for front page panel Anthology pane */
