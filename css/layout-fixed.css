@@ -194,6 +194,7 @@ color: white;
 #front-page-pane-kbleft { /* CSS-ID for front page panel KB left column */
 background-color: #bebdae;
 margin: -1.5em 0em 0em 0em;
+height: 345px;
 }
 
 #front-page-pane-kbleft .pane-title { /*position and style of KB left pane-title*/
@@ -226,7 +227,7 @@ padding: 8px;
 background-color: #e2e2d2;
 background-image: url("http://chronicle.com/blogs/wiredcampus/files/2011/02/ELO_cover.png");
 margin: -1.5em -0.65em 0em 0em;
-height: 320px;
+height: 345px;
 
 }
 
