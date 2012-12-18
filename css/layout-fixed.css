@@ -86,6 +86,8 @@ margin-top: -15px;
 #main {
 }
 
+
+
 /*
  * Content
  */
@@ -308,6 +310,25 @@ tr th.views-field, tr td.views-field { /*padding for the table cells and row of 
 padding: 4px 9px;
 }
 
+/*
+* Knowledge base records. Specific styles for views and fields can be found in fields.css and views-styles.css respectively */
+
+.group-left { /*Creates the color box and width for record overview */
+  float: left;
+  width: 25%;
+  font-size: 0.9em;
+  background-color: #e2e2d2;
+  padding: 5px;
+}
+
+.group-right { /*Sets the width and float for the record content */
+  float: left;
+  width: 65%;
+  padding: 5px;
+}
+
+.group-left .field-name-field-node-ref-event .field-item { 
+  padding-bottom: 5px;
 
 
 /*
