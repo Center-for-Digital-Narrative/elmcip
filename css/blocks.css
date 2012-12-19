@@ -64,6 +64,10 @@ h2.block-title /* Block title */ {
     text-shadow: 1px 1px 2px gray; /* sharpens the look of the menu-items */
 }
 
+/*
+Menu classes
+*/
+
 #block-menu-primary-links  /* main navigation/both main and secondary menu */ {
 
     background-color:#bebdae;
@@ -87,9 +91,15 @@ h2.block-title /* Block title */ {
 
 #block-menu-primary-links li.leaf a {
 
-    color: #000; /* Does not affect the text-color for some reason */
+    color: blue; /* Does not affect the text-color for some reason */
 
 }
+
+#block-menu-secondary-menu .first.leaf {
+	color: red;
+}
+
+
 
 #block-node-recent /* "Recent content" block */ {
 }
