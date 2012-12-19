@@ -3,10 +3,24 @@
  * Views Styling
  */
 
+.view-header p { /*Title of view pulled inn for KB-records*/
+  padding-left: 5px;
+  font-weight: bold; 
+}
+
 #content .view h2 {
-	padding-bottom: 5px; padding-left: 5px;
+    padding-bottom: 5px; 
+    padding-left: 5px;
     font-size: 1.0em;
     line-height: 1.2;
     margin-bottom: 2px;
     font-weight: bold;
 }
+
+.view-footer, .view-content {
+  padding-bottom: 5px; 
+  padding-left: 5px; 
+  font-weight: normal;
+}
+
+

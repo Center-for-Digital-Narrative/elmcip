@@ -66,6 +66,9 @@
  * Knowledgebase specific fields
  */
 
+div.field-type-taxonomy-term-reference {
+    font-family: Lucida Grande,Tahoma,Helvetica,Arial,Verdana,sans-serif;
+}
 
 
 .field-name-content-type { /*Sets the content type header in the record infobox to bold and uppercase*/
@@ -84,10 +87,18 @@
      font-weight: bold;
 }
 
-.field-type-taxonomy-term-reference a {
+.field-type-taxonomy-term-reference a { /*affects both taxonomy links (tags) and publication type */
     font-family: Lucida Grande,Tahoma,Helvetica,Arial,Verdana,sans-serif;
     font-size: 1.0em;
+
 }
+
+.field-type-taxonomy-term-reference ul.links li{ /*Does not seem to affect the tag link groups*/
+    float: left;
+    padding: 0 1em 0 0;
+    white-space; nowrap;
+}
+
 
 .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference ul.links {
     font-size: 1.0em;
@@ -107,9 +118,6 @@ fieldset .fieldset-description {
   margin-top: 15px;
  }
 
-div.field-type-taxonomy-term-reference {
-    font-family: Lucida Grande,Tahoma,Helvetica,Arial,Verdana,sans-serif;
-}
 
 
 
