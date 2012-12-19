@@ -181,7 +181,7 @@ color: white;
 #front-page-pane-kbleft { /* CSS-ID for front page panel KB left column */
 background-color: #bebdae;
 margin: 1.1em 0em 0em 0em;
-height: 345px;
+
 }
 
 #front-page-pane-kbleft .pane-title { /*position and style of KB left pane-title*/
@@ -213,7 +213,7 @@ padding: 8px;
 #front-page-pane-kbright { /* CSS-ID for front page panel KB right column */
 background-color: #e2e2d2;
 margin: 1.1em -0.8em 0em 0em;
-height: 345px;
+
 
 }
 
