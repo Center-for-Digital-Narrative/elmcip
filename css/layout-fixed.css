@@ -327,6 +327,10 @@ padding: 4px 9px;
   padding: 5px;
 }
 
+.group-right .label-above{ /*Bolds the Tags header*/
+font-weight: bold;
+}
+
 .group-left .field-name-field-node-ref-event .field-item { 
   padding-bottom: 5px;
 
