@@ -105,9 +105,16 @@ color: blue;
 
 }
 
-#field-tags-inline a{ /*Does not seem to affect the tag link groups*/
+div.field-tags-inline a{ /*Does not seem to affect the tag link groups*/
  margin-right: 5px;
 }
+
+a.field-tags-inline { /*Does not seem to affect the tag link groups*/
+ margin-right: 5px;
+}
+
+
+
 
 
 .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference ul.links {
