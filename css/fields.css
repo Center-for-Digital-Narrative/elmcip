@@ -97,8 +97,7 @@ div.field-tags-inline a{ /*Margin between tags*/
  margin-right: 5px;
 }
 
-a.field-tags-inline { /*Margin between tags and bottom*/
- margin-right: 5px;
+div.field-tags-inline { /*Margin between tags and bottom*/
 margin-bottom: 5px;
 }
 
