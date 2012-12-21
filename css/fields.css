@@ -93,24 +93,13 @@ div.field-type-taxonomy-term-reference {
 
 }
 
-.field-type-taxonomy-term-reference ul.links li{ /*Does not seem to affect the tag link groups*/
-    float: left;
-    padding: 0 1em 0 0;
-    white-space: nowrap;
-color: blue;
-}
-
-
-#field-tags-inline { /*Does not seem to affect the tag link groups*/
-
-}
-
-div.field-tags-inline a{ /*Does not seem to affect the tag link groups*/
+div.field-tags-inline a{ /*Margin between tags*/
  margin-right: 5px;
 }
 
-a.field-tags-inline { /*Does not seem to affect the tag link groups*/
+a.field-tags-inline { /*Margin between tags and bottom*/
  margin-right: 5px;
+margin.bottom: 5px;
 }
 
 
