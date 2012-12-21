@@ -26,7 +26,7 @@ ul.primary {
 ul.primary li {
   float: left; /* LTR */
   margin: 0;
-  padding: 0;
+  padding: 0 3px;
 }
 
 ul.primary li a {
@@ -42,14 +42,26 @@ ul.primary li a {
   background: url(../images/tab-left.png) no-repeat left -38px;
 }
 
-ul.primary li a .tab {
+ul.primary li a .tab { /*new styling of tabs in Knowledge Base*/
   display: block;
-  height: 20px; /* 24px (parent) - 4px (padding) */
-  margin: 0;
-  padding: 4px 13px 0 6px;
-  border-width: 0;
-  line-height: 20px;
-  background: url(../images/tab-right.png) no-repeat right -38px;
+/*  height: 20px;*/ /* 24px (parent) - 4px (padding) */
+/*  margin: 0;*/
+/*  padding: 4px 13px 0 6px;*/
+/*  border-width: 0;*/
+/*  line-height: 20px;*/
+/*  background: url(../images/tab-right.png) no-repeat right -38px; */
+color: black;
+height: 1.8em;
+line-height: 1.9em;
+font-size: 0.929em;
+float: left;
+padding: 0 10px 3px;
+margin: 0;
+text-shadow: 0 1px 0 white;
+font-weight: normal;
+background-color: #EDEDED;
+background: url (http://elmcip.net/themes/bartik/images/tabs-border.png)repeat-x left bottom;
+/*still need to find the tab box style*/
 }
 
 ul.primary li a:hover,

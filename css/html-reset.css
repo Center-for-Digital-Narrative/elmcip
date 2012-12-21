@@ -31,7 +31,7 @@ body {
 #skip-to-nav,
 #page {
   /*
-   * To use a 12px font size on the page, delete the 14px declarations.
+   * To use a 12px font size on theh page, delete the 14px declarations.
    * to use a 14px font size on the page, delete the 12px declarations.
    */
 
@@ -110,7 +110,7 @@ fieldset {
 
    */
 
-  font-family: Lucida Grande,Tahoma,Helvetica, Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Helvetica Neue, Lucida Grande,Tahoma, Helvetica, Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
 pre,
@@ -155,7 +155,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.429em;
+  font-size: 1.4em; /*Was 1.429em, but reduced the size to accommodate OSX view*/
   line-height: 1.4;
   margin-bottom: 2px;
   /* margin: 1em 0; Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */

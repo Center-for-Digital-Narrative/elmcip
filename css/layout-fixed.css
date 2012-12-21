@@ -152,9 +152,8 @@ width: 400px;
 
 #front-page-pane-news h2.pane-title { /* The font style of the News-title element */
 color: #333333;
-font-size: 15px;
+font-size: 1.4em;
 font-weight: normal;
-color: red;
 }
 
 
