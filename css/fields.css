@@ -96,14 +96,19 @@ div.field-type-taxonomy-term-reference {
 .field-type-taxonomy-term-reference ul.links li{ /*Does not seem to affect the tag link groups*/
     float: left;
     padding: 0 1em 0 0;
-    white-space; nowrap;
+    white-space: nowrap;
+color: blue;
 }
 
+
 #field-tags-inline { /*Does not seem to affect the tag link groups*/
-    float: left;
-    padding: 0 1em 0 0;
-    white-space; nowrap;
+
 }
+
+#field-tags-inline a{ /*Does not seem to affect the tag link groups*/
+ margin-right: 5px;
+}
+
 
 .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference ul.links {
     font-size: 1.0em;
