@@ -165,6 +165,7 @@ margin: 13px 0px 0px 0px;
 
 #front-page-pane-kbheader { /* CSS-ID for front page panel kbheader */
  width: 944px;
+height: 27px;
 background-color: #333333;
 margin: -2em 0em 0em 0em;
 
@@ -226,11 +227,11 @@ text-align: center;
 width: 944px;
 background-color: #333333;
 height: 8px;
-margin: -0.5em 0em 0em 0em;
+margin: 0.5em 0em 0em 0em;
 
 }
 #front-page-pane-anthology1 { /* CSS-ID for front page panel Anthology pane */
-margin: 0em 0em 0em 1em;
+margin: -0.5em 0em 0em 1em;
 }
 
 #front-page-pane-anthology2 { /* CSS-ID for front page panel Anthology pane */
