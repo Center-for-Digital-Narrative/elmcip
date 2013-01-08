@@ -71,10 +71,9 @@ Menu classes
 #block-menu-primary-links  /* main navigation/both main and secondary menu */ {
 
     background-color:#bebdae;
-    float:left;
+    float:left; 
     width:960px;
     margin-top:0px;
-    color:#fff; /* Does not affect the text-color for some reason */
 }
 
 #block-menu-secondary-links  /* About | Researchers | Partners */	{
@@ -84,19 +83,56 @@ Menu classes
     top:0px;
     width:960px;
     z-index:0;
-    color:#000; /* Does not affect the text-color for some reason */
 
 }
 
 
 #block-menu-primary-links li.leaf a {
-
-    color: blue; /* Does not affect the text-color for some reason */
-
+color: blue; /* Does not affect the text-color for some reason */
 }
 
 #block-menu-secondary-menu .first.leaf {
-	color: red;
+color: red; /* Does not affect the text-color for some reason */
+}
+
+
+/*
+* Main menu styling
+*/
+
+#block-system-main-menu ul.menu a { /* targets main-menu */
+    float:left;
+line-height: 0.9em;
+
+}
+
+/*
+* Secondary menu styling
+*/
+
+#block-menu-secondary-menu ul.menu a { /*targets secondary menus*/
+    float:left;
+line-height: 0.9em;
+}
+
+/*
+* User menu styling
+*/
+
+#block-system-user-menu ul.menu a { /*targets user menus*/
+    float:left;
+line-height: 0.9em;
+}
+
+
+/*
+* Conference menu styling
+*/
+
+#block-menu-menu-conference ul.menu a{ /*targets the conference menu only*/
+float: none;
+color: black;
+text-shadow: none;
 }
 
 
@@ -154,7 +190,7 @@ Menu classes
 }
 
 #block-system-user-menu li.leaf a {
-#    padding-left:20px;
+	padding-left:20px;
 }
 
 

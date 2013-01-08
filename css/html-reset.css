@@ -242,13 +242,14 @@ li.leaf,
 li.leaf a title
 
 /* Drupal override */ {
-  float: left;
+/*  float: left; */
   margin:auto;
   padding: 0;
   display:block;
   text-decoration:none;
 /*  background-color:#bba; */
 }
+
 
 
 ul          { list-style-type: circle; }
