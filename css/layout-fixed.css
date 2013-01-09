@@ -178,6 +178,12 @@ padding-left: 8px;
 color: white;
 }
 
+
+.inside.panels-flexible-row-inside.panels-flexible-row-7-4-inside.clearfix { /*KB front showcase page backgrond color*/
+background-color: #F3F2EA;
+}
+
+
 #front-page-pane-kbleft { /* CSS-ID for front page panel KB left column */
 background-color: #bebdae;
 margin: 1.1em 0em 0em 0em;
@@ -227,7 +233,7 @@ text-align: center;
 width: 944px;
 background-color: #333333;
 height: 8px;
-margin: 0.5em 0em 0em 0em;
+margin: -0.5em 0em 0em 0em;
 
 }
 #front-page-pane-anthology1 { /* CSS-ID for front page panel Anthology pane */
