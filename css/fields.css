@@ -130,6 +130,13 @@ fieldset .fieldset-description {
  }
 
 
+div.field-items { /*Setting the line spacing of all field items in the info box in knowledge base records */
+line-height: 1.3em;
+}
+
+div.field-item { /*Increasing the margin between field items in the info box in knowledge base records */
+margin-bottom: 0.3em;
+}
 
 
 
