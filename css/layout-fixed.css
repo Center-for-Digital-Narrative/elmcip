@@ -317,6 +317,26 @@ tr th.views-field, tr td.views-field { /*padding for the table cells and row of 
 padding: 4px 9px;
 }
 
+#kbpage .t-edge, #kbpage .b-edge, #kbpage .l-edge, #kbpage .r-edge{ /*unlinking edge background images that formed the previous rounded panel boxes on kb front page from as defined in Drupal system css*/
+background: none;
+}
+
+#kbpage .wrap-corner .l, #kbpage .wrap-corner .r { /*unlinking rounded corner background images that formed the previous rounded panel boxes on kb front page from as defined in Drupal system css*/
+background: none;
+}
+
+#kbpage .rounded-corner {
+margin-bottom: 0em;
+}
+
+#kbpage div.more-link {
+margin: -2.9em 0em 0em 0em;
+}
+
+#kbpage div.view-footer, #kbpage div.view-content { /*removing padding from kbpage panel panes*/
+padding-bottom: 0px;
+}
+
 /*
 * Knowledge base records. Specific styles for views and fields can be found in fields.css and views-styles.css respectively */
 
