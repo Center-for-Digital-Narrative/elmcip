@@ -142,7 +142,7 @@ width: 400px;
 }
 
 #front-page-pane-about .pane-content { /*testing for selecting pane content*/
-
+padding: 1em;
 }
 
 
