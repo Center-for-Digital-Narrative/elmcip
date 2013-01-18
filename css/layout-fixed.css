@@ -339,6 +339,9 @@ margin: -2.9em 0em 0em 0em;
 padding-bottom: 0px;
 }
 
+#kbpage div.view-footer p { /*Removing top margin from Add new content links aka view footer on KB front page*/
+margin-top: -1.5em
+}
 /*
 * Knowledge base records. Specific styles for views and fields can be found in fields.css and views-styles.css respectively */
 
