@@ -155,7 +155,7 @@ font-weight: normal;
 }
 
 #front-page-pane-news .pane-content { /*testing for selecting pane content*/
-padding-bottom: 1em;
+padding-top: 1em;
 }
 
 h2.front-recent-posts { /* class for the news view of the recent news posts */
