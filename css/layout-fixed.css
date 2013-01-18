@@ -154,7 +154,7 @@ font-weight: normal;
 
 }
 
-#front-page-pane-news div.view-content { /*testing for selecting pane content*/
+#front-page-pane-news div.pane-content { /*testing for selecting pane content*/
 padding-top: 1em;
 }
 
