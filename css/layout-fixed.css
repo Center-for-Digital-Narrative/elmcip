@@ -151,9 +151,12 @@ padding: 1em;
 color: #333333;
 font-size: 1.4em;
 font-weight: normal;
-padding-bottom: 1em;
+
 }
 
+#front-page-pane-news .pane-content { /*testing for selecting pane content*/
+padding-bottom: 1em;
+}
 
 h2.front-recent-posts { /* class for the news view of the recent news posts */
 font-size: 10px;
