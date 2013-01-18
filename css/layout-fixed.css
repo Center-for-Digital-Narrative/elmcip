@@ -129,17 +129,14 @@ margin-top: -15px;
  * - styling of the different panes could be placed in html-reset.css - for now they are here
  */
 
-#front-page-pane-about h2.pane-title { /* test test */
-color: #333333;
-}
-
 #front-page-pane-about { /* CSS-ID for front page panel About pane */
 width: 400px;
 }
 
-#front-page-pane-about .pane-title { /*testing for selecting pane-title*/
-
+#front-page-pane-about h2.pane-title { /* CSS-ID for front page panel About pane title */
+color: #333333;
 }
+
 
 #front-page-pane-about .pane-content { /*testing for selecting pane content*/
 padding: 1em;
@@ -154,6 +151,7 @@ padding: 1em;
 color: #333333;
 font-size: 1.4em;
 font-weight: normal;
+padding-bottom: 1em;
 }
 
 
