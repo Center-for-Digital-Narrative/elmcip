@@ -124,7 +124,7 @@ function localhost_smb_ev_preprocess_node(&$variables, $hook) {
 function localhost_smb_ev_preprocess_comment(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
-// */
+*/
 
 /**
  * Override or insert variables into the block templates.
@@ -139,27 +139,7 @@ function localhost_smb_ev_preprocess_block(&$variables, $hook) {
   // Add a count to all the blocks in the region.
   $variables['classes_array'][] = 'count-' . $variables['block_id'];
 }
-
-function localhost_smb_ev_theme($existing, $type, $theme, $path){
-return array(
-'user_login' => array(
-'arguments' => array('form' => NULL),
-'template' => 'user-login',
-),
-);
-}
-
-<?php
-function hook_preprocess_user_login(&$variables) {
-
-}
-
-?>
-
-
-
-// */
-
+*/
 
 function elmcip_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
@@ -177,4 +157,4 @@ function elmcip_form_alter(&$form, &$form_state, $form_id) {
     $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Search'){ alert('Please enter a search'); return false; }";
   }
 } 
-?>
+

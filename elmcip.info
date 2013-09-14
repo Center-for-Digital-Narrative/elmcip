@@ -6,8 +6,6 @@
 ; lines in this file, you MUST refresh Drupal 7's cache by simply visiting the
 ; Appearance page at admin/appearance.
 
-
-
 ; The name, description and screenshot used for this theme on the Appearance
 ; page at admin/appearance.
 
@@ -15,14 +13,9 @@ screenshot  = screenshot.png
 name        = elmcip
 description = zen subtheme for elmcip
 
-
-
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
-
 core        = 7.x
 base theme  = zen
-
-
 
 ; This section adds CSS files to your theme. The media type is specified in
 ; the brackets. Typical CSS media types include "all", "screen", "print", and
@@ -34,7 +27,6 @@ base theme  = zen
 ; http://drupal.org/node/263967 for more details.
 
 stylesheets[all][]        = css/html-reset.css
-stylesheets[all][]        = css/wireframes.css
 stylesheets[all][]        = css/layout-fixed.css
 stylesheets[all][]        = css/page-backgrounds.css
 stylesheets[all][]        = css/tabs.css
@@ -61,13 +53,8 @@ stylesheets[print][]      = css/print.css
 stylesheets-conditional[lte IE 7][all][]  = css/ie7.css
 stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
 
-
-
 ; Optionally add some JavaScripts to your theme.
-
 ;scripts[] = js/script.js
-
-
 
 ; The regions defined in Zen's default page.tpl.php file.  The name in
 ; brackets is the name of the region in the $page variable in the page.tpl.php
@@ -93,8 +80,6 @@ regions[bottom]         = Page bottom
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
 
-
-
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the
 ; admin/appearance config page. This is useful for suppressing check boxes
@@ -111,8 +96,6 @@ features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
 
-
-
 ; Set the default values of settings on the theme-settings.php form.
 
 settings[zen_breadcrumb]           = yes
@@ -128,3 +111,4 @@ settings[zen_wireframes]           = 0
 ; uncomment the line below.
 
 ;settings[shortcut_module_link]    = 1
+
