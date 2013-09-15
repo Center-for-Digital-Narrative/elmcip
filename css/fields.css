@@ -1,14 +1,15 @@
 /**
  * @file
+ *
  * Field Styling
  */
 
 
-.field /* Wrapper for any field. */ {
+.field {
 }
 
-/*
- * Field types (Core)
+/**
+ * Field types (Core).
  */
 .field-type-text {
 }
@@ -52,7 +53,7 @@
 /*
  * Field types (Contrib)
  */
-.field-type-datetime /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */ {
+.field-type-datetime {
 }
 
 .field-type-node-reference {
@@ -61,87 +62,71 @@
 .field-type-user-reference {
 }
 
-
-/*
+/**
  * Knowledgebase specific fields
  */
-
 div.field-type-taxonomy-term-reference {
-    font-family: Lucida Grande,Tahoma,Helvetica,Arial,Verdana,sans-serif;
+  font-family: Lucida Grande, Tahoma,Helvetica, Arial,Verdana, sans-serif;
 }
 
-
-.field-name-content-type { /*Sets the content type header in the record infobox to bold and uppercase*/
+.field-name-content-type {
   font-size: 1.1em;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 
 .field-label-inline .field-label {
    float: left;
 }
 
 .field-type-taxonomy-term-reference .field-label {
-     font-size: 1.0em;
-     font-weight: bold;
+  font-size: 1.0em;
+  font-weight: bold;
 }
 
-.field-type-taxonomy-term-reference a { /*affects both taxonomy links (tags) and publication type */
-    font-family: Lucida Grande,Tahoma,Helvetica,Arial,Verdana,sans-serif;
-    font-size: 1.0em;
-
+.field-type-taxonomy-term-reference a {
+  font-family: Lucida Grande, Tahoma, Helvetica, Arial, Verdana, sans-serif;
+  font-size: 1.0em;
 }
 
-
-
-
-div.field-tags-inline a{ /*Margin between tags*/
- margin-right: 5px;
+div.field-tags-inline a {
+  margin-right: 5px;
 }
 
-div.field-tags-inline { /*Margin between tags and bottom*/
-margin-bottom: 5px;
+div.field-tags-inline {
+  margin-bottom: 5px;
 }
 
-
-
-
-
-.field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference ul.links {
-    font-size: 1.0em;
+.field-type-taxonomy-term-reference .field-label,
+.field-type-taxonomy-term-reference ul.links {
+  font-size: 1.0em;
 }
 
-
-
-.field-name-field-pullquote div.field-item { /*Pullquote style. Add div.field-items if you want all the quotes to be styled as one*/
+.field-name-field-pullquote div.field-item {
   padding-left: 10px;
   margin-left: 15px;
   padding-right: 10px;
   margin-right: 15px;
   padding-bottom: 5px;
-margin-bottom: 10px;
+  margin-bottom: 10px;
   margin-top: 10px;
   background-color: #ececec;
 }
 
 fieldset .fieldset-description {
   margin-top: 15px;
- }
-
-
-div.field-items { /*Setting the line spacing of all field items in the info box in knowledge base records */
-line-height: 1.3em;
 }
 
-div.field-item { /*Increasing the margin between field items in the info box in knowledge base records */
-margin-bottom: 0.3em;
-margin-top: 0.16em;
+div.field-items {
+  line-height: 1.3em;
 }
 
+div.field-item {
+  margin-bottom: 0.3em;
+  margin-top: 0.16em;
+}
 
-
-/*
+/**
  * Named fields
  */
 .field-name-body {
@@ -151,7 +136,4 @@ margin-top: 0.16em;
 }
 
 .field-name-field-tags {
-}
-
-.field-name-field-FIELDNAME /* Underscores in field name are replaced with dashes. */ {
 }
