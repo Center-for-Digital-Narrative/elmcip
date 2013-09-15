@@ -1,6 +1,7 @@
 /**
  * @file
- * Page Styling
+ *
+ * Page Styling.
  *
  * Style the markup found in page.tpl.php. Also includes some styling of
  * miscellaneous Drupal elements that appear in the $content variable, such as
@@ -20,7 +21,6 @@ body {
 }
 
 #page {
-
 }
 
 /*
@@ -41,14 +41,12 @@ body {
  * Header
  */
 #header {
-
 }
 
 #header .section {
 }
 
 #logo /* Wrapping link for logo */ {
-
 	float: left; /* LTR */
 /*	margin: 1.7em 0 0 -14em; */ /* changes here must be reflected in blocks.css */
 }
@@ -84,18 +82,16 @@ div#site-name /* The name of the website */ {
 }
 
 .region-header /* Wrapper for any blocks placed in the header region */ {
-#  clear: both; /* Clear the logo */
-
 }
 
-#header { background-color:#E2E2D2;}
+#header {
+  background-color:#E2E2D2;
+}
 
 /*
  * Main (container for everything else)
  */
 #main-wrapper {
-
-#    border: 1px dotted blue;
 }
 
 #main {
@@ -235,4 +231,3 @@ ul.links li {
  */
 .region-bottom /* Wrapper for any blocks placed in the page bottom region */ {
 }
-

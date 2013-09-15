@@ -1,6 +1,7 @@
- /**
+/**
  * @file
- * Layout Styling (DIV Positioning)
+ *
+ * Layout Styling (DIV Positioning).
  *
  * Define CSS classes to create a table-free, 3-column, 2-column, or single
  * column layout depending on whether blocks are enabled in the left or right
@@ -16,11 +17,11 @@
  */
 
 
-/*
- * Body
+/**
+ * Body.
  */
 body {
-background-color: #F3F2EA; 
+  background-color: #F3F2EA;
 }
 
 #page-wrapper,
@@ -33,47 +34,42 @@ background-color: #F3F2EA;
   margin-left: auto;
   margin-right: auto;
   width: 960px;
-#  margin-top:140px;
 }
 
 #page {
-background-color: white;
+  background-color: white;
 }
 
 /*
  * Header
  */
-#header {
+#header {}
 
-}
-
-#header .section {
-}
+#header .section {}
 
 .region-header {
-/* line-height: 8.5; */
-line-height: 0;
+  line-height: 0;
 }
 
 .region-header-top .section {
-margin: 0 0 0 0;
+  margin: 0;
 }
 
-.region-header-top  {
-float: left;
-width: 100%;
-background-color: #bebdae;
+.region-header-top {
+  float: left;
+  width: 100%;
+  background-color: #bebdae;
 }
 
 .region-header-bottom .section {
-margin: 0 0 0 0;
+  margin: 0;
 }
 
 .region-header-bottom {
-float: left;
-width: 100%;
-background-color: #bebdae;
-margin-top: -15px;
+  float: left;
+  width: 100%;
+  background-color: #bebdae;
+  margin-top: -15px;
 }
 
 /*
@@ -83,10 +79,7 @@ margin-top: -15px;
   position: relative;
 }
 
-#main {
-}
-
-
+#main {}
 
 /*
  * Content
@@ -123,229 +116,220 @@ margin-top: -15px;
   padding: 8px;
 }
 
-
 /*
- * Front Page Panel 
+ * Front Page Panel
  * - styling of the different panes could be placed in html-reset.css - for now they are here
  */
-
-#front-page-pane-about { /* CSS-ID for front page panel About pane */
-width: 400px;
+#front-page-pane-about {
+  width: 400px;
 }
 
-#front-page-pane-about h2.pane-title { /* CSS-ID for front page panel About pane title */
-color: #333333;
+#front-page-pane-about h2.pane-title {
 }
 
-
-#front-page-pane-about .pane-content { /*testing for selecting pane content*/
-padding: 1em;
+#front-page-pane-about .pane-content {
 }
 
-
-#front-page-pane-news { /* CSS-ID for front page panel News-pane */
-
+#front-page-pane-news {
 }
 
-#front-page-pane-news h2.pane-title { /* The font style of the News-title element */
-color: #333333;
-font-size: 1.4em;
-font-weight: normal;
-padding-bottom: 1em;
-
+#front-page-pane-news h2.pane-title {
+  color: #333333;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding-bottom: 1em;
 }
 
-#front-page-pane-news div.pane-content { /*testing for selecting pane content*/
-padding-top: 1em;
+#front-page-pane-news div.pane-content {
+  padding-top: 1em;
 }
 
-h2.front-recent-posts { /* class for the news view of the recent news posts */
-font-size: 10px;
-margin: 13px 0px 0px 0px;
+h2.front-recent-posts {
+  font-size: 10px;
+  margin: 13px 0 0 0;
 }
 
-
-#front-page-pane-kbheader { /* CSS-ID for front page panel kbheader */
- width: 944px;
-height: 27px;
-background-color: #333333;
-margin: -2em 0em 0em 0em;
-
+#front-page-pane-kbheader {
+  width: 944px;
+  height: 27px;
+  background-color: #333333;
+  margin: -2em 0 0 0;
 }
 
-#front-page-pane-kbheader .pane-title { /*position and style of ELMCIP KNOWLEDGE BASE pane-title*/
-height: 50px;
-line-height: 2.5em;
-padding-left: 8px;
-color: white;
+#front-page-pane-kbheader .pane-title {
+  height: 50px;
+  line-height: 2.5em;
+  padding-left: 8px;
+  color: white;
 }
 
-
-.inside.panels-flexible-row-inside.panels-flexible-row-7-4-inside.clearfix { /*KB front showcase page backgrond color*/
-background-color: #F3F2EA;
+.inside.panels-flexible-row-inside.panels-flexible-row-7-4-inside.clearfix {
+  background-color: #F3F2EA;
 }
 
-
-#front-page-pane-kbleft { /* CSS-ID for front page panel KB left column */
-background-color: #bebdae;
-margin: 1.15em 0em 0em 0em;
-
+#front-page-pane-kbleft {
+  background-color: #bebdae;
+  margin: 1.15em 0 0 0;
 }
 
-#front-page-pane-kbleft .pane-title { /*position and style of KB left pane-title*/
-color: #fff;
-background-color: rgba(226, 226, 210, 0.7);
-text-align: center;
+#front-page-pane-kbleft .pane-title {
+  color: #fff;
+  background-color: rgba(226, 226, 210, 0.7);
+  text-align: center;
 }
 
-#front-page-pane-kbleft .pane-content { /*position and style of KB left pane-title*/
-padding: 8px;
+#front-page-pane-kbleft .pane-content {
+  padding: 8px;
 }
 
-#front-page-pane-kbmiddle { /* CSS-ID for front page panel KB middle column */
-background-color: #e2e2d2;
-margin: 1.15em 0em 0em 0em;
+#front-page-pane-kbmiddle {
+  background-color: #e2e2d2;
+  margin: 1.15em 0 0 0;
 }
 
-#front-page-pane-kbmiddle .pane-title { /*position and style of KB middle column pane-title*/
-color: #fff;
-background-color: rgba(0, 0, 0, 0.7);
-text-align: center;
-
+#front-page-pane-kbmiddle .pane-title {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
-#front-page-pane-kbmiddle .pane-content { /*position and style of KB middle column pane-content*/
-padding: 8px;
+#front-page-pane-kbmiddle .pane-content {
+  padding: 8px;
 }
 
-#front-page-pane-kbright { /* CSS-ID for front page panel KB right column */
-background-color: #e2e2d2;
-margin: 1.15em -0.8em 0em 0em;
-
-
+#front-page-pane-kbright {
+  background-color: #e2e2d2;
+  margin: 1.15em -0.8em 0 0;
 }
 
-#front-page-pane-kbright .pane-title { /*position and style of KB right column pane-title*/
-color: #fff;
-background-color: rgba(0, 0, 0, 0.7);
-text-align: center;
+#front-page-pane-kbright .pane-title {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
-#front-page-pane-separator1 { /* CSS-ID for front page panel separator 1 */
-width: 944px;
-background-color: #333333;
-height: 8px;
-margin: -0.5em 0em 0em 0em;
-
-}
-#front-page-pane-anthology1 { /* CSS-ID for front page panel Anthology pane */
-margin: 0.6em 0em 0em 1em;
+#front-page-pane-separator1 {
+  width: 944px;
+  background-color: #333333;
+  height: 8px;
+  margin: -0.5em 0 0 0;
 }
 
-#front-page-pane-anthology2 { /* CSS-ID for front page panel Anthology pane */
-margin: 0em 0em 0em 0em;
+#front-page-pane-anthology1 {
+  margin: 0.6em 0 0 1em;
 }
 
-
-
-#front-page-pane-separator2 { /* CSS-ID for front page panel separator beneath KB */
- width: 944px;
-background-color: #333333;
-height: 8px;
-margin: -2em 0em 0em 0em;
+#front-page-pane-anthology2 {
+  margin: 0;
 }
 
-#front-page-pane-conference1 { /* CSS-ID for front page panel conference pane */
-margin: -2em 0em 0em 0em;
+#front-page-pane-separator2 {
+  width: 944px;
+  background-color: #333333;
+  height: 8px;
+  margin: -2em 0 0 0;
 }
 
-#front-page-pane-conference2 { /* CSS-ID for front page panel conference pane */
-margin: -1em 0em 0em -2em;
+#front-page-pane-conference1 {
+  margin: -2em 0 0 0;
+}
+
+#front-page-pane-conference2 {
+  margin: -1em 0 0 -2em;
+}
+
+#front-page-pane-separator3 {
+  width: 944px;
+  background-color: #333333;
+  height: 8px;
+  margin: -2.1em 0 0 0;
 }
 
 
-
-#front-page-pane-separator3 { /* CSS-ID for front page panel separator beneath anthology */
- width: 944px;
-background-color: #333333;
-height: 8px;
-margin: -2.1em 0em 0em 0em;
+#front-page-pane-sponsors {
+  padding-left: 8px;
+  background-color: #bebdae;
+  margin: -3.9em 0 0 0;
+  width: 936px;
 }
-
-
-#front-page-pane-sponsors { /* CSS-ID for front page panel sponsor pane */
-padding-left: 8px;
-background-color: #bebdae;
-margin: -3.9em 0em 0em 0em;
-width: 936px;
-}
-
-/* Knowledge base front page */
 
 table.views-table { /* The table layout of the knowledgebase frontpage, generated by views */
   border: 1px solid #000;
   border-collapse: inherit;
-  width: 100% /*set all tables in the knowledge base to be 100% width*/
+  width: 100%;
 }
 
-th.views-field { /* Selector for the table header background on the KB front page*/ 
-  background-color: #666; 
-/*  color: white; This does the same as "table tr th.views-field", again not selecting the links*/ 
+th.views-field {
+  background-color: #666;
 }
-
 
 table tr th.views-field { /* selecting the text elements of the table header (not the links) */
-color: white;
+  color: white;
 }
 
-th.views-field.views-field-title { /*Trying to find a selector for the table header links: Not working*/
-color: white;
+th.views-field.views-field-title {
+  color: white;
 }
-
 
 table tr th a:visited { /*Trying to find a selector for the table header links: Not working*/
-color: white;
+  color: white;
 }
 
 table tr th a:active { /*Trying to find a selector for the table header links: Not working*/
-color: white;
+  color: white;
 }
 
 table tr th .active {
-color: white;
+  color: white;
 }
 
-tr th.views-field, tr td.views-field { /*padding for the table cells and row of the knowledgebase frontpage view elements*/
-padding: 4px 9px;
+tr th.views-field, tr td.views-field { /* padding for the table cells and row of the knowledgebase frontpage view elements*/
+  padding: 4px 9px;
 }
 
-#kbpage .t-edge, #kbpage .b-edge, #kbpage .l-edge, #kbpage .r-edge{ /*unlinking edge background images that formed the previous rounded panel boxes on kb front page from as defined in Drupal system css*/
-background: none;
+/**
+ * Unlinking edge background images that formed the previous rounded panel boxes
+ * on kb front page from as defined in Drupal system css.
+ */
+#kbpage .t-edge,
+#kbpage .b-edge,
+#kbpage .l-edge,
+#kbpage .r-edge {
+  background: none;
 }
 
-#kbpage .wrap-corner .l, #kbpage .wrap-corner .r { /*unlinking rounded corner background images that formed the previous rounded panel boxes on kb front page from as defined in Drupal system css*/
-background: none;
+/**
+ * Unlinking rounded corner background images that formed the previous rounded
+ * panel boxes on kb front page from as defined in Drupal system css.
+ */
+#kbpage .wrap-corner .l,
+#kbpage .wrap-corner .r {
+  background: none;
 }
 
 #kbpage .rounded-corner {
-margin-bottom: 0em;
+  margin-bottom: 0;
 }
 
 #kbpage div.more-link {
-margin: -2.9em 0em 0em 0em;
+  margin: -2.9em 0 0 0;
 }
 
-#kbpage div.view-footer, #kbpage div.view-content { /*removing padding from kbpage panel panes*/
-padding-bottom: 0px;
+#kbpage div.view-footer,
+#kbpage div.view-content {
+  padding-bottom: 0px;
 }
 
-#kbpage div.view-footer p { /*Removing top margin from Add new content links aka view footer on KB front page*/
-margin-top: -1.5em
+/* Removing top margin from Add new content links aka view footer on KB front page. */
+#kbpage div.view-footer p {
+  margin-top: -1.5em
 }
-/*
-* Knowledge base records. Specific styles for views and fields can be found in fields.css and views-styles.css respectively */
 
-.group-left { /*Creates the color box and width for record overview */
+/**
+ * Knowledge base records. Specific styles for views and fields can be found in
+ * fields.css and views-styles.css respectively
+ */
+.group-left {
   float: left;
   width: 25%;
   font-size: 0.9em;
@@ -360,17 +344,14 @@ margin-top: -1.5em
 }
 
 .group-right .label-above{ /*Bolds the Tags header*/
-font-weight: bold;
+  font-weight: bold;
 }
 
-.group-left .field-name-field-node-ref-event .field-item { 
+.group-left .field-name-field-node-ref-event .field-item {
   padding-bottom: 5px;
+}
 
-
-
-
-
-/*
+/**
  * Navigation
  */
 #navigation {
@@ -393,10 +374,7 @@ font-weight: bold;
 #navigation .section {
 }
 
-
-
-
-/*
+/**
  * First sidebar
  */
 .region-sidebar-first {
@@ -467,4 +445,3 @@ font-weight: bold;
   overflow-y: hidden;
 }
 */
-
