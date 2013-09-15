@@ -1,6 +1,7 @@
 /**
  * @file
- * HTML Element Styling
+ *
+ * HTML Element Styling.
  *
  * Ok, I admit it. I fooled you. This isn't a "reset" stylesheet. Instead this
  * is the place where you should set (not reset) the default styling for all
@@ -11,7 +12,7 @@
  */
 
 
-/*
+/**
  * Fonts
  *
  * Our font size and line height declarations are based on the following
@@ -110,7 +111,7 @@ fieldset {
 
    */
 
-  font-family: Helvetica Neue, Lucida Grande,Tahoma, Helvetica, Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: "Helvetica Neue", "Lucida Grande", Tahoma, Helvetica, Arial, Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
 pre,
@@ -130,15 +131,17 @@ var {
  * the line heights of any larger fonts be a multiple of 1.5 ems. For more
  * information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
  */
-h1, h2, h3, h4, h5, 
+h1, h2, h3, h4, h5,
 p, blockquote, pre,
 ul, ol, dl,
 hr, table, fieldset {
   margin: 0 0 1.2em 0;
-  color:#000;
+  color: #000;
 }
 
-a { text-decoration:none; }
+a {
+  text-decoration:none;
+}
 
 
 /* Headings */
@@ -167,21 +170,18 @@ h3 {
 }
 
 h4,
-h5,
- {
+h5 {
   font-size: 1.1em;
   margin: 1.364em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
 }
 
 h6 {
   font-size: 0.8em;
- font-weight: normal;
+  font-weight: normal;
 }
-
 
 /* Other block-level elements */
-p {
-}
+p {}
 
 blockquote {
   margin-left: 2em;
@@ -210,10 +210,9 @@ ul,
 ol {
   margin-left: 0; /* LTR */
   padding-left: 20px;  /*LTR */
-
 }
 
-.item-list ul /* Drupal overrides */ {
+.item-list ul {
   margin: 1.5em 0;
   padding: 0 0 0 2em; /* LTR */
 }
@@ -239,18 +238,12 @@ ul.menu li,
 li.expanded,
 li.collapsed,
 li.leaf,
-li.leaf a title
-
-/* Drupal override */ {
-/*  float: left; */
+li.leaf a title {
   margin:auto;
   padding: 0;
   display:block;
   text-decoration:none;
-/*  background-color:#bba; */
 }
-
-
 
 ul          { list-style-type: circle; }
 ul ul       { list-style-type: circle; }
@@ -260,8 +253,7 @@ ol          { list-style-type: decimal; }
 ol ol       { list-style-type: lower-alpha; }
 ol ol ol    { list-style-type: decimal; }
 
-dl {
-}
+dl {}
 
 dt {
   margin: 0;
@@ -294,30 +286,22 @@ tbody {
   border-top: none;
 }
 
-thead {
-}
+thead {}
 
-tfoot {
-}
+tfoot {}
 
-caption {
-}
+caption {}
 
-colgroup {
-}
+colgroup {}
 
-col {
-}
+col {}
 
-tr {
-}
+tr {}
 
-td {
-}
+td {}
 
 td.active {
-/* Added to override system.theme.css values */
-background-color: transparent;
+  background-color: transparent;
 }
 
 /*
@@ -329,32 +313,24 @@ form {
 }
 
 fieldset {
- padding: 0.5em;
+  padding: 0.5em;
 }
 
-legend {
-}
+legend {}
 
-label {
-}
+label {}
 
-input {
-}
+input {}
 
-select {
-}
+select {}
 
-optgroup {
-}
+optgroup {}
 
-option {
-}
+option {}
 
-textarea {
-}
+textarea {}
 
-button {
-}
+button {}
 
 /*
  * Links
@@ -363,23 +339,20 @@ button {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
-
-    color:#713333;
-    font-weight:none;
+  color: #713333;
+  font-weight: none;
 }
 
 a:visited {
-
-    color:#713333;
-    font-weight:bold;
+  color: #713333;
+  font-weight: bold;
 }
 
 a:hover,
 a:focus {
 }
 
-a:active {
-}
+a:active {}
 
 /*
  * Other inline elements
@@ -396,40 +369,28 @@ acronym {
   white-space: nowrap;
 }
 
-q {
-}
+q {}
 
-cite {
-}
+cite {}
 
-strong, b {
-}
+strong, b {}
 
-em, i {
-}
+em, i {}
 
 code,
 kbd,
 samp,
 tt,
-var /* Code, keyboard input, sample output, teletype, variable */ {
-}
+var /* Code, keyboard input, sample output, teletype, variable */ {}
 
-del {
-}
+del {}
 
-ins {
-}
+ins {}
 
-big {
-}
+big {}
 
-small {
-}
+small {}
 
-sub {
-}
+sub {}
 
-sup {
-}
-
+sup {}
