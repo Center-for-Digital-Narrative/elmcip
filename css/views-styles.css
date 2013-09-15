@@ -1,26 +1,28 @@
 /**
  * @file
- * Views Styling
+ *
+ * Views Styling.
  */
 
-.view-header p { /*Title of view pulled inn for KB-records*/
+
+/* Title of view pulled inn for KB-records */
+.view-header p {
   padding-left: 5px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 #content .view h2 {
-    padding-bottom: 5px; 
-    padding-left: 5px;
-    font-size: 1.0em;
-    line-height: 1.2;
-    margin-bottom: 2px;
-    font-weight: bold;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-size: 1.0em;
+  line-height: 1.2;
+  margin-bottom: 2px;
+  font-weight: bold;
 }
 
-.view-footer, .view-content {
-  padding-bottom: 5px; 
-  padding-left: 5px; 
+.view-footer,
+.view-content {
+  padding-bottom: 5px;
+  padding-left: 5px;
   font-weight: normal;
 }
-
-
