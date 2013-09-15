@@ -1,12 +1,10 @@
 /**
  * @file
- * Block Styling
+ *
+ * Block Styling.
  */
 
-
-.block /* Block wrapper */ {
-# margin-bottom: 1.5em;
-#    border: 1px dotted red;
+.block {
 }
 
 .block.first /* The first block in the region */ {
@@ -57,86 +55,72 @@ h2.block-title /* Block title */ {
 #block-menu-menu-NAME /* Custom menu block  */ {
 }
 
-#block-menu-secondary-links ul.menu, li.leaf a /* affects all menu items due to the .menu class */ {
-
-    color:#fff;
-    padding:4px;
-    text-shadow: 1px 1px 2px gray; /* sharpens the look of the menu-items */
+#block-menu-secondary-links ul.menu,
+li.leaf a {
+  color: #fff;
+  padding: 4px;
+  text-shadow: 1px 1px 2px gray; /* sharpens the look of the menu-items */
 }
 
-/*
-Menu classes
-*/
-
-#block-menu-primary-links  /* main navigation/both main and secondary menu */ {
-
-    background-color:#bebdae;
-    float:left; 
-    width:960px;
-    margin-top:0px;
+/**
+ * Menu classes.
+ */
+#block-menu-primary-links {
+  background-color: #bebdae;
+  float: left;
+  width: 960px;
+  margin-top: 0px;
 }
 
-#block-menu-secondary-links  /* About | Researchers | Partners */	{
-
-    background-color:#bebdae;
-    position:absolute;
-    top:0px;
-    width:960px;
-    z-index:0;
-
+#block-menu-secondary-links {
+  background-color:#bebdae;
+  position:absolute;
+  top:0px;
+  width:960px;
+  z-index:0;
 }
-
 
 #block-menu-primary-links li.leaf a {
-color: blue; /* Does not affect the text-color for some reason */
+  color: blue;
 }
 
 #block-menu-secondary-menu .first.leaf {
-color: red; /* Does not affect the text-color for some reason */
+  color: red;
 }
 
-
-/*
-* Main menu styling
-*/
-
-#block-system-main-menu ul.menu a { /* targets main-menu */
-    float:left;
-line-height: 0.9em;
-
+/**
+ * Main menu styling.
+ */
+#block-system-main-menu ul.menu a {
+  float:left;
+  line-height: 0.9em;
 }
 
-/*
-* Secondary menu styling
-*/
-
-#block-menu-secondary-menu ul.menu a { /*targets secondary menus*/
-    float:left;
-line-height: 0.9em;
+/**
+ * Secondary menu styling
+ */
+#block-menu-secondary-menu ul.menu a {
+  float: left;
+  line-height: 0.9em;
 }
 
-/*
-* User menu styling
-*/
-
-#block-system-user-menu ul.menu a { /*targets user menus*/
-    float:left;
-line-height: 0.9em;
+/**
+ * User menu styling
+ */
+#block-system-user-menu ul.menu a {
+  float: left;
+  line-height: 0.9em;
 }
 
-
-/*
-* Conference menu styling
-*/
-
-#block-menu-menu-conference ul.menu a{ /*targets the conference menu only*/
-float: none;
-color: black;
-text-shadow: none;
-padding-left: 10px;
+/**
+ * Conference menu styling
+ */
+#block-menu-menu-conference ul.menu a {
+  float: none;
+  color: black;
+  text-shadow: none;
+  padding-left: 10px;
 }
-
-
 
 #block-node-recent /* "Recent content" block */ {
 }
@@ -150,16 +134,13 @@ padding-left: 10px;
 #block-profile-author-information /* "Author information" block for the profile of the page's author */ {
 }
 
-#block-search-form /* "Search form" block */ {
-   
-    position:relative;
-#   margin-top:2em; /* change value in forms.css */
-    background-color:#e2e2d2;
-    top:70px;
-    width:30%;
-    margin-left: 70%;
-    text-align:left;
-   # padding:.2em;
+#block-search-form {
+  position: relative;
+  background-color: #e2e2d2;
+  top: 70px;
+  width: 30%;
+  margin-left: 70%;
+  text-align: left;
 }
 
 #block-shortcut-shortcuts /* "Shortcuts" block */ {
@@ -177,23 +158,20 @@ padding-left: 10px;
 #block-system-navigation /* "Navigation" block for Drupal navigation menu */ {
 }
 
-#block-system-user-menu /* "User menu" block for Drupal user menu */ 
-			/* login / logout */	{
-
-	position:relative;	
-	float:right;
-	top:-124px; /*addition to logo top margin must be negatively increased here*/
-	width:20%;
-	background-color:#bebdae;
-	clear:both;
-	z-index:10;
-	line-height: 1.4em;
+#block-system-user-menu {
+  background-color: #bebdae;
+  clear: both;
+  float: right;
+  line-height: 1.4em;
+  top: -124px; /* addition to logo top margin must be negatively increased here */
+  position: relative;
+  width: 20%;
+  z-index: 10;
 }
 
 #block-system-user-menu li.leaf a {
-	padding-left:20px;
+  padding-left: 20px;
 }
-
 
 #block-system-help /* "System help" block */ {
 }
@@ -204,16 +182,14 @@ padding-left: 10px;
 #block-system-powered-by /* "Powered by Drupal" block */ {
 }
 
-#block-user-login /* "User login form" block */ {
-
-    float:left;
-    width:960px;
-    background-color:#fff; 
+#block-user-login {
+  float: left;
+  width: 960px;
+  background-color: #fff;
 }
 
-#block-user-new /* "Who's new" block for a list of the newest users */ {
+#block-user-new {
 }
 
-#block-user-online /* "Who's online" block for a list of the online users */ {
+#block-user-online {
 }
-
