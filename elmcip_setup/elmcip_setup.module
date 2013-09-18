@@ -1,4 +1,10 @@
 <?php
+/**
+ * @file
+ * Code for the Setup ELMCIP feature.
+ */
+
+include_once 'elmcip_setup.features.inc';
 
 /**
  * Remove temporary index tables from views_export.
