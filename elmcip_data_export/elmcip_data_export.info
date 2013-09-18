@@ -8,6 +8,7 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[views_view][] = author_data_export
 features[views_view][] = author_nid_data
+features[views_view][] = conference_presentations_data_export
 features[views_view][] = critical_writing_nid_event
 features[views_view][] = event_nid_data
 features[views_view][] = node_date_nid
