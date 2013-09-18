@@ -1,0 +1,4 @@
+name = Setup ELMCIP
+description = Configuration and maintanance of ELMCIP.
+core = 7.x
+package = ELMCIP
