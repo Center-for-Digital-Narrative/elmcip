@@ -1,1 +1,14 @@
 <?php
+
+/**
+ * Remove temporary index tables from views_export.
+ *
+ * Temporary index tables that have been left
+ * behind. This is caused by batch processes which are
+ * started but never finished.
+ */
+function elmcip_setup_update_7001() {
+  if (module_exists('views_data_export')) {
+    views_data_export_garbage_collect(0, -1);
+  }
+}
