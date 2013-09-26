@@ -457,7 +457,11 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Conference Presentations Detail';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    7 => '7',
+    3 => '3',
+  );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -483,13 +487,12 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author NID';
   $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_nid';
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
-  $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Presented at Event';
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -524,7 +527,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  /* Filter criterion: Content: Event (field_node_ref_event) */
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_nid']['id'] = 'field_node_ref_event_nid';
   $handler->display->display_options['filters']['field_node_ref_event_nid']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_nid']['field'] = 'field_node_ref_event_nid';
@@ -620,7 +623,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -661,7 +664,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  /* Filter criterion: Content: Event (field_node_ref_event) */
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_nid']['id'] = 'field_node_ref_event_nid';
   $handler->display->display_options['filters']['field_node_ref_event_nid']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_nid']['field'] = 'field_node_ref_event_nid';
@@ -1778,7 +1781,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -1804,7 +1807,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'work' => 'work',
   );
-  /* Filter criterion: Content: Event (field_node_ref_event) */
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_nid']['id'] = 'field_node_ref_event_nid';
   $handler->display->display_options['filters']['field_node_ref_event_nid']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_nid']['field'] = 'field_node_ref_event_nid';
@@ -1826,7 +1829,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -1912,7 +1915,7 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -1950,7 +1953,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'work' => 'work',
   );
-  /* Filter criterion: Content: Event (field_node_ref_event) */
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_nid']['id'] = 'field_node_ref_event_nid';
   $handler->display->display_options['filters']['field_node_ref_event_nid']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_nid']['field'] = 'field_node_ref_event_nid';
@@ -1976,7 +1979,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_nid';
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
