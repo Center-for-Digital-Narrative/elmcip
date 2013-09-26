@@ -33,6 +33,7 @@ function elmcip_setup_strongarm() {
     'clone_of_vbo_set_pubtype_taxonom' => TRUE,
     'vbo_set_record_status_taxonomy' => TRUE,
     'works_multiple_refs' => TRUE,
+    'taxonomy_term' => FALSE,
   );
   $export['views_defaults'] = $strongarm;
 

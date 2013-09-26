@@ -2,6 +2,7 @@ name = ELMCIP data export
 description = Knowledge base data export interfaces
 core = 7.x
 package = ELMCIP
+dependencies[] = taxonomy
 dependencies[] = views
 dependencies[] = views_data_export
 features[ctools][] = views:views_default:3.0
