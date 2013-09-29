@@ -11,6 +11,193 @@ function elmcip_data_export_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'Event_critical_writing';
+  $view->description = 'Critical writing record viewed on event node';
+  $view->tag = 'Critical Writing, Event';
+  $view->base_table = 'node';
+  $view->human_name = 'Critical writing presented at event';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Defaults */
+  $handler = $view->new_display('default', 'Defaults', 'default');
+  $handler->display->display_options['title'] = 'Critical writing presented';
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    7 => '7',
+    3 => '3',
+    5 => '5',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = 100;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_author_name_nid' => 'field_author_name_nid',
+  );
+  $handler->display->display_options['style_options']['default'] = 'title';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'separator' => '',
+    ),
+    'field_author_name_nid' => array(
+      'separator' => '',
+    ),
+  );
+  /* Relationship: Content: Event (field_node_ref_event) */
+  $handler->display->display_options['relationships']['field_node_ref_event_nid']['id'] = 'field_node_ref_event_nid';
+  $handler->display->display_options['relationships']['field_node_ref_event_nid']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['relationships']['field_node_ref_event_nid']['field'] = 'field_node_ref_event_nid';
+  $handler->display->display_options['relationships']['field_node_ref_event_nid']['delta'] = '-1';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Contextual filter: Content: Event (field_node_ref_event) */
+  $handler->display->display_options['arguments']['field_node_ref_event_nid']['id'] = 'field_node_ref_event_nid';
+  $handler->display->display_options['arguments']['field_node_ref_event_nid']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['arguments']['field_node_ref_event_nid']['field'] = 'field_node_ref_event_nid';
+  $handler->display->display_options['arguments']['field_node_ref_event_nid']['default_action'] = 'empty';
+  $handler->display->display_options['arguments']['field_node_ref_event_nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_node_ref_event_nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_node_ref_event_nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_node_ref_event_nid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = '0';
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'critical_writing' => 'critical_writing',
+  );
+  $handler->display->display_options['filters']['type']['group'] = '0';
+  $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
+
+  /* Display: Entity content */
+  $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
+  $handler->display->display_options['entity_type'] = 'node';
+  $handler->display->display_options['bundles'] = array(
+    0 => 'event',
+  );
+  $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title_%view.xls';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['fields']['title_1']['table'] = 'node';
+  $handler->display->display_options['fields']['title_1']['field'] = 'title';
+  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_node_ref_event_nid';
+  $handler->display->display_options['fields']['title_1']['label'] = 'Event';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid_1']['id'] = 'nid_1';
+  $handler->display->display_options['fields']['nid_1']['table'] = 'node';
+  $handler->display->display_options['fields']['nid_1']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid_1']['relationship'] = 'field_node_ref_event_nid';
+  $handler->display->display_options['fields']['nid_1']['label'] = 'Event Nid';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_plain';
+  $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name_1']['id'] = 'field_author_name_1';
+  $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author NID';
+  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['delta_offset'] = '0';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['id'] = 'taxonomy_vocabulary_1_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['label'] = 'Tag ID';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['alter']['text'] = '2000[taxonomy_vocabulary_1_1-tid]';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
+  $handler->display->display_options['path'] = 'event/crit_writing_presented';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $translatables['Event_critical_writing'] = array(
+    t('Defaults'),
+    t('Critical writing presented'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('field_node_ref_event'),
+    t('Title'),
+    t('Author'),
+    t('All'),
+    t('Entity content'),
+    t('Data export'),
+    t('Event'),
+    t('Event Nid'),
+    t('Nid'),
+    t('Author NID'),
+    t('Tags'),
+    t('Tag ID'),
+    t('2000[taxonomy_vocabulary_1_1-tid]'),
+  );
+  $export['Event_critical_writing'] = $view;
+
+  $view = new view();
   $view->name = 'author_data_export';
   $view->description = 'Author data export';
   $view->tag = 'data export, Person';
