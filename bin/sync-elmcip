@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -x
+
+SITE=elmcip01.norstore.uio.no
+DB_SITE=elmcip02.norstore.uio.no
+DRUPAL=drupal
+
+drush --version || exit $?
+
+# Sync directly from Nordnet servers.
+#rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $SITE:/applications/elmcip.net .
+
+# Grab a copy of latest production db.
+rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
+
+# Decompress database
+cd site || exit 1
+gunzip latest.elmcip.sql.gz
+cd ..
+
+# Restore/populate DB
+cd drupal || exit 1
+drush --uri=elmcip.dev sql-cli < ../site/latest.elmcip.sql
