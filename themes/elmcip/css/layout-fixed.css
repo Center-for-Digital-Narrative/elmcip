@@ -1,0 +1,447 @@
+/**
+ * @file
+ *
+ * Layout Styling (DIV Positioning).
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/**
+ * Body.
+ */
+body {
+  background-color: #F3F2EA;
+}
+
+#page-wrapper,
+.region-bottom {
+  /*
+   * If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. See also the ie6.css file
+   * for the necessary IE5/IE6quirks hack to center a div.
+   */
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+#page {
+  background-color: white;
+}
+
+/*
+ * Header
+ */
+#header {}
+
+#header .section {}
+
+.region-header {
+  line-height: 0;
+}
+
+.region-header-top .section {
+  margin: 0;
+}
+
+.region-header-top {
+  float: left;
+  width: 100%;
+  background-color: #bebdae;
+}
+
+.region-header-bottom .section {
+  margin: 0;
+}
+
+.region-header-bottom {
+  float: left;
+  width: 100%;
+  background-color: #bebdae;
+  margin-top: -15px;
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+}
+
+#main {}
+
+/*
+ * Content
+ */
+#content,
+.no-sidebars #content {
+  float: left; /* LTR */
+  width: 960px;
+  margin-left: 0; /* LTR */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.sidebar-first #content {
+  width: 760px;
+  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-second #content {
+  width: 760px;
+  margin-left: 0; /* LTR */
+  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+  width: 560px;
+  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+#content .section {
+  margin: 0;
+  padding: 8px;
+}
+
+/*
+ * Front Page Panel
+ * - styling of the different panes could be placed in html-reset.css - for now they are here
+ */
+#front-page-pane-about {
+  width: 400px;
+}
+
+#front-page-pane-about h2.pane-title {
+}
+
+#front-page-pane-about .pane-content {
+}
+
+#front-page-pane-news {
+}
+
+#front-page-pane-news h2.pane-title {
+  color: #333333;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding-bottom: 1em;
+}
+
+#front-page-pane-news div.pane-content {
+  padding-top: 1em;
+}
+
+h2.front-recent-posts {
+  font-size: 10px;
+  margin: 13px 0 0 0;
+}
+
+#front-page-pane-kbheader {
+  width: 944px;
+  height: 27px;
+  background-color: #333333;
+  margin: -2em 0 0 0;
+}
+
+#front-page-pane-kbheader .pane-title {
+  height: 50px;
+  line-height: 2.5em;
+  padding-left: 8px;
+  color: white;
+}
+
+.inside.panels-flexible-row-inside.panels-flexible-row-7-4-inside.clearfix {
+  background-color: #F3F2EA;
+}
+
+#front-page-pane-kbleft {
+  background-color: #bebdae;
+  margin: 1.15em 0 0 0;
+}
+
+#front-page-pane-kbleft .pane-title {
+  color: #fff;
+  background-color: rgba(226, 226, 210, 0.7);
+  text-align: center;
+}
+
+#front-page-pane-kbleft .pane-content {
+  padding: 8px;
+}
+
+#front-page-pane-kbmiddle {
+  background-color: #e2e2d2;
+  margin: 1.15em 0 0 0;
+}
+
+#front-page-pane-kbmiddle .pane-title {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+#front-page-pane-kbmiddle .pane-content {
+  padding: 8px;
+}
+
+#front-page-pane-kbright {
+  background-color: #e2e2d2;
+  margin: 1.15em -0.8em 0 0;
+}
+
+#front-page-pane-kbright .pane-title {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+#front-page-pane-separator1 {
+  width: 944px;
+  background-color: #333333;
+  height: 8px;
+  margin: -0.5em 0 0 0;
+}
+
+#front-page-pane-anthology1 {
+  margin: 0.6em 0 0 1em;
+}
+
+#front-page-pane-anthology2 {
+  margin: 0;
+}
+
+#front-page-pane-separator2 {
+  width: 944px;
+  background-color: #333333;
+  height: 8px;
+  margin: -2em 0 0 0;
+}
+
+#front-page-pane-conference1 {
+  margin: -2em 0 0 0;
+}
+
+#front-page-pane-conference2 {
+  margin: -1em 0 0 -2em;
+}
+
+#front-page-pane-separator3 {
+  width: 944px;
+  background-color: #333333;
+  height: 8px;
+  margin: -2.1em 0 0 0;
+}
+
+
+#front-page-pane-sponsors {
+  padding-left: 8px;
+  background-color: #bebdae;
+  margin: -3.9em 0 0 0;
+  width: 936px;
+}
+
+table.views-table { /* The table layout of the knowledgebase frontpage, generated by views */
+  border: 1px solid #000;
+  border-collapse: inherit;
+  width: 100%;
+}
+
+th.views-field {
+  background-color: #666;
+}
+
+table tr th.views-field { /* selecting the text elements of the table header (not the links) */
+  color: white;
+}
+
+th.views-field.views-field-title {
+  color: white;
+}
+
+table tr th a:visited { /*Trying to find a selector for the table header links: Not working*/
+  color: white;
+}
+
+table tr th a:active { /*Trying to find a selector for the table header links: Not working*/
+  color: white;
+}
+
+table tr th .active {
+  color: white;
+}
+
+tr th.views-field, tr td.views-field { /* padding for the table cells and row of the knowledgebase frontpage view elements*/
+  padding: 4px 9px;
+}
+
+/**
+ * Unlinking edge background images that formed the previous rounded panel boxes
+ * on kb front page from as defined in Drupal system css.
+ */
+#kbpage .t-edge,
+#kbpage .b-edge,
+#kbpage .l-edge,
+#kbpage .r-edge {
+  background: none;
+}
+
+/**
+ * Unlinking rounded corner background images that formed the previous rounded
+ * panel boxes on kb front page from as defined in Drupal system css.
+ */
+#kbpage .wrap-corner .l,
+#kbpage .wrap-corner .r {
+  background: none;
+}
+
+#kbpage .rounded-corner {
+  margin-bottom: 0;
+}
+
+#kbpage div.more-link {
+  margin: -2.9em 0 0 0;
+}
+
+#kbpage div.view-footer,
+#kbpage div.view-content {
+  padding-bottom: 0px;
+}
+
+/* Removing top margin from Add new content links aka view footer on KB front page. */
+#kbpage div.view-footer p {
+  margin-top: -1.5em
+}
+
+/**
+ * Knowledge base records. Specific styles for views and fields can be found in
+ * fields.css and views-styles.css respectively
+ */
+.group-left {
+  float: left;
+  width: 25%;
+  font-size: 0.9em;
+  background-color: #e2e2d2;
+  padding: 5px;
+}
+
+.group-right { /*Sets the width and float for the record content */
+  float: left;
+  width: 65%;
+  padding: 5px;
+}
+
+.group-right .label-above{ /*Bolds the Tags header*/
+  font-weight: bold;
+}
+
+.group-left .field-name-field-node-ref-event .field-item {
+  padding-bottom: 5px;
+}
+
+/**
+ * Navigation
+ */
+#navigation {
+  float: left; /* LTR */
+  width: 100%;
+  margin-left: 0; /* LTR */
+  margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
+  height: 3em; /* The navigation can have any arbritrary height. We picked one
+                    that is the line-height plus 1em: 1.3 + 1 = 2.3
+                    Set this to the same value as the margin-top below. */
+}
+
+.with-navigation #content,
+.with-navigation .region-sidebar-first,
+.with-navigation .region-sidebar-second {
+  margin-top: 3em; /* Set this to the same value as the navigation height above. */
+}
+
+#navigation .section {
+}
+
+/**
+ * First sidebar
+ */
+.region-sidebar-first {
+  float: left; /* LTR */
+  width: 200px;
+  margin-left: 0; /* LTR */
+  margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+  margin: 0 20px 0 0; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: left; /* LTR */
+  width: 200px;
+  margin-left: 760px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+  margin: 0 0 0 20px; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+.region-footer {
+}
+
+/*
+ * Page bottom
+ */
+.region-bottom /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+.region-footer,
+.region-bottom {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+#page-wrapper {
+  overflow-y: hidden;
+}
+*/

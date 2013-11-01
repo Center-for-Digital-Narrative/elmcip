@@ -1,0 +1,195 @@
+/**
+ * @file
+ *
+ * Block Styling.
+ */
+
+.block {
+}
+
+.block.first /* The first block in the region */ {
+}
+
+.block.last /* The last block in the region */ {
+}
+
+.block.odd /* Zebra striping for each block in the region */ {
+}
+
+.block.even /* Zebra striping for each block in the region */ {
+}
+
+h2.block-title /* Block title */ {
+}
+
+.block .content /* Block's content wrapper */ {
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-1 /* First block created with "Add block" link */ {
+}
+
+#block-blog-recent /* "Recent blog posts" block */ {
+}
+
+#block-book-navigation /* "Book navigation" block for the current book's table of contents */ {
+}
+
+#block-comment-recent /* "Recent comments" block */ {
+}
+
+#block-forum-active /* "Active forum topics" block */ {
+}
+
+#block-forum-new /* "New forum topics" block */ {
+}
+
+#block-locale-language /* Language switcher block */ {
+}
+
+#block-menu-menu-NAME /* Custom menu block  */ {
+}
+
+#block-menu-secondary-links ul.menu,
+li.leaf a {
+  color: #fff;
+  padding: 4px;
+  text-shadow: 1px 1px 2px gray; /* sharpens the look of the menu-items */
+}
+
+/**
+ * Menu classes.
+ */
+#block-menu-primary-links {
+  background-color: #bebdae;
+  float: left;
+  width: 960px;
+  margin-top: 0px;
+}
+
+#block-menu-secondary-links {
+  background-color:#bebdae;
+  position:absolute;
+  top:0px;
+  width:960px;
+  z-index:0;
+}
+
+#block-menu-primary-links li.leaf a {
+  color: blue;
+}
+
+#block-menu-secondary-menu .first.leaf {
+  color: red;
+}
+
+/**
+ * Main menu styling.
+ */
+#block-system-main-menu ul.menu a {
+  float:left;
+  line-height: 0.9em;
+}
+
+/**
+ * Secondary menu styling
+ */
+#block-menu-secondary-menu ul.menu a {
+  float: left;
+  line-height: 0.9em;
+}
+
+/**
+ * User menu styling
+ */
+#block-system-user-menu ul.menu a {
+  float: left;
+  line-height: 0.9em;
+}
+
+/**
+ * Conference menu styling
+ */
+#block-menu-menu-conference ul.menu a {
+  float: none;
+  color: black;
+  text-shadow: none;
+  padding-left: 10px;
+}
+
+#block-node-recent /* "Recent content" block */ {
+}
+
+#block-node-syndicate /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */ {
+}
+
+#block-poll-recent /* "Most recent poll" block */ {
+}
+
+#block-profile-author-information /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-form {
+  position: relative;
+  background-color: #e2e2d2;
+  top: 70px;
+  width: 30%;
+  margin-left: 70%;
+  text-align: left;
+}
+
+#block-shortcut-shortcuts /* "Shortcuts" block */ {
+}
+
+#block-statistics-popular /* "Popular content" block */ {
+}
+
+#block-system-main-menu /* "Main menu" block */ {
+}
+
+#block-system-management /* "Management" block for Drupal management menu */ {
+}
+
+#block-system-navigation /* "Navigation" block for Drupal navigation menu */ {
+}
+
+#block-system-user-menu {
+  background-color: #bebdae;
+  clear: both;
+  float: right;
+  line-height: 1.4em;
+  top: -124px; /* addition to logo top margin must be negatively increased here */
+  position: relative;
+  width: 20%;
+  z-index: 10;
+}
+
+#block-system-user-menu li.leaf a {
+  padding-left: 20px;
+}
+
+#block-system-help /* "System help" block */ {
+}
+
+#block-system-main /* "Main page content" block */ {
+}
+
+#block-system-powered-by /* "Powered by Drupal" block */ {
+}
+
+#block-user-login {
+  float: left;
+  width: 960px;
+  background-color: #fff;
+}
+
+#block-user-new {
+}
+
+#block-user-online {
+}
