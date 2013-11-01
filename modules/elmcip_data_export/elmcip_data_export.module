@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ELMCIP data export feature.
+ */
+
+include_once 'elmcip_data_export.features.inc';
