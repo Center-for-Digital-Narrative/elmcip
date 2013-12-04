@@ -9,7 +9,7 @@ DRUPAL=drupal
 drush --version || exit $?
 
 # Sync directly from Nordnet servers.
-#rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $SITE:/applications/elmcip.net .
+rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $SITE:/applications/elmcip.net/drupal .
 
 # Grab a copy of latest production db.
 rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
