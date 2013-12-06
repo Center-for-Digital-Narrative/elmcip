@@ -26,3 +26,16 @@
   padding-left: 5px;
   font-weight: normal;
 }
+
+.front .views-row {
+  margin-bottom: 8px;
+}
+
+.front #content .pane-views-recent-posts .views-row h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.front #content .pane-views-recent-posts .field-item {
+  margin: 0;
+}
