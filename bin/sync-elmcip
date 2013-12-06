@@ -16,9 +16,24 @@ rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz si
 
 # Decompress database
 cd site || exit 1
-gunzip latest.elmcip.sql.gz
+gunzip -f latest.elmcip.sql.gz
 cd ..
 
 # Restore/populate DB
 cd drupal || exit 1
+cp ../site/settings.php sites/default/settings.php
 drush --uri=elmcip.dev sql-cli < ../site/latest.elmcip.sql
+
+# Normalize all files and diretories to make sure they are locally writable
+cd sites/default
+find . -type f -exec chmod -v 666 '{}' \;
+find . -type d -exec chmod -v 777 '{}' \;
+
+cd ../all/modules
+ln -s ../../../../modules elmcip
+cd ../themes
+ln -s ../../../../themes/elmcip elmcip
+
+# Flush all drupal caches
+drush status
+drush cc all -v
