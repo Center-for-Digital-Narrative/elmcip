@@ -1,6 +1,6 @@
-# ELMCIP Knowledge Base
+# Description
 
-This document describe how to get a local copy of these Drupal based project working locally.
+This document describe how to get a local copy of the ELMCIP up and running on your local computer.
 
 ## Requirements
 
@@ -10,6 +10,7 @@ This document describe how to get a local copy of these Drupal based project wor
 * Set password for user elmcip to 'elmcip'.
 * Git installed and configured.
 * Drush installed (https://github.com/drush-ops/drush).
+* A working ssh connection to Norstore application and database server. Auth should not be password based but by using your private/public SHA -key.
 
 ## Installation
 
