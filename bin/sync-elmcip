@@ -5,35 +5,29 @@ set -x
 SITE=elmcip01.norstore.uio.no
 DB_SITE=elmcip02.norstore.uio.no
 DRUPAL=drupal
+URI=elmcip.dev
+HOMEDIR=${PWD}
 
 drush --version || exit $?
 
 # Sync directly from Nordnet servers.
-rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $SITE:/applications/elmcip.net/drupal .
+rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
 
 # Grab a copy of latest production db.
 rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
 
-# Decompress database
-cd site || exit 1
-gunzip -f latest.elmcip.sql.gz
-cd ..
+# Restore/populate local database
+cd $HOMEDIR/$DRUPAL || exit 1
+gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
 
-# Restore/populate DB
-cd drupal || exit 1
+# Copy sandbox setting file to installation
 cp ../site/settings.php sites/default/settings.php
-drush --uri=elmcip.dev sql-cli < ../site/latest.elmcip.sql
 
-# Normalize all files and diretories to make sure they are locally writable
-cd sites/default
+# Normalize all synced files and directories to make sure they are locally writable
+cd $HOMEDIR/sites/default || exit 1
 find . -type f -exec chmod -v 666 '{}' \;
 find . -type d -exec chmod -v 777 '{}' \;
 
-cd ../all/modules
-ln -s ../../../../modules elmcip
-cd ../themes
-ln -s ../../../../themes/elmcip elmcip
-
 # Flush all drupal caches
-drush status
 drush cc all -v
+drush status

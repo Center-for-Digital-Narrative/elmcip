@@ -1,4 +1,5 @@
 *.mp4
+*.m4v
 *.mp3
 *.mov
 *.pdf
@@ -6,12 +7,8 @@
 *.rm
 *.ppt
 *.pptx
-elmcip.net/drupal/sites/default/files/js
-elmcip.net/drupal/sites/default/files/css
-elmcip.net/drupal/sites/default/files/ctools
-elmcip.net/drupal/sites/default/files/color
-elmcip.net/drupal/sites/all/themes/elmcip
-elmcip.net/drupal/sites/all/modules/elmcip
-elmcip.net/drupal/sites/default/settings.php
-elmcip.net/drupal/sites/default/files/styles
-elmcip.net/private_files
+files/js
+files/css
+files/ctools
+files/color
+files/styles
