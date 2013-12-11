@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -x
+
+SITE=elmcip01.norstore.uio.no
+DB_SITE=elmcip02.norstore.uio.no
+DRUPAL=drupal
+URI=elmcip.dev
+HOMEDIR=${PWD}
+
+drush --version || exit $?
+
+# Sync images and grab nightly backup of production database.
+if [ -z "$1" ]
+  then
+    rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
+  else
+    echo "Connecting to $DB_SITE as user: $1"
+    rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/
+fi
+
+cd $DRUPAL
+
+# Restore/populate local database.
+cp -v ../site/settings.php sites/default || exit 1
+
+# Copy sandbox setting file to installation.
+gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
+
+# Normalize all synced files and directories to make sure they are locally writable.
+cd $HOMEDIR/$DRUPAL/sites/default || exit 1
+mkdir files
+chmod 777 files
+
+# Flush all drupal caches.
+drush updatedb --yes
+drush cc all
+drush status
