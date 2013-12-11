@@ -8,6 +8,8 @@ This document describe how to get a local copy of these Drupal based project wor
 * Create a empty database named 'elmcip'.
 * Database user name 'elmcip' with full access to the elmcip database.
 * Set password for user elmcip to 'elmcip'.
+* Git installed and configured.
+* Drush installed (https://github.com/drush-ops/drush).
 
 ## Installation
 
@@ -34,17 +36,24 @@ Running the following script will sync all images used in nodes. The very first 
 
 ## Usage
 
-Always make sure you are using the latest version of elmcip.net.
+Always make sure you are using the latest version of elmcip.net and custom modules before doing any changes to modules or theme.
 
     git pull --rebase
 
-Get latest version of committed changes to the Drupal and 3-part modules.
+### Update to latest version of Drupal core, config and 3-part modules.
 
-    git submodule update
-    cd drupal
-    drush updatedb
+    bin/site-upgrade
+
+This will check out master branch, check out latest code, pull any updates from submodule drupal, run feature revert and any pending HOOK_update_N() (drush updatedb).
 
 ## Contribute
+
+Rules to follow in git:
+
+* Commit often.
+* Commit should always contain working code, not break stuff.
+* Write good git commit messages. Write why you did it, not what you changed. Git will tell us that.
+* Push your changes.
 
 ## Troubleshooting
 
