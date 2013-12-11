@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -x
+
+SITE=elmcip01.norstore.uio.no
+DB_SITE=elmcip02.norstore.uio.no
+DRUPAL=drupal
+URI=elmcip.dev
+HOMEDIR=${PWD}
+
+drush --version || exit $?
+
+# Pull latest code from git
+git co master
+git pull --rebase
+git submodule update
+
+# Flush all drupal caches and revert all feature modules
+cd $HOMEDIR/$DRUPAL
+
+drush cc all
+drush updatedb --yes
+drush features-revert-all --yes
+drush updatedb --yes
+drush cc all
