@@ -1,0 +1,37 @@
+#!/bin/bash
+
+set -x
+
+SITE=elmcip01.norstore.uio.no
+DB_SITE=elmcip02.norstore.uio.no
+DRUPAL=drupal
+URI=elmcip.dev
+HOMEDIR=${PWD}
+
+drush --version || exit $?
+
+# Sync images and grab nightly backup of production database.
+if [ -z "$1" ]
+  then
+    rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
+    rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
+  else
+    echo "Connecting to $DB_SITE and $SITE as user: $1"
+    rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $1@$SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
+    rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/
+fi
+
+cd $DRUPAL
+
+# Drop all data and populate database with latest backup.
+drush --uri=$URI sql-drop --yes
+gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
+
+# Normalize all synced files and directories to make sure they are locally writable.
+cd $HOMEDIR/$DRUPAL/sites/default || exit 1
+find . -type f -exec chmod -v 666 '{}' \;
+find . -type d -exec chmod -v 777 '{}' \;
+
+# Flush all drupal caches.
+drush cc all -v
+drush status
