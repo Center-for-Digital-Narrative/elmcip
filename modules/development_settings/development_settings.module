@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Development settings feature.
+ */
+
+include_once 'development_settings.features.inc';
