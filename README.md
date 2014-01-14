@@ -40,26 +40,32 @@ Running the following script will sync all images used in nodes. The very first 
 Always make sure you are using the latest version of elmcip.net and custom modules before doing any changes to modules or theme.
 
     git pull --rebase
+    git submodule update
 
-### Update to latest version of Drupal core, config and 3-part modules.
+### How to update to latest version of Drupal core, config and 3-part modules
+
+Automagically update your local installation.
 
     bin/site-upgrade
 
-This will check out master branch, check out latest code, pull any updates from submodule drupal, run feature revert and any pending HOOK_update_N() (drush updatedb).
+This will check out master branch, check out latest code, pull any updates from submodule drupal, run feature revert and any pending HOOK_update_N() (drush updatedb) tasks.
 
 ## Contribute
 
-Rules to follow in git:
+### Best practise in git
 
 * Commit often.
-* Commit should always contain working code, not break stuff.
-* Write good git commit messages. Write why you did it, not what you changed. Git will tell us that.
-* Push your changes.
+* Commit should always contain working code. Do not commit and push half baked code since that might break test and beta.elmcip.net.
+* Write informative commit messages. Write why you did it, not what you changed, Git will tell us that.
+* Rember to push your changes.
 
 ## Troubleshooting
 
-If your unable to restore the full database your mysql/mariadb resource settings my be to low to restore larger databases. Try upping this to:
+If your unable to restore (import) the full database, your mysql/mariadb resource settings my be to low. Try upping this to:
 
      max_allowed_packet = 100M
 
-in your my.cnf or server.cnf.
+in your my.cnf or server.cnf and restart the db. server
+
+    mysql.server restart
+
