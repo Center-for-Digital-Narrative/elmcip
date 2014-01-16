@@ -71,6 +71,14 @@ body {
   background-color: #bebdae;
 }
 
+.region-header-bottom:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /*
  * Main (container for everything else)
  */
