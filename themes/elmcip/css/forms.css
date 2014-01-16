@@ -62,9 +62,7 @@
 /**
  * Search (search-block-form.tpl.php).
  */
-#block-search-form {
-	padding-top: 8px;
-}
+#block-search-form {}
 
 /**
  * Drupal's default login form block.

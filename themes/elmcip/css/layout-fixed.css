@@ -48,7 +48,8 @@ body {
 #header .section {}
 
 .region-header {
-  line-height: 0;
+  float: right;
+  width: 70%;
 }
 
 .region-header-top .section {
@@ -66,10 +67,8 @@ body {
 }
 
 .region-header-bottom {
-  float: left;
-  width: 100%;
+  clear: both;
   background-color: #bebdae;
-  margin-top: -15px;
 }
 
 /*

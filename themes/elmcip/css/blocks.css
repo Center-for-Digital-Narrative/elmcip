@@ -135,12 +135,7 @@ li.leaf a {
 }
 
 #block-search-form {
-  position: relative;
-  background-color: #e2e2d2;
-  top: 70px;
-  width: 30%;
-  margin-left: 70%;
-  text-align: left;
+  float: right;
 }
 
 #block-shortcut-shortcuts /* "Shortcuts" block */ {
@@ -159,14 +154,8 @@ li.leaf a {
 }
 
 #block-system-user-menu {
-  background-color: #bebdae;
-  clear: both;
+  width: 40%;
   float: right;
-  line-height: 1.4em;
-  top: -124px; /* addition to logo top margin must be negatively increased here */
-  position: relative;
-  width: 20%;
-  z-index: 10;
 }
 
 #block-system-user-menu li.leaf a {
