@@ -12,7 +12,7 @@ drush --version || exit $?
 
 # Pull latest code from git
 git checkout master
-git pull --rebase
+git pull --rebase --quiet || exit $?
 git submodule update
 
 # Flush all drupal caches and revert all feature modules
