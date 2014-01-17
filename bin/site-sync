@@ -14,7 +14,14 @@ drush --version || exit $?
 if [ -z "$1" ]
   then
     rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
-    rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
+    RESULT=`rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/`
+    if [ $? != 0 ]; then
+    {
+      echo "ERROR: problem syncing "
+      echo $RESULT
+      exit 1
+    }
+  fi
   else
     echo "Connecting to $DB_SITE and $SITE as user: $1"
     rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $1@$SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
