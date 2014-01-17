@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ELMCIP content types feature.
+ */
+
+include_once 'elmcip_content_types.features.inc';
