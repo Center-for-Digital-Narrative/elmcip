@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ELMCIP field instances feature.
+ */
+
+include_once 'elmcip_field_instances.features.inc';
