@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Install and uninstall functions as well as schema definition.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function development_settings_install() {
+  variable_set('block_cache', 0);
+  variable_set('cache', 0);
+  variable_set('cache_lifetime', 0);
+  variable_set('page_cache_maximum_age', 0);
+  variable_set('page_compression', 0);
+  variable_set('preprocess_css', 0);
+  variable_set('preprocess_js', 0);
+  drupal_flush_all_caches();
+  print("Disabled all cache setting.\n");
+}
