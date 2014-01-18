@@ -40,7 +40,6 @@ features[views_view][] = author_data_export
 features[views_view][] = author_list
 features[views_view][] = author_name
 features[views_view][] = author_nid_data
-features[views_view][] = calendar_event
 features[views_view][] = class_groups_on_student_profile
 features[views_view][] = class_groups_on_teacher_profile
 features[views_view][] = clone_of_research_collection_creative_work
