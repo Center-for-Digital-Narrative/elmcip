@@ -11,7 +11,12 @@ HOMEDIR=${PWD}
 drush --version || exit $?
 
 # Pull latest code from git
-git checkout master
+if [ -z "$1" ]; then
+  git checkout master
+else
+  git checkout $1
+fi
+
 git pull --rebase --quiet || exit $?
 git submodule update
 
