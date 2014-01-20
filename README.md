@@ -46,9 +46,12 @@ Always make sure you are using the latest version of elmcip.net and custom modul
 
 Automagically update your local installation.
 
+    bin/site_sync (NORSTORE USERNAME)
     bin/site-upgrade
 
 This will check out master branch, check out latest code, pull any updates from submodule drupal, run feature revert and any pending HOOK_update_N() (drush updatedb) tasks.
+
+Turn on development settings module.
 
 ## Contribute
 
