@@ -48,10 +48,17 @@ Automagically update your local installation.
 
     bin/site_sync (NORSTORE USERNAME)
     bin/site-upgrade
+    
 
 This will check out master branch, check out latest code, pull any updates from submodule drupal, run feature revert and any pending HOOK_update_N() (drush updatedb) tasks.
 
+    bin/site-drush uli
+    
+Logs into to dev site as user 1.
+
 Turn on development settings module.
+
+    drush en development_settings
 
 ## Contribute
 
