@@ -1,1 +1,12 @@
 <?php
+/**
+ * @file
+ * Install and uninstall code.
+ */
+
+/**
+ * Enable new feature modles, elmcip_content_types, elmcip_field_instances and elmcip_permissions.
+ */
+function elmcip_setup_update_7002() {
+  module_enable(array('elmcip_content_types', 'elmcip_field_instances', 'elmcip_permissions'));
+}
