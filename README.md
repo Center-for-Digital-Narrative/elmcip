@@ -32,7 +32,7 @@ You should now have a fully functional site, with all content, except attached d
 
 Running the following script will copy image and documents added to the elmcip content.
 
-    bin/site-sync
+    bin/reset2production
 
 The very first time you run this will it transferee about 600MB. After this initial sync it will only transferee changed and new files on each reset. We are omitting all PDF and movie files due to their large size aka transferee time.
 
@@ -42,8 +42,8 @@ The very first time you run this will it transferee about 600MB. After this init
 
 Automagically update your local installation.
 
-    bin/site_sync <NORSTORE USERNAME>
-    bin/site-upgrade    
+    bin/reset2production <NORSTORE USERNAME>
+    bin/site-upgrade
 
 * This will check out master branch.
 * Check out the latest code from git 'elmcip` and the submodule named 'drupal'.* Revert all feature modules. 
@@ -57,11 +57,11 @@ Logs into to dev site as user 1 (site administrator).
 
 ### Turn on development settings module. 
 
-    drush en development_settings
+    bin/site-drush en development_settings
 
 ## Contribute
 
-Always make sure you are using the latest version of elmcip.net and custom modules before doing any changes to modules or theme.
+Always make sure you are using the latest version of elmcip and any custom modules before doing any changes to modules and theme.
 
     git pull --rebase
     git submodule update
@@ -87,7 +87,7 @@ Show the difference between the database and configuration stored in the feature
 ### Best practise in git
 
 * Commit often.
-* Commit should always contain working code. Do not commit and push half baked code. That might break test and beta.elmcip.net installation.
+* Commit should always contain working code. Do not commit and push half baked code. That might break test and beta.elmcip.net installation and will get reverted from the repository.
 * Write informative commit messages. Write why you did the changes, not what you just changed, Git will tell us that.
 * Remember to push your changes.
 
@@ -104,4 +104,3 @@ If your unable to restore (import) the full database, your mysql/mariadb resourc
 in your my.cnf or server.cnf and restart the db. server
 
     mysql.server restart
-

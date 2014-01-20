@@ -23,3 +23,4 @@ drush updatedb --yes
 drush features-revert-all --yes
 drush updatedb --yes
 drush cc all
+drush fl

@@ -10,6 +10,12 @@ HOMEDIR=${PWD}
 
 drush --version || exit $?
 
+# Checkout master branch and get latest and greates code, then checkout
+# the production tag.
+git checkout master
+git pull --rebase --quiet || exit $?
+git checkout production --quiet || exit $?
+
 # Sync files and grab the nightly backup of the production database.
 if [ -z "$1" ]
   then
