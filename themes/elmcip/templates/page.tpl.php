@@ -69,7 +69,7 @@
  */
 ?>
 
-<div id="page-wrapper"><div id="page">
+<div id="page-wrapper"><div id="page" class="<?php print implode(' ', $classes_array); ?>">
     <?php print render($page['header_top']); ?>
   <div id="header"><div class="section clearfix">
 

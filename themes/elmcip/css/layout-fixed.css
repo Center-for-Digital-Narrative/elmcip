@@ -36,9 +36,7 @@ body {
   width: 960px;
 }
 
-#page {
-  background-color: white;
-}
+#page {}
 
 /*
  * Header
