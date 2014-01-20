@@ -108,8 +108,12 @@ li.leaf a {
  * User menu styling
  */
 #block-system-user-menu ul.menu a {
-  float: left;
+  float: right;
   line-height: 0.9em;
+}
+
+#block-system-user-menu li.leaf a {
+  padding-left: 20px;
 }
 
 /**
@@ -156,10 +160,6 @@ li.leaf a {
 #block-system-user-menu {
   width: 40%;
   float: right;
-}
-
-#block-system-user-menu li.leaf a {
-  padding-left: 20px;
 }
 
 #block-system-help /* "System help" block */ {
