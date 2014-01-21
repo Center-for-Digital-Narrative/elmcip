@@ -76,7 +76,6 @@ features[views_view][] = event_series
 features[views_view][] = events_listed_in_research_collection
 features[views_view][] = events_on_individual_organizer_page
 features[views_view][] = gender_selector_vbo
-features[views_view][] = isbn_converter
 features[views_view][] = latest_revisions
 features[views_view][] = new_content_teaser
 features[views_view][] = node_date_nid
