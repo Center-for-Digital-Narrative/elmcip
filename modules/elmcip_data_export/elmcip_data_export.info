@@ -103,7 +103,6 @@ features[views_view][] = research_collection_publisher
 features[views_view][] = research_collection_teaching_resource
 features[views_view][] = resource_collection_curated_by_person
 features[views_view][] = series_on_publisher
-features[views_view][] = series_pages_to_fix
 features[views_view][] = series_reference_critical_writin
 features[views_view][] = teaching_resource_db_archive
 features[views_view][] = teaching_resource_page
