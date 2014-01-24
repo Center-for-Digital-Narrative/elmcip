@@ -18,6 +18,13 @@ fi
 
 cp -v site/settings.php $DRUPAL/sites/default || exit 1
 
+# Make sure we are on master branch, production and submodule checked out at the
+# production tag.
+git checkout master
+git pull --rebase --quiet || exit $?
+git checkout production --quiet || exit $?
+git submodule update --quiet || exit $?
+
 # Sync images and grab nightly backup of production database.
 if [ -z "$1" ]
   then

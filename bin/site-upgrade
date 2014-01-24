@@ -10,19 +10,17 @@ HOMEDIR=${PWD}
 
 drush --version || exit $?
 
-# Pull latest code from git
+# Pull latest code the master branch and selected branch before running upgrades.
 if [ -z "$1" ]; then
   git checkout master
 else
   git checkout $1
 fi
-
 git pull --rebase --quiet || exit $?
-git submodule update
+git submodule update --quiet || exit $?
 
 # Flush all drupal caches and revert all feature modules
 cd $HOMEDIR/$DRUPAL
-
 drush cc all
 drush updatedb --yes
 drush features-revert-all --yes
