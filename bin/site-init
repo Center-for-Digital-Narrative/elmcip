@@ -10,19 +10,38 @@ HOMEDIR=${PWD}
 
 drush --version || exit $?
 
+# Copy default database settings to Drupal.
+if [ -f $DRUPAL/sites/default/settings.php ]; then
+    echo "Site already exist. Unable to int. a exiting site."
+    exit 1
+fi
+
+cp -v site/settings.php $DRUPAL/sites/default || exit 1
+
 # Sync images and grab nightly backup of production database.
 if [ -z "$1" ]
   then
-    rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
+    RESULT=`rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/`
+    if [ $? != 0 ]; then
+    {
+      echo "ERROR: problem syncing DB"
+      echo $RESULT
+      exit 1
+    }
+  fi
   else
     echo "Connecting to $DB_SITE as user: $1"
-    rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/
+    RESULT=`rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/`
+    if [ $? != 0 ]; then
+    {
+      echo "ERROR: problem syncing DB"
+      echo $RESULT
+      exit 1
+    }
+  fi
 fi
 
 cd $DRUPAL
-
-# Restore/populate local database.
-cp -v ../site/settings.php sites/default || exit 1
 
 # Copy sandbox setting file to installation.
 gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli

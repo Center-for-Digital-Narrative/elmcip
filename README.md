@@ -24,7 +24,7 @@ Get drupal core and all 3-part modules:
 
 Initialize the new site:
 
-    bin/site-init
+    bin/site-init <norstore username>
 
 You should now have a fully functional site, with all content, except attached documents/files and images.
 
