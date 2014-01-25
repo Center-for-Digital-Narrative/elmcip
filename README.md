@@ -97,6 +97,7 @@ Show the difference between the database and configuration stored in the feature
 
 ## Troubleshooting
 
+### Problems importing database
 If your unable to restore (import) the full database, your mysql/mariadb resource settings my be to low. Try upping this to:
 
      max_allowed_packet = 100M
@@ -104,3 +105,13 @@ If your unable to restore (import) the full database, your mysql/mariadb resourc
 in your my.cnf or server.cnf and restart the db. server
 
     mysql.server restart
+
+### Problems changing Drupal permissions
+Problems getting changing permissions on '/admin/people/permissions'? Check your apache/php-error log. You might then see warnings like:
+
+        PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0, referer: http://elmcip.dev/admin/people/permissions
+
+To fix it, track down your php.ini (/usr/local/etc/php/5.5/php.ini or 5.4) and search for this line. Uncomment the max_input_vars line and alter it to:
+
+        ; How many GET/POST/COOKIE input variables may be accepted
+        max_input_vars = 2000
