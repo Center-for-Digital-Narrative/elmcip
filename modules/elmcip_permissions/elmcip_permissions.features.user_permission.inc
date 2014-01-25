@@ -24,10 +24,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'access all views'.
   $permissions['access all views'] = array(
     'name' => 'access all views',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'views',
   );
 
@@ -247,9 +244,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'admin_fields'.
   $permissions['admin_fields'] = array(
     'name' => 'admin_fields',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'ds',
   );
 
@@ -283,9 +278,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer advanced pane settings'.
   $permissions['administer advanced pane settings'] = array(
     'name' => 'administer advanced pane settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels',
   );
 
@@ -353,46 +346,35 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer custom content'.
   $permissions['administer custom content'] = array(
     'name' => 'administer custom content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'ctools_custom_content',
   );
 
   // Exported permission: 'administer features'.
   $permissions['administer features'] = array(
     'name' => 'administer features',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'features',
   );
 
   // Exported permission: 'administer field permissions'.
   $permissions['administer field permissions'] = array(
     'name' => 'administer field permissions',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'administer fieldgroups'.
   $permissions['administer fieldgroups'] = array(
     'name' => 'administer fieldgroups',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'field_group',
   );
 
   // Exported permission: 'administer filters'.
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'filter',
   );
 
@@ -445,9 +427,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer mini panels'.
   $permissions['administer mini panels'] = array(
     'name' => 'administer mini panels',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels_mini',
   );
 
@@ -463,9 +443,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer modules'.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'system',
   );
 
@@ -473,7 +451,6 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['administer mollom'] = array(
     'name' => 'administer mollom',
     'roles' => array(
-      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'mollom',
@@ -502,36 +479,28 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer page manager'.
   $permissions['administer page manager'] = array(
     'name' => 'administer page manager',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'page_manager',
   );
 
   // Exported permission: 'administer pane access'.
   $permissions['administer pane access'] = array(
     'name' => 'administer pane access',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels',
   );
 
   // Exported permission: 'administer panel-nodes'.
   $permissions['administer panel-nodes'] = array(
     'name' => 'administer panel-nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels_node',
   );
 
   // Exported permission: 'administer panels layouts'.
   $permissions['administer panels layouts'] = array(
     'name' => 'administer panels layouts',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels',
   );
 
@@ -554,9 +523,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'user',
   );
 
@@ -608,18 +575,14 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer software updates'.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'system',
   );
 
   // Exported permission: 'administer stylizer'.
   $permissions['administer stylizer'] = array(
     'name' => 'administer stylizer',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'stylizer',
   );
 
@@ -638,9 +601,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer themes'.
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'system',
   );
 
@@ -648,7 +609,6 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
-      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'path',
@@ -657,19 +617,14 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer users'.
   $permissions['administer users'] = array(
     'name' => 'administer users',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'user',
   );
 
   // Exported permission: 'administer views'.
   $permissions['administer views'] = array(
     'name' => 'administer views',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'views',
   );
 
@@ -758,10 +713,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -777,9 +729,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'cancel account'.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'user',
   );
 
@@ -1049,9 +999,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'create mini panels'.
   $permissions['create mini panels'] = array(
     'name' => 'create mini panels',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels_mini',
   );
 
@@ -1132,9 +1080,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'create panel-nodes'.
   $permissions['create panel-nodes'] = array(
     'name' => 'create panel-nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels_node',
   );
 
@@ -1372,9 +1318,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'delete any panel-nodes'.
   $permissions['delete any panel-nodes'] = array(
     'name' => 'delete any panel-nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels_node',
   );
 
@@ -1595,9 +1539,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'delete own panel-nodes'.
   $permissions['delete own panel-nodes'] = array(
     'name' => 'delete own panel-nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels_node',
   );
 
@@ -1949,9 +1891,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'edit any panel-nodes'.
   $permissions['edit any panel-nodes'] = array(
     'name' => 'edit any panel-nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels_node',
   );
 
@@ -2510,9 +2450,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'edit own panel-nodes'.
   $permissions['edit own panel-nodes'] = array(
     'name' => 'edit own panel-nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels_node',
   );
 
@@ -2744,9 +2682,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'features',
   );
 
@@ -2808,9 +2744,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'user',
   );
 
@@ -2951,9 +2885,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'use PHP for title patterns'.
   $permissions['use PHP for title patterns'] = array(
     'name' => 'use PHP for title patterns',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'auto_nodetitle',
   );
 
@@ -2985,46 +2917,35 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'use bulk exporter'.
   $permissions['use bulk exporter'] = array(
     'name' => 'use bulk exporter',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'bulk_export',
   );
 
   // Exported permission: 'use page manager'.
   $permissions['use page manager'] = array(
     'name' => 'use page manager',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'page_manager',
   );
 
   // Exported permission: 'use panels caching features'.
   $permissions['use panels caching features'] = array(
     'name' => 'use panels caching features',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels',
   );
 
   // Exported permission: 'use panels dashboard'.
   $permissions['use panels dashboard'] = array(
     'name' => 'use panels dashboard',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels',
   );
 
   // Exported permission: 'use panels in place editing'.
   $permissions['use panels in place editing'] = array(
     'name' => 'use panels in place editing',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels',
   );
 
@@ -3455,9 +3376,7 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'view pane admin links'.
   $permissions['view pane admin links'] = array(
     'name' => 'view pane admin links',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'panels',
   );
 
