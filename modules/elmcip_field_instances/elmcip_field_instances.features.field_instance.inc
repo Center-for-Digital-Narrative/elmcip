@@ -7422,6 +7422,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'faq',
     'default_value' => NULL,
     'deleted' => 0,
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -7444,6 +7445,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Body',
+    'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
       'text_processing' => 1,
@@ -7485,6 +7487,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'entity_type' => 'node',
     'field_name' => 'taxonomyextra',
     'label' => 'Taxonomy upgrade extras',
+    'required' => FALSE,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
