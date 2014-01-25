@@ -673,6 +673,69 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: 'assign administrative editor role'.
+  $permissions['assign administrative editor role'] = array(
+    'name' => 'assign administrative editor role',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: 'assign all roles'.
+  $permissions['assign all roles'] = array(
+    'name' => 'assign all roles',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: 'assign contributor role'.
+  $permissions['assign contributor role'] = array(
+    'name' => 'assign contributor role',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: 'assign editor role'.
+  $permissions['assign editor role'] = array(
+    'name' => 'assign editor role',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: 'assign submitter role'.
+  $permissions['assign submitter role'] = array(
+    'name' => 'assign submitter role',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: 'assign supereditor role'.
+  $permissions['assign supereditor role'] = array(
+    'name' => 'assign supereditor role',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'role_delegation',
+  );
+
+  // Exported permission: 'assign teacher role'.
+  $permissions['assign teacher role'] = array(
+    'name' => 'assign teacher role',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'role_delegation',
+  );
+
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
