@@ -10,3 +10,45 @@
 function elmcip_setup_update_7002() {
   module_enable(array('elmcip_content_types', 'elmcip_field_instances', 'elmcip_permissions'));
 }
+
+/**
+ * Remove settings and blocks blonging to wabi, pixture_reloaded, elmcip_bartik and adaptivetheme_admin.
+ */
+function elmcip_setup_update_7003() {
+  $depricated_themes = array(
+    'wabi',
+    'pixture_reloaded',
+    'elmcip_bartik',
+    'adaptivetheme_admin',
+  );
+
+  // Delete settings from the $variables table.
+  print "Removing theme settings from variables table\n";
+  variable_del('color_pixture_reloaded_files');
+  variable_del('color_pixture_reloaded_logo');
+  variable_del('color_pixture_reloaded_palette');
+  variable_del('color_pixture_reloaded_screenshot');
+  variable_del('color_pixture_reloaded_stylesheets');
+  variable_del('theme_pixture_reloaded_settings');
+  variable_del('color_wabi_files');
+  variable_del('color_wabi_logo');
+  variable_del('color_wabi_palette');
+  variable_del('color_wabi_screenshot');
+  variable_del('color_wabi_stylesheets');
+  variable_del('theme_wabi_settings');
+  variable_del('color_elmcip_bartik_files');
+  variable_del('color_elmcip_bartik_logo');
+  variable_del('color_elmcip_bartik_palette');
+  variable_del('color_elmcip_bartik_stylesheets');
+  variable_del('theme_elmcip_bartik_settings');
+  variable_del('theme_adaptivetheme_admin_settings');
+  cache_clear_all('variables', 'cache_bootstrap');
+
+  // Remove blocks registered to removed themes.
+  foreach ($depricated_themes as $key => $theme) {
+    $removed = db_delete('block')
+      ->condition('theme', $theme)
+      ->execute();
+    print "Removed $removed depricated blocks from theme $theme\n";
+  }
+}
