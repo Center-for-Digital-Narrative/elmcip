@@ -43,38 +43,53 @@ body {
  */
 #header {}
 
-#header .section {}
+#header .block .content {
+  margin: 0 10px;
+}
+
+#header .region-header .content {
+  margin: 0;
+}
 
 .region-header {
-  float: right;
-  width: 70%;
+  position: relative;
+  margin: 10px;
 }
 
-.region-header-top .section {
-  margin: 0;
-}
-
-.region-header-top {
-  float: left;
-  width: 100%;
+.region-header-top,
+.region-header-bottom {
   background-color: #bebdae;
-}
-
-.region-header-bottom .section {
-  margin: 0;
 }
 
 .region-header-bottom {
-  clear: both;
-  background-color: #bebdae;
+  margin: 0 0 1em 0;
 }
 
-.region-header-bottom:after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
+#header .block {
+  float: left;
+  width: 50%;
+}
+
+#header .region-header-bottom .block {
+  width: 100%;
+  float: none;
+}
+
+#header .block-search {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  width: inherit;
+}
+
+#header a {
+  float: left;
+  margin: 0.714em 1.5em 0.714em 0;
+}
+
+#header .even a {
+  float: right;
+  margin: 0.714em 0 0.714em 1.5em;
 }
 
 /*
@@ -249,7 +264,6 @@ h2.front-recent-posts {
   height: 8px;
   margin: -2.1em 0 0 0;
 }
-
 
 #front-page-pane-sponsors {
   padding-left: 8px;

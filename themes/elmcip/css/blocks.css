@@ -55,11 +55,13 @@ h2.block-title /* Block title */ {
 #block-menu-menu-NAME /* Custom menu block  */ {
 }
 
-#block-menu-secondary-links ul.menu,
-li.leaf a {
+#header a {
   color: #fff;
-  padding: 4px;
-  text-shadow: 1px 1px 2px gray; /* sharpens the look of the menu-items */
+  font-size: 1.142em;
+}
+
+#header a:hover {
+  color: #d30008;
 }
 
 /**
@@ -69,15 +71,14 @@ li.leaf a {
   background-color: #bebdae;
   float: left;
   width: 960px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #block-menu-secondary-links {
-  background-color:#bebdae;
-  position:absolute;
-  top:0px;
-  width:960px;
-  z-index:0;
+  background-color: #bebdae;
+  position: absolute;
+  top: 0px;
+  width: 960px;
 }
 
 #block-menu-primary-links li.leaf a {
@@ -86,34 +87,6 @@ li.leaf a {
 
 #block-menu-secondary-menu .first.leaf {
   color: red;
-}
-
-/**
- * Main menu styling.
- */
-#block-system-main-menu ul.menu a {
-  float:left;
-  line-height: 0.9em;
-}
-
-/**
- * Secondary menu styling
- */
-#block-menu-secondary-menu ul.menu a {
-  float: left;
-  line-height: 0.9em;
-}
-
-/**
- * User menu styling
- */
-#block-system-user-menu ul.menu a {
-  float: right;
-  line-height: 0.9em;
-}
-
-#block-system-user-menu li.leaf a {
-  padding-left: 20px;
 }
 
 /**
@@ -138,10 +111,6 @@ li.leaf a {
 #block-profile-author-information /* "Author information" block for the profile of the page's author */ {
 }
 
-#block-search-form {
-  float: right;
-}
-
 #block-shortcut-shortcuts /* "Shortcuts" block */ {
 }
 
@@ -157,10 +126,7 @@ li.leaf a {
 #block-system-navigation /* "Navigation" block for Drupal navigation menu */ {
 }
 
-#block-system-user-menu {
-  width: 40%;
-  float: right;
-}
+#block-system-user-menu {}
 
 #block-system-help /* "System help" block */ {
 }

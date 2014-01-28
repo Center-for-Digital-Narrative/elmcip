@@ -157,3 +157,12 @@ function elmcip_form_alter(&$form, &$form_state, $form_id) {
     $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Search'){ alert('Please enter a search'); return false; }";
   }
 }
+
+/**
+ * Implements template_preprocess_region().
+ */
+function elmcip_preprocess_region(&$variables, $hook) {
+  if ($variables['region'] == 'header' || 'header-top') {
+    $variables['classes_array'][] = 'clearfix';
+  }
+}

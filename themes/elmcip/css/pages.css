@@ -8,7 +8,6 @@
  * ul.links, .pager, .more-link, etc.
  */
 
-
 /*
  * Body
  */
@@ -46,14 +45,8 @@ body {
 #header .section {
 }
 
-#logo /* Wrapping link for logo */ {
-	float: left; /* LTR */
-/*	margin: 1.7em 0 0 -14em; */ /* changes here must be reflected in blocks.css */
-}
-
-#logo img {
-  vertical-align: bottom;
-  padding-top: 3px;
+#logo {
+  float: left;
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {

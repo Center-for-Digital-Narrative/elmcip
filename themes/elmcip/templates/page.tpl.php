@@ -70,12 +70,8 @@
 ?>
 
 <div id="page-wrapper"><div id="page" class="<?php print implode(' ', $classes_array); ?>">
-    <?php print render($page['header_top']); ?>
   <div id="header"><div class="section clearfix">
-
-    <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-    <?php endif; ?>
+    <?php print render($page['header_top']); ?>
 
     <?php if ($site_name || $site_slogan): ?>
       <div id="name-and-slogan">
@@ -97,18 +93,19 @@
       </div><!-- /#name-and-slogan -->
     <?php endif; ?>
 
-    <?php print theme('links__system_secondary_menu', array(
-      'links' => $secondary_menu,
-      'attributes' => array(
-        'id' => 'secondary-menu',
-        'class' => array('links', 'inline', 'clearfix'),
-      ),
-      'heading' => array(
-        'text' => $secondary_menu_heading,
-        'level' => 'h2',
-        'class' => array('element-invisible'),
-      ),
-    )); ?>
+    <?php
+      if ($logo) {
+        $logo = array(
+          'logo' => array(
+            '#markup' => '<a href="' . $front_page . '" title="' . t('Home') . '" rel="home" id="logo"><img src="' . $logo . '" alt="' . t('Home') . '" /></a>',
+            '#prefix' => '<div class="block logo-container">',
+            '#suffix' => '</div>',
+            '#weight' => '10',
+          ),
+        );
+        $page['header'] = array_merge($logo, $page['header']);
+      }
+    ?>
 
     <?php print render($page['header']); ?>
     <?php print render($page['header_bottom']); ?>
