@@ -69,3 +69,10 @@ function elmcip_setup_update_7004() {
 
   print "Moved and enabled $num_updated block(s) to region header-top \n";
 }
+
+/**
+ * Remove all orphaned actions from system.
+ */
+function elmcip_setup_update_7005() {
+  actions_synchronize(actions_list(), TRUE);
+}
