@@ -159,8 +159,6 @@ h1 {
 
 h2 {
   font-size: 1.4em; /*Was 1.429em, but reduced the size to accommodate OSX view*/
-  line-height: 1.4;
-  margin-bottom: 2px;
   /* margin: 1em 0; Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
 }
 

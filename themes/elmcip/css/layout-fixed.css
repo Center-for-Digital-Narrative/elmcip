@@ -82,6 +82,10 @@ body {
   width: inherit;
 }
 
+#header .logo-container > a {
+  margin: 0;
+}
+
 #header a {
   float: left;
   margin: 0.714em 1.5em 0.714em 0;
