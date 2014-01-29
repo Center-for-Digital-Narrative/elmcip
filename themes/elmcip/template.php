@@ -86,7 +86,7 @@ function localhost_smb_ev_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function elmcip_preprocess_page(&$variables, $hook) {
-  if ($variables['is_admin']) {
+  if ($variables['user']->uid == 1) {
     $variables['classes_array'][] = 'is-admin';
   }
 }
