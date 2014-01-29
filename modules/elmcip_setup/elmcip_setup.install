@@ -52,3 +52,20 @@ function elmcip_setup_update_7003() {
     print "Removed $removed depricated blocks from theme $theme\n";
   }
 }
+
+/**
+ * Move system user-menu block from header to region-top.
+ */
+function elmcip_setup_update_7004() {
+  $num_updated = db_update('block')
+    ->fields(array(
+      'region' => 'header_top',
+      'status' => 1,
+      'weight' => 1,
+    ))
+    ->condition('delta', 'user-menu')
+    ->condition('theme', 'elmcip')
+    ->execute();
+
+  print "Moved and enabled $num_updated block(s) to region header-top \n";
+}
