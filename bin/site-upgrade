@@ -16,7 +16,7 @@ if [ -z "$1" ]; then
 else
   git checkout $1
 fi
-git pull --rebase --quiet || exit $?
+git pull --quiet || exit $?
 git submodule update --quiet || exit $?
 
 # Flush all drupal caches and revert all feature modules
