@@ -1,0 +1,31 @@
+/**
+ * @file
+ *
+ * Panels styling.
+ */
+
+.front h2 {
+  color: #333333;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+.panels-flexible-row-7-4 {
+  background-color: #F3F2EA;
+}
+
+.panels-flexible-row-7-4 .pane-title {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0.714em 1em;
+  text-align: center;
+}
+
+.panels-flexible-row-7-4 .panels-flexible-region {
+  background-color: #e2e2d2;
+}
+
+.panels-flexible-row-7-4 .panels-flexible-region-first {
+  background-color: #bebdae;
+}

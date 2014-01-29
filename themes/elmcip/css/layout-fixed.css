@@ -13,7 +13,16 @@
  * Only CSS that affects the layout (positioning) of major elements should be
  * listed here.  Such as:
  *   display, position, float, clear, width, height, min-width, min-height
- *   margin, border, padding, overflow
+ *   margin, border, padding, overflow.
+ *
+ * ELMCIP uses grid from 960gs (http://960.gs/demo.html)
+ * Width 960px
+ * 12 col.
+ * Gutters 20px
+ * Content 940px
+ * 1 col 60px
+ * 4 col = (60*4) + (3*20) = 300px
+ * 6 col (50%) = 460px
  */
 
 
@@ -139,103 +148,51 @@ body {
   margin: 10px;
 }
 
-/*
- * Front Page Panel
- * - styling of the different panes could be placed in html-reset.css - for now they are here
+
+/**
+ * Front Page Panel styles.
  */
+
+.front .view-content {
+  padding: 0;
+}
+
 #front-page-pane-about {
   width: 400px;
 }
 
-#front-page-pane-about h2.pane-title {
-}
-
-#front-page-pane-about .pane-content {
-}
-
-#front-page-pane-news {
-}
-
-#front-page-pane-news h2.pane-title {
-  color: #333333;
-  font-size: 1.4em;
-  font-weight: normal;
-  padding-bottom: 1em;
-}
+#front-page-pane-news {}
 
 #front-page-pane-news div.pane-content {
   padding-top: 1em;
 }
 
-h2.front-recent-posts {
-  font-size: 10px;
-  margin: 13px 0 0 0;
+.panels-flexible-row-7-4 {
+  border-bottom: solid 8px #333;
+  padding: 0;
 }
 
-#front-page-pane-kbheader {
-  width: 944px;
-  height: 27px;
-  background-color: #333333;
-  margin: -2em 0 0 0;
+.panels-flexible-row-7-4 .panels-flexible-region {
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  min-height: 440px;
 }
 
-#front-page-pane-kbheader .pane-title {
-  height: 50px;
-  line-height: 2.5em;
-  padding-left: 8px;
-  color: white;
+.panels-flexible-row-7-4 .panels-flexible-region-first {
+  margin: 0 10px 0 0;
 }
 
-.inside.panels-flexible-row-inside.panels-flexible-row-7-4-inside.clearfix {
-  background-color: #F3F2EA;
+.panels-flexible-row-7-4 .panels-flexible-region-last {
+  margin: 0 0 0 10px;
 }
 
-#front-page-pane-kbleft {
-  background-color: #bebdae;
-  margin: 1.15em 0 0 0;
+.panels-flexible-row-7-4 .panels-flexible-region-inside {
+  padding: 0;
 }
 
-#front-page-pane-kbleft .pane-title {
-  color: #fff;
-  background-color: rgba(226, 226, 210, 0.7);
-  text-align: center;
-}
-
-#front-page-pane-kbleft .pane-content {
-  padding: 8px;
-}
-
-#front-page-pane-kbmiddle {
-  background-color: #e2e2d2;
-  margin: 1.15em 0 0 0;
-}
-
-#front-page-pane-kbmiddle .pane-title {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-}
-
-#front-page-pane-kbmiddle .pane-content {
-  padding: 8px;
-}
-
-#front-page-pane-kbright {
-  background-color: #e2e2d2;
-  margin: 1.15em -0.8em 0 0;
-}
-
-#front-page-pane-kbright .pane-title {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-}
-
-#front-page-pane-separator1 {
-  width: 944px;
-  background-color: #333333;
-  height: 8px;
-  margin: -0.5em 0 0 0;
+.front .pane-content {
+  padding: 10px;
 }
 
 #front-page-pane-anthology1 {
