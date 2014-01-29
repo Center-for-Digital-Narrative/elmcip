@@ -167,6 +167,24 @@ body {
   padding-top: 1em;
 }
 
+/* Terrible hack. Remove this when panel layout have changed for the better. */
+.panels-flexible-row-7-3 {
+  padding: 0;
+}
+.panels-flexible-row-7-3 .panels-flexible-region-first {
+  float: none;
+  width: 100%;
+}
+.panels-flexible-row-7-3 .pane-title {
+  background-color: #F3F2EA;
+  margin: 0;
+  padding: 0.714em 1em;
+}
+.panels-flexible-row-7-3 .pane-content {
+  display: none;
+}
+/* End of terrible CSS. */
+
 .panels-flexible-row-7-4 {
   border-bottom: solid 8px #333;
   padding: 0;
