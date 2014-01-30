@@ -30,10 +30,10 @@ function elmcip_layout_strongarm() {
     'toggle_favicon' => 1,
     'toggle_main_menu' => 0,
     'toggle_secondary_menu' => 0,
-    'default_logo' => 0,
-    'logo_path' => 'sites/all/themes/elmcip/favicon.png',
+    'default_logo' => 1,
+    'logo_path' => '',
     'logo_upload' => '',
-    'default_favicon' => 1,
+    'default_favicon' => 0,
     'favicon_path' => 'sites/all/themes/elmcip/favicon.png',
     'favicon_upload' => '',
     'zen_breadcrumb' => 'no',
@@ -46,6 +46,7 @@ function elmcip_layout_strongarm() {
     'zen_jump_link_target' => 'main-menu',
     'zen_jump_link_text' => 'Jump to navigation',
     'zen_wireframes' => 0,
+    'favicon_mimetype' => 'image/png',
   );
   $export['theme_elmcip_settings'] = $strongarm;
 
