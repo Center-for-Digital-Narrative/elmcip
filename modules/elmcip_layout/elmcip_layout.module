@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ELMCIP layout feature.
+ */
+
+include_once 'elmcip_layout.features.inc';

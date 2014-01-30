@@ -76,3 +76,10 @@ function elmcip_setup_update_7004() {
 function elmcip_setup_update_7005() {
   actions_synchronize(actions_list(), TRUE);
 }
+
+/**
+ * Enable new feature module elmcip_layout.
+ */
+function elmcip_setup_update_7006() {
+  module_enable(array('elmcip_layout'), FALSE);
+}
