@@ -8,20 +8,30 @@
   font-weight: normal;
 }
 
-.panels-flexible-row-7-4 {
+.kb {
   background-color: #F3F2EA;
 }
 
-.panels-flexible-row-7-4 .pane-title {
+.kb .pane-title {
   background-color: #333;
   color: #fff;
   text-align: center;
 }
 
-.panels-flexible-row-7-4 .panels-flexible-region {
+.kb .panels-flexible-region {
   background-color: #e2e2d2;
 }
 
-.panels-flexible-row-7-4 .panels-flexible-region-first {
+.kb .panels-flexible-region-first {
   background-color: #bebdae;
+}
+
+.sponsors {
+  background-color: #bebdae;
+}
+
+
+.region-footer,
+.sponsors {
+  font-size: 0.857em;
 }

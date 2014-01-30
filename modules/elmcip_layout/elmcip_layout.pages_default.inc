@@ -109,6 +109,8 @@ function elmcip_layout_default_page_manager_pages() {
       ),
     ),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'tab',
@@ -260,16 +262,11 @@ function elmcip_layout_default_page_manager_pages() {
         'width_type' => '%',
         'children' => array(
           0 => 'main-row',
-          1 => 1,
-          2 => 2,
-          3 => 3,
-          4 => 4,
-          5 => 5,
-          6 => 6,
-          7 => 7,
-          8 => 8,
-          9 => 9,
-          10 => 10,
+          1 => 3,
+          2 => 4,
+          3 => 6,
+          4 => 8,
+          5 => 10,
         ),
         'parent' => 'canvas',
       ),
@@ -281,6 +278,7 @@ function elmcip_layout_default_page_manager_pages() {
           1 => 'news',
         ),
         'parent' => 'main',
+        'class' => 'general',
       ),
       'about' => array(
         'type' => 'region',
@@ -288,23 +286,6 @@ function elmcip_layout_default_page_manager_pages() {
         'width' => 50,
         'width_type' => '%',
         'parent' => 'main-row',
-        'class' => '',
-      ),
-      1 => array(
-        'type' => 'row',
-        'contains' => 'region',
-        'children' => array(
-          0 => 'separator1',
-        ),
-        'parent' => 'main',
-        'class' => '',
-      ),
-      'separator1' => array(
-        'type' => 'region',
-        'title' => 'separator0',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '1',
         'class' => '',
       ),
       'news' => array(
@@ -315,24 +296,6 @@ function elmcip_layout_default_page_manager_pages() {
         'parent' => 'main-row',
         'class' => '',
       ),
-      2 => array(
-        'type' => 'row',
-        'contains' => 'region',
-        'children' => array(
-          0 => 'kbheader',
-          1 => 'conference2',
-        ),
-        'parent' => 'main',
-        'class' => '',
-      ),
-      'kbheader' => array(
-        'type' => 'region',
-        'title' => 'Old confernce1',
-        'width' => '33.092926246264135',
-        'width_type' => '%',
-        'parent' => '2',
-        'class' => '',
-      ),
       3 => array(
         'type' => 'row',
         'contains' => 'region',
@@ -340,19 +303,11 @@ function elmcip_layout_default_page_manager_pages() {
           0 => 'kbheader_',
         ),
         'parent' => 'main',
-        'class' => '',
-      ),
-      'conference2' => array(
-        'type' => 'region',
-        'title' => 'Old Conference2',
-        'width' => '66.90707375373586',
-        'width_type' => '%',
-        'parent' => '2',
-        'class' => '',
+        'class' => 'kb-header',
       ),
       'kbheader_' => array(
         'type' => 'region',
-        'title' => 'KBheader',
+        'title' => 'KB header',
         'width' => 100,
         'width_type' => '%',
         'parent' => '3',
@@ -367,7 +322,7 @@ function elmcip_layout_default_page_manager_pages() {
           2 => 'kbright',
         ),
         'parent' => 'main',
-        'class' => '',
+        'class' => 'kb',
       ),
       'kbleft' => array(
         'type' => 'region',
@@ -393,23 +348,6 @@ function elmcip_layout_default_page_manager_pages() {
         'parent' => '4',
         'class' => '',
       ),
-      5 => array(
-        'type' => 'row',
-        'contains' => 'region',
-        'children' => array(
-          0 => 'separator2',
-        ),
-        'parent' => 'main',
-        'class' => '',
-      ),
-      'separator2' => array(
-        'type' => 'region',
-        'title' => 'Separator1',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '5',
-        'class' => '',
-      ),
       6 => array(
         'type' => 'row',
         'contains' => 'region',
@@ -418,7 +356,7 @@ function elmcip_layout_default_page_manager_pages() {
           1 => 'anothology2',
         ),
         'parent' => 'main',
-        'class' => '',
+        'class' => 'anthology',
       ),
       'anthology1' => array(
         'type' => 'region',
@@ -436,23 +374,6 @@ function elmcip_layout_default_page_manager_pages() {
         'parent' => '6',
         'class' => '',
       ),
-      7 => array(
-        'type' => 'row',
-        'contains' => 'region',
-        'children' => array(
-          0 => 'separator3',
-        ),
-        'parent' => 'main',
-        'class' => '',
-      ),
-      'separator3' => array(
-        'type' => 'region',
-        'title' => 'Separator2',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '7',
-        'class' => '',
-      ),
       8 => array(
         'type' => 'row',
         'contains' => 'region',
@@ -461,7 +382,7 @@ function elmcip_layout_default_page_manager_pages() {
           1 => 'conference2_',
         ),
         'parent' => 'main',
-        'class' => '',
+        'class' => 'conference',
       ),
       'conference' => array(
         'type' => 'region',
@@ -479,23 +400,6 @@ function elmcip_layout_default_page_manager_pages() {
         'parent' => '8',
         'class' => '',
       ),
-      9 => array(
-        'type' => 'row',
-        'contains' => 'region',
-        'children' => array(
-          0 => 'separator3_',
-        ),
-        'parent' => 'main',
-        'class' => 'Separator',
-      ),
-      'separator3_' => array(
-        'type' => 'region',
-        'title' => 'Separator3',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '9',
-        'class' => '',
-      ),
       10 => array(
         'type' => 'row',
         'contains' => 'region',
@@ -503,7 +407,7 @@ function elmcip_layout_default_page_manager_pages() {
           0 => 'sponsors',
         ),
         'parent' => 'main',
-        'class' => '',
+        'class' => 'sponsors',
       ),
       'sponsors' => array(
         'type' => 'region',
@@ -535,6 +439,39 @@ function elmcip_layout_default_page_manager_pages() {
       'conference2_' => NULL,
       'separator3_' => NULL,
       'sponsors' => NULL,
+    ),
+    'conference2_' => array(
+      'style' => 'default',
+    ),
+    'conference' => array(
+      'style' => 'default',
+    ),
+    'anthology1' => array(
+      'style' => 'default',
+    ),
+    'anothology2' => array(
+      'style' => 'default',
+    ),
+    'sponsors' => array(
+      'style' => 'default',
+    ),
+    'kbheader_' => array(
+      'style' => 'default',
+    ),
+    'about' => array(
+      'style' => 'default',
+    ),
+    'news' => array(
+      'style' => 'default',
+    ),
+    'kbleft' => array(
+      'style' => 'default',
+    ),
+    'kbmiddle' => array(
+      'style' => 'default',
+    ),
+    'kbright' => array(
+      'style' => 'default',
     ),
   );
   $display->cache = array();
@@ -588,7 +525,7 @@ function elmcip_layout_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => 'front-page-pane-anthology2',
-      'css_class' => '',
+      'css_class' => 'transparent',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -615,7 +552,7 @@ function elmcip_layout_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => 'front-page-pane-anthology1',
-      'css_class' => '',
+      'css_class' => 'transparent',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -632,8 +569,8 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Conference1',
       'title' => '',
-      'body' => '<img src="http://www.elmcip.net/sites/default/files/media/news/images/rts.jpg">',
-      'format' => '2',
+      'body' => '<img src="./sites/default/files/media/news/images/rts.jpg" alt="Remediating the Social" title="Remediating the Social" />',
+      'format' => '1',
       'substitute' => TRUE,
     );
     $pane->cache = array();
@@ -642,7 +579,7 @@ function elmcip_layout_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => 'front-page-pane-conference1',
-      'css_class' => '',
+      'css_class' => 'transparent',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -669,7 +606,7 @@ function elmcip_layout_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => 'front-page-pane-conference2',
-      'css_class' => '',
+      'css_class' => 'transparent',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -846,87 +783,6 @@ function elmcip_layout_default_page_manager_pages() {
     $display->panels['news'][0] = 'new-12';
     $pane = new stdClass();
     $pane->pid = 'new-13';
-    $pane->panel = 'separator2';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Separator1',
-      'title' => '',
-      'body' => '<br>',
-      'format' => '3',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => 'front-page-pane-separator1',
-      'css_class' => '',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['separator2'][0] = 'new-13';
-    $pane = new stdClass();
-    $pane->pid = 'new-14';
-    $pane->panel = 'separator3';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Separator2',
-      'title' => '',
-      'body' => '<br>',
-      'format' => '3',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => 'front-page-pane-separator2',
-      'css_class' => '',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['separator3'][0] = 'new-14';
-    $pane = new stdClass();
-    $pane->pid = 'new-15';
-    $pane->panel = 'separator3_';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'Separator3',
-      'title' => '',
-      'body' => '<br>',
-      'format' => '3',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => 'front-page-pane-separator3',
-      'css_class' => '',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['separator3_'][0] = 'new-15';
-    $pane = new stdClass();
-    $pane->pid = 'new-16';
     $pane->panel = 'sponsors';
     $pane->type = 'block';
     $pane->subtype = 'block-3';
@@ -947,8 +803,8 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['sponsors'][0] = 'new-16';
+    $display->content['new-13'] = $pane;
+    $display->panels['sponsors'][0] = 'new-13';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -975,6 +831,8 @@ function elmcip_layout_default_page_manager_pages() {
       ),
     ),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'tab',
@@ -1029,7 +887,7 @@ function elmcip_layout_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-17';
+    $pane->pid = 'new-14';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'latest_revisions-panel_pane_1';
@@ -1044,8 +902,8 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = '';
-    $display->content['new-17'] = $pane;
-    $display->panels['middle'][0] = 'new-17';
+    $display->content['new-14'] = $pane;
+    $display->panels['middle'][0] = 'new-14';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1063,6 +921,8 @@ function elmcip_layout_default_page_manager_pages() {
   $page->access = array(
     'plugins' => array(),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'normal',
@@ -1121,7 +981,7 @@ function elmcip_layout_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-18';
+    $pane->pid = 'new-15';
     $pane->panel = 'bottom';
     $pane->type = 'views';
     $pane->subtype = 'event_page';
@@ -1151,10 +1011,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = '';
-    $display->content['new-18'] = $pane;
-    $display->panels['bottom'][0] = 'new-18';
+    $display->content['new-15'] = $pane;
+    $display->panels['bottom'][0] = 'new-15';
     $pane = new stdClass();
-    $pane->pid = 'new-19';
+    $pane->pid = 'new-16';
     $pane->panel = 'bottom';
     $pane->type = 'views';
     $pane->subtype = 'db_archives_page';
@@ -1182,10 +1042,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-19'] = $pane;
-    $display->panels['bottom'][1] = 'new-19';
+    $display->content['new-16'] = $pane;
+    $display->panels['bottom'][1] = 'new-16';
     $pane = new stdClass();
-    $pane->pid = 'new-20';
+    $pane->pid = 'new-17';
     $pane->panel = 'bottom';
     $pane->type = 'views';
     $pane->subtype = 'research_collection_page';
@@ -1213,10 +1073,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-20'] = $pane;
-    $display->panels['bottom'][2] = 'new-20';
+    $display->content['new-17'] = $pane;
+    $display->panels['bottom'][2] = 'new-17';
     $pane = new stdClass();
-    $pane->pid = 'new-21';
+    $pane->pid = 'new-18';
     $pane->panel = 'left';
     $pane->type = 'views';
     $pane->subtype = 'publisher_page';
@@ -1246,10 +1106,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = '';
-    $display->content['new-21'] = $pane;
-    $display->panels['left'][0] = 'new-21';
+    $display->content['new-18'] = $pane;
+    $display->panels['left'][0] = 'new-18';
     $pane = new stdClass();
-    $pane->pid = 'new-22';
+    $pane->pid = 'new-19';
     $pane->panel = 'right';
     $pane->type = 'views';
     $pane->subtype = 'organization_page';
@@ -1279,10 +1139,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = '';
-    $display->content['new-22'] = $pane;
-    $display->panels['right'][0] = 'new-22';
+    $display->content['new-19'] = $pane;
+    $display->panels['right'][0] = 'new-19';
     $pane = new stdClass();
-    $pane->pid = 'new-23';
+    $pane->pid = 'new-20';
     $pane->panel = 'top';
     $pane->type = 'custom';
     $pane->subtype = 'contribute_pane_non_contrib';
@@ -1317,10 +1177,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = '';
-    $display->content['new-23'] = $pane;
-    $display->panels['top'][0] = 'new-23';
+    $display->content['new-20'] = $pane;
+    $display->panels['top'][0] = 'new-20';
     $pane = new stdClass();
-    $pane->pid = 'new-24';
+    $pane->pid = 'new-21';
     $pane->panel = 'top';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -1360,10 +1220,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = '';
-    $display->content['new-24'] = $pane;
-    $display->panels['top'][1] = 'new-24';
+    $display->content['new-21'] = $pane;
+    $display->panels['top'][1] = 'new-21';
     $pane = new stdClass();
-    $pane->pid = 'new-25';
+    $pane->pid = 'new-22';
     $pane->panel = 'top';
     $pane->type = 'custom';
     $pane->subtype = 'all_tags_pane';
@@ -1384,10 +1244,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = '';
-    $display->content['new-25'] = $pane;
-    $display->panels['top'][2] = 'new-25';
+    $display->content['new-22'] = $pane;
+    $display->panels['top'][2] = 'new-22';
     $pane = new stdClass();
-    $pane->pid = 'new-26';
+    $pane->pid = 'new-23';
     $pane->panel = 'top';
     $pane->type = 'views';
     $pane->subtype = 'work_page';
@@ -1418,10 +1278,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = '';
-    $display->content['new-26'] = $pane;
-    $display->panels['top'][3] = 'new-26';
+    $display->content['new-23'] = $pane;
+    $display->panels['top'][3] = 'new-23';
     $pane = new stdClass();
-    $pane->pid = 'new-27';
+    $pane->pid = 'new-24';
     $pane->panel = 'top';
     $pane->type = 'views';
     $pane->subtype = 'critical_writing_page';
@@ -1451,10 +1311,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = '';
-    $display->content['new-27'] = $pane;
-    $display->panels['top'][4] = 'new-27';
+    $display->content['new-24'] = $pane;
+    $display->panels['top'][4] = 'new-24';
     $pane = new stdClass();
-    $pane->pid = 'new-28';
+    $pane->pid = 'new-25';
     $pane->panel = 'top';
     $pane->type = 'views';
     $pane->subtype = 'Author_page';
@@ -1484,10 +1344,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 5;
     $pane->locks = '';
-    $display->content['new-28'] = $pane;
-    $display->panels['top'][5] = 'new-28';
+    $display->content['new-25'] = $pane;
+    $display->panels['top'][5] = 'new-25';
     $pane = new stdClass();
-    $pane->pid = 'new-29';
+    $pane->pid = 'new-26';
     $pane->panel = 'top';
     $pane->type = 'views';
     $pane->subtype = 'teaching_resource_page';
@@ -1517,8 +1377,8 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 6;
     $pane->locks = '';
-    $display->content['new-29'] = $pane;
-    $display->panels['top'][6] = 'new-29';
+    $display->content['new-26'] = $pane;
+    $display->panels['top'][6] = 'new-26';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

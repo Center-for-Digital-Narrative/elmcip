@@ -173,11 +173,6 @@ h5 {
   margin: 1.364em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
 }
 
-h6 {
-  font-size: 0.8em;
-  font-weight: normal;
-}
-
 /* Other block-level elements */
 p {}
 
