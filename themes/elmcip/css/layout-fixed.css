@@ -164,6 +164,7 @@ body {
   padding: 0;
 }
 
+.group-left .inner,
 .front .pane-content {
   padding: 10px;
 }
