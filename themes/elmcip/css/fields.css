@@ -26,9 +26,6 @@
 .field-type-file {
 }
 
-.field-type-taxonomy-term-reference {
-}
-
 .field-type-number-integer {
 }
 
@@ -56,50 +53,18 @@
 .field-type-datetime {
 }
 
-.field-type-node-reference {
-}
-
 .field-type-user-reference {
 }
 
 /**
  * Knowledgebase specific fields
  */
-div.field-type-taxonomy-term-reference {
-  font-family: Lucida Grande, Tahoma,Helvetica, Arial,Verdana, sans-serif;
-}
-
-.field-name-content-type {
-  font-size: 1.1em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .field-label-inline .field-label {
    float: left;
 }
 
-.field-type-taxonomy-term-reference .field-label {
-  font-size: 1.0em;
-  font-weight: bold;
-}
-
-.field-type-taxonomy-term-reference a {
-  font-family: Lucida Grande, Tahoma, Helvetica, Arial, Verdana, sans-serif;
-  font-size: 1.0em;
-}
-
-div.field-tags-inline a {
-  margin-right: 5px;
-}
-
-div.field-tags-inline {
-  margin-bottom: 5px;
-}
-
-.field-type-taxonomy-term-reference .field-label,
-.field-type-taxonomy-term-reference ul.links {
-  font-size: 1.0em;
+.field-tags-inline a {
+  margin-right: 1.5em;
 }
 
 .field-name-field-pullquote div.field-item {
@@ -115,15 +80,6 @@ div.field-tags-inline {
 
 fieldset .fieldset-description {
   margin-top: 15px;
-}
-
-div.field-items {
-  line-height: 1.3em;
-}
-
-div.field-item {
-  margin-bottom: 0.3em;
-  margin-top: 0.16em;
 }
 
 /**

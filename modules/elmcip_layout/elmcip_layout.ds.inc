@@ -750,6 +750,12 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
+      ),
     ),
     'purl' => array(
       'weight' => '37',
@@ -905,7 +911,7 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->properties = array(
     'code' => array(
       'value' => '[node:content-type]',
-      'format' => '4',
+      'format' => 'ds_code',
     ),
     'use_token' => 1,
   );
