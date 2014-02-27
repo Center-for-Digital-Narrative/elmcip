@@ -356,16 +356,14 @@ tr th.views-field, tr td.views-field { /* padding for the table cells and row of
  */
 .group-left {
   float: left;
-  width: 25%;
-  font-size: 0.9em;
-  background-color: #e2e2d2;
-  padding: 5px;
+  margin: 0 10px 0 0;
+  width: 300px;
 }
 
 .group-right { /*Sets the width and float for the record content */
   float: left;
-  width: 65%;
-  padding: 5px;
+  margin: 0 0 0 10px;
+  width: 620px;
 }
 
 .group-right .label-above{ /*Bolds the Tags header*/
