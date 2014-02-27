@@ -363,16 +363,16 @@ tr th.views-field, tr td.views-field { /* padding for the table cells and row of
 
 .group-right { /*Sets the width and float for the record content */
   float: left;
-  margin: 0 0 0 10px;
+  margin: 10px 0 0 10px;
   width: 620px;
+}
+
+.group-left .title {
+  margin-top: 0;
 }
 
 .group-right .label-above{ /*Bolds the Tags header*/
   font-weight: bold;
-}
-
-.group-left .field-name-field-node-ref-event .field-item {
-  padding-bottom: 5px;
 }
 
 /**
