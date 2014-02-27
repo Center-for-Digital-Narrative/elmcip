@@ -61,6 +61,12 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
+      ),
     ),
     'purl' => array(
       'weight' => '48',
@@ -130,6 +136,12 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'above',
       'format' => 'default',
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
+      ),
     ),
     'links' => array(
       'weight' => '8',
@@ -224,6 +236,12 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
+      ),
     ),
     'purl' => array(
       'weight' => '22',
@@ -328,6 +346,12 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
+      ),
     ),
     'purl' => array(
       'weight' => '15',
@@ -384,6 +408,12 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
+      ),
     ),
     'full_name' => array(
       'weight' => '26',
@@ -408,6 +438,7 @@ function elmcip_layout_ds_field_settings_info() {
     ),
     'field_alternative_spelling_of_na' => array(
       'ft' => array(
+        'func' => 'theme_ds_field_expert',
         'lb' => 'Name (original lang)',
       ),
     ),
@@ -498,6 +529,12 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
+      ),
     ),
     'purl' => array(
       'weight' => '17',
@@ -572,6 +609,12 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'ft' => array(
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
+      ),
     ),
     'purl' => array(
       'weight' => '13',
@@ -654,7 +697,10 @@ function elmcip_layout_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
       'ft' => array(
-        'styles' => 'all_caps_left_group',
+        'func' => 'theme_ds_field_expert',
+        'fi' => TRUE,
+        'fi-el' => 'h4',
+        'fi-cl' => 'title',
       ),
     ),
     'purl' => array(
@@ -1792,15 +1838,14 @@ function elmcip_layout_ds_layout_settings_info() {
       ),
       'right' => array(
         0 => 'field_textfield',
-        1 => 'critical_writing_about_publisher_entity_view_1',
-        2 => 'critical_writing_on_publisher_entity_view_1',
-        3 => 'critical_writing_on_referenced_publisher_entity_view_1',
-        4 => 'Work_publisher_entity_view_1',
-        5 => 'series_on_publisher_entity_view_1',
-        6 => 'research_collection_publisher_entity_view_1',
-        7 => 'field_events',
-        8 => 'purl',
-        9 => 'author',
+        1 => 'critical_writing_on_publisher_entity_view_1',
+        2 => 'critical_writing_on_referenced_publisher_entity_view_1',
+        3 => 'Work_publisher_entity_view_1',
+        4 => 'series_on_publisher_entity_view_1',
+        5 => 'research_collection_publisher_entity_view_1',
+        6 => 'field_events',
+        7 => 'purl',
+        8 => 'author',
       ),
     ),
     'fields' => array(
@@ -1814,7 +1859,6 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_record_status_tax' => 'left',
       'field_editorial_notes' => 'left',
       'field_textfield' => 'right',
-      'critical_writing_about_publisher_entity_view_1' => 'right',
       'critical_writing_on_publisher_entity_view_1' => 'right',
       'critical_writing_on_referenced_publisher_entity_view_1' => 'right',
       'Work_publisher_entity_view_1' => 'right',
