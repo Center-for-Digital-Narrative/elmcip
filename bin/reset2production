@@ -15,6 +15,7 @@ drush --version || exit $?
 git checkout master
 git pull --rebase --quiet || exit $?
 git checkout production --quiet || exit $?
+git submodule update
 
 # Sync files and grab the nightly backup of the production database.
 if [ -z "$1" ]
