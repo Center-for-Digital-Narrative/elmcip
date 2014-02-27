@@ -40,3 +40,12 @@ body {
 
 .region-footer {
 }
+
+.group-left,
+.kb .panels-flexible-region {
+  background-color: #e2e2d2;
+}
+
+.kb .panels-flexible-region-first {
+  background-color: #bebdae;
+}

@@ -68,3 +68,7 @@ h2.node-title /* Node title */ {
 
 .node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
 }
+
+.group-left {
+  font-size: 0.9em;
+}
