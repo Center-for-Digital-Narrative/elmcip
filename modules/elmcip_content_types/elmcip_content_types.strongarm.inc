@@ -1255,6 +1255,12 @@ function elmcip_content_types_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'teaser_abbreviated' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -1271,17 +1277,29 @@ function elmcip_content_types_strongarm() {
             'weight' => '18',
             'visible' => TRUE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'teaching_resource_db_archive_entity_view_1' => array(
           'full' => array(
             'weight' => '17',
             'visible' => TRUE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'critical_writing_db_archive_entity_view_1' => array(
           'full' => array(
             'weight' => '16',
             'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
       ),

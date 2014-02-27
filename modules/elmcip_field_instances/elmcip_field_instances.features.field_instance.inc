@@ -5498,9 +5498,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 29,
       ),
       'full' => array(
@@ -5837,9 +5836,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 28,
       ),
       'full' => array(
