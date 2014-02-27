@@ -110,7 +110,8 @@ h2.node-title, /* Title of a piece of content when it is given in a list of cont
 h2.block-title, /* Block title */
 h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
-h3.title /* Comment title */ {
+h3.title, /* Comment title */
+h4.title {
   margin: 0;
 }
 
