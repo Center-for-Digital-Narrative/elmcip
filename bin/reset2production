@@ -17,6 +17,7 @@ git pull --rebase --quiet || exit $?
 git submodule update
 
 git checkout production --quiet || exit $?
+git pull --rebase --quiet || exit $?
 git submodule update
 
 # Sync files and grab the nightly backup of the production database.
