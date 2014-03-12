@@ -11,10 +11,13 @@ HOMEDIR=${PWD}
 drush --version || exit $?
 
 # Checkout master branch and get latest and greates code, then checkout
-# the production tag.
+# the production branch and submodule.
 git checkout master
 git pull --rebase --quiet || exit $?
+git submodule update
+
 git checkout production --quiet || exit $?
+git pull --rebase --quiet || exit $?
 git submodule update
 
 # Sync files and grab the nightly backup of the production database.
