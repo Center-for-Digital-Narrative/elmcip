@@ -513,10 +513,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => 'Anothology1',
+      'admin_title' => 'Anthology image',
       'title' => '',
-      'body' => '<img src="http://elmcip.net/sites/default/files/anthology_image.png" width="340px">',
-      'format' => '3',
+      'body' => '<img src="/sites/default/files/logos/anthology_image.png" alt="Anthology image" width="340px" />',
+      'format' => 'ds_code',
       'substitute' => TRUE,
     );
     $pane->cache = array();
