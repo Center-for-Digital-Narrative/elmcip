@@ -758,6 +758,7 @@ function elmcip_field_instances_field_group_info() {
       3 => 'field_electronic_literature_dire',
       4 => 'field_i_e_poetry_entry',
       5 => 'field_nt2_entry',
+      6 => 'field_po_ex_entry',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

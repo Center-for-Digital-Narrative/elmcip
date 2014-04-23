@@ -14776,7 +14776,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 45,
+        'weight' => 46,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -14835,7 +14835,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 47,
+        'weight' => 48,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -14942,7 +14942,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 48,
+        'weight' => 49,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15379,7 +15379,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15766,7 +15766,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16271,7 +16271,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'file_view_mode' => 'media_large',
         ),
         'type' => 'media',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -16401,7 +16401,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'colorbox_node_style' => 'large',
         ),
         'type' => 'colorbox',
-        'weight' => 33,
+        'weight' => 34,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17026,7 +17026,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 46,
+        'weight' => 47,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17109,7 +17109,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'node_reference',
         'settings' => array(),
         'type' => 'node_reference_default',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -17211,7 +17211,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'node_reference',
         'settings' => array(),
         'type' => 'node_reference_default',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17294,7 +17294,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'node_reference',
         'settings' => array(),
         'type' => 'node_reference_default',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -17396,7 +17396,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17574,7 +17574,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'reference' => array(
         'label' => 'hidden',
