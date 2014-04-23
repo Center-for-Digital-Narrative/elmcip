@@ -752,7 +752,7 @@ function elmcip_layout_ds_field_settings_info() {
       'format' => 'default',
     ),
     'purl' => array(
-      'weight' => '36',
+      'weight' => '37',
       'label' => 'inline',
       'format' => 'default',
       'ft' => array(
@@ -760,7 +760,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '37',
+      'weight' => '38',
       'label' => 'inline',
       'format' => 'author_linked',
       'ft' => array(
@@ -816,6 +816,11 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'field_nt2_entry' => array(
+      'ft' => array(
+        'lb' => 'See also',
+      ),
+    ),
+    'field_po_ex_entry' => array(
       'ft' => array(
         'lb' => 'See also',
       ),
@@ -2119,20 +2124,21 @@ function elmcip_layout_ds_layout_settings_info() {
         3 => 'field_electronic_literature_dire',
         4 => 'field_i_e_poetry_entry',
         5 => 'field_nt2_entry',
-        6 => 'field_other_lang_ver_link',
-        7 => 'field_part_of_another_work',
-        8 => 'field_other_edition_work',
-        9 => 'field_pullquote',
-        10 => 'field_contributors',
-        11 => 'field_tech_notes',
-        12 => 'Critical_writing_work_entity_view_1',
-        13 => 'Tr_work_entity_view_1',
-        14 => 'clone_of_research_collection_creative_work_entity_view_1',
-        15 => 'field_multi_image',
-        16 => 'field_media_asset',
-        17 => 'field_files',
-        18 => 'purl',
-        19 => 'author',
+        6 => 'field_po_ex_entry',
+        7 => 'field_other_lang_ver_link',
+        8 => 'field_part_of_another_work',
+        9 => 'field_other_edition_work',
+        10 => 'field_pullquote',
+        11 => 'field_contributors',
+        12 => 'field_tech_notes',
+        13 => 'Critical_writing_work_entity_view_1',
+        14 => 'Tr_work_entity_view_1',
+        15 => 'clone_of_research_collection_creative_work_entity_view_1',
+        16 => 'field_multi_image',
+        17 => 'field_media_asset',
+        18 => 'field_files',
+        19 => 'purl',
+        20 => 'author',
       ),
     ),
     'fields' => array(
@@ -2160,6 +2166,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_electronic_literature_dire' => 'right',
       'field_i_e_poetry_entry' => 'right',
       'field_nt2_entry' => 'right',
+      'field_po_ex_entry' => 'right',
       'field_other_lang_ver_link' => 'right',
       'field_part_of_another_work' => 'right',
       'field_other_edition_work' => 'right',
