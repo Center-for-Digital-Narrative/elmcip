@@ -503,6 +503,7 @@ function elmcip_field_instances_field_group_info() {
       7 => 'field_electronic_literature_dire',
       8 => 'field_organization_cw',
       9 => 'field_publisher_referenced',
+      10 => 'field_po_ex_entry',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
