@@ -436,10 +436,9 @@ function elmcip_field_instances_field_group_info() {
       0 => 'taxonomy_vocabulary_1',
       1 => 'field_abstract',
       2 => 'field_abstract_lang',
-      3 => 'field_orig_lang',
-      4 => 'field_other_lang_ver_link',
-      5 => 'field_pullquote',
-      6 => 'field_abstract_lang_tax',
+      3 => 'field_other_lang_ver_link',
+      4 => 'field_pullquote',
+      5 => 'field_abstract_lang_tax',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

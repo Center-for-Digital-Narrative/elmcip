@@ -2137,8 +2137,8 @@ function elmcip_field_instances_field_default_field_instances() {
     'settings' => array(
       'description_field' => 1,
       'file_directory' => 'files/attachments/criticalwriting',
-      'file_extensions' => 'txt pdf ppt mp3 html htm rtf pptx zip',
-      'max_filesize' => '',
+      'file_extensions' => 'txt pdf ppt mp3 html htm rtf pptx zip epub',
+      'max_filesize' => '500  MB',
       'user_register_form' => FALSE,
     ),
     'weight' => 46,
@@ -2146,13 +2146,6 @@ function elmcip_field_instances_field_default_field_instances() {
       'active' => 1,
       'module' => 'file',
       'settings' => array(
-        'allowed_schemes' => array(
-          0 => 'public',
-          1 => 'private',
-        ),
-        'allowed_types' => array(
-          0 => 'image',
-        ),
         'progress_indicator' => 'bar',
       ),
       'type' => 'file_generic',
