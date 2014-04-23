@@ -11,6 +11,7 @@ This document describe how to get a local copy of the ELMCIP up and running on y
 * Git installed and configured.
 * Drush installed (https://github.com/drush-ops/drush).
 * A working ssh connection to Norstore application and database server. Auth should not be password based but by using your private/public SHA -key.
+* You must be in your local elmcip directory (e.g. websites/sites/elmcip)
 
 ## Installation
 
