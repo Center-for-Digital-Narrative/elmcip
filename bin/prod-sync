@@ -5,21 +5,30 @@ set -x
 SITE=elmcip01.norstore.uio.no
 DB_SITE=elmcip02.norstore.uio.no
 DRUPAL=drupal
-URI=elmcip.dev
+URI=test.elmcip.net
 HOMEDIR=${PWD}
 
 drush --version || exit $?
 
 # Sync images and grab nightly backup of production database.
-    rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_production.txt" /applications/elmcip.net/drupal/sites/default/files drupal/sites/default
-    rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
+
+##    rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_production.txt" /applications/elmcip.net/drupal/sites/default/files drupal/sites/default
+
+# Get latest database backup.
+rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/
 
 cd $DRUPAL
 
+if [ -z "$1" ]; then
+  exit;
+else
+  URI=$1
+fi
+
 # Drop all data and populate database with latest backup.
-#drush --uri=$URI sql-drop --yes
-#gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
+drush --uri=$URI sql-drop --yes
+gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
 
 # Flush all drupal caches.
-drush cc all -v
-drush status
+## drush cc all -v
+## drush status
