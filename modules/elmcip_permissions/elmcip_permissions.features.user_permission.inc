@@ -618,6 +618,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
