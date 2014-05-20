@@ -241,22 +241,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'ds',
   );
 
-  // Exported permission: 'admin_fields'.
-  $permissions['admin_fields'] = array(
-    'name' => 'admin_fields',
-    'roles' => array(),
-    'module' => 'ds',
-  );
-
-  // Exported permission: 'admin_view_modes'.
-  $permissions['admin_view_modes'] = array(
-    'name' => 'admin_view_modes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'ds',
-  );
-
   // Exported permission: 'administer RDF field mappings'.
   $permissions['administer RDF field mappings'] = array(
     'name' => 'administer RDF field mappings',

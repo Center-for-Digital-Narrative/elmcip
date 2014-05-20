@@ -72,29 +72,37 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '48',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The permanent URL of this page',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '49',
       'label' => 'inline',
       'format' => 'author',
-      'ft' => array(
-        'lb' => 'Record posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
       ),
     ),
     'taxonomy_vocabulary_1' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'fis' => TRUE,
-        'fis-el' => 'div',
-        'fis-cl' => 'field-tags-inline',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'field-tags-inline',
+        ),
       ),
     ),
     'field_worldcat_link' => array(
-      'ft' => array(
-        'lb' => 'WorldCat',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'WorldCat',
+        ),
       ),
     ),
   );
@@ -177,29 +185,37 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '22',
       'label' => 'above',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'Permanent URL of this page',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Permanent URL of this page',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '23',
       'label' => 'inline',
       'format' => 'author_linked',
-      'ft' => array(
-        'lb' => 'Record posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
       ),
     ),
     'field_db_tags' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'fis' => TRUE,
-        'fis-el' => 'div',
-        'fis-cl' => 'field-tags-inline',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'field-tags-inline',
+        ),
       ),
     ),
     'field_db_cross_event' => array(
-      'ft' => array(
-        'lb' => 'Exhibited at',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Exhibited at',
+        ),
       ),
     ),
   );
@@ -247,24 +263,30 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '22',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The permanent URL of this page',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '23',
       'label' => 'inline',
       'format' => 'author',
-      'ft' => array(
-        'lb' => 'Record posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
       ),
     ),
     'taxonomy_vocabulary_1' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'fis' => TRUE,
-        'fis-el' => 'div',
-        'fis-cl' => 'field-tags-inline',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'field-tags-inline',
+        ),
       ),
     ),
   );
@@ -357,16 +379,20 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '15',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The permanent URL of this page:',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page:',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '16',
       'label' => 'inline',
       'format' => 'author',
-      'ft' => array(
-        'lb' => 'Record posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
       ),
     ),
   );
@@ -424,22 +450,27 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '27',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The permanent URL of this page',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '28',
       'label' => 'inline',
       'format' => 'author',
-      'ft' => array(
-        'lb' => 'Record posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
       ),
     ),
     'field_alternative_spelling_of_na' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'lb' => 'Name (original lang)',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Name (original lang)',
+        ),
       ),
     ),
   );
@@ -486,8 +517,10 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '18',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The Permanent URL of this record',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The Permanent URL of this record',
+        ),
       ),
     ),
     'title' => array(
@@ -540,34 +573,44 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '17',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The permanent URL of this page',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '18',
       'label' => 'inline',
       'format' => 'author',
-      'ft' => array(
-        'lb' => 'Record posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
       ),
     ),
     'field_events' => array(
-      'ft' => array(
-        'lb' => 'Events presented at',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Events presented at',
+        ),
       ),
     ),
     'Work_publisher_entity_view_1' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_reset',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_reset',
+        ),
       ),
     ),
     'critical_writing_on_publisher_entity_view_1' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'ow' => TRUE,
-        'ow-el' => 'div',
-        'ow-cl' => '',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+        ),
       ),
     ),
   );
@@ -620,16 +663,20 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '13',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The permanent URL of this page',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '14',
       'label' => 'inline',
       'format' => 'author',
-      'ft' => array(
-        'lb' => 'Posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Posted by',
+        ),
       ),
     ),
     'post_date' => array(
@@ -678,8 +725,10 @@ function elmcip_layout_ds_field_settings_info() {
       'format' => 'author',
     ),
     'taxonomy_vocabulary_4' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_reset',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_reset',
+        ),
       ),
     ),
   );
@@ -696,40 +745,51 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'fi' => TRUE,
-        'fi-el' => 'h4',
-        'fi-cl' => 'title',
+      'formatter_settings' => array(
+        'ft' => array(
+          'styles' => 'all_caps_left_group',
+          'func' => 'theme_ds_field_expert',
+          'fi' => TRUE,
+          'fi-el' => 'h4',
+          'fi-cl' => 'title',
+        ),
       ),
     ),
     'purl' => array(
       'weight' => '19',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The permanent URL of this page',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '20',
       'label' => 'inline',
       'format' => 'author',
-      'ft' => array(
-        'lb' => 'Record posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
       ),
     ),
     'taxonomy_vocabulary_1' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'fis' => TRUE,
-        'fis-el' => 'div',
-        'fis-cl' => 'field-tags-inline',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'field-tags-inline',
+        ),
       ),
     ),
     'field_url' => array(
-      'ft' => array(
-        'lb' => 'Web',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Web',
+        ),
       ),
     ),
   );
@@ -807,74 +867,100 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '37',
       'label' => 'inline',
       'format' => 'default',
-      'ft' => array(
-        'lb' => 'The permanent URL of this page ',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page ',
+        ),
       ),
     ),
     'author' => array(
       'weight' => '38',
       'label' => 'inline',
       'format' => 'author_linked',
-      'ft' => array(
-        'lb' => 'Record posted by',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
       ),
     ),
     'taxonomy_vocabulary_1' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'fis' => TRUE,
-        'fis-el' => 'div',
-        'fis-cl' => 'field-tags-inline',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'field-tags-inline',
+        ),
       ),
     ),
     'field_url' => array(
-      'ft' => array(
-        'lb' => 'Web URL',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Web URL',
+        ),
       ),
     ),
     'field_node_ref_event' => array(
-      'ft' => array(
-        'lb' => 'Exhibited at',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Exhibited at',
+        ),
       ),
     ),
     'field_downloadurl' => array(
-      'ft' => array(
-        'lb' => 'Download URL',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Download URL',
+        ),
       ),
     ),
     'field_files' => array(
-      'ft' => array(
-        'lb' => 'Attachments',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Attachments',
+        ),
       ),
     ),
     'field_media_asset' => array(
-      'ft' => array(
-        'func' => 'theme_ds_field_reset',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_reset',
+        ),
       ),
     ),
     'field_worldcat_link' => array(
-      'ft' => array(
-        'lb' => 'WorldCat',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'WorldCat',
+        ),
       ),
     ),
     'field_electronic_literature_dire' => array(
-      'ft' => array(
-        'lb' => 'See also',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'See also',
+        ),
       ),
     ),
     'field_i_e_poetry_entry' => array(
-      'ft' => array(
-        'lb' => 'See also',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'See also',
+        ),
       ),
     ),
     'field_nt2_entry' => array(
-      'ft' => array(
-        'lb' => 'See also',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'See also',
+        ),
       ),
     ),
     'field_po_ex_entry' => array(
-      'ft' => array(
-        'lb' => 'See also',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'See also',
+        ),
       ),
     ),
   );
@@ -937,6 +1023,7 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->entities = array(
     'node' => 'node',
   );
+  $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
       'value' => '<p>[node:field_author_name], <em>[node:title]</em> ([node:field_node_ref],[node:field-number]), [node:field_url].</p>',
@@ -954,6 +1041,7 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->entities = array(
     'node' => 'node',
   );
+  $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
       'value' => '[node:content-type]',
@@ -971,6 +1059,7 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->entities = array(
     'node' => 'node',
   );
+  $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
       'value' => '[node:field_first_name] [node:field_middle_name] [node:field_last_name]',
@@ -988,6 +1077,7 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->entities = array(
     'node' => 'node',
   );
+  $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
       'value' => '[current-page:url:unaliased]',
