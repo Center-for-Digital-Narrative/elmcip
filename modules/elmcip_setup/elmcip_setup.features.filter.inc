@@ -179,13 +179,7 @@ function elmcip_setup_filter_default_formats() {
     'cache' => 0,
     'status' => 1,
     'weight' => -6,
-    'filters' => array(
-      'ds_code' => array(
-        'weight' => 0,
-        'status' => 1,
-        'settings' => array(),
-      ),
-    ),
+    'filters' => array(),
   );
 
   return $formats;
