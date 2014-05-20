@@ -67,10 +67,10 @@ Logs into to dev site as user 1 (site administrator).
 Before you do any changes and try to commit them, make sure your system is clean and up to date. Make sure you create a issue on github https://github.com/elmcip/elmcip account or find a already reported issue number that describe the scope of the work.
 
     bin/reset2production <NORSTORE USERNAME>
-Replace your current installation with a fresh copy of elmcip.net.
+Replace your current installation with a fresh copy of elmcip.net (files and database).
 
     bin/site-upgrade
-Upgrade your new copy to the latest in the git master branch and run any needed updates.
+Upgrade your new copy to the latest code found in the git master branch and run any needed updates.
 
     git checkout -b issue_number
 This create your own branch from master you can safely work on. Do your changes and add them to git. These changes need to pushed to github before test.elmcip.net or other developers can test them.
