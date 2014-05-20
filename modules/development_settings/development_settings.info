@@ -4,6 +4,7 @@ core = 7.x
 package = ELMCIP
 dependencies[] = dblog
 dependencies[] = devel
+dependencies[] = ds_ui
 dependencies[] = features
 dependencies[] = field_ui
 dependencies[] = strongarm
