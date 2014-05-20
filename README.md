@@ -39,16 +39,18 @@ The very first time you run this will it transferee about 600MB. After this init
 
 ## Usage
 
-### How to update to latest version of Drupal core, config and 3-part modules
+### Grab a copy of production and apply lates updates.
 
-Automagically update your local installation.
+This will automagically update your local installation.
 
     bin/reset2production <NORSTORE USERNAME>
-    bin/site-upgrade
+    bin/site-upgrade <git branch name>
 
-* This will check out master branch.
-* Check out the latest code from git 'elmcip` and the submodule named 'drupal'.* Revert all feature modules. 
-* Run any pending update tasks.
+* Grab copy of the database and any pictures added since last time reset2production was run.
+* Move to master branch or your optional branch and pull in any new commits and update the drupal submodule.
+* Run any pending update tasks to update database 
+
+Omit to run 'bin/site-upgrade' if you wish to have an exact copy of production.
 
 ### Log in as user 1 (site admin) without password
 
@@ -60,12 +62,20 @@ Logs into to dev site as user 1 (site administrator).
 
     bin/site-drush en development_settings
 
-## Contribute
+## Contribute changes, fixes and improvements back to ELMCIP.
 
-Always make sure you are using the latest version of elmcip and any custom modules before doing any changes to modules and theme.
+Before you do any changes and try to commit them, make sure your system is clean and up to date. Make sure you create a issue on github https://github.com/elmcip/elmcip account or find a already reported issue number that describe the scope of the work.
 
-    git pull --rebase
-    git submodule update
+    bin/reset2production <NORSTORE USERNAME>
+Replace your current installation with a fresh copy of elmcip.net.
+
+    bin/site-upgrade
+Upgrade your new copy to the latest in the git master branch and run any needed updates.
+
+    git checkout -b issue_number
+This create your own branch from master you can safely work on. Do your changes and add them to git. These changes need to pushed to github before test.elmcip.net or other developers can test them.
+
+If the issue then is confirmed working and can be safely applied to production will the code make it into the master branch. Snapshots of the master branch is what in the end makes the production branch.
 
 ### Using Feature module with drush
 
