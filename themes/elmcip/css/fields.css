@@ -23,6 +23,11 @@
 .field-type-image {
 }
 
+.field img {
+  max-width: 100%;
+  height: auto;
+}
+
 .field-type-file {
 }
 
