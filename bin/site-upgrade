@@ -13,10 +13,11 @@ drush --version || exit $?
 # Pull latest code the master branch and selected branch before running upgrades.
 if [ -z "$1" ]; then
   git checkout master
+  git pull --rebase
 else
   git checkout $1
 fi
-git pull --quiet || exit $?
+
 git submodule update --quiet || exit $?
 
 # Flush all drupal caches and revert all feature modules
