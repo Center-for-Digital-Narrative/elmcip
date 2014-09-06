@@ -76,7 +76,7 @@ body {
 
 #header .block {
   float: left;
-  width: 50%;
+  width: 33.333%;
 }
 
 #header .region-header-bottom .block {
@@ -95,16 +95,21 @@ body {
   margin: 0;
 }
 
-#header a {
+#header a,
+#header .block.first.last a {
   float: left;
   margin: 0.714em 1.5em 0.714em 0;
 }
 
-#header .even a {
+#header .even a,
+#header .block.last a {
   float: right;
   margin: 0.714em 0 0.714em 1.5em;
 }
 
+#header .social a {
+  margin: 5px 0 0 20px;
+}
 /*
  * Main (container for everything else)
  */

@@ -18,3 +18,42 @@ function elmcip_setup_update_7001() {
     views_data_export_garbage_collect(0, -1);
   }
 }
+
+/**
+ * Implements hook_block_info().
+ */
+function elmcip_setup_block_info() {
+  return array('sosical_networks' => array(
+    'info' => t('Social networks assosiated with ELMCIP.'),
+    'cache' => 'DRUPAL_CACHE_GLOBAL',
+    'weight' => 0,
+    'status' => 1,
+    'region' => 'header_top',
+    'theme' => 'elmcip',
+  ));
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function elmcip_setup_block_view($delta = '') {
+  switch ($delta) {
+    case 'sosical_networks':
+      $content =  array(
+        '#type' => 'markup',
+        '#markup' => '
+        <ul class="menu social">
+          <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+        </ul>',
+      );
+      $block = array(
+        'content' => render($content),
+      );
+      return $block;
+
+    default:
+      break;
+  }
+}

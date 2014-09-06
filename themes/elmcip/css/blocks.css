@@ -60,6 +60,10 @@ h2.block-title /* Block title */ {
   font-size: 1.142em;
 }
 
+#header .social a {
+  font-size: 34px;
+}
+
 #header a:hover {
   color: #d30008;
 }
