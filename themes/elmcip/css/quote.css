@@ -1,0 +1,72 @@
+.pullquote {
+  padding: 2.6rem 2.2rem 2rem 3.6rem;
+  width: 20rem;
+  position: relative;
+  margin: 0 2rem 2rem 0;
+  float: left;
+  font-family: Questrial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  color: #555;
+  text-transform: uppercase;
+  background: #eee;
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px #2F2F2F
+}
+
+.pullquote br {
+  display: none;
+}
+
+.pullquote:before, .pullquote:after {
+  content: "“";
+  font-family: Georgia;
+  font-size: 400%;
+  position: absolute;
+  color: #ccc;
+}
+
+.pullquote:before {
+  top: .25rem;
+  left: .5rem;
+}
+
+.pullquote:after {
+  content: "”";
+  bottom: -3rem;
+  right: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .pullquote {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .pullquote br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pullquote br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pullquote:before,
+  .pullquote:after {
+    font-size: 200%;
+  }
+
+  .pullquote {
+    font-size: 1.4rem;
+    padding: 1.6rem 1.2rem 1rem 2rem;
+  }
+  .pullquote:after {
+    bottom: 0;
+  }
+}

@@ -62,13 +62,6 @@ function elmcip_field_instances_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'media_vimeo__color';
-  $strongarm->value = '#01AAEA';
-  $export['media_vimeo__color'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'media_vimeo__color_override';
   $strongarm->value = 0;
   $export['media_vimeo__color_override'] = $strongarm;
