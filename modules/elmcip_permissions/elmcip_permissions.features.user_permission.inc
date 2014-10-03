@@ -291,7 +291,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'contributor' => 'contributor',
       'editor' => 'editor',
       'supereditor' => 'supereditor',
     ),
@@ -637,6 +636,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['assign contributor role'] = array(
     'name' => 'assign contributor role',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'role_delegation',
@@ -646,6 +646,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['assign editor role'] = array(
     'name' => 'assign editor role',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'role_delegation',
@@ -655,6 +656,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['assign submitter role'] = array(
     'name' => 'assign submitter role',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'role_delegation',
@@ -664,6 +666,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['assign supereditor role'] = array(
     'name' => 'assign supereditor role',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'role_delegation',
@@ -673,6 +676,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['assign teacher role'] = array(
     'name' => 'assign teacher role',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'role_delegation',
