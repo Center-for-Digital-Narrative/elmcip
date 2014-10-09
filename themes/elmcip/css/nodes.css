@@ -70,9 +70,10 @@ h2.node-title /* Node title */ {
 }
 
 .group-left {
-  font-size: 0.928em;
+  font-size: 0.929em;
 }
 
 .group-left .title {
+  font-weight: bold;
   text-transform: uppercase;
 }
