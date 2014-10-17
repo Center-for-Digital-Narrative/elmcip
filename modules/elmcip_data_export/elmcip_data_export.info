@@ -68,6 +68,7 @@ features[views_view][] = db_archives_page
 features[views_view][] = edited_by_person
 features[views_view][] = elmcip_anthology_selections
 features[views_view][] = elmcip_anthology_submissions
+features[views_view][] = elmcip_taxonomy_term
 features[views_view][] = eva_research_collection
 features[views_view][] = event_nid_data
 features[views_view][] = event_page
