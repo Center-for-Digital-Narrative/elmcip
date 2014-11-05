@@ -43,14 +43,16 @@ function import_content() {
 
             case 'file':
               if (!file_load($entity['fid'])) {
+                $fid = $entity['fid'];
                 unset($entity['fid']);
-                $file = entity_create($content, $entity);
-                $file = entity_save($content, $user);
-                if ($file->fid) {
-                  print "Imported from $file and create file entity $file->fid \n";
+                $entity = (object) $entity;
+                $new_file = file_save($entity);
+
+                if ($new_file->fid) {
+                  $fids[$fid] = $new_file->fid;
+                  print "Imported from $file and create $content $new_file->fid \n";
                 }
               }
-
               break;
 
             default:
