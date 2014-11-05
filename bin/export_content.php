@@ -1,6 +1,7 @@
 <?php
 
 define('EXPORT_DIR', '../export/');
+define('EXPIRE_DATE', '1413334800');
 
 function get_changes($type = 'node') {
   print "Searching for new or alterted entities of type: $type\n";
@@ -23,45 +24,6 @@ function get_changes($type = 'node') {
   return array();
 }
 
-function get_values($nids) {
-  // $types = array();
-  foreach ($nids as $nid) {
-    $node = entity_metadata_wrapper('node', $nid);
-      print "Bundle: " . $node->getBundle() . "\n";
-      print "tile: " . $node->label() . "\n";
-      print "User: " . $node->getIdentifier() . "\n";
-      $instances = field_info_instances('node', $node->getBundle());
-      $fields = array_keys($instances);
-      foreach ($fields as $field) {
-        print "Field: " . $field . "\n";
-
-        switch ($field) {
-          case 'field_textfield':
-            // print $node->$field->value->value(array('decode' => TRUE)) . "\n";
-            break;
-
-          case 'field_residency':
-            // Do nothing, until we know how to work with location module.
-            break;
-
-          case 'field_location':
-            // Do nothing, until we know how to work with location module.
-            break;
-
-          case 'field_nationality':
-            // Do nothing, until we know how to work with location module.
-            break;
-
-          default:
-            print_r($node->$field->value()) . "\n";
-            break;
-        }
-
-      }
-    // }
-  }
-}
-
 function get_nodes($nids) {
   if (!$nids) {
     return;
@@ -70,15 +32,12 @@ function get_nodes($nids) {
   foreach ($nids as $nid) {
     $node = node_load($nid);
     unset($node->rdf_mapping);
-    unset($node->created);
-    unset($node->changed);
     unset($node->tnid);
     unset($node->translate);
     unset($node->revision_timestamp);
     unset($node->revision_uid);
     unset($node->ds_switch);
     unset($node->log);
-    unset($node->vid);
     unset($node->cid);
     unset($node->last_comment_timestamp);
     unset($node->last_comment_name);
@@ -91,9 +50,11 @@ function get_nodes($nids) {
     $nodes = array($node->type => $node);
     $node->revision = FALSE;
 
-    if (!node_load($node->nid)) {
+    if ($node->created > EXPIRE_DATE) {
+      // Considerd a node new.
       $node->is_new = TRUE;
     }
+
     $file_name = EXPORT_DIR . $node->type . '_' . $node->nid . '_.txt';
     print "Node " . $node->nid . " exported to $file_name\n";
     $node = serialize(get_object_vars($node));
@@ -142,73 +103,13 @@ foreach ($entity_types as $entity_type) {
       break;
 
     default:
-      $nids = get_changes($entity_type);
-      if ($nids) {
-        get_nodes($nids);
+      $result = db_query("SELECT nid FROM {node} WHERE `changed` > 1413334800");
+      if ($result) {
+        while ($row = $result->fetchAssoc()) {
+          $nids[] = $row['nid'];
+        }
       }
+      get_nodes($nids);
       break;
   }
 }
-
-/**
- * Import content from separate files.
- * @return [type] [description]
- */
-function import_content() {
-  // Create content.
-  $contents = array(
-    'user',
-    'file',
-    'person',
-    'event',
-    'organization',
-    'teaching_resource',
-    'work',
-    'critical_writing',
-    'research_collection',
-  );
-  $files = scandir(EXPORT_DIR);
-  foreach ($contents as $key => $content) {
-    foreach ($files as $file) {
-      $result = strstr($file, $content . '_');
-      if ($result) {
-        $entity = file_get_contents(EXPORT_DIR . $file);
-          if ($entity) {
-            $entity = unserialize($entity);
-          switch ($content) {
-            case 'user':
-              $user = entity_create($content, $entity);
-              $user = entity_save($content, $user);
-              break;
-
-            case 'file':
-              if (!file_load($entity['fid'])) {
-                unset($entity['fid']);
-                $file = entity_create($content, $entity);
-                $file = entity_save($content, $user);
-                if ($file->fid) {
-                  print "Imported from $file and create file entity $file->fid \n";
-                }
-              }
-
-              break;
-
-            default:
-              if (!node_load($entity['nid'])) {
-                unset($entity['nid']);
-                $entity = entity_create('node', $entity);
-                entity_save('node', $entity);
-                if ($entity->nid) {
-                  print "Saved node $entity->nid\n";
-                }
-              }
-              break;
-          }
-        }
-      }
-    }
-  }
-
-}
-
-import_content();
