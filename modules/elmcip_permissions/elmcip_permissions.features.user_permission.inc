@@ -59,7 +59,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
     ),
     'module' => 'node',
   );
