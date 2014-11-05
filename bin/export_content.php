@@ -1,28 +1,14 @@
 <?php
 
+/**
+ * @file
+ * Export all entity type altered after a defined expire date.
+ */
+
 define('EXPORT_DIR', '../export/');
 define('EXPIRE_DATE', '1413334800');
-
-function get_changes($type = 'node') {
-  print "Searching for new or alterted entities of type: $type\n";
-  $query = new EntityFieldQuery();
-  $query->entityCondition('entity_type', $type)
-    ->addMetaData('account', user_load(1))
-    ->propertyCondition('changed', array(
-        mktime(0, 0, 0, 10, 15, date('Y')),
-        mktime(0, 0, 0, date('n'), date('j'), date('Y'))
-      ),
-    'BETWEEN');
-
-  $result = $query->execute();
-
-  if (isset($result['node'])) {
-    $nids = array_keys($result['node']);
-    return $nids;
-  }
-
-  return array();
-}
+mkdir(EXPORT_DIR);
+$entity_types = array('node', 'file', 'user');
 
 function get_nodes($nids) {
   if (!$nids) {
@@ -62,8 +48,6 @@ function get_nodes($nids) {
   }
 }
 
-$entity_types = array('node', 'file', 'user');
-mkdir(EXPORT_DIR);
 foreach ($entity_types as $entity_type) {
   switch ($entity_type) {
     case 'user':
@@ -88,7 +72,7 @@ foreach ($entity_types as $entity_type) {
       break;
 
     case 'file':
-      $result = db_query("SELECT fid FROM {file_managed} WHERE `timestamp` > 1413334800");
+      $result = db_query("SELECT fid FROM {file_managed} WHERE `timestamp` > EXPIRE_DATE");
       if ($result) {
         while ($row = $result->fetchAssoc()) {
           $files = entity_load($entity_type, array($row['fid']));
@@ -103,7 +87,7 @@ foreach ($entity_types as $entity_type) {
       break;
 
     default:
-      $result = db_query("SELECT nid FROM {node} WHERE `changed` > 1413334800");
+      $result = db_query("SELECT nid FROM {node} WHERE `changed` > EXPIRE_DATE");
       if ($result) {
         while ($row = $result->fetchAssoc()) {
           $nids[] = $row['nid'];
