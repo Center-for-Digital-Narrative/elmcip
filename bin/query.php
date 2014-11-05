@@ -94,10 +94,9 @@ function get_nodes($nids) {
     if (!node_load($node->nid)) {
       $node->is_new = TRUE;
     }
-    $file_name = EXPORT_DIR . $node->type . '-' . $node->nid . '.txt';
-    print "Node " . $node->nid . " saved.\n";
-    unset($node->nid);
-    $node = get_object_vars($node);
+    $file_name = EXPORT_DIR . $node->type . '_' . $node->nid . '_.txt';
+    print "Node " . $node->nid . " exported to $file_name\n";
+    $node = serialize(get_object_vars($node));
     file_put_contents($file_name, print_r($node, TRUE));
   }
 }
@@ -107,19 +106,23 @@ mkdir(EXPORT_DIR);
 foreach ($entity_types as $entity_type) {
   switch ($entity_type) {
     case 'user':
+      $user = FALSE;
       $users = array(40796);
-      foreach ($users as $user) {
-        $user = user_load($user, TRUE);
-        $file_name = EXPORT_DIR . 'user-' . $user->uid . '.txt';
-        unset($user->rdf_mapping);
-        unset($user->created);
-        unset($user->access);
-        unset($user->login);
-        unset($user->uid);
-        unset($user->init);
-        unset($user->data);
-        $user = get_object_vars($user);
-        file_put_contents($file_name, print_r($user, TRUE));
+      foreach ($users as $uid) {
+        $user = user_load($uid, TRUE);
+        if ($user) {
+          $file_name = EXPORT_DIR . $entity_type . '_' . $user->uid . '_.txt';
+          unset($user->rdf_mapping);
+          unset($user->created);
+          unset($user->access);
+          unset($user->login);
+          unset($user->uid);
+          unset($user->init);
+          unset($user->data);
+          print "User " . $user->uid . " exported to $file_name \n";
+          $user = serialize(get_object_vars($user));
+          file_put_contents($file_name, print_r($user, TRUE));
+        }
       }
       break;
 
@@ -127,10 +130,11 @@ foreach ($entity_types as $entity_type) {
       $result = db_query("SELECT fid FROM {file_managed} WHERE `timestamp` > 1413334800");
       if ($result) {
         while ($row = $result->fetchAssoc()) {
-          $files = entity_load('file', array($row['fid']));
+          $files = entity_load($entity_type, array($row['fid']));
           foreach ($files as $file) {
-            $file_name = EXPORT_DIR . 'file-' . $file->fid . '.txt';
-            $file = get_object_vars($file);
+            $file_name = EXPORT_DIR . $entity_type . '_' . $file->fid . '_.txt';
+            print "File " . $file->fid . " exported to $file_name \n";
+            $file = serialize(get_object_vars($file));
             file_put_contents($file_name, print_r($file, TRUE));
           }
         }
@@ -166,37 +170,38 @@ function import_content() {
   $files = scandir(EXPORT_DIR);
   foreach ($contents as $key => $content) {
     foreach ($files as $file) {
-      $result = strstr($file, $content . '-');
+      $result = strstr($file, $content . '_');
       if ($result) {
-        $entity = file(EXPORT_DIR . $file);
+        $entity = file_get_contents(EXPORT_DIR . $file);
           if ($entity) {
+            $entity = unserialize($entity);
           switch ($content) {
             case 'user':
-              // var_dump($entity);
-              print_r($entity);
-
-              // print "DEBUG: $content \n";
-              // print_r($entity);
-              // foreach ($variable as $key => $value) {
-                # code...
-              // }
-              // var_dump($entity);
-              $user = entity_create($content, array());
-              // print_r($user);
-              // $user = entity_save($content, $user);
-              // print_r($user);
+              $user = entity_create($content, $entity);
+              $user = entity_save($content, $user);
               break;
 
-            case 'value':
-              # code...
-              break;
+            case 'file':
+              if (!file_load($entity['fid'])) {
+                unset($entity['fid']);
+                $file = entity_create($content, $entity);
+                $file = entity_save($content, $user);
+                if ($file->fid) {
+                  print "Imported from $file and create file entity $file->fid \n";
+                }
+              }
 
-            case 'value':
-              # code...
               break;
 
             default:
-              # code...
+              if (!node_load($entity['nid'])) {
+                unset($entity['nid']);
+                $entity = entity_create('node', $entity);
+                entity_save('node', $entity);
+                if ($entity->nid) {
+                  print "Saved node $entity->nid\n";
+                }
+              }
               break;
           }
         }
