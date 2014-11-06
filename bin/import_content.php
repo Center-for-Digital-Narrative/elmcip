@@ -28,17 +28,21 @@ function import_content() {
     'research_collection',
   );
   $files = scandir(EXPORT_DIR);
-  foreach ($contents as $key => $content) {
+  if (!$files) {
+    return;
+  }
+  foreach ($contents as $content) {
     foreach ($files as $file) {
       $result = strstr($file, $content . '_');
       if ($result) {
-        $entity = file_get_contents(EXPORT_DIR . $file);
-          if ($entity) {
-            $entity = unserialize($entity);
+        $entity = file_get_contents(EXPORT_DIR . $result);
+        if ($entity) {
+          $entity = unserialize($entity);
+
           switch ($content) {
             case 'user':
               $user = entity_create($content, $entity);
-              $user = entity_save($content, $user);
+              entity_save($content, $user);
               break;
 
             case 'file':
@@ -46,39 +50,46 @@ function import_content() {
                 $fid = $entity['fid'];
                 unset($entity['fid']);
                 $entity = (object) $entity;
-                $new_file = file_save($entity);
 
+                $new_file = file_save($entity);
                 if ($new_file->fid) {
                   $fids[$fid] = $new_file->fid;
-                  print "Imported from $file and create $content $new_file->fid \n";
+                  print "Imported $result, created: $content $new_file->fid \n";
                 }
+              }
+              else {
+                print "File: " . $entity['fid'] . " exists. Skipping\n";
               }
               break;
 
             default:
-              // Check to see if the node is new.
-              if ($entity['is_new']) {
-                $status = "Created new $content " . $entity['nid'];
-                unset($entity['nid']);
-                unset($entity['vid']);
-                $entity = entity_create('node', $entity);
+              $nid = $entity['nid'];
+              if (!node_load($nid)) {
+                // Check to see if the node is new.
+                if ($entity['is_new']) {
+                  unset($entity['nid']);
+                  unset($entity['vid']);
+                  $entity = entity_create('node', $entity);
+                  $status = "Imported file $file. Created $content " . $nid . " alterd to ";
+                }
+                else {
+                  $entity = node_load($entity['nid']);
+                  $status = "Updated $content $entity->nid from $file ";
+                }
+
+                entity_save('node', $entity);
+                if ($entity->nid) {
+                  print "$status $entity->nid \n";
+                }
               }
               else {
-                $entity = node_load($entity['nid']);
-                $status = "Updated $content $entity->nid";
-              }
-
-              // if (!node_load($entity['nid'])) {
-              //   // unset($entity['nid']);
-              //   $entity = entity_create('node', $entity);
-              // }
-              // print_r($entity);
-              entity_save('node', $entity);
-              if ($entity->nid) {
-                print "$status \n";
+                print "Node: $content " . $nid . " exists. Skipping\n";
               }
               break;
           }
+        }
+        else {
+          print "Aiai $entity was empty\n";
         }
       }
     }
