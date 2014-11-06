@@ -7,46 +7,11 @@
 
 define('EXPORT_DIR', '../export/');
 define('EXPIRE_DATE', '1413334800');
-mkdir(EXPORT_DIR);
-$entity_types = array('node', 'file', 'user');
 
-function get_nodes($nids) {
-  if (!$nids) {
-    return;
-  }
-  $nodes = array();
-  foreach ($nids as $nid) {
-    $node = node_load($nid);
-    unset($node->rdf_mapping);
-    unset($node->tnid);
-    unset($node->translate);
-    unset($node->revision_timestamp);
-    unset($node->revision_uid);
-    unset($node->ds_switch);
-    unset($node->log);
-    unset($node->cid);
-    unset($node->last_comment_timestamp);
-    unset($node->last_comment_name);
-    unset($node->last_comment_uid);
-    unset($node->comment_count);
-    unset($node->picture);
-    unset($node->data);
-
-    $node->auto_nodetitle_applied = TRUE;
-    $nodes = array($node->type => $node);
-    $node->revision = FALSE;
-
-    if ($node->created > EXPIRE_DATE) {
-      // Considerd a node new.
-      $node->is_new = TRUE;
-    }
-
-    $file_name = EXPORT_DIR . $node->type . '_' . $node->nid . '_.txt';
-    print "Node " . $node->nid . " exported to $file_name\n";
-    $node = serialize(get_object_vars($node));
-    file_put_contents($file_name, print_r($node, TRUE));
-  }
+if (!file_exists(EXPORT_DIR)) {
+  mkdir(EXPORT_DIR);
 }
+$entity_types = array('node', 'file', 'user');
 
 foreach ($entity_types as $entity_type) {
   switch ($entity_type) {
@@ -72,7 +37,7 @@ foreach ($entity_types as $entity_type) {
       break;
 
     case 'file':
-      $result = db_query("SELECT fid FROM {file_managed} WHERE `timestamp` > EXPIRE_DATE");
+      $result = db_query("SELECT fid FROM {file_managed} WHERE `timestamp` > " . EXPIRE_DATE);
       if ($result) {
         while ($row = $result->fetchAssoc()) {
           $files = entity_load($entity_type, array($row['fid']));
@@ -87,13 +52,48 @@ foreach ($entity_types as $entity_type) {
       break;
 
     default:
-      $result = db_query("SELECT nid FROM {node} WHERE `changed` > EXPIRE_DATE");
+      $result = db_query("SELECT nid FROM {node} WHERE `changed` > " . EXPIRE_DATE);
       if ($result) {
         while ($row = $result->fetchAssoc()) {
           $nids[] = $row['nid'];
         }
       }
-      get_nodes($nids);
+
+      if ($nids) {
+        $nodes = array();
+        foreach ($nids as $nid) {
+          $node = node_load($nid);
+          unset($node->rdf_mapping);
+          unset($node->tnid);
+          unset($node->translate);
+          unset($node->revision_timestamp);
+          unset($node->revision_uid);
+          unset($node->ds_switch);
+          unset($node->log);
+          unset($node->cid);
+          unset($node->last_comment_timestamp);
+          unset($node->last_comment_name);
+          unset($node->last_comment_uid);
+          unset($node->comment_count);
+          unset($node->picture);
+          unset($node->data);
+
+          $node->auto_nodetitle_applied = TRUE;
+          $nodes = array($node->type => $node);
+          $node->revision = FALSE;
+
+          if ($node->created > EXPIRE_DATE) {
+            // Considerd a node new.
+            $node->is_new = TRUE;
+          }
+
+          $file_name = EXPORT_DIR . $node->type . '_' . $node->nid . '_.txt';
+          print "Node " . $node->nid . " exported to $file_name\n";
+          $node = serialize(get_object_vars($node));
+          file_put_contents($file_name, print_r($node, TRUE));
+        }
+      }
       break;
+
   }
 }
