@@ -83,3 +83,11 @@ function elmcip_setup_update_7005() {
 function elmcip_setup_update_7006() {
   module_enable(array('elmcip_layout'), FALSE);
 }
+
+/**
+ * Block update 7009 fail due to errors in block title. This should fix it.
+ */
+function elmcip_setup_update_7007() {
+  db_query("UPDATE elmcip.block SET title = '' WHERE block.bid = 505");
+  db_query("UPDATE elmcip.block SET title = '' WHERE block.bid = 506");
+}
