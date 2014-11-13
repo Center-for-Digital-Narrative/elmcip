@@ -6003,7 +6003,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'text_parts' => array(),
         'year_range' => '-25:+3',
       ),
-      'type' => 'date_select',
+      'type' => 'date_text',
       'weight' => 9,
     ),
   );
