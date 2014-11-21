@@ -91,3 +91,26 @@ function elmcip_setup_update_7007() {
   db_query("UPDATE elmcip.block SET title = '' WHERE block.bid = 505");
   db_query("UPDATE elmcip.block SET title = '' WHERE block.bid = 506");
 }
+
+/**
+ * Enable Entity reference module. Time to stop using node reference.
+ */
+function elmcip_setup_update_7008() {
+  module_enable(array('entityreference'), FALSE);
+}
+
+/**
+ * Migrate Person node reference field to entity reference.
+ */
+function elmcip_setup_update_7009() {
+  // Enable migration module (entityreference_migration)
+  module_enable(array('entityreference_migration'), FALSE);
+  // Run drush -v emr field_affiliation
+
+  // drush_entityreference_migration_references('field_affiliation');
+  $drush_result = exec('drush -v emr field_affiliation');
+  print("$drush_result\n");
+
+  // Disable migration module (entityreference_migration)
+  module_disable(array('entityreference_migration'), FALSE);
+}
