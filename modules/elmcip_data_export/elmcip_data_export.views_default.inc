@@ -11437,6 +11437,11 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Affiliations - Organizations (field_affiliation) */
+  $handler->display->display_options['filters']['field_affiliation_target_id']['id'] = 'field_affiliation_target_id';
+  $handler->display->display_options['filters']['field_affiliation_target_id']['table'] = 'field_data_field_affiliation';
+  $handler->display->display_options['filters']['field_affiliation_target_id']['field'] = 'field_affiliation_target_id';
+  $handler->display->display_options['filters']['field_affiliation_target_id']['operator'] = 'not empty';
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'affiliation_person');
