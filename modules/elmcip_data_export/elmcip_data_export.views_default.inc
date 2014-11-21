@@ -11404,17 +11404,15 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['footer']['text']['empty'] = TRUE;
   $handler->display->display_options['footer']['text']['content'] = 'Add new <a href="/node/add/organization" target="_blank">organization</a>.';
   $handler->display->display_options['footer']['text']['format'] = '1';
-  /* Relationship: Content: Affiliations - Organizations (field_affiliation) */
-  $handler->display->display_options['relationships']['field_affiliation_nid']['id'] = 'field_affiliation_nid';
-  $handler->display->display_options['relationships']['field_affiliation_nid']['table'] = 'field_data_field_affiliation';
-  $handler->display->display_options['relationships']['field_affiliation_nid']['field'] = 'field_affiliation_nid';
-  $handler->display->display_options['relationships']['field_affiliation_nid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_affiliation_nid']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_affiliation_target_id']['id'] = 'field_affiliation_target_id';
+  $handler->display->display_options['relationships']['field_affiliation_target_id']['table'] = 'field_data_field_affiliation';
+  $handler->display->display_options['relationships']['field_affiliation_target_id']['field'] = 'field_affiliation_target_id';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_affiliation_nid';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_affiliation_target_id';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -11458,7 +11456,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     t('Desc'),
     t('Affiliations'),
     t('Add new <a href="/node/add/organization" target="_blank">organization</a>.'),
-    t('field_affiliation'),
+    t('Content entity referenced from field_affiliation'),
     t('Title'),
     t('All'),
     t('Entity content'),
@@ -12176,7 +12174,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Affiliations - Organizations (field_affiliation) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_affiliation_nid']['id'] = 'field_affiliation_nid';
   $handler->display->display_options['arguments']['field_affiliation_nid']['table'] = 'field_data_field_affiliation';
   $handler->display->display_options['arguments']['field_affiliation_nid']['field'] = 'field_affiliation_nid';

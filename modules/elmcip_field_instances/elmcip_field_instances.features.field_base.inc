@@ -188,47 +188,43 @@ function elmcip_field_instances_field_default_field_bases() {
       'type' => 0,
     ),
     'foreign keys' => array(
-      'nid' => array(
+      'node' => array(
         'columns' => array(
-          'nid' => 'nid',
+          'target_id' => 'nid',
         ),
         'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 'organization',
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'organization' => 'organization',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_alternative_spelling_of_na'
