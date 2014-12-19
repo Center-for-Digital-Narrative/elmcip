@@ -382,7 +382,8 @@ tr th.views-field, tr td.views-field { /* padding for the table cells and row of
 }
 
 .group-left .field-name-field-record-status-tax {
-  margin: 1.5em 0 0 0;
+  font-style: italic;
+  margin: 20px 0 0 0;
 }
 
 .group-right .label-above{ /*Bolds the Tags header*/
