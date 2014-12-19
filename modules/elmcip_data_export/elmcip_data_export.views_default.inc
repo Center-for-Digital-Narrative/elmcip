@@ -12179,15 +12179,15 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Broken/missing handler */
-  $handler->display->display_options['arguments']['field_affiliation_nid']['id'] = 'field_affiliation_nid';
-  $handler->display->display_options['arguments']['field_affiliation_nid']['table'] = 'field_data_field_affiliation';
-  $handler->display->display_options['arguments']['field_affiliation_nid']['field'] = 'field_affiliation_nid';
-  $handler->display->display_options['arguments']['field_affiliation_nid']['default_action'] = 'empty';
-  $handler->display->display_options['arguments']['field_affiliation_nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_affiliation_nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_affiliation_nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_affiliation_nid']['summary_options']['items_per_page'] = '25';
+  /* Contextual filter: Content: Affiliations - Organizations (field_affiliation) */
+  $handler->display->display_options['arguments']['field_affiliation_target_id']['id'] = 'field_affiliation_target_id';
+  $handler->display->display_options['arguments']['field_affiliation_target_id']['table'] = 'field_data_field_affiliation';
+  $handler->display->display_options['arguments']['field_affiliation_target_id']['field'] = 'field_affiliation_target_id';
+  $handler->display->display_options['arguments']['field_affiliation_target_id']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['field_affiliation_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_affiliation_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_affiliation_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_affiliation_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['filter_groups']['groups'] = array(
     1 => 'AND',
     2 => 'AND',
