@@ -8464,11 +8464,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 36,
       ),
       'teaser' => array(
@@ -8481,7 +8478,6 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
-    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_affiliation',
     'label' => 'Affiliations - Organizations',

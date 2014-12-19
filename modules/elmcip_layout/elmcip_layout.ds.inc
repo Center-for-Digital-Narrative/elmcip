@@ -441,11 +441,16 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'fi' => TRUE,
-        'fi-el' => 'h4',
-        'fi-cl' => 'title',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'title',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
       ),
     ),
     'full_name' => array(
@@ -1724,8 +1729,6 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'full';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 1,
-    'hide_sidebars' => 0,
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1739,26 +1742,26 @@ function elmcip_layout_ds_layout_settings_info() {
         8 => 'field_editorial_notes',
       ),
       'right' => array(
-        0 => 'field_authorphoto',
-        1 => 'field_yearborn',
-        2 => 'field_yeardied',
-        3 => 'field_textfield',
-        4 => 'Work_entity_view_1',
-        5 => 'Work_entity_view_2',
-        6 => 'Critical_writing_entity_view_1',
-        7 => 'translated_by_person_translated_by_person',
-        8 => 'edited_by_person_edited_by_person',
-        9 => 'Journal_Editedby_entity_view_1',
-        10 => 'events_on_individual_organizer_page_entity_view_1',
-        11 => 'curator_of_edited_by_person',
-        12 => 'TeachingResourceby_entity_view_1',
-        13 => 'resource_collection_curated_by_person_edited_by_person',
-        14 => 'org_affil_person_affiliation_person',
-        15 => 'research_collection_person_entity_view_1',
-        16 => 'field_files',
-        17 => 'full_name',
-        18 => 'purl',
-        19 => 'author',
+        9 => 'field_authorphoto',
+        10 => 'field_yearborn',
+        11 => 'field_yeardied',
+        12 => 'field_textfield',
+        13 => 'Work_entity_view_1',
+        14 => 'Work_entity_view_2',
+        15 => 'Critical_writing_entity_view_1',
+        16 => 'translated_by_person_translated_by_person',
+        17 => 'edited_by_person_edited_by_person',
+        18 => 'Journal_Editedby_entity_view_1',
+        19 => 'events_on_individual_organizer_page_entity_view_1',
+        20 => 'curator_of_edited_by_person',
+        21 => 'TeachingResourceby_entity_view_1',
+        22 => 'resource_collection_curated_by_person_edited_by_person',
+        23 => 'org_affil_person_affiliation_person',
+        24 => 'research_collection_person_entity_view_1',
+        25 => 'field_files',
+        26 => 'full_name',
+        27 => 'purl',
+        28 => 'author',
       ),
     ),
     'fields' => array(
@@ -1793,6 +1796,15 @@ function elmcip_layout_ds_layout_settings_info() {
       'author' => 'right',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|person|full'] = $ds_layout;
 

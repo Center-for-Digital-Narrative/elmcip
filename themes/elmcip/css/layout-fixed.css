@@ -377,7 +377,8 @@ tr th.views-field, tr td.views-field { /* padding for the table cells and row of
 }
 
 .group-left .title {
-  margin-top: 0;
+  border-bottom: 1px solid #bbb;
+  margin: 0 0 20px 0;
 }
 
 .group-left .field-name-field-record-status-tax {
