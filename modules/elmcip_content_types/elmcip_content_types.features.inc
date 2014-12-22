@@ -157,5 +157,6 @@ Versions of given platforms (e.g. HTML 2.0, HTML 5) will not have individual rec
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

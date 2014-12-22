@@ -1321,6 +1321,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'label' => 'Archive URL',
     'required' => FALSE,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'rel' => '',
@@ -1331,6 +1332,7 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -1997,6 +1999,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'label' => 'Electronic Literature Directory entry',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -2009,6 +2012,7 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'Electronic Literature Directory entry',
       'url' => 0,
@@ -4819,6 +4823,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -4831,6 +4836,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -4888,6 +4894,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'label' => 'WorldCat Permalink',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'rel' => '',
@@ -4898,6 +4905,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -5908,6 +5916,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -5920,6 +5929,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'enable_tokens' => 1,
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -6101,6 +6111,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Archive URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -6113,6 +6124,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -7288,6 +7300,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -7300,6 +7313,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -8323,6 +8337,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -8335,6 +8350,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -9698,6 +9714,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Personal website',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -9710,6 +9727,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -10690,6 +10708,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -10703,6 +10722,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -11682,6 +11702,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'rel' => '',
@@ -11692,6 +11713,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -14522,6 +14544,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'rel' => '',
@@ -14532,6 +14555,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -15123,6 +15147,7 @@ Work records do not need to be submitted to the anthology in order to be documen
     'label' => 'Archive URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -15135,6 +15160,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -15553,6 +15579,7 @@ Work records do not need to be submitted to the anthology in order to be documen
     'label' => 'Download URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -15565,6 +15592,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -15686,6 +15714,7 @@ Work records do not need to be submitted to the anthology in order to be documen
     'label' => 'Electronic Literature Directory entry',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -15698,6 +15727,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'enable_tokens' => 1,
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'Electronic Literature Directory entry',
       'url' => 0,
@@ -15878,6 +15908,7 @@ Work records do not need to be submitted to the anthology in order to be documen
     'label' => 'I ♥ E-Poetry Entry',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -15891,6 +15922,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'I ♥ E-Poetry entry',
       'url' => 0,
@@ -16781,6 +16813,7 @@ Work records do not need to be submitted to the anthology in order to be documen
     'label' => 'NT2 entry',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -16793,6 +16826,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'enable_tokens' => 1,
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'NT2 entry (français)',
       'url' => 0,
@@ -17907,6 +17941,7 @@ Work records do not need to be submitted to the anthology in order to be documen
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -17919,6 +17954,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -18040,6 +18076,7 @@ Work records do not need to be submitted to the anthology in order to be documen
     'label' => 'WorldCat Permalink',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -18052,6 +18089,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'enable_tokens' => 1,
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,

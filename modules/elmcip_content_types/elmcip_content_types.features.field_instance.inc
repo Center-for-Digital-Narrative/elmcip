@@ -49,6 +49,7 @@ function elmcip_content_types_field_default_field_instances() {
     'label' => 'Po.Ex entry',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -62,6 +63,7 @@ function elmcip_content_types_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'Po.Ex record',
       'url' => 0,
@@ -123,6 +125,7 @@ function elmcip_content_types_field_default_field_instances() {
     'label' => 'Po.Ex entry',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -136,6 +139,7 @@ function elmcip_content_types_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'Po.Ex record',
       'url' => 0,
