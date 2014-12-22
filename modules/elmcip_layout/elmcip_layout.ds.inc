@@ -591,7 +591,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '18',
+      'weight' => '13',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -1973,7 +1973,8 @@ function elmcip_layout_ds_layout_settings_info() {
         2 => 'field_developers',
         3 => 'field_publisher_of_organization',
         4 => 'field_number',
-        5 => 'field_url',
+        5 => 'field_repository',
+        6 => 'field_url',
         8 => 'field_license',
       ),
       'right' => array(
@@ -1991,10 +1992,11 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_developers' => 'left',
       'field_publisher_of_organization' => 'left',
       'field_number' => 'left',
+      'field_repository' => 'left',
       'field_url' => 'left',
+      'field_license' => 'left',
       'field_ps_description' => 'right',
       'field_version_history' => 'right',
-      'field_license' => 'left',
       'field_ps_image' => 'right',
       'field_ps_attachment' => 'right',
       'field_media' => 'right',
@@ -2412,9 +2414,16 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 1,
-    'hide_sidebars' => 0,
     'classes' => array(),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|work|default'] = $ds_layout;
 

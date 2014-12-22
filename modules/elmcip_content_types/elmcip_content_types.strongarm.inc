@@ -2055,6 +2055,9 @@ function elmcip_content_types_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -2773,6 +2776,9 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'teaser_abbreviated' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
         'custom_settings' => FALSE,
       ),
     ),

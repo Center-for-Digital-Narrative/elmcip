@@ -758,6 +758,7 @@ function elmcip_field_instances_field_group_info() {
       4 => 'field_i_e_poetry_entry',
       5 => 'field_nt2_entry',
       6 => 'field_po_ex_entry',
+      7 => 'field_repository',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -1501,6 +1502,7 @@ function elmcip_field_instances_field_group_info() {
       0 => 'field_ps_description',
       1 => 'field_version_history',
       2 => 'field_license',
+      3 => 'field_repository',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
