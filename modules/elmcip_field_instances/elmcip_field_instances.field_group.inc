@@ -21,12 +21,11 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Description',
-    'weight' => '15',
+    'weight' => '17',
     'children' => array(
       0 => 'field_abstract',
       1 => 'field_abstract_lang',
-      2 => 'field_orig_lang',
-      3 => 'field_pullquote',
+      2 => 'field_pullquote',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -160,7 +159,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Information specific to books or journals',
-    'weight' => '14',
+    'weight' => '16',
     'children' => array(
       0 => 'field_eissn',
       1 => 'field_journalissue',
@@ -262,7 +261,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Core Info',
-    'weight' => '13',
+    'weight' => '15',
     'children' => array(
       0 => 'field_url',
       1 => 'field_author_name',
@@ -1585,14 +1584,15 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publisher Information',
-    'weight' => '-4',
+    'weight' => '17',
     'children' => array(
-      0 => 'field_editor_name',
+      0 => 'field_url',
       1 => 'field_eissn',
-      2 => 'field_email',
+      2 => 'field_editor_name',
       3 => 'field_issn_text',
       4 => 'field_location',
-      5 => 'field_url',
+      5 => 'field_email',
+      6 => 'content_type',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -1645,14 +1645,12 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'References / Attachments',
-    'weight' => '16',
+    'weight' => '18',
     'children' => array(
-      0 => 'field_node_ref_work',
-      1 => 'field_tr_critical',
-      2 => 'field_other_lang_ver_link',
-      3 => 'field_ref_about_event',
-      4 => 'field_files',
-      5 => 'field_multi_images',
+      0 => 'field_other_lang_ver_link',
+      1 => 'field_ref_about_event',
+      2 => 'field_files',
+      3 => 'field_multi_images',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -1762,12 +1760,10 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'References and Attachments',
-    'weight' => '21',
+    'weight' => '33',
     'children' => array(
       0 => 'field_tr_critical',
       1 => 'field_tr_work',
-      2 => 'field_files',
-      3 => 'field_image',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -1818,13 +1814,8 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Basic Information',
-    'weight' => '19',
-    'children' => array(
-      0 => 'field_url',
-      1 => 'field_tr_author',
-      2 => 'field_tr_year',
-      3 => 'field_tr_org',
-    ),
+    'weight' => '31',
+    'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
@@ -1874,12 +1865,8 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Description',
-    'weight' => '20',
-    'children' => array(
-      0 => 'field_abstract_lang',
-      1 => 'field_orig_lang',
-      2 => 'field_tr_description',
-    ),
+    'weight' => '32',
+    'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',

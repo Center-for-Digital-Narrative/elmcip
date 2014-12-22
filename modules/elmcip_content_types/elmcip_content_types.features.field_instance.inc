@@ -22,7 +22,7 @@ function elmcip_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 51,
+        'weight' => 34,
       ),
       'full' => array(
         'label' => 'above',
