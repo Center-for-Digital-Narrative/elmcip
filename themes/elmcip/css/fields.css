@@ -75,7 +75,9 @@
 }
 
 .field-tags-inline a {
+  display: inline-block;
   margin-right: 1.5em;
+  white-space: nowrap;
 }
 
 .field-name-field-pullquote div.field-item {

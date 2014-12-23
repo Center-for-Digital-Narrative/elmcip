@@ -480,6 +480,10 @@ tr th.views-field, tr td.views-field { /* padding for the table cells and row of
   word-wrap: break-word; /* A very nice CSS3 property */
 }
 
+.field-tags-inline {
+  margin: 0 0 20px 0;
+}
+
 /*
  * If a div.clearfix doesn't have any content after it and its bottom edge
  * touches the bottom of the viewport, Firefox and Safari will mistakenly
