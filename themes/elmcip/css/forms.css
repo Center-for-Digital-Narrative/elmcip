@@ -11,7 +11,7 @@
 }
 
 #header input:focus {
-  color: #555;
+  color: #333333;
 }
 
 .form-item /* Wrapper for a form element (or group of form elements) and its label */ {

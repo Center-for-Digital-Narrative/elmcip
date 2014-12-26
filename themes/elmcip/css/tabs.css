@@ -75,7 +75,7 @@ ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus {
   border-width: 0;
-  color: #000;
+  color: #333333;
   background-color: transparent;
   background: url(../images/tab-left.png) no-repeat left 0;
 }
@@ -130,6 +130,6 @@ ul.secondary a.active,
 ul.secondary a.active:hover,
 ul.secondary a.active:focus {
   border: 1px solid #c0c0c0;
-  color: #000;
+  color: #333333;
   background: url(../images/tab-secondary.png) repeat-x left top;
 }

@@ -27,6 +27,7 @@
  */
 body {
   font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+  color: #333333;
 }
 
 #skip-to-nav,
@@ -136,7 +137,7 @@ p, blockquote, pre,
 ul, ol, dl,
 hr, table, fieldset {
   margin: 0 0 1.2em 0;
-  color: #000;
+  color: #333333;
 }
 
 a {

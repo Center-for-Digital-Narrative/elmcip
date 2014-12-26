@@ -8,7 +8,7 @@
  * The active item in a Drupal menu
  */
 li a.active {
-  color: #000;
+  color: #333333;
 }
 
 /*

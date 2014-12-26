@@ -2689,7 +2689,7 @@ li.leaf {
   margin: 0;
 }
 li a.active {
-  color: #000;
+  color: #333333;
 }
 td.menu-disabled {
   background: #ccc;
