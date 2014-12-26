@@ -141,12 +141,6 @@ h2.block-title /* Block title */ {
 #block-system-powered-by /* "Powered by Drupal" block */ {
 }
 
-#block-user-login {
-  float: left;
-  width: 960px;
-  background-color: #fff;
-}
-
 #block-user-new {
 }
 
