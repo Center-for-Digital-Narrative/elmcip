@@ -146,3 +146,22 @@ h2.block-title /* Block title */ {
 
 #block-user-online {
 }
+
+/**
+ * Hightlighed region, normally used for maintainence info and other important
+ * end user information for a temporary time.
+ */
+.region-highlighted .block {
+  background-color: #71A400;
+  padding: 10px 20px;
+}
+
+.region-highlighted h2,
+.region-highlighted .content,
+.region-highlighted p {
+  color: #efefef;
+}
+
+.region-highlighted p:last-child {
+  margin-bottom: 0;
+}
