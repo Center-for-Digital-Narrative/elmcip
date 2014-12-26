@@ -26,9 +26,10 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'link_default',
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
