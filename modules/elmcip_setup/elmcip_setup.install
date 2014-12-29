@@ -103,14 +103,24 @@ function elmcip_setup_update_7008() {
  * Migrate Person node reference field to entity reference.
  */
 function elmcip_setup_update_7009() {
-  // Enable migration module (entityreference_migration)
   module_enable(array('entityreference_migration'), FALSE);
-  // Run drush -v emr field_affiliation
-
-  // drush_entityreference_migration_references('field_affiliation');
   $drush_result = exec('drush -v emr field_affiliation');
   print("$drush_result\n");
+  module_disable(array('entityreference_migration'), FALSE);
+}
 
-  // Disable migration module (entityreference_migration)
+/**
+ * Migrate Event node reference field to entity reference.
+ */
+function elmcip_setup_update_7010() {
+  module_enable(array('entityreference_migration'), FALSE);
+  // Clean up inconsistensy in our data to allow migration to run.
+  db_query("DELETE FROM field_data_field_node_ref WHERE field_node_ref_nid IS NULL");
+  $drush_result = exec('drush -v emr field_node_ref') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_individual_organizers') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_curator') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_associated_event') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_event_series') . "\n";
+  print("$drush_result\n");
   module_disable(array('entityreference_migration'), FALSE);
 }
