@@ -364,50 +364,36 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_associated_event',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'foreign keys' => array(
-      'nid' => array(
+      'node' => array(
         'columns' => array(
-          'nid' => 'nid',
+          'target_id' => 'nid',
         ),
         'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'field_permissions' => NULL,
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'event' => 'event',
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'event' => 'event',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_auth_email'
@@ -900,50 +886,36 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_curator',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'foreign keys' => array(
-      'nid' => array(
+      'node' => array(
         'columns' => array(
-          'nid' => 'nid',
+          'target_id' => 'nid',
         ),
         'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 'person',
-        'publisher' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'person' => 'person',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_cw_noted'
@@ -1851,49 +1823,36 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_event_series',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'foreign keys' => array(
-      'nid' => array(
+      'node' => array(
         'columns' => array(
-          'nid' => 'nid',
+          'target_id' => 'nid',
         ),
         'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'event' => 'event',
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'event' => 'event',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_events'
@@ -2247,51 +2206,36 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_individual_organizers',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'foreign keys' => array(
-      'nid' => array(
+      'node' => array(
         'columns' => array(
-          'nid' => 'nid',
+          'target_id' => 'nid',
         ),
         'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 'person',
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'person' => 'person',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_isbn_text'
@@ -2879,53 +2823,37 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_node_ref',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'foreign keys' => array(
-      'nid' => array(
+      'node' => array(
         'columns' => array(
-          'nid' => 'nid',
+          'target_id' => 'nid',
         ),
         'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'field_permissions' => NULL,
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 'organization',
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 'publisher',
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'organization' => 'organization',
+          'publisher' => 'publisher',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
-    'type_name' => 'work',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_node_ref_event'
