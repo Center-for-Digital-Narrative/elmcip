@@ -4244,48 +4244,34 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_students',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
     'foreign keys' => array(
-      'uid' => array(
+      'users' => array(
         'columns' => array(
-          'uid' => 'uid',
+          'target_id' => 'uid',
         ),
         'table' => 'users',
       ),
     ),
     'indexes' => array(
-      'uid' => array(
-        0 => 'uid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'user_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'field_permissions' => NULL,
-      'referenceable_roles' => array(
-        2 => 2,
-        3 => 3,
-        4 => 4,
-        5 => 5,
-        6 => 6,
-        7 => 7,
-        8 => 8,
-        9 => 9,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(),
       ),
-      'referenceable_status' => array(
-        0 => 0,
-        1 => 1,
-      ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'user',
     ),
     'translatable' => 0,
-    'type' => 'user_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_teacher_link'
@@ -4295,48 +4281,34 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_teacher_link',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
     'foreign keys' => array(
-      'uid' => array(
+      'users' => array(
         'columns' => array(
-          'uid' => 'uid',
+          'target_id' => 'uid',
         ),
         'table' => 'users',
       ),
     ),
     'indexes' => array(
-      'uid' => array(
-        0 => 'uid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'user_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'field_permissions' => NULL,
-      'referenceable_roles' => array(
-        2 => 0,
-        3 => 0,
-        4 => 0,
-        5 => 0,
-        6 => 0,
-        7 => 0,
-        8 => 0,
-        9 => 9,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(),
       ),
-      'referenceable_status' => array(
-        0 => 0,
-        1 => 0,
-      ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'user',
     ),
     'translatable' => 0,
-    'type' => 'user_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_teaching_resources'
@@ -4604,45 +4576,35 @@ function elmcip_field_instances_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_tr_link',
     'foreign keys' => array(
-      'nid' => array(
+      'node' => array(
         'columns' => array(
-          'nid' => 'nid',
+          'target_id' => 'nid',
         ),
         'table' => 'node',
       ),
     ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'field_permissions' => NULL,
-      'referenceable_types' => array(
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'story' => 0,
-        'teaching_resource' => 'teaching_resource',
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'teaching_resource' => 'teaching_resource',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_tr_org'

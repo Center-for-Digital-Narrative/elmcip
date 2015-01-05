@@ -124,3 +124,15 @@ function elmcip_setup_update_7010() {
   print("$drush_result\n");
   module_disable(array('entityreference_migration'), FALSE);
 }
+
+/**
+ * Migrate node ref fields in "Class Group" bundle to entity reference.
+ */
+function elmcip_setup_update_7011() {
+  module_enable(array('entityreference_migration'), FALSE);
+  $drush_result = exec('drush -v emr field_students') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_teacher_link') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_tr_link') . "\n";
+  print("$drush_result\n");
+  module_disable(array('entityreference_migration'), FALSE);
+}
