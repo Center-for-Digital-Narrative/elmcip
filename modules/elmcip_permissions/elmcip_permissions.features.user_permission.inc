@@ -2334,7 +2334,11 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'edit own field_students'.
   $permissions['edit own field_students'] = array(
     'name' => 'edit own field_students',
-    'roles' => array(),
+    'roles' => array(
+      'administrative editor' => 'administrative editor',
+      'administrator' => 'administrator',
+      'teacher' => 'teacher',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -3146,8 +3150,11 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view field_teacher_link'] = array(
     'name' => 'view field_teacher_link',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
+      'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'teacher' => 'teacher',
     ),
     'module' => 'field_permissions',
   );
@@ -3317,7 +3324,11 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'view own field_students'.
   $permissions['view own field_students'] = array(
     'name' => 'view own field_students',
-    'roles' => array(),
+    'roles' => array(
+      'administrative editor' => 'administrative editor',
+      'administrator' => 'administrator',
+      'teacher' => 'teacher',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -3325,8 +3336,11 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view own field_teacher_link'] = array(
     'name' => 'view own field_teacher_link',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
+      'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'teacher' => 'teacher',
     ),
     'module' => 'field_permissions',
   );
