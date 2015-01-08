@@ -136,3 +136,30 @@ function elmcip_setup_update_7011() {
   print("$drush_result\n");
   module_disable(array('entityreference_migration'), FALSE);
 }
+
+/**
+ * Clean up inconsistensy in our data to allow migration to run.
+ */
+function elmcip_setup_update_7012() {
+  db_query("DELETE FROM field_data_field_author_name WHERE field_author_name_nid IS NULL");
+  db_query("DELETE FROM field_data_field_node_ref_event WHERE field_node_ref_event_nid IS NULL");
+  db_query("DELETE FROM field_data_field_other_lang_ver_link WHERE field_other_lang_ver_link_nid IS NULL");
+  db_query("DELETE FROM field_data_field_in_anthology WHERE field_in_anthology_nid IS NULL");
+}
+
+/**
+ * Migrate node ref fields in "Creative work" bundle to entity reference.
+ */
+function elmcip_setup_update_7013() {
+  module_enable(array('entityreference_migration'), FALSE);
+  $drush_result = exec('drush -v emr field_author_name') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_contributor') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_translator') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_node_ref_event') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_other_lang_ver_link') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_other_edition_work') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_part_of_another_work') . "\n";
+  $drush_result .= ' ' . exec('drush -v emr field_in_anthology') . "\n";
+  print("$drush_result\n");
+  module_disable(array('entityreference_migration'), FALSE);
+}
