@@ -128,4 +128,3 @@ features[views_view][] = workauthor_nid_event
 features[views_view][] = works_listed_on_research_collection
 features[views_view][] = works_multiple_refs
 features_exclude[dependencies][ctools] = ctools
-mtime = 1413917782
