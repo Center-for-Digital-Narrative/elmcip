@@ -4262,15 +4262,11 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_node_ref_event_nid']['id'] = 'field_node_ref_event_nid';
-  $handler->display->display_options['filters']['field_node_ref_event_nid']['table'] = 'field_data_field_node_ref_event';
-  $handler->display->display_options['filters']['field_node_ref_event_nid']['field'] = 'field_node_ref_event_nid';
-  $handler->display->display_options['filters']['field_node_ref_event_nid']['operator'] = 'not empty';
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'conference-presentations-data-export';
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
+  $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
+  $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
+  $handler->display->display_options['filters']['field_node_ref_event_target_id']['operator'] = 'not empty';
 
   /* Display: Data export -- Author Event Tag */
   $handler = $view->new_display('views_data_export', 'Data export -- Author Event Tag', 'views_data_export_1');
@@ -4283,6 +4279,8 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Data export -- Author Event with NIDS */
   $handler = $view->new_display('views_data_export', 'Data export -- Author Event with NIDS', 'views_data_export_2');
+  $handler->display->display_options['field_language'] = '***DEFAULT_LANGUAGE***';
+  $handler->display->display_options['field_language_add_to_query'] = 0;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -4303,7 +4301,6 @@ function elmcip_data_export_views_default_views() {
     t('Presented at Event'),
     t('Event NID'),
     t('Year'),
-    t('Page'),
     t('Data export -- Author Event Tag'),
     t('Data export -- Author Event with NIDS'),
   );
