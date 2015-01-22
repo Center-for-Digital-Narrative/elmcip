@@ -938,7 +938,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Presented at Event (field_node_ref_event) */
+  /* Contextual filter: Content: Event (field_node_ref_event) */
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -1224,7 +1224,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Contextual filter: Content: Presented at Event (field_node_ref_event) */
+  /* Contextual filter: Content: Event (field_node_ref_event) */
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -4150,7 +4150,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
+  /* Filter criterion: Content: Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -4222,12 +4222,12 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author NID';
   $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_nid';
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -4262,7 +4262,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
+  /* Filter criterion: Content: Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -4298,7 +4298,7 @@ function elmcip_data_export_views_default_views() {
     t('Desc'),
     t('Author'),
     t('Author NID'),
-    t('Presented at Event'),
+    t('Event'),
     t('Event NID'),
     t('Year'),
     t('Data export -- Author Event Tag'),
@@ -4949,7 +4949,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -4990,7 +4990,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
+  /* Filter criterion: Content: Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -12126,7 +12126,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Presented at Event (field_node_ref_event) */
+  /* Contextual filter: Content: Event (field_node_ref_event) */
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -17139,7 +17139,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -17165,7 +17165,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['filters']['type']['value'] = array(
     'work' => 'work',
   );
-  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
+  /* Filter criterion: Content: Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -17194,7 +17194,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -17944,7 +17944,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
       'empty_column' => 0,
     ),
   );
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -17982,7 +17982,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['filters']['type']['value'] = array(
     'work' => 'work',
   );
-  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
+  /* Filter criterion: Content: Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -18014,7 +18014,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_nid';
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
