@@ -2823,6 +2823,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_node_ref',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'node' => array(
         'columns' => array(
@@ -2844,6 +2847,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'organization' => 'organization',
           'publisher' => 'publisher',
@@ -2859,7 +2870,7 @@ function elmcip_field_instances_field_default_field_bases() {
   // Exported field_base: 'field_node_ref_event'
   $field_bases['field_node_ref_event'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_node_ref_event',
@@ -2886,6 +2897,7 @@ function elmcip_field_instances_field_default_field_bases() {
         'book' => 0,
         'class_group' => 0,
         'critical_writing' => 0,
+        'databases_and_archives' => 0,
         'event' => 'event',
         'notebook' => 0,
         'notebook_entry' => 0,
@@ -2893,7 +2905,9 @@ function elmcip_field_instances_field_default_field_bases() {
         'page' => 0,
         'panel' => 0,
         'person' => 0,
+        'platform_software' => 0,
         'publisher' => 0,
+        'research_collection' => 0,
         'story' => 0,
         'teaching_resource' => 0,
         'work' => 0,

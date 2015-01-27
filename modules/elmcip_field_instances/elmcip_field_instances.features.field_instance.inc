@@ -814,7 +814,6 @@ function elmcip_field_instances_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
-    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_students',
     'label' => 'Students',
@@ -870,7 +869,6 @@ function elmcip_field_instances_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
-    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_teacher_link',
     'label' => 'Teacher',
@@ -3125,12 +3123,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   // Exported field_instance: 'node-critical_writing-field_node_ref'
   $field_instances['node-critical_writing-field_node_ref'] = array(
     'bundle' => 'critical_writing',
-    'default_value' => array(
-      0 => array(
-        'nid' => NULL,
-        '_error_element' => 'default_value_widget][field_node_ref][0][nid][nid',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter the name of the <b>publisher of book, title of journal</b>, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.',
     'display' => array(
@@ -3261,10 +3254,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'weight' => 10,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_node_ref',
     'label' => 'Publisher',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
