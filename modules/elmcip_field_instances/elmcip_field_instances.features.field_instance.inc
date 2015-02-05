@@ -13222,7 +13222,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 35,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -13259,13 +13259,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'node_reference',
         'settings' => array(),
         'type' => 'node_reference_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -13403,7 +13403,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'region' => array(
         'label' => 'hidden',
@@ -13656,15 +13656,21 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 35,
+        'module' => 'media',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'media',
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 32,
+        'module' => 'media',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'media',
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -13934,7 +13940,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 34,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -14254,13 +14260,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'node_reference',
         'settings' => array(),
         'type' => 'node_reference_default',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -14349,7 +14355,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 33,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -14746,7 +14752,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'full' => array(
         'label' => 'above',

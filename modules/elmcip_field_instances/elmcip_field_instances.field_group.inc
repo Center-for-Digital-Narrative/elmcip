@@ -1762,7 +1762,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'References and Attachments',
-    'weight' => '33',
+    'weight' => '34',
     'children' => array(
       0 => 'field_tr_critical',
       1 => 'field_tr_work',
@@ -1816,7 +1816,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Basic Information',
-    'weight' => '31',
+    'weight' => '32',
     'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -1867,7 +1867,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Description',
-    'weight' => '32',
+    'weight' => '33',
     'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
