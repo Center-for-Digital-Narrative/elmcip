@@ -2831,10 +2831,13 @@ function elmcip_field_instances_field_default_field_bases() {
   // Exported field_base: 'field_node_ref_event'
   $field_bases['field_node_ref_event'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_node_ref_event',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'node' => array(
         'columns' => array(
@@ -2856,6 +2859,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'event' => 'event',
         ),

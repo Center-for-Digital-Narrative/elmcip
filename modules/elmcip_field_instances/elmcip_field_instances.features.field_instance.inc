@@ -16889,12 +16889,7 @@ Work records do not need to be submitted to the anthology in order to be documen
   // Exported field_instance: 'node-work-field_node_ref_event'
   $field_instances['node-work-field_node_ref_event'] = array(
     'bundle' => 'work',
-    'default_value' => array(
-      0 => array(
-        'nid' => NULL,
-        '_error_element' => 'default_value_widget][field_node_ref_event][0][nid][nid',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Mark the event(s) where the work has been presented. If an event is missing from the list follow the link to add a new <a href="/node/add/event" target="_blank">event</a>.',
     'display' => array(
@@ -17016,10 +17011,11 @@ Work records do not need to be submitted to the anthology in order to be documen
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_node_ref_event',
     'label' => 'Event',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
