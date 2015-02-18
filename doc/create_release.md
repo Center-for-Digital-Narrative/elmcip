@@ -17,6 +17,18 @@ It is important to understand that this tag is not public. It only live inside y
 
     git push origin v1.12
 
+### Reset production branch
+We have now tagged our release and need to reset the tip of production to this version, but make sure your production branch is up to date.
+
+    git co production
+    git pull
+
+We are now ready to reset to our new version.
+
+    git reset --hard v1.12
+    git push
+
+
 ## Release note
 For the sake of order and to allow non git users to keep up with what changed you can ask git what changed between two releases (read tags).
 

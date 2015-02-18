@@ -1,10 +1,9 @@
-# Description
-
-This document describe how to get a local copy of the ELMCIP up and running on your local computer.
+# ELMCIP documentation
 
 ## Content
-[Installation](doc/install.md)
-[How to create a release](doc/create_release.md)
+- [Installation](doc/install.md)
+- [How to create a release](doc/create_release.md)
+
 
 ## Usage
 
