@@ -2,12 +2,15 @@
 
 This document describe how to get a local copy of the ELMCIP up and running on your local computer.
 
+## Content
+[How to create a release](doc/create_release.md)
+
 ## Requirements
 
-* A working installation of Apache, MySQL/Mariadb and PHP 5.4/5.5.
-* Create a empty database named 'elmcip'.
-* Database user name 'elmcip' with full access to the elmcip database.
-* Set password for user elmcip to 'elmcip'.
+* A working installation of Apache, MySQL/Mariadb and PHP 5.4 or newer.
+* A empty database named `elmcip`.
+* Database user name `elmcip` with full access to the elmcip database.
+* Set password for user elmcip to `elmcip`.
 * Git installed and configured.
 * Drush installed (https://github.com/drush-ops/drush).
 * A working ssh connection to Norstore application and database server. Auth should not be password based but by using your private/public SHA -key.
