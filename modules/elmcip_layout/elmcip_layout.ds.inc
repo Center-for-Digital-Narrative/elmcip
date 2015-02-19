@@ -988,13 +988,6 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_node_ref_event' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'Exhibited at',
-        ),
-      ),
-    ),
     'field_downloadurl' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -1048,6 +1041,13 @@ function elmcip_layout_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'See also',
+        ),
+      ),
+    ),
+    'field_node_ref_event' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Exhibited at',
         ),
       ),
     ),

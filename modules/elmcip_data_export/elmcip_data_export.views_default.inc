@@ -480,7 +480,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Contents (Critical writing)';
+  $handler->display->display_options['title'] = 'Critical writing that references this Critical Writing:';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -506,13 +506,6 @@ function elmcip_data_export_views_default_views() {
       'separator' => '',
     ),
   );
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Contents: Critical Writing';
-  $handler->display->display_options['header']['area']['content'] = '<p>Contents: Critical Writing</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'area';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -564,10 +557,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['bundles'] = array(
     0 => 'critical_writing',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['Critical_writing_in_book'] = array(
     t('Defaults'),
-    t('Contents (Critical writing)'),
+    t('Critical writing that references this Critical Writing:'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -581,8 +574,6 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Contents: Critical Writing'),
-    t('<p>Contents: Critical Writing</p>'),
     t('Add new <a href="/node/add/critical-writing" target="_blank">critical writing</a>.'),
     t('Title'),
     t('Author'),
@@ -1542,7 +1533,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Teaching Resource:';
+  $handler->display->display_options['title'] = 'Teaching Resource created by this person:';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -1573,13 +1564,6 @@ function elmcip_data_export_views_default_views() {
     ),
   );
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Teaching Resource created by this Author';
-  $handler->display->display_options['header']['area']['content'] = '<p>Teaching Resource created by this person:</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'area';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -1633,18 +1617,16 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['bundles'] = array(
     0 => 'person',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['TeachingResourceby'] = array(
     t('Defaults'),
-    t('Teaching Resource:'),
+    t('Teaching Resource created by this person:'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Teaching Resource created by this Author'),
-    t('<p>Teaching Resource created by this person:</p>'),
     t('Add new <a href="/node/add/teaching-resource" target="_blank">teaching resource</a>.'),
     t('Resource'),
     t('Teaching Resource Type'),
@@ -1698,13 +1680,6 @@ function elmcip_data_export_views_default_views() {
     ),
   );
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Teaching Resource using this Critical Writing';
-  $handler->display->display_options['header']['area']['content'] = '<p>Teaching Resource using this Critical Writing</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'area';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -1780,7 +1755,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['bundles'] = array(
     0 => 'critical_writing',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['Tr_critical_writing'] = array(
     t('Defaults'),
     t('Teaching Resource using this Critical Writing:'),
@@ -1797,8 +1772,6 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Teaching Resource using this Critical Writing'),
-    t('<p>Teaching Resource using this Critical Writing</p>'),
     t('Add new <a href="/node/add/teaching-resource" target="_blank">teaching resource</a>.'),
     t('Resource'),
     t('Teaching Resource Type'),
@@ -3759,7 +3732,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Research Collection';
+  $handler->display->display_options['title'] = 'Research Collection that references this work:';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -3790,13 +3763,6 @@ function elmcip_data_export_views_default_views() {
     ),
   );
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Research Collection that references this entry';
-  $handler->display->display_options['header']['area']['content'] = '<p>Research Collection that references this entry:</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'text';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -3841,18 +3807,16 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['bundles'] = array(
     0 => 'work',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['clone_of_research_collection_creative_work'] = array(
     t('Defaults'),
-    t('Research Collection'),
+    t('Research Collection that references this work:'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Research Collection that references this entry'),
-    t('<p>Research Collection that references this entry:</p>'),
     t('Add new <a href="/node/add/research-collection" target="_blank">research collection</a>.'),
     t('Title'),
     t('All'),
@@ -4784,7 +4748,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Critical writing that reference this Database or Archive';
+  $handler->display->display_options['title'] = 'Critical writing that references this Database or Archive:';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -4821,13 +4785,6 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Research Collection that references this entry';
-  $handler->display->display_options['header']['area']['content'] = '<p>Critical Writing that references this entry:</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'text';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -4891,18 +4848,16 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['bundles'] = array(
     0 => 'databases_and_archives',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['critical_writing_db_archive'] = array(
     t('Defaults'),
-    t('Critical writing that reference this Database or Archive'),
+    t('Critical writing that references this Database or Archive:'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Research Collection that references this entry'),
-    t('<p>Critical Writing that references this entry:</p>'),
     t('Add new <a href="/node/add/critical-writing" target="_blank">critical writing</a>.'),
     t('Title'),
     t('Author'),
@@ -11455,7 +11410,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'People affiliated with this organization';
+  $handler->display->display_options['title'] = 'People affiliated with this organization:';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -11492,13 +11447,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   );
   $handler->display->display_options['style_options']['sticky'] = TRUE;
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'People affiliated';
-  $handler->display->display_options['header']['area']['content'] = '<p>People affiliated with this organization:</p>';
-  $handler->display->display_options['header']['area']['format'] = '3';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
@@ -11552,10 +11500,10 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['bundles'] = array(
     0 => 'organization',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['people_afil_on_organization'] = array(
     t('Defaults'),
-    t('People affiliated with this organization'),
+    t('People affiliated with this organization:'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -11569,8 +11517,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('People affiliated'),
-    t('<p>People affiliated with this organization:</p>'),
     t('Add a <a href="/node/add/person" target="_blank">person</a>.'),
     t('Name'),
     t('Residency'),
@@ -12532,7 +12478,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Research Collection';
+  $handler->display->display_options['title'] = 'Research Collection that references this Critical Writing:';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -12563,13 +12509,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     ),
   );
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Research Collection that references this entry';
-  $handler->display->display_options['header']['area']['content'] = '<p>Research Collection that references this entry:</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'text';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -12616,18 +12555,16 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['bundles'] = array(
     0 => 'critical_writing',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['research_collection_critical_writing'] = array(
     t('Defaults'),
-    t('Research Collection'),
+    t('Research Collection that references this Critical Writing:'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Research Collection that references this entry'),
-    t('<p>Research Collection that references this entry:</p>'),
     t('Add new <a href="/node/add/research-collection" target="_blank">research collection</a>.'),
     t('Title'),
     t('All'),
@@ -12647,7 +12584,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Research Collection';
+  $handler->display->display_options['title'] = 'Research Collections that reference these Databases and Archives:';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -12678,13 +12615,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     ),
   );
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Research Collection that references this entry';
-  $handler->display->display_options['header']['area']['content'] = '<p>Research Collection that references this entry:</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'text';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -12731,18 +12661,16 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['bundles'] = array(
     0 => 'databases_and_archives',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['research_collection_db_arcive'] = array(
     t('Defaults'),
-    t('Research Collection'),
+    t('Research Collections that reference these Databases and Archives:'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Research Collection that references this entry'),
-    t('<p>Research Collection that references this entry:</p>'),
     t('Add new <a href="/node/add/research-collection" target="_blank">research collection</a>.'),
     t('Title'),
     t('All'),
@@ -12762,7 +12690,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Research Collection';
+  $handler->display->display_options['title'] = 'Research Collections that reference this organization:';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -12793,13 +12721,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     ),
   );
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Research Collection that references this entry';
-  $handler->display->display_options['header']['area']['content'] = '<p>Research Collection that references this entry:</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'text';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -12846,18 +12767,16 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['bundles'] = array(
     0 => 'organization',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['research_collection_organization'] = array(
     t('Defaults'),
-    t('Research Collection'),
+    t('Research Collections that reference this organization:'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Research Collection that references this entry'),
-    t('<p>Research Collection that references this entry:</p>'),
     t('Add new <a href="/node/add/research-collection" target="_blank">research collection</a>.'),
     t('Title'),
     t('All'),
@@ -13163,7 +13082,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Research Collection';
+  $handler->display->display_options['title'] = 'Research Collection that references this person:';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -13194,13 +13113,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     ),
   );
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Teaching Resource created by this Author';
-  $handler->display->display_options['header']['area']['content'] = '<p>Research Collection that references this entry:</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'text';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -13247,18 +13159,16 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['bundles'] = array(
     0 => 'person',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['research_collection_person'] = array(
     t('Defaults'),
-    t('Research Collection'),
+    t('Research Collection that references this person:'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Teaching Resource created by this Author'),
-    t('<p>Research Collection that references this entry:</p>'),
     t('Add new <a href="/node/add/research-collection" target="_blank">research collection</a>.'),
     t('Title'),
     t('All'),
@@ -14009,13 +13919,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     ),
   );
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Teaching Resource that references this entry';
-  $handler->display->display_options['header']['area']['content'] = '<p>Teaching Resource that references this entry:</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['text']['id'] = 'text';
   $handler->display->display_options['footer']['text']['table'] = 'views';
@@ -14062,7 +13965,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['bundles'] = array(
     0 => 'databases_and_archives',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['teaching_resource_db_archive'] = array(
     t('Defaults'),
     t('Teaching Resources that reference this Database or Archive'),
@@ -14072,8 +13975,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Teaching Resource that references this entry'),
-    t('<p>Teaching Resource that references this entry:</p>'),
     t('Add new <a href="/node/add/teaching-resource" target="_blank">teaching resource</a>.'),
     t('Title'),
     t('All'),
