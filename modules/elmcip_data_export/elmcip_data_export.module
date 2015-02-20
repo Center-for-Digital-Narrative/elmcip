@@ -5,3 +5,21 @@
  */
 
 include_once 'elmcip_data_export.features.inc';
+
+function elmcip_data_export_views_pre_render(&$view) {
+  if ($view->name == 'Event_organizer') {
+
+    $nids = array();
+    foreach ($view->result as $key => $row) {
+      if (!array_key_exists($row->nid, $nids)) {
+        $nids[$row->nid] = $row;
+      }
+      else {
+        if ($nids[$row->nid]->location_city != $row->location_city) {
+          $nids[$row->nid]->location_city = $nids[$row->nid]->location_city . ', ' . $row->location_city;
+        }
+      }
+    }
+    $view->result = $nids;
+  }
+}
