@@ -2,6 +2,7 @@
 
 ## Content
 - [Installation](doc/install.md)
+- [Test and verify and issue](doc/test_verify.md)
 - [How to create a release](doc/create_release.md)
 
 
