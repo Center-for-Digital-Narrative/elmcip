@@ -1441,61 +1441,6 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_developers'
-  $field_bases['field_developers'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_developers',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'nid' => array(
-        'columns' => array(
-          'nid' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
-    'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'node_reference',
-    'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 'person',
-        'platform_software' => 0,
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
-      ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'node_reference',
-  );
-
   // Exported field_base: 'field_downloadurl'
   $field_bases['field_downloadurl'] = array(
     'active' => 1,
@@ -3620,61 +3565,6 @@ function elmcip_field_instances_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'image',
-  );
-
-  // Exported field_base: 'field_publisher_of_organization'
-  $field_bases['field_publisher_of_organization'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_publisher_of_organization',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(
-      'nid' => array(
-        'columns' => array(
-          'nid' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
-    'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'node_reference',
-    'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 'organization',
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'platform_software' => 0,
-        'publisher' => 'publisher',
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
-      ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'node_reference',
   );
 
   // Exported field_base: 'field_publisher_referenced'

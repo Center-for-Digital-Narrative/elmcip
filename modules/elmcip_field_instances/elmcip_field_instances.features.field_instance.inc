@@ -415,9 +415,8 @@ function elmcip_field_instances_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -10367,55 +10366,6 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'date_select',
   );
 
-  // Exported field_instance: 'node-platform_software-field_developers'
-  $field_instances['node-platform_software-field_developers'] = array(
-    'bundle' => 'platform_software',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
-        'weight' => 0,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_developers',
-    'label' => 'Developers',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'node_reference',
-      'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'node_reference_autocomplete',
-      'weight' => 31,
-    ),
-  );
-
   // Exported field_instance: 'node-platform_software-field_license'
   $field_instances['node-platform_software-field_license'] = array(
     'bundle' => 'platform_software',
@@ -10428,20 +10378,20 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -10475,7 +10425,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -10485,13 +10435,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 12,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -10552,7 +10502,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'thousand_separator' => ' ',
         ),
         'type' => 'number_integer',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'above',
@@ -10564,13 +10514,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'thousand_separator' => ' ',
         ),
         'type' => 'number_integer',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -10590,7 +10540,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 34,
+      'weight' => -4,
     ),
   );
 
@@ -10605,14 +10555,14 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 11,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10656,20 +10606,20 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -10740,7 +10690,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -10750,13 +10700,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -10787,55 +10737,6 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_publisher_of_organization'
-  $field_instances['node-platform_software-field_publisher_of_organization'] = array(
-    'bundle' => 'platform_software',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
-        'weight' => 1,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_publisher_of_organization',
-    'label' => 'Publisher or Organization',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'node_reference',
-      'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'node_reference_autocomplete',
-      'weight' => 32,
-    ),
-  );
-
   // Exported field_instance: 'node-platform_software-field_url'
   $field_instances['node-platform_software-field_url'] = array(
     'bundle' => 'platform_software',
@@ -10848,20 +10749,20 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -10896,7 +10797,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 36,
+      'weight' => -3,
     ),
   );
 
@@ -10912,20 +10813,20 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -18577,7 +18478,6 @@ Work records do not need to be submitted to the anthology in order to be documen
   t('Description (Original Language)');
   t('Description (in English)');
   t('Description (in original language)');
-  t('Developers');
   t('Died');
   t('Download URL');
   t('ELMCIP Anthology Selection');
@@ -18743,7 +18643,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Publication Type');
   t('Publisher');
   t('Publisher Referenced');
-  t('Publisher or Organization');
   t('Publishers');
   t('Pull Quotes');
   t('Record Status');
@@ -18785,8 +18684,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Upload a photo of the author.');
   t('Upload screenshots or other images related to the organization.');
   t('Upload screenshots or other relevant imagery of the work here.');
-  t('Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.');
-  t('Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.');
   t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. If the event is not yet in the database, first add it before completing the record.');
   t('Use this field to attach a text or pdf document, such as a CV.');
   t('Use this field to display Vimeo and YouTube videos, Flickr sets, and other multimedia content. ');

@@ -1468,11 +1468,9 @@ function elmcip_field_instances_field_group_info() {
     'label' => 'Core Information',
     'weight' => '0',
     'children' => array(
-      0 => 'field_developers',
-      1 => 'field_publisher_of_organization',
-      2 => 'field_number',
-      3 => 'field_url',
-      4 => 'title',
+      0 => 'field_number',
+      1 => 'field_url',
+      2 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

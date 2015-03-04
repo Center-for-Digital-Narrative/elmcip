@@ -2029,7 +2029,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => TRUE,
       ),
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -2066,6 +2066,9 @@ function elmcip_content_types_strongarm() {
         ),
         'path' => array(
           'weight' => '3',
+        ),
+        'locations' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),
