@@ -10452,7 +10452,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
-      'file_directory' => '',
+      'file_directory' => 'softwareplatform/images',
       'file_extensions' => 'mp3',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -10519,7 +10519,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
-      'file_directory' => 'platform_attachment',
+      'file_directory' => 'softwareplatform/attachment',
       'file_extensions' => 'txt pdf zip',
       'max_filesize' => '',
       'user_register_form' => FALSE,
