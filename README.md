@@ -3,27 +3,24 @@
 ## Content
 - [Installation](doc/install.md)
 - [Test and verify and issue](doc/test_verify.md)
+- [Contribute changes and improvements](doc/contrib.md)
 - [How to create a release](doc/create_release.md)
 - [How to deploy a release] (doc/deploy.md)
 
-## Usage
+## General usage
 
-
-### Grab a copy of production and apply lates updates.
-
-This will automagically update your local installation.
+### Grab a copy of production (elmcip.net)
+This will automagically update your local installation. It grabs copy of the database and any newly added files added since last time you did this.
 
     bin/reset2production <norestore username>
+
+### Upgrade from production to develoment
+    bin/site-upgrade
+
+### Upgrade from production to a specific develoment branch
     bin/site-upgrade <git branch name>
 
-* Grab copy of the database and any pictures added since last time reset2production was run.
-* Move to master branch or your optional branch and pull in any new commits and update the drupal submodule.
-* Run any pending update tasks to update database 
-
-Omit to run 'bin/site-upgrade' if you wish to have an exact copy of production.
-
 ### Log in as user 1 (site admin) without password
-
     bin/site-drush uli
 
 Logs into to dev site as user 1 (site administrator).
@@ -33,23 +30,7 @@ This enable field, views userinterface and disable all caching and much more.
 
     bin/site-drush en development_settings
 
-## Contribute changes, fixes and improvements back to ELMCIP.
-
-Before you do any changes or try to commit them. Make sure your system is clean and up to date. Make sure you create a issue on github https://github.com/elmcip/elmcip/issues or locate a already reported issue number that describe the scope of the work.
-
-    bin/reset2production <NORSTORE USERNAME>
-Replace your current installation with a fresh copy of elmcip.net (files and database).
-
-    bin/site-upgrade
-Upgrade your new copy to the latest code found in the git master branch and run any needed updates.
-
-    git checkout -b issue_number
-This create your own branch from master you can safely work on. Do your changes and add them to git. These changes need to pushed to github before test.elmcip.net or other developers can test them.
-
-If the issue then is confirmed working and can be safely applied to production will the code make it into the master branch. Snapshots of the master branch is what in the end makes the production branch.
-
 ### Using Feature module with drush
-
 Check all modules and make sure our feature modules are overridden.
 
     bin/site-drush fl
@@ -66,7 +47,7 @@ Show the difference between the database and configuration stored in the feature
 
     bin/site-drush fd <module name>
 
-### Best practise in git
+## Best practise in git
 
 * Commit often.
 * Commit should always contain working code. Do not commit and push half baked code. That might break test and beta.elmcip.net installation and will get reverted from the repository.
