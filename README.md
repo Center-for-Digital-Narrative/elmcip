@@ -4,7 +4,7 @@
 - [Installation](doc/install.md)
 - [Test and verify and issue](doc/test_verify.md)
 - [How to create a release](doc/create_release.md)
-
+- [How to deploy a release] (doc/deploy.md)
 
 ## Usage
 
