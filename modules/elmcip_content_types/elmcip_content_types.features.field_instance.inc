@@ -80,11 +80,58 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-platform_software-field_platform_developers'
+  $field_instances['node-platform_software-field_platform_developers'] = array(
+    'bundle' => 'platform_software',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 11,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_platform_developers',
+    'label' => 'Developers',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => -2,
+    ),
+  );
+
   // Exported field_instance: 'node-platform_software-field_platform_year'
   $field_instances['node-platform_software-field_platform_year'] = array(
     'bundle' => 'platform_software',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Indicate the year that this platform was first released.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -118,7 +165,7 @@ function elmcip_content_types_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_platform_year',
-    'label' => 'Year',
+    'label' => 'Year initiated',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -168,7 +215,7 @@ function elmcip_content_types_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 10,
+        'weight' => 11,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -409,14 +456,17 @@ function elmcip_content_types_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Developers');
   t('If there is a description of this work in the Po.Ex database, add a cross reference to it here.');
   t('If this critical writing has an entry in the Po.Ex database, add a reference here by linking the complete URL of the page.');
+  t('Indicate the year that this platform was first released.');
   t('Po.Ex entry');
   t('Publisher or organization');
   t('Repository');
+  t('Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.');
   t('Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
-  t('Year');
+  t('Year initiated');
 
   return $field_instances;
 }

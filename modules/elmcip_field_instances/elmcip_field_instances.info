@@ -112,6 +112,7 @@ features[field_base][] = field_other_lang_ver_link
 features[field_base][] = field_pagenumbers
 features[field_base][] = field_part_of_another_work
 features[field_base][] = field_people
+features[field_base][] = field_platform_developers
 features[field_base][] = field_platform_year
 features[field_base][] = field_project_type
 features[field_base][] = field_ps_attachment

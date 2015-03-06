@@ -1471,7 +1471,8 @@ function elmcip_field_instances_field_group_info() {
       0 => 'field_url',
       1 => 'field_publisher_or_organization',
       2 => 'field_platform_year',
-      3 => 'title',
+      3 => 'field_platform_developers',
+      4 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

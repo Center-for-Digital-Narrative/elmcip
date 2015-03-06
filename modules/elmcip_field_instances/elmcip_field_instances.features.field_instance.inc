@@ -10385,7 +10385,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10435,7 +10435,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10503,7 +10503,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10554,7 +10554,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10641,7 +10641,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10738,7 +10738,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => -2,
+      'weight' => -1,
     ),
   );
 
@@ -10761,7 +10761,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
