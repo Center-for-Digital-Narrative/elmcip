@@ -1468,9 +1468,8 @@ function elmcip_field_instances_field_group_info() {
     'label' => 'Core Information',
     'weight' => '0',
     'children' => array(
-      0 => 'field_number',
-      1 => 'field_url',
-      2 => 'title',
+      0 => 'field_url',
+      1 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

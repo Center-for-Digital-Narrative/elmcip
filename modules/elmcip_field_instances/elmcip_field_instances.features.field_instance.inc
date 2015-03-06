@@ -10485,65 +10485,6 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_number'
-  $field_instances['node-platform_software-field_number'] = array(
-    'bundle' => 'platform_software',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Indicate the year that this platform was first released.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_integer',
-        'weight' => 0,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_integer',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 8,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_number',
-    'label' => 'Year initiated',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => -4,
-    ),
-  );
-
   // Exported field_instance: 'node-platform_software-field_ps_attachment'
   $field_instances['node-platform_software-field_ps_attachment'] = array(
     'bundle' => 'platform_software',
@@ -18581,7 +18522,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Important technical notes about the database or archive.');
   t('Indicate the title of the work in the title field, which will display as the link label. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.');
   t('Indicate the types of publication. Multiple selections permitted. ');
-  t('Indicate the year that this platform was first released.');
   t('Individual Organizers');
   t('Journal volume and issue');
   t('KB Editor Notes');
@@ -18699,7 +18639,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Year');
   t('Year Initiated');
   t('Year in which the work was first published. If the work changed on an ongoing basis over time, indicate the period in the work description.');
-  t('Year initiated');
   t('Year of birth.');
   t('Year of death.');
   t('You may attach files, such as PDFs, to this record.');
