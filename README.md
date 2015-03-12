@@ -6,6 +6,7 @@
 - [Contribute changes and improvements](doc/contrib.md)
 - [How to create a release](doc/create_release.md)
 - [How to deploy a release] (doc/deploy.md)
+- NEED HERE: How to add / commit / deploy changes to a view -- need a better understanding of how features module handles views so that we can add and reconfigure views with less hassle.
 
 ## General usage
 
