@@ -22,7 +22,7 @@ This enable field, views userinterface and disable all caching and much more.
     bin/site-drush en development_settings
 
 ### Using Feature module with drush
-Check all modules and make sure our feature modules are overridden.
+List all feature modules and their current state.
 
     bin/site-drush fl
 
