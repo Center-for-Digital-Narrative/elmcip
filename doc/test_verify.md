@@ -1,16 +1,5 @@
 # Test and verify and issue
-This describe how to locally test and verify a issue.
-
-## Get your system clean
-Make sure you don't have any local changes to your file system.
-
-    git status
-
-GIT should tell you that your system is clean. If not `git reset --hard` should take care of that.
-
-    bin/reset2production <norstore username>
-
-You are now in sync with production (elmcip.net) and are ready to test.
+Before continuing [reset](reset.md) your local installation.
 
 ## Test a issue
 This grab an existing issue and try upgrade and deploy the changes to your local installation. The general rule is that we use the issue number created by github. In this example we will test issue 666.

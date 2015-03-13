@@ -5,25 +5,14 @@
 - [Test and verify and issue](doc/test_verify.md)
 - [Contribute changes and improvements](doc/contrib.md)
 - [How to create a release](doc/create_release.md)
-- [How to deploy a release] (doc/deploy.md)
+- [How to deploy a release](doc/deploy.md)
 - NEED HERE: How to add / commit / deploy changes to a view -- need a better understanding of how features module handles views so that we can add and reconfigure views with less hassle.
 
 ## General usage
-
-### Grab a copy of production (elmcip.net)
-This will automagically update your local installation. It grabs copy of the database and any newly added files added since last time you did this.
-
-    bin/reset2production <norestore username>
-
-### Upgrade from production to develoment
-    bin/site-upgrade
-
-### Upgrade from production to a specific develoment branch
-    bin/site-upgrade <git branch name>
+ELMCIP Drupal configuration is controlled in multiple [Features](https://www.drupal.org/project/features) modules. Other changes, example housekeeping tasks are run in code by [hook_update_N()](https://api.drupal.org/api/drupal/modules!system!system.api.php/function/hook_update_N/7). Need to learn more about Features, have a look at the provided [Featuers documentation](https://www.drupal.org/node/580026).
 
 ### Log in as user 1 (site admin) without password
     bin/site-drush uli
-
 Logs into to dev site as user 1 (site administrator).
 
 ### Turn on development settings module.
@@ -54,10 +43,6 @@ Show the difference between the database and configuration stored in the feature
 * Commit should always contain working code. Do not commit and push half baked code. That might break test and beta.elmcip.net installation and will get reverted from the repository.
 * Write informative commit messages. Write why you did the changes, not what you just changed, Git will tell us that.
 * Remember to push your changes.
-
-### git workflow
-
-*git status* - to get status and make sure you do not have any changed files. To get rid of any unintended edited files use *git reset* or git *reset --hard*
 
 ## Troubleshooting
 
