@@ -163,3 +163,14 @@ function elmcip_setup_update_7013() {
   print("$drush_result\n");
   module_disable(array('entityreference_migration'), FALSE);
 }
+
+/**
+ * Delete unused fields from content type platform.
+ */
+function elmcip_setup_update_7014() {
+  $fields = array('field_number', 'field_version_history');
+  foreach ($fields as $field) {
+    $instance = field_info_instance('node', $field, 'platform_software');
+    field_delete_field($field);
+  }
+}
