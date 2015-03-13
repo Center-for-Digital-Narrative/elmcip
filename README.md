@@ -3,11 +3,11 @@
 ## Content
 - [Installation](doc/install.md)
 - [Reset and upgrade local installation](doc/reset.md)
+- [How to work with the features module](features.md)
 - [Test and verify and issue](doc/test_verify.md)
 - [Contribute changes and improvements](doc/contrib.md)
 - [How to create a release](doc/create_release.md)
 - [How to deploy a release](doc/deploy.md)
-- [Work with the feature module](feature.md)
 - NEED HERE: How to add / commit / deploy changes to a view -- need a better understanding of how features module handles views so that we can add and reconfigure views with less hassle.
 
 ## General usage
