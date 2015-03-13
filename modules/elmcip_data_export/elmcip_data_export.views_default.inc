@@ -6380,15 +6380,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
-  );
   /* Field: Content: Author */
   $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
@@ -6400,9 +6391,18 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author ID';
-  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
+  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['type'] = 'number_unformatted';
+  $handler->display->display_options['fields']['field_number']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
   /* Field: Content: Creative Works referenced */
   $handler->display->display_options['fields']['field_node_ref_work']['id'] = 'field_node_ref_work';
   $handler->display->display_options['fields']['field_node_ref_work']['table'] = 'field_data_field_node_ref_work';
@@ -6431,7 +6431,10 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name_3']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name_3']['relationship'] = 'field_node_ref_work_nid';
   $handler->display->display_options['fields']['field_author_name_3']['label'] = 'Creative Work Author ID';
-  $handler->display->display_options['fields']['field_author_name_3']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name_3']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_author_name_3']['settings'] = array(
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_author_name_3']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_3']['delta_offset'] = '0';
   /* Field: Content: Year */
@@ -6482,86 +6485,8 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
-  $handler->display->display_options['style_options']['provide_file'] = 0;
+  $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
-  );
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_plain';
-  $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author_name_1']['id'] = 'field_author_name_1';
-  $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
-  $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author ID';
-  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_nid';
-  $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
-  /* Field: Content: Creative Works referenced */
-  $handler->display->display_options['fields']['field_node_ref_work']['id'] = 'field_node_ref_work';
-  $handler->display->display_options['fields']['field_node_ref_work']['table'] = 'field_data_field_node_ref_work';
-  $handler->display->display_options['fields']['field_node_ref_work']['field'] = 'field_node_ref_work';
-  $handler->display->display_options['fields']['field_node_ref_work']['type'] = 'node_reference_plain';
-  $handler->display->display_options['fields']['field_node_ref_work']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_node_ref_work']['delta_offset'] = '0';
-  /* Field: Content: Creative Works referenced */
-  $handler->display->display_options['fields']['field_node_ref_work_1']['id'] = 'field_node_ref_work_1';
-  $handler->display->display_options['fields']['field_node_ref_work_1']['table'] = 'field_data_field_node_ref_work';
-  $handler->display->display_options['fields']['field_node_ref_work_1']['field'] = 'field_node_ref_work';
-  $handler->display->display_options['fields']['field_node_ref_work_1']['type'] = 'node_reference_nid';
-  $handler->display->display_options['fields']['field_node_ref_work_1']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_node_ref_work_1']['delta_offset'] = '0';
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author_name_2']['id'] = 'field_author_name_2';
-  $handler->display->display_options['fields']['field_author_name_2']['table'] = 'field_data_field_author_name';
-  $handler->display->display_options['fields']['field_author_name_2']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name_2']['relationship'] = 'field_node_ref_work_nid';
-  $handler->display->display_options['fields']['field_author_name_2']['label'] = 'Creative Work Author';
-  $handler->display->display_options['fields']['field_author_name_2']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_author_name_2']['delta_offset'] = '0';
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author_name_3']['id'] = 'field_author_name_3';
-  $handler->display->display_options['fields']['field_author_name_3']['table'] = 'field_data_field_author_name';
-  $handler->display->display_options['fields']['field_author_name_3']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name_3']['relationship'] = 'field_node_ref_work_nid';
-  $handler->display->display_options['fields']['field_author_name_3']['label'] = 'Creative Work Author ID';
-  $handler->display->display_options['fields']['field_author_name_3']['type'] = 'node_reference_nid';
-  $handler->display->display_options['fields']['field_author_name_3']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_author_name_3']['delta_offset'] = '0';
-  /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number_1']['id'] = 'field_number_1';
-  $handler->display->display_options['fields']['field_number_1']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number_1']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number_1']['relationship'] = 'field_node_ref_work_nid';
-  $handler->display->display_options['fields']['field_number_1']['label'] = 'Year (Work)';
-  $handler->display->display_options['fields']['field_number_1']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_number_1']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
-  );
   $handler->display->display_options['path'] = 'critical-writing-referencing-creative-works-data';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -6659,9 +6584,9 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     t('field_node_ref_work'),
     t('Nid'),
     t('Title'),
-    t('Year'),
     t('Author'),
     t('Author ID'),
+    t('Year'),
     t('Creative Works referenced'),
     t('Creative Works referenced ID'),
     t('Creative Work Author'),
