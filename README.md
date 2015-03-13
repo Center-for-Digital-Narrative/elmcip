@@ -22,7 +22,29 @@ This enable field, views userinterface and disable all caching and much more.
 
     bin/site-drush en development_settings
 
-## Best practise in git
+## GIT
+Basic usage
+
+Get status of your local file system
+
+    git status
+
+Add files to be comitted (staging).
+
+    git add <filename> <filname xx>
+If your commit have many you could add the name of the directory they live in.
+
+    git add <directory name>
+
+Commit changes you have staged for commit
+
+    git commit
+
+Push your changes to github
+
+    git push
+
+### Best practise in git
 
 * Commit often.
 * Commit should always contain working code. Do not commit and push half baked code. That might break test and beta.elmcip.net installation and will get reverted from the repository.
