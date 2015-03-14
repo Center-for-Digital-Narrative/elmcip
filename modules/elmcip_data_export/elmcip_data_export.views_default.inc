@@ -16797,7 +16797,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
 
   $view = new view();
   $view->name = 'work_nid_event';
-  $view->description = '';
+  $view->description = 'Creative works presented at events, including work id, work title, event id, event name. Page and data export.';
   $view->tag = 'work, data export';
   $view->base_table = 'node';
   $view->human_name = 'work_NID_event';
@@ -16844,14 +16844,27 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'Work ID';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
   /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
-  $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Event NID';
-  $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Event ID';
+  $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event_1']['delta_offset'] = '0';
   /* Sort criterion: Content: Nid */
   $handler->display->display_options['sorts']['nid']['id'] = 'nid';
   $handler->display->display_options['sorts']['nid']['table'] = 'node';
@@ -16894,23 +16907,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Presented at Event */
-  $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
-  $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
-  $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
-  $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Event NID';
-  $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'node_reference_nid';
-  $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['path'] = 'work-nid-event-data';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
@@ -16932,11 +16928,12 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Nid'),
-    t('Event NID'),
+    t('Work ID'),
+    t('Title'),
+    t('Event ID'),
+    t('Presented at Event'),
     t('Page'),
     t('Data export'),
-    t('Title'),
   );
   $export['work_nid_event'] = $view;
 
