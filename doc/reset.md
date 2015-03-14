@@ -35,7 +35,7 @@ Make sure your site turned up clean after the site-upgrade. It should look somet
         Schema.org example: Recipe  schemaorg_recipe        Disabled  7.x-1.0-beta4
 It is not safe to continue if any of the states claim to be overridden or need review. It might lead to unexpected results and we don't want that, do we?
 
-### Upgrade from production to a specific a branch
+### Upgrade from production to a specific branch
 Site-upgrade also support moving from production and strait into a specific git branch. This of often done testing specific issues.
 
     bin/site-upgrade <git branch name>
