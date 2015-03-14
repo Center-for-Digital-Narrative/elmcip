@@ -1280,7 +1280,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nid_1']['id'] = 'nid_1';
   $handler->display->display_options['fields']['nid_1']['table'] = 'node';
   $handler->display->display_options['fields']['nid_1']['field'] = 'nid';
-  $handler->display->display_options['fields']['nid_1']['relationship'] = 'field_node_ref_event_nid';
   $handler->display->display_options['fields']['nid_1']['label'] = 'Event Nid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -1304,7 +1303,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author Nid';
-  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
   /* Field: Content: Tags */
@@ -1364,7 +1363,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author Nid';
-  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
   /* Field: Content: Tags */
