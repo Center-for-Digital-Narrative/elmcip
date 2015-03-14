@@ -16527,7 +16527,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
 
   $view = new view();
   $view->name = 'work_nid_data';
-  $view->description = '';
+  $view->description = 'View and data export that includes work, work id, author, author id, tag, tag id, year';
   $view->tag = 'work, data export';
   $view->base_table = 'node';
   $view->human_name = 'work_NID_data';
@@ -16584,7 +16584,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name_1']['id'] = 'field_author_name_1';
   $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_plain';
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
   /* Field: Content: Author */
@@ -16592,7 +16591,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['label'] = 'Author ID';
-  $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Tags */
@@ -16644,8 +16643,9 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'work-nid-page';
 
-  /* Display: Data export */
-  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  /* Display: Data export Minimal */
+  $handler = $view->new_display('views_data_export', 'Data export Minimal', 'views_data_export_1');
+  $handler->display->display_options['display_description'] = 'Title NID, Year, Author ID';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -16681,7 +16681,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['label'] = 'Author ID';
-  $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'work-nid-year-authorid-data';
@@ -16690,8 +16690,9 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     'default' => 0,
   );
 
-  /* Display: Data export 2 */
-  $handler = $view->new_display('views_data_export', 'Data export 2', 'views_data_export_2');
+  /* Display: Data export Extensive */
+  $handler = $view->new_display('views_data_export', 'Data export Extensive', 'views_data_export_2');
+  $handler->display->display_options['display_description'] = 'Title NID, Year, Author, Author ID, Tags, Tag ID, Year, Year ID';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
@@ -16717,7 +16718,6 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name_1']['id'] = 'field_author_name_1';
   $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'node_reference_plain';
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
   /* Field: Content: Author */
@@ -16725,7 +16725,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['label'] = 'Author ID';
-  $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Tags */
@@ -16786,8 +16786,10 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     t('2000[taxonomy_vocabulary_1_1-tid]'),
     t('Year'),
     t('Page'),
-    t('Data export'),
-    t('Data export 2'),
+    t('Data export Minimal'),
+    t('Title NID, Year, Author ID'),
+    t('Data export Extensive'),
+    t('Title NID, Year, Author, Author ID, Tags, Tag ID, Year, Year ID'),
     t('Year ID'),
     t('3000[field_number]'),
   );
