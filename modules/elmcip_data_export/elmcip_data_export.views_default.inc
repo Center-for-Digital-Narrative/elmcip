@@ -17654,7 +17654,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Event NID';
-  $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
   /* Field: Content: Author */
@@ -17662,7 +17662,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['label'] = 'Author NID';
-  $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Title */
@@ -17715,8 +17715,8 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['label'] = 'Author NID';
-  $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_author_name']['label'] = 'Author ID';
+  $handler->display->display_options['fields']['field_author_name']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Presented at Event */
@@ -17724,7 +17724,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Event NID';
-  $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
   /* Field: Content: Title */
@@ -17757,6 +17757,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
     t('Title'),
     t('Page'),
     t('Data export'),
+    t('Author ID'),
   );
   $export['workauthor_nid_event'] = $view;
 
