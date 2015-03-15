@@ -3255,10 +3255,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'Author ID';
   $handler->display->display_options['fields']['nid']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['path'] = 'http://elmcip.net/node/[nid]';
   $handler->display->display_options['fields']['nid']['alter']['absolute'] = TRUE;
-  $handler->display->display_options['fields']['nid']['link_to_node'] = TRUE;
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid_1']['id'] = 'nid_1';
   $handler->display->display_options['fields']['nid_1']['table'] = 'node';
@@ -3329,10 +3329,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'Author ID';
   $handler->display->display_options['fields']['nid']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['path'] = 'http://elmcip.net/node/[nid]';
   $handler->display->display_options['fields']['nid']['alter']['absolute'] = TRUE;
-  $handler->display->display_options['fields']['nid']['link_to_node'] = TRUE;
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid_1']['id'] = 'nid_1';
   $handler->display->display_options['fields']['nid_1']['table'] = 'node';
@@ -3367,7 +3367,7 @@ function elmcip_data_export_views_default_views() {
     t('First name'),
     t('Middle name'),
     t('Last name'),
-    t('Nid'),
+    t('Author ID'),
     t('Node Path'),
     t('http://elmcip.net/node/[nid]'),
     t('Alias Path'),
