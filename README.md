@@ -27,6 +27,10 @@ Basic usage
 Get status of your local file system
 
     git status
+    
+See differences
+
+    git diff
 
 Add files to be comitted (staging).
 
