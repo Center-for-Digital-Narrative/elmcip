@@ -31,3 +31,5 @@ Running the following script will copy image and documents added to the elmcip c
     bin/reset2production <norstore username>
 
 The very first time you run this will it transferee about 600MB. After this initial sync it will only transferee changed and new files on each reset. We are omitting all PDF and movie files due to their large size aka transferee time.
+
+NOTE: CAN WE ADD AN OPTION / INSTRUCTIONS ON HOW TO SYNCH ALL / CREATE AN ENTIRE BACKUP (perhaps in anohter doc)
