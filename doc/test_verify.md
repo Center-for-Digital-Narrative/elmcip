@@ -1,4 +1,4 @@
-# Test and verify and issue
+# Test and verify an issue
 Before continuing [reset](reset.md) your local installation.
 
 ## Test a issue
