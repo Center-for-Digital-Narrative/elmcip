@@ -31,7 +31,8 @@ Get status of your local file system
 Add files to be comitted (staging).
 
     git add <filename> <filname xx>
-If your commit have many you could add the name of the directory they live in.
+    
+If your commit has many files you could use the name of the directory they live in.
 
     git add <directory name>
 
@@ -53,13 +54,15 @@ Push your changes to github
 ## Troubleshooting
 
 ### Problems importing database
-If your unable to restore (import) the full database, your mysql/mariadb resource settings my be to low. Try upping this to:
+If you are unable to restore (import) the full database, your mysql/mariadb resource settings my be to low. Try upping this to:
 
      max_allowed_packet = 100M
 
 in your my.cnf or server.cnf and restart the db. server
 
     mysql.server restart
+
+NOTE: NEED EXACT COMMANDS FOR THE ABOVE
 
 ### Problems changing Drupal permissions
 Problems getting changing permissions on '/admin/people/permissions'? Check your apache/php-error log. You might then see warnings like:
