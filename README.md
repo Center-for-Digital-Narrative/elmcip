@@ -58,7 +58,7 @@ If you are unable to restore (import) the full database, your mysql/mariadb reso
 
      max_allowed_packet = 100M
 
-in your my.cnf or server.cnf and restart the db. server
+in your my.cnf or server.cnf  ? WHERE DO I FIND THIS ? and restart the db. server
 
     mysql.server restart
 
