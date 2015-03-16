@@ -4,7 +4,7 @@
 - [Installation](doc/install.md)
 - [Reset and upgrade local installation](doc/reset.md)
 - [How to work with the features module](doc/features.md)
-- [Test and verify and issue](doc/test_verify.md)
+- [Test and verify an issue](doc/test_verify.md)
 - [Contribute changes and improvements](doc/contrib.md)
 - [How to create a release](doc/create_release.md)
 - [How to deploy a release](doc/deploy.md)
