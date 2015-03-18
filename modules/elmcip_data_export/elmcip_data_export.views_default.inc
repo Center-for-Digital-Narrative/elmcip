@@ -4013,6 +4013,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
   /* Field: Content: Author */
   $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
@@ -4036,7 +4040,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event NID';
-  $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_event_1']['delta_offset'] = '0';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
@@ -4047,10 +4051,6 @@ function elmcip_data_export_views_default_views() {
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -4084,6 +4084,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['path'] = 'conference-cw-person-data';
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
 
   /* Display: Data export -- Author Event with NIDS */
   $handler = $view->new_display('views_data_export', 'Data export -- Author Event with NIDS', 'views_data_export_2');
@@ -4104,12 +4106,12 @@ function elmcip_data_export_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('Nid'),
     t('Author'),
     t('Author NID'),
     t('Presented at Event'),
     t('Event NID'),
     t('Year'),
-    t('Nid'),
     t('Data export -- Author Event Tag'),
     t('Data export -- Author Event with NIDS'),
   );
