@@ -1269,18 +1269,26 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_options']['filename'] = '%1-title_%view.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'node';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_node_ref_event_nid';
-  $handler->display->display_options['fields']['title_1']['label'] = 'Event';
-  $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid_1']['id'] = 'nid_1';
-  $handler->display->display_options['fields']['nid_1']['table'] = 'node';
-  $handler->display->display_options['fields']['nid_1']['field'] = 'nid';
-  $handler->display->display_options['fields']['nid_1']['label'] = 'Event Nid';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event ID';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref_event_1']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1328,19 +1336,26 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_options']['filename'] = '%1-title_%view.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'node';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_node_ref_event_nid';
-  $handler->display->display_options['fields']['title_1']['label'] = 'Event';
-  $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid_1']['id'] = 'nid_1';
-  $handler->display->display_options['fields']['nid_1']['table'] = 'node';
-  $handler->display->display_options['fields']['nid_1']['field'] = 'nid';
-  $handler->display->display_options['fields']['nid_1']['relationship'] = 'field_node_ref_event_nid';
-  $handler->display->display_options['fields']['nid_1']['label'] = 'Event Nid';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event ID';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref_event_1']['delta_offset'] = '0';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1389,6 +1404,8 @@ function elmcip_data_export_views_default_views() {
     'default' => 0,
     'entity_view_2' => 0,
   );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['Event_work'] = array(
     t('Defaults'),
     t('Works presented'),
@@ -1404,8 +1421,8 @@ function elmcip_data_export_views_default_views() {
     t('All'),
     t('Entity content'),
     t('Data export'),
-    t('Event'),
-    t('Event Nid'),
+    t('Presented at Event'),
+    t('Event ID'),
     t('Work Nid'),
     t('Author Nid'),
     t('Tags'),
