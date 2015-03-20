@@ -17113,7 +17113,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Creative Works published';
+  $handler->display->display_options['title'] = 'Creative works published:';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -17150,13 +17150,6 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['style_options']['sticky'] = TRUE;
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Creative works published';
-  $handler->display->display_options['header']['area']['content'] = '<p>Creative works published</p>';
-  $handler->display->display_options['header']['area']['format'] = '3';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
@@ -17224,10 +17217,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['bundles'] = array(
     0 => 'organization',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['work_organization'] = array(
     t('Defaults'),
-    t('Creative Works published'),
+    t('Creative works published:'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -17241,8 +17234,6 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Creative works published'),
-    t('<p>Creative works published</p>'),
     t('Creative Work'),
     t('Add new <a href="/node/add/work" target="_blank">creative work</a>.'),
     t('Work title'),
