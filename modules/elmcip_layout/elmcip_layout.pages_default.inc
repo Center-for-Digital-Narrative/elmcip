@@ -1062,7 +1062,9 @@ function elmcip_layout_default_page_manager_pages() {
       'override_title_text' => '',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
@@ -1094,7 +1096,9 @@ function elmcip_layout_default_page_manager_pages() {
       'override_title_text' => '',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 2;
@@ -1314,28 +1318,13 @@ function elmcip_layout_default_page_manager_pages() {
     $display->content['new-a07dda03-1a3a-4e26-8790-73aa525dc66f'] = $pane;
     $display->panels['top'][3] = 'new-a07dda03-1a3a-4e26-8790-73aa525dc66f';
     $pane = new stdClass();
-    $pane->pid = 'new-127246f7-f1b8-4a9a-bbde-718f4067d98a';
+    $pane->pid = 'new-fa3540d3-9833-4b9e-b124-f98990361884';
     $pane->panel = 'top';
-    $pane->type = 'views';
-    $pane->subtype = 'critical_writing_page';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'critical_writing_main-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '10',
-      'pager_id' => '',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'block_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
+    $pane->configuration = array();
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -1343,10 +1332,10 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 4;
-    $pane->locks = '';
-    $pane->uuid = '127246f7-f1b8-4a9a-bbde-718f4067d98a';
-    $display->content['new-127246f7-f1b8-4a9a-bbde-718f4067d98a'] = $pane;
-    $display->panels['top'][4] = 'new-127246f7-f1b8-4a9a-bbde-718f4067d98a';
+    $pane->locks = array();
+    $pane->uuid = 'fa3540d3-9833-4b9e-b124-f98990361884';
+    $display->content['new-fa3540d3-9833-4b9e-b124-f98990361884'] = $pane;
+    $display->panels['top'][4] = 'new-fa3540d3-9833-4b9e-b124-f98990361884';
     $pane = new stdClass();
     $pane->pid = 'new-edd724d2-0911-4028-a113-dab321f2cff2';
     $pane->panel = 'top';

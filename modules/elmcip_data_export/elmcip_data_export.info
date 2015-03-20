@@ -48,6 +48,7 @@ features[views_view][] = content_by_contributor
 features[views_view][] = content_status
 features[views_view][] = critical_writin_critical_writing
 features[views_view][] = critical_writing_db_archive
+features[views_view][] = critical_writing_main
 features[views_view][] = critical_writing_nid_event
 features[views_view][] = critical_writing_on_publisher
 features[views_view][] = critical_writing_on_referenced_publisher
