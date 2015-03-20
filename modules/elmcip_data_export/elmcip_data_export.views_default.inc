@@ -12582,7 +12582,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $handler->display->display_options['title'] = 'Research Collections';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['use_more_text'] = 'See all critical writing';
+  $handler->display->display_options['use_more_text'] = 'See all research collections';
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -12829,7 +12829,7 @@ Show only critical writing <a href="/cw_ref_works" target="_blank">referencing c
   $translatables['research_collection_page'] = array(
     t('Defaults'),
     t('Research Collections'),
-    t('See all critical writing'),
+    t('See all research collections'),
     t('Filter'),
     t('Reset'),
     t('Sort by'),
