@@ -4858,11 +4858,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['field_language_tax_tid']['id'] = 'field_language_tax_tid';
   $handler->display->display_options['filters']['field_language_tax_tid']['table'] = 'field_data_field_language_tax';
   $handler->display->display_options['filters']['field_language_tax_tid']['field'] = 'field_language_tax_tid';
-  $handler->display->display_options['filters']['field_language_tax_tid']['value'] = '';
   $handler->display->display_options['filters']['field_language_tax_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_language_tax_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_language_tax_tid']['expose']['operator_id'] = 'field_language_tax_tid_op';
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['label'] = 'Language (field_language_tax)';
+  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['label'] = 'Language';
   $handler->display->display_options['filters']['field_language_tax_tid']['expose']['operator'] = 'field_language_tax_tid_op';
   $handler->display->display_options['filters']['field_language_tax_tid']['expose']['identifier'] = 'field_language_tax_tid';
   $handler->display->display_options['filters']['field_language_tax_tid']['expose']['remember_roles'] = array(
@@ -4886,7 +4885,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['field_number_value']['group'] = 1;
   $handler->display->display_options['filters']['field_number_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_number_value']['expose']['operator_id'] = 'field_number_value_op';
-  $handler->display->display_options['filters']['field_number_value']['expose']['label'] = 'Year (field_number)';
+  $handler->display->display_options['filters']['field_number_value']['expose']['label'] = 'Year';
   $handler->display->display_options['filters']['field_number_value']['expose']['operator'] = 'field_number_value_op';
   $handler->display->display_options['filters']['field_number_value']['expose']['identifier'] = 'field_number_value';
   $handler->display->display_options['filters']['field_number_value']['expose']['remember_roles'] = array(
@@ -4906,7 +4905,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['field'] = 'field_pubtype_tax_tid';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator_id'] = 'field_pubtype_tax_tid_op';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['label'] = 'Publication Type (field_pubtype_tax)';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['label'] = 'Publication Type';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator'] = 'field_pubtype_tax_tid_op';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['identifier'] = 'field_pubtype_tax_tid';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['remember_roles'] = array(
@@ -5156,9 +5155,7 @@ function elmcip_data_export_views_default_views() {
     t('Year'),
     t('Appears in'),
     t('Updated'),
-    t('Language (field_language_tax)'),
-    t('Year (field_number)'),
-    t('Publication Type (field_pubtype_tax)'),
+    t('Language'),
     t('Page'),
     t('Preview of data export'),
     t('more'),
@@ -5714,7 +5711,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Filter';
   $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '200';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '2';
   $handler->display->display_options['style_plugin'] = 'table';
