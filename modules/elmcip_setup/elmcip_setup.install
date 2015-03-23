@@ -174,3 +174,10 @@ function elmcip_setup_update_7014() {
     field_delete_field($field);
   }
 }
+
+/**
+ * Enable new feature module - elmcip_platform
+ */
+function elmcip_setup_update_7015() {
+  module_enable(array('elmcip_platform'), FALSE);
+}
