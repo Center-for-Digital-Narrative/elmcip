@@ -25,7 +25,7 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['title'] = 'Platform/Software';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['use_more_text'] = 'See all critical writing';
+  $handler->display->display_options['use_more_text'] = 'See all Platform/Software';
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -445,7 +445,7 @@ function elmcip_platform_views_default_views() {
   $translatables['platform'] = array(
     t('Defaults'),
     t('Platform/Software'),
-    t('See all critical writing'),
+    t('See all Platform/Software'),
     t('Filter'),
     t('Reset'),
     t('Sort by'),

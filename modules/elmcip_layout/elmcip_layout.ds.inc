@@ -591,7 +591,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '13',
+      'weight' => '12',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -600,10 +600,15 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
-    'title' => array(
-      'weight' => '1',
-      'label' => 'hidden',
-      'format' => 'default',
+    'author' => array(
+      'weight' => '13',
+      'label' => 'inline',
+      'format' => 'author_linked',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
+      ),
     ),
   );
   $export['node|platform_software|full'] = $ds_fieldsetting;
@@ -1971,38 +1976,38 @@ function elmcip_layout_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         0 => 'content_type',
-        1 => 'title',
-        2 => 'field_repository',
-        3 => 'field_platform_year',
-        4 => 'field_url',
-        5 => 'field_platform_versions',
-        6 => 'field_platform_developers',
-        7 => 'field_license',
+        1 => 'field_repository',
+        2 => 'field_platform_year',
+        3 => 'field_url',
+        4 => 'field_platform_developers',
+        5 => 'field_publisher_or_organization',
+        6 => 'field_license',
       ),
       'right' => array(
-        8 => 'field_ps_description',
+        7 => 'field_ps_description',
+        8 => 'field_platform_versions',
         9 => 'field_ps_image',
-        10 => 'field_ps_attachment',
-        11 => 'field_publisher_or_organization',
-        12 => 'field_media',
-        13 => 'purl',
+        10 => 'field_media',
+        11 => 'field_ps_attachment',
+        12 => 'purl',
+        13 => 'author',
       ),
     ),
     'fields' => array(
       'content_type' => 'left',
-      'title' => 'left',
       'field_repository' => 'left',
       'field_platform_year' => 'left',
       'field_url' => 'left',
-      'field_platform_versions' => 'left',
       'field_platform_developers' => 'left',
+      'field_publisher_or_organization' => 'left',
       'field_license' => 'left',
       'field_ps_description' => 'right',
+      'field_platform_versions' => 'right',
       'field_ps_image' => 'right',
-      'field_ps_attachment' => 'right',
-      'field_publisher_or_organization' => 'right',
       'field_media' => 'right',
+      'field_ps_attachment' => 'right',
       'purl' => 'right',
+      'author' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
