@@ -1502,6 +1502,7 @@ function elmcip_field_instances_field_group_info() {
       0 => 'field_ps_description',
       1 => 'field_license',
       2 => 'field_repository',
+      3 => 'field_platform_versions',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
