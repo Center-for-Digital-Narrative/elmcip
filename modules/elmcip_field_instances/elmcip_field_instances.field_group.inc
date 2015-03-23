@@ -1443,12 +1443,12 @@ function elmcip_field_instances_field_group_info() {
       1 => 'field_ps_attachment',
       2 => 'field_media',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'formatter' => 'closed',
       'instance_settings' => array(
         'description' => '',
-        'classes' => 'group-ps-attachments field-group-fieldset',
+        'classes' => '',
         'required_fields' => 1,
       ),
     ),
@@ -1474,12 +1474,12 @@ function elmcip_field_instances_field_group_info() {
       3 => 'field_publisher_or_organization',
       4 => 'title',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'formatter' => 'closed',
       'instance_settings' => array(
         'description' => '',
-        'classes' => 'group-ps-core field-group-fieldset',
+        'classes' => '',
         'required_fields' => 1,
       ),
     ),
@@ -1504,12 +1504,12 @@ function elmcip_field_instances_field_group_info() {
       2 => 'field_repository',
       3 => 'field_platform_versions',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tab',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'formatter' => 'closed',
       'instance_settings' => array(
         'description' => '',
-        'classes' => 'group-ps-description field-group-fieldset',
+        'classes' => '',
         'required_fields' => 1,
       ),
     ),
