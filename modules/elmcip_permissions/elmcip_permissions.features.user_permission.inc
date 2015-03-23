@@ -240,15 +240,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'ds',
   );
 
-  // Exported permission: 'administer RDF field mappings'.
-  $permissions['administer RDF field mappings'] = array(
-    'name' => 'administer RDF field mappings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'rdfui',
-  );
-
   // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
@@ -507,15 +498,6 @@ function elmcip_permissions_user_default_permissions() {
     'name' => 'administer permissions',
     'roles' => array(),
     'module' => 'user',
-  );
-
-  // Exported permission: 'administer rdf'.
-  $permissions['administer rdf'] = array(
-    'name' => 'administer rdf',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'rdfx',
   );
 
   // Exported permission: 'administer rules'.
