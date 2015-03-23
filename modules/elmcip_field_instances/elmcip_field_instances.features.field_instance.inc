@@ -10429,12 +10429,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'file_view_mode' => 'default',
         ),
-        'type' => 'image',
+        'type' => 'file_rendered',
         'weight' => 12,
       ),
       'teaser' => array(
