@@ -1469,9 +1469,9 @@ function elmcip_field_instances_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_url',
-      1 => 'field_publisher_or_organization',
+      1 => 'field_platform_developers',
       2 => 'field_platform_year',
-      3 => 'field_platform_developers',
+      3 => 'field_publisher_or_organization',
       4 => 'title',
     ),
     'format_type' => 'fieldset',
@@ -1500,9 +1500,8 @@ function elmcip_field_instances_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_ps_description',
-      1 => 'field_version_history',
-      2 => 'field_license',
-      3 => 'field_repository',
+      1 => 'field_license',
+      2 => 'field_repository',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

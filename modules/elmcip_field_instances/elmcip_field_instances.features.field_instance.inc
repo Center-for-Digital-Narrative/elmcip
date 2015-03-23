@@ -10741,88 +10741,6 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_version_history'
-  $field_instances['node-platform_software-field_version_history'] = array(
-    'bundle' => 'platform_software',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_version_history',
-    'label' => 'Version history',
-    'required' => 0,
-    'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          1 => 0,
-          2 => 0,
-          3 => 0,
-          4 => 0,
-          'basic_text_editor' => 'basic_text_editor',
-          'ds_code' => 0,
-        ),
-        'allowed_formats_toggle' => 1,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            1 => array(
-              'weight' => -5,
-            ),
-            2 => array(
-              'weight' => -8,
-            ),
-            3 => array(
-              'weight' => -9,
-            ),
-            4 => array(
-              'weight' => -7,
-            ),
-            'basic_text_editor' => array(
-              'weight' => -10,
-            ),
-            'ds_code' => array(
-              'weight' => -6,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'node-publisher-field_editor_name'
   $field_instances['node-publisher-field_editor_name'] = array(
     'bundle' => 'publisher',
@@ -18567,7 +18485,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Presented at Event');
   t('Project Type');
   t('Provide a brief description of the work in English, up to 350 words.');
-  t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.');
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available. Provide basic professional details, as well as year of birth, etc.');
   t('Provide a written description of the platform and its distinguishing features. Indicate the source of the description.');
@@ -18632,7 +18549,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The field will autocomplete. If the person is not yet in the database first <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Use this field to link to your syllabus or other material you have created as a teaching resource in the Knowledge Base. The field will autocomplete. If the teaching resource is not yet in the Knowledge Base, first <a href="node/add/teaching-resource">add the teaching resource</a>.');
   t('Using the pulldown menu, identify whether the resource is an archive, database, or special collection. <br><br>In the "Title" field, just above, enter the official name of the resource. If the resource is commonly referred to by an acronymn (e.g. <i>ELD</i> for the <i>Electronic Literature Directory</i>), this can be specified in description.');
-  t('Version history');
   t('Work noted');
   t('WorldCat Permalink');
   t('Year');
