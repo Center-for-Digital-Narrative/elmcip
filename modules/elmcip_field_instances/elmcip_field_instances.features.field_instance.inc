@@ -5782,7 +5782,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'progress_indicator' => 'bar',
       ),
       'type' => 'image_image',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 

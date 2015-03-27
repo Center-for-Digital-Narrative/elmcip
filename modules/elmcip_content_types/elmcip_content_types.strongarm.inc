@@ -1373,6 +1373,9 @@ function elmcip_content_types_strongarm() {
         'path' => array(
           'weight' => '4',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'research_collection_db_arcive_entity_view_1' => array(

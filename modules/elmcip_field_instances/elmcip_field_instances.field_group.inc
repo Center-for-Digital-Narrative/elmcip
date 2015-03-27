@@ -534,6 +534,7 @@ function elmcip_field_instances_field_group_info() {
       2 => 'field_multi_images',
       3 => 'field_db_cross_event',
       4 => 'field_db_cross_cw',
+      5 => 'field_database_platform_ref',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

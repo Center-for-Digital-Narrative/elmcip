@@ -136,6 +136,56 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-databases_and_archives-field_database_platform_ref'
+  $field_instances['node-databases_and_archives-field_database_platform_ref'] = array(
+    'bundle' => 'databases_and_archives',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Platform/Software',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 30,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_database_platform_ref',
+    'label' => 'Platform referenced',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-platform_software-field_platform_developers'
   $field_instances['node-platform_software-field_platform_developers'] = array(
     'bundle' => 'platform_software',
