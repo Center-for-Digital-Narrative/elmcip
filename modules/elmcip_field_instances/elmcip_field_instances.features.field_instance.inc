@@ -2068,7 +2068,7 @@ function elmcip_field_instances_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -2197,7 +2197,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'progress_indicator' => 'bar',
       ),
       'type' => 'file_generic',
-      'weight' => 17,
+      'weight' => 18,
     ),
     'widget_type' => 'filefield_widget',
   );
@@ -2952,7 +2952,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -3138,7 +3138,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'use_default_image' => 0,
       ),
       'type' => 'image_image',
-      'weight' => 15,
+      'weight' => 16,
     ),
     'widget_type' => 'imagefield_widget',
   );

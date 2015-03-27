@@ -10,6 +10,62 @@
 function elmcip_content_types_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-critical_writing-field_criticalw_platform_ref'
+  $field_instances['node-critical_writing-field_criticalw_platform_ref'] = array(
+    'bundle' => 'critical_writing',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Platform/Software',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 38,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_criticalw_platform_ref',
+    'label' => 'Platform referenced',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-critical_writing-field_po_ex_entry'
   $field_instances['node-critical_writing-field_po_ex_entry'] = array(
     'bundle' => 'critical_writing',
@@ -76,7 +132,7 @@ function elmcip_content_types_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -519,6 +575,8 @@ function elmcip_content_types_field_default_field_instances() {
   t('If there is a description of this work in the Po.Ex database, add a cross reference to it here.');
   t('If this critical writing has an entry in the Po.Ex database, add a reference here by linking the complete URL of the page.');
   t('Indicate the year that this platform was first released.');
+  t('Platform referenced');
+  t('Platform/Software');
   t('Po.Ex entry');
   t('Publisher or organization');
   t('Repository');

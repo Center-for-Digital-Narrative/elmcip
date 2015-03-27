@@ -1069,6 +1069,9 @@ function elmcip_content_types_strongarm() {
         'cw_reference_critical_writing_node_content_1' => array(
           'weight' => '24',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'Critical_writing_in_book_entity_view_1' => array(
