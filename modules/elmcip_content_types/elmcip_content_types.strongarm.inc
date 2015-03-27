@@ -2346,6 +2346,9 @@ function elmcip_content_types_strongarm() {
         'path' => array(
           'weight' => '1',
         ),
+        'locations' => array(
+          'weight' => '15',
+        ),
       ),
       'display' => array(
         'research_collection_table_of_creative_wroks_entity_view_1' => array(
