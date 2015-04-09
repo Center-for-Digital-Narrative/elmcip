@@ -2689,6 +2689,9 @@ function elmcip_content_types_strongarm() {
         'Tr_work_node_content_1' => array(
           'weight' => '10',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'Critical_writing_work_entity_view_1' => array(

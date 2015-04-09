@@ -15241,7 +15241,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 10,
+      'weight' => 9,
     ),
     'widget_type' => 'link',
   );
@@ -15708,7 +15708,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 8,
     ),
     'widget_type' => 'link',
   );
@@ -16191,7 +16191,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 28,
+      'weight' => 29,
     ),
   );
 
@@ -16250,7 +16250,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -16307,7 +16307,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -16418,7 +16418,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 13,
     ),
     'widget_type' => 'optionwidgets_select',
   );
@@ -16789,7 +16789,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -16935,7 +16935,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -17171,7 +17171,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 5,
+      'weight' => 4,
     ),
     'widget_type' => 'number',
   );
@@ -17895,7 +17895,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 27,
+      'weight' => 28,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -18080,7 +18080,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -18206,7 +18206,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 7,
     ),
     'widget_type' => 'link',
   );
@@ -18265,7 +18265,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -18340,7 +18340,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
