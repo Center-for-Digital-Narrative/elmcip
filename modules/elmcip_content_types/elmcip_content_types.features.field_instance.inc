@@ -145,68 +145,6 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-work-field_platform_software'
-  $field_instances['node-work-field_platform_software'] = array(
-    'bundle' => 'work',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="node/add/platform-software">add a record for the platform or software</a> before completing this record.',
-    'display' => array(
-      'data_export' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 41,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'token' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_platform_software',
-    'label' => 'Platform / Software',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 27,
-    ),
-  );
-
   // Exported field_instance: 'node-work-field_po_ex_entry'
   $field_instances['node-work-field_po_ex_entry'] = array(
     'bundle' => 'work',
@@ -353,7 +291,7 @@ function elmcip_content_types_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 19,
+      'weight' => 18,
     ),
   );
 
@@ -361,11 +299,9 @@ function elmcip_content_types_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('If there is a description of this work in the Po.Ex database, add a cross reference to it here.');
   t('If this critical writing has an entry in the Po.Ex database, add a reference here by linking the complete URL of the page.');
-  t('Platform / Software');
   t('Po.Ex entry');
   t('Repository');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
-  t('Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="node/add/platform-software">add a record for the platform or software</a> before completing this record.');
 
   return $field_instances;
 }
