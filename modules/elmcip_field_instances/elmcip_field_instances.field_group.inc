@@ -408,7 +408,8 @@ function elmcip_field_instances_field_group_info() {
       9 => 'field_translator',
       10 => 'field_node_ref_event',
       11 => 'field_number',
-      12 => 'title',
+      12 => 'field_cw_in_platform_software',
+      13 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
