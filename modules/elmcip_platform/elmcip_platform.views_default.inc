@@ -165,27 +165,6 @@ function elmcip_platform_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Year initiated (field_platform_year) */
-  $handler->display->display_options['filters']['field_platform_year_value']['id'] = 'field_platform_year_value';
-  $handler->display->display_options['filters']['field_platform_year_value']['table'] = 'field_data_field_platform_year';
-  $handler->display->display_options['filters']['field_platform_year_value']['field'] = 'field_platform_year_value';
-  $handler->display->display_options['filters']['field_platform_year_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_platform_year_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_platform_year_value']['expose']['operator_id'] = 'field_platform_year_value_op';
-  $handler->display->display_options['filters']['field_platform_year_value']['expose']['label'] = 'Year initiated (field_platform_year)';
-  $handler->display->display_options['filters']['field_platform_year_value']['expose']['operator'] = 'field_platform_year_value_op';
-  $handler->display->display_options['filters']['field_platform_year_value']['expose']['identifier'] = 'field_platform_year_value';
-  $handler->display->display_options['filters']['field_platform_year_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    7 => 0,
-    3 => 0,
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    8 => 0,
-    4 => 0,
-    9 => 0,
-  );
 
   /* Display: Export preview */
   $handler = $view->new_display('page', 'Export preview', 'page_1');
@@ -366,7 +345,6 @@ function elmcip_platform_views_default_views() {
     t('Developers'),
     t('Year initiated'),
     t('Updated'),
-    t('Year initiated (field_platform_year)'),
     t('Export preview'),
     t('Preview of data export'),
     t('more'),
