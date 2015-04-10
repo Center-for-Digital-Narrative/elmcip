@@ -70,6 +70,22 @@ function elmcip_field_instances_file_default_displays() {
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
+  $file_display->name = 'video__default__media_youtube_video';
+  $file_display->weight = -48;
+  $file_display->status = TRUE;
+  $file_display->settings = array(
+    'theme' => 'dark',
+    'width' => '560',
+    'height' => '340',
+    'autoplay' => 0,
+    'related' => 1,
+    'modestbranding' => 0,
+    'showinfo' => 1,
+  );
+  $export['video__default__media_youtube_video'] = $file_display;
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
   $file_display->name = 'video__media_original__file_field_file_default';
   $file_display->weight = 0;
   $file_display->status = FALSE;

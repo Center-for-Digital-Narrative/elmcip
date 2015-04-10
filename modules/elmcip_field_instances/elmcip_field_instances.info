@@ -463,6 +463,7 @@ features[file_display][] = video__default__media_flickr_image
 features[file_display][] = video__default__media_flickr_video
 features[file_display][] = video__default__media_vimeo_image
 features[file_display][] = video__default__media_youtube_image
+features[file_display][] = video__default__media_youtube_video
 features[file_display][] = video__media_original__file_field_file_default
 features[file_display][] = video__media_original__file_field_file_table
 features[file_display][] = video__media_original__file_field_file_url_plain

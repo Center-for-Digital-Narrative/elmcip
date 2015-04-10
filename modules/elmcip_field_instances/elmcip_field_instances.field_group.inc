@@ -224,19 +224,19 @@ function elmcip_field_instances_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_url',
-      1 => 'field_number',
-      2 => 'field_license',
-      3 => 'field_archiveurl',
-      4 => 'field_downloadurl',
-      5 => 'field_venue_tax',
-      6 => 'field_language_tax',
-      7 => 'field_worldcat_link',
-      8 => 'field_isbn_text',
-      9 => 'field_node_ref',
-      10 => 'field_author_name',
-      11 => 'field_contributor',
-      12 => 'field_translator',
-      13 => 'field_node_ref_event',
+      1 => 'field_author_name',
+      2 => 'field_number',
+      3 => 'field_license',
+      4 => 'field_node_ref',
+      5 => 'field_node_ref_event',
+      6 => 'field_archiveurl',
+      7 => 'field_downloadurl',
+      8 => 'field_contributor',
+      9 => 'field_venue_tax',
+      10 => 'field_language_tax',
+      11 => 'field_worldcat_link',
+      12 => 'field_isbn_text',
+      13 => 'field_translator',
       14 => 'title',
     ),
     'format_type' => 'tab',
@@ -597,15 +597,14 @@ function elmcip_field_instances_field_group_info() {
       1 => 'field_contributors',
       2 => 'field_abstract_lang',
       3 => 'field_orig_lang',
-      4 => 'field_pullquote',
-      5 => 'field_textfield',
-      6 => 'field_tech_notes',
-      7 => 'field_abstract_lang_tax',
-      8 => 'field_other_lang_ver_link',
+      4 => 'field_other_lang_ver_link',
+      5 => 'field_pullquote',
+      6 => 'field_textfield',
+      7 => 'field_tech_notes',
+      8 => 'field_in_anthology',
       9 => 'field_other_edition_work',
-      10 => 'field_part_of_another_work',
-      11 => 'field_in_anthology',
-      12 => 'field_platform_software',
+      10 => 'field_abstract_lang_tax',
+      11 => 'field_part_of_another_work',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -692,13 +691,13 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Description',
-    'weight' => '36',
+    'weight' => '26',
     'children' => array(
-      0 => 'field_orig_lang',
-      1 => 'field_pullquote',
-      2 => 'field_tech_notes',
-      3 => 'field_node_ref_event',
-      4 => 'field_other_lang_ver_link',
+      0 => 'field_node_ref_event',
+      1 => 'field_orig_lang',
+      2 => 'field_other_lang_ver_link',
+      3 => 'field_pullquote',
+      4 => 'field_tech_notes',
       5 => 'field_in_anthology',
     ),
     'format_type' => 'fieldset',
@@ -2067,7 +2066,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Documentation',
-    'weight' => '41',
+    'weight' => '31',
     'children' => array(
       0 => 'field_files',
     ),
@@ -2123,7 +2122,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Core Information',
-    'weight' => '35',
+    'weight' => '25',
     'children' => array(
       0 => 'field_contributors',
       1 => 'field_license',
@@ -2176,7 +2175,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Submit to ELMCIP Anthology',
-    'weight' => '43',
+    'weight' => '33',
     'children' => array(
       0 => 'field_anthology_submission',
     ),

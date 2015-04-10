@@ -1069,6 +1069,9 @@ function elmcip_content_types_strongarm() {
         'cw_reference_critical_writing_node_content_1' => array(
           'weight' => '24',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'Critical_writing_in_book_entity_view_1' => array(
@@ -1369,6 +1372,9 @@ function elmcip_content_types_strongarm() {
         ),
         'path' => array(
           'weight' => '4',
+        ),
+        'locations' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(
@@ -2340,6 +2346,9 @@ function elmcip_content_types_strongarm() {
         'path' => array(
           'weight' => '1',
         ),
+        'locations' => array(
+          'weight' => '15',
+        ),
       ),
       'display' => array(
         'research_collection_table_of_creative_wroks_entity_view_1' => array(
@@ -2738,9 +2747,6 @@ function elmcip_content_types_strongarm() {
         'Tr_work_node_content_1' => array(
           'weight' => '10',
         ),
-        'locations' => array(
-          'weight' => '30',
-        ),
       ),
       'display' => array(
         'Critical_writing_work_entity_view_1' => array(
@@ -2749,11 +2755,11 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'full' => array(
-            'weight' => '32',
+            'weight' => '31',
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '47',
+            'weight' => '37',
             'visible' => FALSE,
           ),
           'data_export' => array(
@@ -2767,11 +2773,11 @@ function elmcip_content_types_strongarm() {
         ),
         'Tr_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '33',
+            'weight' => '32',
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '45',
+            'weight' => '35',
             'visible' => FALSE,
           ),
           'default' => array(
@@ -2789,15 +2795,11 @@ function elmcip_content_types_strongarm() {
         ),
         'clone_of_research_collection_creative_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '34',
+            'weight' => '33',
             'visible' => TRUE,
           ),
           'default' => array(
             'weight' => '10',
-            'visible' => FALSE,
-          ),
-          'teaser' => array(
-            'weight' => '21',
             'visible' => FALSE,
           ),
         ),
@@ -3287,7 +3289,6 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_platform_software';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_platform_software'] = $strongarm;
 

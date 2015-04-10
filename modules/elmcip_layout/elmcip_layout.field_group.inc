@@ -205,7 +205,7 @@ function elmcip_layout_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Editorial',
-    'weight' => '44',
+    'weight' => '34',
     'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
