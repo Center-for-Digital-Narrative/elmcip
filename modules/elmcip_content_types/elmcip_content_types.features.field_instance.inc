@@ -186,6 +186,82 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-platform_software-field_editorial_notes'
+  $field_instances['node-platform_software-field_editorial_notes'] = array(
+    'bundle' => 'platform_software',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Add notes about editorial status here.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_editorial_notes',
+    'label' => 'KB Editor Notes',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-platform_software-field_platform_developers'
   $field_instances['node-platform_software-field_platform_developers'] = array(
     'bundle' => 'platform_software',
@@ -252,7 +328,7 @@ function elmcip_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 10,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -401,6 +477,49 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => -3,
+    ),
+  );
+
+  // Exported field_instance: 'node-platform_software-field_record_status_tax'
+  $field_instances['node-platform_software-field_record_status_tax'] = array(
+    'bundle' => 'platform_software',
+    'default_value' => array(
+      0 => array(
+        'tid' => 1489,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 13,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_record_status_tax',
+    'label' => 'Record Status',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 6,
     ),
   );
 
@@ -736,14 +855,17 @@ function elmcip_content_types_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add notes about editorial status here.');
   t('Developers');
   t('If there is a description of this work in the Po.Ex database, add a cross reference to it here.');
   t('If this critical writing has an entry in the Po.Ex database, add a reference here by linking the complete URL of the page.');
   t('Indicate the year that this platform was first released.');
+  t('KB Editor Notes');
   t('Platform referenced');
   t('Platform/Software');
   t('Po.Ex entry');
   t('Publisher or organization');
+  t('Record Status');
   t('Repository');
   t('Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.');
   t('Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.');

@@ -591,7 +591,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '12',
+      'weight' => '14',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -601,7 +601,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '13',
+      'weight' => '15',
       'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
@@ -1987,15 +1987,17 @@ function elmcip_layout_ds_layout_settings_info() {
         4 => 'field_platform_developers',
         5 => 'field_publisher_or_organization',
         6 => 'field_license',
+        7 => 'field_record_status_tax',
+        8 => 'field_editorial_notes',
       ),
       'right' => array(
-        7 => 'field_ps_description',
-        8 => 'field_platform_versions',
-        9 => 'field_ps_image',
-        10 => 'field_media',
-        11 => 'field_ps_attachment',
-        12 => 'purl',
-        13 => 'author',
+        9 => 'field_ps_description',
+        10 => 'field_platform_versions',
+        11 => 'field_ps_image',
+        12 => 'field_media',
+        13 => 'field_ps_attachment',
+        14 => 'purl',
+        15 => 'author',
       ),
     ),
     'fields' => array(
@@ -2006,6 +2008,8 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_platform_developers' => 'left',
       'field_publisher_or_organization' => 'left',
       'field_license' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_editorial_notes' => 'left',
       'field_ps_description' => 'right',
       'field_platform_versions' => 'right',
       'field_ps_image' => 'right',

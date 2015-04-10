@@ -2120,10 +2120,10 @@ function elmcip_content_types_strongarm() {
           'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
         'locations' => array(
-          'weight' => '30',
+          'weight' => '5',
         ),
       ),
       'display' => array(),
