@@ -333,7 +333,8 @@ function elmcip_field_instances_field_group_info() {
       6 => 'field_year_initiated',
       7 => 'field_db_language',
       8 => 'field_license',
-      9 => 'title',
+      9 => 'field_database_platform_ref',
+      10 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -535,7 +536,6 @@ function elmcip_field_instances_field_group_info() {
       2 => 'field_multi_images',
       3 => 'field_db_cross_event',
       4 => 'field_db_cross_cw',
-      5 => 'field_database_platform_ref',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

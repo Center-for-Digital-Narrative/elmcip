@@ -1364,6 +1364,9 @@ function elmcip_content_types_strongarm() {
       'teaser_abbreviated' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -1384,7 +1387,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '20',
             'visible' => FALSE,
           ),
         ),
@@ -1394,7 +1397,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '19',
             'visible' => FALSE,
           ),
         ),
@@ -1404,7 +1407,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '21',
             'visible' => FALSE,
           ),
         ),

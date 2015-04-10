@@ -161,15 +161,9 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'above',
       'format' => 'default',
-      'ft' => array(
-        'func' => 'theme_ds_field_expert',
-        'fi' => TRUE,
-        'fi-el' => 'h4',
-        'fi-cl' => 'title',
-      ),
     ),
     'links' => array(
-      'weight' => '8',
+      'weight' => '10',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -179,9 +173,14 @@ function elmcip_layout_ds_field_settings_info() {
       'format' => 'author_linked',
     ),
     'post_date' => array(
-      'weight' => '4',
+      'weight' => '6',
       'label' => 'above',
       'format' => 'ds_post_date_long',
+    ),
+    'field_database_platform_ref' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
     ),
   );
   $export['node|databases_and_archives|default'] = $ds_fieldsetting;
@@ -1432,22 +1431,21 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
       'left' => array(
         0 => 'title',
         1 => 'author',
         2 => 'field_url',
         3 => 'field_db_org',
-        4 => 'post_date',
+        4 => 'field_database_platform_ref',
         5 => 'field_license',
+        6 => 'post_date',
       ),
       'right' => array(
-        0 => 'field_db_people',
-        1 => 'field_contributors',
-        2 => 'field_contact_email',
-        3 => 'links',
+        7 => 'field_db_people',
+        8 => 'field_contributors',
+        9 => 'field_contact_email',
+        10 => 'links',
       ),
     ),
     'fields' => array(
@@ -1455,14 +1453,24 @@ function elmcip_layout_ds_layout_settings_info() {
       'author' => 'left',
       'field_url' => 'left',
       'field_db_org' => 'left',
+      'field_database_platform_ref' => 'left',
+      'field_license' => 'left',
       'post_date' => 'left',
       'field_db_people' => 'right',
       'field_contributors' => 'right',
       'field_contact_email' => 'right',
       'links' => 'right',
-      'field_license' => 'left',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|databases_and_archives|default'] = $ds_layout;
 

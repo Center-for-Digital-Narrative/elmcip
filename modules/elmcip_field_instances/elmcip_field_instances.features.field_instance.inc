@@ -5105,7 +5105,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -5136,7 +5136,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -5152,7 +5152,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -5184,7 +5184,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -5199,7 +5199,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 33,
       ),
       'full' => array(
         'label' => 'above',
@@ -5246,7 +5246,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 32,
       ),
       'full' => array(
         'label' => 'above',
@@ -5294,7 +5294,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 26,
       ),
       'full' => array(
         'label' => 'above',
@@ -5341,7 +5341,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 27,
       ),
       'full' => array(
         'label' => 'above',
@@ -5388,7 +5388,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 24,
       ),
       'full' => array(
         'label' => 'above',
@@ -5417,7 +5417,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -5466,7 +5466,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'node_reference_autocomplete',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -5483,7 +5483,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'node_reference',
         'settings' => array(),
         'type' => 'node_reference_default',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -5516,7 +5516,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'size' => 60,
       ),
       'type' => 'node_reference_autocomplete',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -5532,7 +5532,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 25,
       ),
       'full' => array(
         'label' => 'above',
@@ -5579,7 +5579,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 28,
       ),
       'full' => array(
         'label' => 'above',
@@ -5626,7 +5626,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 35,
       ),
       'full' => array(
         'label' => 'above',
@@ -5671,7 +5671,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 30,
       ),
       'full' => array(
         'label' => 'above',
@@ -5733,7 +5733,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 29,
       ),
       'full' => array(
         'label' => 'above',
@@ -5798,7 +5798,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 27,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -5841,7 +5841,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 31,
       ),
       'full' => array(
         'label' => 'above',
@@ -5917,7 +5917,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 22,
       ),
       'full' => array(
         'label' => 'above',
@@ -5966,7 +5966,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 34,
       ),
       'full' => array(
         'label' => 'above',
@@ -6072,7 +6072,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'above',
@@ -6121,7 +6121,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'year_range' => '-25:+3',
       ),
       'type' => 'date_text',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
