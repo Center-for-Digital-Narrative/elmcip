@@ -14657,7 +14657,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -14684,7 +14684,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 32,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -14739,13 +14739,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 46,
+        'weight' => 50,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 39,
       ),
       'token' => array(
         'label' => 'above',
@@ -14798,13 +14798,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 48,
+        'weight' => 52,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 25,
       ),
       'token' => array(
         'label' => 'above',
@@ -14905,7 +14905,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 49,
+        'weight' => 53,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15031,7 +15031,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15276,12 +15276,9 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 32,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 42,
       ),
       'token' => array(
         'label' => 'above',
@@ -15379,7 +15376,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15498,7 +15495,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15595,13 +15592,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 38,
       ),
       'token' => array(
         'label' => 'above',
@@ -15654,13 +15651,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 22,
       ),
       'token' => array(
         'label' => 'above',
@@ -15700,7 +15697,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 14,
+      'weight' => 22,
     ),
   );
 
@@ -15770,7 +15767,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15819,7 +15816,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'progress_indicator' => 'bar',
       ),
       'type' => 'file_generic',
-      'weight' => 13,
+      'weight' => 21,
     ),
     'widget_type' => 'filefield_widget',
   );
@@ -15848,13 +15845,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 9,
       ),
       'token' => array(
         'label' => 'above',
@@ -15895,7 +15892,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 15,
+      'weight' => 23,
     ),
   );
 
@@ -15985,7 +15982,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16016,11 +16013,8 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 22,
       ),
       'token' => array(
@@ -16049,7 +16043,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 28,
+      'weight' => 29,
     ),
   );
 
@@ -16077,13 +16071,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 24,
       ),
       'token' => array(
         'label' => 'above',
@@ -16137,13 +16131,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 28,
       ),
       'token' => array(
         'label' => 'above',
@@ -16231,7 +16225,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16306,13 +16300,13 @@ Work records do not need to be submitted to the anthology in order to be documen
           'file_view_mode' => 'media_large',
         ),
         'type' => 'media',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 46,
       ),
       'token' => array(
         'label' => 'above',
@@ -16353,7 +16347,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 12,
+      'weight' => 20,
     ),
   );
 
@@ -16437,7 +16431,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16463,7 +16457,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 34,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -16501,7 +16495,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'progress_indicator' => 'bar',
       ),
       'type' => 'image_image',
-      'weight' => 11,
+      'weight' => 19,
     ),
     'widget_type' => 'imagefield_widget',
   );
@@ -16592,7 +16586,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16614,12 +16608,9 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 16,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 26,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -16737,7 +16728,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16759,11 +16750,8 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 23,
       ),
       'token' => array(
@@ -16821,13 +16809,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 11,
       ),
       'token' => array(
         'label' => 'above',
@@ -16867,7 +16855,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 16,
+      'weight' => 24,
     ),
   );
 
@@ -17103,7 +17091,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 47,
+        'weight' => 51,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17194,16 +17182,13 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 30,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
       ),
       'token' => array(
         'label' => 'above',
@@ -17321,7 +17306,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17352,11 +17337,8 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 26,
       ),
       'token' => array(
@@ -17421,16 +17403,13 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 0,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
       ),
       'token' => array(
         'label' => 'above',
@@ -17528,7 +17507,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17615,13 +17594,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 37,
       ),
       'token' => array(
         'label' => 'above',
@@ -17706,7 +17685,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17753,7 +17732,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 27,
+      'weight' => 28,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -17817,7 +17796,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17837,7 +17816,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 31,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -17905,12 +17884,9 @@ Work records do not need to be submitted to the anthology in order to be documen
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 13,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'token' => array(
         'label' => 'above',
@@ -18002,7 +17978,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18022,7 +17998,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 29,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -18094,13 +18070,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 27,
       ),
       'token' => array(
         'label' => 'above',
@@ -18152,13 +18128,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_separate',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 33,
       ),
       'token' => array(
         'label' => 'above',
@@ -18227,13 +18203,13 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 30,
       ),
       'token' => array(
         'label' => 'above',
