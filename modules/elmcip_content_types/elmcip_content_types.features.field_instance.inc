@@ -849,7 +849,7 @@ function elmcip_content_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 27,
+      'weight' => 7,
     ),
   );
 

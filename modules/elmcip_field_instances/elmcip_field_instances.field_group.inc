@@ -236,8 +236,9 @@ function elmcip_field_instances_field_group_info() {
       10 => 'field_contributor',
       11 => 'field_translator',
       12 => 'field_node_ref_event',
-      13 => 'field_number',
-      14 => 'title',
+      13 => 'field_work_platform_software',
+      14 => 'field_number',
+      15 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -605,7 +606,6 @@ function elmcip_field_instances_field_group_info() {
       9 => 'field_other_edition_work',
       10 => 'field_part_of_another_work',
       11 => 'field_in_anthology',
-      12 => 'field_work_platform_software',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

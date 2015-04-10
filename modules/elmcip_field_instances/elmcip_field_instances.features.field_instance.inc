@@ -14711,7 +14711,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 19,
+      'weight' => 30,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -14767,7 +14767,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 21,
+      'weight' => 32,
     ),
   );
 
@@ -15426,7 +15426,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 22,
+      'weight' => 33,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -16049,7 +16049,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 29,
+      'weight' => 39,
     ),
   );
 
@@ -16647,7 +16647,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -17029,7 +17029,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 5,
+      'weight' => 4,
     ),
     'widget_type' => 'number',
   );
@@ -17157,7 +17157,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'multistep' => 0,
       ),
       'type' => 'options_select',
-      'weight' => 20,
+      'weight' => 31,
     ),
     'widget_type' => 'optionwidgets_select',
   );
@@ -17231,7 +17231,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 24,
+      'weight' => 35,
     ),
   );
 
@@ -17385,7 +17385,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 34,
     ),
   );
 
@@ -17458,7 +17458,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 25,
+      'weight' => 36,
     ),
   );
 
@@ -17582,7 +17582,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 26,
+      'weight' => 37,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -17753,7 +17753,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 28,
+      'weight' => 38,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -17864,7 +17864,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 29,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -17938,7 +17938,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -18123,7 +18123,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -18259,7 +18259,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 17,
+      'weight' => 28,
     ),
   );
 
