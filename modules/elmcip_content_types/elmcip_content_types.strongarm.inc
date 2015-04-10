@@ -2747,6 +2747,9 @@ function elmcip_content_types_strongarm() {
         'Tr_work_node_content_1' => array(
           'weight' => '10',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'Critical_writing_work_entity_view_1' => array(
@@ -2755,7 +2758,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'full' => array(
-            'weight' => '31',
+            'weight' => '32',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2773,7 +2776,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Tr_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '32',
+            'weight' => '33',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2795,7 +2798,7 @@ function elmcip_content_types_strongarm() {
         ),
         'clone_of_research_collection_creative_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '33',
+            'weight' => '34',
             'visible' => TRUE,
           ),
           'default' => array(
