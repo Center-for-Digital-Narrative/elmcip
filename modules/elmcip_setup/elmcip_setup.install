@@ -168,7 +168,38 @@ function elmcip_setup_update_7013() {
  * Delete unused fields from content type platform.
  */
 function elmcip_setup_update_7014() {
-  $fields = array('field_number', 'field_version_history');
+  // Grab data from number field before nuking it and save data to
+  // field_platform_year.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'platform_software')
+    ->fieldCondition('field_number');
+
+  $result = $query->execute();
+  $news_items_nids = array_keys($result['node']);
+
+  foreach ($news_items_nids as $nid) {
+    try {
+      $platform_entity = entity_metadata_wrapper('node', $nid);
+      $year = strtotime($platform_entity->field_number->value() . '-01');
+      $date = $platform_entity->field_platform_year->value();
+      if ($year) {
+        $platform_entity->field_platform_year->set($year);
+        $platform_entity->save();
+        drush_log("Updated field_platform_year: $nid", 'notice');
+      }
+    }
+    catch (EntityMetadataWrapperException $exc) {
+      watchdog(
+        'ELMCIP Setup',
+        'See '  . __FUNCTION__ . '() <pre>' .  $exc->getTraceAsString() . '</pre>',
+         NULL, WATCHDOG_ERROR
+      );
+    }
+  }
+
+  // Delete unused field from bundle/system.
+  $fields = array('field_number');
   foreach ($fields as $field) {
     $instance = field_info_instance('node', $field, 'platform_software');
     field_delete_field($field);
