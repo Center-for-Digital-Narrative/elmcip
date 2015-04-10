@@ -86,12 +86,14 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
+  $handler->display->display_options['header']['result']['label'] = 'Total number of records';
   $handler->display->display_options['header']['result']['content'] = '@total records';
   /* Footer: Global: Text area */
-  $handler->display->display_options['footer']['text']['id'] = 'area';
+  $handler->display->display_options['footer']['text']['id'] = 'text';
   $handler->display->display_options['footer']['text']['table'] = 'views';
   $handler->display->display_options['footer']['text']['field'] = 'area';
-  $handler->display->display_options['footer']['text']['content'] = 'Add new <a href="/node/add/critical-writing" target="_blank">critical writing</a>.';
+  $handler->display->display_options['footer']['text']['label'] = 'Add new';
+  $handler->display->display_options['footer']['text']['content'] = 'Add new <a href="/node/add/platform-software" target="_blank">platform/software</a>.';
   $handler->display->display_options['footer']['text']['format'] = '1';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -337,8 +339,10 @@ function elmcip_platform_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('Total number of records'),
     t('@total records'),
-    t('Add new <a href="/node/add/critical-writing" target="_blank">critical writing</a>.'),
+    t('Add new'),
+    t('Add new <a href="/node/add/platform-software" target="_blank">platform/software</a>.'),
     t('Title'),
     t('Nid'),
     t('Publisher or organization'),
