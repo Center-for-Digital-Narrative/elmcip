@@ -34,3 +34,6 @@ Make sure your site turned up clean after the upgrade. If not, the issue is not 
     bin/site-drush en development_settings
 
 Test the issue and if it is OK, change the status of it to `verified by community`.
+
+#### To chain commands for testing
+bin/reset2production ; bin/site-upgrade issue_INSERT ISSUE NUMBER; bin/site-drush en -y development_settings ; bin/site-drush uli
