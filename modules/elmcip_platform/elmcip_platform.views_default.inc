@@ -12,10 +12,10 @@ function elmcip_platform_views_default_views() {
 
   $view = new view();
   $view->name = 'platform';
-  $view->description = 'Critical Writing views on work nodes';
-  $view->tag = 'Critical Writing, Page, Block, Front, data export';
+  $view->description = 'Platform KB Front page and Data Export View';
+  $view->tag = 'Platform, Front page, Data Export';
   $view->base_table = 'node';
-  $view->human_name = 'Platform';
+  $view->human_name = 'Platform KB Front';
   $view->core = 0;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -101,30 +101,34 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Publication Type */
-  $handler->display->display_options['fields']['field_pubtype_tax']['id'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['table'] = 'field_data_field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
-  /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
+  /* Field: Content: Publisher or organization */
+  $handler->display->display_options['fields']['field_publisher_or_organization']['id'] = 'field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['table'] = 'field_data_field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['field'] = 'field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['settings'] = array(
+    'link' => 1,
   );
-  /* Field: Content: Appears in */
-  $handler->display->display_options['fields']['field_inbook']['id'] = 'field_inbook';
-  $handler->display->display_options['fields']['field_inbook']['table'] = 'field_data_field_inbook';
-  $handler->display->display_options['fields']['field_inbook']['field'] = 'field_inbook';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['delta_offset'] = '0';
+  /* Field: Content: Developers */
+  $handler->display->display_options['fields']['field_platform_developers']['id'] = 'field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['table'] = 'field_data_field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['field'] = 'field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_platform_developers']['delta_offset'] = '0';
+  /* Field: Content: Year initiated */
+  $handler->display->display_options['fields']['field_platform_year']['id'] = 'field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['table'] = 'field_data_field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['field'] = 'field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['settings'] = array(
+    'format_type' => 'year_only',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
   /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
   $handler->display->display_options['fields']['changed']['table'] = 'node';
@@ -135,11 +139,6 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['changed']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['changed']['date_format'] = 'short';
-  /* Field: Content: Edit link */
-  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['label'] = '';
   /* Sort criterion: Content: Updated date */
   $handler->display->display_options['sorts']['changed']['id'] = 'changed';
   $handler->display->display_options['sorts']['changed']['table'] = 'node';
@@ -166,17 +165,17 @@ function elmcip_platform_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Language (field_language_tax) */
-  $handler->display->display_options['filters']['field_language_tax_tid']['id'] = 'field_language_tax_tid';
-  $handler->display->display_options['filters']['field_language_tax_tid']['table'] = 'field_data_field_language_tax';
-  $handler->display->display_options['filters']['field_language_tax_tid']['field'] = 'field_language_tax_tid';
-  $handler->display->display_options['filters']['field_language_tax_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_language_tax_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['operator_id'] = 'field_language_tax_tid_op';
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['label'] = 'Language';
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['operator'] = 'field_language_tax_tid_op';
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['identifier'] = 'field_language_tax_tid';
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['remember_roles'] = array(
+  /* Filter criterion: Content: Year initiated (field_platform_year) */
+  $handler->display->display_options['filters']['field_platform_year_value']['id'] = 'field_platform_year_value';
+  $handler->display->display_options['filters']['field_platform_year_value']['table'] = 'field_data_field_platform_year';
+  $handler->display->display_options['filters']['field_platform_year_value']['field'] = 'field_platform_year_value';
+  $handler->display->display_options['filters']['field_platform_year_value']['operator'] = 'between';
+  $handler->display->display_options['filters']['field_platform_year_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_platform_year_value']['expose']['operator_id'] = 'field_platform_year_value_op';
+  $handler->display->display_options['filters']['field_platform_year_value']['expose']['label'] = 'Year initiated (field_platform_year)';
+  $handler->display->display_options['filters']['field_platform_year_value']['expose']['operator'] = 'field_platform_year_value_op';
+  $handler->display->display_options['filters']['field_platform_year_value']['expose']['identifier'] = 'field_platform_year_value';
+  $handler->display->display_options['filters']['field_platform_year_value']['expose']['remember_roles'] = array(
     2 => '2',
     7 => 0,
     3 => 0,
@@ -187,52 +186,6 @@ function elmcip_platform_views_default_views() {
     4 => 0,
     9 => 0,
   );
-  $handler->display->display_options['filters']['field_language_tax_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_language_tax_tid']['vocabulary'] = 'language';
-  /* Filter criterion: Content: Year (field_number) */
-  $handler->display->display_options['filters']['field_number_value']['id'] = 'field_number_value';
-  $handler->display->display_options['filters']['field_number_value']['table'] = 'field_data_field_number';
-  $handler->display->display_options['filters']['field_number_value']['field'] = 'field_number_value';
-  $handler->display->display_options['filters']['field_number_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_number_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_number_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_number_value']['expose']['operator_id'] = 'field_number_value_op';
-  $handler->display->display_options['filters']['field_number_value']['expose']['label'] = 'Year';
-  $handler->display->display_options['filters']['field_number_value']['expose']['operator'] = 'field_number_value_op';
-  $handler->display->display_options['filters']['field_number_value']['expose']['identifier'] = 'field_number_value';
-  $handler->display->display_options['filters']['field_number_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    7 => 0,
-    3 => 0,
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    8 => 0,
-    4 => 0,
-    9 => 0,
-  );
-  /* Filter criterion: Content: Publication Type (field_pubtype_tax) */
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['id'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['table'] = 'field_data_field_pubtype_tax';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['field'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator_id'] = 'field_pubtype_tax_tid_op';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['label'] = 'Publication Type';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator'] = 'field_pubtype_tax_tid_op';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['identifier'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    7 => 0,
-    3 => 0,
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    8 => 0,
-    4 => 0,
-    9 => 0,
-  );
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['vocabulary'] = 'publication_type';
 
   /* Display: Export preview */
   $handler = $view->new_display('page', 'Export preview', 'page_1');
@@ -307,63 +260,6 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['filename'] = '%exposed_%view.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 1;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author_name_1']['id'] = 'field_author_name_1';
-  $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
-  $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author ID';
-  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'entityreference_entity_id';
-  $handler->display->display_options['fields']['field_author_name_1']['settings'] = array(
-    'link' => 0,
-  );
-  $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
-  /* Field: Content: Publication Type */
-  $handler->display->display_options['fields']['field_pubtype_tax']['id'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['table'] = 'field_data_field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_pubtype_tax']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
-  /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
-  );
-  /* Field: Content: Appears in */
-  $handler->display->display_options['fields']['field_inbook']['id'] = 'field_inbook';
-  $handler->display->display_options['fields']['field_inbook']['table'] = 'field_data_field_inbook';
-  $handler->display->display_options['fields']['field_inbook']['field'] = 'field_inbook';
-  /* Field: Content: Appears in */
-  $handler->display->display_options['fields']['field_inbook_1']['id'] = 'field_inbook_1';
-  $handler->display->display_options['fields']['field_inbook_1']['table'] = 'field_data_field_inbook';
-  $handler->display->display_options['fields']['field_inbook_1']['field'] = 'field_inbook';
-  $handler->display->display_options['fields']['field_inbook_1']['label'] = 'Journal NID';
-  $handler->display->display_options['fields']['field_inbook_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_inbook_1']['alter']['text'] = '[field_inbook_1-nid]';
-  $handler->display->display_options['fields']['field_inbook_1']['group_rows'] = FALSE;
-  $handler->display->display_options['fields']['field_inbook_1']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'data/platform/export';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
@@ -388,30 +284,34 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Publication Type */
-  $handler->display->display_options['fields']['field_pubtype_tax']['id'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['table'] = 'field_data_field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
-  /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
+  /* Field: Content: Publisher or organization */
+  $handler->display->display_options['fields']['field_publisher_or_organization']['id'] = 'field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['table'] = 'field_data_field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['field'] = 'field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['settings'] = array(
+    'link' => 1,
   );
-  /* Field: Content: Appears in */
-  $handler->display->display_options['fields']['field_inbook']['id'] = 'field_inbook';
-  $handler->display->display_options['fields']['field_inbook']['table'] = 'field_data_field_inbook';
-  $handler->display->display_options['fields']['field_inbook']['field'] = 'field_inbook';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['delta_offset'] = '0';
+  /* Field: Content: Developers */
+  $handler->display->display_options['fields']['field_platform_developers']['id'] = 'field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['table'] = 'field_data_field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['field'] = 'field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_platform_developers']['delta_offset'] = '0';
+  /* Field: Content: Year initiated */
+  $handler->display->display_options['fields']['field_platform_year']['id'] = 'field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['table'] = 'field_data_field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['field'] = 'field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['settings'] = array(
+    'format_type' => 'year_only',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
   /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
   $handler->display->display_options['fields']['changed']['table'] = 'node';
@@ -462,19 +362,15 @@ function elmcip_platform_views_default_views() {
     t('Add new <a href="/node/add/critical-writing" target="_blank">critical writing</a>.'),
     t('Title'),
     t('Nid'),
-    t('Author'),
-    t('Publication Type'),
-    t('Year'),
-    t('Appears in'),
+    t('Publisher or organization'),
+    t('Developers'),
+    t('Year initiated'),
     t('Updated'),
-    t('Language'),
+    t('Year initiated (field_platform_year)'),
     t('Export preview'),
     t('Preview of data export'),
     t('more'),
     t('Data export'),
-    t('Author ID'),
-    t('Journal NID'),
-    t('[field_inbook_1-nid]'),
     t('Content pane'),
     t('Used on KB front page'),
     t('View panes'),
