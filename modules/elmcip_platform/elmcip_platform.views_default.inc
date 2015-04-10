@@ -359,5 +359,150 @@ function elmcip_platform_views_default_views() {
   );
   $export['platform'] = $view;
 
+  $view = new view();
+  $view->name = 'works_developed_in_this_platform';
+  $view->description = 'Work records viewed on Platform node';
+  $view->tag = 'Work, Platform';
+  $view->base_table = 'node';
+  $view->human_name = 'Works Developed in this Platform';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Defaults */
+  $handler = $view->new_display('default', 'Defaults', 'default');
+  $handler->display->display_options['title'] = 'Works Developed in this Platform';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_number' => 'field_number',
+  );
+  $handler->display->display_options['style_options']['default'] = 'title';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+    ),
+    'field_number' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+    ),
+  );
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['label'] = 'Creative works in this platform';
+  $handler->display->display_options['header']['area']['format'] = '1';
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['text']['id'] = 'area';
+  $handler->display->display_options['footer']['text']['table'] = 'views';
+  $handler->display->display_options['footer']['text']['field'] = 'area';
+  $handler->display->display_options['footer']['text']['empty'] = TRUE;
+  $handler->display->display_options['footer']['text']['content'] = 'Add a new <a href="/node/add/work" target="_blank">work</a>.';
+  $handler->display->display_options['footer']['text']['format'] = '1';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Work title';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['field_language_tax']['id'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
+  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Contextual filter: Content: Platform/Software (field_work_platform_software) */
+  $handler->display->display_options['arguments']['field_work_platform_software_target_id']['id'] = 'field_work_platform_software_target_id';
+  $handler->display->display_options['arguments']['field_work_platform_software_target_id']['table'] = 'field_data_field_work_platform_software';
+  $handler->display->display_options['arguments']['field_work_platform_software_target_id']['field'] = 'field_work_platform_software_target_id';
+  $handler->display->display_options['arguments']['field_work_platform_software_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_work_platform_software_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_work_platform_software_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_work_platform_software_target_id']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = '0';
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'work' => 'work',
+  );
+  $handler->display->display_options['filters']['type']['group'] = '0';
+  $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
+
+  /* Display: Entity content */
+  $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
+  $handler->display->display_options['entity_type'] = 'node';
+  $handler->display->display_options['bundles'] = array(
+    0 => 'platform_software',
+  );
+  $handler->display->display_options['show_title'] = 1;
+  $translatables['works_developed_in_this_platform'] = array(
+    t('Defaults'),
+    t('Works Developed in this Platform'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Creative works in this platform'),
+    t('Add a new <a href="/node/add/work" target="_blank">work</a>.'),
+    t('Work title'),
+    t('Author'),
+    t('Language'),
+    t('Year'),
+    t('All'),
+    t('Entity content'),
+  );
+  $export['works_developed_in_this_platform'] = $view;
+
   return $export;
 }

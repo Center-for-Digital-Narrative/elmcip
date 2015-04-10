@@ -1,10 +1,12 @@
 name = Platform
 core = 7.x
 package = Features
+dependencies[] = eva
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = views_data_export
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[views_view][] = platform
+features[views_view][] = works_developed_in_this_platform
 features_exclude[dependencies][ctools] = ctools

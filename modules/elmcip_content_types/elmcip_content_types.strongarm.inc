@@ -2126,7 +2126,14 @@ function elmcip_content_types_strongarm() {
           'weight' => '5',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'works_developed_in_this_platform_entity_view_1' => array(
+          'full' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__platform_software'] = $strongarm;
