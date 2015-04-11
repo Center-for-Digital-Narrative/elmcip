@@ -463,7 +463,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
-  $handler->display->display_options['style_options']['attach_text'] = 'Critical Writing by this person - basic data export';
+  $handler->display->display_options['style_options']['attach_text'] = 'Critical Writing by this Person - Basic Data Export';
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['filename'] = '%view_basic_%1-title.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
@@ -525,7 +525,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
-  $handler->display->display_options['style_options']['attach_text'] = 'Critical Writing by this person - advanced data export';
+  $handler->display->display_options['style_options']['attach_text'] = 'Critical Writing by this Person - Advanced Data Export';
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['filename'] = '%view_advanced_%1-title.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
@@ -573,6 +573,16 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
   $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['id'] = 'field_pubtype_tax_1';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['table'] = 'field_data_field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['field'] = 'field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['label'] = 'Publication Type ID';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['alter']['text'] = '2000[field_pubtype_tax_1-tid]';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['delta_offset'] = '0';
   /* Field: Content: Publisher */
   $handler->display->display_options['fields']['field_node_ref']['id'] = 'field_node_ref';
   $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
@@ -620,7 +630,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
-  $handler->display->display_options['path'] = 'critical_writing_by_author_data_export_with_tags';
+  $handler->display->display_options['path'] = 'critical_writing_by_author_data_export_advanced';
   $handler->display->display_options['displays'] = array(
     'entity_view_1' => 'entity_view_1',
     'default' => 0,
@@ -651,6 +661,8 @@ function elmcip_data_export_views_default_views() {
     t('Data export-with Tags'),
     t('Author ID'),
     t('CW Nid'),
+    t('Publication Type ID'),
+    t('2000[field_pubtype_tax_1-tid]'),
     t('Publisher ID'),
     t('Tags'),
     t('Tag ID'),
@@ -2134,7 +2146,7 @@ function elmcip_data_export_views_default_views() {
   $view = new view();
   $view->name = 'Work';
   $view->description = 'Work record viewed on author node';
-  $view->tag = 'Person';
+  $view->tag = 'Person, Work, data export';
   $view->base_table = 'node';
   $view->human_name = 'Work by person';
   $view->core = 0;
@@ -2143,7 +2155,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Works by this author:';
+  $handler->display->display_options['title'] = 'Works by this author';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -2192,6 +2204,11 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = 'Work title';
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_venue_tax']['id'] = 'field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['table'] = 'field_data_field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['field'] = 'field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['delta_offset'] = '0';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
   $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
@@ -2230,18 +2247,18 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['group'] = '0';
   $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
 
-  /* Display: Entity content */
-  $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
+  /* Display: Entity content - By Author */
+  $handler = $view->new_display('entity_view', 'Entity content - By Author', 'entity_view_1');
   $handler->display->display_options['entity_type'] = 'node';
   $handler->display->display_options['bundles'] = array(
     0 => 'person',
   );
   $handler->display->display_options['show_title'] = 1;
 
-  /* Display: Entity content */
-  $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_2');
+  /* Display: Entity content - Contributed to */
+  $handler = $view->new_display('entity_view', 'Entity content - Contributed to', 'entity_view_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Works contributed to:';
+  $handler->display->display_options['title'] = 'Works contributed to';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Contributor (field_contributor) */
   $handler->display->display_options['arguments']['field_contributor_target_id']['id'] = 'field_contributor_target_id';
@@ -2257,9 +2274,186 @@ function elmcip_data_export_views_default_views() {
     0 => 'person',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export - Basic */
+  $handler = $view->new_display('views_data_export', 'Data export - Basic', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
+  $handler->display->display_options['style_options']['attach_text'] = 'Creative Work by Person - Basic Data Export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%view_basic_%1-title.xls';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['text']['id'] = 'text';
+  $handler->display->display_options['footer']['text']['table'] = 'views';
+  $handler->display->display_options['footer']['text']['field'] = 'area';
+  $handler->display->display_options['footer']['text']['empty'] = TRUE;
+  $handler->display->display_options['footer']['text']['content'] = 'When using this data for research purposes cite the ELMCIP Electronic Literature Knowledge Base.';
+  $handler->display->display_options['footer']['text']['format'] = '1';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Work title';
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_venue_tax']['id'] = 'field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['table'] = 'field_data_field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['field'] = 'field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref']['id'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref']['delta_offset'] = '0';
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
+  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  $handler->display->display_options['path'] = 'work_by_author_data_export_basic';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+    'entity_view_2' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
+
+  /* Display: Data export - with Tags */
+  $handler = $view->new_display('views_data_export', 'Data export - with Tags', 'views_data_export_2');
+  $handler->display->display_options['display_description'] = 'Advanced data export with tags and IDs for content';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
+  $handler->display->display_options['style_options']['attach_text'] = 'Creative Work by Person - Advanced Data Export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%view_advanced_%1-title.xls';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['text']['id'] = 'text';
+  $handler->display->display_options['footer']['text']['table'] = 'views';
+  $handler->display->display_options['footer']['text']['field'] = 'area';
+  $handler->display->display_options['footer']['text']['empty'] = TRUE;
+  $handler->display->display_options['footer']['text']['content'] = 'When using this data for research purposes cite the ELMCIP Electronic Literature Knowledge Base.';
+  $handler->display->display_options['footer']['text']['format'] = '1';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name_1']['id'] = 'field_author_name_1';
+  $handler->display->display_options['fields']['field_author_name_1']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name_1']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author ID';
+  $handler->display->display_options['fields']['field_author_name_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_author_name_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Work title';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'Work ID';
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_venue_tax']['id'] = 'field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['table'] = 'field_data_field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['field'] = 'field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_venue_tax']['delta_offset'] = '0';
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_venue_tax_1']['id'] = 'field_venue_tax_1';
+  $handler->display->display_options['fields']['field_venue_tax_1']['table'] = 'field_data_field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax_1']['field'] = 'field_venue_tax';
+  $handler->display->display_options['fields']['field_venue_tax_1']['label'] = 'Publication Type ID';
+  $handler->display->display_options['fields']['field_venue_tax_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_venue_tax_1']['alter']['text'] = '2000[field_venue_tax_1-tid]';
+  $handler->display->display_options['fields']['field_venue_tax_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_venue_tax_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_venue_tax_1']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref']['id'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref_1']['id'] = 'field_node_ref_1';
+  $handler->display->display_options['fields']['field_node_ref_1']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref_1']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref_1']['label'] = 'Publisher ID';
+  $handler->display->display_options['fields']['field_node_ref_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref_1']['delta_offset'] = '0';
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
+  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['delta_offset'] = '0';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['id'] = 'taxonomy_vocabulary_1_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['label'] = 'Tag ID';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['alter']['text'] = '2000[taxonomy_vocabulary_1_1-tid]';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
+  $handler->display->display_options['path'] = 'work_by_author_data_export_advanced';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+    'entity_view_2' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['Work'] = array(
     t('Defaults'),
-    t('Works by this author:'),
+    t('Works by this author'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -2276,10 +2470,26 @@ function elmcip_data_export_views_default_views() {
     t('Creative works'),
     t('Add a new <a href="/node/add/work" target="_blank">work</a>.'),
     t('Work title'),
+    t('Publication Type'),
     t('Year'),
     t('All'),
-    t('Entity content'),
-    t('Works contributed to:'),
+    t('Entity content - By Author'),
+    t('Entity content - Contributed to'),
+    t('Works contributed to'),
+    t('Data export - Basic'),
+    t('When using this data for research purposes cite the ELMCIP Electronic Literature Knowledge Base.'),
+    t('Author'),
+    t('Publisher'),
+    t('Data export - with Tags'),
+    t('Advanced data export with tags and IDs for content'),
+    t('Author ID'),
+    t('Work ID'),
+    t('Publication Type ID'),
+    t('2000[field_venue_tax_1-tid]'),
+    t('Publisher ID'),
+    t('Tags'),
+    t('Tag ID'),
+    t('2000[taxonomy_vocabulary_1_1-tid]'),
   );
   $export['Work'] = $view;
 
