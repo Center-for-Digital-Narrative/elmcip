@@ -177,7 +177,6 @@ function elmcip_setup_update_7014() {
 
   $result = $query->execute();
   $news_items_nids = array_keys($result['node']);
-  drupal_flush_all_caches();
 
   foreach ($news_items_nids as $nid) {
     try {
@@ -191,12 +190,11 @@ function elmcip_setup_update_7014() {
       }
     }
     catch (EntityMetadataWrapperException $exc) {
-      print $exc->getMessage();
-      watchdog(
-        'ELMCIP Setup',
-        $exc->getMessage() . ' See '  . __FUNCTION__ . '() <pre>' .  $exc->getTraceAsString() . '</pre>',
-         NULL, WATCHDOG_ERROR
-      );
+      // watchdog(
+      //   'ELMCIP Setup',
+      //   'See '  . __FUNCTION__ . '() <pre>' .  $exc->getTraceAsString() . '</pre>',
+      //    NULL, WATCHDOG_ERROR
+      // );
     }
   }
 
