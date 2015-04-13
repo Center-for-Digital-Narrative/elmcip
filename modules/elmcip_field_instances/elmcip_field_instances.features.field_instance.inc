@@ -1206,7 +1206,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 61,
+        'weight' => 66,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1234,7 +1234,7 @@ function elmcip_field_instances_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -1537,7 +1537,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 59,
+        'weight' => 64,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1944,7 +1944,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 21,
+        'weight' => 20,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -2022,7 +2022,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2068,7 +2068,7 @@ function elmcip_field_instances_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -2133,7 +2133,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 47,
+        'weight' => 48,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -2197,7 +2197,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'progress_indicator' => 'bar',
       ),
       'type' => 'file_generic',
-      'weight' => 17,
+      'weight' => 19,
     ),
     'widget_type' => 'filefield_widget',
   );
@@ -2263,7 +2263,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'node_reference',
         'settings' => array(),
         'type' => 'node_reference_default',
-        'weight' => 17,
+        'weight' => 16,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -2325,7 +2325,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'node_reference_autocomplete',
-      'weight' => 11,
+      'weight' => 12,
     ),
     'widget_type' => 'nodereference_autocomplete',
   );
@@ -2518,7 +2518,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 19,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -2581,7 +2581,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 25,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 13,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -2648,7 +2648,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 18,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -2709,7 +2709,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 10,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -2880,7 +2880,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 12,
+      'weight' => 13,
     ),
     'widget_type' => 'optionwidgets_select',
   );
@@ -2904,7 +2904,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'file_view_mode' => 'media_large',
         ),
         'type' => 'media',
-        'weight' => 46,
+        'weight' => 47,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2952,7 +2952,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -3044,7 +3044,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -3138,7 +3138,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'use_default_image' => 0,
       ),
       'type' => 'image_image',
-      'weight' => 15,
+      'weight' => 16,
     ),
     'widget_type' => 'imagefield_widget',
   );
@@ -3516,7 +3516,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 62,
+        'weight' => 67,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -3777,7 +3777,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 58,
+        'weight' => 63,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3831,7 +3831,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 61,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3945,7 +3945,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -4009,7 +4009,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 14,
     ),
   );
 
@@ -4074,7 +4074,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -4134,7 +4134,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 14,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -4157,7 +4157,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 57,
+        'weight' => 62,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4308,7 +4308,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -4362,7 +4362,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 17,
+      'weight' => 15,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -4482,7 +4482,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 60,
+        'weight' => 65,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -4658,7 +4658,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 63,
+        'weight' => 68,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -5105,7 +5105,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -5136,7 +5136,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -5152,7 +5152,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -5184,7 +5184,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -5199,7 +5199,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 33,
       ),
       'full' => array(
         'label' => 'above',
@@ -5246,7 +5246,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 32,
       ),
       'full' => array(
         'label' => 'above',
@@ -5294,7 +5294,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 26,
       ),
       'full' => array(
         'label' => 'above',
@@ -5341,7 +5341,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 27,
       ),
       'full' => array(
         'label' => 'above',
@@ -5388,7 +5388,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 24,
       ),
       'full' => array(
         'label' => 'above',
@@ -5417,7 +5417,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -5466,7 +5466,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'node_reference_autocomplete',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -5483,7 +5483,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'node_reference',
         'settings' => array(),
         'type' => 'node_reference_default',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -5516,7 +5516,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'size' => 60,
       ),
       'type' => 'node_reference_autocomplete',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -5532,7 +5532,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 25,
       ),
       'full' => array(
         'label' => 'above',
@@ -5579,7 +5579,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 28,
       ),
       'full' => array(
         'label' => 'above',
@@ -5626,7 +5626,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 35,
       ),
       'full' => array(
         'label' => 'above',
@@ -5671,7 +5671,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 30,
       ),
       'full' => array(
         'label' => 'above',
@@ -5733,7 +5733,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 29,
       ),
       'full' => array(
         'label' => 'above',
@@ -5782,7 +5782,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'progress_indicator' => 'bar',
       ),
       'type' => 'image_image',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -5798,7 +5798,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 27,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -5841,7 +5841,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 31,
       ),
       'full' => array(
         'label' => 'above',
@@ -5917,7 +5917,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 22,
       ),
       'full' => array(
         'label' => 'above',
@@ -5966,7 +5966,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 34,
       ),
       'full' => array(
         'label' => 'above',
@@ -6072,7 +6072,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'above',
@@ -6121,7 +6121,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'year_range' => '-25:+3',
       ),
       'type' => 'date_text',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -10385,7 +10385,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10429,13 +10429,12 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'file_view_mode' => 'default',
         ),
-        'type' => 'image',
-        'weight' => 10,
+        'type' => 'file_rendered',
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10452,7 +10451,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
-      'file_directory' => '',
+      'file_directory' => 'softwareplatform/images',
       'file_extensions' => 'mp3',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -10485,65 +10484,6 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_number'
-  $field_instances['node-platform_software-field_number'] = array(
-    'bundle' => 'platform_software',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Indicate the year that this platform was first released.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_integer',
-        'weight' => 0,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 0,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_integer',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 8,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_number',
-    'label' => 'Year initiated',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => -4,
-    ),
-  );
-
   // Exported field_instance: 'node-platform_software-field_ps_attachment'
   $field_instances['node-platform_software-field_ps_attachment'] = array(
     'bundle' => 'platform_software',
@@ -10562,7 +10502,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 9,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10578,7 +10518,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
-      'file_directory' => 'platform_attachment',
+      'file_directory' => 'softwareplatform/attachment',
       'file_extensions' => 'txt pdf zip',
       'max_filesize' => '',
       'user_register_form' => FALSE,
@@ -10613,7 +10553,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10700,7 +10640,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10756,7 +10696,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10797,89 +10737,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => -3,
-    ),
-  );
-
-  // Exported field_instance: 'node-platform_software-field_version_history'
-  $field_instances['node-platform_software-field_version_history'] = array(
-    'bundle' => 'platform_software',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_version_history',
-    'label' => 'Version history',
-    'required' => 0,
-    'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          1 => 0,
-          2 => 0,
-          3 => 0,
-          4 => 0,
-          'basic_text_editor' => 'basic_text_editor',
-          'ds_code' => 0,
-        ),
-        'allowed_formats_toggle' => 1,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            1 => array(
-              'weight' => -5,
-            ),
-            2 => array(
-              'weight' => -8,
-            ),
-            3 => array(
-              'weight' => -9,
-            ),
-            4 => array(
-              'weight' => -7,
-            ),
-            'basic_text_editor' => array(
-              'weight' => -10,
-            ),
-            'ds_code' => array(
-              'weight' => -6,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => -1,
     ),
   );
 
@@ -14799,7 +14657,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -14853,7 +14711,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 19,
+      'weight' => 30,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -14881,7 +14739,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 46,
+        'weight' => 50,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -14909,7 +14767,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 21,
+      'weight' => 32,
     ),
   );
 
@@ -14940,7 +14798,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 48,
+        'weight' => 52,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -14970,7 +14828,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 9,
+      'weight' => 33,
     ),
   );
 
@@ -15047,7 +14905,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 49,
+        'weight' => 53,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15101,7 +14959,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 8,
+      'weight' => 32,
     ),
     'widget_type' => 'optionwidgets_onoff',
   );
@@ -15521,7 +15379,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15568,7 +15426,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 22,
+      'weight' => 33,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -15737,7 +15595,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -15796,7 +15654,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -15912,7 +15770,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15990,7 +15848,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -16191,7 +16049,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 28,
+      'weight' => 39,
     ),
   );
 
@@ -16219,7 +16077,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -16373,7 +16231,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16448,7 +16306,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'file_view_mode' => 'media_large',
         ),
         'type' => 'media',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -16579,7 +16437,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16789,7 +16647,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -16879,7 +16737,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16963,7 +16821,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -17171,7 +17029,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 5,
+      'weight' => 4,
     ),
     'widget_type' => 'number',
   );
@@ -17245,7 +17103,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 47,
+        'weight' => 51,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17299,7 +17157,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'multistep' => 0,
       ),
       'type' => 'options_select',
-      'weight' => 20,
+      'weight' => 31,
     ),
     'widget_type' => 'optionwidgets_select',
   );
@@ -17336,7 +17194,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -17373,7 +17231,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 24,
+      'weight' => 35,
     ),
   );
 
@@ -17463,7 +17321,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17527,7 +17385,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 34,
     ),
   );
 
@@ -17563,7 +17421,7 @@ Work records do not need to be submitted to the anthology in order to be documen
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -17600,7 +17458,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 25,
+      'weight' => 36,
     ),
   );
 
@@ -17670,7 +17528,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17724,7 +17582,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 26,
+      'weight' => 37,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -17757,7 +17615,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -17848,7 +17706,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17895,7 +17753,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 27,
+      'weight' => 38,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -17959,7 +17817,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18006,7 +17864,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 29,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -18080,7 +17938,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -18265,7 +18123,7 @@ Work records do not need to be submitted to the anthology in order to be documen
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -18294,7 +18152,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_separate',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -18369,7 +18227,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -18401,7 +18259,7 @@ Work records do not need to be submitted to the anthology in order to be documen
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 17,
+      'weight' => 28,
     ),
   );
 
@@ -18581,7 +18439,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Important technical notes about the database or archive.');
   t('Indicate the title of the work in the title field, which will display as the link label. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.');
   t('Indicate the types of publication. Multiple selections permitted. ');
-  t('Indicate the year that this platform was first released.');
   t('Individual Organizers');
   t('Journal volume and issue');
   t('KB Editor Notes');
@@ -18628,7 +18485,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Presented at Event');
   t('Project Type');
   t('Provide a brief description of the work in English, up to 350 words.');
-  t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.');
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available. Provide basic professional details, as well as year of birth, etc.');
   t('Provide a written description of the platform and its distinguishing features. Indicate the source of the description.');
@@ -18693,13 +18549,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The field will autocomplete. If the person is not yet in the database first <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Use this field to link to your syllabus or other material you have created as a teaching resource in the Knowledge Base. The field will autocomplete. If the teaching resource is not yet in the Knowledge Base, first <a href="node/add/teaching-resource">add the teaching resource</a>.');
   t('Using the pulldown menu, identify whether the resource is an archive, database, or special collection. <br><br>In the "Title" field, just above, enter the official name of the resource. If the resource is commonly referred to by an acronymn (e.g. <i>ELD</i> for the <i>Electronic Literature Directory</i>), this can be specified in description.');
-  t('Version history');
   t('Work noted');
   t('WorldCat Permalink');
   t('Year');
   t('Year Initiated');
   t('Year in which the work was first published. If the work changed on an ongoing basis over time, indicate the period in the work description.');
-  t('Year initiated');
   t('Year of birth.');
   t('Year of death.');
   t('You may attach files, such as PDFs, to this record.');

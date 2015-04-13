@@ -1076,7 +1076,9 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'supereditor' => 'supereditor',
     ),
     'module' => 'node',
   );
@@ -1313,6 +1315,7 @@ function elmcip_permissions_user_default_permissions() {
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'supereditor' => 'supereditor',
     ),
     'module' => 'node',
   );
@@ -1535,7 +1538,9 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'supereditor' => 'supereditor',
     ),
     'module' => 'node',
   );
@@ -1886,7 +1891,9 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'supereditor' => 'supereditor',
     ),
     'module' => 'node',
   );
@@ -2450,7 +2457,9 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
+      'contributor' => 'contributor',
       'editor' => 'editor',
+      'supereditor' => 'supereditor',
     ),
     'module' => 'node',
   );

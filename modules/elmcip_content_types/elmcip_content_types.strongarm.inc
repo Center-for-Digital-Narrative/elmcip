@@ -13,6 +13,13 @@ function elmcip_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_book';
+  $strongarm->value = 0;
+  $export['comment_anonymous_book'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_class_group';
   $strongarm->value = 0;
   $export['comment_anonymous_class_group'] = $strongarm;
@@ -118,6 +125,13 @@ function elmcip_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_book';
+  $strongarm->value = '2';
+  $export['comment_book'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_class_group';
   $strongarm->value = '1';
   $export['comment_class_group'] = $strongarm;
@@ -191,6 +205,13 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'comment_databases_and_archives';
   $strongarm->value = '1';
   $export['comment_databases_and_archives'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_book';
+  $strongarm->value = 1;
+  $export['comment_default_mode_book'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -356,6 +377,13 @@ function elmcip_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_book';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_book'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_class_group';
   $strongarm->value = '50';
   $export['comment_default_per_page_class_group'] = $strongarm;
@@ -464,6 +492,13 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'comment_event';
   $strongarm->value = '2';
   $export['comment_event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_book';
+  $strongarm->value = 1;
+  $export['comment_form_location_book'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -615,6 +650,13 @@ function elmcip_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_book';
+  $strongarm->value = '1';
+  $export['comment_preview_book'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_class_group';
   $strongarm->value = '1';
   $export['comment_preview_class_group'] = $strongarm;
@@ -737,6 +779,13 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'comment_story';
   $strongarm->value = '1';
   $export['comment_story'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_book';
+  $strongarm->value = 1;
+  $export['comment_subject_field_book'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1020,6 +1069,9 @@ function elmcip_content_types_strongarm() {
         'cw_reference_critical_writing_node_content_1' => array(
           'weight' => '24',
         ),
+        'locations' => array(
+          'weight' => '11',
+        ),
       ),
       'display' => array(
         'Critical_writing_in_book_entity_view_1' => array(
@@ -1028,7 +1080,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '33',
+            'weight' => '34',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1046,7 +1098,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '34',
+            'weight' => '35',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1064,7 +1116,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '37',
+            'weight' => '38',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1082,7 +1134,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '43',
+            'weight' => '44',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1100,7 +1152,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '36',
+            'weight' => '37',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1114,7 +1166,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Tr_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '44',
+            'weight' => '45',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1132,7 +1184,7 @@ function elmcip_content_types_strongarm() {
         ),
         'other_editions_entity_view_1' => array(
           'full' => array(
-            'weight' => '32',
+            'weight' => '33',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1150,7 +1202,7 @@ function elmcip_content_types_strongarm() {
         ),
         'series_reference_critical_writin_entity_view_1' => array(
           'full' => array(
-            'weight' => '35',
+            'weight' => '36',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1164,7 +1216,7 @@ function elmcip_content_types_strongarm() {
         ),
         'event_ref_on_cw_entity_view_1' => array(
           'full' => array(
-            'weight' => '42',
+            'weight' => '43',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1178,7 +1230,7 @@ function elmcip_content_types_strongarm() {
         ),
         'database_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '41',
+            'weight' => '42',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1192,7 +1244,7 @@ function elmcip_content_types_strongarm() {
         ),
         'research_collection_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '45',
+            'weight' => '46',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1202,7 +1254,7 @@ function elmcip_content_types_strongarm() {
         ),
         'publisher_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '38',
+            'weight' => '39',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1212,7 +1264,7 @@ function elmcip_content_types_strongarm() {
         ),
         'publisher_referenced_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '39',
+            'weight' => '40',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1222,7 +1274,7 @@ function elmcip_content_types_strongarm() {
         ),
         'organization_referenced_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '40',
+            'weight' => '41',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1312,6 +1364,9 @@ function elmcip_content_types_strongarm() {
       'teaser_abbreviated' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -1321,6 +1376,9 @@ function elmcip_content_types_strongarm() {
         'path' => array(
           'weight' => '4',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'research_collection_db_arcive_entity_view_1' => array(
@@ -1329,7 +1387,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '20',
             'visible' => FALSE,
           ),
         ),
@@ -1339,7 +1397,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '19',
             'visible' => FALSE,
           ),
         ),
@@ -1349,7 +1407,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '21',
             'visible' => FALSE,
           ),
         ),
@@ -2065,13 +2123,20 @@ function elmcip_content_types_strongarm() {
           'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
         'locations' => array(
-          'weight' => '30',
+          'weight' => '5',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'works_developed_in_this_platform_entity_view_1' => array(
+          'full' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__platform_software'] = $strongarm;
@@ -2290,6 +2355,9 @@ function elmcip_content_types_strongarm() {
         ),
         'path' => array(
           'weight' => '1',
+        ),
+        'locations' => array(
+          'weight' => '15',
         ),
       ),
       'display' => array(
@@ -2689,6 +2757,9 @@ function elmcip_content_types_strongarm() {
         'Tr_work_node_content_1' => array(
           'weight' => '10',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'Critical_writing_work_entity_view_1' => array(
@@ -2697,7 +2768,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'full' => array(
-            'weight' => '31',
+            'weight' => '32',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2715,7 +2786,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Tr_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '32',
+            'weight' => '33',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2737,7 +2808,7 @@ function elmcip_content_types_strongarm() {
         ),
         'clone_of_research_collection_creative_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '33',
+            'weight' => '34',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -2787,6 +2858,13 @@ function elmcip_content_types_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__work'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_book';
+  $strongarm->value = '0';
+  $export['language_content_type_book'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -2892,6 +2970,15 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'language_content_type_work';
   $strongarm->value = '0';
   $export['language_content_type_work'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_book';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_book'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -3003,6 +3090,13 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'menu_options_work';
   $strongarm->value = array();
   $export['menu_options_work'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_book';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_book'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -3208,7 +3302,6 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_platform_software';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_platform_software'] = $strongarm;
 
@@ -3260,6 +3353,13 @@ function elmcip_content_types_strongarm() {
     1 => 'revision',
   );
   $export['node_options_work'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_book';
+  $strongarm->value = '1';
+  $export['node_preview_book'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -3365,6 +3465,13 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_preview_work';
   $strongarm->value = '1';
   $export['node_preview_work'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_book';
+  $strongarm->value = 1;
+  $export['node_submitted_book'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

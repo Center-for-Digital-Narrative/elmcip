@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Platform feature.
+ */
+
+include_once 'elmcip_platform.features.inc';
