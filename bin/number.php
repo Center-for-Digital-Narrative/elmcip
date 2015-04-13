@@ -18,3 +18,10 @@ foreach ($news_items_nids as $nid) {
     print("Updated node: $nid \n");
   }
 }
+
+// Let's remove field.
+$fields = array('field_number');
+foreach ($fields as $field) {
+  $instance = field_info_instance('node', $field, 'platform_software');
+  field_delete_field($field);
+}
