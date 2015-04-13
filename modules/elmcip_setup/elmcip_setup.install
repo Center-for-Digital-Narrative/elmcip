@@ -190,11 +190,11 @@ function elmcip_setup_update_7014() {
       }
     }
     catch (EntityMetadataWrapperException $exc) {
-      watchdog(
-        'ELMCIP Setup',
-        'See '  . __FUNCTION__ . '() <pre>' .  $exc->getTraceAsString() . '</pre>',
-         NULL, WATCHDOG_ERROR
-      );
+      // watchdog(
+      //   'ELMCIP Setup',
+      //   'See '  . __FUNCTION__ . '() <pre>' .  $exc->getTraceAsString() . '</pre>',
+      //    NULL, WATCHDOG_ERROR
+      // );
     }
   }
 
@@ -202,7 +202,7 @@ function elmcip_setup_update_7014() {
   $fields = array('field_number');
   foreach ($fields as $field) {
     $instance = field_info_instance('node', $field, 'platform_software');
-    field_delete_field($field);
+    // field_delete_field($field);
   }
 }
 
