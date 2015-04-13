@@ -212,3 +212,11 @@ function elmcip_setup_update_7014() {
 function elmcip_setup_update_7015() {
   module_enable(array('elmcip_platform'), FALSE);
 }
+
+/**
+ * Uninstall RDF UI and External RDF Vocabulary Importer in production.
+ */
+function elmcip_setup_update_7016() {
+  module_disable(array('rdfui', 'evoc'), TRUE);
+  drupal_uninstall_modules(array('rdfui', 'evoc', 'entityreference_migration', 'ds_ui'), TRUE);
+}
