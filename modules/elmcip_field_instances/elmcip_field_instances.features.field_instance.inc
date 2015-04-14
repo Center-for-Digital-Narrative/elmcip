@@ -76,7 +76,8 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_critical_writing-comment_body'
+  // Exported field_instance:
+  // 'comment-comment_node_critical_writing-comment_body'
   $field_instances['comment-comment_node_critical_writing-comment_body'] = array(
     'bundle' => 'comment_node_critical_writing',
     'default_value' => NULL,
@@ -109,7 +110,8 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_databases_and_archives-comment_body'
+  // Exported field_instance:
+  // 'comment-comment_node_databases_and_archives-comment_body'
   $field_instances['comment-comment_node_databases_and_archives-comment_body'] = array(
     'bundle' => 'comment_node_databases_and_archives',
     'default_value' => NULL,
@@ -406,7 +408,8 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_platform_software-comment_body'
+  // Exported field_instance:
+  // 'comment-comment_node_platform_software-comment_body'
   $field_instances['comment-comment_node_platform_software-comment_body'] = array(
     'bundle' => 'comment_node_platform_software',
     'default_value' => NULL,
@@ -471,7 +474,8 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_research_collection-comment_body'
+  // Exported field_instance:
+  // 'comment-comment_node_research_collection-comment_body'
   $field_instances['comment-comment_node_research_collection-comment_body'] = array(
     'bundle' => 'comment_node_research_collection',
     'default_value' => NULL,
@@ -537,7 +541,8 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_teaching_resource-comment_body'
+  // Exported field_instance:
+  // 'comment-comment_node_teaching_resource-comment_body'
   $field_instances['comment-comment_node_teaching_resource-comment_body'] = array(
     'bundle' => 'comment_node_teaching_resource',
     'default_value' => NULL,
@@ -1519,7 +1524,8 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_database_or_archive_refere'
+  // Exported field_instance:
+  // 'node-critical_writing-field_database_or_archive_refere'
   $field_instances['node-critical_writing-field_database_or_archive_refere'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -2003,7 +2009,8 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_electronic_literature_dire'
+  // Exported field_instance:
+  // 'node-critical_writing-field_electronic_literature_dire'
   $field_instances['node-critical_writing-field_electronic_literature_dire'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -5283,7 +5290,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_description_english'
+  // Exported field_instance:
+  // 'node-databases_and_archives-field_db_description_english'
   $field_instances['node-databases_and_archives-field_db_description_english'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5330,7 +5338,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_description_original'
+  // Exported field_instance:
+  // 'node-databases_and_archives-field_db_description_original'
   $field_instances['node-databases_and_archives-field_db_description_original'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5615,7 +5624,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_editorial_notes'
+  // Exported field_instance:
+  // 'node-databases_and_archives-field_editorial_notes'
   $field_instances['node-databases_and_archives-field_editorial_notes'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5951,7 +5961,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_record_status_tax'
+  // Exported field_instance:
+  // 'node-databases_and_archives-field_record_status_tax'
   $field_instances['node-databases_and_archives-field_record_status_tax'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => array(
@@ -11651,7 +11662,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-research_collection-field_collection_contributors'
+  // Exported field_instance:
+  // 'node-research_collection-field_collection_contributors'
   $field_instances['node-research_collection-field_collection_contributors'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -11700,7 +11712,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_collection_curated_by'
+  // Exported field_instance:
+  // 'node-research_collection-field_collection_curated_by'
   $field_instances['node-research_collection-field_collection_curated_by'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -12244,7 +12257,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_teaching_resources'
+  // Exported field_instance:
+  // 'node-research_collection-field_teaching_resources'
   $field_instances['node-research_collection-field_teaching_resources'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -13006,7 +13020,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_database_or_archive_refere'
+  // Exported field_instance:
+  // 'node-teaching_resource-field_database_or_archive_refere'
   $field_instances['node-teaching_resource-field_database_or_archive_refere'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,

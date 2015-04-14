@@ -10,7 +10,8 @@
 function elmcip_content_types_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-critical_writing-field_criticalw_platform_ref'
+  // Exported field_instance:
+  // 'node-critical_writing-field_criticalw_platform_ref'
   $field_instances['node-critical_writing-field_criticalw_platform_ref'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -66,7 +67,8 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_cw_in_platform_software'
+  // Exported field_instance:
+  // 'node-critical_writing-field_cw_in_platform_software'
   $field_instances['node-critical_writing-field_cw_in_platform_software'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -195,7 +197,8 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_database_platform_ref'
+  // Exported field_instance:
+  // 'node-databases_and_archives-field_database_platform_ref'
   $field_instances['node-databases_and_archives-field_database_platform_ref'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -492,7 +495,8 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_publisher_or_organization'
+  // Exported field_instance:
+  // 'node-platform_software-field_publisher_or_organization'
   $field_instances['node-platform_software-field_publisher_or_organization'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -647,7 +651,90 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_collection_platform_ref'
+  // Exported field_instance: 'node-platform_software-field_version_history'
+  $field_instances['node-platform_software-field_version_history'] = array(
+    'bundle' => 'platform_software',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_version_history',
+    'label' => 'Version history',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 0,
+          2 => 0,
+          3 => 0,
+          4 => 0,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 0,
+        ),
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-research_collection-field_collection_platform_ref'
   $field_instances['node-research_collection-field_collection_platform_ref'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -925,6 +1012,7 @@ function elmcip_content_types_field_default_field_instances() {
   t('Platform referenced');
   t('Platform/Software');
   t('Po.Ex entry');
+  t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.');
   t('Publisher or organization');
   t('Record Status');
   t('Repository');
