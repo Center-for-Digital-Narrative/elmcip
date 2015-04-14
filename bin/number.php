@@ -23,5 +23,6 @@ foreach ($news_items_nids as $nid) {
 $fields = array('field_number');
 foreach ($fields as $field) {
   $instance = field_info_instance('node', $field, 'platform_software');
-  field_delete_field($field);
+  field_delete_instance($instance, TRUE);
+  field_purge_batch(100);
 }
