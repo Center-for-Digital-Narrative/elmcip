@@ -1,0 +1,17 @@
+#!/bin/bash
+set -x
+
+echo "Grab a copy of production"
+bin/site-drush sql-dump --result-file=~/`date +"%d.%m.%Y"`.elmcip.sql
+
+echo "Removing exiting db. from test.elmcip.net"
+cd /applications/test.elmcip.net/
+bin/site-drush sql-drop
+
+echo "Populate test.elmcip.net"
+bin/site-drush sql-cli < ~/`date +"%d.%m.%Y"`.elmcip.sql
+
+echo "Upgrade production to master"
+git checkout master
+git pull
+bin/site-upgrade master
