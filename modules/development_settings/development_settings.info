@@ -10,6 +10,7 @@ dependencies[] = field_ui
 dependencies[] = strongarm
 dependencies[] = views_ui
 dependencies[] = rdfui
+dependencies[] = token_tweaks
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[user_permission][] = access devel information

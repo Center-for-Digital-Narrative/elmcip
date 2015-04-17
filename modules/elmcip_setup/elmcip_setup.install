@@ -220,3 +220,11 @@ function elmcip_setup_update_7016() {
   module_disable(array('rdfui', 'evoc'), TRUE);
   drupal_uninstall_modules(array('rdfui', 'evoc', 'entityreference_migration', 'ds_ui'), TRUE);
 }
+
+/**
+ * Uninstall token tweaks in production.
+ */
+function elmcip_setup_update_7017() {
+  module_disable(array('token_tweaks'), FALSE);
+  drupal_uninstall_modules(array('token_tweaks'), FALSE);
+}
