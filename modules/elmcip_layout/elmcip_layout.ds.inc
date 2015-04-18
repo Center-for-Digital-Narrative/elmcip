@@ -590,7 +590,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '14',
+      'weight' => '16',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -600,7 +600,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '15',
+      'weight' => '17',
       'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
@@ -2004,11 +2004,12 @@ function elmcip_layout_ds_layout_settings_info() {
         9 => 'field_ps_description',
         10 => 'works_developed_in_this_platform_entity_view_1',
         11 => 'field_platform_versions',
-        12 => 'field_ps_image',
-        13 => 'field_media',
-        14 => 'field_ps_attachment',
-        15 => 'purl',
-        16 => 'author',
+        12 => 'field_version_history',
+        13 => 'field_ps_image',
+        14 => 'field_media',
+        15 => 'field_ps_attachment',
+        16 => 'purl',
+        17 => 'author',
       ),
     ),
     'fields' => array(
@@ -2024,6 +2025,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_ps_description' => 'right',
       'works_developed_in_this_platform_entity_view_1' => 'right',
       'field_platform_versions' => 'right',
+      'field_version_history' => 'right',
       'field_ps_image' => 'right',
       'field_media' => 'right',
       'field_ps_attachment' => 'right',

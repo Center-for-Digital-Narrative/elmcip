@@ -10445,7 +10445,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 12,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10513,7 +10513,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 13,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -10651,7 +10651,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
