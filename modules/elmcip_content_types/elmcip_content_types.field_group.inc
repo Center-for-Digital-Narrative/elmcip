@@ -23,8 +23,8 @@ function elmcip_content_types_field_group_info() {
     'label' => 'Editorial Status',
     'weight' => '3',
     'children' => array(
-      0 => 'field_record_status_tax',
-      1 => 'field_editorial_notes',
+      0 => 'field_editorial_notes',
+      1 => 'field_record_status_tax',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

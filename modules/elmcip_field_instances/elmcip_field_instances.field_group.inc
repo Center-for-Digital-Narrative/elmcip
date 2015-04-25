@@ -1504,9 +1504,10 @@ function elmcip_field_instances_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_ps_description',
-      1 => 'field_license',
-      2 => 'field_repository',
-      3 => 'field_platform_versions',
+      1 => 'field_version_history',
+      2 => 'field_license',
+      3 => 'field_repository',
+      4 => 'field_platform_versions',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

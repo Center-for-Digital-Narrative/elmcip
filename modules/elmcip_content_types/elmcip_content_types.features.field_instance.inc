@@ -376,7 +376,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'platform_software',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Use this field to link to a stable URL documenting the version history of the software or platform, if available. Provide a title and URL.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -396,7 +396,7 @@ function elmcip_content_types_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_platform_versions',
-    'label' => 'Version history',
+    'label' => 'Version history (link)',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -656,7 +656,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'platform_software',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.',
+    'description' => 'Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -682,7 +682,7 @@ function elmcip_content_types_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_version_history',
-    'label' => 'Version history',
+    'label' => 'Version history (text)',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -729,7 +729,7 @@ function elmcip_content_types_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -1012,7 +1012,7 @@ function elmcip_content_types_field_default_field_instances() {
   t('Platform referenced');
   t('Platform/Software');
   t('Po.Ex entry');
-  t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.');
+  t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.');
   t('Publisher or organization');
   t('Record Status');
   t('Repository');
@@ -1021,7 +1021,9 @@ function elmcip_content_types_field_default_field_instances() {
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="node/add/platform-software">add a record for the platform or software</a> before completing this record.');
   t('Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="node/add/platform-software">add a record for the platform or software</a> before completing this record.');
-  t('Version history');
+  t('Use this field to link to a stable URL documenting the version history of the software or platform, if available. Provide a title and URL.');
+  t('Version history (link)');
+  t('Version history (text)');
   t('Year initiated');
 
   return $field_instances;

@@ -10418,7 +10418,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
