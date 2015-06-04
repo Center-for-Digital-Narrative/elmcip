@@ -796,7 +796,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Critical Writing Published';
+  $handler->display->display_options['title'] = 'Critical writing published';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -833,13 +833,6 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['style_options']['sticky'] = TRUE;
   $handler->display->display_options['style_options']['order'] = 'desc';
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Critical writing published';
-  $handler->display->display_options['header']['area']['content'] = '<p>Critical writing published</p>';
-  $handler->display->display_options['header']['area']['format'] = '1';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
@@ -907,10 +900,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['bundles'] = array(
     0 => 'organization',
   );
-  $handler->display->display_options['show_title'] = 0;
+  $handler->display->display_options['show_title'] = 1;
   $translatables['Critical_writing_organization'] = array(
     t('Defaults'),
-    t('Critical Writing Published'),
+    t('Critical writing published'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -924,8 +917,6 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Critical writing published'),
-    t('<p>Critical writing published</p>'),
     t('Critical Writing'),
     t('Add new <a href="/node/add/critical_writing" target="_blank">critical writing</a>.'),
     t('Work title'),
