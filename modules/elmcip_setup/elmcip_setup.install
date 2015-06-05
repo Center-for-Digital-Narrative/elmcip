@@ -228,3 +228,10 @@ function elmcip_setup_update_7017() {
   module_disable(array('token_tweaks'), FALSE);
   drupal_uninstall_modules(array('token_tweaks'), FALSE);
 }
+
+/**
+ * Remove 5000 cache files pr. cron run.
+ */
+function elmcip_setup_update_7018() {
+  variable_set('views_data_export_gc_chunk', 5000);
+}
