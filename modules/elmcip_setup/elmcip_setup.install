@@ -235,3 +235,11 @@ function elmcip_setup_update_7017() {
 function elmcip_setup_update_7018() {
   variable_set('views_data_export_gc_chunk', 5000);
 }
+
+/**
+ * Disable update module from production. Is enabled in a devel. enviroment.
+ */
+function elmcip_setup_update_7019() {
+  module_disable(array('update'), TRUE);
+  drupal_uninstall_modules(array('update'), TRUE);
+}

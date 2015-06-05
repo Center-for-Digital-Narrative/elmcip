@@ -8,6 +8,7 @@ dependencies[] = ds_ui
 dependencies[] = features
 dependencies[] = field_ui
 dependencies[] = strongarm
+dependencies[] = update
 dependencies[] = views_ui
 dependencies[] = rdfui
 dependencies[] = token_tweaks
