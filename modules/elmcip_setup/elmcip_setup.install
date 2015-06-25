@@ -243,3 +243,12 @@ function elmcip_setup_update_7019() {
   module_disable(array('update'), TRUE);
   drupal_uninstall_modules(array('update'), TRUE);
 }
+
+/**
+ * Remove file_styles and styles module and any settings belongings.
+ */
+function elmcip_setup_update_7020() {
+  module_disable(array('file_styles', 'styles'), TRUE);
+  drupal_uninstall_modules(array('file_styles', 'styles'), TRUE);
+  variable_del('file_styles__preview_image');
+}
