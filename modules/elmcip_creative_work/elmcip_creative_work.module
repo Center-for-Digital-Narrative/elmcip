@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ELMCIP Creative work feature.
+ */
+
+include_once 'elmcip_creative_work.features.inc';
