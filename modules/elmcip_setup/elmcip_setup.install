@@ -259,8 +259,22 @@ function elmcip_setup_update_7020() {
 function elmcip_setup_update_7021() {
 
   // Create field to store year data before deprecated field get dropped.
+  $newField = array(
+    'field_name' => 'field_work_year',
+    'type' => 'date',
+    'label' => 'Year',
+    'description' => 'Year in which the work was first published. If the work
+      changed on an ongoing basis over time, indicate the period in the work
+      description.',
+  );
+  field_create_field($newField);
 
-
+  $instance = array(
+    'field_name' => $newField['field_name'],
+    'entity_type' => 'node',
+    'bundle' => 'work',
+  );
+  field_create_instance($instance);
 
   // Grab data from number field before nuking it and save data to
   // field_platform_year.
@@ -275,13 +289,11 @@ function elmcip_setup_update_7021() {
   foreach ($news_items_nids as $nid) {
     try {
       $work_entity = entity_metadata_wrapper('node', $nid);
-      print($work_entity->field_number->value() . PHP_EOL);
-      $year = strtotime($work_entity->field_number->value() . '-01');
-      $date = $work_entity->field_work_year->value();
+      $year = strtotime('01/01 00:00 UTC' . $work_entity->field_number->value());
       if ($year) {
-        // $work_entity->field_work_year->set($year);
-        // $work_entity->save();
-        drush_log("Updated field_work_year: $nid", 'notice');
+        $work_entity->field_work_year->set($year);
+        $work_entity->save();
+        print("Updated field_work_year: $nid" . PHP_EOL);
       }
     }
     catch (EntityMetadataWrapperException $exc) {
@@ -297,6 +309,6 @@ function elmcip_setup_update_7021() {
   $fields = array('field_number');
   foreach ($fields as $field) {
     $instance = field_info_instance('node', $field, 'work');
-    // field_delete_instance($instance, TRUE);
+    field_delete_instance($instance, TRUE);
   }
 }
