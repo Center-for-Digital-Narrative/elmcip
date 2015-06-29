@@ -252,3 +252,51 @@ function elmcip_setup_update_7020() {
   drupal_uninstall_modules(array('file_styles', 'styles'), TRUE);
   variable_del('file_styles__preview_image');
 }
+
+/**
+ * Creative Work - Copy data from field_number to field_work_year.
+ */
+function elmcip_setup_update_7021() {
+
+  // Create field to store year data before deprecated field get dropped.
+
+
+
+  // Grab data from number field before nuking it and save data to
+  // field_platform_year.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'work')
+    ->fieldCondition('field_number');
+
+  $result = $query->execute();
+  $news_items_nids = array_keys($result['node']);
+
+  foreach ($news_items_nids as $nid) {
+    try {
+      $work_entity = entity_metadata_wrapper('node', $nid);
+      print($work_entity->field_number->value() . PHP_EOL);
+      $year = strtotime($work_entity->field_number->value() . '-01');
+      $date = $work_entity->field_work_year->value();
+      if ($year) {
+        // $work_entity->field_work_year->set($year);
+        // $work_entity->save();
+        drush_log("Updated field_work_year: $nid", 'notice');
+      }
+    }
+    catch (EntityMetadataWrapperException $exc) {
+      watchdog(
+        'ELMCIP Setup',
+        'See '  . __FUNCTION__ . '() <pre>' .  $exc->getTraceAsString() . '</pre>',
+         NULL, WATCHDOG_ERROR
+      );
+    }
+  }
+
+  // Delete unused field from bundle.
+  $fields = array('field_number');
+  foreach ($fields as $field) {
+    $instance = field_info_instance('node', $field, 'work');
+    // field_delete_instance($instance, TRUE);
+  }
+}
