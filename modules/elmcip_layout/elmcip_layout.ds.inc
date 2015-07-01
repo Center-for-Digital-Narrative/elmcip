@@ -2585,23 +2585,29 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'teaser';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
       'ds_content' => array(
         0 => 'content_type',
         1 => 'title',
         2 => 'field_author_name',
-        3 => 'field_number',
+        3 => 'field_work_year',
       ),
     ),
     'fields' => array(
       'content_type' => 'ds_content',
       'title' => 'ds_content',
       'field_author_name' => 'ds_content',
-      'field_number' => 'ds_content',
+      'field_work_year' => 'ds_content',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|work|teaser'] = $ds_layout;
 

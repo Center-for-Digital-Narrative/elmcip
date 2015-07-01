@@ -814,7 +814,7 @@ function elmcip_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
       'token' => array(
         'label' => 'above',
@@ -888,7 +888,7 @@ function elmcip_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 19,
       ),
       'token' => array(
         'label' => 'above',
@@ -969,7 +969,7 @@ function elmcip_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'token' => array(
         'label' => 'above',

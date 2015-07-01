@@ -2772,7 +2772,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '37',
+            'weight' => '47',
             'visible' => FALSE,
           ),
           'data_export' => array(
@@ -2790,7 +2790,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '35',
+            'weight' => '45',
             'visible' => FALSE,
           ),
           'default' => array(
@@ -2813,6 +2813,10 @@ function elmcip_content_types_strongarm() {
           ),
           'default' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '21',
             'visible' => FALSE,
           ),
         ),

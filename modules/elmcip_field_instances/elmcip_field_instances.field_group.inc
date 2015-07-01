@@ -694,13 +694,13 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Description',
-    'weight' => '26',
+    'weight' => '36',
     'children' => array(
-      0 => 'field_node_ref_event',
-      1 => 'field_orig_lang',
-      2 => 'field_other_lang_ver_link',
-      3 => 'field_pullquote',
-      4 => 'field_tech_notes',
+      0 => 'field_orig_lang',
+      1 => 'field_pullquote',
+      2 => 'field_tech_notes',
+      3 => 'field_node_ref_event',
+      4 => 'field_other_lang_ver_link',
       5 => 'field_in_anthology',
     ),
     'format_type' => 'fieldset',
@@ -2070,7 +2070,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Documentation',
-    'weight' => '31',
+    'weight' => '41',
     'children' => array(
       0 => 'field_files',
     ),
@@ -2126,7 +2126,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Core Information',
-    'weight' => '25',
+    'weight' => '35',
     'children' => array(
       0 => 'field_contributors',
       1 => 'field_license',
@@ -2179,7 +2179,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Submit to ELMCIP Anthology',
-    'weight' => '33',
+    'weight' => '43',
     'children' => array(
       0 => 'field_anthology_submission',
     ),
