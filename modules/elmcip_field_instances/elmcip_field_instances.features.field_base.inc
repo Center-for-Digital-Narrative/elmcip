@@ -203,65 +203,6 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_anthology_selection'
-  $field_bases['field_anthology_selection'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_anthology_selection',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 'Not in ELMCIP Anthology',
-        1 => 'Included in ELMCIP Anthology',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-  );
-
-  // Exported field_base: 'field_anthology_submission'
-  $field_bases['field_anthology_submission'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_anthology_submission',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 0,
-        1 => 1,
-      ),
-      'allowed_values_function' => '',
-      'allowed_values_php' => '',
-      'text_processing' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-    'type_name' => 'work',
-  );
-
   // Exported field_base: 'field_archiveurl'
   $field_bases['field_archiveurl'] = array(
     'active' => 1,

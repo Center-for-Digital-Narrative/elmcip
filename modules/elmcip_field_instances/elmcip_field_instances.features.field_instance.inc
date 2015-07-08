@@ -14786,199 +14786,6 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_anthology_selection'
-  $field_instances['node-work-field_anthology_selection'] = array(
-    'bundle' => 'work',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'This is a field, to be used only for the purposes of indicated if a work is in the ELMCIP Anthology. This field will not be visible except to KB editors.',
-    'display' => array(
-      'data_export' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 34,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 53,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 25,
-      ),
-      'token' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_anthology_selection',
-    'label' => 'ELMCIP Anthology Selection',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 33,
-    ),
-  );
-
-  // Exported field_instance: 'node-work-field_anthology_submission'
-  $field_instances['node-work-field_anthology_submission'] = array(
-    'bundle' => 'work',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'default_value_function' => '',
-    'default_value_php' => '',
-    'deleted' => 0,
-    'description' => 'By checking this box I agree that if this work is selected by the editors of the ELMCIP Anthology of European electronic literature. ELMCIP may publish the work on the Web and other media with a Creative Commons Attribution-NonCommercial 3.0 Unported license (Attribution-NonCommercial 3.0 Unported). All contributors to the work have approved this submission. <b>Note: only check if you are the author of the work</b>. 
-
-Work records do not need to be submitted to the anthology in order to be documented in the knowledge base.',
-    'display' => array(
-      2 => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      3 => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      4 => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'css-class' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-      'data_export' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'ds_weight' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-      'format' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 54,
-      ),
-      'reference' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'region' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-      'sticky' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 20,
-      ),
-      'token' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 1,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_anthology_submission',
-    'label' => 'ELMCIP Anthology Submission',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'weight' => 1,
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 32,
-    ),
-    'widget_type' => 'optionwidgets_onoff',
-  );
-
   // Exported field_instance: 'node-work-field_archiveurl'
   $field_instances['node-work-field_archiveurl'] = array(
     'bundle' => 'work',
@@ -18224,9 +18031,6 @@ Work records do not need to be submitted to the anthology in order to be documen
   t('Body');
   t('Born');
   t('Briefly describe this teaching resource -- its purpose, intended audience, and content. If this is a resource produced for a course, please also include the name of the institution and program in the description.');
-  t('By checking this box I agree that if this work is selected by the editors of the ELMCIP Anthology of European electronic literature. ELMCIP may publish the work on the Web and other media with a Creative Commons Attribution-NonCommercial 3.0 Unported license (Attribution-NonCommercial 3.0 Unported). All contributors to the work have approved this submission. <b>Note: only check if you are the author of the work</b>. 
-
-Work records do not need to be submitted to the anthology in order to be documented in the knowledge base.');
   t('Collection contributors');
   t('Collection curated by');
   t('Comment');
@@ -18257,8 +18061,6 @@ Work records do not need to be submitted to the anthology in order to be documen
   t('Description (in original language)');
   t('Died');
   t('Download URL');
-  t('ELMCIP Anthology Selection');
-  t('ELMCIP Anthology Submission');
   t('Edition');
   t('Editor');
   t('Editorial status of record, as a taxonomy term. This field can only modified by editors.');
@@ -18449,7 +18251,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Technical notes');
   t('The author\'s email will <I>not</i> be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.');
   t('The teacher of the course. This is an autocomplete field. The teacher must be a Knowledge Base user who has been assigned "teacher" permissions by a KB administrator. Multiple teachers may be added to a class group.');
-  t('This is a field, to be used only for the purposes of indicated if a work is in the ELMCIP Anthology. This field will not be visible except to KB editors.');
   t('This is the editorial status of a record, now a taxonomy. This value can only be changed by KB editors. ');
   t('Translator');
   t('Type');

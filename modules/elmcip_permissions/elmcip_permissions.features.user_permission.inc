@@ -800,27 +800,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create field_anthology_selection'.
-  $permissions['create field_anthology_selection'] = array(
-    'name' => 'create field_anthology_selection',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'create field_anthology_submission'.
-  $permissions['create field_anthology_submission'] = array(
-    'name' => 'create field_anthology_submission',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: 'create field_auth_email'.
   $permissions['create field_auth_email'] = array(
     'name' => 'create field_auth_email',
@@ -1964,27 +1943,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit field_anthology_selection'.
-  $permissions['edit field_anthology_selection'] = array(
-    'name' => 'edit field_anthology_selection',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit field_anthology_submission'.
-  $permissions['edit field_anthology_submission'] = array(
-    'name' => 'edit field_anthology_submission',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: 'edit field_auth_email'.
   $permissions['edit field_auth_email'] = array(
     'name' => 'edit field_auth_email',
@@ -2204,27 +2162,6 @@ function elmcip_permissions_user_default_permissions() {
       'supereditor' => 'supereditor',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit own field_anthology_selection'.
-  $permissions['edit own field_anthology_selection'] = array(
-    'name' => 'edit own field_anthology_selection',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit own field_anthology_submission'.
-  $permissions['edit own field_anthology_submission'] = array(
-    'name' => 'edit own field_anthology_submission',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_permissions',
   );
 
   // Exported permission: 'edit own field_auth_email'.
@@ -3021,27 +2958,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'date_repeat_field',
   );
 
-  // Exported permission: 'view field_anthology_selection'.
-  $permissions['view field_anthology_selection'] = array(
-    'name' => 'view field_anthology_selection',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view field_anthology_submission'.
-  $permissions['view field_anthology_submission'] = array(
-    'name' => 'view field_anthology_submission',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: 'view field_auth_email'.
   $permissions['view field_auth_email'] = array(
     'name' => 'view field_auth_email',
@@ -3211,27 +3127,6 @@ function elmcip_permissions_user_default_permissions() {
       'supereditor' => 'supereditor',
     ),
     'module' => 'location',
-  );
-
-  // Exported permission: 'view own field_anthology_selection'.
-  $permissions['view own field_anthology_selection'] = array(
-    'name' => 'view own field_anthology_selection',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view own field_anthology_submission'.
-  $permissions['view own field_anthology_submission'] = array(
-    'name' => 'view own field_anthology_submission',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_permissions',
   );
 
   // Exported permission: 'view own field_auth_email'.
