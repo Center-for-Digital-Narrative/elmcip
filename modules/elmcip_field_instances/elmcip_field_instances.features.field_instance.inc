@@ -14971,11 +14971,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'ds_weight' => array(
@@ -15080,11 +15077,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 24,
       ),
       'full' => array(
@@ -15772,11 +15766,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 20,
       ),
       'ds_weight' => array(
@@ -16376,11 +16367,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'ds_weight' => array(
@@ -16518,11 +16506,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 7,
       ),
       'ds_weight' => array(
@@ -16827,11 +16812,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 26,
       ),
       'full' => array(
@@ -16933,11 +16915,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 13,
       ),
       'ds_weight' => array(
@@ -17048,11 +17027,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 38,
       ),
       'full' => array(
@@ -17525,11 +17501,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 33,
       ),
       'full' => array(
@@ -17776,16 +17749,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_repeat_rule' => 'show',
-        ),
-        'type' => 'date_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 43,
       ),
       'full' => array(
