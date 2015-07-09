@@ -2764,7 +2764,7 @@ function elmcip_content_types_strongarm() {
       'display' => array(
         'Critical_writing_work_entity_view_1' => array(
           'default' => array(
-            'weight' => '23',
+            'weight' => '36',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -2772,11 +2772,11 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '47',
+            'weight' => '55',
             'visible' => FALSE,
           ),
           'data_export' => array(
-            'weight' => '31',
+            'weight' => '42',
             'visible' => FALSE,
           ),
           'token' => array(
@@ -2790,15 +2790,15 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '45',
+            'weight' => '53',
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '34',
             'visible' => FALSE,
           ),
           'data_export' => array(
-            'weight' => '30',
+            'weight' => '41',
             'visible' => FALSE,
           ),
           'token' => array(
@@ -2812,12 +2812,16 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '35',
             'visible' => FALSE,
           ),
           'teaser' => array(
             'weight' => '21',
             'visible' => FALSE,
+          ),
+          'data_export' => array(
+            'weight' => '15',
+            'visible' => TRUE,
           ),
         ),
       ),

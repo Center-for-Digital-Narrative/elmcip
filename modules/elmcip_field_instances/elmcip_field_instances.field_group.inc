@@ -1703,63 +1703,6 @@ function elmcip_field_instances_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_submit_vt|node|work|data_export';
-  $field_group->group_name = 'group_submit_vt';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'work';
-  $field_group->mode = 'data_export';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Submit to ELMCIP Anthology',
-    'weight' => '27',
-    'children' => array(
-      0 => 'field_anthology_submission',
-    ),
-    'format_type' => 'hidden',
-    'format_settings' => array(
-      'label' => 'Submit to ELMCIP Anthology',
-      'instance_settings' => array(
-        'required_fields' => 0,
-        'classes' => ' group-submit-vt field-group-hidden',
-        'description' => '',
-      ),
-      'formatter' => 'closed',
-    ),
-  );
-  $export['group_submit_vt|node|work|data_export'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_submit_vt|node|work|form';
-  $field_group->group_name = 'group_submit_vt';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'work';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Submit to ELMCIP Anthology',
-    'weight' => '4',
-    'children' => array(
-      0 => 'field_anthology_submission',
-      1 => 'field_anthology_selection',
-    ),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'label' => 'Submit to ELMCIP Anthology',
-      'instance_settings' => array(
-        'required_fields' => 0,
-        'classes' => ' group-submit-vt field-group-tab',
-        'description' => '',
-      ),
-      'formatter' => 'closed',
-    ),
-  );
-  $export['group_submit_vt|node|work|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_tr_attach|node|teaching_resource|default';
   $field_group->group_name = 'group_tr_attach';
   $field_group->entity_type = 'node';
@@ -2141,56 +2084,6 @@ function elmcip_field_instances_field_group_info() {
     ),
   );
   $export['group_workinfo|node|work|teaser'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_worksubmit|node|work|default';
-  $field_group->group_name = 'group_worksubmit';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'work';
-  $field_group->mode = 'default';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Submit to ELMCIP Anthology',
-    'weight' => '4',
-    'children' => array(
-      0 => 'field_anthology_submission',
-    ),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'formatter' => 'collapsible',
-      'instance_settings' => array(
-        'classes' => ' group-worksubmit field-group-fieldset',
-      ),
-    ),
-  );
-  $export['group_worksubmit|node|work|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_worksubmit|node|work|teaser';
-  $field_group->group_name = 'group_worksubmit';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'work';
-  $field_group->mode = 'teaser';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Submit to ELMCIP Anthology',
-    'weight' => '43',
-    'children' => array(
-      0 => 'field_anthology_submission',
-    ),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'formatter' => 'collapsible',
-      'instance_settings' => array(
-        'classes' => ' group-worksubmit field-group-fieldset',
-      ),
-    ),
-  );
-  $export['group_worksubmit|node|work|teaser'] = $field_group;
 
   return $export;
 }

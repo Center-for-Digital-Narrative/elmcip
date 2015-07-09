@@ -14645,13 +14645,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 28,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 19,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -14699,7 +14699,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 31,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -14742,13 +14742,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 33,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 44,
       ),
       'full' => array(
         'label' => 'inline',
@@ -14760,7 +14760,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 48,
       ),
       'token' => array(
         'label' => 'above',
@@ -14826,13 +14826,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_separate',
-        'weight' => 7,
+        'weight' => 11,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 5,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -14880,7 +14880,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 37,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -15073,13 +15073,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 8,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 38,
       ),
       'full' => array(
         'label' => 'above',
@@ -15094,7 +15094,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 52,
       ),
       'token' => array(
         'label' => 'above',
@@ -15165,7 +15165,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 26,
       ),
       'default' => array(
         'label' => 'above',
@@ -15212,7 +15212,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 35,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -15284,13 +15284,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_separate',
-        'weight' => 8,
+        'weight' => 12,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 6,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -15338,7 +15338,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 38,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -15395,13 +15395,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 39,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 39,
       ),
       'full' => array(
         'label' => 'above',
@@ -15414,7 +15414,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 47,
       ),
       'token' => array(
         'label' => 'above',
@@ -15454,13 +15454,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 24,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 48,
       ),
       'full' => array(
         'label' => 'inline',
@@ -15556,13 +15556,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 35,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 31,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -15603,7 +15603,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 51,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -15648,13 +15648,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 22,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 49,
       ),
       'full' => array(
         'label' => 'inline',
@@ -15762,13 +15762,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 20,
+        'weight' => 4,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 25,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -15828,7 +15828,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 42,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -15871,13 +15871,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 25,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 46,
       ),
       'full' => array(
         'label' => 'above',
@@ -15931,13 +15931,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 11,
+        'weight' => 16,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 43,
       ),
       'full' => array(
         'label' => 'above',
@@ -15950,7 +15950,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 27,
       ),
       'token' => array(
         'label' => 'above',
@@ -16011,13 +16011,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 12,
+        'weight' => 17,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -16058,7 +16058,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 36,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -16098,13 +16098,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 37,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 37,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -16119,7 +16119,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 46,
+        'weight' => 54,
       ),
       'token' => array(
         'label' => 'above',
@@ -16202,13 +16202,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 36,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 32,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -16270,7 +16270,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 33,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -16363,13 +16363,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 2,
+        'weight' => 7,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 17,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -16420,7 +16420,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 25,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -16502,13 +16502,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
+        'weight' => 2,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 18,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -16559,7 +16559,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 43,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -16603,13 +16603,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 18,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 50,
       ),
       'full' => array(
         'label' => 'inline',
@@ -16709,13 +16709,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 31,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 20,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -16762,7 +16762,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 41,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -16808,13 +16808,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 26,
+        'weight' => 5,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 40,
       ),
       'full' => array(
         'label' => 'above',
@@ -16829,7 +16829,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 49,
       ),
       'token' => array(
         'label' => 'above',
@@ -16911,13 +16911,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 13,
+        'weight' => 3,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 21,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -16977,7 +16977,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 45,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -17023,13 +17023,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 51,
       ),
       'full' => array(
         'label' => 'above',
@@ -17044,7 +17044,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 16,
       ),
       'token' => array(
         'label' => 'above',
@@ -17115,13 +17115,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 32,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 22,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -17169,7 +17169,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 44,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -17216,13 +17216,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 40,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 41,
       ),
       'full' => array(
         'label' => 'above',
@@ -17235,7 +17235,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 46,
       ),
       'token' => array(
         'label' => 'above',
@@ -17293,13 +17293,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 29,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 24,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -17340,7 +17340,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 40,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -17404,13 +17404,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 27,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 23,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -17451,7 +17451,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 30,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -17497,13 +17497,13 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 47,
       ),
       'full' => array(
         'label' => 'above',
@@ -17583,7 +17583,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_separate',
-        'weight' => 6,
+        'weight' => 10,
       ),
       'default' => array(
         'label' => 'above',
@@ -17630,7 +17630,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 28,
       ),
       'token' => array(
         'label' => 'hidden',
@@ -17689,13 +17689,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 5,
+        'weight' => 9,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 42,
       ),
       'full' => array(
         'label' => 'above',
@@ -17708,7 +17708,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 26,
       ),
       'token' => array(
         'label' => 'above',
@@ -17745,13 +17745,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 21,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 43,
+        'weight' => 55,
       ),
       'full' => array(
         'label' => 'above',
@@ -17830,13 +17830,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_separate',
-        'weight' => 9,
+        'weight' => 13,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 45,
       ),
       'full' => array(
         'label' => 'above',
@@ -17849,7 +17849,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 32,
       ),
       'token' => array(
         'label' => 'above',
@@ -17905,13 +17905,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 10,
+        'weight' => 14,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -17924,7 +17924,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 29,
       ),
       'token' => array(
         'label' => 'above',
