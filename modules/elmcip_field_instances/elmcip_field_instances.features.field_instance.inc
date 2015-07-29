@@ -9275,7 +9275,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'entity_type' => 'node',
     'field_name' => 'field_last_name',
     'label' => 'Last name',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
