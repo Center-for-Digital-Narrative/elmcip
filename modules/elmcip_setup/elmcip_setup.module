@@ -57,3 +57,41 @@ function elmcip_setup_block_view($delta = '') {
       break;
   }
 }
+
+/**
+ * Implements hook_node_presave().
+ */
+function elmcip_setup_node_presave($node) {
+  $content_types = array('person');
+  foreach ($content_types as $content_type) {
+    if ($node->type == $content_type) {
+      if ($content_type = 'person') {
+        $person = entity_metadata_wrapper('node', $node);
+        $name = FALSE;
+        if ($person->field_first_name->value()) {
+          $name .= trim($person->field_first_name->value());
+          $person->field_first_name->set(trim($person->field_first_name->value()));
+        }
+        if ($person->field_middle_name->value()) {
+          $name .= ' ' . trim($person->field_middle_name->value());
+          $person->field_middle_name->set(trim($person->field_middle_name->value()));
+        }
+        if ($person->field_last_name->value()) {
+          $name .= ' ' . trim($person->field_last_name->value());
+          $person->field_last_name->set(trim($person->field_last_name->value()));
+        }
+        if ($name) {
+          $person->title->set($name);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function elmcip_setup_form_person_node_form_alter(&$form, &$form_state, $form_id) {
+  $form['title']['#type'] = 'hidden';
+  $form['title']['#default_value'] = 'ELMCIP auto generated - dummy';
+}

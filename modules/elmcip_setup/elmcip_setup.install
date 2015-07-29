@@ -312,3 +312,24 @@ function elmcip_setup_update_7021() {
     field_delete_instance($instance, TRUE);
   }
 }
+
+/**
+ * Disable auto nodetitle. Resave all person records forcing title update.
+ */
+function elmcip_setup_update_7022() {
+  module_disable(array('auto_nodetitle'), TRUE);
+  drupal_uninstall_modules(array('auto_nodetitle'), TRUE);
+
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'person');
+
+  $result = $query->execute();
+  $news_items_nids = array_keys($result['node']);
+
+  foreach ($news_items_nids as $nid) {
+    $node = node_load($nid);
+    node_save($node);
+    print 'Saved node: ' . $nid . PHP_EOL;
+  }
+}
