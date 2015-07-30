@@ -9202,7 +9202,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Family name of the individual (e.g. "Smith" in "John Smith"). If the work is authored by a collective, put one blank space in the first name field and indicate the name of the collective in the last name field.',
+    'description' => 'Family name of the individual (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -18063,7 +18063,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Event type');
   t('Events');
   t('Events where this resource or database has been featured. Only events can be referenced on this node.');
-  t('Family name of the individual (e.g. "Smith" in "John Smith"). If the work is authored by a collective, put one blank space in the first name field and indicate the name of the collective in the last name field.');
+  t('Family name of the individual (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.');
   t('Field to add screenshot to book pages.');
   t('First name');
   t('Gender');
