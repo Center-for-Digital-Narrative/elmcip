@@ -314,7 +314,7 @@ function elmcip_setup_update_7021() {
 }
 
 /**
- * Disable auto nodetitle. Resave all person records forcing title update.
+ * Disable auto_nodetitle. Update all person records cleaning up names & titles.
  */
 function elmcip_setup_update_7022() {
   module_disable(array('auto_nodetitle'), TRUE);
@@ -329,7 +329,22 @@ function elmcip_setup_update_7022() {
 
   foreach ($news_items_nids as $nid) {
     $node = node_load($nid);
-    node_save($node);
-    print 'Saved node: ' . $nid . PHP_EOL;
+    $person = entity_metadata_wrapper('node', $node);
+    if ($person->field_first_name->value()) {
+      $name .= trim($person->field_first_name->value());
+      $person->field_first_name->set(trim($person->field_first_name->value()));
+    }
+    if ($person->field_middle_name->value()) {
+      $name .= ' ' . trim($person->field_middle_name->value());
+      $person->field_middle_name->set(trim($person->field_middle_name->value()));
+    }
+    if ($person->field_last_name->value()) {
+      $name .= ' ' . trim($person->field_last_name->value());
+      $person->field_last_name->set(trim($person->field_last_name->value()));
+    }
+
+    field_attach_presave('node', $node);
+    field_attach_update('node', $node);
+    print 'Updated node: ' . $nid . PHP_EOL;
   }
 }
