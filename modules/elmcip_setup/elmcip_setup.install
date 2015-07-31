@@ -348,3 +348,10 @@ function elmcip_setup_update_7022() {
     print 'Updated node: ' . $nid . PHP_EOL;
   }
 }
+
+/**
+ * Enable views_oai_pmh module and feature module - elmcip_creative_work.
+ */
+function elmcip_setup_update_7023() {
+  module_enable(array('views_oai_pmh', 'elmcip_creative_work'), 'FALSE');
+}
