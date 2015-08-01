@@ -2823,6 +2823,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '15',
             'visible' => TRUE,
           ),
+          'token' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
         ),
       ),
     ),
