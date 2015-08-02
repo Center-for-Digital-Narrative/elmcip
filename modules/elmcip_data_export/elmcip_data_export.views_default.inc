@@ -16320,8 +16320,10 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'work_NID_data';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['access']['perm'] = 'administer users';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -16395,14 +16397,30 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
   /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['type'] = 'number_unformatted';
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
+  $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
   );
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['field_language_tax']['id'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
+  /* Field: Content: Platform/Software */
+  $handler->display->display_options['fields']['field_work_platform_software']['id'] = 'field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['table'] = 'field_data_field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['field'] = 'field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_work_platform_software']['delta_offset'] = '0';
   /* Sort criterion: Content: Nid */
   $handler->display->display_options['sorts']['nid']['id'] = 'nid';
   $handler->display->display_options['sorts']['nid']['table'] = 'node';
@@ -16429,8 +16447,7 @@ function elmcip_data_export_views_default_views() {
   /* Display: Data export Minimal */
   $handler = $view->new_display('views_data_export', 'Data export Minimal', 'views_data_export_1');
   $handler->display->display_options['display_description'] = 'Title NID, Year, Author ID';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
   $handler->display->display_options['style_options']['provide_file'] = 1;
@@ -16448,12 +16465,16 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => ' ',
-    'prefix_suffix' => 1,
+  $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['settings'] = array(
+    'format_type' => 'long',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
   );
   /* Field: Content: Author */
   $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
@@ -16468,6 +16489,8 @@ function elmcip_data_export_views_default_views() {
     'page' => 'page',
     'default' => 0,
   );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
 
   /* Display: Data export Extensive */
   $handler = $view->new_display('views_data_export', 'Data export Extensive', 'views_data_export_2');
@@ -16507,6 +16530,8 @@ function elmcip_data_export_views_default_views() {
     t('Tag ID'),
     t('2000[taxonomy_vocabulary_1_1-tid]'),
     t('Year'),
+    t('Language'),
+    t('Platform/Software'),
     t('Page'),
     t('Data export Minimal'),
     t('Title NID, Year, Author ID'),
