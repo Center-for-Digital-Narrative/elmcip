@@ -737,7 +737,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '13',
+      'weight' => '14',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -747,7 +747,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '14',
+      'weight' => '15',
       'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
@@ -757,9 +757,14 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'post_date' => array(
-      'weight' => '15',
+      'weight' => '16',
       'label' => 'inline',
       'format' => 'ds_post_date_short',
+    ),
+    'field_collection_platform_ref' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
     ),
   );
   $export['node|research_collection|full'] = $ds_fieldsetting;
@@ -2202,27 +2207,29 @@ function elmcip_layout_ds_layout_settings_info() {
         0 => 'content_type',
         1 => 'field_collection_curated_by',
         2 => 'field_collection_contributors',
+        3 => 'field_collection_platform_ref',
       ),
       'right' => array(
-        3 => 'field_rc_description',
-        4 => 'field_media',
-        5 => 'people_listed_in_research_collection_entity_view_1',
-        6 => 'works_listed_on_research_collection_entity_view_1',
-        7 => 'cw_listed_in_research_collection_entity_view_1',
-        8 => 'organizations_listed_in_research_collection_entity_view_1',
-        9 => 'teaching_resources_listed_in_research_collection_entity_view_1',
-        10 => 'publishers_listed_in_research_collection_entity_view_1',
-        11 => 'databases_archives_listed_in_research_collection_entity_view_1',
-        12 => 'events_listed_in_research_collection_entity_view_1',
-        13 => 'purl',
-        14 => 'author',
-        15 => 'post_date',
+        4 => 'field_rc_description',
+        5 => 'field_media',
+        6 => 'people_listed_in_research_collection_entity_view_1',
+        7 => 'works_listed_on_research_collection_entity_view_1',
+        8 => 'cw_listed_in_research_collection_entity_view_1',
+        9 => 'organizations_listed_in_research_collection_entity_view_1',
+        10 => 'teaching_resources_listed_in_research_collection_entity_view_1',
+        11 => 'publishers_listed_in_research_collection_entity_view_1',
+        12 => 'databases_archives_listed_in_research_collection_entity_view_1',
+        13 => 'events_listed_in_research_collection_entity_view_1',
+        14 => 'purl',
+        15 => 'author',
+        16 => 'post_date',
       ),
     ),
     'fields' => array(
       'content_type' => 'left',
       'field_collection_curated_by' => 'left',
       'field_collection_contributors' => 'left',
+      'field_collection_platform_ref' => 'left',
       'field_rc_description' => 'right',
       'field_media' => 'right',
       'people_listed_in_research_collection_entity_view_1' => 'right',
@@ -2247,6 +2254,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|research_collection|full'] = $ds_layout;
 

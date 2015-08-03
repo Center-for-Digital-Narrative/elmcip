@@ -2369,7 +2369,7 @@ function elmcip_content_types_strongarm() {
         ),
         'works_listed_on_research_collection_entity_view_1' => array(
           'full' => array(
-            'weight' => '6',
+            'weight' => '7',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2383,7 +2383,7 @@ function elmcip_content_types_strongarm() {
         ),
         'cw_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
-            'weight' => '7',
+            'weight' => '8',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2397,7 +2397,7 @@ function elmcip_content_types_strongarm() {
         ),
         'teaching_resources_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
-            'weight' => '9',
+            'weight' => '10',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2411,7 +2411,7 @@ function elmcip_content_types_strongarm() {
         ),
         'people_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
-            'weight' => '5',
+            'weight' => '6',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2425,7 +2425,7 @@ function elmcip_content_types_strongarm() {
         ),
         'organizations_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
-            'weight' => '8',
+            'weight' => '9',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2439,7 +2439,7 @@ function elmcip_content_types_strongarm() {
         ),
         'publishers_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
-            'weight' => '10',
+            'weight' => '11',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2453,7 +2453,7 @@ function elmcip_content_types_strongarm() {
         ),
         'databases_archives_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
-            'weight' => '11',
+            'weight' => '12',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2467,7 +2467,7 @@ function elmcip_content_types_strongarm() {
         ),
         'events_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
-            'weight' => '12',
+            'weight' => '13',
             'visible' => TRUE,
           ),
           'teaser' => array(
