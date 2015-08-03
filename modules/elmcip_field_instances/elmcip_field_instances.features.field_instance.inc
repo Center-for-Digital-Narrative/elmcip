@@ -11781,7 +11781,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -11829,7 +11829,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -11877,7 +11877,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -11930,7 +11930,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -11998,7 +11998,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -12046,7 +12046,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -12094,7 +12094,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -12142,7 +12142,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -12191,7 +12191,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -12276,7 +12276,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',

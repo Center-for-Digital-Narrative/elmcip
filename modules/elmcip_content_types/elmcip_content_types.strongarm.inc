@@ -2347,6 +2347,9 @@ function elmcip_content_types_strongarm() {
       'teaser_abbreviated' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
