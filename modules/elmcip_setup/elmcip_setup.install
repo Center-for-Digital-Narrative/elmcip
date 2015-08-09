@@ -355,3 +355,13 @@ function elmcip_setup_update_7022() {
 function elmcip_setup_update_7023() {
   module_enable(array('views_oai_pmh', 'elmcip_creative_work'), 'FALSE');
 }
+
+/**
+ * Delete fields no longer used: field_anthology_submission and field_anthology_selection.
+ */
+function elmcip_setup_update_7024() {
+  $fields = array('field_anthology_selection', 'field_anthology_submission');
+  foreach ($fields as $field) {
+    field_delete_field($field);
+  }
+}
