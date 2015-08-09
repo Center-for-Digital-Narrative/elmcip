@@ -365,3 +365,10 @@ function elmcip_setup_update_7024() {
     field_delete_field($field);
   }
 }
+
+/**
+ * Enable feature module ELMCIP permission.
+ */
+function elmcip_setup_update_7025() {
+  module_enable(array('elmcip_permissions'), FALSE);
+}
