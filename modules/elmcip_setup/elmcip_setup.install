@@ -372,3 +372,21 @@ function elmcip_setup_update_7024() {
 function elmcip_setup_update_7025() {
   module_enable(array('elmcip_permissions'), FALSE);
 }
+
+/**
+ * Migrate Event node reference field to entity reference.
+ */
+function elmcip_setup_update_7026() {
+  module_enable(array('entityreference_migration'), FALSE);
+  // Clean up inconsistensy in our data to allow migration to run.
+  // db_query("DELETE FROM field_data_field_node_ref WHERE field_node_ref_nid IS NULL");
+  print "Cleaning up field: field_data_field_editor_name" . PHP_EOL;
+  db_query("DELETE FROM field_data_field_editor_name WHERE field_editor_name_nid IS NULL");
+
+  print "Migrating fields" . PHP_EOL;
+  exec('drush -v emr field_editor_name') . "\n";
+  exec('drush -v emr field_events') . "\n";
+
+  module_disable(array('entityreference_migration'), FALSE);
+  drupal_uninstall_modules(array('entityreference_migration'), FALSE);
+}
