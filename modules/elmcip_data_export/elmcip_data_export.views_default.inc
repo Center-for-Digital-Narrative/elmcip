@@ -13671,6 +13671,9 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_editor_name']['id'] = 'field_editor_name';
   $handler->display->display_options['fields']['field_editor_name']['table'] = 'field_data_field_editor_name';
   $handler->display->display_options['fields']['field_editor_name']['field'] = 'field_editor_name';
+  $handler->display->display_options['fields']['field_editor_name']['settings'] = array(
+    'link' => 1,
+  );
   $handler->display->display_options['fields']['field_editor_name']['delta_offset'] = '0';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['filter_groups']['groups'] = array(
