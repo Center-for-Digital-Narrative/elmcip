@@ -2804,13 +2804,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'locale',
   );
 
-  // Exported permission: 'use PHP for title patterns'.
-  $permissions['use PHP for title patterns'] = array(
-    'name' => 'use PHP for title patterns',
-    'roles' => array(),
-    'module' => 'auto_nodetitle',
-  );
-
   // Exported permission: 'use PHP for tracking visibility'.
   $permissions['use PHP for tracking visibility'] = array(
     'name' => 'use PHP for tracking visibility',
