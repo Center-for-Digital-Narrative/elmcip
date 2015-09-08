@@ -12037,8 +12037,8 @@ function elmcip_data_export_views_default_views() {
 
   $view = new view();
   $view->name = 'publisher_presented_at_event';
-  $view->description = 'Critical writing record viewed on event node';
-  $view->tag = 'Critical Writing, Event';
+  $view->description = 'Publisher record viewed on event node';
+  $view->tag = 'Event, Publisher';
   $view->base_table = 'node';
   $view->human_name = 'Publisher presented at event';
   $view->core = 0;
@@ -12054,8 +12054,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = 100;
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -12090,20 +12092,18 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
-  $handler->display->display_options['arguments']['field_node_ref_event_target_id']['default_action'] = 'empty';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['summary_options']['items_per_page'] = '25';
-  /* Contextual filter: Broken/missing handler */
-  $handler->display->display_options['arguments']['field_events_nid']['id'] = 'field_events_nid';
-  $handler->display->display_options['arguments']['field_events_nid']['table'] = 'field_data_field_events';
-  $handler->display->display_options['arguments']['field_events_nid']['field'] = 'field_events_nid';
-  $handler->display->display_options['arguments']['field_events_nid']['default_action'] = 'empty';
-  $handler->display->display_options['arguments']['field_events_nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_events_nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_events_nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_events_nid']['summary_options']['items_per_page'] = '25';
+  /* Contextual filter: Content: Events (field_events) */
+  $handler->display->display_options['arguments']['field_events_target_id']['id'] = 'field_events_target_id';
+  $handler->display->display_options['arguments']['field_events_target_id']['table'] = 'field_data_field_events';
+  $handler->display->display_options['arguments']['field_events_target_id']['field'] = 'field_events_target_id';
+  $handler->display->display_options['arguments']['field_events_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_events_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_events_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_events_target_id']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -12137,6 +12137,13 @@ function elmcip_data_export_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
     t('Critical writing presented'),
     t('Title'),
     t('All'),
