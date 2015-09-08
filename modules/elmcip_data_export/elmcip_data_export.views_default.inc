@@ -9498,20 +9498,19 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Broken/missing handler */
-  $handler->display->display_options['relationships']['field_events_nid']['id'] = 'field_events_nid';
-  $handler->display->display_options['relationships']['field_events_nid']['table'] = 'field_data_field_events';
-  $handler->display->display_options['relationships']['field_events_nid']['field'] = 'field_events_nid';
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_events_node']['id'] = 'reverse_field_events_node';
+  $handler->display->display_options['relationships']['reverse_field_events_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_events_node']['field'] = 'reverse_field_events_node';
+  $handler->display->display_options['relationships']['reverse_field_events_node']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_events_nid';
   /* Field: Content: Event type */
   $handler->display->display_options['fields']['taxonomy_vocabulary_2']['id'] = 'taxonomy_vocabulary_2';
   $handler->display->display_options['fields']['taxonomy_vocabulary_2']['table'] = 'field_data_taxonomy_vocabulary_2';
   $handler->display->display_options['fields']['taxonomy_vocabulary_2']['field'] = 'taxonomy_vocabulary_2';
-  $handler->display->display_options['fields']['taxonomy_vocabulary_2']['relationship'] = 'field_events_nid';
   $handler->display->display_options['fields']['taxonomy_vocabulary_2']['delta_offset'] = '0';
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
@@ -9544,7 +9543,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_events_node';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
@@ -9556,11 +9555,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = '0';
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Broken/missing handler */
-  $handler->display->display_options['filters']['field_events_nid']['id'] = 'field_events_nid';
-  $handler->display->display_options['filters']['field_events_nid']['table'] = 'field_data_field_events';
-  $handler->display->display_options['filters']['field_events_nid']['field'] = 'field_events_nid';
-  $handler->display->display_options['filters']['field_events_nid']['operator'] = 'not empty';
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
@@ -9585,7 +9579,7 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('field_events_nid'),
+    t('Content referencing Content from field_events'),
     t('Title'),
     t('Event type'),
     t('Date'),
