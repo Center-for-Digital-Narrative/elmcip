@@ -200,11 +200,11 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'views_oai_pmh_style';
   $handler->display->display_options['style_options']['enabled_formats'] = array(
     'oai_dc' => 'oai_dc',
+    'mods' => 'mods',
     'oai_etdms' => 0,
     'oai_ilox' => 0,
     'oai_lom' => 0,
     'oai_lre' => 0,
-    'mods' => 0,
   );
   $handler->display->display_options['style_options']['field_mappings'] = array(
     'oai_dc' => array(
@@ -288,20 +288,20 @@ function elmcip_creative_work_views_default_views() {
       'field_repository' => 'none',
     ),
     'mods' => array(
-      'title' => 'none',
-      'field_archiveurl' => 'none',
-      'field_textfield' => 'none',
-      'field_abstract_lang' => 'none',
-      'field_electronic_literature_dire' => 'none',
-      'field_author_name' => 'none',
-      'field_contributor' => 'none',
-      'field_node_ref' => 'none',
-      'field_url' => 'none',
-      'field_archiveurl_1' => 'none',
-      'field_downloadurl' => 'none',
-      'field_language_tax' => 'none',
-      'field_translator' => 'none',
-      'field_repository' => 'none',
+      'title' => 'titleInfo/title',
+      'field_archiveurl' => 'location/url',
+      'field_textfield' => 'abstract',
+      'field_abstract_lang' => 'abstract',
+      'field_electronic_literature_dire' => 'location/url',
+      'field_author_name' => 'name[]/namePart',
+      'field_contributor' => 'name[]/namePart',
+      'field_node_ref' => 'location/url',
+      'field_url' => 'location/url',
+      'field_archiveurl_1' => 'location/url',
+      'field_downloadurl' => 'location/url',
+      'field_language_tax' => 'language[]/languageTerm',
+      'field_translator' => 'name[]/namePart',
+      'field_repository' => 'location/url',
     ),
   );
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
