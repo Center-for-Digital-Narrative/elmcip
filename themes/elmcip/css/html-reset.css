@@ -333,17 +333,18 @@ button {}
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
-  color: #713333;
+  color: #AC0009;
   font-weight: none;
 }
 
 a:visited {
-  color: #713333;
+  color: #AC0009;
   font-weight: bold;
 }
 
 a:hover,
 a:focus {
+  text-decoration: underline;
 }
 
 a:active {}
