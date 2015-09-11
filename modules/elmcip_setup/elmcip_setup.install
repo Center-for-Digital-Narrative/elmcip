@@ -564,3 +564,35 @@ function elmcip_setup_update_7040() {
 
   print("New search indexed created." . PHP_EOL);
 }
+
+/**
+ * Migrate Research Collection node reference fields to entity reference.
+ */
+function elmcip_setup_update_7041() {
+    module_enable(array('entityreference_migration'), FALSE);
+    /**
+     * Fields to be converted:
+     *
+     * field_collection_curated_by (Collection curated by)
+     * field_collection_contributors (Collection contributors)
+     * field_people ()
+     * field_creative_works (Creative works)
+     * field_critical_writing (Critical writing)
+     * field_organizations (Organizations)
+     * field_publishers (Publishers)
+     * field_teaching_resources (Teaching Resources)
+     * field_rc_db_archive (Database or Archive reference)
+     */
+    print ("Migrating fields" . PHP_EOL);
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_collection_curated_by"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_collection_contributors"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_people"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_creative_works"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_critical_writing"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_organizations"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_publishers"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_teaching_resources"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_rc_db_archive"), array("verbose"));
+    module_disable(array('entityreference_migration'), FALSE);
+    drupal_uninstall_modules(array('entityreference_migration'), FALSE);
+}
