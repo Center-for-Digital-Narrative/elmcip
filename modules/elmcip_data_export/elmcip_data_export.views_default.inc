@@ -1286,6 +1286,8 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
