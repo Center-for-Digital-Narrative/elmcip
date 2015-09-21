@@ -5299,48 +5299,51 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '2';
   $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
-    'title_1' => 'title_1',
-    'field_last_name_value' => 'field_last_name_value',
-    'field_pubtype_value' => 'field_pubtype_value',
-    'field_number_value' => 'field_number_value',
-    'title_2' => 'title_2',
+    'field_author_name' => 'field_author_name',
+    'field_pubtype_tax' => 'field_pubtype_tax',
+    'field_number' => 'field_number',
+    'field_inbook' => 'field_inbook',
     'changed' => 'changed',
-    'edit_node' => 'edit_node',
   );
-  $handler->display->display_options['style_options']['default'] = 'field_last_name_value';
+  $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
       'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
       'separator' => '',
+      'empty_column' => 0,
     ),
-    'title_1' => array(
+    'field_author_name' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_pubtype_tax' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_number' => array(
       'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
       'separator' => '',
+      'empty_column' => 0,
     ),
-    'field_last_name_value' => array(
-      'sortable' => 1,
+    'field_inbook' => array(
+      'align' => '',
       'separator' => '',
-    ),
-    'field_pubtype_value' => array(
-      'separator' => '',
-    ),
-    'field_number_value' => array(
-      'sortable' => 1,
-      'separator' => '',
-    ),
-    'title_2' => array(
-      'sortable' => 1,
-      'separator' => '',
+      'empty_column' => 0,
     ),
     'changed' => array(
       'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
       'separator' => '',
-    ),
-    'edit_node' => array(
-      'separator' => '',
+      'empty_column' => 0,
     ),
   );
   /* Header: Global: Result summary */
@@ -5505,11 +5508,12 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['pager']['options']['id'] = '2';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
+    'nid' => 'nid',
     'field_author_name' => 'field_author_name',
-    'field_pubtype' => 'field_pubtype',
+    'field_pubtype_tax' => 'field_pubtype_tax',
+    'field_number' => 'field_number',
     'field_inbook' => 'field_inbook',
     'changed' => 'changed',
     'edit_node' => 'edit_node',
@@ -5521,30 +5525,48 @@ function elmcip_data_export_views_default_views() {
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
     ),
-    'field_author_name' => array(
-      'align' => '',
-      'separator' => '',
-    ),
-    'field_pubtype' => array(
-      'align' => '',
-      'separator' => '',
-    ),
-    'field_inbook' => array(
+    'nid' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_author_name' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_pubtype_tax' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_number' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_inbook' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
     ),
     'changed' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
     ),
     'edit_node' => array(
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
     ),
   );
   $handler->display->display_options['style_options']['sticky'] = TRUE;
