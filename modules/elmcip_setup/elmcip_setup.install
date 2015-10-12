@@ -390,3 +390,11 @@ function elmcip_setup_update_7026() {
   module_disable(array('entityreference_migration'), FALSE);
   drupal_uninstall_modules(array('entityreference_migration'), FALSE);
 }
+
+/**
+ * Uninstall views_bulk_operations module.
+ */
+function elmcip_setup_update_7027() {
+  module_disable(array('views_bulk_operations'), TRUE);
+  drupal_uninstall_modules(array('views_bulk_operations'), TRUE);
+}

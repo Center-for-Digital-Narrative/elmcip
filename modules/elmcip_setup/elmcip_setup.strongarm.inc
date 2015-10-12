@@ -37,8 +37,6 @@ function elmcip_setup_strongarm() {
     'eva_research_collection' => TRUE,
     'series_pages_to_fix' => TRUE,
     'user_location_table' => FALSE,
-    'clone_of_vbo_set_pubtype_taxonom' => TRUE,
-    'vbo_set_record_status_taxonomy' => TRUE,
     'works_multiple_refs' => TRUE,
     'taxonomy_term' => TRUE,
   );
