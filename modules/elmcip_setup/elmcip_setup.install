@@ -398,3 +398,23 @@ function elmcip_setup_update_7027() {
   module_disable(array('views_bulk_operations'), TRUE);
   drupal_uninstall_modules(array('views_bulk_operations'), TRUE);
 }
+
+/**
+ * Remove leftover settings/data from auto_nodetitle module.
+ */
+function elmcip_setup_update_7028() {
+  $auto_nodetitle = array(
+    'auto_nodetitle_php_critical_writing',
+    'auto_nodetitle_php_event',
+    'auto_nodetitle_php_faq',
+    'auto_nodetitle_php_organization',
+    'auto_nodetitle_php_person',
+    'auto_nodetitle_php_publisher',
+    'auto_nodetitle_php_story',
+    'auto_nodetitle_php_teaching_resource',
+    'auto_nodetitle_php_work',
+  );
+  foreach ($auto_nodetitle as $variable) {
+    variable_del($variable);
+  }
+}
