@@ -319,7 +319,7 @@ function elmcip_platform_views_default_views() {
   $view = new view();
   $view->name = 'works_developed_in_this_platform';
   $view->description = 'Work records viewed on Platform node';
-  $view->tag = 'Work, Platform';
+  $view->tag = 'Work, Platform, data export';
   $view->base_table = 'node';
   $view->human_name = 'Works Developed in this Platform';
   $view->core = 0;
@@ -330,7 +330,7 @@ function elmcip_platform_views_default_views() {
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Works Developed in this Platform';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -438,6 +438,11 @@ function elmcip_platform_views_default_views() {
 
   /* Display: Data export - Basic */
   $handler = $view->new_display('views_data_export', 'Data export - Basic', 'views_data_export_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -522,6 +527,11 @@ function elmcip_platform_views_default_views() {
 
   /* Display: Data export - with Tags */
   $handler = $view->new_display('views_data_export', 'Data export - with Tags', 'views_data_export_2');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';

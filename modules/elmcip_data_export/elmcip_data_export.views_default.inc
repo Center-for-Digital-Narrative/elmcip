@@ -414,7 +414,10 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Critical writing by this author';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -522,6 +525,8 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['entity_type'] = 'node';
   $handler->display->display_options['bundles'] = array(
     0 => 'person',
@@ -1595,7 +1600,7 @@ function elmcip_data_export_views_default_views() {
   $view = new view();
   $view->name = 'Event_work';
   $view->description = 'Work record viewed on event node';
-  $view->tag = 'Work, Event';
+  $view->tag = 'Work, Event, data export';
   $view->base_table = 'node';
   $view->human_name = 'Works presented at Event';
   $view->core = 0;
@@ -1607,10 +1612,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['title'] = 'Works presented';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'role';
-  $handler->display->display_options['access']['role'] = array(
-    2 => '2',
-  );
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -1698,6 +1700,11 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -2179,7 +2186,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Critical Writing Referenced (field_tr_critical) */
+  /* Contextual filter: Content: Critical Writing referenced (field_tr_critical) */
   $handler->display->display_options['arguments']['field_tr_critical_nid']['id'] = 'field_tr_critical_nid';
   $handler->display->display_options['arguments']['field_tr_critical_nid']['table'] = 'field_data_field_tr_critical';
   $handler->display->display_options['arguments']['field_tr_critical_nid']['field'] = 'field_tr_critical_nid';
@@ -2395,7 +2402,7 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Works by this author';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -2518,6 +2525,11 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Data export - Basic */
   $handler = $view->new_display('views_data_export', 'Data export - Basic', 'views_data_export_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -2584,6 +2596,11 @@ function elmcip_data_export_views_default_views() {
   /* Display: Data export - with Tags */
   $handler = $view->new_display('views_data_export', 'Data export - with Tags', 'views_data_export_2');
   $handler->display->display_options['display_description'] = 'Advanced data export with tags and IDs for content';
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -4923,7 +4940,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['content'] = 'Add new <a href="http://elmcip.net/node/add/critical-writing">critical writing</a>.';
   $handler->display->display_options['footer']['area']['format'] = 'ds_code';
-  /* Relationship: Content: Critical Writing Referenced (field_tr_critical) */
+  /* Relationship: Content: Critical Writing referenced (field_tr_critical) */
   $handler->display->display_options['relationships']['field_tr_critical_nid']['id'] = 'field_tr_critical_nid';
   $handler->display->display_options['relationships']['field_tr_critical_nid']['table'] = 'field_data_field_tr_critical';
   $handler->display->display_options['relationships']['field_tr_critical_nid']['field'] = 'field_tr_critical_nid';
@@ -5089,7 +5106,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Database or Archive Referenced (field_database_or_archive_refere) */
+  /* Contextual filter: Content: Database or Archive reference (field_database_or_archive_refere) */
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['id'] = 'field_database_or_archive_refere_nid';
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['table'] = 'field_data_field_database_or_archive_refere';
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['field'] = 'field_database_or_archive_refere_nid';
@@ -5752,6 +5769,11 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -6442,7 +6464,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Critical writing referenced';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Critical Writing Referenced (field_tr_critical) */
+  /* Relationship: Content: Critical Writing referenced (field_tr_critical) */
   $handler->display->display_options['relationships']['field_tr_critical_nid']['id'] = 'field_tr_critical_nid';
   $handler->display->display_options['relationships']['field_tr_critical_nid']['table'] = 'field_data_field_tr_critical';
   $handler->display->display_options['relationships']['field_tr_critical_nid']['field'] = 'field_tr_critical_nid';
@@ -7255,7 +7277,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Critical Writing Referenced (field_tr_critical) */
+  /* Contextual filter: Content: Critical Writing referenced (field_tr_critical) */
   $handler->display->display_options['arguments']['field_tr_critical_nid']['id'] = 'field_tr_critical_nid';
   $handler->display->display_options['arguments']['field_tr_critical_nid']['table'] = 'field_data_field_tr_critical';
   $handler->display->display_options['arguments']['field_tr_critical_nid']['field'] = 'field_tr_critical_nid';
@@ -7481,7 +7503,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Database or Archive referenced';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Database or Archive Referenced (field_database_or_archive_refere) */
+  /* Relationship: Content: Database or Archive reference (field_database_or_archive_refere) */
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['id'] = 'field_database_or_archive_refere_nid';
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['table'] = 'field_data_field_database_or_archive_refere';
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['field'] = 'field_database_or_archive_refere_nid';
@@ -7599,7 +7621,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['content'] = 'Add a new <a href="http://elmcip.net/node/add/work">database</a>.';
   $handler->display->display_options['footer']['area']['format'] = '1';
-  /* Relationship: Content: Database or Archive Referenced (field_database_or_archive_refere) */
+  /* Relationship: Content: Database or Archive reference (field_database_or_archive_refere) */
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['id'] = 'field_database_or_archive_refere_nid';
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['table'] = 'field_data_field_database_or_archive_refere';
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['field'] = 'field_database_or_archive_refere_nid';
@@ -13718,7 +13740,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Database or Archive Referenced (field_database_or_archive_refere) */
+  /* Contextual filter: Content: Database or Archive reference (field_database_or_archive_refere) */
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['id'] = 'field_database_or_archive_refere_nid';
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['table'] = 'field_data_field_database_or_archive_refere';
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['field'] = 'field_database_or_archive_refere_nid';
