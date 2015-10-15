@@ -682,7 +682,7 @@ function elmcip_layout_ds_field_settings_info() {
     'field_events' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'lb' => 'Events presented at',
+          'lb' => 'Events where this publisher has been presented',
         ),
       ),
     ),
@@ -2167,6 +2167,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|publisher|full'] = $ds_layout;
 

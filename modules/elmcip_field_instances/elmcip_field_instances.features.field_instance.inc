@@ -11227,7 +11227,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => TRUE,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 16,
