@@ -1706,12 +1706,7 @@ function elmcip_field_instances_field_default_field_instances() {
   // Exported field_instance: 'node-critical_writing-field_editor_name'.
   $field_instances['node-critical_writing-field_editor_name'] = array(
     'bundle' => 'critical_writing',
-    'default_value' => array(
-      0 => array(
-        'nid' => NULL,
-        '_error_element' => 'default_value_widget][field_editor_name][0][nid][nid',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter the editor if applicable. The name will autocomplete if the editor is already in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now. If you are entering an article or chapter from an anthology, do <i>not</i> enter the editor of the volume here.',
     'display' => array(
@@ -1842,10 +1837,11 @@ function elmcip_field_instances_field_default_field_instances() {
         'weight' => 6,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_editor_name',
     'label' => 'Editor',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -10807,12 +10803,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   // Exported field_instance: 'node-publisher-field_editor_name'.
   $field_instances['node-publisher-field_editor_name'] = array(
     'bundle' => 'publisher',
-    'default_value' => array(
-      0 => array(
-        'nid' => NULL,
-        '_error_element' => 'default_value_widget][field_editor_name][0][nid][nid',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter editors if applicable. The name will autocomplete if the editor is in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now.',
     'display' => array(
@@ -10943,10 +10934,11 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => -1,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_editor_name',
     'label' => 'Editors',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
