@@ -10,7 +10,7 @@
 function elmcip_field_instances_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'comment-comment_node_book-comment_body'
+  // Exported field_instance: 'comment-comment_node_book-comment_body'.
   $field_instances['comment-comment_node_book-comment_body'] = array(
     'bundle' => 'comment_node_book',
     'default_value' => NULL,
@@ -43,7 +43,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_class_group-comment_body'
+  // Exported field_instance: 'comment-comment_node_class_group-comment_body'.
   $field_instances['comment-comment_node_class_group-comment_body'] = array(
     'bundle' => 'comment_node_class_group',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function elmcip_field_instances_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'comment-comment_node_critical_writing-comment_body'
+  // 'comment-comment_node_critical_writing-comment_body'.
   $field_instances['comment-comment_node_critical_writing-comment_body'] = array(
     'bundle' => 'comment_node_critical_writing',
     'default_value' => NULL,
@@ -111,7 +111,7 @@ function elmcip_field_instances_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'comment-comment_node_databases_and_archives-comment_body'
+  // 'comment-comment_node_databases_and_archives-comment_body'.
   $field_instances['comment-comment_node_databases_and_archives-comment_body'] = array(
     'bundle' => 'comment_node_databases_and_archives',
     'default_value' => NULL,
@@ -144,7 +144,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_event-comment_body'
+  // Exported field_instance: 'comment-comment_node_event-comment_body'.
   $field_instances['comment-comment_node_event-comment_body'] = array(
     'bundle' => 'comment_node_event',
     'default_value' => NULL,
@@ -177,7 +177,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_faq-comment_body'
+  // Exported field_instance: 'comment-comment_node_faq-comment_body'.
   $field_instances['comment-comment_node_faq-comment_body'] = array(
     'bundle' => 'comment_node_faq',
     'default_value' => NULL,
@@ -210,7 +210,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_notebook-comment_body'
+  // Exported field_instance: 'comment-comment_node_notebook-comment_body'.
   $field_instances['comment-comment_node_notebook-comment_body'] = array(
     'bundle' => 'comment_node_notebook',
     'default_value' => NULL,
@@ -243,7 +243,8 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_notebook_entry-comment_body'
+  // Exported field_instance:
+  // 'comment-comment_node_notebook_entry-comment_body'.
   $field_instances['comment-comment_node_notebook_entry-comment_body'] = array(
     'bundle' => 'comment_node_notebook_entry',
     'default_value' => NULL,
@@ -276,7 +277,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_organization-comment_body'
+  // Exported field_instance: 'comment-comment_node_organization-comment_body'.
   $field_instances['comment-comment_node_organization-comment_body'] = array(
     'bundle' => 'comment_node_organization',
     'default_value' => NULL,
@@ -309,7 +310,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_page-comment_body'
+  // Exported field_instance: 'comment-comment_node_page-comment_body'.
   $field_instances['comment-comment_node_page-comment_body'] = array(
     'bundle' => 'comment_node_page',
     'default_value' => NULL,
@@ -342,7 +343,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_panel-comment_body'
+  // Exported field_instance: 'comment-comment_node_panel-comment_body'.
   $field_instances['comment-comment_node_panel-comment_body'] = array(
     'bundle' => 'comment_node_panel',
     'default_value' => NULL,
@@ -375,7 +376,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_person-comment_body'
+  // Exported field_instance: 'comment-comment_node_person-comment_body'.
   $field_instances['comment-comment_node_person-comment_body'] = array(
     'bundle' => 'comment_node_person',
     'default_value' => NULL,
@@ -409,7 +410,7 @@ function elmcip_field_instances_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'comment-comment_node_platform_software-comment_body'
+  // 'comment-comment_node_platform_software-comment_body'.
   $field_instances['comment-comment_node_platform_software-comment_body'] = array(
     'bundle' => 'comment_node_platform_software',
     'default_value' => NULL,
@@ -441,7 +442,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_publisher-comment_body'
+  // Exported field_instance: 'comment-comment_node_publisher-comment_body'.
   $field_instances['comment-comment_node_publisher-comment_body'] = array(
     'bundle' => 'comment_node_publisher',
     'default_value' => NULL,
@@ -475,7 +476,7 @@ function elmcip_field_instances_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'comment-comment_node_research_collection-comment_body'
+  // 'comment-comment_node_research_collection-comment_body'.
   $field_instances['comment-comment_node_research_collection-comment_body'] = array(
     'bundle' => 'comment_node_research_collection',
     'default_value' => NULL,
@@ -508,7 +509,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_story-comment_body'
+  // Exported field_instance: 'comment-comment_node_story-comment_body'.
   $field_instances['comment-comment_node_story-comment_body'] = array(
     'bundle' => 'comment_node_story',
     'default_value' => NULL,
@@ -542,7 +543,7 @@ function elmcip_field_instances_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'comment-comment_node_teaching_resource-comment_body'
+  // 'comment-comment_node_teaching_resource-comment_body'.
   $field_instances['comment-comment_node_teaching_resource-comment_body'] = array(
     'bundle' => 'comment_node_teaching_resource',
     'default_value' => NULL,
@@ -575,7 +576,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'comment-comment_node_work-comment_body'
+  // Exported field_instance: 'comment-comment_node_work-comment_body'.
   $field_instances['comment-comment_node_work-comment_body'] = array(
     'bundle' => 'comment_node_work',
     'default_value' => NULL,
@@ -608,7 +609,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'file-audio-field_description'
+  // Exported field_instance: 'file-audio-field_description'.
   $field_instances['file-audio-field_description'] = array(
     'bundle' => 'audio',
     'default_value' => NULL,
@@ -673,7 +674,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-book-body'
+  // Exported field_instance: 'node-book-body'.
   $field_instances['node-book-body'] = array(
     'bundle' => 'book',
     'default_value' => array(
@@ -732,7 +733,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-book-field_multi_images'
+  // Exported field_instance: 'node-book-field_multi_images'.
   $field_instances['node-book-field_multi_images'] = array(
     'bundle' => 'book',
     'deleted' => 0,
@@ -783,7 +784,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-class_group-field_students'
+  // Exported field_instance: 'node-class_group-field_students'.
   $field_instances['node-class_group-field_students'] = array(
     'bundle' => 'class_group',
     'default_value' => NULL,
@@ -838,7 +839,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-class_group-field_teacher_link'
+  // Exported field_instance: 'node-class_group-field_teacher_link'.
   $field_instances['node-class_group-field_teacher_link'] = array(
     'bundle' => 'class_group',
     'default_value' => NULL,
@@ -893,7 +894,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-class_group-field_tr_link'
+  // Exported field_instance: 'node-class_group-field_tr_link'.
   $field_instances['node-class_group-field_tr_link'] = array(
     'bundle' => 'class_group',
     'default_value' => NULL,
@@ -948,7 +949,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_abstract'
+  // Exported field_instance: 'node-critical_writing-field_abstract'.
   $field_instances['node-critical_writing-field_abstract'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -1074,7 +1075,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_abstract_lang'
+  // Exported field_instance: 'node-critical_writing-field_abstract_lang'.
   $field_instances['node-critical_writing-field_abstract_lang'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -1193,7 +1194,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_abstract_lang_tax'
+  // Exported field_instance: 'node-critical_writing-field_abstract_lang_tax'.
   $field_instances['node-critical_writing-field_abstract_lang_tax'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -1243,7 +1244,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_archiveurl'
+  // Exported field_instance: 'node-critical_writing-field_archiveurl'.
   $field_instances['node-critical_writing-field_archiveurl'] = array(
     'bundle' => 'critical_writing',
     'default_value' => '',
@@ -1273,9 +1274,9 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => 12,
       ),
       'default' => array(
@@ -1379,7 +1380,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_author_name'
+  // Exported field_instance: 'node-critical_writing-field_author_name'.
   $field_instances['node-critical_writing-field_author_name'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -1525,7 +1526,7 @@ function elmcip_field_instances_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-critical_writing-field_database_or_archive_refere'
+  // 'node-critical_writing-field_database_or_archive_refere'.
   $field_instances['node-critical_writing-field_database_or_archive_refere'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -1579,7 +1580,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_edition'
+  // Exported field_instance: 'node-critical_writing-field_edition'.
   $field_instances['node-critical_writing-field_edition'] = array(
     'bundle' => 'critical_writing',
     'default_value' => '',
@@ -1702,7 +1703,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_editor_name'
+  // Exported field_instance: 'node-critical_writing-field_editor_name'.
   $field_instances['node-critical_writing-field_editor_name'] = array(
     'bundle' => 'critical_writing',
     'default_value' => array(
@@ -1861,7 +1862,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_editorial_notes'
+  // Exported field_instance: 'node-critical_writing-field_editorial_notes'.
   $field_instances['node-critical_writing-field_editorial_notes'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -1915,7 +1916,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_eissn'
+  // Exported field_instance: 'node-critical_writing-field_eissn'.
   $field_instances['node-critical_writing-field_eissn'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -2036,7 +2037,7 @@ function elmcip_field_instances_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-critical_writing-field_electronic_literature_dire'
+  // 'node-critical_writing-field_electronic_literature_dire'.
   $field_instances['node-critical_writing-field_electronic_literature_dire'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -2105,7 +2106,7 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_files'
+  // Exported field_instance: 'node-critical_writing-field_files'.
   $field_instances['node-critical_writing-field_files'] = array(
     'bundle' => 'critical_writing',
     'default_value' => '',
@@ -2135,9 +2136,9 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'file',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'file_default',
         'weight' => 46,
       ),
       'default' => array(
@@ -2235,7 +2236,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'filefield_widget',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_inbook'
+  // Exported field_instance: 'node-critical_writing-field_inbook'.
   $field_instances['node-critical_writing-field_inbook'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -2363,7 +2364,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'nodereference_autocomplete',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_isbn_text'
+  // Exported field_instance: 'node-critical_writing-field_isbn_text'.
   $field_instances['node-critical_writing-field_isbn_text'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -2490,7 +2491,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_issn_text'
+  // Exported field_instance: 'node-critical_writing-field_issn_text'.
   $field_instances['node-critical_writing-field_issn_text'] = array(
     'bundle' => 'critical_writing',
     'default_value' => '',
@@ -2619,7 +2620,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_journalissue'
+  // Exported field_instance: 'node-critical_writing-field_journalissue'.
   $field_instances['node-critical_writing-field_journalissue'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -2747,7 +2748,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_language_tax'
+  // Exported field_instance: 'node-critical_writing-field_language_tax'.
   $field_instances['node-critical_writing-field_language_tax'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -2798,7 +2799,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_license'
+  // Exported field_instance: 'node-critical_writing-field_license'.
   $field_instances['node-critical_writing-field_license'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -2918,7 +2919,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'optionwidgets_select',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_media_asset'
+  // Exported field_instance: 'node-critical_writing-field_media_asset'.
   $field_instances['node-critical_writing-field_media_asset'] = array(
     'bundle' => 'critical_writing',
     'deleted' => 0,
@@ -2989,7 +2990,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_multi_images'
+  // Exported field_instance: 'node-critical_writing-field_multi_images'.
   $field_instances['node-critical_writing-field_multi_images'] = array(
     'bundle' => 'critical_writing',
     'default_value' => '',
@@ -3028,9 +3029,12 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
-        'settings' => array(),
-        'type' => NULL,
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
         'weight' => 44,
       ),
       'default' => array(
@@ -3176,7 +3180,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'imagefield_widget',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_node_ref'
+  // Exported field_instance: 'node-critical_writing-field_node_ref'.
   $field_instances['node-critical_writing-field_node_ref'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -3331,7 +3335,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_node_ref_event'
+  // Exported field_instance: 'node-critical_writing-field_node_ref_event'.
   $field_instances['node-critical_writing-field_node_ref_event'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -3485,7 +3489,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_node_ref_work'
+  // Exported field_instance: 'node-critical_writing-field_node_ref_work'.
   $field_instances['node-critical_writing-field_node_ref_work'] = array(
     'bundle' => 'critical_writing',
     'default_value' => array(
@@ -3616,7 +3620,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'nodereference_autocomplete',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_number'
+  // Exported field_instance: 'node-critical_writing-field_number'.
   $field_instances['node-critical_writing-field_number'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -3649,9 +3653,14 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
-        'settings' => array(),
-        'type' => NULL,
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
         'weight' => 7,
       ),
       'default' => array(
@@ -3792,7 +3801,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'number',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_organization_cw'
+  // Exported field_instance: 'node-critical_writing-field_organization_cw'.
   $field_instances['node-critical_writing-field_organization_cw'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -3846,7 +3855,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_other_edition_link'
+  // Exported field_instance: 'node-critical_writing-field_other_edition_link'.
   $field_instances['node-critical_writing-field_other_edition_link'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -3901,7 +3910,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_other_lang_ver_link'
+  // Exported field_instance: 'node-critical_writing-field_other_lang_ver_link'.
   $field_instances['node-critical_writing-field_other_lang_ver_link'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4046,7 +4055,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_pagenumbers'
+  // Exported field_instance: 'node-critical_writing-field_pagenumbers'.
   $field_instances['node-critical_writing-field_pagenumbers'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4172,7 +4181,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_publisher_referenced'
+  // Exported field_instance:
+  // 'node-critical_writing-field_publisher_referenced'.
   $field_instances['node-critical_writing-field_publisher_referenced'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4226,7 +4236,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_pubtype_tax'
+  // Exported field_instance: 'node-critical_writing-field_pubtype_tax'.
   $field_instances['node-critical_writing-field_pubtype_tax'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4280,7 +4290,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_pullquote'
+  // Exported field_instance: 'node-critical_writing-field_pullquote'.
   $field_instances['node-critical_writing-field_pullquote'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4400,7 +4410,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_record_status_tax'
+  // Exported field_instance: 'node-critical_writing-field_record_status_tax'.
   $field_instances['node-critical_writing-field_record_status_tax'] = array(
     'bundle' => 'critical_writing',
     'default_value' => array(
@@ -4455,7 +4465,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_ref_about_event'
+  // Exported field_instance: 'node-critical_writing-field_ref_about_event'.
   $field_instances['node-critical_writing-field_ref_about_event'] = array(
     'bundle' => 'critical_writing',
     'default_value' => '',
@@ -4577,7 +4587,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'nodereference_autocomplete',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_series_ref'
+  // Exported field_instance: 'node-critical_writing-field_series_ref'.
   $field_instances['node-critical_writing-field_series_ref'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4632,7 +4642,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_tr_critical'
+  // Exported field_instance: 'node-critical_writing-field_tr_critical'.
   $field_instances['node-critical_writing-field_tr_critical'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4750,7 +4760,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'nodereference_autocomplete',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_translator'
+  // Exported field_instance: 'node-critical_writing-field_translator'.
   $field_instances['node-critical_writing-field_translator'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4814,7 +4824,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_university'
+  // Exported field_instance: 'node-critical_writing-field_university'.
   $field_instances['node-critical_writing-field_university'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4869,7 +4879,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_url'
+  // Exported field_instance: 'node-critical_writing-field_url'.
   $field_instances['node-critical_writing-field_url'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -4892,9 +4902,9 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => 11,
       ),
       'default' => array(
@@ -5004,7 +5014,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-critical_writing-field_worldcat_link'
+  // Exported field_instance: 'node-critical_writing-field_worldcat_link'.
   $field_instances['node-critical_writing-field_worldcat_link'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -5071,7 +5081,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-taxonomy_vocabulary_1'
+  // Exported field_instance: 'node-critical_writing-taxonomy_vocabulary_1'.
   $field_instances['node-critical_writing-taxonomy_vocabulary_1'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -5126,7 +5136,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_contact_email'
+  // Exported field_instance: 'node-databases_and_archives-field_contact_email'.
   $field_instances['node-databases_and_archives-field_contact_email'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5173,7 +5183,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_contributors'
+  // Exported field_instance: 'node-databases_and_archives-field_contributors'.
   $field_instances['node-databases_and_archives-field_contributors'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5221,7 +5231,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_cross_cw'
+  // Exported field_instance: 'node-databases_and_archives-field_db_cross_cw'.
   $field_instances['node-databases_and_archives-field_db_cross_cw'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5268,7 +5278,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_cross_event'
+  // Exported field_instance:
+  // 'node-databases_and_archives-field_db_cross_event'.
   $field_instances['node-databases_and_archives-field_db_cross_event'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5317,7 +5328,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   );
 
   // Exported field_instance:
-  // 'node-databases_and_archives-field_db_description_english'
+  // 'node-databases_and_archives-field_db_description_english'.
   $field_instances['node-databases_and_archives-field_db_description_english'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5365,7 +5376,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   );
 
   // Exported field_instance:
-  // 'node-databases_and_archives-field_db_description_original'
+  // 'node-databases_and_archives-field_db_description_original'.
   $field_instances['node-databases_and_archives-field_db_description_original'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5412,7 +5423,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_language'
+  // Exported field_instance: 'node-databases_and_archives-field_db_language'.
   $field_instances['node-databases_and_archives-field_db_language'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5456,7 +5467,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_org'
+  // Exported field_instance: 'node-databases_and_archives-field_db_org'.
   $field_instances['node-databases_and_archives-field_db_org'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5505,7 +5516,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_people'
+  // Exported field_instance: 'node-databases_and_archives-field_db_people'.
   $field_instances['node-databases_and_archives-field_db_people'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5555,7 +5566,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_tags'
+  // Exported field_instance: 'node-databases_and_archives-field_db_tags'.
   $field_instances['node-databases_and_archives-field_db_tags'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5603,7 +5614,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_db_technotes'
+  // Exported field_instance: 'node-databases_and_archives-field_db_technotes'.
   $field_instances['node-databases_and_archives-field_db_technotes'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5651,7 +5662,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   );
 
   // Exported field_instance:
-  // 'node-databases_and_archives-field_editorial_notes'
+  // 'node-databases_and_archives-field_editorial_notes'.
   $field_instances['node-databases_and_archives-field_editorial_notes'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5697,7 +5708,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_files'
+  // Exported field_instance: 'node-databases_and_archives-field_files'.
   $field_instances['node-databases_and_archives-field_files'] = array(
     'bundle' => 'databases_and_archives',
     'deleted' => 0,
@@ -5759,7 +5770,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_image'
+  // Exported field_instance: 'node-databases_and_archives-field_image'.
   $field_instances['node-databases_and_archives-field_image'] = array(
     'bundle' => 'databases_and_archives',
     'deleted' => 0,
@@ -5822,7 +5833,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_license'
+  // Exported field_instance: 'node-databases_and_archives-field_license'.
   $field_instances['node-databases_and_archives-field_license'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5867,7 +5878,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_multi_images'
+  // Exported field_instance: 'node-databases_and_archives-field_multi_images'.
   $field_instances['node-databases_and_archives-field_multi_images'] = array(
     'bundle' => 'databases_and_archives',
     'deleted' => 0,
@@ -5942,7 +5953,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_project_type'
+  // Exported field_instance: 'node-databases_and_archives-field_project_type'.
   $field_instances['node-databases_and_archives-field_project_type'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -5988,7 +5999,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   );
 
   // Exported field_instance:
-  // 'node-databases_and_archives-field_record_status_tax'
+  // 'node-databases_and_archives-field_record_status_tax'.
   $field_instances['node-databases_and_archives-field_record_status_tax'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => array(
@@ -6036,7 +6047,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_url'
+  // Exported field_instance: 'node-databases_and_archives-field_url'.
   $field_instances['node-databases_and_archives-field_url'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -6099,7 +6110,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-databases_and_archives-field_year_initiated'
+  // Exported field_instance:
+  // 'node-databases_and_archives-field_year_initiated'.
   $field_instances['node-databases_and_archives-field_year_initiated'] = array(
     'bundle' => 'databases_and_archives',
     'deleted' => 0,
@@ -6162,7 +6174,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_archiveurl'
+  // Exported field_instance: 'node-event-field_archiveurl'.
   $field_instances['node-event-field_archiveurl'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -6192,9 +6204,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => 5,
       ),
       'default' => array(
@@ -6296,7 +6308,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-event-field_associated_event'
+  // Exported field_instance: 'node-event-field_associated_event'.
   $field_instances['node-event-field_associated_event'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -6351,7 +6363,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_curator'
+  // Exported field_instance: 'node-event-field_curator'.
   $field_instances['node-event-field_curator'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -6406,7 +6418,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_date'
+  // Exported field_instance: 'node-event-field_date'.
   $field_instances['node-event-field_date'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -6570,7 +6582,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'date_popup',
   );
 
-  // Exported field_instance: 'node-event-field_editorial_notes'
+  // Exported field_instance: 'node-event-field_editorial_notes'.
   $field_instances['node-event-field_editorial_notes'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -6617,7 +6629,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_email'
+  // Exported field_instance: 'node-event-field_email'.
   $field_instances['node-event-field_email'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -6647,9 +6659,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'email',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'email_default',
         'weight' => 2,
       ),
       'default' => array(
@@ -6720,7 +6732,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'email_textfield',
   );
 
-  // Exported field_instance: 'node-event-field_event_series'
+  // Exported field_instance: 'node-event-field_event_series'.
   $field_instances['node-event-field_event_series'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -6775,7 +6787,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_files'
+  // Exported field_instance: 'node-event-field_files'.
   $field_instances['node-event-field_files'] = array(
     'bundle' => 'event',
     'default_value' => '',
@@ -6805,9 +6817,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'file',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'file_default',
         'weight' => 2,
       ),
       'default' => array(
@@ -6884,7 +6896,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'filefield_widget',
   );
 
-  // Exported field_instance: 'node-event-field_individual_organizers'
+  // Exported field_instance: 'node-event-field_individual_organizers'.
   $field_instances['node-event-field_individual_organizers'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -6939,7 +6951,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_location'
+  // Exported field_instance: 'node-event-field_location'.
   $field_instances['node-event-field_location'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -6955,9 +6967,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'location_cck',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'location_default',
         'weight' => 3,
       ),
       'default' => array(
@@ -7028,7 +7040,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'location',
   );
 
-  // Exported field_instance: 'node-event-field_media_asset'
+  // Exported field_instance: 'node-event-field_media_asset'.
   $field_instances['node-event-field_media_asset'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -7089,7 +7101,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_multi_images'
+  // Exported field_instance: 'node-event-field_multi_images'.
   $field_instances['node-event-field_multi_images'] = array(
     'bundle' => 'event',
     'deleted' => 0,
@@ -7156,7 +7168,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_node_ref'
+  // Exported field_instance: 'node-event-field_node_ref'.
   $field_instances['node-event-field_node_ref'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -7283,7 +7295,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_record_status_tax'
+  // Exported field_instance: 'node-event-field_record_status_tax'.
   $field_instances['node-event-field_record_status_tax'] = array(
     'bundle' => 'event',
     'default_value' => array(
@@ -7331,7 +7343,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-field_textfield'
+  // Exported field_instance: 'node-event-field_textfield'.
   $field_instances['node-event-field_textfield'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -7423,7 +7435,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-event-field_url'
+  // Exported field_instance: 'node-event-field_url'.
   $field_instances['node-event-field_url'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -7439,9 +7451,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => 4,
       ),
       'default' => array(
@@ -7529,7 +7541,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-event-taxonomy_vocabulary_1'
+  // Exported field_instance: 'node-event-taxonomy_vocabulary_1'.
   $field_instances['node-event-taxonomy_vocabulary_1'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
@@ -7575,7 +7587,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-event-taxonomy_vocabulary_2'
+  // Exported field_instance: 'node-event-taxonomy_vocabulary_2'.
   $field_instances['node-event-taxonomy_vocabulary_2'] = array(
     'bundle' => 'event',
     'default_value' => array(
@@ -7624,7 +7636,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-faq-body'
+  // Exported field_instance: 'node-faq-body'.
   $field_instances['node-faq-body'] = array(
     'bundle' => 'faq',
     'default_value' => NULL,
@@ -7669,7 +7681,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-faq-taxonomyextra'
+  // Exported field_instance: 'node-faq-taxonomyextra'.
   $field_instances['node-faq-taxonomyextra'] = array(
     'bundle' => 'faq',
     'default_value' => NULL,
@@ -7709,7 +7721,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-notebook_entry-field_author_noted'
+  // Exported field_instance: 'node-notebook_entry-field_author_noted'.
   $field_instances['node-notebook_entry-field_author_noted'] = array(
     'bundle' => 'notebook_entry',
     'default_value' => NULL,
@@ -7751,7 +7763,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-notebook_entry-field_cw_noted'
+  // Exported field_instance: 'node-notebook_entry-field_cw_noted'.
   $field_instances['node-notebook_entry-field_cw_noted'] = array(
     'bundle' => 'notebook_entry',
     'default_value' => NULL,
@@ -7793,7 +7805,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-notebook_entry-field_event_noted'
+  // Exported field_instance: 'node-notebook_entry-field_event_noted'.
   $field_instances['node-notebook_entry-field_event_noted'] = array(
     'bundle' => 'notebook_entry',
     'default_value' => NULL,
@@ -7835,7 +7847,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-notebook_entry-field_notebok'
+  // Exported field_instance: 'node-notebook_entry-field_notebok'.
   $field_instances['node-notebook_entry-field_notebok'] = array(
     'bundle' => 'notebook_entry',
     'default_value' => NULL,
@@ -7874,7 +7886,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-notebook_entry-field_work_noted'
+  // Exported field_instance: 'node-notebook_entry-field_work_noted'.
   $field_instances['node-notebook_entry-field_work_noted'] = array(
     'bundle' => 'notebook_entry',
     'default_value' => NULL,
@@ -7916,7 +7928,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-notebook_entry-field_your_notes'
+  // Exported field_instance: 'node-notebook_entry-field_your_notes'.
   $field_instances['node-notebook_entry-field_your_notes'] = array(
     'bundle' => 'notebook_entry',
     'default_value' => array(
@@ -7963,7 +7975,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-organization-field_editorial_notes'
+  // Exported field_instance: 'node-organization-field_editorial_notes'.
   $field_instances['node-organization-field_editorial_notes'] = array(
     'bundle' => 'organization',
     'default_value' => NULL,
@@ -8010,7 +8022,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-organization-field_email'
+  // Exported field_instance: 'node-organization-field_email'.
   $field_instances['node-organization-field_email'] = array(
     'bundle' => 'organization',
     'default_value' => NULL,
@@ -8040,9 +8052,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'email',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'email_default',
         'weight' => -2,
       ),
       'default' => array(
@@ -8114,7 +8126,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'email_textfield',
   );
 
-  // Exported field_instance: 'node-organization-field_files'
+  // Exported field_instance: 'node-organization-field_files'.
   $field_instances['node-organization-field_files'] = array(
     'bundle' => 'organization',
     'deleted' => 0,
@@ -8164,7 +8176,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-organization-field_location'
+  // Exported field_instance: 'node-organization-field_location'.
   $field_instances['node-organization-field_location'] = array(
     'bundle' => 'organization',
     'default_value' => NULL,
@@ -8180,9 +8192,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'location_cck',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'location_default',
         'weight' => -3,
       ),
       'default' => array(
@@ -8253,7 +8265,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'location',
   );
 
-  // Exported field_instance: 'node-organization-field_multi_images'
+  // Exported field_instance: 'node-organization-field_multi_images'.
   $field_instances['node-organization-field_multi_images'] = array(
     'bundle' => 'organization',
     'deleted' => 0,
@@ -8320,7 +8332,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-organization-field_record_status_tax'
+  // Exported field_instance: 'node-organization-field_record_status_tax'.
   $field_instances['node-organization-field_record_status_tax'] = array(
     'bundle' => 'organization',
     'default_value' => array(
@@ -8368,7 +8380,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-organization-field_textfield'
+  // Exported field_instance: 'node-organization-field_textfield'.
   $field_instances['node-organization-field_textfield'] = array(
     'bundle' => 'organization',
     'default_value' => NULL,
@@ -8460,7 +8472,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-organization-field_url'
+  // Exported field_instance: 'node-organization-field_url'.
   $field_instances['node-organization-field_url'] = array(
     'bundle' => 'organization',
     'default_value' => NULL,
@@ -8476,9 +8488,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => -1,
       ),
       'default' => array(
@@ -8566,7 +8578,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-page-body'
+  // Exported field_instance: 'node-page-body'.
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -8617,7 +8629,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-page-field_files'
+  // Exported field_instance: 'node-page-field_files'.
   $field_instances['node-page-field_files'] = array(
     'bundle' => 'page',
     'deleted' => 0,
@@ -8660,7 +8672,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_affiliation'
+  // Exported field_instance: 'node-person-field_affiliation'.
   $field_instances['node-person-field_affiliation'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -8712,7 +8724,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_alternative_spelling_of_na'
+  // Exported field_instance: 'node-person-field_alternative_spelling_of_na'.
   $field_instances['node-person-field_alternative_spelling_of_na'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -8794,7 +8806,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_auth_email'
+  // Exported field_instance: 'node-person-field_auth_email'.
   $field_instances['node-person-field_auth_email'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -8824,9 +8836,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'email',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'email_default',
         'weight' => 1,
       ),
       'default' => array(
@@ -8917,7 +8929,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'email_textfield',
   );
 
-  // Exported field_instance: 'node-person-field_authorphoto'
+  // Exported field_instance: 'node-person-field_authorphoto'.
   $field_instances['node-person-field_authorphoto'] = array(
     'bundle' => 'person',
     'deleted' => 0,
@@ -8986,7 +8998,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_editorial_notes'
+  // Exported field_instance: 'node-person-field_editorial_notes'.
   $field_instances['node-person-field_editorial_notes'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9033,7 +9045,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_files'
+  // Exported field_instance: 'node-person-field_files'.
   $field_instances['node-person-field_files'] = array(
     'bundle' => 'person',
     'deleted' => 0,
@@ -9083,7 +9095,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_first_name'
+  // Exported field_instance: 'node-person-field_first_name'.
   $field_instances['node-person-field_first_name'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9178,7 +9190,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-person-field_gender_sel'
+  // Exported field_instance: 'node-person-field_gender_sel'.
   $field_instances['node-person-field_gender_sel'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9223,7 +9235,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_last_name'
+  // Exported field_instance: 'node-person-field_last_name'.
   $field_instances['node-person-field_last_name'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9353,7 +9365,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-person-field_middle_name'
+  // Exported field_instance: 'node-person-field_middle_name'.
   $field_instances['node-person-field_middle_name'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9497,7 +9509,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-person-field_nationality'
+  // Exported field_instance: 'node-person-field_nationality'.
   $field_instances['node-person-field_nationality'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9513,9 +9525,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'location_cck',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'location_default',
         'weight' => 3,
       ),
       'default' => array(
@@ -9591,7 +9603,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'location',
   );
 
-  // Exported field_instance: 'node-person-field_record_status_tax'
+  // Exported field_instance: 'node-person-field_record_status_tax'.
   $field_instances['node-person-field_record_status_tax'] = array(
     'bundle' => 'person',
     'default_value' => array(
@@ -9639,7 +9651,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_residency'
+  // Exported field_instance: 'node-person-field_residency'.
   $field_instances['node-person-field_residency'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9655,9 +9667,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'location_cck',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'location_default',
         'weight' => 2,
       ),
       'default' => array(
@@ -9732,7 +9744,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'location',
   );
 
-  // Exported field_instance: 'node-person-field_textfield'
+  // Exported field_instance: 'node-person-field_textfield'.
   $field_instances['node-person-field_textfield'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9830,7 +9842,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-person-field_url'
+  // Exported field_instance: 'node-person-field_url'.
   $field_instances['node-person-field_url'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9846,9 +9858,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => 0,
       ),
       'default' => array(
@@ -9943,7 +9955,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-person-field_userid_reference'
+  // Exported field_instance: 'node-person-field_userid_reference'.
   $field_instances['node-person-field_userid_reference'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
@@ -9995,7 +10007,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-person-field_yearborn'
+  // Exported field_instance: 'node-person-field_yearborn'.
   $field_instances['node-person-field_yearborn'] = array(
     'bundle' => 'person',
     'deleted' => 0,
@@ -10045,9 +10057,16 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
-        'settings' => array(),
-        'type' => NULL,
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
         'weight' => 11,
       ),
       'default' => array(
@@ -10199,7 +10218,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'date_select',
   );
 
-  // Exported field_instance: 'node-person-field_yeardied'
+  // Exported field_instance: 'node-person-field_yeardied'.
   $field_instances['node-person-field_yeardied'] = array(
     'bundle' => 'person',
     'deleted' => 0,
@@ -10249,9 +10268,16 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
-        'settings' => array(),
-        'type' => NULL,
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
         'weight' => 12,
       ),
       'default' => array(
@@ -10403,7 +10429,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'date_select',
   );
 
-  // Exported field_instance: 'node-platform_software-field_license'
+  // Exported field_instance: 'node-platform_software-field_license'.
   $field_instances['node-platform_software-field_license'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -10448,7 +10474,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_media'
+  // Exported field_instance: 'node-platform_software-field_media'.
   $field_instances['node-platform_software-field_media'] = array(
     'bundle' => 'platform_software',
     'deleted' => 0,
@@ -10521,7 +10547,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_ps_attachment'
+  // Exported field_instance: 'node-platform_software-field_ps_attachment'.
   $field_instances['node-platform_software-field_ps_attachment'] = array(
     'bundle' => 'platform_software',
     'deleted' => 0,
@@ -10571,7 +10597,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_ps_description'
+  // Exported field_instance: 'node-platform_software-field_ps_description'.
   $field_instances['node-platform_software-field_ps_description'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -10653,7 +10679,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_ps_image'
+  // Exported field_instance: 'node-platform_software-field_ps_image'.
   $field_instances['node-platform_software-field_ps_image'] = array(
     'bundle' => 'platform_software',
     'deleted' => 0,
@@ -10714,7 +10740,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_url'
+  // Exported field_instance: 'node-platform_software-field_url'.
   $field_instances['node-platform_software-field_url'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -10778,7 +10804,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-publisher-field_editor_name'
+  // Exported field_instance: 'node-publisher-field_editor_name'.
   $field_instances['node-publisher-field_editor_name'] = array(
     'bundle' => 'publisher',
     'default_value' => array(
@@ -10937,7 +10963,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-publisher-field_editorial_notes'
+  // Exported field_instance: 'node-publisher-field_editorial_notes'.
   $field_instances['node-publisher-field_editorial_notes'] = array(
     'bundle' => 'publisher',
     'default_value' => NULL,
@@ -10984,7 +11010,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-publisher-field_eissn'
+  // Exported field_instance: 'node-publisher-field_eissn'.
   $field_instances['node-publisher-field_eissn'] = array(
     'bundle' => 'publisher',
     'default_value' => NULL,
@@ -11103,7 +11129,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-publisher-field_email'
+  // Exported field_instance: 'node-publisher-field_email'.
   $field_instances['node-publisher-field_email'] = array(
     'bundle' => 'publisher',
     'default_value' => NULL,
@@ -11133,9 +11159,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'email',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'email_default',
         'weight' => 0,
       ),
       'default' => array(
@@ -11207,7 +11233,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'email_textfield',
   );
 
-  // Exported field_instance: 'node-publisher-field_events'
+  // Exported field_instance: 'node-publisher-field_events'.
   $field_instances['node-publisher-field_events'] = array(
     'bundle' => 'publisher',
     'default_value' => NULL,
@@ -11262,7 +11288,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-publisher-field_issn_text'
+  // Exported field_instance: 'node-publisher-field_issn_text'.
   $field_instances['node-publisher-field_issn_text'] = array(
     'bundle' => 'publisher',
     'default_value' => NULL,
@@ -11388,7 +11414,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textfield',
   );
 
-  // Exported field_instance: 'node-publisher-field_location'
+  // Exported field_instance: 'node-publisher-field_location'.
   $field_instances['node-publisher-field_location'] = array(
     'bundle' => 'publisher',
     'default_value' => NULL,
@@ -11404,9 +11430,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'location_cck',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'location_default',
         'weight' => -3,
       ),
       'default' => array(
@@ -11477,7 +11503,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'location',
   );
 
-  // Exported field_instance: 'node-publisher-field_record_status_tax'
+  // Exported field_instance: 'node-publisher-field_record_status_tax'.
   $field_instances['node-publisher-field_record_status_tax'] = array(
     'bundle' => 'publisher',
     'default_value' => array(
@@ -11525,7 +11551,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-publisher-field_textfield'
+  // Exported field_instance: 'node-publisher-field_textfield'.
   $field_instances['node-publisher-field_textfield'] = array(
     'bundle' => 'publisher',
     'default_value' => NULL,
@@ -11617,7 +11643,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-publisher-field_url'
+  // Exported field_instance: 'node-publisher-field_url'.
   $field_instances['node-publisher-field_url'] = array(
     'bundle' => 'publisher',
     'default_value' => NULL,
@@ -11633,9 +11659,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => -2,
       ),
       'default' => array(
@@ -11722,7 +11748,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   );
 
   // Exported field_instance:
-  // 'node-research_collection-field_collection_contributors'
+  // 'node-research_collection-field_collection_contributors'.
   $field_instances['node-research_collection-field_collection_contributors'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -11772,7 +11798,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   );
 
   // Exported field_instance:
-  // 'node-research_collection-field_collection_curated_by'
+  // 'node-research_collection-field_collection_curated_by'.
   $field_instances['node-research_collection-field_collection_curated_by'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -11822,7 +11848,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_creative_works'
+  // Exported field_instance: 'node-research_collection-field_creative_works'.
   $field_instances['node-research_collection-field_creative_works'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -11870,7 +11896,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_critical_writing'
+  // Exported field_instance: 'node-research_collection-field_critical_writing'.
   $field_instances['node-research_collection-field_critical_writing'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -11918,7 +11944,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_events'
+  // Exported field_instance: 'node-research_collection-field_events'.
   $field_instances['node-research_collection-field_events'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -11973,7 +11999,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_media'
+  // Exported field_instance: 'node-research_collection-field_media'.
   $field_instances['node-research_collection-field_media'] = array(
     'bundle' => 'research_collection',
     'deleted' => 0,
@@ -12046,7 +12072,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_organizations'
+  // Exported field_instance: 'node-research_collection-field_organizations'.
   $field_instances['node-research_collection-field_organizations'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -12094,7 +12120,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_people'
+  // Exported field_instance: 'node-research_collection-field_people'.
   $field_instances['node-research_collection-field_people'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -12142,7 +12168,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_publishers'
+  // Exported field_instance: 'node-research_collection-field_publishers'.
   $field_instances['node-research_collection-field_publishers'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -12190,7 +12216,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_rc_db_archive'
+  // Exported field_instance: 'node-research_collection-field_rc_db_archive'.
   $field_instances['node-research_collection-field_rc_db_archive'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -12238,7 +12264,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-research_collection-field_rc_description'
+  // Exported field_instance: 'node-research_collection-field_rc_description'.
   $field_instances['node-research_collection-field_rc_description'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -12324,7 +12350,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   );
 
   // Exported field_instance:
-  // 'node-research_collection-field_teaching_resources'
+  // 'node-research_collection-field_teaching_resources'.
   $field_instances['node-research_collection-field_teaching_resources'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -12372,7 +12398,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-story-body'
+  // Exported field_instance: 'node-story-body'.
   $field_instances['node-story-body'] = array(
     'bundle' => 'story',
     'default_value' => NULL,
@@ -12447,7 +12473,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-story-field_files'
+  // Exported field_instance: 'node-story-field_files'.
   $field_instances['node-story-field_files'] = array(
     'bundle' => 'story',
     'default_value' => '',
@@ -12548,7 +12574,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'filefield_widget',
   );
 
-  // Exported field_instance: 'node-story-field_image'
+  // Exported field_instance: 'node-story-field_image'.
   $field_instances['node-story-field_image'] = array(
     'bundle' => 'story',
     'default_value' => '',
@@ -12704,7 +12730,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'imagefield_widget',
   );
 
-  // Exported field_instance: 'node-story-field_media_asset'
+  // Exported field_instance: 'node-story-field_media_asset'.
   $field_instances['node-story-field_media_asset'] = array(
     'bundle' => 'story',
     'deleted' => 0,
@@ -12790,7 +12816,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-story-field_multi_image'
+  // Exported field_instance: 'node-story-field_multi_image'.
   $field_instances['node-story-field_multi_image'] = array(
     'bundle' => 'story',
     'default_value' => '',
@@ -12916,7 +12942,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'imagefield_widget',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_abstract_lang'
+  // Exported field_instance: 'node-teaching_resource-field_abstract_lang'.
   $field_instances['node-teaching_resource-field_abstract_lang'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => array(
@@ -13044,7 +13070,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_abstract_lang_tax'
+  // Exported field_instance: 'node-teaching_resource-field_abstract_lang_tax'.
   $field_instances['node-teaching_resource-field_abstract_lang_tax'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -13087,7 +13113,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   );
 
   // Exported field_instance:
-  // 'node-teaching_resource-field_database_or_archive_refere'
+  // 'node-teaching_resource-field_database_or_archive_refere'.
   $field_instances['node-teaching_resource-field_database_or_archive_refere'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -13135,7 +13161,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_editorial_notes'
+  // Exported field_instance: 'node-teaching_resource-field_editorial_notes'.
   $field_instances['node-teaching_resource-field_editorial_notes'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -13182,7 +13208,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_files'
+  // Exported field_instance: 'node-teaching_resource-field_files'.
   $field_instances['node-teaching_resource-field_files'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => '',
@@ -13212,9 +13238,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'file',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'file_default',
         'weight' => 28,
       ),
       'default' => array(
@@ -13291,7 +13317,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'filefield_widget',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_image'
+  // Exported field_instance: 'node-teaching_resource-field_image'.
   $field_instances['node-teaching_resource-field_image'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => '',
@@ -13330,9 +13356,12 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
-        'settings' => array(),
-        'type' => NULL,
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
         'weight' => 27,
       ),
       'default' => array(
@@ -13444,7 +13473,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'imagefield_widget',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_language_tax'
+  // Exported field_instance: 'node-teaching_resource-field_language_tax'.
   $field_instances['node-teaching_resource-field_language_tax'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -13488,7 +13517,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_media_asset'
+  // Exported field_instance: 'node-teaching_resource-field_media_asset'.
   $field_instances['node-teaching_resource-field_media_asset'] = array(
     'bundle' => 'teaching_resource',
     'deleted' => 0,
@@ -13552,7 +13581,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_record_status_tax'
+  // Exported field_instance: 'node-teaching_resource-field_record_status_tax'.
   $field_instances['node-teaching_resource-field_record_status_tax'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => array(
@@ -13599,7 +13628,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_tr_author'
+  // Exported field_instance: 'node-teaching_resource-field_tr_author'.
   $field_instances['node-teaching_resource-field_tr_author'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => '',
@@ -13721,7 +13750,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'nodereference_autocomplete',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_tr_critical'
+  // Exported field_instance: 'node-teaching_resource-field_tr_critical'.
   $field_instances['node-teaching_resource-field_tr_critical'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => '',
@@ -13841,7 +13870,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'nodereference_autocomplete',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_tr_description'
+  // Exported field_instance: 'node-teaching_resource-field_tr_description'.
   $field_instances['node-teaching_resource-field_tr_description'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => array(
@@ -13967,7 +13996,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_tr_org'
+  // Exported field_instance: 'node-teaching_resource-field_tr_org'.
   $field_instances['node-teaching_resource-field_tr_org'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -14088,7 +14117,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'nodereference_autocomplete',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_tr_tr'
+  // Exported field_instance: 'node-teaching_resource-field_tr_tr'.
   $field_instances['node-teaching_resource-field_tr_tr'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -14136,7 +14165,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_tr_work'
+  // Exported field_instance: 'node-teaching_resource-field_tr_work'.
   $field_instances['node-teaching_resource-field_tr_work'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => '',
@@ -14256,7 +14285,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'nodereference_autocomplete',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_tr_year'
+  // Exported field_instance: 'node-teaching_resource-field_tr_year'.
   $field_instances['node-teaching_resource-field_tr_year'] = array(
     'bundle' => 'teaching_resource',
     'deleted' => 0,
@@ -14306,9 +14335,16 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
-        'settings' => array(),
-        'type' => NULL,
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
         'weight' => 21,
       ),
       'default' => array(
@@ -14462,7 +14498,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'date_select',
   );
 
-  // Exported field_instance: 'node-teaching_resource-field_url'
+  // Exported field_instance: 'node-teaching_resource-field_url'.
   $field_instances['node-teaching_resource-field_url'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -14485,9 +14521,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => 22,
       ),
       'default' => array(
@@ -14580,7 +14616,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-teaching_resource-taxonomy_vocabulary_1'
+  // Exported field_instance: 'node-teaching_resource-taxonomy_vocabulary_1'.
   $field_instances['node-teaching_resource-taxonomy_vocabulary_1'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -14626,7 +14662,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-teaching_resource-taxonomy_vocabulary_4'
+  // Exported field_instance: 'node-teaching_resource-taxonomy_vocabulary_4'.
   $field_instances['node-teaching_resource-taxonomy_vocabulary_4'] = array(
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
@@ -14672,7 +14708,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_abstract_lang'
+  // Exported field_instance: 'node-work-field_abstract_lang'.
   $field_instances['node-work-field_abstract_lang'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -14797,7 +14833,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-work-field_abstract_lang_tax'
+  // Exported field_instance: 'node-work-field_abstract_lang_tax'.
   $field_instances['node-work-field_abstract_lang_tax'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -14852,7 +14888,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_archiveurl'
+  // Exported field_instance: 'node-work-field_archiveurl'.
   $field_instances['node-work-field_archiveurl'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -14882,9 +14918,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => -1,
       ),
       'data_export' => array(
@@ -14992,7 +15028,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-work-field_author_name'
+  // Exported field_instance: 'node-work-field_author_name'.
   $field_instances['node-work-field_author_name'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15125,7 +15161,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_contributor'
+  // Exported field_instance: 'node-work-field_contributor'.
   $field_instances['node-work-field_contributor'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15192,7 +15228,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_contributors'
+  // Exported field_instance: 'node-work-field_contributors'.
   $field_instances['node-work-field_contributors'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15310,7 +15346,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-work-field_downloadurl'
+  // Exported field_instance: 'node-work-field_downloadurl'.
   $field_instances['node-work-field_downloadurl'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15340,9 +15376,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => 0,
       ),
       'data_export' => array(
@@ -15450,7 +15486,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-work-field_editorial_notes'
+  // Exported field_instance: 'node-work-field_editorial_notes'.
   $field_instances['node-work-field_editorial_notes'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15509,7 +15545,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_electronic_literature_dire'
+  // Exported field_instance: 'node-work-field_electronic_literature_dire'.
   $field_instances['node-work-field_electronic_literature_dire'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15583,7 +15619,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_files'
+  // Exported field_instance: 'node-work-field_files'.
   $field_instances['node-work-field_files'] = array(
     'bundle' => 'work',
     'default_value' => '',
@@ -15613,9 +15649,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'file',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'file_default',
         'weight' => 2,
       ),
       'data_export' => array(
@@ -15703,7 +15739,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'filefield_widget',
   );
 
-  // Exported field_instance: 'node-work-field_i_e_poetry_entry'
+  // Exported field_instance: 'node-work-field_i_e_poetry_entry'.
   $field_instances['node-work-field_i_e_poetry_entry'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15778,7 +15814,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_in_anthology'
+  // Exported field_instance: 'node-work-field_in_anthology'.
   $field_instances['node-work-field_in_anthology'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15926,7 +15962,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_isbn_text'
+  // Exported field_instance: 'node-work-field_isbn_text'.
   $field_instances['node-work-field_isbn_text'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -15985,7 +16021,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_language_tax'
+  // Exported field_instance: 'node-work-field_language_tax'.
   $field_instances['node-work-field_language_tax'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -16042,7 +16078,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_license'
+  // Exported field_instance: 'node-work-field_license'.
   $field_instances['node-work-field_license'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -16154,7 +16190,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'optionwidgets_select',
   );
 
-  // Exported field_instance: 'node-work-field_media_asset'
+  // Exported field_instance: 'node-work-field_media_asset'.
   $field_instances['node-work-field_media_asset'] = array(
     'bundle' => 'work',
     'deleted' => 0,
@@ -16230,7 +16266,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_multi_image'
+  // Exported field_instance: 'node-work-field_multi_image'.
   $field_instances['node-work-field_multi_image'] = array(
     'bundle' => 'work',
     'default_value' => '',
@@ -16259,9 +16295,12 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
-        'settings' => array(),
-        'type' => NULL,
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
         'weight' => 0,
       ),
       'data_export' => array(
@@ -16379,7 +16418,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'imagefield_widget',
   );
 
-  // Exported field_instance: 'node-work-field_node_ref'
+  // Exported field_instance: 'node-work-field_node_ref'.
   $field_instances['node-work-field_node_ref'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -16518,7 +16557,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_node_ref_event'
+  // Exported field_instance: 'node-work-field_node_ref_event'.
   $field_instances['node-work-field_node_ref_event'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -16658,7 +16697,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_nt2_entry'
+  // Exported field_instance: 'node-work-field_nt2_entry'.
   $field_instances['node-work-field_nt2_entry'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -16732,7 +16771,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_orig_lang'
+  // Exported field_instance: 'node-work-field_orig_lang'.
   $field_instances['node-work-field_orig_lang'] = array(
     'bundle' => 'work',
     'default_value' => array(
@@ -16860,7 +16899,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'optionwidgets_select',
   );
 
-  // Exported field_instance: 'node-work-field_other_edition_work'
+  // Exported field_instance: 'node-work-field_other_edition_work'.
   $field_instances['node-work-field_other_edition_work'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -16927,7 +16966,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_other_lang_ver_link'
+  // Exported field_instance: 'node-work-field_other_lang_ver_link'.
   $field_instances['node-work-field_other_lang_ver_link'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17075,7 +17114,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_part_of_another_work'
+  // Exported field_instance: 'node-work-field_part_of_another_work'.
   $field_instances['node-work-field_part_of_another_work'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17142,7 +17181,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_pullquote'
+  // Exported field_instance: 'node-work-field_pullquote'.
   $field_instances['node-work-field_pullquote'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17267,7 +17306,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-work-field_record_status_tax'
+  // Exported field_instance: 'node-work-field_record_status_tax'.
   $field_instances['node-work-field_record_status_tax'] = array(
     'bundle' => 'work',
     'default_value' => array(
@@ -17327,7 +17366,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_tech_notes'
+  // Exported field_instance: 'node-work-field_tech_notes'.
   $field_instances['node-work-field_tech_notes'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17438,7 +17477,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-work-field_textfield'
+  // Exported field_instance: 'node-work-field_textfield'.
   $field_instances['node-work-field_textfield'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17549,7 +17588,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'text_textarea',
   );
 
-  // Exported field_instance: 'node-work-field_translator'
+  // Exported field_instance: 'node-work-field_translator'.
   $field_instances['node-work-field_translator'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17616,7 +17655,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_url'
+  // Exported field_instance: 'node-work-field_url'.
   $field_instances['node-work-field_url'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17639,9 +17678,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => NULL,
+        'module' => 'link',
         'settings' => array(),
-        'type' => NULL,
+        'type' => 'link_default',
         'weight' => -2,
       ),
       'data_export' => array(
@@ -17743,7 +17782,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'widget_type' => 'link',
   );
 
-  // Exported field_instance: 'node-work-field_venue_tax'
+  // Exported field_instance: 'node-work-field_venue_tax'.
   $field_instances['node-work-field_venue_tax'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17801,7 +17840,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_work_year'
+  // Exported field_instance: 'node-work-field_work_year'.
   $field_instances['node-work-field_work_year'] = array(
     'bundle' => 'work',
     'deleted' => 0,
@@ -17884,7 +17923,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-field_worldcat_link'
+  // Exported field_instance: 'node-work-field_worldcat_link'.
   $field_instances['node-work-field_worldcat_link'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -17959,7 +17998,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-work-taxonomy_vocabulary_1'
+  // Exported field_instance: 'node-work-taxonomy_vocabulary_1'.
   $field_instances['node-work-taxonomy_vocabulary_1'] = array(
     'bundle' => 'work',
     'default_value' => NULL,

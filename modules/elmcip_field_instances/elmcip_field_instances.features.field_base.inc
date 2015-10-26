@@ -10,7 +10,7 @@
 function elmcip_field_instances_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
+  // Exported field_base: 'body'.
   $field_bases['body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -34,7 +34,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'comment_body'
+  // Exported field_base: 'comment_body'.
   $field_bases['comment_body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -55,7 +55,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_abstract'
+  // Exported field_base: 'field_abstract'.
   $field_bases['field_abstract'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -81,7 +81,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_abstract_lang'
+  // Exported field_base: 'field_abstract_lang'.
   $field_bases['field_abstract_lang'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -110,7 +110,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_abstract_lang_tax'
+  // Exported field_base: 'field_abstract_lang_tax'.
   $field_bases['field_abstract_lang_tax'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -137,7 +137,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_affiliation'
+  // Exported field_base: 'field_affiliation'.
   $field_bases['field_affiliation'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -179,7 +179,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_alternative_spelling_of_na'
+  // Exported field_base: 'field_alternative_spelling_of_na'.
   $field_bases['field_alternative_spelling_of_na'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -203,7 +203,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_archiveurl'
+  // Exported field_base: 'field_archiveurl'.
   $field_bases['field_archiveurl'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -239,7 +239,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_associated_event'
+  // Exported field_base: 'field_associated_event'.
   $field_bases['field_associated_event'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -270,7 +270,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_auth_email'
+  // Exported field_base: 'field_auth_email'.
   $field_bases['field_auth_email'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -291,7 +291,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'person',
   );
 
-  // Exported field_base: 'field_author_name'
+  // Exported field_base: 'field_author_name'.
   $field_bases['field_author_name'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -322,7 +322,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_author_noted'
+  // Exported field_base: 'field_author_noted'.
   $field_bases['field_author_noted'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -366,7 +366,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_authorphoto'
+  // Exported field_base: 'field_authorphoto'.
   $field_bases['field_authorphoto'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -391,7 +391,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_collection_contributors'
+  // Exported field_base: 'field_collection_contributors'.
   $field_bases['field_collection_contributors'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -437,7 +437,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_collection_curated_by'
+  // Exported field_base: 'field_collection_curated_by'.
   $field_bases['field_collection_curated_by'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -483,7 +483,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_contact_email'
+  // Exported field_base: 'field_contact_email'.
   $field_bases['field_contact_email'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -501,7 +501,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'email',
   );
 
-  // Exported field_base: 'field_contributor'
+  // Exported field_base: 'field_contributor'.
   $field_bases['field_contributor'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -532,7 +532,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_contributors'
+  // Exported field_base: 'field_contributors'.
   $field_bases['field_contributors'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -561,7 +561,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_creative_works'
+  // Exported field_base: 'field_creative_works'.
   $field_bases['field_creative_works'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -607,7 +607,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_critical_writing'
+  // Exported field_base: 'field_critical_writing'.
   $field_bases['field_critical_writing'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -653,7 +653,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_curator'
+  // Exported field_base: 'field_curator'.
   $field_bases['field_curator'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -684,7 +684,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_cw_noted'
+  // Exported field_base: 'field_cw_noted'.
   $field_bases['field_cw_noted'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -728,7 +728,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_database_or_archive_refere'
+  // Exported field_base: 'field_database_or_archive_refere'.
   $field_bases['field_database_or_archive_refere'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -774,7 +774,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_date'
+  // Exported field_base: 'field_date'.
   $field_bases['field_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -808,7 +808,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'event',
   );
 
-  // Exported field_base: 'field_db_cross_cw'
+  // Exported field_base: 'field_db_cross_cw'.
   $field_bases['field_db_cross_cw'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -853,7 +853,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_db_cross_event'
+  // Exported field_base: 'field_db_cross_event'.
   $field_bases['field_db_cross_event'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -898,7 +898,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_db_description_english'
+  // Exported field_base: 'field_db_description_english'.
   $field_bases['field_db_description_english'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -920,7 +920,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_db_description_original'
+  // Exported field_base: 'field_db_description_original'.
   $field_bases['field_db_description_original'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -942,7 +942,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_db_language'
+  // Exported field_base: 'field_db_language'.
   $field_bases['field_db_language'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -971,7 +971,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_db_org'
+  // Exported field_base: 'field_db_org'.
   $field_bases['field_db_org'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1016,7 +1016,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_db_people'
+  // Exported field_base: 'field_db_people'.
   $field_bases['field_db_people'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1061,7 +1061,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_db_tags'
+  // Exported field_base: 'field_db_tags'.
   $field_bases['field_db_tags'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1090,7 +1090,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_db_technotes'
+  // Exported field_base: 'field_db_technotes'.
   $field_bases['field_db_technotes'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1112,7 +1112,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_description'
+  // Exported field_base: 'field_description'.
   $field_bases['field_description'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1136,7 +1136,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_downloadurl'
+  // Exported field_base: 'field_downloadurl'.
   $field_bases['field_downloadurl'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1172,7 +1172,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_edition'
+  // Exported field_base: 'field_edition'.
   $field_bases['field_edition'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1197,7 +1197,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_editor_name'
+  // Exported field_base: 'field_editor_name'.
   $field_bases['field_editor_name'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1228,7 +1228,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_editorial_notes'
+  // Exported field_base: 'field_editorial_notes'.
   $field_bases['field_editorial_notes'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1253,7 +1253,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_eissn'
+  // Exported field_base: 'field_eissn'.
   $field_bases['field_eissn'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1282,7 +1282,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'publisher',
   );
 
-  // Exported field_base: 'field_electronic_literature_dire'
+  // Exported field_base: 'field_electronic_literature_dire'.
   $field_bases['field_electronic_literature_dire'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1314,7 +1314,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_email'
+  // Exported field_base: 'field_email'.
   $field_bases['field_email'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1335,7 +1335,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'publisher',
   );
 
-  // Exported field_base: 'field_event_noted'
+  // Exported field_base: 'field_event_noted'.
   $field_bases['field_event_noted'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1378,7 +1378,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_event_series'
+  // Exported field_base: 'field_event_series'.
   $field_bases['field_event_series'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1409,7 +1409,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_events'
+  // Exported field_base: 'field_events'.
   $field_bases['field_events'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1440,7 +1440,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_files'
+  // Exported field_base: 'field_files'.
   $field_bases['field_files'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1471,7 +1471,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_first_name'
+  // Exported field_base: 'field_first_name'.
   $field_bases['field_first_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1499,7 +1499,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'person',
   );
 
-  // Exported field_base: 'field_gender_sel'
+  // Exported field_base: 'field_gender_sel'.
   $field_bases['field_gender_sel'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1528,7 +1528,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_i_e_poetry_entry'
+  // Exported field_base: 'field_i_e_poetry_entry'.
   $field_bases['field_i_e_poetry_entry'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1560,7 +1560,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_image'
+  // Exported field_base: 'field_image'.
   $field_bases['field_image'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1589,7 +1589,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'teaching_resource',
   );
 
-  // Exported field_base: 'field_in_anthology'
+  // Exported field_base: 'field_in_anthology'.
   $field_bases['field_in_anthology'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1620,7 +1620,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_inbook'
+  // Exported field_base: 'field_inbook'.
   $field_bases['field_inbook'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1668,7 +1668,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_individual_organizers'
+  // Exported field_base: 'field_individual_organizers'.
   $field_bases['field_individual_organizers'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1699,7 +1699,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_isbn_text'
+  // Exported field_base: 'field_isbn_text'.
   $field_bases['field_isbn_text'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1728,7 +1728,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_issn_text'
+  // Exported field_base: 'field_issn_text'.
   $field_bases['field_issn_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1754,7 +1754,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'publisher',
   );
 
-  // Exported field_base: 'field_journalissue'
+  // Exported field_base: 'field_journalissue'.
   $field_bases['field_journalissue'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1783,7 +1783,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_language_tax'
+  // Exported field_base: 'field_language_tax'.
   $field_bases['field_language_tax'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1813,7 +1813,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_last_name'
+  // Exported field_base: 'field_last_name'.
   $field_bases['field_last_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1841,7 +1841,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'person',
   );
 
-  // Exported field_base: 'field_license'
+  // Exported field_base: 'field_license'.
   $field_bases['field_license'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1881,7 +1881,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_location'
+  // Exported field_base: 'field_location'.
   $field_bases['field_location'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1970,7 +1970,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'publisher',
   );
 
-  // Exported field_base: 'field_media'
+  // Exported field_base: 'field_media'.
   $field_bases['field_media'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -1995,7 +1995,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_media_asset'
+  // Exported field_base: 'field_media_asset'.
   $field_bases['field_media_asset'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2019,7 +2019,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'media',
   );
 
-  // Exported field_base: 'field_middle_name'
+  // Exported field_base: 'field_middle_name'.
   $field_bases['field_middle_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2047,7 +2047,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'person',
   );
 
-  // Exported field_base: 'field_multi_image'
+  // Exported field_base: 'field_multi_image'.
   $field_bases['field_multi_image'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2076,7 +2076,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_multi_images'
+  // Exported field_base: 'field_multi_images'.
   $field_bases['field_multi_images'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2105,7 +2105,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_nationality'
+  // Exported field_base: 'field_nationality'.
   $field_bases['field_nationality'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2194,7 +2194,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'person',
   );
 
-  // Exported field_base: 'field_node_ref'
+  // Exported field_base: 'field_node_ref'.
   $field_bases['field_node_ref'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2237,7 +2237,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_node_ref_event'
+  // Exported field_base: 'field_node_ref_event'.
   $field_bases['field_node_ref_event'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2279,7 +2279,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_node_ref_work'
+  // Exported field_base: 'field_node_ref_work'.
   $field_bases['field_node_ref_work'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2318,7 +2318,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_notebok'
+  // Exported field_base: 'field_notebok'.
   $field_bases['field_notebok'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2362,7 +2362,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_nt2_entry'
+  // Exported field_base: 'field_nt2_entry'.
   $field_bases['field_nt2_entry'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2394,7 +2394,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_number'
+  // Exported field_base: 'field_number'.
   $field_bases['field_number'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2421,7 +2421,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_organization_cw'
+  // Exported field_base: 'field_organization_cw'.
   $field_bases['field_organization_cw'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2467,7 +2467,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_organizations'
+  // Exported field_base: 'field_organizations'.
   $field_bases['field_organizations'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2513,7 +2513,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_orig_lang'
+  // Exported field_base: 'field_orig_lang'.
   $field_bases['field_orig_lang'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2595,7 +2595,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_other_edition_link'
+  // Exported field_base: 'field_other_edition_link'.
   $field_bases['field_other_edition_link'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2640,7 +2640,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_other_edition_work'
+  // Exported field_base: 'field_other_edition_work'.
   $field_bases['field_other_edition_work'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2671,7 +2671,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_other_lang_ver_link'
+  // Exported field_base: 'field_other_lang_ver_link'.
   $field_bases['field_other_lang_ver_link'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2703,7 +2703,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_pagenumbers'
+  // Exported field_base: 'field_pagenumbers'.
   $field_bases['field_pagenumbers'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2729,7 +2729,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_part_of_another_work'
+  // Exported field_base: 'field_part_of_another_work'.
   $field_bases['field_part_of_another_work'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2760,7 +2760,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_people'
+  // Exported field_base: 'field_people'.
   $field_bases['field_people'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2806,7 +2806,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_platform_developers'
+  // Exported field_base: 'field_platform_developers'.
   $field_bases['field_platform_developers'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2844,7 +2844,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_platform_year'
+  // Exported field_base: 'field_platform_year'.
   $field_bases['field_platform_year'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2877,7 +2877,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'date',
   );
 
-  // Exported field_base: 'field_project_type'
+  // Exported field_base: 'field_project_type'.
   $field_bases['field_project_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2906,7 +2906,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_ps_attachment'
+  // Exported field_base: 'field_ps_attachment'.
   $field_bases['field_ps_attachment'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2932,7 +2932,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_ps_description'
+  // Exported field_base: 'field_ps_description'.
   $field_bases['field_ps_description'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -2954,7 +2954,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_ps_image'
+  // Exported field_base: 'field_ps_image'.
   $field_bases['field_ps_image'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -2979,7 +2979,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_publisher_or_organization'
+  // Exported field_base: 'field_publisher_or_organization'.
   $field_bases['field_publisher_or_organization'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3018,7 +3018,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_publisher_referenced'
+  // Exported field_base: 'field_publisher_referenced'.
   $field_bases['field_publisher_referenced'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3064,7 +3064,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_publishers'
+  // Exported field_base: 'field_publishers'.
   $field_bases['field_publishers'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3110,7 +3110,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_pubtype_tax'
+  // Exported field_base: 'field_pubtype_tax'.
   $field_bases['field_pubtype_tax'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3140,7 +3140,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_pullquote'
+  // Exported field_base: 'field_pullquote'.
   $field_bases['field_pullquote'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3169,7 +3169,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_rc_db_archive'
+  // Exported field_base: 'field_rc_db_archive'.
   $field_bases['field_rc_db_archive'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3215,7 +3215,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_rc_description'
+  // Exported field_base: 'field_rc_description'.
   $field_bases['field_rc_description'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3237,7 +3237,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_record_status_tax'
+  // Exported field_base: 'field_record_status_tax'.
   $field_bases['field_record_status_tax'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3267,7 +3267,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_ref_about_event'
+  // Exported field_base: 'field_ref_about_event'.
   $field_bases['field_ref_about_event'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3308,7 +3308,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'critical_writing',
   );
 
-  // Exported field_base: 'field_residency'
+  // Exported field_base: 'field_residency'.
   $field_bases['field_residency'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3395,7 +3395,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'person',
   );
 
-  // Exported field_base: 'field_series_ref'
+  // Exported field_base: 'field_series_ref'.
   $field_bases['field_series_ref'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3439,7 +3439,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_students'
+  // Exported field_base: 'field_students'.
   $field_bases['field_students'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3479,7 +3479,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_teacher_link'
+  // Exported field_base: 'field_teacher_link'.
   $field_bases['field_teacher_link'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3519,7 +3519,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_teaching_resources'
+  // Exported field_base: 'field_teaching_resources'.
   $field_bases['field_teaching_resources'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3565,7 +3565,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_tech_notes'
+  // Exported field_base: 'field_tech_notes'.
   $field_bases['field_tech_notes'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3594,7 +3594,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_textfield'
+  // Exported field_base: 'field_textfield'.
   $field_bases['field_textfield'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3623,7 +3623,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_tr_author'
+  // Exported field_base: 'field_tr_author'.
   $field_bases['field_tr_author'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3663,7 +3663,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'teaching_resource',
   );
 
-  // Exported field_base: 'field_tr_critical'
+  // Exported field_base: 'field_tr_critical'.
   $field_bases['field_tr_critical'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3703,7 +3703,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'teaching_resource',
   );
 
-  // Exported field_base: 'field_tr_description'
+  // Exported field_base: 'field_tr_description'.
   $field_bases['field_tr_description'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3728,7 +3728,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'teaching_resource',
   );
 
-  // Exported field_base: 'field_tr_link'
+  // Exported field_base: 'field_tr_link'.
   $field_bases['field_tr_link'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3759,7 +3759,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_tr_org'
+  // Exported field_base: 'field_tr_org'.
   $field_bases['field_tr_org'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3805,7 +3805,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'teaching_resource',
   );
 
-  // Exported field_base: 'field_tr_tr'
+  // Exported field_base: 'field_tr_tr'.
   $field_bases['field_tr_tr'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3849,7 +3849,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_tr_work'
+  // Exported field_base: 'field_tr_work'.
   $field_bases['field_tr_work'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3889,7 +3889,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'teaching_resource',
   );
 
-  // Exported field_base: 'field_tr_year'
+  // Exported field_base: 'field_tr_year'.
   $field_bases['field_tr_year'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -3915,7 +3915,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'teaching_resource',
   );
 
-  // Exported field_base: 'field_translator'
+  // Exported field_base: 'field_translator'.
   $field_bases['field_translator'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3946,7 +3946,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_university'
+  // Exported field_base: 'field_university'.
   $field_bases['field_university'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -3992,7 +3992,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_url'
+  // Exported field_base: 'field_url'.
   $field_bases['field_url'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -4028,7 +4028,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'work',
   );
 
-  // Exported field_base: 'field_userid_reference'
+  // Exported field_base: 'field_userid_reference'.
   $field_bases['field_userid_reference'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -4067,7 +4067,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'user_reference',
   );
 
-  // Exported field_base: 'field_venue_tax'
+  // Exported field_base: 'field_venue_tax'.
   $field_bases['field_venue_tax'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -4097,7 +4097,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_work_noted'
+  // Exported field_base: 'field_work_noted'.
   $field_bases['field_work_noted'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -4141,7 +4141,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_work_year'
+  // Exported field_base: 'field_work_year'.
   $field_bases['field_work_year'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -4178,7 +4178,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'date',
   );
 
-  // Exported field_base: 'field_worldcat_link'
+  // Exported field_base: 'field_worldcat_link'.
   $field_bases['field_worldcat_link'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -4211,7 +4211,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_year_initiated'
+  // Exported field_base: 'field_year_initiated'.
   $field_bases['field_year_initiated'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -4244,7 +4244,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_yearborn'
+  // Exported field_base: 'field_yearborn'.
   $field_bases['field_yearborn'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -4280,7 +4280,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'person',
   );
 
-  // Exported field_base: 'field_yeardied'
+  // Exported field_base: 'field_yeardied'.
   $field_bases['field_yeardied'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -4316,7 +4316,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type_name' => 'person',
   );
 
-  // Exported field_base: 'field_your_notes'
+  // Exported field_base: 'field_your_notes'.
   $field_bases['field_your_notes'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -4340,7 +4340,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'taxonomy_vocabulary_1'
+  // Exported field_base: 'taxonomy_vocabulary_1'.
   $field_bases['taxonomy_vocabulary_1'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -4371,7 +4371,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'taxonomy_vocabulary_2'
+  // Exported field_base: 'taxonomy_vocabulary_2'.
   $field_bases['taxonomy_vocabulary_2'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -4398,7 +4398,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'taxonomy_vocabulary_4'
+  // Exported field_base: 'taxonomy_vocabulary_4'.
   $field_bases['taxonomy_vocabulary_4'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -4428,7 +4428,7 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'taxonomyextra'
+  // Exported field_base: 'taxonomyextra'.
   $field_bases['taxonomyextra'] = array(
     'active' => 1,
     'cardinality' => -1,
