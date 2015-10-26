@@ -68,6 +68,5 @@ function elmcip_setup_menu_default_menu_custom() {
   t('The navigation menu is provided by Drupal and is the main interactive menu for any site. It is usually the only menu that contains personalized links for authenticated users, and is often not even visible to anonymous users.');
   t('User Menu');
 
-
   return $menus;
 }
