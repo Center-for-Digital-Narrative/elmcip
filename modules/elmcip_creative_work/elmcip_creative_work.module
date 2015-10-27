@@ -5,3 +5,90 @@
  */
 
 include_once 'elmcip_creative_work.features.inc';
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function elmcip_creative_work_field_formatter_info() {
+  return array(
+    'elmcip_creative_work_oai_pmh' => array(
+      'label' => t('OAI-PMH'),
+      'field types' => array('taxonomy_term_reference'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function elmcip_creative_work_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  $names = array();
+  $languages = array(
+    'Arabic' => 'ar',
+    'Basque' => 'eu',
+    'Bengali' => 'bn',
+    'Bulgarian' => 'bg',
+    'Burmese' => 'my',
+    'Cantonese' => 'zh', //yyef.
+    'Catalan' => 'ca',
+    'Czech' => 'cs',
+    'Danish' => 'da',
+    'Dutch' => 'nl',
+    'English' => 'en',
+    'Estonian' => 'et',
+    'Farsi' => 'fa',
+    'Finnish' => 'fi',
+    'French' => 'fr',
+    'Galician' => 'gl',
+    'German' => 'de',
+    'Greek' => 'el',
+    'Gujarati' => 'gu',
+    'Hebrew' => 'he',
+    'Hungarian' => 'hu',
+    'Icelandic' => 'is',
+    'Irish' => 'ga',
+    'Italian' => 'it',
+    'Japanese' => 'ja',
+    'Javanese' => 'jv',
+    'Kannada' => 'kn',
+    'Korean' => 'ko',
+    'Latvian' => 'lv',
+    'Lithuanian' => 'lt',
+    'Malay' => 'ms',
+    'Maltese' => 'mt',
+    'Mandarin' => 'zh', //cmn.
+    'Marathi' => 'mr',
+    'Norwegian (Bokmål)' => 'nb',
+    'Norwegian (Nynorsk)' => 'nn',
+    'Polish' => 'pl',
+    'Portuguese' => 'pt',
+    'Punjabi' => 'pa',
+    'Romanian' => 'ro',
+    'Russian' => 'ru',
+    'Slovak' => 'sk',
+    'Slovene' => 'sl',
+    'Spanish' => 'es',
+    'Swedish' => 'sv',
+    'Tamil' => 'ta',
+    'Telugu' => 'te',
+    'Thai' => 'th',
+    'Turkish' => 'tr',
+    'Urdu' => 'ur',
+    'Vietnamese' => 'vi',
+    'Wu' => 'zh', //wuu.
+    'Yiddish' => 'yi',
+    'Other (indicate in description)' => '',
+  );
+  foreach ($items as $item) {
+    if ($item['tid']) {
+      $term = taxonomy_term_load($item['tid']);
+      $names[] = $term->name;
+      $element[] = array(
+        '#markup' => $languages[$term->name],
+      );
+    }
+  }
+
+  return $element;
+}
