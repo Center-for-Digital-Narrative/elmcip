@@ -143,11 +143,15 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['field_author_name_2']['label'] = 'art';
   $handler->display->display_options['fields']['field_author_name_2']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_author_name_2']['alter']['text'] = 'art';
+  $handler->display->display_options['fields']['field_author_name_2']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_author_name_2']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_author_name_2']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_author_name_2']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name_2']['settings'] = array(
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_author_name_2']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_author_name_2']['separator'] = '|';
   /* Field: Content: Contributor */
   $handler->display->display_options['fields']['field_contributor']['id'] = 'field_contributor';
   $handler->display->display_options['fields']['field_contributor']['table'] = 'field_data_field_contributor';
@@ -188,11 +192,15 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['field_contributor_2']['label'] = 'ctb';
   $handler->display->display_options['fields']['field_contributor_2']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_contributor_2']['alter']['text'] = 'ctb';
+  $handler->display->display_options['fields']['field_contributor_2']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_contributor_2']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_contributor_2']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_contributor_2']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_contributor_2']['settings'] = array(
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_contributor_2']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_contributor_2']['separator'] = '|';
   /* Field: Content: Translator */
   $handler->display->display_options['fields']['field_translator']['id'] = 'field_translator';
   $handler->display->display_options['fields']['field_translator']['table'] = 'field_data_field_translator';
@@ -233,6 +241,8 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['field_translator_2']['label'] = 'trl';
   $handler->display->display_options['fields']['field_translator_2']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_translator_2']['alter']['text'] = 'trl';
+  $handler->display->display_options['fields']['field_translator_2']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_translator_2']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_translator_2']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_translator_2']['settings'] = array(
     'link' => 0,
@@ -248,13 +258,15 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
   $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
   $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
-  $handler->display->display_options['fields']['field_work_year']['type'] = 'date_plain';
+  $handler->display->display_options['fields']['field_work_year']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_work_year']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_work_year']['settings'] = array(
     'format_type' => 'year',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
+    'show_repeat_rule' => 'show',
   );
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_11']['id'] = 'nothing_11';
@@ -266,11 +278,12 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['field_language_tax']['id'] = 'field_language_tax';
   $handler->display->display_options['fields']['field_language_tax']['table'] = 'field_data_field_language_tax';
   $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
-  $handler->display->display_options['fields']['field_language_tax']['label'] = '';
   $handler->display->display_options['fields']['field_language_tax']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['field_language_tax']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_language_tax']['type'] = 'ds_taxonomy_view_mode';
+  $handler->display->display_options['fields']['field_language_tax']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_language_tax']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_language_tax']['type'] = 'elmcip_creative_work_oai_pmh';
   $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_language_tax']['separator'] = '|';
   /* Field: Content: Publisher */
   $handler->display->display_options['fields']['field_node_ref']['id'] = 'field_node_ref';
   $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
@@ -311,19 +324,6 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = 'Author(s) of the source entry';
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Field: Content: Archive URL */
-  $handler->display->display_options['fields']['field_archiveurl']['id'] = 'field_archiveurl';
-  $handler->display->display_options['fields']['field_archiveurl']['table'] = 'field_data_field_archiveurl';
-  $handler->display->display_options['fields']['field_archiveurl']['field'] = 'field_archiveurl';
-  $handler->display->display_options['fields']['field_archiveurl']['label'] = 'Work URL';
-  $handler->display->display_options['fields']['field_archiveurl']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_archiveurl']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['field_archiveurl']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_archiveurl']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_archiveurl']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_archiveurl']['click_sort_column'] = 'url';
-  $handler->display->display_options['fields']['field_archiveurl']['type'] = 'link_plain';
-  $handler->display->display_options['fields']['field_archiveurl']['delta_offset'] = '0';
   /* Field: Content: Short description */
   $handler->display->display_options['fields']['field_textfield']['id'] = 'field_textfield';
   $handler->display->display_options['fields']['field_textfield']['table'] = 'field_data_field_textfield';
@@ -367,14 +367,27 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['nothing_12']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_12']['label'] = 'rfc3066';
   $handler->display->display_options['fields']['nothing_12']['alter']['text'] = 'rfc3066';
-  /* Field: Content: Language of abstract (Taxonomy) */
-  $handler->display->display_options['fields']['field_abstract_lang_tax']['id'] = 'field_abstract_lang_tax';
-  $handler->display->display_options['fields']['field_abstract_lang_tax']['table'] = 'field_data_field_abstract_lang_tax';
-  $handler->display->display_options['fields']['field_abstract_lang_tax']['field'] = 'field_abstract_lang_tax';
-  $handler->display->display_options['fields']['field_abstract_lang_tax']['label'] = '';
-  $handler->display->display_options['fields']['field_abstract_lang_tax']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['field_abstract_lang_tax']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_abstract_lang_tax']['type'] = 'ds_taxonomy_view_mode';
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['language']['id'] = 'language';
+  $handler->display->display_options['fields']['language']['table'] = 'node';
+  $handler->display->display_options['fields']['language']['field'] = 'language';
+  $handler->display->display_options['fields']['language']['label'] = 'Source Entry Language';
+  $handler->display->display_options['fields']['language']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['language']['alter']['text'] = 'en';
+  $handler->display->display_options['fields']['language']['alter']['max_length'] = '2';
+  $handler->display->display_options['fields']['language']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['language']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['language']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['language']['element_default_classes'] = FALSE;
+  /* Field: Content: URL */
+  $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
+  $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['label'] = 'work URL';
+  $handler->display->display_options['fields']['field_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_url']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_url']['type'] = 'link_plain';
+  $handler->display->display_options['fields']['field_url']['delta_offset'] = '0';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -416,31 +429,32 @@ function elmcip_creative_work_views_default_views() {
       'nothing_5' => 'none',
       'field_author_name_2' => 'none',
       'field_contributor' => 'none',
-      'field_contributor_1' => 'none',
+      'field_contributor_1' => 'dc:creator',
       'nothing_7' => 'none',
       'nothing_8' => 'none',
       'field_contributor_2' => 'none',
       'field_translator' => 'none',
-      'field_translator_1' => 'none',
+      'field_translator_1' => 'dc:creator',
       'nothing_9' => 'none',
       'nothing_10' => 'none',
       'field_translator_2' => 'none',
       'nothing_6' => 'none',
       'field_work_year' => 'dc:date',
       'nothing_11' => 'none',
+      'field_langcode' => 'none',
       'field_language_tax' => 'dc:language',
       'field_node_ref' => 'none',
       'field_node_ref_1' => 'none',
       'field_node_ref_2' => 'none',
       'name' => 'none',
-      'field_archiveurl' => 'dc:relation',
       'field_textfield' => 'dc:description',
       'nothing_13' => 'none',
       'created' => 'none',
       'nothing_14' => 'none',
       'changed' => 'none',
       'nothing_12' => 'none',
-      'field_abstract_lang_tax' => 'none',
+      'language' => 'none',
+      'field_url' => 'dc:relation',
     ),
     'oai_etdms' => array(
       'nothing' => 'none',
@@ -468,19 +482,20 @@ function elmcip_creative_work_views_default_views() {
       'nothing_6' => 'none',
       'field_work_year' => 'none',
       'nothing_11' => 'none',
+      'field_langcode' => 'none',
       'field_language_tax' => 'none',
       'field_node_ref' => 'none',
       'field_node_ref_1' => 'none',
       'field_node_ref_2' => 'none',
       'name' => 'none',
-      'field_archiveurl' => 'none',
       'field_textfield' => 'none',
       'nothing_13' => 'none',
       'created' => 'none',
       'nothing_14' => 'none',
       'changed' => 'none',
       'nothing_12' => 'none',
-      'field_abstract_lang_tax' => 'none',
+      'language' => 'none',
+      'field_url' => 'none',
     ),
     'oai_ilox' => array(
       'nothing' => 'none',
@@ -508,19 +523,20 @@ function elmcip_creative_work_views_default_views() {
       'nothing_6' => 'none',
       'field_work_year' => 'none',
       'nothing_11' => 'none',
+      'field_langcode' => 'none',
       'field_language_tax' => 'none',
       'field_node_ref' => 'none',
       'field_node_ref_1' => 'none',
       'field_node_ref_2' => 'none',
       'name' => 'none',
-      'field_archiveurl' => 'none',
       'field_textfield' => 'none',
       'nothing_13' => 'none',
       'created' => 'none',
       'nothing_14' => 'none',
       'changed' => 'none',
       'nothing_12' => 'none',
-      'field_abstract_lang_tax' => 'none',
+      'language' => 'none',
+      'field_url' => 'none',
     ),
     'oai_lom' => array(
       'nothing' => 'none',
@@ -548,19 +564,20 @@ function elmcip_creative_work_views_default_views() {
       'nothing_6' => 'none',
       'field_work_year' => 'none',
       'nothing_11' => 'none',
+      'field_langcode' => 'none',
       'field_language_tax' => 'none',
       'field_node_ref' => 'none',
       'field_node_ref_1' => 'none',
       'field_node_ref_2' => 'none',
       'name' => 'none',
-      'field_archiveurl' => 'none',
       'field_textfield' => 'none',
       'nothing_13' => 'none',
       'created' => 'none',
       'nothing_14' => 'none',
       'changed' => 'none',
       'nothing_12' => 'none',
-      'field_abstract_lang_tax' => 'none',
+      'language' => 'none',
+      'field_url' => 'none',
     ),
     'oai_lre' => array(
       'nothing' => 'none',
@@ -588,19 +605,20 @@ function elmcip_creative_work_views_default_views() {
       'nothing_6' => 'none',
       'field_work_year' => 'none',
       'nothing_11' => 'none',
+      'field_langcode' => 'none',
       'field_language_tax' => 'none',
       'field_node_ref' => 'none',
       'field_node_ref_1' => 'none',
       'field_node_ref_2' => 'none',
       'name' => 'none',
-      'field_archiveurl' => 'none',
       'field_textfield' => 'none',
       'nothing_13' => 'none',
       'created' => 'none',
       'nothing_14' => 'none',
       'changed' => 'none',
       'nothing_12' => 'none',
-      'field_abstract_lang_tax' => 'none',
+      'language' => 'none',
+      'field_url' => 'none',
     ),
     'mods' => array(
       'nothing' => '@type',
@@ -615,32 +633,33 @@ function elmcip_creative_work_views_default_views() {
       'nothing_4' => '@authority',
       'nothing_5' => '@type',
       'field_author_name_2' => 'name[]/role/roleTerm',
-      'field_contributor' => 'none',
-      'field_contributor_1' => 'none',
-      'nothing_7' => 'none',
-      'nothing_8' => 'none',
-      'field_contributor_2' => 'none',
-      'field_translator' => 'none',
-      'field_translator_1' => 'none',
-      'nothing_9' => 'none',
-      'nothing_10' => 'none',
-      'field_translator_2' => 'none',
+      'field_contributor' => '@xlink:href',
+      'field_contributor_1' => 'name[]/namePart',
+      'nothing_7' => '@authority',
+      'nothing_8' => '@type',
+      'field_contributor_2' => 'name[]/role/roleTerm',
+      'field_translator' => '@xlink:href',
+      'field_translator_1' => 'name[]/namePart',
+      'nothing_9' => '@authority',
+      'nothing_10' => '@type',
+      'field_translator_2' => 'name[]/role/roleTerm',
       'nothing_6' => '@encoding',
       'field_work_year' => 'originInfo/dateIssued',
       'nothing_11' => '@authority',
+      'field_langcode' => 'none',
       'field_language_tax' => 'language[]/languageTerm',
       'field_node_ref' => 'originInfo/publisher',
       'field_node_ref_1' => '@xlink:href',
-      'field_node_ref_2' => 'none',
-      'name' => 'none',
-      'field_archiveurl' => 'location/url',
+      'field_node_ref_2' => 'extension/cell:originInfo/cell:publisher',
+      'name' => 'extension/cell:recordInfo/name[]/namePart',
       'field_textfield' => 'abstract',
       'nothing_13' => '@encoding',
       'created' => 'recordInfo/recordCreationDate',
       'nothing_14' => '@encoding',
       'changed' => 'recordInfo/recordChangeDate',
       'nothing_12' => '@authority',
-      'field_abstract_lang_tax' => 'recordInfo/languageOfCataloging/languageTerm',
+      'language' => 'recordInfo/languageOfCataloging/languageTerm',
+      'field_url' => 'location/url',
     ),
   );
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
@@ -681,14 +700,17 @@ function elmcip_creative_work_views_default_views() {
     t('w3cdtf'),
     t('Year'),
     t('rfc3066'),
+    t('Language'),
     t('Publisher(s)'),
     t('Publisher(s) URI'),
     t('http://beta.elmcip.net/node/[field_node_ref_1-target_id] '),
     t('Author(s) of the source entry'),
-    t('Work URL'),
     t('iso8601'),
     t('Source entry creation date'),
     t('Source entry change date'),
+    t('Source Entry Language'),
+    t('en'),
+    t('work URL'),
     t('OAI-PMH'),
   );
   $export['creative_work_oai_pmh'] = $view;
