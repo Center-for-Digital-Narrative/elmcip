@@ -420,8 +420,8 @@ function elmcip_setup_update_7028() {
 }
 
 /**
- * Enable module - views base url, needed by OAI-PMH view.
+ * Enable module - views base url, cell_oai_pmh needed by OAI-PMH view.
  */
 function elmcip_setup_update_7029() {
-  module_enable(array('views_base_url'), FALSE);
+  module_enable(array('views_base_url', 'cell_oai_pmh'), FALSE);
 }
