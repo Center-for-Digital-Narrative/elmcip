@@ -757,7 +757,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->display->display_options['title'] = 'Critical Writing that appears in this Critical Writing:';
+  $handler->display->display_options['title'] = 'Contents';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
@@ -837,7 +837,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['show_title'] = 1;
   $translatables['Critical_writing_in_book'] = array(
     t('Defaults'),
-    t('Critical Writing that appears in this Critical Writing:'),
+    t('Contents'),
     t('more'),
     t('Apply'),
     t('Reset'),
