@@ -4,9 +4,12 @@
  * Views Styling.
  */
 
+.view-header {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
 
 /* Title of view pulled inn for KB-records */
-
 .group-right h2 {
   font-size: 1.0em;
 }
