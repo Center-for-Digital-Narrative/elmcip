@@ -2876,6 +2876,8 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['entity_type'] = 'node';
   $handler->display->display_options['bundles'] = array(
     0 => 'critical_writing',
@@ -8382,6 +8384,7 @@ function elmcip_data_export_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('Displaying @start - @end of @total'),
     t('All'),
     t('%1'),
     t('Page'),
