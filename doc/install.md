@@ -25,4 +25,4 @@ Initialize the new site:
 
     bin/site-init <norstore username>
 
-You should now have a fully functional site, with all content, except attached documents/files and images. [reset.md](Reset and upgrade local installation) explain how to get images and media to your local site. You do not really need to to use/test it.
+You should now have a fully functional site, with all content, except attached documents/files and images. [Reset and upgrade local installation](reset.md) explain how to get images and media to your local site. You do not really need to to use/test it.
