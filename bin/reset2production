@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Sync files and grab the nightly backup of the production database.
+# Takes two optional parameters.
+#
+# <user_name> : The username used norstore.
+# <all | none> : Sync all files or none. Omit parameter to skip larger files (default).
+
 set -x
 
 SITE=elmcip01.norstore.uio.no
@@ -10,8 +16,6 @@ HOMEDIR=${PWD}
 
 drush --version || exit $?
 
-# Checkout master branch and get latest and greates code, then checkout
-# the production branch and submodule.
 git checkout master
 git pull --rebase --quiet || exit $?
 git submodule update
@@ -20,28 +24,58 @@ git checkout production --quiet || exit $?
 git pull --rebase --quiet || exit $?
 git submodule update
 
-# Sync files and grab the nightly backup of the production database.
-if [ -z "$1" ]
+if [ "$2" ]
   then
-    rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
-    RESULT=`rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/`
-    if [ $? != 0 ]; then
-    {
-      echo "ERROR: problem syncing DB"
-      echo $RESULT
-      exit 1
-    }
-  fi
-  else
-    echo "Connecting to $DB_SITE and $SITE as user: $1"
-    rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $1@$SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
+  case "$2" in
+  all)
+    echo "Connecting to $DB_SITE and $SITE as user $1. Grabbing all file."
+    rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose $1@$SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
     RESULT=`rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/`
     if [ $? != 0 ]; then
-    {
-      echo "ERROR: problem syncing DB"
-      echo $RESULT
-      exit 1
-    }
+      {
+        echo "ERROR: problem syncing DB"
+        echo $RESULT
+        exit 1
+      }
+    fi
+    ;;
+  none)
+    echo "Connecting to $DB_SITE as user $1. Skipping all files, syncing only database."
+    RESULT=`rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/`
+    if [ $? != 0 ]; then
+      {
+        echo "ERROR: problem syncing DB"
+        echo $RESULT
+        exit 1
+      }
+    fi
+  ;;
+  *)
+  echo "Unknown parameter"
+  exit 1
+  esac
+elif [ "$1" ]
+  then
+  echo "Connecting to $DB_SITE and $SITE as user: $1. Skipping all big files."
+  rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $1@$SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
+  RESULT=`rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/`
+  if [ $? != 0 ]; then
+  {
+    echo "ERROR: problem syncing DB"
+    echo $RESULT
+    exit 1
+  }
+  fi
+else
+  echo "No username given. Connecting to $DB_SITE and $SITE as user $USER. Skipping big files."
+  rsync --update -h --modify-window=5 --stats --progress --delete --compress --recursive --verbose --exclude-from="bin/exclude_elmcip.txt" $USER@$SITE:/applications/elmcip.net/drupal/sites/default/files drupal/sites/default
+  RESULT=`rsync -L -h --stats --progress --verbose $USER@$DB_SITE:/files/latest.elmcip.sql.gz site/`
+  if [ $? != 0 ]; then
+  {
+    echo "ERROR: problem syncing DB"
+    echo $RESULT
+    exit 1
+  }
   fi
 fi
 
