@@ -20,8 +20,8 @@ function elmcip_layout_default_ctools_custom_content() {
   $content->settings = array(
     'admin_title' => '',
     'title' => 'Browse',
-    'body' => '<p>See all tags used in the Knowledge Base by <a href="/knowledgebase/all_tags_frequency">frequency</a> or <a href="/knowledgebase/all_tags">alphabetically</a>.</p>
-<p>See the latest <a href="/video_index">videos and multimedia</a> content in Knowledge Base.</p>',
+    'body' => 'See all tags used in the Knowledge Base by <a href="/knowledgebase/all_tags_frequency">frequency</a> or <a href="/knowledgebase/all_tags">alphabetically</a>.
+See the latest <a href="/video_index">videos and multimedia</a> content in Knowledge Base.',
     'format' => '1',
     'substitute' => 1,
   );

@@ -998,6 +998,18 @@ function elmcip_layout_default_page_manager_pages() {
       ),
     ),
     'style' => 'rounded_corners',
+    'top' => array(
+      'style' => 'default',
+    ),
+    'left' => array(
+      'style' => 'default',
+    ),
+    'right' => array(
+      'style' => 'default',
+    ),
+    'bottom' => array(
+      'style' => 'default',
+    ),
   );
   $display->cache = array();
   $display->title = 'Electronic Literature Knowledge Base';
@@ -1030,6 +1042,7 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1064,6 +1077,7 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1098,6 +1112,7 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1183,12 +1198,14 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->access = array(
       'plugins' => array(
         0 => array(
-          'name' => 'perm',
+          'name' => 'role',
           'settings' => array(
-            'perm' => 'create critical_writing content',
+            'rids' => array(
+              0 => 1,
+            ),
           ),
           'context' => 'logged-in-user',
-          'not' => TRUE,
+          'not' => FALSE,
         ),
       ),
     );
@@ -1205,6 +1222,7 @@ function elmcip_layout_default_page_manager_pages() {
     );
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1225,12 +1243,7 @@ function elmcip_layout_default_page_manager_pages() {
           'name' => 'role',
           'settings' => array(
             'rids' => array(
-              0 => 7,
-              1 => 3,
-              2 => 6,
-              3 => 5,
-              4 => 8,
-              5 => 4,
+              0 => 2,
             ),
           ),
           'context' => 'logged-in-user',
@@ -1249,8 +1262,12 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'default',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = '';
@@ -1415,6 +1432,7 @@ function elmcip_layout_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
