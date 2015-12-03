@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Remove all data not really needed. Speeding up staging and working with the database.
+
+set -x
+
+DRUPAL=drupal
+URI=elmcip.dev
+HOMEDIR=${PWD}
+
+drush --version || exit $?
+
+cd $DRUPAL
+
+# Optimize database.
+drush scr ../bin/cleanup.php
+
+# Grab copy of optimized database.
+drush sql-dump --result-file=../site/latest.elmcip.sql

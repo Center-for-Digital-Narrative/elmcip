@@ -19,9 +19,18 @@ git submodule update
 
 cd $DRUPAL
 
-# Drop all data and populate database with the latest backup.
-drush --uri=$URI sql-drop --yes
-gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
+if [ -z "$1" ]; then
+  # Drop all data and populate database with the latest backup.
+  echo "Running normal mode."
+  drush --uri=$URI sql-drop --yes
+  gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
+  exit;
+else
+  # Run the fast version.
+  echo "Running fast mode."
+  drush --uri=$URI sql-drop --yes
+  drush --uri=$URI sql-cli < ../site/latest.elmcip.sql
+fi
 
 # Flush all drupal caches.
 drush cc all -v
