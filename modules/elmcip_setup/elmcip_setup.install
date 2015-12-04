@@ -425,3 +425,10 @@ function elmcip_setup_update_7028() {
 function elmcip_setup_update_7029() {
   module_enable(array('views_base_url', 'cell_oai_pmh'), FALSE);
 }
+
+/**
+ * Delete field_orig_lang.
+ */
+function elmcip_setup_update_7030() {
+  field_delete_field('field_orig_lang');
+}

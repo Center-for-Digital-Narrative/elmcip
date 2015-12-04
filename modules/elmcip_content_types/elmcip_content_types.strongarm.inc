@@ -2658,6 +2658,9 @@ function elmcip_content_types_strongarm() {
         'critical_writing_tr_node_content_1' => array(
           'weight' => '10',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'critical_writing_tr_entity_view_1' => array(
@@ -2697,6 +2700,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '31',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'research_collection_teaching_resource_entity_view_1' => array(
           'full' => array(
@@ -2707,6 +2714,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '30',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'database_listed_on_teaching_resource_entity_view_1' => array(
           'full' => array(
@@ -2715,6 +2726,10 @@ function elmcip_content_types_strongarm() {
           ),
           'default' => array(
             'weight' => '29',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
             'visible' => FALSE,
           ),
         ),

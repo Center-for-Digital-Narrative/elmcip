@@ -1240,7 +1240,7 @@ function elmcip_field_instances_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -4035,7 +4035,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -13074,7 +13074,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'size' => 60,
       ),
       'type' => 'text_textarea',
-      'weight' => 11,
+      'weight' => 13,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -13117,7 +13117,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -14000,7 +14000,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'size' => 60,
       ),
       'type' => 'text_textarea',
-      'weight' => 10,
+      'weight' => 12,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -14679,7 +14679,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 9,
+      'weight' => 11,
     ),
   );
 
