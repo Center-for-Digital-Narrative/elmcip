@@ -324,7 +324,8 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_platform_developers'
+  // Exported field_instance:
+  // 'node-platform_software-field_platform_developers'.
   $field_instances['node-platform_software-field_platform_developers'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -445,6 +446,7 @@ function elmcip_content_types_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -459,6 +461,7 @@ function elmcip_content_types_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -496,7 +499,7 @@ function elmcip_content_types_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-platform_software-field_publisher_or_organization'
+  // 'node-platform_software-field_publisher_or_organization'.
   $field_instances['node-platform_software-field_publisher_or_organization'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -734,7 +737,7 @@ function elmcip_content_types_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-research_collection-field_collection_platform_ref'
+  // 'node-research_collection-field_collection_platform_ref'.
   $field_instances['node-research_collection-field_collection_platform_ref'] = array(
     'bundle' => 'research_collection',
     'default_value' => NULL,
@@ -883,8 +886,9 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'link_default',
         'weight' => 50,
       ),
       'teaser' => array(
