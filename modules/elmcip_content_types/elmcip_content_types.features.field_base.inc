@@ -10,7 +10,7 @@
 function elmcip_content_types_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_collection_platform_ref'
+  // Exported field_base: 'field_collection_platform_ref'.
   $field_bases['field_collection_platform_ref'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -48,7 +48,7 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_criticalw_platform_ref'
+  // Exported field_base: 'field_criticalw_platform_ref'.
   $field_bases['field_criticalw_platform_ref'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -86,7 +86,7 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_cw_in_platform_software'
+  // Exported field_base: 'field_cw_in_platform_software'.
   $field_bases['field_cw_in_platform_software'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -126,7 +126,7 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_database_platform_ref'
+  // Exported field_base: 'field_database_platform_ref'.
   $field_bases['field_database_platform_ref'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -164,7 +164,7 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_platform_versions'
+  // Exported field_base: 'field_platform_versions'.
   $field_bases['field_platform_versions'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -196,7 +196,7 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_po_ex_entry'
+  // Exported field_base: 'field_po_ex_entry'.
   $field_bases['field_po_ex_entry'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -228,7 +228,7 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_repository'
+  // Exported field_base: 'field_repository'.
   $field_bases['field_repository'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -260,7 +260,7 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_version_history'
+  // Exported field_base: 'field_version_history'.
   $field_bases['field_version_history'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -282,7 +282,7 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_work_platform_software'
+  // Exported field_base: 'field_work_platform_software'.
   $field_bases['field_work_platform_software'] = array(
     'active' => 1,
     'cardinality' => -1,

@@ -11,7 +11,7 @@ function elmcip_content_types_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'node-critical_writing-field_criticalw_platform_ref'
+  // 'node-critical_writing-field_criticalw_platform_ref'.
   $field_instances['node-critical_writing-field_criticalw_platform_ref'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -68,7 +68,7 @@ function elmcip_content_types_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-critical_writing-field_cw_in_platform_software'
+  // 'node-critical_writing-field_cw_in_platform_software'.
   $field_instances['node-critical_writing-field_cw_in_platform_software'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -127,7 +127,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-critical_writing-field_po_ex_entry'
+  // Exported field_instance: 'node-critical_writing-field_po_ex_entry'.
   $field_instances['node-critical_writing-field_po_ex_entry'] = array(
     'bundle' => 'critical_writing',
     'default_value' => NULL,
@@ -198,7 +198,7 @@ function elmcip_content_types_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-databases_and_archives-field_database_platform_ref'
+  // 'node-databases_and_archives-field_database_platform_ref'.
   $field_instances['node-databases_and_archives-field_database_platform_ref'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
@@ -248,7 +248,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_editorial_notes'
+  // Exported field_instance: 'node-platform_software-field_editorial_notes'.
   $field_instances['node-platform_software-field_editorial_notes'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -372,7 +372,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_platform_versions'
+  // Exported field_instance: 'node-platform_software-field_platform_versions'.
   $field_instances['node-platform_software-field_platform_versions'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -431,7 +431,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_platform_year'
+  // Exported field_instance: 'node-platform_software-field_platform_year'.
   $field_instances['node-platform_software-field_platform_year'] = array(
     'bundle' => 'platform_software',
     'deleted' => 0,
@@ -546,7 +546,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_record_status_tax'
+  // Exported field_instance: 'node-platform_software-field_record_status_tax'.
   $field_instances['node-platform_software-field_record_status_tax'] = array(
     'bundle' => 'platform_software',
     'default_value' => array(
@@ -589,7 +589,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_repository'
+  // Exported field_instance: 'node-platform_software-field_repository'.
   $field_instances['node-platform_software-field_repository'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -654,7 +654,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-platform_software-field_version_history'
+  // Exported field_instance: 'node-platform_software-field_version_history'.
   $field_instances['node-platform_software-field_version_history'] = array(
     'bundle' => 'platform_software',
     'default_value' => NULL,
@@ -790,7 +790,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-work-field_po_ex_entry'
+  // Exported field_instance: 'node-work-field_po_ex_entry'.
   $field_instances['node-work-field_po_ex_entry'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -865,7 +865,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-work-field_repository'
+  // Exported field_instance: 'node-work-field_repository'.
   $field_instances['node-work-field_repository'] = array(
     'bundle' => 'work',
     'default_value' => NULL,
@@ -941,7 +941,7 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-work-field_work_platform_software'
+  // Exported field_instance: 'node-work-field_work_platform_software'.
   $field_instances['node-work-field_work_platform_software'] = array(
     'bundle' => 'work',
     'default_value' => NULL,

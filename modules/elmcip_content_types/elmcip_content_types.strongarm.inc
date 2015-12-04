@@ -1213,6 +1213,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '27',
             'visible' => FALSE,
           ),
+          'token' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
         ),
         'event_ref_on_cw_entity_view_1' => array(
           'full' => array(
@@ -1225,6 +1229,10 @@ function elmcip_content_types_strongarm() {
           ),
           'default' => array(
             'weight' => '5',
+            'visible' => TRUE,
+          ),
+          'token' => array(
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),
@@ -1241,6 +1249,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '3',
             'visible' => TRUE,
           ),
+          'token' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
         ),
         'research_collection_critical_writing_entity_view_1' => array(
           'full' => array(
@@ -1249,6 +1261,14 @@ function elmcip_content_types_strongarm() {
           ),
           'default' => array(
             'weight' => '9',
+            'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'token' => array(
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),
@@ -1261,6 +1281,14 @@ function elmcip_content_types_strongarm() {
             'weight' => '6',
             'visible' => TRUE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'token' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
         ),
         'publisher_referenced_on_critical_writing_entity_view_1' => array(
           'full' => array(
@@ -1268,6 +1296,14 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'token' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
@@ -1279,6 +1315,14 @@ function elmcip_content_types_strongarm() {
           ),
           'default' => array(
             'weight' => '2',
+            'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'token' => array(
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),

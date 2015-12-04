@@ -50,8 +50,7 @@ function elmcip_field_instances_field_group_info() {
     'label' => 'Description',
     'weight' => '33',
     'children' => array(
-      0 => 'field_orig_lang',
-      1 => 'field_pullquote',
+      0 => 'field_pullquote',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -266,12 +265,12 @@ function elmcip_field_instances_field_group_info() {
     'weight' => '15',
     'children' => array(
       0 => 'field_url',
-      1 => 'field_author_name',
-      2 => 'field_number',
-      3 => 'field_license',
+      1 => 'field_number',
+      2 => 'field_license',
+      3 => 'field_archiveurl',
       4 => 'field_node_ref',
-      5 => 'field_node_ref_event',
-      6 => 'field_archiveurl',
+      5 => 'field_author_name',
+      6 => 'field_node_ref_event',
       7 => 'field_editor_name',
     ),
     'format_type' => 'fieldset',
@@ -298,8 +297,8 @@ function elmcip_field_instances_field_group_info() {
     'weight' => '30',
     'children' => array(
       0 => 'field_license',
-      1 => 'field_node_ref_event',
-      2 => 'field_archiveurl',
+      1 => 'field_archiveurl',
+      2 => 'field_node_ref_event',
       3 => 'field_editor_name',
     ),
     'format_type' => 'fieldset',
@@ -1652,10 +1651,10 @@ function elmcip_field_instances_field_group_info() {
     'label' => 'References / Attachments',
     'weight' => '18',
     'children' => array(
-      0 => 'field_other_lang_ver_link',
-      1 => 'field_ref_about_event',
-      2 => 'field_files',
-      3 => 'field_multi_images',
+      0 => 'field_ref_about_event',
+      1 => 'field_files',
+      2 => 'field_multi_images',
+      3 => 'field_other_lang_ver_link',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -1682,10 +1681,10 @@ function elmcip_field_instances_field_group_info() {
     'children' => array(
       0 => 'field_node_ref_work',
       1 => 'field_tr_critical',
-      2 => 'field_other_lang_ver_link',
-      3 => 'field_ref_about_event',
-      4 => 'field_files',
-      5 => 'field_multi_images',
+      2 => 'field_ref_about_event',
+      3 => 'field_files',
+      4 => 'field_multi_images',
+      5 => 'field_other_lang_ver_link',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
