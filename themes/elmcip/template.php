@@ -163,3 +163,15 @@ function elmcip_preprocess_region(&$variables, $hook) {
     $variables['classes_array'][] = 'clearfix';
   }
 }
+
+/**
+ * Panels render callback./
+ * - Removes panel separator.
+ *
+ * @ingroup themeable
+ */
+function elmcip_panels_default_style_render_region($variables) {
+  $output = '';
+  $output .= implode('', $variables['panes']);
+  return $output;
+}

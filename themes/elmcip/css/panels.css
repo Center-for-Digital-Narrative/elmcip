@@ -22,8 +22,11 @@
   background-color: #bebdae;
 }
 
-
 .region-footer,
 .sponsors {
   font-size: 0.857em;
+}
+
+.panel-2col-stacked .panel-pane {
+  margin-bottom: 60px; /* 960gs 12 col. size */
 }
