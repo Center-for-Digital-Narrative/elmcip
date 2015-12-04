@@ -392,12 +392,17 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
   $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
   /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
+  $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['settings'] = array(
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
   );
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
@@ -502,12 +507,17 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
   $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
   /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
+  $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['settings'] = array(
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
   );
   /* Field: Content: Platform/Software */
   $handler->display->display_options['fields']['field_work_platform_software']['id'] = 'field_work_platform_software';
@@ -591,12 +601,17 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
   $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
   /* Field: Content: Year */
-  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
-  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
+  $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['settings'] = array(
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
   );
   /* Field: Content: Tags */
   $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
