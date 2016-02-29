@@ -1213,7 +1213,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language of the additional language abstract.  Note: this is a taxonomy field, which will replace the previous Language of abstract field, which will be deleted once the data is migrated from it. For new records, disregard the other Language of abstract field above and use this one.',
+    'description' => 'Select the human language of the additional language abstract. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1249,6 +1249,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'weight' => 42,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
     'label' => 'Language of abstract (Taxonomy)',
@@ -1261,7 +1262,7 @@ function elmcip_field_instances_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -4240,7 +4241,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -15999,7 +16000,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language of the additional language description.  Note: this is a taxonomy field, which will replace the previous Language of abstract field, which will be deleted once the data is migrated from it. For new records, disregard the other Language of abstract field above and use this one.',
+    'description' => 'Select the human language of the additional language description.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -16040,6 +16041,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 30,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
     'label' => 'Language of description (Taxonomy)',
@@ -19591,8 +19593,9 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Screen shots');
   t('Screenshot');
   t('Screenshots of the database or archive.');
+  t('Select the human language of the additional language abstract. ');
   t('Select the human language of the additional language abstract.  Note: this is a taxonomy field, which will replace the previous Language of abstract field, which will be deleted once the data is migrated from it. For new records, disregard the other Language of abstract field above and use this one.');
-  t('Select the human language of the additional language description.  Note: this is a taxonomy field, which will replace the previous Language of abstract field, which will be deleted once the data is migrated from it. For new records, disregard the other Language of abstract field above and use this one.');
+  t('Select the human language of the additional language description.');
   t('Select the human language of the teaching resource. Select multiple if the work includes multiple languages.');
   t('Select the human language the work was written in. Select multiple if the work includes multiple languages. Note: this is a taxonomy field, which will replace the previous Language field, which will be deleted once the data is migrated from it. For new records, disregard the other Language field above and use this one.');
   t('Select the license that the platform is released under from the list.');
