@@ -92,25 +92,25 @@ function elmcip_preprocess_page(&$variables, $hook) {
 }
 
 /**
- * Override or insert variables into the node templates.
- *
+ * Implements template_preprocess_node().
  * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function localhost_smb_ev_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // Optionally, run node-type-specific preprocess functions, like
-  // localhost_smb_ev_preprocess_node_page() or localhost_smb_ev_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
+function elmcip_preprocess_node(&$variables) {
+  if ($variables['view_mode'] == 'full') {
+    if ($variables['type'] == 'critical_writing' || $variables['type'] == 'work') {
+      if ($variables['field_abstract_lang_tax']) {
+        $term = taxonomy_term_load($variables['field_abstract_lang_tax']['und'][0]['tid']);
+        if ($variables['type'] == 'critical_writing') {
+          $title = t("Abstract (in @term_name)", array('@term_name' => $term->name));
+        }
+        else {
+          $title = t("Description (in @term_name)", array('@term_name' => $term->name));
+        }
+        $variables['content']['field_abstract_lang']['#title'] = $title;
+      }
+    }
   }
 }
-// */
 
 /**
  * Override or insert variables into the comment templates.
