@@ -33,6 +33,15 @@ function elmcip_content_types_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 60,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 38,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -93,6 +102,15 @@ function elmcip_content_types_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 21,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 39,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -147,6 +165,13 @@ function elmcip_content_types_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 28,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 34,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -220,6 +245,15 @@ function elmcip_content_types_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 4,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -268,6 +302,13 @@ function elmcip_content_types_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 8,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -350,6 +391,15 @@ function elmcip_content_types_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 4,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 11,
+      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
@@ -392,6 +442,13 @@ function elmcip_content_types_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 11,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 12,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -467,6 +524,21 @@ function elmcip_content_types_field_default_field_instances() {
         'type' => 'date_default',
         'weight' => 2,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 10,
+      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
@@ -524,6 +596,15 @@ function elmcip_content_types_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 5,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 9,
+      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
@@ -571,6 +652,13 @@ function elmcip_content_types_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 7,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 13,
+      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
@@ -609,6 +697,13 @@ function elmcip_content_types_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 1,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -674,6 +769,13 @@ function elmcip_content_types_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 12,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -762,6 +864,15 @@ function elmcip_content_types_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 3,
       ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 20,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -815,6 +926,13 @@ function elmcip_content_types_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 26,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -890,6 +1008,13 @@ function elmcip_content_types_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 50,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 33,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -968,6 +1093,15 @@ function elmcip_content_types_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 13,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 34,
       ),
       'teaser' => array(
         'label' => 'above',

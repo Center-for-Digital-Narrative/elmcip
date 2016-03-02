@@ -1091,6 +1091,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
         ),
         'Creative_works_in_anthology_entity_view_1' => array(
           'default' => array(
@@ -1108,6 +1112,10 @@ function elmcip_content_types_strongarm() {
           'token' => array(
             'weight' => '9',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '1',
+            'visible' => FALSE,
           ),
         ),
         'critical_writin_critical_writing_entity_view_1' => array(
@@ -1127,6 +1135,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '11',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '12',
+            'visible' => FALSE,
+          ),
         ),
         'cw_reference_critical_writing_entity_view_1' => array(
           'default' => array(
@@ -1144,6 +1156,10 @@ function elmcip_content_types_strongarm() {
           'token' => array(
             'weight' => '13',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '14',
+            'visible' => FALSE,
           ),
         ),
         'Work_critical_writing_entity_view_1' => array(
@@ -1163,6 +1179,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '12',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '13',
+            'visible' => FALSE,
+          ),
         ),
         'Tr_critical_writing_entity_view_1' => array(
           'full' => array(
@@ -1181,6 +1201,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '7',
+            'visible' => FALSE,
+          ),
         ),
         'other_editions_entity_view_1' => array(
           'full' => array(
@@ -1197,6 +1221,10 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '28',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
+            'weight' => '4',
             'visible' => FALSE,
           ),
         ),
@@ -1217,6 +1245,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '8',
+            'visible' => FALSE,
+          ),
         ),
         'event_ref_on_cw_entity_view_1' => array(
           'full' => array(
@@ -1234,6 +1266,10 @@ function elmcip_content_types_strongarm() {
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '5',
+            'visible' => FALSE,
           ),
         ),
         'database_on_critical_writing_entity_view_1' => array(
@@ -1253,6 +1289,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '3',
+            'visible' => FALSE,
+          ),
         ),
         'research_collection_critical_writing_entity_view_1' => array(
           'full' => array(
@@ -1270,6 +1310,10 @@ function elmcip_content_types_strongarm() {
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '9',
+            'visible' => FALSE,
           ),
         ),
         'publisher_on_critical_writing_entity_view_1' => array(
@@ -1289,6 +1333,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '6',
+            'visible' => FALSE,
+          ),
         ),
         'publisher_referenced_on_critical_writing_entity_view_1' => array(
           'full' => array(
@@ -1306,6 +1354,10 @@ function elmcip_content_types_strongarm() {
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
         'organization_referenced_on_critical_writing_entity_view_1' => array(
@@ -1325,6 +1377,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
@@ -1342,7 +1398,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'token' => array(
         'custom_settings' => TRUE,
@@ -1388,7 +1444,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'print' => array(
         'custom_settings' => FALSE,
@@ -1434,6 +1490,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '20',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '20',
+            'visible' => FALSE,
+          ),
         ),
         'teaching_resource_db_archive_entity_view_1' => array(
           'full' => array(
@@ -1444,6 +1504,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '19',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '19',
+            'visible' => FALSE,
+          ),
         ),
         'critical_writing_db_archive_entity_view_1' => array(
           'full' => array(
@@ -1451,6 +1515,10 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
+            'weight' => '21',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
             'weight' => '21',
             'visible' => FALSE,
           ),
@@ -1521,6 +1589,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '13',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '12',
+            'visible' => FALSE,
+          ),
         ),
         'cw_reference_event_entity_view_1' => array(
           'default' => array(
@@ -1533,6 +1605,10 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '18',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
+            'weight' => '13',
             'visible' => FALSE,
           ),
         ),
@@ -1549,6 +1625,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '15',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
         ),
         'event_series_entity_view_1' => array(
           'full' => array(
@@ -1563,6 +1643,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'Event_work_entity_view_2' => array(
           'full' => array(
@@ -1573,10 +1657,22 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'publisher_presented_at_event_entity_view_1' => array(
           'full' => array(
             'weight' => '30',
+            'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '10',
             'visible' => FALSE,
           ),
         ),
@@ -1596,7 +1692,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'print' => array(
         'custom_settings' => FALSE,
@@ -1616,6 +1712,9 @@ function elmcip_content_types_strongarm() {
       'teaser_abbreviated' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
   );
   $export['field_bundle_settings_node__event'] = $strongarm;
@@ -1625,7 +1724,41 @@ function elmcip_content_types_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__notebook';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'search_result' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'data_export' => array(
+        'custom_settings' => FALSE,
+      ),
+      'teaser_abbreviated' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
@@ -1635,7 +1768,18 @@ function elmcip_content_types_strongarm() {
           'weight' => '30',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'notes_in_this_notebook_entity_view_1' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__notebook'] = $strongarm;
@@ -1749,6 +1893,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '16',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '5',
+            'visible' => FALSE,
+          ),
         ),
         'Critical_writing_organization_entity_view_1' => array(
           'default' => array(
@@ -1761,6 +1909,10 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '20',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
+            'weight' => '6',
             'visible' => FALSE,
           ),
         ),
@@ -1777,6 +1929,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '17',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'work_organization_entity_view_1' => array(
           'full' => array(
@@ -1785,6 +1941,14 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '19',
+            'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '10',
             'visible' => FALSE,
           ),
         ),
@@ -1797,6 +1961,14 @@ function elmcip_content_types_strongarm() {
             'weight' => '18',
             'visible' => FALSE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'research_collection_organization_entity_view_1' => array(
           'full' => array(
@@ -1804,6 +1976,14 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
             'weight' => '10',
             'visible' => FALSE,
           ),
@@ -1824,6 +2004,24 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
+        'custom_settings' => TRUE,
+      ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'data_export' => array(
+        'custom_settings' => FALSE,
+      ),
+      'teaser_abbreviated' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -1949,6 +2147,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '1',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '26',
+            'visible' => FALSE,
+          ),
         ),
         'Work_entity_view_1' => array(
           'default' => array(
@@ -1965,6 +2167,10 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
+            'weight' => '24',
             'visible' => FALSE,
           ),
         ),
@@ -1985,6 +2191,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '2',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '27',
+            'visible' => FALSE,
+          ),
         ),
         'TeachingResourceby_entity_view_1' => array(
           'default' => array(
@@ -2003,6 +2213,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '4',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '29',
+            'visible' => FALSE,
+          ),
         ),
         'Editedby_entity_view_1' => array(
           'default' => array(
@@ -2014,6 +2228,10 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'user_attach_person_refs' => array(
+            'weight' => '14',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
             'weight' => '14',
             'visible' => TRUE,
           ),
@@ -2035,6 +2253,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '3',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '28',
+            'visible' => FALSE,
+          ),
         ),
         'translated_by_person_translated_by_person' => array(
           'full' => array(
@@ -2043,6 +2265,14 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '21',
             'visible' => FALSE,
           ),
         ),
@@ -2055,6 +2285,14 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => FALSE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '23',
+            'visible' => FALSE,
+          ),
         ),
         'curator_of_edited_by_person' => array(
           'full' => array(
@@ -2065,17 +2303,34 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => FALSE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '19',
+            'visible' => FALSE,
+          ),
         ),
         'eva_research_collection_entity_view_1' => array(
           'full' => array(
             'weight' => '19',
             'visible' => TRUE,
           ),
+          'search_result' => NULL,
         ),
         'research_collection_person_entity_view_1' => array(
           'full' => array(
             'weight' => '24',
             'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '20',
+            'visible' => FALSE,
           ),
         ),
         'Work_entity_view_2' => array(
@@ -2083,17 +2338,41 @@ function elmcip_content_types_strongarm() {
             'weight' => '14',
             'visible' => TRUE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '18',
+            'visible' => FALSE,
+          ),
         ),
         'events_on_individual_organizer_page_entity_view_1' => array(
           'full' => array(
             'weight' => '19',
             'visible' => TRUE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '22',
+            'visible' => FALSE,
+          ),
         ),
         'resource_collection_curated_by_person_edited_by_person' => array(
           'full' => array(
             'weight' => '22',
             'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '17',
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -2112,10 +2391,28 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'user_attach_person_refs' => array(
         'custom_settings' => TRUE,
+      ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'data_export' => array(
+        'custom_settings' => FALSE,
+      ),
+      'teaser_abbreviated' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
       ),
     ),
   );
@@ -2140,7 +2437,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'print' => array(
         'custom_settings' => FALSE,
@@ -2178,6 +2475,14 @@ function elmcip_content_types_strongarm() {
           'full' => array(
             'weight' => '10',
             'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -2240,6 +2545,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '15',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '6',
+            'visible' => FALSE,
+          ),
         ),
         'Critical_writing_publisher_entity_view_1' => array(
           'default' => array(
@@ -2249,6 +2558,10 @@ function elmcip_content_types_strongarm() {
           'full' => array(
             'weight' => '9',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
         'critical_writing_on_publisher_entity_view_1' => array(
@@ -2262,6 +2575,10 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '17',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
+            'weight' => '5',
             'visible' => FALSE,
           ),
         ),
@@ -2278,6 +2595,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '20',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '20',
+            'visible' => FALSE,
+          ),
         ),
         'critical_writing_on_publisher_entity_view_1_form' => array(
           'full' => array(
@@ -2285,6 +2606,10 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
+            'weight' => '18',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
             'weight' => '18',
             'visible' => FALSE,
           ),
@@ -2298,12 +2623,17 @@ function elmcip_content_types_strongarm() {
             'weight' => '21',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '21',
+            'visible' => FALSE,
+          ),
         ),
         'critical_writing_about_publisher_entity_view_1' => array(
           'full' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => NULL,
         ),
         'critical_writing_on_referenced_publisher_entity_view_1' => array(
           'full' => array(
@@ -2311,6 +2641,10 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
+            'weight' => '19',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
             'weight' => '19',
             'visible' => FALSE,
           ),
@@ -2331,7 +2665,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
@@ -2374,7 +2708,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'print' => array(
         'custom_settings' => FALSE,
@@ -2413,6 +2747,7 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => NULL,
         ),
         'works_listed_on_research_collection_entity_view_1' => array(
           'full' => array(
@@ -2426,6 +2761,10 @@ function elmcip_content_types_strongarm() {
           'default' => array(
             'weight' => '17',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '17',
+            'visible' => FALSE,
           ),
         ),
         'cw_listed_in_research_collection_entity_view_1' => array(
@@ -2441,6 +2780,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '18',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '18',
+            'visible' => FALSE,
+          ),
         ),
         'teaching_resources_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
@@ -2454,6 +2797,10 @@ function elmcip_content_types_strongarm() {
           'default' => array(
             'weight' => '16',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '16',
+            'visible' => FALSE,
           ),
         ),
         'people_listed_in_research_collection_entity_view_1' => array(
@@ -2469,6 +2816,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '15',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '15',
+            'visible' => FALSE,
+          ),
         ),
         'organizations_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
@@ -2482,6 +2833,10 @@ function elmcip_content_types_strongarm() {
           'default' => array(
             'weight' => '11',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '11',
+            'visible' => FALSE,
           ),
         ),
         'publishers_listed_in_research_collection_entity_view_1' => array(
@@ -2497,6 +2852,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '12',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '12',
+            'visible' => FALSE,
+          ),
         ),
         'databases_archives_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
@@ -2511,6 +2870,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '13',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '13',
+            'visible' => FALSE,
+          ),
         ),
         'events_listed_in_research_collection_entity_view_1' => array(
           'full' => array(
@@ -2524,6 +2887,10 @@ function elmcip_content_types_strongarm() {
           'default' => array(
             'weight' => '14',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '14',
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -2676,6 +3043,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '18',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '16',
+            'visible' => FALSE,
+          ),
         ),
         'Work_tr_entity_view_1' => array(
           'default' => array(
@@ -2688,6 +3059,10 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '17',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
+            'weight' => '15',
             'visible' => FALSE,
           ),
         ),
@@ -2704,6 +3079,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '31',
+            'visible' => FALSE,
+          ),
         ),
         'research_collection_teaching_resource_entity_view_1' => array(
           'full' => array(
@@ -2718,6 +3097,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => FALSE,
           ),
+          'search_result' => array(
+            'weight' => '30',
+            'visible' => FALSE,
+          ),
         ),
         'database_listed_on_teaching_resource_entity_view_1' => array(
           'full' => array(
@@ -2730,6 +3113,10 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'search_result' => array(
+            'weight' => '29',
             'visible' => FALSE,
           ),
         ),
@@ -2749,7 +3136,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'token' => array(
         'custom_settings' => FALSE,
@@ -2845,6 +3232,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '23',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '38',
+            'visible' => FALSE,
+          ),
         ),
         'Tr_work_entity_view_1' => array(
           'full' => array(
@@ -2866,6 +3257,10 @@ function elmcip_content_types_strongarm() {
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '36',
+            'visible' => FALSE,
           ),
         ),
         'clone_of_research_collection_creative_work_entity_view_1' => array(
@@ -2889,6 +3284,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'search_result' => array(
+            'weight' => '37',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
@@ -2906,7 +3305,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'data_export' => array(
         'custom_settings' => TRUE,

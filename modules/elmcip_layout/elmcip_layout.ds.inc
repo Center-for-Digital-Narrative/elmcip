@@ -177,11 +177,6 @@ function elmcip_layout_ds_field_settings_info() {
       'label' => 'above',
       'format' => 'ds_post_date_long',
     ),
-    'field_database_platform_ref' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
   );
   $export['node|databases_and_archives|default'] = $ds_fieldsetting;
 
@@ -1486,6 +1481,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|databases_and_archives|default'] = $ds_layout;
 
@@ -2070,8 +2066,8 @@ function elmcip_layout_ds_layout_settings_info() {
       'left' => array(
         0 => 'content_type',
         1 => 'field_eissn',
-        2 => 'field_url',
-        3 => 'title',
+        2 => 'title',
+        3 => 'field_url',
         4 => 'field_record_status_tax',
         5 => 'field_location',
         6 => 'field_editorial_notes',
@@ -2088,8 +2084,8 @@ function elmcip_layout_ds_layout_settings_info() {
     'fields' => array(
       'content_type' => 'left',
       'field_eissn' => 'left',
-      'field_url' => 'left',
       'title' => 'left',
+      'field_url' => 'left',
       'field_record_status_tax' => 'left',
       'field_location' => 'left',
       'field_editorial_notes' => 'left',
@@ -2110,6 +2106,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|publisher|default'] = $ds_layout;
 
