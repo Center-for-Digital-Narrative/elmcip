@@ -21,7 +21,7 @@ table:last-child {
 }
 
 table thead th {
-  background: #F9FAFB;
+  background: #ECECEC;
   border-bottom: 1px solid rgba(34, 36, 38, 0.1);
   font-weight: bold;
   padding: 0.928571em 0.714286em;
