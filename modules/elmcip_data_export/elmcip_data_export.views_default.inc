@@ -16362,9 +16362,9 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['path'] = 'feeds/%/rss.xml';
   $handler->display->display_options['displays'] = array(
+    'block_1' => 'block_1',
     'page_1' => 'page_1',
     'default' => 0,
-    'block_1' => 0,
   );
   $handler->display->display_options['sitename_title'] = 0;
   $translatables['work_page'] = array(
