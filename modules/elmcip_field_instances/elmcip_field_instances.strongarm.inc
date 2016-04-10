@@ -34,20 +34,6 @@ function elmcip_field_instances_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'media_flickr__api_key';
-  $strongarm->value = '12f178eebc85858e8640cfffe6d313b6';
-  $export['media_flickr__api_key'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'media_flickr__api_secret';
-  $strongarm->value = '45243fcebbaff95e';
-  $export['media_flickr__api_secret'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'media_vimeo__api_key';
   $strongarm->value = '331757ca8a15a8da159448a0bcb4ec79';
   $export['media_vimeo__api_key'] = $strongarm;

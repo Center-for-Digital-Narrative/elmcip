@@ -14770,7 +14770,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_media_asset']['field'] = 'field_media_asset';
   $handler->display->display_options['fields']['field_media_asset']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_media_asset']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_media_asset']['type'] = 'media';
   $handler->display->display_options['fields']['field_media_asset']['settings'] = array(
     'file_view_mode' => 'default',
   );

@@ -623,7 +623,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
-      'media_large' => array(
+      'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -641,13 +641,13 @@ function elmcip_field_instances_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
-      'media_preview' => array(
+      'preview' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
-      'media_small' => array(
+      'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -3057,9 +3057,9 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
-          'file_view_mode' => 'media_large',
+          'file_view_mode' => 'full',
         ),
         'type' => 'media',
         'weight' => 47,
@@ -3078,7 +3078,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'token' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'media_original',
         ),
@@ -3113,6 +3113,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'image' => 'image',
           'video' => 'video',
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -6124,6 +6125,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image' => 0,
           'video' => 0,
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -6326,6 +6328,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image' => 'image',
           'video' => 'video',
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -7555,7 +7558,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'media_original',
         ),
@@ -7601,6 +7604,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image' => 'image',
           'video' => 'video',
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -11351,6 +11355,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image' => 'image',
           'video' => 'video',
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -13018,6 +13023,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image' => 'image',
           'video' => 'video',
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -13739,7 +13745,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
@@ -13748,7 +13754,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'rss' => array(
         'label' => 'hidden',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
@@ -13757,7 +13763,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
@@ -13804,6 +13810,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image' => 'image',
           'video' => 'video',
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -14577,7 +14584,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
@@ -14586,7 +14593,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
@@ -14595,7 +14602,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
@@ -14635,6 +14642,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image' => 'image',
           'video' => 'video',
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
@@ -17477,16 +17485,16 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
-          'file_view_mode' => 'media_large',
+          'file_view_mode' => 'full',
         ),
         'type' => 'media',
         'weight' => 37,
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
@@ -17501,7 +17509,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'token' => array(
         'label' => 'above',
-        'module' => 'media',
+        'module' => 'mediafield',
         'settings' => array(
           'file_view_mode' => 'media_original',
         ),
@@ -17535,6 +17543,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image' => 'image',
           'video' => 'video',
         ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',

@@ -378,16 +378,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'locale',
   );
 
-  // Exported permission: 'administer media'.
-  $permissions['administer media'] = array(
-    'name' => 'administer media',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'media',
-  );
-
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -2077,20 +2067,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: 'edit media'.
-  $permissions['edit media'] = array(
-    'name' => 'edit media',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'media',
-  );
-
   // Exported permission: 'edit own book content'.
   $permissions['edit own book content'] = array(
     'name' => 'edit own book content',
@@ -2592,15 +2568,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'import media'.
-  $permissions['import media'] = array(
-    'name' => 'import media',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'media',
-  );
-
   // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
@@ -3093,22 +3060,6 @@ function elmcip_permissions_user_default_permissions() {
       'supereditor' => 'supereditor',
     ),
     'module' => 'location',
-  );
-
-  // Exported permission: 'view media'.
-  $permissions['view media'] = array(
-    'name' => 'view media',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'media',
   );
 
   // Exported permission: 'view node location table'.
