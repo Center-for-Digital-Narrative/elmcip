@@ -2825,10 +2825,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['relationships']['field_node_ref_work_nid']['field'] = 'field_node_ref_work_nid';
   $handler->display->display_options['relationships']['field_node_ref_work_nid']['required'] = TRUE;
   $handler->display->display_options['relationships']['field_node_ref_work_nid']['delta'] = '-1';
-  /* Relationship: Content: Language (field_language_tax) */
-  $handler->display->display_options['relationships']['field_language_tax_tid']['id'] = 'field_language_tax_tid';
-  $handler->display->display_options['relationships']['field_language_tax_tid']['table'] = 'field_data_field_language_tax';
-  $handler->display->display_options['relationships']['field_language_tax_tid']['field'] = 'field_language_tax_tid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -2993,7 +2989,6 @@ function elmcip_data_export_views_default_views() {
     t('last »'),
     t('Add a new <a href="http://elmcip.net/node/add/work">creative work</a>.'),
     t('field_node_ref_work'),
-    t('term from field_language_tax'),
     t('Title'),
     t('Author'),
     t('Year'),
