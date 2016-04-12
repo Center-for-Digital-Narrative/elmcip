@@ -68,3 +68,11 @@ table tbody .edit a:link {
   color: #AC0009;
   float: right;
 }
+
+/* Used to force fixed with to table cells with short data elements. Example the Year YYYY. */
+table .views-field-field-platform-year,
+table .views-field-field-work-year,
+table .views-field-field-number,
+table .views-field-field-work-year {
+  width: 50px;
+}

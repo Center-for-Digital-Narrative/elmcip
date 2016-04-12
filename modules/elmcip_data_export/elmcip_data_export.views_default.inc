@@ -2845,7 +2845,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
   $handler->display->display_options['fields']['field_work_year']['relationship'] = 'field_node_ref_work_nid';
   $handler->display->display_options['fields']['field_work_year']['settings'] = array(
-    'format_type' => 'dmy',
+    'format_type' => 'year',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
