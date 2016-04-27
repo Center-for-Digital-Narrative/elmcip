@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function elmcip_layout_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -31,7 +31,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_abstracttags|node|critical_writing|form'] = $field_group;
+  $field_groups['group_abstracttags|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -54,7 +54,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_bookjournal|node|critical_writing|form'] = $field_group;
+  $field_groups['group_bookjournal|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -77,7 +77,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_core_vt|node|work|data_export'] = $field_group;
+  $field_groups['group_core_vt|node|work|data_export'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -100,7 +100,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_coreinfo_critical|node|critical_writing|form'] = $field_group;
+  $field_groups['group_coreinfo_critical|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -123,7 +123,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial_crit|node|critical_writing|default'] = $field_group;
+  $field_groups['group_editorial_crit|node|critical_writing|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -146,7 +146,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial_crit|node|critical_writing|form'] = $field_group;
+  $field_groups['group_editorial_crit|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -169,7 +169,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial_crit|node|critical_writing|teaser'] = $field_group;
+  $field_groups['group_editorial_crit|node|critical_writing|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -192,7 +192,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial|node|work|default'] = $field_group;
+  $field_groups['group_editorial|node|work|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -215,7 +215,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial|node|work|teaser'] = $field_group;
+  $field_groups['group_editorial|node|work|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -238,7 +238,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_references_crit|node|critical_writing|form'] = $field_group;
+  $field_groups['group_references_crit|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -261,7 +261,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_tr_editorial|node|teaching_resource|default'] = $field_group;
+  $field_groups['group_tr_editorial|node|teaching_resource|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -284,7 +284,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_tr_editorial|node|teaching_resource|teaser'] = $field_group;
+  $field_groups['group_tr_editorial|node|teaching_resource|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -307,7 +307,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_workdoc|node|work|data_export'] = $field_group;
+  $field_groups['group_workdoc|node|work|data_export'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -330,7 +330,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_workdoc|node|work|form'] = $field_group;
+  $field_groups['group_workdoc|node|work|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -353,7 +353,7 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_worksubmit|node|work|data_export'] = $field_group;
+  $field_groups['group_worksubmit|node|work|data_export'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -376,7 +376,18 @@ function elmcip_layout_field_group_info() {
       ),
     ),
   );
-  $export['group_worksubmit|node|work|form'] = $field_group;
+  $field_groups['group_worksubmit|node|work|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Core Info');
+  t('Core Information');
+  t('Description');
+  t('Documentation');
+  t('Editorial');
+  t('Information specific to books or journals');
+  t('References / Attachments');
+  t('Submit to ELMCIP Anthology');
+
+  return $field_groups;
 }

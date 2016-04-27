@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function elmcip_content_types_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -36,7 +36,11 @@ function elmcip_content_types_field_group_info() {
       ),
     ),
   );
-  $export['group_platform_editorial_status|node|platform_software|form'] = $field_group;
+  $field_groups['group_platform_editorial_status|node|platform_software|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Editorial Status');
+
+  return $field_groups;
 }

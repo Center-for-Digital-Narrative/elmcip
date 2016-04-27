@@ -29,9 +29,12 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 60,
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 39,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -97,7 +100,7 @@ function elmcip_content_types_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 21,
