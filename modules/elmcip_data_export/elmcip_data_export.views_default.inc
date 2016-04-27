@@ -16169,6 +16169,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['relationships']['field_node_ref_target_id']['table'] = 'field_data_field_node_ref';
   $handler->display->display_options['relationships']['field_node_ref_target_id']['field'] = 'field_node_ref_target_id';
   $handler->display->display_options['relationships']['field_node_ref_target_id']['label'] = 'Content entity referenced from Publisher';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_author_name_target_id']['id'] = 'field_author_name_target_id';
+  $handler->display->display_options['relationships']['field_author_name_target_id']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['relationships']['field_author_name_target_id']['field'] = 'field_author_name_target_id';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -16260,6 +16264,196 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title_2']['id'] = 'title_2';
+  $handler->display->display_options['filters']['title_2']['table'] = 'node';
+  $handler->display->display_options['filters']['title_2']['field'] = 'title';
+  $handler->display->display_options['filters']['title_2']['relationship'] = 'field_author_name_target_id';
+  $handler->display->display_options['filters']['title_2']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title_2']['group'] = 1;
+  $handler->display->display_options['filters']['title_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title_2']['expose']['operator_id'] = 'title_2_op';
+  $handler->display->display_options['filters']['title_2']['expose']['label'] = 'Author';
+  $handler->display->display_options['filters']['title_2']['expose']['operator'] = 'title_2_op';
+  $handler->display->display_options['filters']['title_2']['expose']['identifier'] = 'title_2';
+  $handler->display->display_options['filters']['title_2']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title_3']['id'] = 'title_3';
+  $handler->display->display_options['filters']['title_3']['table'] = 'node';
+  $handler->display->display_options['filters']['title_3']['field'] = 'title';
+  $handler->display->display_options['filters']['title_3']['operator'] = 'word';
+  $handler->display->display_options['filters']['title_3']['group'] = 1;
+  $handler->display->display_options['filters']['title_3']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title_3']['expose']['operator_id'] = 'title_3_op';
+  $handler->display->display_options['filters']['title_3']['expose']['label'] = 'Words in Title';
+  $handler->display->display_options['filters']['title_3']['expose']['operator'] = 'title_3_op';
+  $handler->display->display_options['filters']['title_3']['expose']['identifier'] = 'title_3';
+  $handler->display->display_options['filters']['title_3']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  /* Filter criterion: Content: Language (field_language_tax) */
+  $handler->display->display_options['filters']['field_language_tax_tid']['id'] = 'field_language_tax_tid';
+  $handler->display->display_options['filters']['field_language_tax_tid']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['filters']['field_language_tax_tid']['field'] = 'field_language_tax_tid';
+  $handler->display->display_options['filters']['field_language_tax_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_language_tax_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['operator_id'] = 'field_language_tax_tid_op';
+  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['label'] = 'Language';
+  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['operator'] = 'field_language_tax_tid_op';
+  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['identifier'] = 'field_language_tax_tid';
+  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  $handler->display->display_options['filters']['field_language_tax_tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['field_language_tax_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_language_tax_tid']['vocabulary'] = 'language';
+  $handler->display->display_options['filters']['field_language_tax_tid']['error_message'] = FALSE;
+  /* Filter criterion: Content: Year (field_work_year) */
+  $handler->display->display_options['filters']['field_work_year_value']['id'] = 'field_work_year_value';
+  $handler->display->display_options['filters']['field_work_year_value']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['filters']['field_work_year_value']['field'] = 'field_work_year_value';
+  $handler->display->display_options['filters']['field_work_year_value']['operator'] = 'between';
+  $handler->display->display_options['filters']['field_work_year_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_work_year_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_work_year_value']['expose']['operator_id'] = 'field_work_year_value_op';
+  $handler->display->display_options['filters']['field_work_year_value']['expose']['label'] = 'Year';
+  $handler->display->display_options['filters']['field_work_year_value']['expose']['use_operator'] = TRUE;
+  $handler->display->display_options['filters']['field_work_year_value']['expose']['operator_label'] = 'Date criteria';
+  $handler->display->display_options['filters']['field_work_year_value']['expose']['operator'] = 'field_work_year_value_op';
+  $handler->display->display_options['filters']['field_work_year_value']['expose']['identifier'] = 'field_work_year_value';
+  $handler->display->display_options['filters']['field_work_year_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  $handler->display->display_options['filters']['field_work_year_value']['granularity'] = 'year';
+  $handler->display->display_options['filters']['field_work_year_value']['form_type'] = 'date_text';
+  $handler->display->display_options['filters']['field_work_year_value']['year_range'] = '1900:+3';
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['relationship'] = 'field_node_ref_target_id';
+  $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['group'] = 1;
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Publisher';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  /* Filter criterion: Content: Publication Type (field_venue_tax) */
+  $handler->display->display_options['filters']['field_venue_tax_tid']['id'] = 'field_venue_tax_tid';
+  $handler->display->display_options['filters']['field_venue_tax_tid']['table'] = 'field_data_field_venue_tax';
+  $handler->display->display_options['filters']['field_venue_tax_tid']['field'] = 'field_venue_tax_tid';
+  $handler->display->display_options['filters']['field_venue_tax_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_venue_tax_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['operator_id'] = 'field_venue_tax_tid_op';
+  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['label'] = 'Publication Type';
+  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['operator'] = 'field_venue_tax_tid_op';
+  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['identifier'] = 'field_venue_tax_tid';
+  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  $handler->display->display_options['filters']['field_venue_tax_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_venue_tax_tid']['vocabulary'] = 'publication_venue';
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['filters']['title_1']['table'] = 'node';
+  $handler->display->display_options['filters']['title_1']['field'] = 'title';
+  $handler->display->display_options['filters']['title_1']['relationship'] = 'field_work_platform_software_target_id';
+  $handler->display->display_options['filters']['title_1']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title_1']['group'] = 1;
+  $handler->display->display_options['filters']['title_1']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title_1']['expose']['operator_id'] = 'title_1_op';
+  $handler->display->display_options['filters']['title_1']['expose']['label'] = 'Platform/Software';
+  $handler->display->display_options['filters']['title_1']['expose']['operator'] = 'title_1_op';
+  $handler->display->display_options['filters']['title_1']['expose']['identifier'] = 'title_1';
+  $handler->display->display_options['filters']['title_1']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  /* Filter criterion: Content: Tags (taxonomy_vocabulary_1) */
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['id'] = 'taxonomy_vocabulary_1_tid';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['field'] = 'taxonomy_vocabulary_1_tid';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['value'] = '';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['operator_id'] = 'taxonomy_vocabulary_1_tid_op';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['label'] = 'Tags';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['operator'] = 'taxonomy_vocabulary_1_tid_op';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['identifier'] = 'taxonomy_vocabulary_1_tid';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['vocabulary'] = 'vocabulary_1';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block_1');
@@ -16337,6 +16531,24 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'work' => 'work',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -16402,174 +16614,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['changed']['table'] = 'node';
   $handler->display->display_options['sorts']['changed']['field'] = 'changed';
   $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = '1';
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'work' => 'work',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-  $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Language (field_language_tax) */
-  $handler->display->display_options['filters']['field_language_tax_tid']['id'] = 'field_language_tax_tid';
-  $handler->display->display_options['filters']['field_language_tax_tid']['table'] = 'field_data_field_language_tax';
-  $handler->display->display_options['filters']['field_language_tax_tid']['field'] = 'field_language_tax_tid';
-  $handler->display->display_options['filters']['field_language_tax_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_language_tax_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['operator_id'] = 'field_language_tax_tid_op';
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['label'] = 'Language';
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['operator'] = 'field_language_tax_tid_op';
-  $handler->display->display_options['filters']['field_language_tax_tid']['expose']['identifier'] = 'field_language_tax_tid';
-  $handler->display->display_options['filters']['field_language_tax_tid']['reduce_duplicates'] = TRUE;
-  $handler->display->display_options['filters']['field_language_tax_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_language_tax_tid']['vocabulary'] = 'language';
-  $handler->display->display_options['filters']['field_language_tax_tid']['error_message'] = FALSE;
-  /* Filter criterion: Content: Year (field_work_year) */
-  $handler->display->display_options['filters']['field_work_year_value']['id'] = 'field_work_year_value';
-  $handler->display->display_options['filters']['field_work_year_value']['table'] = 'field_data_field_work_year';
-  $handler->display->display_options['filters']['field_work_year_value']['field'] = 'field_work_year_value';
-  $handler->display->display_options['filters']['field_work_year_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_work_year_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_work_year_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_work_year_value']['expose']['operator_id'] = 'field_work_year_value_op';
-  $handler->display->display_options['filters']['field_work_year_value']['expose']['operator'] = 'field_work_year_value_op';
-  $handler->display->display_options['filters']['field_work_year_value']['expose']['identifier'] = 'field_work_year_value';
-  $handler->display->display_options['filters']['field_work_year_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    7 => 0,
-    3 => 0,
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    8 => 0,
-    4 => 0,
-    9 => 0,
-  );
-  $handler->display->display_options['filters']['field_work_year_value']['granularity'] = 'year';
-  $handler->display->display_options['filters']['field_work_year_value']['form_type'] = 'date_text';
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title_2']['id'] = 'title_2';
-  $handler->display->display_options['filters']['title_2']['table'] = 'node';
-  $handler->display->display_options['filters']['title_2']['field'] = 'title';
-  $handler->display->display_options['filters']['title_2']['relationship'] = 'field_node_ref_target_id';
-  $handler->display->display_options['filters']['title_2']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title_2']['group'] = 1;
-  $handler->display->display_options['filters']['title_2']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title_2']['expose']['operator_id'] = 'title_2_op';
-  $handler->display->display_options['filters']['title_2']['expose']['label'] = 'Publisher';
-  $handler->display->display_options['filters']['title_2']['expose']['operator'] = 'title_2_op';
-  $handler->display->display_options['filters']['title_2']['expose']['identifier'] = 'title_2';
-  $handler->display->display_options['filters']['title_2']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['title_2']['expose']['remember_roles'] = array(
-    2 => '2',
-    7 => 0,
-    3 => 0,
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    8 => 0,
-    4 => 0,
-    9 => 0,
-  );
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['relationship'] = 'field_work_platform_software_target_id';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['group'] = 1;
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Platform/Software';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
-  $handler->display->display_options['filters']['title']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
-    2 => '2',
-    7 => 0,
-    3 => 0,
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    8 => 0,
-    4 => 0,
-    9 => 0,
-  );
-  /* Filter criterion: Content: Publication Type (field_venue_tax) */
-  $handler->display->display_options['filters']['field_venue_tax_tid']['id'] = 'field_venue_tax_tid';
-  $handler->display->display_options['filters']['field_venue_tax_tid']['table'] = 'field_data_field_venue_tax';
-  $handler->display->display_options['filters']['field_venue_tax_tid']['field'] = 'field_venue_tax_tid';
-  $handler->display->display_options['filters']['field_venue_tax_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_venue_tax_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['operator_id'] = 'field_venue_tax_tid_op';
-  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['label'] = 'Publication Venue';
-  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['operator'] = 'field_venue_tax_tid_op';
-  $handler->display->display_options['filters']['field_venue_tax_tid']['expose']['identifier'] = 'field_venue_tax_tid';
-  $handler->display->display_options['filters']['field_venue_tax_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_venue_tax_tid']['vocabulary'] = 'publication_venue';
-  /* Filter criterion: Content: Publication Type (field_venue_tax) */
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['id'] = 'field_venue_tax_tid_1';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['table'] = 'field_data_field_venue_tax';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['field'] = 'field_venue_tax_tid';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['value'] = array(
-    2702 => '2702',
-    1613 => '1613',
-    2703 => '2703',
-  );
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['group'] = 1;
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['expose']['operator_id'] = 'field_venue_tax_tid_1_op';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['expose']['label'] = 'Exclude';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['expose']['operator'] = 'field_venue_tax_tid_1_op';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['expose']['identifier'] = 'field_venue_tax_tid_1';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['expose']['multiple'] = TRUE;
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['expose']['remember_roles'] = array(
-    2 => '2',
-    7 => 0,
-    3 => 0,
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    8 => 0,
-    4 => 0,
-    9 => 0,
-  );
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['expose']['reduce'] = TRUE;
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['type'] = 'select';
-  $handler->display->display_options['filters']['field_venue_tax_tid_1']['vocabulary'] = 'publication_venue';
-  /* Filter criterion: Content: Tags (taxonomy_vocabulary_1) */
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['id'] = 'taxonomy_vocabulary_1_tid';
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['table'] = 'field_data_taxonomy_vocabulary_1';
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['field'] = 'taxonomy_vocabulary_1_tid';
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['value'] = '';
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['operator_id'] = 'taxonomy_vocabulary_1_tid_op';
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['label'] = 'Tags (taxonomy_vocabulary_1)';
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['operator'] = 'taxonomy_vocabulary_1_tid_op';
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['identifier'] = 'taxonomy_vocabulary_1_tid';
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    7 => 0,
-    3 => 0,
-    1 => 0,
-    6 => 0,
-    5 => 0,
-    8 => 0,
-    4 => 0,
-    9 => 0,
-  );
-  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['vocabulary'] = 'vocabulary_1';
   $handler->display->display_options['path'] = 'work';
 
   /* Display: Feed */
@@ -16608,7 +16652,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['filename'] = '%view%timestamp-full.xls';
-  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['parent_sort'] = 1;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -16750,21 +16794,22 @@ function elmcip_data_export_views_default_views() {
     t('The site contain not any content of this type. Be the first to <a href="/node/add/work">add new</a> work content.'),
     t('Content entity referenced from field_work_platform_software'),
     t('Content entity referenced from Publisher'),
+    t('Content entity referenced from field_author_name'),
     t('Title'),
     t('Author'),
     t('Year'),
     t('Updated'),
     t('Tags'),
     t('Platform/Software (field_work_platform_software)'),
+    t('Words in Title'),
+    t('Language'),
+    t('Date criteria'),
+    t('Publisher'),
+    t('Publication Type'),
+    t('Platform/Software'),
     t('Block'),
     t('more'),
     t('Page'),
-    t('Language'),
-    t('Publisher'),
-    t('Platform/Software'),
-    t('Publication Venue'),
-    t('Exclude'),
-    t('Tags (taxonomy_vocabulary_1)'),
     t('Feed'),
     t('ELMCIP: Creative Works Recently Added to the Knowledge Base'),
     t('Data export'),
