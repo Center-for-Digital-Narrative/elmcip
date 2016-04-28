@@ -1243,7 +1243,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['alter']['text'] = '2000[taxonomy_vocabulary_1_1-tid]';
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -1251,7 +1251,7 @@ function elmcip_data_export_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -1265,7 +1265,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Event (field_node_ref_event) */
+  /* Contextual filter: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -1358,7 +1358,7 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -1366,7 +1366,7 @@ function elmcip_data_export_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -1416,7 +1416,7 @@ function elmcip_data_export_views_default_views() {
     t('Tags'),
     t('Tag ID'),
     t('2000[taxonomy_vocabulary_1_1-tid]'),
-    t('Event'),
+    t('Presented at Event'),
     t('Event ID'),
     t('All'),
     t('Entity content'),
@@ -1659,7 +1659,7 @@ function elmcip_data_export_views_default_views() {
     'link' => 1,
   );
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Contextual filter: Content: Event (field_node_ref_event) */
+  /* Contextual filter: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -1714,7 +1714,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_options']['filename'] = '%1-title_%view.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -1723,7 +1723,7 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -1786,7 +1786,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_options']['filename'] = '%1-title_%view.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -1795,7 +1795,7 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -1871,7 +1871,7 @@ function elmcip_data_export_views_default_views() {
     t('All'),
     t('Entity content'),
     t('Data export'),
-    t('Event'),
+    t('Presented at Event'),
     t('Event ID'),
     t('Work Nid'),
     t('Author Nid'),
@@ -2188,7 +2188,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Critical Writing referenced (field_tr_critical) */
+  /* Contextual filter: Content: Critical Writing Referenced (field_tr_critical) */
   $handler->display->display_options['arguments']['field_tr_critical_nid']['id'] = 'field_tr_critical_nid';
   $handler->display->display_options['arguments']['field_tr_critical_nid']['table'] = 'field_data_field_tr_critical';
   $handler->display->display_options['arguments']['field_tr_critical_nid']['field'] = 'field_tr_critical_nid';
@@ -4485,12 +4485,12 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -4525,7 +4525,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  /* Filter criterion: Content: Event (field_node_ref_event) */
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -4564,7 +4564,7 @@ function elmcip_data_export_views_default_views() {
     t('Nid'),
     t('Author'),
     t('Author NID'),
-    t('Event'),
+    t('Presented at Event'),
     t('Event NID'),
     t('Year'),
     t('Data export -- Author Event Tag'),
@@ -4942,7 +4942,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['content'] = 'Add new <a href="http://elmcip.net/node/add/critical-writing">critical writing</a>.';
   $handler->display->display_options['footer']['area']['format'] = 'ds_code';
-  /* Relationship: Content: Critical Writing referenced (field_tr_critical) */
+  /* Relationship: Content: Critical Writing Referenced (field_tr_critical) */
   $handler->display->display_options['relationships']['field_tr_critical_nid']['id'] = 'field_tr_critical_nid';
   $handler->display->display_options['relationships']['field_tr_critical_nid']['table'] = 'field_data_field_tr_critical';
   $handler->display->display_options['relationships']['field_tr_critical_nid']['field'] = 'field_tr_critical_nid';
@@ -5108,7 +5108,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Database or Archive reference (field_database_or_archive_refere) */
+  /* Contextual filter: Content: Database or Archive Referenced (field_database_or_archive_refere) */
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['id'] = 'field_database_or_archive_refere_nid';
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['table'] = 'field_data_field_database_or_archive_refere';
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['field'] = 'field_database_or_archive_refere_nid';
@@ -5260,12 +5260,6 @@ function elmcip_data_export_views_default_views() {
     'link' => 1,
   );
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Publication Type */
-  $handler->display->display_options['fields']['field_pubtype_tax']['id'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['table'] = 'field_data_field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
   $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
@@ -5275,25 +5269,38 @@ function elmcip_data_export_views_default_views() {
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_pubtype_tax']['id'] = 'field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['table'] = 'field_data_field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
   /* Field: Content: Appears in */
   $handler->display->display_options['fields']['field_inbook']['id'] = 'field_inbook';
   $handler->display->display_options['fields']['field_inbook']['table'] = 'field_data_field_inbook';
   $handler->display->display_options['fields']['field_inbook']['field'] = 'field_inbook';
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['field_language_tax']['id'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
   /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
   $handler->display->display_options['fields']['changed']['table'] = 'node';
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
   $handler->display->display_options['fields']['changed']['label'] = 'Updated';
+  $handler->display->display_options['fields']['changed']['exclude'] = TRUE;
   $handler->display->display_options['fields']['changed']['alter']['max_length'] = '10';
   $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['changed']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['changed']['date_format'] = 'short';
-  /* Field: Content: Edit link */
-  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['changed']['second_date_format'] = 'long';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['delta_offset'] = '0';
   /* Sort criterion: Content: Updated date */
   $handler->display->display_options['sorts']['changed']['id'] = 'changed';
   $handler->display->display_options['sorts']['changed']['table'] = 'node';
@@ -5463,6 +5470,60 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
+  $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
+  $handler->display->display_options['fields']['field_number']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_number']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_pubtype_tax']['id'] = 'field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['table'] = 'field_data_field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
+  /* Field: Content: Appears in */
+  $handler->display->display_options['fields']['field_inbook']['id'] = 'field_inbook';
+  $handler->display->display_options['fields']['field_inbook']['table'] = 'field_data_field_inbook';
+  $handler->display->display_options['fields']['field_inbook']['field'] = 'field_inbook';
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['field_language_tax']['id'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['label'] = 'Updated';
+  $handler->display->display_options['fields']['changed']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['changed']['alter']['max_length'] = '10';
+  $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['changed']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['changed']['date_format'] = 'short';
+  $handler->display->display_options['fields']['changed']['second_date_format'] = 'long';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'critical_writing';
 
   /* Display: Data export */
@@ -5639,11 +5700,12 @@ function elmcip_data_export_views_default_views() {
     t('Title'),
     t('Nid'),
     t('Author'),
-    t('Publication Type'),
     t('Year'),
+    t('Publication Type'),
     t('Appears in'),
-    t('Updated'),
     t('Language'),
+    t('Updated'),
+    t('Tags'),
     t('Page'),
     t('Preview of data export'),
     t('more'),
@@ -5731,7 +5793,7 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -5739,7 +5801,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -5765,7 +5827,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  /* Filter criterion: Content: Event (field_node_ref_event) */
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -5815,7 +5877,7 @@ function elmcip_data_export_views_default_views() {
     t('Author ID'),
     t('Author'),
     t('Event NID'),
-    t('Event'),
+    t('Presented at Event'),
     t('Page'),
     t('Data export'),
   );
@@ -6472,7 +6534,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Critical writing referenced';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Critical Writing referenced (field_tr_critical) */
+  /* Relationship: Content: Critical Writing Referenced (field_tr_critical) */
   $handler->display->display_options['relationships']['field_tr_critical_nid']['id'] = 'field_tr_critical_nid';
   $handler->display->display_options['relationships']['field_tr_critical_nid']['table'] = 'field_data_field_tr_critical';
   $handler->display->display_options['relationships']['field_tr_critical_nid']['field'] = 'field_tr_critical_nid';
@@ -7285,7 +7347,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Critical Writing referenced (field_tr_critical) */
+  /* Contextual filter: Content: Critical Writing Referenced (field_tr_critical) */
   $handler->display->display_options['arguments']['field_tr_critical_nid']['id'] = 'field_tr_critical_nid';
   $handler->display->display_options['arguments']['field_tr_critical_nid']['table'] = 'field_data_field_tr_critical';
   $handler->display->display_options['arguments']['field_tr_critical_nid']['field'] = 'field_tr_critical_nid';
@@ -7511,7 +7573,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Database or Archive referenced';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Database or Archive reference (field_database_or_archive_refere) */
+  /* Relationship: Content: Database or Archive Referenced (field_database_or_archive_refere) */
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['id'] = 'field_database_or_archive_refere_nid';
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['table'] = 'field_data_field_database_or_archive_refere';
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['field'] = 'field_database_or_archive_refere_nid';
@@ -7629,7 +7691,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['content'] = 'Add a new <a href="http://elmcip.net/node/add/work">database</a>.';
   $handler->display->display_options['footer']['area']['format'] = '1';
-  /* Relationship: Content: Database or Archive reference (field_database_or_archive_refere) */
+  /* Relationship: Content: Database or Archive Referenced (field_database_or_archive_refere) */
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['id'] = 'field_database_or_archive_refere_nid';
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['table'] = 'field_data_field_database_or_archive_refere';
   $handler->display->display_options['relationships']['field_database_or_archive_refere_nid']['field'] = 'field_database_or_archive_refere_nid';
@@ -11742,7 +11804,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Event (field_node_ref_event) */
+  /* Contextual filter: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['arguments']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -13602,7 +13664,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Database or Archive reference (field_database_or_archive_refere) */
+  /* Contextual filter: Content: Database or Archive Referenced (field_database_or_archive_refere) */
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['id'] = 'field_database_or_archive_refere_nid';
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['table'] = 'field_data_field_database_or_archive_refere';
   $handler->display->display_options['arguments']['field_database_or_archive_refere_nid']['field'] = 'field_database_or_archive_refere_nid';
@@ -15699,7 +15761,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -15707,7 +15769,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref_event']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -15733,7 +15795,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'work' => 'work',
   );
-  /* Filter criterion: Content: Event (field_node_ref_event) */
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -15781,7 +15843,7 @@ function elmcip_data_export_views_default_views() {
     t('Work ID'),
     t('Title'),
     t('Event ID'),
-    t('Event'),
+    t('Presented at Event'),
     t('Page'),
     t('Data export'),
   );
@@ -16438,7 +16500,7 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -16476,7 +16538,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'work' => 'work',
   );
-  /* Filter criterion: Content: Event (field_node_ref_event) */
+  /* Filter criterion: Content: Presented at Event (field_node_ref_event) */
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['filters']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
@@ -16508,7 +16570,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
-  /* Field: Content: Event */
+  /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
