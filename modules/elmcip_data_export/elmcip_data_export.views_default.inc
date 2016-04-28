@@ -16066,7 +16066,7 @@ function elmcip_data_export_views_default_views() {
   $view = new view();
   $view->name = 'work_page';
   $view->description = 'Works page view';
-  $view->tag = 'Work, Page';
+  $view->tag = 'Work, Page, data export';
   $view->base_table = 'node';
   $view->human_name = 'Work Page';
   $view->core = 0;
@@ -16173,6 +16173,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['relationships']['field_author_name_target_id']['id'] = 'field_author_name_target_id';
   $handler->display->display_options['relationships']['field_author_name_target_id']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['relationships']['field_author_name_target_id']['field'] = 'field_author_name_target_id';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
+  $handler->display->display_options['relationships']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['relationships']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -16409,6 +16413,29 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['field_venue_tax_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_venue_tax_tid']['vocabulary'] = 'publication_venue';
   /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title_4']['id'] = 'title_4';
+  $handler->display->display_options['filters']['title_4']['table'] = 'node';
+  $handler->display->display_options['filters']['title_4']['field'] = 'title';
+  $handler->display->display_options['filters']['title_4']['relationship'] = 'field_node_ref_event_target_id';
+  $handler->display->display_options['filters']['title_4']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title_4']['group'] = 1;
+  $handler->display->display_options['filters']['title_4']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title_4']['expose']['operator_id'] = 'title_4_op';
+  $handler->display->display_options['filters']['title_4']['expose']['label'] = 'Event at which work was presented';
+  $handler->display->display_options['filters']['title_4']['expose']['operator'] = 'title_4_op';
+  $handler->display->display_options['filters']['title_4']['expose']['identifier'] = 'title_4';
+  $handler->display->display_options['filters']['title_4']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
+  /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title_1']['id'] = 'title_1';
   $handler->display->display_options['filters']['title_1']['table'] = 'node';
   $handler->display->display_options['filters']['title_1']['field'] = 'title';
@@ -16436,6 +16463,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['table'] = 'field_data_taxonomy_vocabulary_1';
   $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['field'] = 'taxonomy_vocabulary_1_tid';
   $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['value'] = '';
+  $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['group'] = 1;
   $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['operator_id'] = 'taxonomy_vocabulary_1_tid_op';
   $handler->display->display_options['filters']['taxonomy_vocabulary_1_tid']['expose']['label'] = 'Tags';
@@ -16751,6 +16779,27 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_language_tax_1']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_language_tax_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_language_tax_1']['delta_offset'] = '0';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Event';
+  $handler->display->display_options['fields']['field_node_ref_event']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event ID';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref_event_1']['delta_offset'] = '0';
   /* Field: Content: All taxonomy terms */
   $handler->display->display_options['fields']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
@@ -16795,6 +16844,7 @@ function elmcip_data_export_views_default_views() {
     t('Content entity referenced from field_work_platform_software'),
     t('Content entity referenced from Publisher'),
     t('Content entity referenced from field_author_name'),
+    t('Content entity referenced from field_node_ref_event'),
     t('Title'),
     t('Author'),
     t('Year'),
@@ -16806,6 +16856,7 @@ function elmcip_data_export_views_default_views() {
     t('Date criteria'),
     t('Publisher'),
     t('Publication Type'),
+    t('Event at which work was presented'),
     t('Platform/Software'),
     t('Block'),
     t('more'),
@@ -16819,6 +16870,8 @@ function elmcip_data_export_views_default_views() {
     t('Publisher ID'),
     t('Language ID'),
     t('2000[field_language_tax_1-tid]'),
+    t('Event'),
+    t('Event ID'),
   );
   $export['work_page'] = $view;
 
