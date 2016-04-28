@@ -5244,6 +5244,11 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['footer']['text']['field'] = 'area';
   $handler->display->display_options['footer']['text']['content'] = 'Add new <a href="/node/add/critical-writing" target="_blank">critical writing</a>.';
   $handler->display->display_options['footer']['text']['format'] = '1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_node_ref_target_id']['id'] = 'field_node_ref_target_id';
+  $handler->display->display_options['relationships']['field_node_ref_target_id']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['relationships']['field_node_ref_target_id']['field'] = 'field_node_ref_target_id';
+  $handler->display->display_options['relationships']['field_node_ref_target_id']['label'] = 'Publisher content entity referenced from field_node_ref';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -5357,6 +5362,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['field_number_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_number_value']['expose']['operator_id'] = 'field_number_value_op';
   $handler->display->display_options['filters']['field_number_value']['expose']['label'] = 'Year';
+  $handler->display->display_options['filters']['field_number_value']['expose']['use_operator'] = TRUE;
+  $handler->display->display_options['filters']['field_number_value']['expose']['operator_label'] = 'Choose criteria';
   $handler->display->display_options['filters']['field_number_value']['expose']['operator'] = 'field_number_value_op';
   $handler->display->display_options['filters']['field_number_value']['expose']['identifier'] = 'field_number_value';
   $handler->display->display_options['filters']['field_number_value']['expose']['remember_roles'] = array(
@@ -5392,6 +5399,28 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['vocabulary'] = 'publication_type';
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['relationship'] = 'field_node_ref_target_id';
+  $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Publisher';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    7 => 0,
+    3 => 0,
+    1 => 0,
+    6 => 0,
+    5 => 0,
+    8 => 0,
+    4 => 0,
+    9 => 0,
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -5529,15 +5558,14 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    7 => '7',
-    3 => '3',
+    2 => '2',
   );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
   $handler->display->display_options['style_options']['attach_text'] = 'Critical Writing Data';
   $handler->display->display_options['style_options']['provide_file'] = 1;
-  $handler->display->display_options['style_options']['filename'] = '%exposed_%view.xls';
+  $handler->display->display_options['style_options']['filename'] = 'critical_writing_%timestamp-full.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 1;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -5555,6 +5583,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name']['settings'] = array(
     'link' => 0,
   );
+  $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Author */
   $handler->display->display_options['fields']['field_author_name_1']['id'] = 'field_author_name_1';
@@ -5567,13 +5596,6 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
-  /* Field: Content: Publication Type */
-  $handler->display->display_options['fields']['field_pubtype_tax']['id'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['table'] = 'field_data_field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
-  $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_pubtype_tax']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
   $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
@@ -5583,10 +5605,50 @@ function elmcip_data_export_views_default_views() {
     'thousand_separator' => '',
     'prefix_suffix' => 1,
   );
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_pubtype_tax']['id'] = 'field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['table'] = 'field_data_field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['field'] = 'field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_pubtype_tax']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_pubtype_tax']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_pubtype_tax']['delta_offset'] = '0';
+  /* Field: Content: Publication Type */
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['id'] = 'field_pubtype_tax_1';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['table'] = 'field_data_field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['field'] = 'field_pubtype_tax';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['label'] = 'Publication Type ID';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['alter']['text'] = '2000[field_pubtype_tax_1-tid]';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_pubtype_tax_1']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref']['id'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref_1']['id'] = 'field_node_ref_1';
+  $handler->display->display_options['fields']['field_node_ref_1']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref_1']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref_1']['label'] = 'Publisher ID';
+  $handler->display->display_options['fields']['field_node_ref_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_1']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_node_ref_1']['delta_offset'] = '0';
   /* Field: Content: Appears in */
   $handler->display->display_options['fields']['field_inbook']['id'] = 'field_inbook';
   $handler->display->display_options['fields']['field_inbook']['table'] = 'field_data_field_inbook';
   $handler->display->display_options['fields']['field_inbook']['field'] = 'field_inbook';
+  $handler->display->display_options['fields']['field_inbook']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_inbook']['delta_offset'] = '0';
   /* Field: Content: Appears in */
   $handler->display->display_options['fields']['field_inbook_1']['id'] = 'field_inbook_1';
   $handler->display->display_options['fields']['field_inbook_1']['table'] = 'field_data_field_inbook';
@@ -5594,8 +5656,13 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_inbook_1']['label'] = 'Journal NID';
   $handler->display->display_options['fields']['field_inbook_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_inbook_1']['alter']['text'] = '[field_inbook_1-nid]';
+  $handler->display->display_options['fields']['field_inbook_1']['type'] = 'node_reference_nid';
   $handler->display->display_options['fields']['field_inbook_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_inbook_1']['delta_offset'] = '0';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
   $handler->display->display_options['path'] = 'cw_ref_works_data';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
@@ -5695,6 +5762,7 @@ function elmcip_data_export_views_default_views() {
     t('last »'),
     t('@total records'),
     t('Add new <a href="/node/add/critical-writing" target="_blank">critical writing</a>.'),
+    t('Publisher content entity referenced from field_node_ref'),
     t('Title'),
     t('Nid'),
     t('Author'),
@@ -5703,12 +5771,17 @@ function elmcip_data_export_views_default_views() {
     t('Appears in'),
     t('Updated'),
     t('Language'),
+    t('Choose criteria'),
+    t('Publisher'),
     t('Page'),
     t('Preview of data export'),
     t('more'),
     t('Tags'),
     t('Data export'),
     t('Author ID'),
+    t('Publication Type ID'),
+    t('2000[field_pubtype_tax_1-tid]'),
+    t('Publisher ID'),
     t('Journal NID'),
     t('[field_inbook_1-nid]'),
     t('Content pane'),
