@@ -85,6 +85,13 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'dashboard',
   );
 
+  // Exported permission: 'access media browser'.
+  $permissions['access media browser'] = array(
+    'name' => 'access media browser',
+    'roles' => array(),
+    'module' => 'media',
+  );
+
   // Exported permission: 'access mollom statistics'.
   $permissions['access mollom statistics'] = array(
     'name' => 'access mollom statistics',
@@ -376,6 +383,13 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'locale',
+  );
+
+  // Exported permission: 'administer media browser'.
+  $permissions['administer media browser'] = array(
+    'name' => 'administer media browser',
+    'roles' => array(),
+    'module' => 'media',
   );
 
   // Exported permission: 'administer menu'.
@@ -2801,6 +2815,15 @@ function elmcip_permissions_user_default_permissions() {
     'name' => 'use bulk exporter',
     'roles' => array(),
     'module' => 'bulk_export',
+  );
+
+  // Exported permission: 'use media wysiwyg'.
+  $permissions['use media wysiwyg'] = array(
+    'name' => 'use media wysiwyg',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media_wysiwyg',
   );
 
   // Exported permission: 'use page manager'.
