@@ -433,14 +433,24 @@ function elmcip_setup_update_7030() {
   field_delete_field('field_orig_lang');
 }
 
+/**
+ * Uninstall module - getid3.
+ */
 function elmcip_setup_update_7031() {
   module_disable(array('getid3'), false);
   drupal_uninstall_modules(array('getid3'), false);
 }
 
 /**
+ * Enable module - ELMCIP views platform organization.
+ */
+function elmcip_setup_update_7032(){
+  module_enable(array('elmcip_views_platform_organization'), FALSE);
+}
+
+/**
  * Uninstall module Auto nodetitle.
  */
-function elmcip_setup_update_7032() {
+function elmcip_setup_update_7033() {
   drupal_uninstall_modules(array('auto_nodetitle'), TRUE);
 }

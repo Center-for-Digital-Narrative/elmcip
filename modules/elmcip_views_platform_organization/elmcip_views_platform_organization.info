@@ -1,0 +1,11 @@
+name = ELMCIP views platform organization
+description = Create lists of platform and organization content
+core = 7.x
+package = ELMCIP
+dependencies[] = eva
+dependencies[] = views
+dependencies[] = views_data_export
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = organization_platform
+features_exclude[dependencies][ctools] = ctools

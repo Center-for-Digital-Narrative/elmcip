@@ -508,12 +508,12 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'full_name' => array(
-      'weight' => '26',
+      'weight' => '27',
       'label' => 'inline',
       'format' => 'default',
     ),
     'purl' => array(
-      'weight' => '27',
+      'weight' => '28',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -523,7 +523,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '28',
+      'weight' => '29',
       'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
@@ -1820,12 +1820,13 @@ function elmcip_layout_ds_layout_settings_info() {
         8 => 'Critical_writing_organization_entity_view_1',
         9 => 'work_organization_entity_view_1',
         10 => 'tr_org_entity_view_1',
-        11 => 'people_afil_on_organization_entity_view_1',
-        12 => 'research_collection_organization_entity_view_1',
-        13 => 'field_multi_images',
-        14 => 'field_files',
-        15 => 'purl',
-        16 => 'author',
+        11 => 'organization_platform_entity_view_1',
+        12 => 'people_afil_on_organization_entity_view_1',
+        13 => 'research_collection_organization_entity_view_1',
+        14 => 'field_multi_images',
+        15 => 'field_files',
+        16 => 'purl',
+        17 => 'author',
       ),
     ),
     'fields' => array(
@@ -1840,6 +1841,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'Critical_writing_organization_entity_view_1' => 'right',
       'work_organization_entity_view_1' => 'right',
       'tr_org_entity_view_1' => 'right',
+      'organization_platform_entity_view_1' => 'right',
       'people_afil_on_organization_entity_view_1' => 'right',
       'research_collection_organization_entity_view_1' => 'right',
       'field_multi_images' => 'right',
@@ -1857,6 +1859,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|organization|full'] = $ds_layout;
 
@@ -1974,6 +1977,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|person|full'] = $ds_layout;
 
@@ -2146,14 +2150,15 @@ function elmcip_layout_ds_layout_settings_info() {
       ),
       'right' => array(
         9 => 'field_textfield',
-        10 => 'critical_writing_on_publisher_entity_view_1',
-        11 => 'critical_writing_on_referenced_publisher_entity_view_1',
-        12 => 'Work_publisher_entity_view_1',
-        13 => 'series_on_publisher_entity_view_1',
-        14 => 'research_collection_publisher_entity_view_1',
-        15 => 'field_events',
-        16 => 'purl',
-        17 => 'author',
+        10 => 'organization_platform_entity_view_1',
+        11 => 'critical_writing_on_publisher_entity_view_1',
+        12 => 'critical_writing_on_referenced_publisher_entity_view_1',
+        13 => 'Work_publisher_entity_view_1',
+        14 => 'series_on_publisher_entity_view_1',
+        15 => 'research_collection_publisher_entity_view_1',
+        16 => 'field_events',
+        17 => 'purl',
+        18 => 'author',
       ),
     ),
     'fields' => array(
@@ -2167,6 +2172,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_record_status_tax' => 'left',
       'field_editorial_notes' => 'left',
       'field_textfield' => 'right',
+      'organization_platform_entity_view_1' => 'right',
       'critical_writing_on_publisher_entity_view_1' => 'right',
       'critical_writing_on_referenced_publisher_entity_view_1' => 'right',
       'Work_publisher_entity_view_1' => 'right',

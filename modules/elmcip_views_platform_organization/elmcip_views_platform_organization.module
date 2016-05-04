@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ELMCIP views platform organization feature.
+ */
+
+include_once 'elmcip_views_platform_organization.features.inc';

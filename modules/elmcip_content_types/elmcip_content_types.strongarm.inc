@@ -1988,6 +1988,12 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'organization_platform_entity_view_1' => array(
+          'full' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
     'view_modes' => array(
@@ -2136,7 +2142,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '15',
+            'weight' => '16',
             'visible' => TRUE,
           ),
           'user_attach_person_refs' => array(
@@ -2158,7 +2164,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '13',
+            'weight' => '14',
             'visible' => TRUE,
           ),
           'user_attach_person_refs' => array(
@@ -2180,7 +2186,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '18',
+            'weight' => '19',
             'visible' => TRUE,
           ),
           'user_attach_person_refs' => array(
@@ -2202,7 +2208,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '21',
+            'weight' => '22',
             'visible' => TRUE,
           ),
           'user_attach_person_refs' => array(
@@ -2238,7 +2244,7 @@ function elmcip_content_types_strongarm() {
         ),
         'edited_by_person_edited_by_person' => array(
           'full' => array(
-            'weight' => '17',
+            'weight' => '18',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -2260,7 +2266,7 @@ function elmcip_content_types_strongarm() {
         ),
         'translated_by_person_translated_by_person' => array(
           'full' => array(
-            'weight' => '16',
+            'weight' => '17',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2278,7 +2284,7 @@ function elmcip_content_types_strongarm() {
         ),
         'org_affil_person_affiliation_person' => array(
           'full' => array(
-            'weight' => '23',
+            'weight' => '24',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2296,7 +2302,7 @@ function elmcip_content_types_strongarm() {
         ),
         'curator_of_edited_by_person' => array(
           'full' => array(
-            'weight' => '20',
+            'weight' => '21',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2321,7 +2327,7 @@ function elmcip_content_types_strongarm() {
         ),
         'research_collection_person_entity_view_1' => array(
           'full' => array(
-            'weight' => '24',
+            'weight' => '25',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -2335,7 +2341,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Work_entity_view_2' => array(
           'full' => array(
-            'weight' => '14',
+            'weight' => '15',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -2349,7 +2355,7 @@ function elmcip_content_types_strongarm() {
         ),
         'events_on_individual_organizer_page_entity_view_1' => array(
           'full' => array(
-            'weight' => '19',
+            'weight' => '20',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -2363,7 +2369,7 @@ function elmcip_content_types_strongarm() {
         ),
         'resource_collection_curated_by_person_edited_by_person' => array(
           'full' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -2373,6 +2379,12 @@ function elmcip_content_types_strongarm() {
           'search_result' => array(
             'weight' => '17',
             'visible' => FALSE,
+          ),
+        ),
+        'organization_platform_entity_view_1' => array(
+          'full' => array(
+            'weight' => '13',
+            'visible' => TRUE,
           ),
         ),
       ),
@@ -2647,6 +2659,12 @@ function elmcip_content_types_strongarm() {
           'search_result' => array(
             'weight' => '19',
             'visible' => FALSE,
+          ),
+        ),
+        'organization_platform_entity_view_1' => array(
+          'full' => array(
+            'weight' => '10',
+            'visible' => TRUE,
           ),
         ),
       ),

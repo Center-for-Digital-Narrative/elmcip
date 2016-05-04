@@ -9316,7 +9316,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 38,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -9733,7 +9733,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -9817,7 +9817,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 40,
       ),
       'region' => array(
         'label' => 'hidden',
@@ -9971,7 +9971,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 42,
       ),
       'region' => array(
         'label' => 'hidden',
@@ -10122,7 +10122,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 41,
       ),
       'region' => array(
         'label' => 'hidden',
@@ -10712,7 +10712,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 39,
       ),
       'search_result' => array(
         'label' => 'above',
