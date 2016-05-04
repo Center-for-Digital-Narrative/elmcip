@@ -88,7 +88,9 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'access media browser'.
   $permissions['access media browser'] = array(
     'name' => 'access media browser',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'media',
   );
 
@@ -230,6 +232,7 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'submitter' => 'submitter',
@@ -388,7 +391,9 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'administer media browser'.
   $permissions['administer media browser'] = array(
     'name' => 'administer media browser',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'media',
   );
 
