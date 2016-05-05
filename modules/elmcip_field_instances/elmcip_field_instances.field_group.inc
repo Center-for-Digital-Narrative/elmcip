@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function elmcip_field_instances_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -35,7 +35,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_abstracttags|node|critical_writing|default'] = $field_group;
+  $field_groups['group_abstracttags|node|critical_writing|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -60,7 +60,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_abstracttags|node|critical_writing|teaser'] = $field_group;
+  $field_groups['group_abstracttags|node|critical_writing|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -92,7 +92,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_bio_vt|node|person|form'] = $field_group;
+  $field_groups['group_bio_vt|node|person|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -119,7 +119,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_bio|node|person|default'] = $field_group;
+  $field_groups['group_bio|node|person|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -145,7 +145,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_bio|node|person|teaser'] = $field_group;
+  $field_groups['group_bio|node|person|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -176,7 +176,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_bookjournal|node|critical_writing|default'] = $field_group;
+  $field_groups['group_bookjournal|node|critical_writing|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -207,7 +207,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_bookjournal|node|critical_writing|teaser'] = $field_group;
+  $field_groups['group_bookjournal|node|critical_writing|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -248,7 +248,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_core_vt|node|work|form'] = $field_group;
+  $field_groups['group_core_vt|node|work|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -280,7 +280,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_coreinfo_critical|node|critical_writing|default'] = $field_group;
+  $field_groups['group_coreinfo_critical|node|critical_writing|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -308,7 +308,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_coreinfo_critical|node|critical_writing|teaser'] = $field_group;
+  $field_groups['group_coreinfo_critical|node|critical_writing|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -345,7 +345,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_coreinfo|node|databases_and_archives|form'] = $field_group;
+  $field_groups['group_coreinfo|node|databases_and_archives|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -380,7 +380,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_cw_book_journal_vt|node|critical_writing|form'] = $field_group;
+  $field_groups['group_cw_book_journal_vt|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -419,7 +419,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_cw_core_vt|node|critical_writing|form'] = $field_group;
+  $field_groups['group_cw_core_vt|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -452,7 +452,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_cw_description_vt|node|critical_writing|form'] = $field_group;
+  $field_groups['group_cw_description_vt|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -481,7 +481,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_cw_editorial_vt|node|critical_writing|form'] = $field_group;
+  $field_groups['group_cw_editorial_vt|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -518,7 +518,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_cw_references_vt|node|critical_writing|form'] = $field_group;
+  $field_groups['group_cw_references_vt|node|critical_writing|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -549,7 +549,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_db_references|node|databases_and_archives|form'] = $field_group;
+  $field_groups['group_db_references|node|databases_and_archives|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -580,7 +580,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_description_vt|node|work|data_export'] = $field_group;
+  $field_groups['group_description_vt|node|work|data_export'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -618,7 +618,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_description_vt|node|work|form'] = $field_group;
+  $field_groups['group_description_vt|node|work|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -648,7 +648,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_description|node|databases_and_archives|form'] = $field_group;
+  $field_groups['group_description|node|databases_and_archives|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -680,7 +680,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_description|node|work|default'] = $field_group;
+  $field_groups['group_description|node|work|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -709,7 +709,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_description|node|work|teaser'] = $field_group;
+  $field_groups['group_description|node|work|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -739,7 +739,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_documentation_vt|node|work|data_export'] = $field_group;
+  $field_groups['group_documentation_vt|node|work|data_export'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -774,7 +774,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_documentation_vt|node|work|form'] = $field_group;
+  $field_groups['group_documentation_vt|node|work|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -799,7 +799,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_documentation|node|event|default'] = $field_group;
+  $field_groups['group_documentation|node|event|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -824,7 +824,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_documentation|node|event|teaser'] = $field_group;
+  $field_groups['group_documentation|node|event|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -852,7 +852,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial_db|node|databases_and_archives|form'] = $field_group;
+  $field_groups['group_editorial_db|node|databases_and_archives|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -879,7 +879,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial_vt|node|event|form'] = $field_group;
+  $field_groups['group_editorial_vt|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -906,7 +906,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial_vt|node|person|form'] = $field_group;
+  $field_groups['group_editorial_vt|node|person|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -933,7 +933,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_editorial_vt|node|publisher|form'] = $field_group;
+  $field_groups['group_editorial_vt|node|publisher|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -962,7 +962,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_editorial_vt|node|work|data_export'] = $field_group;
+  $field_groups['group_editorial_vt|node|work|data_export'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -991,7 +991,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_editorial_vt|node|work|form'] = $field_group;
+  $field_groups['group_editorial_vt|node|work|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1030,7 +1030,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_eveninfo_vt|node|event|form'] = $field_group;
+  $field_groups['group_eveninfo_vt|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1057,7 +1057,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_eventdesc_vt|node|event|form'] = $field_group;
+  $field_groups['group_eventdesc_vt|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1085,7 +1085,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_eventdoc_vt|node|event|form'] = $field_group;
+  $field_groups['group_eventdoc_vt|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1116,7 +1116,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_eventinfo|node|event|default'] = $field_group;
+  $field_groups['group_eventinfo|node|event|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1142,7 +1142,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_eventinfo|node|event|teaser'] = $field_group;
+  $field_groups['group_eventinfo|node|event|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1170,7 +1170,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_orgdesc_vt|node|organization|form'] = $field_group;
+  $field_groups['group_orgdesc_vt|node|organization|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1195,7 +1195,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_orgdescription|node|organization|default'] = $field_group;
+  $field_groups['group_orgdescription|node|organization|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1220,7 +1220,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_orgdescription|node|organization|teaser'] = $field_group;
+  $field_groups['group_orgdescription|node|organization|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1247,7 +1247,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_orgeditorial_vt|node|organization|form'] = $field_group;
+  $field_groups['group_orgeditorial_vt|node|organization|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1276,7 +1276,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_orginfo_vt|node|organization|form'] = $field_group;
+  $field_groups['group_orginfo_vt|node|organization|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1303,7 +1303,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_orginfo|node|organization|default'] = $field_group;
+  $field_groups['group_orginfo|node|organization|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1330,7 +1330,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_orginfo|node|organization|teaser'] = $field_group;
+  $field_groups['group_orginfo|node|organization|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1365,7 +1365,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_personinfo_vt|node|person|form'] = $field_group;
+  $field_groups['group_personinfo_vt|node|person|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1396,7 +1396,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_personinfo|node|person|default'] = $field_group;
+  $field_groups['group_personinfo|node|person|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1427,7 +1427,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_personinfo|node|person|teaser'] = $field_group;
+  $field_groups['group_personinfo|node|person|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1456,7 +1456,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_ps_attachments|node|platform_software|form'] = $field_group;
+  $field_groups['group_ps_attachments|node|platform_software|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1487,7 +1487,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_ps_core|node|platform_software|form'] = $field_group;
+  $field_groups['group_ps_core|node|platform_software|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1518,7 +1518,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_ps_description|node|platform_software|form'] = $field_group;
+  $field_groups['group_ps_description|node|platform_software|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1544,7 +1544,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_pubdesc_vt|node|publisher|form'] = $field_group;
+  $field_groups['group_pubdesc_vt|node|publisher|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1577,7 +1577,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_pubinfo_vt|node|publisher|form'] = $field_group;
+  $field_groups['group_pubinfo_vt|node|publisher|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1608,7 +1608,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_pubinfo|node|publisher|default'] = $field_group;
+  $field_groups['group_pubinfo|node|publisher|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1638,7 +1638,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_pubinfo|node|publisher|teaser'] = $field_group;
+  $field_groups['group_pubinfo|node|publisher|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1666,7 +1666,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_references_crit|node|critical_writing|default'] = $field_group;
+  $field_groups['group_references_crit|node|critical_writing|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1696,7 +1696,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_references_crit|node|critical_writing|teaser'] = $field_group;
+  $field_groups['group_references_crit|node|critical_writing|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1722,7 +1722,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_tr_attach|node|teaching_resource|default'] = $field_group;
+  $field_groups['group_tr_attach|node|teaching_resource|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1750,7 +1750,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_tr_attach|node|teaching_resource|teaser'] = $field_group;
+  $field_groups['group_tr_attach|node|teaching_resource|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1773,7 +1773,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_tr_basic|node|teaching_resource|default'] = $field_group;
+  $field_groups['group_tr_basic|node|teaching_resource|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1801,7 +1801,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_tr_basic|node|teaching_resource|teaser'] = $field_group;
+  $field_groups['group_tr_basic|node|teaching_resource|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1824,7 +1824,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_tr_description|node|teaching_resource|default'] = $field_group;
+  $field_groups['group_tr_description|node|teaching_resource|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1850,7 +1850,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_tr_description|node|teaching_resource|teaser'] = $field_group;
+  $field_groups['group_tr_description|node|teaching_resource|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1881,7 +1881,7 @@ function elmcip_field_instances_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_trdesc_vt|node|teaching_resource|form'] = $field_group;
+  $field_groups['group_trdesc_vt|node|teaching_resource|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1908,7 +1908,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_treditorial_vt|node|teaching_resource|form'] = $field_group;
+  $field_groups['group_treditorial_vt|node|teaching_resource|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1940,7 +1940,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_trinfo_vt|node|teaching_resource|form'] = $field_group;
+  $field_groups['group_trinfo_vt|node|teaching_resource|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1972,7 +1972,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_trref_vt|node|teaching_resource|form'] = $field_group;
+  $field_groups['group_trref_vt|node|teaching_resource|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -1998,7 +1998,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_workdoc|node|work|default'] = $field_group;
+  $field_groups['group_workdoc|node|work|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -2023,7 +2023,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_workdoc|node|work|teaser'] = $field_group;
+  $field_groups['group_workdoc|node|work|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -2053,7 +2053,7 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_workinfo|node|work|default'] = $field_group;
+  $field_groups['group_workinfo|node|work|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -2081,7 +2081,29 @@ function elmcip_field_instances_field_group_info() {
       ),
     ),
   );
-  $export['group_workinfo|node|work|teaser'] = $field_group;
+  $field_groups['group_workinfo|node|work|teaser'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Attachments and Documentation');
+  t('Basic Information');
+  t('Biography');
+  t('Book or Journal Information');
+  t('Core Info');
+  t('Core Information');
+  t('Description');
+  t('Documentation');
+  t('Editorial Status');
+  t('Event Documentation');
+  t('Event Information');
+  t('Information');
+  t('Information specific to books or journals');
+  t('Organization Information');
+  t('Publisher Information');
+  t('Record Status');
+  t('Record status');
+  t('References / Attachments');
+  t('References and Attachments');
+
+  return $field_groups;
 }
