@@ -432,3 +432,8 @@ function elmcip_setup_update_7029() {
 function elmcip_setup_update_7030() {
   field_delete_field('field_orig_lang');
 }
+
+function elmcip_setup_update_7031() {
+  module_disable(array('getid3'), false);
+  drupal_uninstall_modules(array('getid3'), false);
+}
