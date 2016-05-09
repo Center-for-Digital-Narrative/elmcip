@@ -973,7 +973,7 @@ function elmcip_content_types_field_default_field_instances() {
       'title' => 'value',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
-      'title_value' => 'Narrabase.net entry',
+      'title_value' => 'See also: Authoring Software entry',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -983,7 +983,7 @@ function elmcip_content_types_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 16,
+      'weight' => 40,
     ),
   );
 
@@ -1011,7 +1011,7 @@ function elmcip_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 27,
+        'weight' => 26,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1036,26 +1036,27 @@ function elmcip_content_types_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_po_ex_entry',
-    'label' => 'Po.Ex entry',
+    'label' => 'Po-ex.net entry',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
+        'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => '_blank',
+        'target' => 'default',
         'title' => '',
       ),
       'display' => array(
         'url_cutoff' => 80,
       ),
-      'enable_tokens' => 1,
+      'enable_tokens' => 0,
       'rel_remove' => 'default',
-      'title' => 'optional',
-      'title_label_use_field_label' => FALSE,
+      'title' => 'value',
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
-      'title_value' => 'Po.Ex record',
+      'title_value' => 'Po-ex.net entry',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -1093,7 +1094,7 @@ function elmcip_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 19,
+        'weight' => 50,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1178,7 +1179,7 @@ function elmcip_content_types_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1236,6 +1237,7 @@ function elmcip_content_types_field_default_field_instances() {
   t('Platform');
   t('Platform referenced');
   t('Platform/Software');
+  t('Po-ex.net entry');
   t('Po.Ex entry');
   t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.');
   t('Publisher or organization');
