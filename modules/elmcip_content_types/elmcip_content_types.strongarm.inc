@@ -2387,6 +2387,12 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
         ),
+        'organization_platform_person_entity_view_1' => array(
+          'full' => array(
+            'weight' => '13',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
     'view_modes' => array(
