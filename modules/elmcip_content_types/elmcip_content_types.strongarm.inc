@@ -3217,7 +3217,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'full' => array(
-            'weight' => '33',
+            'weight' => '34',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -3239,7 +3239,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Tr_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '34',
+            'weight' => '35',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -3265,7 +3265,7 @@ function elmcip_content_types_strongarm() {
         ),
         'clone_of_research_collection_creative_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '35',
+            'weight' => '36',
             'visible' => TRUE,
           ),
           'default' => array(

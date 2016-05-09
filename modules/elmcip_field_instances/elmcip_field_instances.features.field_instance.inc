@@ -16133,7 +16133,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16497,7 +16497,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16623,7 +16623,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16727,7 +16727,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 18,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -16916,7 +16916,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 38,
+        'weight' => 39,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17026,12 +17026,13 @@ Note: Before adding a new person record, check to see if he or she is already li
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_i_e_poetry_entry',
-    'label' => 'I ♥ E-Poetry Entry',
+    'label' => 'I ♥ E-Poetry entry',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
+        'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
         'target' => '_blank',
@@ -17043,7 +17044,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
-      'title_label_use_field_label' => FALSE,
+      'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => 'I ♥ E-Poetry entry',
       'url' => 0,
@@ -17142,7 +17143,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17240,7 +17241,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 14,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -17307,7 +17308,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -17408,7 +17409,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 17,
+        'weight' => 16,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17490,7 +17491,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'file_view_mode' => 'full',
         ),
         'type' => 'media',
-        'weight' => 37,
+        'weight' => 38,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -17634,7 +17635,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17802,7 +17803,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17950,7 +17951,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18040,7 +18041,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18093,7 +18094,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -18126,7 +18127,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18256,7 +18257,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18359,7 +18360,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18472,7 +18473,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18566,7 +18567,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18664,7 +18665,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18977,7 +18978,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -19076,7 +19077,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 12,
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -19147,7 +19148,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -19241,7 +19242,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_separate',
-        'weight' => 14,
+        'weight' => 13,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -19479,7 +19480,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('First name');
   t('Gender');
   t('Given name (e.g. "John" in "John Smith")');
-  t('I ♥ E-Poetry Entry');
+  t('I ♥ E-Poetry entry');
   t('ISBN');
   t('ISSN');
   t('If a person\'s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. If the contributor\'s name does not auto-complete, <a href="/node/add/person" target="_blank">add the contributor</a> first. Use the contributors notes field to describe the different roles individuals played.');

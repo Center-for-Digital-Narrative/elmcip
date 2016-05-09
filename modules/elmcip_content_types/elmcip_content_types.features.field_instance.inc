@@ -925,10 +925,11 @@ function elmcip_content_types_field_default_field_instances() {
         'weight' => 56,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'link_default',
+        'weight' => 25,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -952,7 +953,7 @@ function elmcip_content_types_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_authoring_software_entry',
-    'label' => 'Authoring Software entry',
+    'label' => 'Narrabase.net entry',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -972,7 +973,7 @@ function elmcip_content_types_field_default_field_instances() {
       'title' => 'value',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
-      'title_value' => 'See also: Authoring Software entry',
+      'title_value' => 'Narrabase.net entry',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -982,7 +983,7 @@ function elmcip_content_types_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 40,
+      'weight' => 16,
     ),
   );
 
@@ -1010,7 +1011,7 @@ function elmcip_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1092,7 +1093,7 @@ function elmcip_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 50,
+        'weight' => 19,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1177,7 +1178,7 @@ function elmcip_content_types_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 13,
+        'weight' => 12,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1225,13 +1226,13 @@ function elmcip_content_types_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Add notes about editorial status here.');
-  t('Authoring Software entry');
   t('Developers');
   t('If there is a description of this work in the Po.Ex database, add a cross reference to it here.');
   t('If this critical writing has an entry in the Po.Ex database, add a reference here by linking the complete URL of the page.');
   t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
   t('Indicate the year that this platform was first released.');
   t('KB Editor Notes');
+  t('Narrabase.net entry');
   t('Platform');
   t('Platform referenced');
   t('Platform/Software');

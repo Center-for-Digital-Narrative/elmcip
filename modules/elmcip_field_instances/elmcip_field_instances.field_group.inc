@@ -762,6 +762,7 @@ function elmcip_field_instances_field_group_info() {
       5 => 'field_nt2_entry',
       6 => 'field_po_ex_entry',
       7 => 'field_repository',
+      8 => 'field_authoring_software_entry',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
