@@ -1146,7 +1146,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '44',
+            'weight' => '46',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1186,7 +1186,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Tr_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '45',
+            'weight' => '47',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1252,7 +1252,7 @@ function elmcip_content_types_strongarm() {
         ),
         'event_ref_on_cw_entity_view_1' => array(
           'full' => array(
-            'weight' => '43',
+            'weight' => '45',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1274,7 +1274,7 @@ function elmcip_content_types_strongarm() {
         ),
         'database_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '42',
+            'weight' => '44',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -1296,7 +1296,7 @@ function elmcip_content_types_strongarm() {
         ),
         'research_collection_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '46',
+            'weight' => '48',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1318,7 +1318,7 @@ function elmcip_content_types_strongarm() {
         ),
         'publisher_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '39',
+            'weight' => '41',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1340,7 +1340,7 @@ function elmcip_content_types_strongarm() {
         ),
         'publisher_referenced_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '40',
+            'weight' => '42',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1362,7 +1362,7 @@ function elmcip_content_types_strongarm() {
         ),
         'organization_referenced_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '41',
+            'weight' => '43',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1380,6 +1380,12 @@ function elmcip_content_types_strongarm() {
           'search_result' => array(
             'weight' => '2',
             'visible' => FALSE,
+          ),
+        ),
+        'organization_platform_critical_writing_entity_view_1' => array(
+          'full' => array(
+            'weight' => '40',
+            'visible' => TRUE,
           ),
         ),
       ),

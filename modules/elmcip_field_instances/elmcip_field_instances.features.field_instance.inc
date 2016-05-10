@@ -1226,7 +1226,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 66,
+        'weight' => 67,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1582,7 +1582,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 64,
+        'weight' => 65,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -2242,7 +2242,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 48,
+        'weight' => 50,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -3712,7 +3712,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 67,
+        'weight' => 68,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -3996,7 +3996,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 63,
+        'weight' => 64,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -4057,7 +4057,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 61,
+        'weight' => 62,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -4404,7 +4404,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 62,
+        'weight' => 63,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -4757,7 +4757,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 65,
+        'weight' => 66,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -4947,7 +4947,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 68,
+        'weight' => 69,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16655,7 +16655,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -16759,7 +16759,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -17175,7 +17175,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17273,7 +17273,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -17340,7 +17340,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -17441,7 +17441,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17674,7 +17674,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 37,
+        'weight' => 36,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17842,7 +17842,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17990,7 +17990,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18080,7 +18080,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 26,
+        'weight' => 25,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18133,7 +18133,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -18166,7 +18166,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 30,
+        'weight' => 29,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18296,7 +18296,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 28,
+        'weight' => 27,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18399,7 +18399,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 29,
+        'weight' => 28,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18512,7 +18512,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 31,
+        'weight' => 30,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18606,7 +18606,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18704,7 +18704,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 33,
+        'weight' => 32,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -19017,7 +19017,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -19116,7 +19116,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -19187,7 +19187,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -19281,7 +19281,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_separate',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'search_result' => array(
         'label' => 'above',

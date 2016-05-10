@@ -84,7 +84,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '49',
+      'weight' => '51',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -94,7 +94,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '50',
+      'weight' => '52',
       'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
@@ -120,11 +120,6 @@ function elmcip_layout_ds_field_settings_info() {
         'ft' => array(
           'lb' => 'WorldCat',
         ),
-      ),
-    ),
-    'field_cw_in_platform_software' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
       ),
     ),
   );
@@ -1328,8 +1323,8 @@ function elmcip_layout_ds_layout_settings_info() {
         36 => 'series_reference_critical_writin_entity_view_1',
         37 => 'Work_critical_writing_entity_view_1',
         38 => 'critical_writin_critical_writing_entity_view_1',
-        39 => 'publisher_on_critical_writing_entity_view_1',
-        40 => 'field_criticalw_platform_ref',
+        39 => 'organization_platform_critical_writing_entity_view_1',
+        40 => 'publisher_on_critical_writing_entity_view_1',
         41 => 'publisher_referenced_on_critical_writing_entity_view_1',
         42 => 'organization_referenced_on_critical_writing_entity_view_1',
         43 => 'database_on_critical_writing_entity_view_1',
@@ -1383,8 +1378,8 @@ function elmcip_layout_ds_layout_settings_info() {
       'series_reference_critical_writin_entity_view_1' => 'right',
       'Work_critical_writing_entity_view_1' => 'right',
       'critical_writin_critical_writing_entity_view_1' => 'right',
+      'organization_platform_critical_writing_entity_view_1' => 'right',
       'publisher_on_critical_writing_entity_view_1' => 'right',
-      'field_criticalw_platform_ref' => 'right',
       'publisher_referenced_on_critical_writing_entity_view_1' => 'right',
       'organization_referenced_on_critical_writing_entity_view_1' => 'right',
       'database_on_critical_writing_entity_view_1' => 'right',
