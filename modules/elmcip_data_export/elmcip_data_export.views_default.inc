@@ -16783,7 +16783,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
-  $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Event';
   $handler->display->display_options['fields']['field_node_ref_event']['settings'] = array(
     'link' => 0,
   );
