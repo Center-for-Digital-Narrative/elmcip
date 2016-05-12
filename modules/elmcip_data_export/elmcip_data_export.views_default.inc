@@ -16079,10 +16079,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'See all creative works';
-  $handler->display->display_options['access']['type'] = 'role';
-  $handler->display->display_options['access']['role'] = array(
-    2 => '2',
-  );
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
@@ -16675,6 +16672,11 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -16869,7 +16871,7 @@ function elmcip_data_export_views_default_views() {
     t('Publisher ID'),
     t('Language ID'),
     t('2000[field_language_tax_1-tid]'),
-    t('Event'),
+    t('Presented at Event'),
     t('Event ID'),
   );
   $export['work_page'] = $view;
