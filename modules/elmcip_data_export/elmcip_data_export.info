@@ -9,7 +9,6 @@ dependencies[] = eva
 dependencies[] = location
 dependencies[] = references
 dependencies[] = rules_scheduler
-dependencies[] = search
 dependencies[] = taxonomy
 dependencies[] = views
 dependencies[] = views_content
