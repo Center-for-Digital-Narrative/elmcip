@@ -437,3 +437,10 @@ function elmcip_setup_update_7031() {
   module_disable(array('getid3'), false);
   drupal_uninstall_modules(array('getid3'), false);
 }
+
+/**
+ * Uninstall module Auto nodetitle.
+ */
+function elmcip_setup_update_7032() {
+  drupal_uninstall_modules(array('auto_nodetitle'), TRUE);
+}
