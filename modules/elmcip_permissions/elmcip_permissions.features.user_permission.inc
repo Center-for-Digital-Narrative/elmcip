@@ -2606,22 +2606,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'search content'.
-  $permissions['search content'] = array(
-    'name' => 'search content',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'search',
-  );
-
   // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
@@ -2761,22 +2745,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'googleanalytics',
-  );
-
-  // Exported permission: 'use advanced search'.
-  $permissions['use advanced search'] = array(
-    'name' => 'use advanced search',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'search',
   );
 
   // Exported permission: 'use bulk exporter'.
