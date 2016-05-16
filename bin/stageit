@@ -1,6 +1,5 @@
 #!/bin/bash
 HOME=/applications
-HOME=/Users/steinmb/sites
 
 set -x
 
