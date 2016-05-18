@@ -25,13 +25,39 @@
         <?php print $admin_links; ?>
     <?php endif; ?>
 
-    <?php print render($title_prefix); ?>
-    <?php if ($title): ?>
-    <<?php print $title_heading; ?><?php print $title_attributes; ?>>
-    <?php print $title; ?>
-</<?php print $title_heading; ?>>
-<?php endif; ?>
-<?php print render($title_suffix); ?>
+    <?php
+    print render($title_prefix);
+    switch ($pane->panel) {
+        case 'kbleft':
+            if ($title) {
+                print '<' . $title_heading . $title_attributes . '>';
+                print '<a href="/knowledgebase">' . $title . '</a>';
+                print '</' . $title_heading . '>';
+            }
+            break;
+        case 'kbmiddle':
+            if ($title) {
+                print '<' . $title_heading . $title_attributes . '>';
+                print '<a href="/work">' . $title . '</a>';
+                print '</' . $title_heading . '>';
+            }
+            break;
+        case 'kbright':
+            if ($title) {
+                print '<' . $title_heading . $title_attributes . '>';
+                print '<a href="critical_writing">' . $title . '</a>';
+                print '</' . $title_heading . '>';
+            }
+            break;
+        default:
+            if ($title) {
+                print '<' . $title_heading . $title_attributes . '>';
+                print $title;
+                print '</' . $title_heading . '>';
+            }
+    }
+    print render($title_suffix);
+    ?>
 
 <?php if ($feeds): ?>
     <div class="feed">
