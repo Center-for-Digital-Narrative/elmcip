@@ -15,7 +15,7 @@ HOMEDIR=${PWD}
 drush --version || exit $?
 
 git checkout production --quiet || exit $?
-git submodule update
+git submodule update --quiet || exit $?
 
 cd $DRUPAL
 
@@ -24,7 +24,6 @@ if [ -z "$1" ]; then
   echo "Running normal mode."
   drush --uri=$URI sql-drop --yes
   gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
-  exit;
 else
   # Run the fast version.
   echo "Running fast mode."
