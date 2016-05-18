@@ -26,7 +26,6 @@ $tables = array(
   'cache_image',
   'cache_libraries',
   'cache_location',
-  'cache_media_xml',
   'cache_menu',
   'cache_page',
   'cache_panels',
