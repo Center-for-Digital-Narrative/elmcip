@@ -3057,11 +3057,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'file',
+        'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'full',
         ),
-        'type' => 'file_default',
+        'type' => 'file_rendered',
         'weight' => 47,
       ),
       'search_result' => array(
@@ -7561,11 +7561,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'file',
+        'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'media_original',
         ),
-        'type' => 'file_default',
+        'type' => 'file_rendered',
         'weight' => 21,
       ),
       'search_result' => array(
@@ -13751,11 +13751,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'file',
+        'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'file_default',
+        'type' => 'file_rendered',
         'weight' => 3,
       ),
       'rss' => array(
@@ -14602,11 +14602,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'file',
+        'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'file_default',
+        'type' => 'file_rendered',
         'weight' => 18,
       ),
       'search_result' => array(
@@ -17498,11 +17498,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'file',
+        'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'full',
         ),
-        'type' => 'file_default',
+        'type' => 'file_rendered',
         'weight' => 38,
       ),
       'search_result' => array(
