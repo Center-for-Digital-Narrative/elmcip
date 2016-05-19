@@ -471,7 +471,7 @@ function elmcip_setup_update_7035() {
 }
 
 /**
- * Migrate all old leagacy fields to file field.
+ * Change leagacy fields to file field.
  */
 function elmcip_setup_update_7036() {
   // Get a list of all fields.
@@ -493,9 +493,9 @@ function elmcip_setup_update_7036() {
 }
 
 /**
- * Uninstall mediafield lagacy module.
+ * Uninstall mediafield and helper module.
  */
 function elmcip_setup_update_7037() {
-  module_disable(array('mediafield'), FALSE);
-  drupal_uninstall_modules(array('mediafield'), FALSE);
+  module_disable(array('mediafield', 'helper'), FALSE);
+  drupal_uninstall_modules(array('mediafield', 'helper'), FALSE);
 }

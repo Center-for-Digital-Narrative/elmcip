@@ -2026,12 +2026,14 @@ function elmcip_field_instances_field_default_field_bases() {
       ),
     ),
     'locked' => 0,
-    'module' => 'mediafield',
+    'module' => 'file',
     'settings' => array(
-      'field_permissions' => NULL,
+      'display_default' => 0,
+      'display_field' => 0,
+      'uri_scheme' => 'public',
     ),
     'translatable' => 1,
-    'type' => 'media',
+    'type' => 'file',
   );
 
   // Exported field_base: 'field_middle_name'.

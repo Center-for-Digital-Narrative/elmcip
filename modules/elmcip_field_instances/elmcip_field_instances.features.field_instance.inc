@@ -3057,11 +3057,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'full',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 47,
       ),
       'search_result' => array(
@@ -3078,11 +3078,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'token' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'media_original',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 33,
       ),
     ),
@@ -3092,7 +3092,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'label' => 'Multimedia',
     'required' => 0,
     'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
       'file_extensions' => 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp mp3 mov m4v mp4 mpeg avi ogg wmv ico',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -7558,11 +7561,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'media_original',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 21,
       ),
       'search_result' => array(
@@ -7584,7 +7587,10 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Multimedia',
     'required' => 0,
     'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
       'file_extensions' => 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp mp3 mov m4v mp4 mpeg avi ogg wmv ico',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -13745,29 +13751,29 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 3,
       ),
       'rss' => array(
         'label' => 'hidden',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 2,
       ),
       'teaser_600' => array(
@@ -13789,7 +13795,10 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Multimedia',
     'required' => 0,
     'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
       'file_extensions' => 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp mp3 mov m4v mp4 mpeg avi ogg wmv ico',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -14584,29 +14593,29 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 18,
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 13,
       ),
       'teaser' => array(
@@ -14622,7 +14631,10 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Multimedia',
     'required' => 0,
     'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
       'file_extensions' => 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp mp3 mov m4v mp4 mpeg avi ogg wmv ico',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -17486,20 +17498,20 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'full',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 38,
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'default',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 17,
       ),
       'teaser' => array(
@@ -17510,11 +17522,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'token' => array(
         'label' => 'above',
-        'module' => 'mediafield',
+        'module' => 'file',
         'settings' => array(
           'file_view_mode' => 'media_original',
         ),
-        'type' => 'media',
+        'type' => 'file_default',
         'weight' => 23,
       ),
     ),
@@ -17524,7 +17536,10 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Multimedia',
     'required' => 0,
     'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
       'file_extensions' => 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp mp3 mov m4v mp4 mpeg avi ogg wmv ico',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
