@@ -462,3 +462,40 @@ function elmcip_setup_update_7034() {
   module_disable(array('rules_admin', 'rules_scheduler', 'rules'), TRUE);
   drupal_uninstall_modules(array('rules_admin', 'rules_scheduler', 'rules'), TRUE);
 }
+
+/**
+ * Enable Helper module.
+ */
+function elmcip_setup_update_7035() {
+  module_enable(array('helper'), FALSE);
+}
+
+/**
+ * Migrate all old leagacy fields to file field.
+ */
+function elmcip_setup_update_7036() {
+  // Get a list of all fields.
+  $fields = field_info_field_map();
+
+  // Obtain the machine name of all image fields and store them in an array.
+  foreach ($fields as $name => $field) {
+    if ($field['type'] == 'media') {
+      $image_fields[$name] = $field;
+    }
+  }
+
+  // Loop through the list and convert them into file field.
+  if (!empty($image_fields)) {
+    foreach ($image_fields as $name => $field) {
+      $results[$name] = FieldChangeHelper::changeType($name, 'file');
+    }
+  }
+}
+
+/**
+ * Uninstall mediafield lagacy module.
+ */
+function elmcip_setup_update_7037() {
+  module_disable(array('mediafield'), FALSE);
+  drupal_uninstall_modules(array('mediafield'), FALSE);
+}
