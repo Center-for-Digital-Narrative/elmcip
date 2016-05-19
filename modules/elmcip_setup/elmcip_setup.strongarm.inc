@@ -39,6 +39,7 @@ function elmcip_setup_strongarm() {
     'user_location_table' => FALSE,
     'works_multiple_refs' => TRUE,
     'taxonomy_term' => TRUE,
+    'oai_pmh_biblio' => TRUE,
   );
   $export['views_defaults'] = $strongarm;
 
