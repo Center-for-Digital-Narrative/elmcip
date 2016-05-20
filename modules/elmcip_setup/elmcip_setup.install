@@ -330,6 +330,7 @@ function elmcip_setup_update_7022() {
   foreach ($news_items_nids as $nid) {
     $node = node_load($nid);
     $person = entity_metadata_wrapper('node', $node);
+    $name = '';
     if ($person->field_first_name->value()) {
       $name .= trim($person->field_first_name->value());
       $person->field_first_name->set(trim($person->field_first_name->value()));
@@ -595,4 +596,63 @@ function elmcip_setup_update_7041() {
     drush_invoke_process("@site", "entityreference-migrate-references", array("field_rc_db_archive"), array("verbose"));
     module_disable(array('entityreference_migration'), FALSE);
     drupal_uninstall_modules(array('entityreference_migration'), FALSE);
+}
+
+/**
+ * Convert numeric value to real time/date field.
+ */
+function elmcip_setup_update_7042() {
+    $news_items_nids = '';
+    // Create field to store year data before deprecated field get dropped.
+    $newField = array(
+        'field_name' => 'field_critical_writing_year',
+        'type' => 'date',
+        'label' => 'Year',
+        'description' => 'Year in which the work was first published. If the work
+      changed on an ongoing basis over time, indicate the period in the work
+      description.',
+  );
+  field_create_field($newField);
+
+  $instance = array(
+      'field_name' => $newField['field_name'],
+      'entity_type' => 'node',
+      'bundle' => 'critical_writing',
+  );
+  field_create_instance($instance);
+
+  // Grab data and save data to the new field.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'critical_writing')
+      ->fieldCondition('field_number');
+
+  $result = $query->execute();
+  $news_items_nids = array_keys($result['node']);
+
+  foreach ($news_items_nids as $nid) {
+    try {
+      $work_entity = entity_metadata_wrapper('node', $nid);
+      $year = strtotime('01/01 00:00 UTC' . $work_entity->field_number->value());
+      if ($year) {
+        $work_entity->field_critical_writing_year->set($year);
+        $work_entity->save();
+        print("Stored $year into field_work_year: $nid" . PHP_EOL);
+      }
+    }
+    catch (EntityMetadataWrapperException $exc) {
+      watchdog(
+          'ELMCIP Setup',
+          'See '  . __FUNCTION__ . '() <pre>' .  $exc->getTraceAsString() . '</pre>',
+          NULL, WATCHDOG_ERROR
+      );
+    }
+  }
+
+  // Delete unused field from bundle.
+  $fields = array('field_number');
+  foreach ($fields as $field) {
+    $instance = field_info_instance('node', $field, 'critical_writing');
+    field_delete_instance($instance, TRUE);
+  }
 }
