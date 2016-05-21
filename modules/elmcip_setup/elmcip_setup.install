@@ -633,6 +633,20 @@ function elmcip_setup_update_7042() {
   foreach ($news_items_nids as $nid) {
     try {
       $work_entity = entity_metadata_wrapper('node', $nid);
+
+      // Fix nodes containing broken/bad taxonomy term ID.
+      $taxonomy_terms = array();
+      $taxonomy_terms = $work_entity->taxonomy_vocabulary_1;
+      if ($taxonomy_terms) {
+        foreach ($taxonomy_terms as $key => $term) {
+          $tid = FALSE;
+          $tid = $work_entity->taxonomy_vocabulary_1[$key]->value();
+          if (!$tid) {
+            $work_entity->taxonomy_vocabulary_1[$key]->set(NULL);
+          }
+        }
+      }
+
       $year = strtotime('01/01 00:00 UTC' . $work_entity->field_number->value());
       if ($year) {
         $work_entity->field_critical_writing_year->set($year);
