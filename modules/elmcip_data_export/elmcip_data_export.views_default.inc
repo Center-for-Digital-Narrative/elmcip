@@ -3593,12 +3593,17 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['country']['id'] = 'country';
   $handler->display->display_options['fields']['country']['table'] = 'location';
   $handler->display->display_options['fields']['country']['field'] = 'country';
-  /* Field: Content: Post date */
-  $handler->display->display_options['fields']['created']['id'] = 'created';
-  $handler->display->display_options['fields']['created']['table'] = 'node';
-  $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  /* Field: Location: Country */
+  $handler->display->display_options['fields']['country_1']['id'] = 'country_1';
+  $handler->display->display_options['fields']['country_1']['table'] = 'location';
+  $handler->display->display_options['fields']['country_1']['field'] = 'country';
+  $handler->display->display_options['fields']['country_1']['label'] = 'Country code';
+  $handler->display->display_options['fields']['country_1']['style'] = 'code';
+  /* Field: Content: Gender */
+  $handler->display->display_options['fields']['field_gender_sel']['id'] = 'field_gender_sel';
+  $handler->display->display_options['fields']['field_gender_sel']['table'] = 'field_data_field_gender_sel';
+  $handler->display->display_options['fields']['field_gender_sel']['field'] = 'field_gender_sel';
+  $handler->display->display_options['fields']['field_gender_sel']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: URL */
   $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
   $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
@@ -3606,16 +3611,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_url']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_url']['type'] = 'link_url';
   $handler->display->display_options['fields']['field_url']['delta_offset'] = '0';
-  /* Field: Content revision: Updated date */
-  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['table'] = 'node_revision';
-  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['timestamp']['date_format'] = 'short';
-  /* Field: Content: Record Status */
-  $handler->display->display_options['fields']['field_record_status_tax']['id'] = 'field_record_status_tax';
-  $handler->display->display_options['fields']['field_record_status_tax']['table'] = 'field_data_field_record_status_tax';
-  $handler->display->display_options['fields']['field_record_status_tax']['field'] = 'field_record_status_tax';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -3679,10 +3674,9 @@ function elmcip_data_export_views_default_views() {
     t('Author ID'),
     t('Person name'),
     t('Country'),
-    t('Post date'),
+    t('Country code'),
+    t('Gender'),
     t('URL'),
-    t('Updated date'),
-    t('Record Status'),
     t('All'),
     t('Data export'),
     t('more'),
