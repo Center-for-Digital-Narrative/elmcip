@@ -454,3 +454,11 @@ function elmcip_setup_update_7032(){
 function elmcip_setup_update_7033() {
   drupal_uninstall_modules(array('auto_nodetitle'), TRUE);
 }
+
+/**
+ * Disable Rules modules.
+ */
+function elmcip_setup_update_7034() {
+  module_disable(array('rules_admin', 'rules_scheduler', 'rules'), TRUE);
+  drupal_uninstall_modules(array('rules_admin', 'rules_scheduler', 'rules'), TRUE);
+}

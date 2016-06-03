@@ -8,7 +8,6 @@ dependencies[] = ds
 dependencies[] = eva
 dependencies[] = location
 dependencies[] = references
-dependencies[] = rules_scheduler
 dependencies[] = taxonomy
 dependencies[] = views
 dependencies[] = views_content

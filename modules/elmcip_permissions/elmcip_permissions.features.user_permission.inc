@@ -140,15 +140,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: 'access rules debug'.
-  $permissions['access rules debug'] = array(
-    'name' => 'access rules debug',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'rules',
-  );
-
   // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
@@ -509,15 +500,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer rules'.
-  $permissions['administer rules'] = array(
-    'name' => 'administer rules',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'rules',
-  );
-
   // Exported permission: 'administer search'.
   $permissions['administer search'] = array(
     'name' => 'administer search',
@@ -696,15 +678,6 @@ function elmcip_permissions_user_default_permissions() {
     'name' => 'bypass node access',
     'roles' => array(),
     'module' => 'node',
-  );
-
-  // Exported permission: 'bypass rules access'.
-  $permissions['bypass rules access'] = array(
-    'name' => 'bypass rules access',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'rules',
   );
 
   // Exported permission: 'cancel account'.
@@ -2677,15 +2650,6 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'show format selection for node'.
   $permissions['show format selection for node'] = array(
     'name' => 'show format selection for node',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for rules_config'.
-  $permissions['show format selection for rules_config'] = array(
-    'name' => 'show format selection for rules_config',
     'roles' => array(
       'administrator' => 'administrator',
     ),
