@@ -186,25 +186,6 @@ function elmcip_setup_file_default_displays() {
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
-  $file_display->name = 'default__default__media_slideshare_document';
-  $file_display->weight = 0;
-  $file_display->status = FALSE;
-  $file_display->settings = array(
-    'width' => '425',
-    'height' => '355',
-  );
-  $export['default__default__media_slideshare_document'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'default__default__media_slideshare_image';
-  $file_display->weight = 0;
-  $file_display->status = FALSE;
-  $file_display->settings = '';
-  $export['default__default__media_slideshare_image'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
   $file_display->name = 'video__default__file_field_file_default';
   $file_display->weight = -34;
   $file_display->status = FALSE;

@@ -17,7 +17,6 @@ dependencies[] = list
 dependencies[] = location_cck
 dependencies[] = media
 dependencies[] = media_flickr
-dependencies[] = media_slideshare
 dependencies[] = media_vimeo
 dependencies[] = media_youtube
 dependencies[] = node_reference
