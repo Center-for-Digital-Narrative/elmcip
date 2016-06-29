@@ -499,3 +499,11 @@ function elmcip_setup_update_7037() {
   module_disable(array('mediafield', 'helper'), FALSE);
   drupal_uninstall_modules(array('mediafield', 'helper'), FALSE);
 }
+
+/**
+ * Uninstall module Media Slideshare.
+ */
+function elmcip_setup_update_7038() {
+  module_disable(array('media_slideshare'), FALSE);
+  drupal_uninstall_modules(array('media_slideshare'), FALSE);
+}
