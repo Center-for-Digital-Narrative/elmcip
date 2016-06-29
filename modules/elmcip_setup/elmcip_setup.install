@@ -507,3 +507,43 @@ function elmcip_setup_update_7038() {
   module_disable(array('media_slideshare'), FALSE);
   drupal_uninstall_modules(array('media_slideshare'), FALSE);
 }
+
+/**
+ * Migrate from node to entity reference.
+ */
+function elmcip_setup_update_7039() {
+  module_enable(array('entityreference_migration'), FALSE);
+
+  // Delete broken entries field_node_ref_work.
+  db_query("DELETE FROM field_data_field_node_ref_work WHERE field_node_ref_work_nid IS NULL");
+
+  // Delete broken entiries in field_inbook_target_id.
+  db_query("DELETE FROM field_data_field_inbook WHERE field_inbook_nid IS NULL");
+
+  /**
+   * Fields to migrate:
+   *
+   * field_university (University)
+   * field_other_edition_link (Other edition)
+   * field_series_ref (Series)
+   * field_inbook (Appears in)
+   * field_node_ref_work (Creative Works referenced)
+   * field_tr_critical (Critical Writing referenced) * shared - (Teaching Resource)
+   * field_ref_about_event (Event Referenced)
+   * field_organization_cw (Organization referenced)
+   * field_publisher_referenced (Publisher Referenced)
+   * field_database_or_archive_refere (Database or Archive reference) * shared (Teaching Resource)
+   */
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_university"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_other_edition_link"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_series_ref"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_inbook"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_node_ref_work"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_tr_critical"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_ref_about_event"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_organization_cw"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_publisher_referenced"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_database_or_archive_refere"), array("verbose"));
+  module_disable(array('entityreference_migration'), FALSE);
+  drupal_uninstall_modules(array('entityreference_migration'), FALSE);
+}
