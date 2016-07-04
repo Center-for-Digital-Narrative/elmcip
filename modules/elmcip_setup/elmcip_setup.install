@@ -552,11 +552,15 @@ function elmcip_setup_update_7039() {
  * Enable ELMCIP Search module.
  */
 function elmcip_setup_update_7040() {
-  $items = 0;
+  $items = 500;
   $search_index = '';
   module_enable(array('elmcip_search'), TRUE);
   print 'Create beta search index' . PHP_EOL;
   $search_index = search_api_index_load('kb_content');
-  $items = search_api_index_items($search_index, -1);
-  print("Indexed $items nodes" . PHP_EOL);
+  while ($items != 0) {
+    $items = search_api_index_items($search_index, 500);
+    print "Indexed $items" . PHP_EOL;
+  }
+
+  print("New search indexed created." . PHP_EOL);
 }
