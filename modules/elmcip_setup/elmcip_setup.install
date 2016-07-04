@@ -547,3 +547,16 @@ function elmcip_setup_update_7039() {
   module_disable(array('entityreference_migration'), FALSE);
   drupal_uninstall_modules(array('entityreference_migration'), FALSE);
 }
+
+/**
+ * Enable ELMCIP Search module.
+ */
+function elmcip_setup_update_7040() {
+  $items = 0;
+  $search_index = '';
+  module_enable(array('elmcip_search'), TRUE);
+  print 'Create beta search index' . PHP_EOL;
+  $search_index = search_api_index_load('kb_content');
+  $items = search_api_index_items($search_index, -1);
+  print("Indexed $items nodes" . PHP_EOL);
+}
