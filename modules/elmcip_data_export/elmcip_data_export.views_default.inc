@@ -4383,7 +4383,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['title'] = 'Research Collection that references this work:';
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -4427,11 +4427,14 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Contextual filter: Content: Creative works (field_creative_works) */
-  $handler->display->display_options['arguments']['field_creative_works_nid']['id'] = 'field_creative_works_nid';
-  $handler->display->display_options['arguments']['field_creative_works_nid']['table'] = 'field_data_field_creative_works';
-  $handler->display->display_options['arguments']['field_creative_works_nid']['field'] = 'field_creative_works_nid';
-  $handler->display->display_options['arguments']['field_creative_works_nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_creative_works_nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_creative_works_target_id']['id'] = 'field_creative_works_target_id';
+  $handler->display->display_options['arguments']['field_creative_works_target_id']['table'] = 'field_data_field_creative_works';
+  $handler->display->display_options['arguments']['field_creative_works_target_id']['field'] = 'field_creative_works_target_id';
+  $handler->display->display_options['arguments']['field_creative_works_target_id']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['field_creative_works_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_creative_works_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_creative_works_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_creative_works_target_id']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -6953,7 +6956,7 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Critical Writing';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -6980,34 +6983,30 @@ function elmcip_data_export_views_default_views() {
       'separator' => '',
     ),
   );
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Critical Writing referenced';
-  $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Critical writing (field_critical_writing) */
-  $handler->display->display_options['relationships']['field_critical_writing_nid']['id'] = 'field_critical_writing_nid';
-  $handler->display->display_options['relationships']['field_critical_writing_nid']['table'] = 'field_data_field_critical_writing';
-  $handler->display->display_options['relationships']['field_critical_writing_nid']['field'] = 'field_critical_writing_nid';
-  $handler->display->display_options['relationships']['field_critical_writing_nid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_critical_writing_nid']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_critical_writing_target_id']['id'] = 'field_critical_writing_target_id';
+  $handler->display->display_options['relationships']['field_critical_writing_target_id']['table'] = 'field_data_field_critical_writing';
+  $handler->display->display_options['relationships']['field_critical_writing_target_id']['field'] = 'field_critical_writing_target_id';
+  $handler->display->display_options['relationships']['field_critical_writing_target_id']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_critical_writing_nid';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_critical_writing_target_id';
   /* Field: Content: Author */
   $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['relationship'] = 'field_critical_writing_nid';
+  $handler->display->display_options['fields']['field_author_name']['relationship'] = 'field_critical_writing_target_id';
+  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_number']['id'] = 'field_number';
   $handler->display->display_options['fields']['field_number']['table'] = 'field_data_field_number';
   $handler->display->display_options['fields']['field_number']['field'] = 'field_number';
-  $handler->display->display_options['fields']['field_number']['relationship'] = 'field_critical_writing_nid';
+  $handler->display->display_options['fields']['field_number']['relationship'] = 'field_critical_writing_target_id';
   $handler->display->display_options['fields']['field_number']['type'] = 'number_unformatted';
   $handler->display->display_options['fields']['field_number']['settings'] = array(
     'thousand_separator' => '',
@@ -7057,8 +7056,7 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Critical Writing referenced'),
-    t('field_critical_writing'),
+    t('Content entity referenced from field_critical_writing'),
     t('Title'),
     t('Author'),
     t('Year'),
@@ -7852,7 +7850,7 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Databases and Archives';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -7872,22 +7870,22 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Relationship: Content: Database or Archive reference (field_rc_db_archive) */
-  $handler->display->display_options['relationships']['field_rc_db_archive_nid']['id'] = 'field_rc_db_archive_nid';
-  $handler->display->display_options['relationships']['field_rc_db_archive_nid']['table'] = 'field_data_field_rc_db_archive';
-  $handler->display->display_options['relationships']['field_rc_db_archive_nid']['field'] = 'field_rc_db_archive_nid';
-  $handler->display->display_options['relationships']['field_rc_db_archive_nid']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_rc_db_archive_target_id']['id'] = 'field_rc_db_archive_target_id';
+  $handler->display->display_options['relationships']['field_rc_db_archive_target_id']['table'] = 'field_data_field_rc_db_archive';
+  $handler->display->display_options['relationships']['field_rc_db_archive_target_id']['field'] = 'field_rc_db_archive_target_id';
+  $handler->display->display_options['relationships']['field_rc_db_archive_target_id']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_rc_db_archive_nid';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_rc_db_archive_target_id';
   $handler->display->display_options['fields']['title']['label'] = 'Name';
   /* Field: Content: Project Type */
   $handler->display->display_options['fields']['field_project_type']['id'] = 'field_project_type';
   $handler->display->display_options['fields']['field_project_type']['table'] = 'field_data_field_project_type';
   $handler->display->display_options['fields']['field_project_type']['field'] = 'field_project_type';
-  $handler->display->display_options['fields']['field_project_type']['relationship'] = 'field_rc_db_archive_nid';
+  $handler->display->display_options['fields']['field_project_type']['relationship'] = 'field_rc_db_archive_target_id';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -7908,11 +7906,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = '0';
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Database or Archive reference (field_rc_db_archive) */
-  $handler->display->display_options['filters']['field_rc_db_archive_nid']['id'] = 'field_rc_db_archive_nid';
-  $handler->display->display_options['filters']['field_rc_db_archive_nid']['table'] = 'field_data_field_rc_db_archive';
-  $handler->display->display_options['filters']['field_rc_db_archive_nid']['field'] = 'field_rc_db_archive_nid';
-  $handler->display->display_options['filters']['field_rc_db_archive_nid']['operator'] = 'not empty';
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
@@ -7937,7 +7930,7 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('field_rc_db_archive'),
+    t('Content entity referenced from field_rc_db_archive'),
     t('Name'),
     t('Project Type'),
     t('All'),
@@ -10961,7 +10954,7 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Organizations';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -10981,22 +10974,22 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Relationship: Content: Organizations (field_organizations) */
-  $handler->display->display_options['relationships']['field_organizations_nid']['id'] = 'field_organizations_nid';
-  $handler->display->display_options['relationships']['field_organizations_nid']['table'] = 'field_data_field_organizations';
-  $handler->display->display_options['relationships']['field_organizations_nid']['field'] = 'field_organizations_nid';
-  $handler->display->display_options['relationships']['field_organizations_nid']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_organizations_target_id']['id'] = 'field_organizations_target_id';
+  $handler->display->display_options['relationships']['field_organizations_target_id']['table'] = 'field_data_field_organizations';
+  $handler->display->display_options['relationships']['field_organizations_target_id']['field'] = 'field_organizations_target_id';
+  $handler->display->display_options['relationships']['field_organizations_target_id']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_organizations_nid';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_organizations_target_id';
   $handler->display->display_options['fields']['title']['label'] = 'Name';
   /* Field: Content: Location */
   $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
   $handler->display->display_options['fields']['field_location']['table'] = 'field_data_field_location';
   $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
-  $handler->display->display_options['fields']['field_location']['relationship'] = 'field_organizations_nid';
+  $handler->display->display_options['fields']['field_location']['relationship'] = 'field_organizations_target_id';
   $handler->display->display_options['fields']['field_location']['delta_offset'] = '0';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
@@ -11018,11 +11011,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = '0';
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Organizations (field_organizations) */
-  $handler->display->display_options['filters']['field_organizations_nid']['id'] = 'field_organizations_nid';
-  $handler->display->display_options['filters']['field_organizations_nid']['table'] = 'field_data_field_organizations';
-  $handler->display->display_options['filters']['field_organizations_nid']['field'] = 'field_organizations_nid';
-  $handler->display->display_options['filters']['field_organizations_nid']['operator'] = 'not empty';
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
@@ -11047,7 +11035,7 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('field_organizations'),
+    t('Content entity referenced from field_organizations'),
     t('Name'),
     t('Location'),
     t('All'),
@@ -11358,12 +11346,11 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: People (field_people) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_people_nid']['id'] = 'field_people_nid';
   $handler->display->display_options['relationships']['field_people_nid']['table'] = 'field_data_field_people';
   $handler->display->display_options['relationships']['field_people_nid']['field'] = 'field_people_nid';
   $handler->display->display_options['relationships']['field_people_nid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_people_nid']['delta'] = '-1';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -11412,7 +11399,7 @@ function elmcip_data_export_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('field_people'),
+    t('field_people_nid'),
     t('Name'),
     t('Residency'),
     t('All'),
@@ -12065,7 +12052,7 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Publishers';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -12085,28 +12072,22 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Publishers (field_publishers) */
-  $handler->display->display_options['relationships']['field_publishers_nid']['id'] = 'field_publishers_nid';
-  $handler->display->display_options['relationships']['field_publishers_nid']['table'] = 'field_data_field_publishers';
-  $handler->display->display_options['relationships']['field_publishers_nid']['field'] = 'field_publishers_nid';
-  $handler->display->display_options['relationships']['field_publishers_nid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_publishers_nid']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_publishers_target_id']['id'] = 'field_publishers_target_id';
+  $handler->display->display_options['relationships']['field_publishers_target_id']['table'] = 'field_data_field_publishers';
+  $handler->display->display_options['relationships']['field_publishers_target_id']['field'] = 'field_publishers_target_id';
+  $handler->display->display_options['relationships']['field_publishers_target_id']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_publishers_nid';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_publishers_target_id';
   $handler->display->display_options['fields']['title']['label'] = 'Name';
   /* Field: Content: Location */
   $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
   $handler->display->display_options['fields']['field_location']['table'] = 'field_data_field_location';
   $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
-  $handler->display->display_options['fields']['field_location']['relationship'] = 'field_publishers_nid';
+  $handler->display->display_options['fields']['field_location']['relationship'] = 'field_publishers_target_id';
   $handler->display->display_options['fields']['field_location']['delta_offset'] = '0';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
@@ -12152,7 +12133,7 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('field_publishers'),
+    t('Content entity referenced from field_publishers'),
     t('Name'),
     t('Location'),
     t('All'),
@@ -12316,7 +12297,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Critical writing (field_critical_writing) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_critical_writing_nid']['id'] = 'field_critical_writing_nid';
   $handler->display->display_options['arguments']['field_critical_writing_nid']['table'] = 'field_data_field_critical_writing';
   $handler->display->display_options['arguments']['field_critical_writing_nid']['field'] = 'field_critical_writing_nid';
@@ -12422,7 +12403,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Database or Archive reference (field_rc_db_archive) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_rc_db_archive_nid']['id'] = 'field_rc_db_archive_nid';
   $handler->display->display_options['arguments']['field_rc_db_archive_nid']['table'] = 'field_data_field_rc_db_archive';
   $handler->display->display_options['arguments']['field_rc_db_archive_nid']['field'] = 'field_rc_db_archive_nid';
@@ -12528,7 +12509,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Organizations (field_organizations) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_organizations_nid']['id'] = 'field_organizations_nid';
   $handler->display->display_options['arguments']['field_organizations_nid']['table'] = 'field_data_field_organizations';
   $handler->display->display_options['arguments']['field_organizations_nid']['field'] = 'field_organizations_nid';
@@ -12920,7 +12901,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: People (field_people) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_people_nid']['id'] = 'field_people_nid';
   $handler->display->display_options['arguments']['field_people_nid']['table'] = 'field_data_field_people';
   $handler->display->display_options['arguments']['field_people_nid']['field'] = 'field_people_nid';
@@ -13026,7 +13007,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Publishers (field_publishers) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_publishers_nid']['id'] = 'field_publishers_nid';
   $handler->display->display_options['arguments']['field_publishers_nid']['table'] = 'field_data_field_publishers';
   $handler->display->display_options['arguments']['field_publishers_nid']['field'] = 'field_publishers_nid';
@@ -13139,7 +13120,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Teaching Resources (field_teaching_resources) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_teaching_resources_nid']['id'] = 'field_teaching_resources_nid';
   $handler->display->display_options['arguments']['field_teaching_resources_nid']['table'] = 'field_data_field_teaching_resources';
   $handler->display->display_options['arguments']['field_teaching_resources_nid']['field'] = 'field_teaching_resources_nid';
@@ -13258,7 +13239,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Contextual filter: Content: Collection curated by (field_collection_curated_by) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['field_collection_curated_by_nid']['id'] = 'field_collection_curated_by_nid';
   $handler->display->display_options['arguments']['field_collection_curated_by_nid']['table'] = 'field_data_field_collection_curated_by';
   $handler->display->display_options['arguments']['field_collection_curated_by_nid']['field'] = 'field_collection_curated_by_nid';
@@ -14057,12 +14038,11 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Critical Writing referenced';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Teaching Resources (field_teaching_resources) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_teaching_resources_nid']['id'] = 'field_teaching_resources_nid';
   $handler->display->display_options['relationships']['field_teaching_resources_nid']['table'] = 'field_data_field_teaching_resources';
   $handler->display->display_options['relationships']['field_teaching_resources_nid']['field'] = 'field_teaching_resources_nid';
   $handler->display->display_options['relationships']['field_teaching_resources_nid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_teaching_resources_nid']['delta'] = '-1';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -14125,7 +14105,7 @@ function elmcip_data_export_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Critical Writing referenced'),
-    t('field_teaching_resources'),
+    t('field_teaching_resources_nid'),
     t('Title'),
     t('Type'),
     t('Author'),
@@ -17083,11 +17063,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Creative works referenced';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Creative works (field_creative_works) */
+  /* Relationship: Broken/missing handler */
   $handler->display->display_options['relationships']['field_creative_works_nid']['id'] = 'field_creative_works_nid';
   $handler->display->display_options['relationships']['field_creative_works_nid']['table'] = 'field_data_field_creative_works';
   $handler->display->display_options['relationships']['field_creative_works_nid']['field'] = 'field_creative_works_nid';
-  $handler->display->display_options['relationships']['field_creative_works_nid']['delta'] = '-1';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -17155,7 +17134,7 @@ function elmcip_data_export_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Creative works referenced'),
-    t('field_creative_works'),
+    t('field_creative_works_nid'),
     t('Title'),
     t('Author'),
     t('Year'),
