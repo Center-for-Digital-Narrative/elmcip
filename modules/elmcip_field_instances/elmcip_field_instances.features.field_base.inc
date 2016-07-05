@@ -398,43 +398,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_collection_contributors',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 'person',
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'person' => 'person',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_collection_curated_by'.
@@ -444,43 +429,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_collection_curated_by',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 'person',
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'person' => 'person',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_contact_email'.
@@ -568,43 +538,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_creative_works',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 'work',
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'work' => 'work',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_critical_writing'.
@@ -614,43 +569,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_critical_writing',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 'critical_writing',
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'critical_writing' => 'critical_writing',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_curator'.
@@ -2436,43 +2376,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_organizations',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 'organization',
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'organization' => 'organization',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_other_edition_link'.
@@ -2633,43 +2558,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_people',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 'person',
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'person' => 'person',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_platform_developers'.
@@ -2922,43 +2832,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_publishers',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 'publisher',
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'publisher' => 'publisher',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_pubtype_tax'.
@@ -3027,43 +2922,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_rc_db_archive',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 'databases_and_archives',
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 0,
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'databases_and_archives' => 'databases_and_archives',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_rc_description'.
@@ -3354,43 +3234,28 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_teaching_resources',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'node_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'referenceable_types' => array(
-        'book' => 0,
-        'class_group' => 0,
-        'critical_writing' => 0,
-        'databases_and_archives' => 0,
-        'event' => 0,
-        'notebook' => 0,
-        'notebook_entry' => 0,
-        'organization' => 0,
-        'page' => 0,
-        'panel' => 0,
-        'person' => 0,
-        'publisher' => 0,
-        'research_collection' => 0,
-        'story' => 0,
-        'teaching_resource' => 'teaching_resource',
-        'work' => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'target_bundles' => array(
+          'teaching_resource' => 'teaching_resource',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
     ),
     'translatable' => 0,
-    'type' => 'node_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_tech_notes'.
