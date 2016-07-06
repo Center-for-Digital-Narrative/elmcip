@@ -2333,33 +2333,6 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_number'.
-  $field_bases['field_number'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_number',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(
-      'allowed_values' => array(),
-      'allowed_values_php' => '',
-      'field_permissions' => NULL,
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'number_integer',
-    'type_name' => 'work',
-  );
-
   // Exported field_base: 'field_organization_cw'.
   $field_bases['field_organization_cw'] = array(
     'active' => 1,
