@@ -14217,13 +14217,15 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
         'autocomplete_match' => 'contains',
         'autocomplete_path' => 'node_reference/autocomplete',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 29,
     ),
   );
@@ -14996,15 +14998,17 @@ Note: Before adding a new person record, check to see if he or she is already li
     'weight' => 26,
     'widget' => array(
       'active' => 0,
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
         'autocomplete_match' => 'contains',
         'autocomplete_path' => 'node_reference/autocomplete',
         'default_value' => NULL,
         'default_value_php' => NULL,
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 27,
     ),
     'widget_type' => 'nodereference_autocomplete',
