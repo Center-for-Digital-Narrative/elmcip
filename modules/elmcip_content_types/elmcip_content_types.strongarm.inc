@@ -1076,7 +1076,7 @@ function elmcip_content_types_strongarm() {
       'display' => array(
         'Critical_writing_in_book_entity_view_1' => array(
           'default' => array(
-            'weight' => '11',
+            'weight' => '12',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1084,15 +1084,15 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '39',
-            'visible' => FALSE,
+            'weight' => '54',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '11',
+            'weight' => '51',
             'visible' => FALSE,
           ),
         ),
@@ -1106,21 +1106,21 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '41',
-            'visible' => FALSE,
+            'weight' => '56',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '9',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '1',
+            'weight' => '41',
             'visible' => FALSE,
           ),
         ),
         'critical_writin_critical_writing_entity_view_1' => array(
           'default' => array(
-            'weight' => '12',
+            'weight' => '13',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1128,43 +1128,43 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '40',
-            'visible' => FALSE,
+            'weight' => '55',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '11',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '12',
+            'weight' => '52',
             'visible' => FALSE,
           ),
         ),
         'cw_reference_critical_writing_entity_view_1' => array(
           'default' => array(
-            'weight' => '14',
+            'weight' => '15',
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '46',
+            'weight' => '45',
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '42',
-            'visible' => FALSE,
+            'weight' => '57',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '13',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '14',
+            'weight' => '54',
             'visible' => FALSE,
           ),
         ),
         'Work_critical_writing_entity_view_1' => array(
           'default' => array(
-            'weight' => '13',
+            'weight' => '14',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1172,15 +1172,15 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '38',
-            'visible' => FALSE,
+            'weight' => '53',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '12',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '13',
+            'weight' => '53',
             'visible' => FALSE,
           ),
         ),
@@ -1194,15 +1194,15 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '37',
-            'visible' => FALSE,
+            'weight' => '52',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '7',
+            'weight' => '47',
             'visible' => FALSE,
           ),
         ),
@@ -1220,11 +1220,11 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '28',
-            'visible' => FALSE,
+            'weight' => '43',
+            'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '4',
+            'weight' => '44',
             'visible' => FALSE,
           ),
         ),
@@ -1238,26 +1238,26 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '27',
-            'visible' => FALSE,
+            'weight' => '42',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '8',
+            'weight' => '48',
             'visible' => FALSE,
           ),
         ),
         'event_ref_on_cw_entity_view_1' => array(
           'full' => array(
-            'weight' => '45',
+            'weight' => '44',
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '26',
-            'visible' => FALSE,
+            'weight' => '41',
+            'visible' => TRUE,
           ),
           'default' => array(
             'weight' => '5',
@@ -1268,18 +1268,18 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '5',
+            'weight' => '45',
             'visible' => FALSE,
           ),
         ),
         'database_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '44',
+            'weight' => '43',
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '29',
-            'visible' => FALSE,
+            'weight' => '44',
+            'visible' => TRUE,
           ),
           'default' => array(
             'weight' => '3',
@@ -1290,7 +1290,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '3',
+            'weight' => '43',
             'visible' => FALSE,
           ),
         ),
@@ -1304,21 +1304,21 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '10',
-            'visible' => FALSE,
+            'weight' => '24',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '9',
+            'weight' => '49',
             'visible' => FALSE,
           ),
         ),
         'publisher_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '41',
+            'weight' => '40',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1326,43 +1326,43 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '10',
-            'visible' => FALSE,
+            'weight' => '23',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '6',
+            'weight' => '46',
             'visible' => FALSE,
           ),
         ),
         'publisher_referenced_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '42',
+            'weight' => '41',
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '10',
-            'visible' => FALSE,
+            'weight' => '25',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '10',
+            'weight' => '50',
             'visible' => FALSE,
           ),
         ),
         'organization_referenced_on_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '43',
+            'weight' => '42',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1370,21 +1370,37 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '10',
-            'visible' => FALSE,
+            'weight' => '27',
+            'visible' => TRUE,
           ),
           'token' => array(
             'weight' => '10',
             'visible' => TRUE,
           ),
           'search_result' => array(
-            'weight' => '2',
+            'weight' => '42',
             'visible' => FALSE,
           ),
         ),
         'organization_platform_critical_writing_entity_view_1' => array(
           'full' => array(
-            'weight' => '40',
+            'weight' => '39',
+            'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '26',
+            'visible' => TRUE,
+          ),
+          'search_result' => array(
+            'weight' => '7',
+            'visible' => TRUE,
+          ),
+          'token' => array(
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),

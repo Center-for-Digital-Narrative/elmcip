@@ -113,7 +113,7 @@ function elmcip_layout_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Editorial',
-    'weight' => '19',
+    'weight' => '20',
     'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -159,7 +159,7 @@ function elmcip_layout_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Editorial',
-    'weight' => '36',
+    'weight' => '51',
     'children' => array(),
     'format_type' => 'fieldset',
     'format_settings' => array(

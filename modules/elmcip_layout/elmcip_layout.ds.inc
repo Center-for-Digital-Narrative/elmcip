@@ -84,7 +84,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '51',
+      'weight' => '50',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -94,7 +94,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '52',
+      'weight' => '51',
       'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
@@ -120,6 +120,11 @@ function elmcip_layout_ds_field_settings_info() {
         'ft' => array(
           'lb' => 'WorldCat',
         ),
+      ),
+    ),
+    'field_critical_writing_year' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
   );
@@ -1288,7 +1293,7 @@ function elmcip_layout_ds_layout_settings_info() {
         3 => 'field_language_tax',
         4 => 'field_translator',
         5 => 'field_editor_name',
-        6 => 'field_number',
+        6 => 'field_critical_writing_year',
         7 => 'field_node_ref_event',
         8 => 'field_node_ref',
         9 => 'field_university',
@@ -1330,9 +1335,9 @@ function elmcip_layout_ds_layout_settings_info() {
         43 => 'database_on_critical_writing_entity_view_1',
         44 => 'event_ref_on_cw_entity_view_1',
         45 => 'cw_reference_critical_writing_entity_view_1',
-        46 => 'Tr_critical_writing_entity_view_1',
-        47 => 'research_collection_critical_writing_entity_view_1',
-        48 => 'field_media_asset',
+        46 => 'field_media_asset',
+        47 => 'Tr_critical_writing_entity_view_1',
+        48 => 'research_collection_critical_writing_entity_view_1',
         49 => 'field_files',
         50 => 'purl',
         51 => 'author',
@@ -1345,7 +1350,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_language_tax' => 'left',
       'field_translator' => 'left',
       'field_editor_name' => 'left',
-      'field_number' => 'left',
+      'field_critical_writing_year' => 'left',
       'field_node_ref_event' => 'left',
       'field_node_ref' => 'left',
       'field_university' => 'left',
@@ -1385,9 +1390,9 @@ function elmcip_layout_ds_layout_settings_info() {
       'database_on_critical_writing_entity_view_1' => 'right',
       'event_ref_on_cw_entity_view_1' => 'right',
       'cw_reference_critical_writing_entity_view_1' => 'right',
+      'field_media_asset' => 'right',
       'Tr_critical_writing_entity_view_1' => 'right',
       'research_collection_critical_writing_entity_view_1' => 'right',
-      'field_media_asset' => 'right',
       'field_files' => 'right',
       'purl' => 'right',
       'author' => 'right',

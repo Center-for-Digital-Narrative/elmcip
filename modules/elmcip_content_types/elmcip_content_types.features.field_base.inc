@@ -80,6 +80,43 @@ function elmcip_content_types_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_critical_writing_year'.
+  $field_bases['field_critical_writing_year'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'description' => 'Year in which the work was first published. If the work
+      changed on an ongoing basis over time, indicate the period in the work
+      description.',
+    'entity_types' => array(),
+    'field_name' => 'field_critical_writing_year',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'label' => 'Year',
+    'locked' => 0,
+    'module' => 'date',
+    'settings' => array(
+      'cache_count' => 4,
+      'cache_enabled' => 0,
+      'granularity' => array(
+        'day' => 0,
+        'hour' => 0,
+        'minute' => 0,
+        'month' => 'month',
+        'second' => 0,
+        'year' => 'year',
+      ),
+      'repeat' => 0,
+      'timezone_db' => '',
+      'todate' => '',
+      'tz_handling' => 'none',
+    ),
+    'translatable' => 0,
+    'type' => 'date',
+  );
+
   // Exported field_base: 'field_criticalw_platform_ref'.
   $field_bases['field_criticalw_platform_ref'] = array(
     'active' => 1,
