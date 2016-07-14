@@ -670,3 +670,11 @@ function elmcip_setup_update_7042() {
     field_delete_instance($instance, TRUE);
   }
 }
+
+/**
+ * Uninstall module Media Slideshare.
+ */
+function elmcip_setup_update_7043() {
+  module_disable(array('media_slideshare'), FALSE);
+  drupal_uninstall_modules(array('media_slideshare'), FALSE);
+}
