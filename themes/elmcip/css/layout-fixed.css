@@ -110,11 +110,13 @@ body {
 #header .social a {
   margin: 5px 0 0 20px;
 }
+
 /*
- * Main (container for everything else)
+ * Main (container for everything else).
  */
 #main-wrapper {
   position: relative;
+  margin: 20px 0 40px;
 }
 
 /*
@@ -130,8 +132,8 @@ body {
 }
 
 .sidebar-first #content {
-  width: 760px;
-  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
+  width: 720px;
+  margin-left: 240px; /* LTR */ /* The width of .region-sidebar-first. */
   margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
 }
 
@@ -148,7 +150,7 @@ body {
 }
 
 #content .section {
-  margin: 20px 10px;
+  margin: 0 10px;
 }
 
 /**
@@ -383,14 +385,14 @@ body {
  */
 .region-sidebar-first {
   float: left; /* LTR */
-  width: 200px;
+  width: 240px;
   margin-left: 0; /* LTR */
-  margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  margin-right: -240px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
   padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
 }
 
 .region-sidebar-first .section {
-  margin: 0 20px 0 0; /* LTR */
+  margin: 0 10px; /* LTR */
   padding: 0;
 }
 
