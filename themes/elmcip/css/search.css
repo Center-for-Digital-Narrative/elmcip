@@ -1,0 +1,25 @@
+.facetapi-facetapi-links {
+  font-weight: bold;
+}
+
+ul.facetapi-facetapi-links {
+  padding: 0;
+}
+
+ul.facetapi-facetapi-links li {
+  margin: 0;
+}
+
+.facetapi-facetapi-links a {
+  font-weight: normal;
+  color: #333333;
+}
+
+.view-kb-search ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.view-kb-search ul li {
+  margin: 0 0 20px 0;
+}
