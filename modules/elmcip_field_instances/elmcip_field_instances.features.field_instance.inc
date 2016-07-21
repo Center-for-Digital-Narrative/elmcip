@@ -14180,8 +14180,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -14850,7 +14848,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   // Exported field_instance: 'node-teaching_resource-field_tr_critical'.
   $field_instances['node-teaching_resource-field_tr_critical'] = array(
     'bundle' => 'teaching_resource',
-    'default_value' => '',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter the titles of critical writing in the teaching resource. If it is not in the knowledge base, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
     'display' => array(
@@ -14949,22 +14947,19 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 26,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tr_critical',
     'label' => 'Critical Writing Referenced',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'weight' => 26,
     'widget' => array(
-      'active' => 0,
+      'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
-        'default_value' => NULL,
-        'default_value_php' => NULL,
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -16352,6 +16347,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => -4,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_author_name',
     'label' => 'Author',
