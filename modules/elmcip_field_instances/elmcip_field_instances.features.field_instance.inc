@@ -3705,12 +3705,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   // Exported field_instance: 'node-critical_writing-field_node_ref_work'.
   $field_instances['node-critical_writing-field_node_ref_work'] = array(
     'bundle' => 'critical_writing',
-    'default_value' => array(
-      0 => array(
-        'nid' => NULL,
-        '_error_element' => 'default_value_widget][field_node_ref_work][0][nid][nid',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter the title of a work of electronic literature or digital art referenced in the critical writing. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.',
     'display' => array(
@@ -3821,21 +3816,19 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'weight' => 40,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_node_ref_work',
     'label' => 'Creative Works referenced',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'weight' => 40,
     'widget' => array(
-      'active' => 0,
+      'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
-        'default_value_php' => NULL,
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,

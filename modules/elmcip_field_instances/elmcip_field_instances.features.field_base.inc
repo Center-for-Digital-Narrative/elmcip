@@ -2233,6 +2233,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_node_ref_work',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -2246,6 +2249,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'work' => 'work',
         ),
