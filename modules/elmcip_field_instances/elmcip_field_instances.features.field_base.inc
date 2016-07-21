@@ -697,6 +697,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_database_or_archive_refere',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -710,6 +713,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'databases_and_archives' => 'databases_and_archives',
         ),
@@ -1585,6 +1596,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_inbook',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -1598,6 +1612,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'critical_writing' => 'critical_writing',
         ),
@@ -2351,6 +2373,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_organization_cw',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -2364,6 +2389,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'organization' => 'organization',
         ),
@@ -2413,6 +2446,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_other_edition_link',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -2426,6 +2462,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'critical_writing' => 'critical_writing',
         ),
@@ -2475,6 +2519,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_other_lang_ver_link',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -2488,6 +2535,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'critical_writing' => 'critical_writing',
           'work' => 'work',
@@ -2807,6 +2862,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_publisher_referenced',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -2820,6 +2878,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'publisher' => 'publisher',
         ),
@@ -3011,6 +3077,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ref_about_event',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -3024,6 +3093,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'event' => 'event',
         ),
@@ -3129,6 +3206,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_series_ref',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -3142,6 +3222,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'critical_writing' => 'critical_writing',
         ),
@@ -3369,6 +3457,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_tr_critical',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -3382,6 +3473,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'critical_writing' => 'critical_writing',
         ),
@@ -3612,6 +3711,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_translator',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -3625,6 +3727,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'person' => 'person',
         ),
@@ -3643,6 +3753,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_university',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -3656,6 +3769,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'organization' => 'organization',
         ),
