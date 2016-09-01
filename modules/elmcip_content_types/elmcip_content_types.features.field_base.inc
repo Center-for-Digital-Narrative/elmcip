@@ -104,7 +104,7 @@ function elmcip_content_types_field_default_field_bases() {
         'day' => 0,
         'hour' => 0,
         'minute' => 0,
-        'month' => 'month',
+        'month' => 0,
         'second' => 0,
         'year' => 'year',
       ),
