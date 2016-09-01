@@ -1010,13 +1010,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create panel-nodes'.
-  $permissions['create panel-nodes'] = array(
-    'name' => 'create panel-nodes',
-    'roles' => array(),
-    'module' => 'panels_node',
-  );
-
   // Exported permission: 'create person content'.
   $permissions['create person content'] = array(
     'name' => 'create person content',
@@ -1250,13 +1243,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any panel-nodes'.
-  $permissions['delete any panel-nodes'] = array(
-    'name' => 'delete any panel-nodes',
-    'roles' => array(),
-    'module' => 'panels_node',
-  );
-
   // Exported permission: 'delete any person content'.
   $permissions['delete any person content'] = array(
     'name' => 'delete any person content',
@@ -1470,13 +1456,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'delete own panel-nodes'.
-  $permissions['delete own panel-nodes'] = array(
-    'name' => 'delete own panel-nodes',
-    'roles' => array(),
-    'module' => 'panels_node',
   );
 
   // Exported permission: 'delete own person content'.
@@ -1824,13 +1803,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit any panel-nodes'.
-  $permissions['edit any panel-nodes'] = array(
-    'name' => 'edit any panel-nodes',
-    'roles' => array(),
-    'module' => 'panels_node',
   );
 
   // Exported permission: 'edit any person content'.
@@ -2333,13 +2305,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit own panel-nodes'.
-  $permissions['edit own panel-nodes'] = array(
-    'name' => 'edit own panel-nodes',
-    'roles' => array(),
-    'module' => 'panels_node',
   );
 
   // Exported permission: 'edit own person content'.
