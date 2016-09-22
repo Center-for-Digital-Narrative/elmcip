@@ -30,7 +30,6 @@ $tables = array(
   'cache_page',
   'cache_panels',
   'cache_path',
-  'cache_rules',
   'cache_token',
   'cache_views',
   'cache_views_data',
