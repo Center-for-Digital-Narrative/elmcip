@@ -678,3 +678,25 @@ function elmcip_setup_update_7043() {
   module_disable(array('media_slideshare'), FALSE);
   drupal_uninstall_modules(array('media_slideshare'), FALSE);
 }
+
+/**
+ * Migrate Teaching Resource record to entity reference.
+ */
+function elmcip_setup_update_7044() {
+    module_enable(array('entityreference_migration'), FALSE);
+    /**
+     * Fields to be converted:
+     *
+     * field_tr_author (Author)
+     * field_tr_org (Organization)
+     * field_tr_work (Creative Works Referenced)
+     * field_tr_tr (Teaching Resource Referenced)
+     */
+    print ("Migrating fields" . PHP_EOL);
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_tr_author"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_tr_org"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_tr_work"), array("verbose"));
+    drush_invoke_process("@site", "entityreference-migrate-references", array("field_tr_tr"), array("verbose"));
+    module_disable(array('entityreference_migration'), FALSE);
+    drupal_uninstall_modules(array('entityreference_migration'), FALSE);
+}
