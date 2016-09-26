@@ -14143,9 +14143,11 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 18,
       ),
       'full' => array(
@@ -14156,9 +14158,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 18,
       ),
       'teaser' => array(
@@ -14591,9 +14595,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'default' => array(
         'label' => 'above',
         'module' => 'file',
-        'settings' => array(
-          'file_view_mode' => 'default',
-        ),
+        'settings' => array(),
         'type' => 'file_default',
         'weight' => 13,
       ),
@@ -14609,9 +14611,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'search_result' => array(
         'label' => 'above',
         'module' => 'file',
-        'settings' => array(
-          'file_view_mode' => 'default',
-        ),
+        'settings' => array(),
         'type' => 'file_default',
         'weight' => 13,
       ),
@@ -14719,92 +14719,116 @@ Note: Before adding a new person record, check to see if he or she is already li
   // Exported field_instance: 'node-teaching_resource-field_tr_author'.
   $field_instances['node-teaching_resource-field_tr_author'] = array(
     'bundle' => 'teaching_resource',
-    'default_value' => '',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter the name of the person or people who developed this resource. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       3 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       4 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 3,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       'format' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 3,
       ),
       'reference' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       'region' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 3,
       ),
       'sticky' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
       'teaser' => array(
@@ -14815,34 +14839,33 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'token' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 19,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tr_author',
     'label' => 'Author',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
-    'weight' => 19,
     'widget' => array(
-      'active' => 0,
-      'module' => 'node_reference',
+      'active' => 1,
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
-        'default_value' => NULL,
-        'default_value_php' => NULL,
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 2,
     ),
-    'widget_type' => 'nodereference_autocomplete',
   );
 
   // Exported field_instance: 'node-teaching_resource-field_tr_critical'.
@@ -15112,86 +15135,110 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       2 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       3 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       4 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 4,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       'format' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 4,
       ),
       'reference' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       'region' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 4,
       ),
       'sticky' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
       'teaser' => array(
@@ -15202,9 +15249,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'token' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 20,
       ),
     ),
@@ -15216,19 +15265,17 @@ Note: Before adding a new person record, check to see if he or she is already li
     'settings' => array(
       'user_register_form' => FALSE,
     ),
-    'weight' => 20,
     'widget' => array(
       'active' => 1,
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 3,
     ),
-    'widget_type' => 'nodereference_autocomplete',
   );
 
   // Exported field_instance: 'node-teaching_resource-field_tr_tr'.
@@ -15240,9 +15287,11 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 17,
       ),
       'full' => array(
@@ -15253,9 +15302,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 17,
       ),
       'teaser' => array(
@@ -15275,13 +15326,13 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 28,
     ),
   );
@@ -15289,36 +15340,44 @@ Note: Before adding a new person record, check to see if he or she is already li
   // Exported field_instance: 'node-teaching_resource-field_tr_work'.
   $field_instances['node-teaching_resource-field_tr_work'] = array(
     'bundle' => 'teaching_resource',
-    'default_value' => '',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter titles of works of electronic literature or digital art referenced in the teaching resource. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       3 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       4 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       'default' => array(
@@ -15329,16 +15388,20 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'ds_weight' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       'format' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       'full' => array(
@@ -15349,29 +15412,38 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'reference' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       'region' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       'search_result' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 22,
       ),
       'sticky' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       'teaser' => array(
@@ -15382,34 +15454,33 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'token' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tr_work',
     'label' => 'Creative Works Referenced',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
-    'weight' => 25,
     'widget' => array(
-      'active' => 0,
-      'module' => 'node_reference',
+      'active' => 1,
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
-        'default_value' => NULL,
-        'default_value_php' => NULL,
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 26,
     ),
-    'widget_type' => 'nodereference_autocomplete',
   );
 
   // Exported field_instance: 'node-teaching_resource-field_tr_year'.
