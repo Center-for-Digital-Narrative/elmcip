@@ -2066,14 +2066,15 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Contextual filter: Content: Author (field_tr_author) */
-  $handler->display->display_options['arguments']['field_tr_author_nid']['id'] = 'field_tr_author_nid';
-  $handler->display->display_options['arguments']['field_tr_author_nid']['table'] = 'field_data_field_tr_author';
-  $handler->display->display_options['arguments']['field_tr_author_nid']['field'] = 'field_tr_author_nid';
-  $handler->display->display_options['arguments']['field_tr_author_nid']['default_action'] = 'not found';
-  $handler->display->display_options['arguments']['field_tr_author_nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_tr_author_nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_tr_author_nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_tr_author_nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['id'] = 'field_tr_author_target_id';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['table'] = 'field_data_field_tr_author';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['field'] = 'field_tr_author_target_id';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_tr_author_target_id']['validate']['type'] = 'node';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -2330,7 +2331,7 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
     'field_tr_year' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -2353,6 +2354,9 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_tr_author']['table'] = 'field_data_field_tr_author';
   $handler->display->display_options['fields']['field_tr_author']['field'] = 'field_tr_author';
   $handler->display->display_options['fields']['field_tr_author']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_tr_author']['settings'] = array(
+    'link' => 1,
+  );
   $handler->display->display_options['fields']['field_tr_author']['delta_offset'] = '0';
   /* Field: Content: Type */
   $handler->display->display_options['fields']['taxonomy_vocabulary_4']['id'] = 'taxonomy_vocabulary_4';
@@ -2367,11 +2371,12 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_tr_year']['field'] = 'field_tr_year';
   $handler->display->display_options['fields']['field_tr_year']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_tr_year']['settings'] = array(
-    'format_type' => 'long',
+    'format_type' => 'year',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
+    'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
   /* Sort criterion: Content: Title */
@@ -2379,14 +2384,14 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Contextual filter: Content: Creative Works Referenced (field_tr_work) */
-  $handler->display->display_options['arguments']['field_tr_work_nid']['id'] = 'field_tr_work_nid';
-  $handler->display->display_options['arguments']['field_tr_work_nid']['table'] = 'field_data_field_tr_work';
-  $handler->display->display_options['arguments']['field_tr_work_nid']['field'] = 'field_tr_work_nid';
-  $handler->display->display_options['arguments']['field_tr_work_nid']['default_action'] = 'not found';
-  $handler->display->display_options['arguments']['field_tr_work_nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_tr_work_nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_tr_work_nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_tr_work_nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_tr_work_target_id']['id'] = 'field_tr_work_target_id';
+  $handler->display->display_options['arguments']['field_tr_work_target_id']['table'] = 'field_data_field_tr_work';
+  $handler->display->display_options['arguments']['field_tr_work_target_id']['field'] = 'field_tr_work_target_id';
+  $handler->display->display_options['arguments']['field_tr_work_target_id']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['field_tr_work_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_tr_work_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_tr_work_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_tr_work_target_id']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -3236,7 +3241,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
     'field_author_name' => 'field_author_name',
-    'field_critical_writing_year' => 'field_critical_writing_year',
+    'field_work_year' => 'field_work_year',
   );
   $handler->display->display_options['style_options']['default'] = 'title';
   $handler->display->display_options['style_options']['info'] = array(
@@ -3252,7 +3257,7 @@ function elmcip_data_export_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_critical_writing_year' => array(
+    'field_work_year' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -3260,28 +3265,30 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Relationship: Content: Creative Works Referenced (field_tr_work) */
-  $handler->display->display_options['relationships']['field_tr_work_nid']['id'] = 'field_tr_work_nid';
-  $handler->display->display_options['relationships']['field_tr_work_nid']['table'] = 'field_data_field_tr_work';
-  $handler->display->display_options['relationships']['field_tr_work_nid']['field'] = 'field_tr_work_nid';
-  $handler->display->display_options['relationships']['field_tr_work_nid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_tr_work_nid']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_tr_work_target_id']['id'] = 'field_tr_work_target_id';
+  $handler->display->display_options['relationships']['field_tr_work_target_id']['table'] = 'field_data_field_tr_work';
+  $handler->display->display_options['relationships']['field_tr_work_target_id']['field'] = 'field_tr_work_target_id';
+  $handler->display->display_options['relationships']['field_tr_work_target_id']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_tr_work_nid';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_tr_work_target_id';
   /* Field: Content: Author */
   $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['relationship'] = 'field_tr_work_nid';
+  $handler->display->display_options['fields']['field_author_name']['relationship'] = 'field_tr_work_target_id';
+  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
+    'link' => 1,
+  );
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
   $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
   $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
-  $handler->display->display_options['fields']['field_work_year']['relationship'] = 'field_tr_work_nid';
+  $handler->display->display_options['fields']['field_work_year']['relationship'] = 'field_tr_work_target_id';
   $handler->display->display_options['fields']['field_work_year']['settings'] = array(
     'format_type' => 'year',
     'fromto' => 'both',
@@ -3335,7 +3342,7 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('field_tr_work'),
+    t('Content entity referenced from field_tr_work'),
     t('Title'),
     t('Author'),
     t('Year'),
@@ -14177,7 +14184,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['title'] = 'Teaching resource referenced';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -14219,28 +14226,30 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Teaching Resource referenced';
   $handler->display->display_options['header']['area']['format'] = '1';
-  /* Relationship: Content: Teaching Resource Referenced (field_tr_tr) */
-  $handler->display->display_options['relationships']['field_tr_tr_nid']['id'] = 'field_tr_tr_nid';
-  $handler->display->display_options['relationships']['field_tr_tr_nid']['table'] = 'field_data_field_tr_tr';
-  $handler->display->display_options['relationships']['field_tr_tr_nid']['field'] = 'field_tr_tr_nid';
-  $handler->display->display_options['relationships']['field_tr_tr_nid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_tr_tr_nid']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_tr_tr_target_id']['id'] = 'field_tr_tr_target_id';
+  $handler->display->display_options['relationships']['field_tr_tr_target_id']['table'] = 'field_data_field_tr_tr';
+  $handler->display->display_options['relationships']['field_tr_tr_target_id']['field'] = 'field_tr_tr_target_id';
+  $handler->display->display_options['relationships']['field_tr_tr_target_id']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_tr_tr_nid';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_tr_tr_target_id';
   /* Field: Content: Author */
   $handler->display->display_options['fields']['field_tr_author']['id'] = 'field_tr_author';
   $handler->display->display_options['fields']['field_tr_author']['table'] = 'field_data_field_tr_author';
   $handler->display->display_options['fields']['field_tr_author']['field'] = 'field_tr_author';
-  $handler->display->display_options['fields']['field_tr_author']['relationship'] = 'field_tr_tr_nid';
+  $handler->display->display_options['fields']['field_tr_author']['relationship'] = 'field_tr_tr_target_id';
+  $handler->display->display_options['fields']['field_tr_author']['settings'] = array(
+    'link' => 1,
+  );
   $handler->display->display_options['fields']['field_tr_author']['delta_offset'] = '0';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_tr_year']['id'] = 'field_tr_year';
   $handler->display->display_options['fields']['field_tr_year']['table'] = 'field_data_field_tr_year';
   $handler->display->display_options['fields']['field_tr_year']['field'] = 'field_tr_year';
-  $handler->display->display_options['fields']['field_tr_year']['relationship'] = 'field_tr_tr_nid';
+  $handler->display->display_options['fields']['field_tr_year']['relationship'] = 'field_tr_tr_target_id';
   $handler->display->display_options['fields']['field_tr_year']['settings'] = array(
     'format_type' => 'year',
     'fromto' => 'both',
@@ -14258,7 +14267,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['default_action'] = 'not found';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
@@ -14295,7 +14303,7 @@ function elmcip_data_export_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Teaching Resource referenced'),
-    t('field_tr_tr'),
+    t('Content entity referenced from field_tr_tr'),
     t('Title'),
     t('Author'),
     t('Year'),
@@ -14545,14 +14553,15 @@ function elmcip_data_export_views_default_views() {
   /* Display: Defaults */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Teaching Resource published:';
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = 50;
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -14622,14 +14631,14 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Contextual filter: Content: Organization (field_tr_org) */
-  $handler->display->display_options['arguments']['field_tr_org_nid']['id'] = 'field_tr_org_nid';
-  $handler->display->display_options['arguments']['field_tr_org_nid']['table'] = 'field_data_field_tr_org';
-  $handler->display->display_options['arguments']['field_tr_org_nid']['field'] = 'field_tr_org_nid';
-  $handler->display->display_options['arguments']['field_tr_org_nid']['default_action'] = 'empty';
-  $handler->display->display_options['arguments']['field_tr_org_nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_tr_org_nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_tr_org_nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_tr_org_nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_tr_org_target_id']['id'] = 'field_tr_org_target_id';
+  $handler->display->display_options['arguments']['field_tr_org_target_id']['table'] = 'field_data_field_tr_org';
+  $handler->display->display_options['arguments']['field_tr_org_target_id']['field'] = 'field_tr_org_target_id';
+  $handler->display->display_options['arguments']['field_tr_org_target_id']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['field_tr_org_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_tr_org_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_tr_org_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_tr_org_target_id']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -14663,6 +14672,13 @@ function elmcip_data_export_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
     t('Add new <a href="/node/add/teaching-resource" target="_blank">teaching resource</a>.'),
     t('Resource'),
     t('Teaching Resource Type'),
