@@ -24,3 +24,4 @@ gunzip -c $HOME/latest.elmcip.sql.gz | bin/site-drush sql-cli
 
 echo "Upgrade site to master."
 bin/site-upgrade master
+bin/site-drush vset syslog_identity $1

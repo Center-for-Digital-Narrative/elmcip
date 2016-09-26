@@ -18,4 +18,6 @@ function development_settings_install() {
   variable_set('preprocess_js', 0);
   drupal_flush_all_caches();
   print("Disabled all cache setting.\n");
+  module_disable(array('syslog'), FALSE);
+  drupal_uninstall_modules(array('syslog'), FALSE);
 }
