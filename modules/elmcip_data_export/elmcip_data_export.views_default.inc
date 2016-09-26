@@ -8567,17 +8567,71 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
-  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
-  $handler->display->display_options['style_options']['wrapper_class'] = '';
-  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_author_name' => 'field_author_name',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_author_name' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
   /* Header: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  /* Field: Author critical_writing, work */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['ui_name'] = 'Author critical_writing, work';
+  $handler->display->display_options['fields']['field_author_name']['label'] = '';
+  $handler->display->display_options['fields']['field_author_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_author_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_author_name']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_author_name']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
+  /* Field: Author teaching_resource */
+  $handler->display->display_options['fields']['field_tr_author']['id'] = 'field_tr_author';
+  $handler->display->display_options['fields']['field_tr_author']['table'] = 'field_data_field_tr_author';
+  $handler->display->display_options['fields']['field_tr_author']['field'] = 'field_tr_author';
+  $handler->display->display_options['fields']['field_tr_author']['ui_name'] = 'Author teaching_resource';
+  $handler->display->display_options['fields']['field_tr_author']['label'] = '';
+  $handler->display->display_options['fields']['field_tr_author']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_tr_author']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_tr_author']['alter']['text'] = '[field_author_name][field_tr_author]';
+  $handler->display->display_options['fields']['field_tr_author']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_tr_author']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_tr_author']['delta_offset'] = '0';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Author';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_author_name]
+[field_tr_author]';
   /* Sort criterion: Content: Sticky */
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
@@ -8640,11 +8694,6 @@ function elmcip_data_export_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Displaying @start - @end of @total'),
-    t('All'),
-    t('%1'),
-    t('Page'),
-    t('Feed'),
     t('Items per page'),
     t('- All -'),
     t('Offset'),
@@ -8652,6 +8701,16 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('Displaying @start - @end of @total'),
+    t('Title'),
+    t('[field_author_name][field_tr_author]'),
+    t('Author'),
+    t('[field_author_name]
+[field_tr_author]'),
+    t('All'),
+    t('%1'),
+    t('Page'),
+    t('Feed'),
   );
   $export['elmcip_taxonomy_term'] = $view;
 

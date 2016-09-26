@@ -26,29 +26,3 @@
 .front #content .pane-views-recent-posts .field-item {
   margin: 0;
 }
-
-.view-elmcip-taxonomy-term ul {}
-
-.view-elmcip-taxonomy-term .view-content {
-  -moz-column-count: 2;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
-  column-count: 2;
-  column-gap: 20px;
-}
-
-.view-elmcip-taxonomy-term li {
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid;
-}
-
-.view-elmcip-taxonomy-term ul {
-  padding: 0;
-}
-
-.view-elmcip-taxonomy-term li {
-  list-style: none;
-  margin: 0 0 20px 0;
-}
