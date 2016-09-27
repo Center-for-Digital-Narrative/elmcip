@@ -5478,8 +5478,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'search_result' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 33,
       ),
       'teaser' => array(
@@ -5499,13 +5502,13 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 7,
     ),
   );
@@ -5526,15 +5529,20 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 8,
       ),
       'search_result' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 32,
       ),
       'teaser' => array(
@@ -5554,13 +5562,13 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 6,
     ),
   );
@@ -5732,23 +5740,29 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 3,
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -5768,13 +5782,13 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 4,
     ),
   );
@@ -5789,23 +5803,29 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'above',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 7,
       ),
       'teaser' => array(
@@ -5825,13 +5845,13 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'node_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 5,
     ),
   );

@@ -1516,6 +1516,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '20',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'teaching_resource_db_archive_entity_view_1' => array(
           'full' => array(
@@ -1530,6 +1534,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '19',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'critical_writing_db_archive_entity_view_1' => array(
           'full' => array(
@@ -1542,6 +1550,10 @@ function elmcip_content_types_strongarm() {
           ),
           'search_result' => array(
             'weight' => '21',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
             'visible' => FALSE,
           ),
         ),

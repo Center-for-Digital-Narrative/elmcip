@@ -1573,6 +1573,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|databases_and_archives|full'] = $ds_layout;
 
@@ -1584,8 +1585,6 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'teaser';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
       'ds_content' => array(
         0 => 'content_type',
@@ -1599,6 +1598,15 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_project_type' => 'ds_content',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|databases_and_archives|teaser'] = $ds_layout;
 
