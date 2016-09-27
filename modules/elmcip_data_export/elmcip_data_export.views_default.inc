@@ -10460,10 +10460,13 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
+    'field_notebok' => 'field_notebok',
     'title' => 'title',
     'field_work_noted' => 'field_work_noted',
     'field_cw_noted' => 'field_cw_noted',
@@ -10471,40 +10474,51 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['style_options']['default'] = 'title';
   $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
-      'sortable' => 0,
+    'field_notebok' => array(
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
+    ),
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
     ),
     'field_work_noted' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
     ),
     'field_cw_noted' => array(
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
     ),
     'field_your_notes' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
     ),
   );
-  /* Relationship: Content: Notebook (field_notebok) */
-  $handler->display->display_options['relationships']['field_notebok_nid']['id'] = 'field_notebok_nid';
-  $handler->display->display_options['relationships']['field_notebok_nid']['table'] = 'field_data_field_notebok';
-  $handler->display->display_options['relationships']['field_notebok_nid']['field'] = 'field_notebok_nid';
-  $handler->display->display_options['relationships']['field_notebok_nid']['required'] = TRUE;
-  $handler->display->display_options['relationships']['field_notebok_nid']['delta'] = '-1';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_notebok_target_id']['id'] = 'field_notebok_target_id';
+  $handler->display->display_options['relationships']['field_notebok_target_id']['table'] = 'field_data_field_notebok';
+  $handler->display->display_options['relationships']['field_notebok_target_id']['field'] = 'field_notebok_target_id';
+  $handler->display->display_options['relationships']['field_notebok_target_id']['required'] = TRUE;
   /* Field: Content: Notebook */
   $handler->display->display_options['fields']['field_notebok']['id'] = 'field_notebok';
   $handler->display->display_options['fields']['field_notebok']['table'] = 'field_data_field_notebok';
   $handler->display->display_options['fields']['field_notebok']['field'] = 'field_notebok';
   $handler->display->display_options['fields']['field_notebok']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_notebok']['settings'] = array(
+    'link' => 1,
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -10513,18 +10527,13 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Field: Content: Your notes */
-  $handler->display->display_options['fields']['field_your_notes']['id'] = 'field_your_notes';
-  $handler->display->display_options['fields']['field_your_notes']['table'] = 'field_data_field_your_notes';
-  $handler->display->display_options['fields']['field_your_notes']['field'] = 'field_your_notes';
-  $handler->display->display_options['fields']['field_your_notes']['hide_alter_empty'] = FALSE;
   /* Field: Content: Work noted */
   $handler->display->display_options['fields']['field_work_noted']['id'] = 'field_work_noted';
   $handler->display->display_options['fields']['field_work_noted']['table'] = 'field_data_field_work_noted';
   $handler->display->display_options['fields']['field_work_noted']['field'] = 'field_work_noted';
   $handler->display->display_options['fields']['field_work_noted']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_work_noted']['settings'] = array(
-    'node_reference_view_mode' => 'full',
+    'link' => 1,
   );
   $handler->display->display_options['fields']['field_work_noted']['delta_offset'] = '0';
   /* Field: Content: Critical Writing noted */
@@ -10533,9 +10542,14 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_cw_noted']['field'] = 'field_cw_noted';
   $handler->display->display_options['fields']['field_cw_noted']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_cw_noted']['settings'] = array(
-    'node_reference_view_mode' => 'full',
+    'link' => 1,
   );
   $handler->display->display_options['fields']['field_cw_noted']['delta_offset'] = '0';
+  /* Field: Content: Your notes */
+  $handler->display->display_options['fields']['field_your_notes']['id'] = 'field_your_notes';
+  $handler->display->display_options['fields']['field_your_notes']['table'] = 'field_data_field_your_notes';
+  $handler->display->display_options['fields']['field_your_notes']['field'] = 'field_your_notes';
+  $handler->display->display_options['fields']['field_your_notes']['hide_alter_empty'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -10545,8 +10559,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
-  $handler->display->display_options['arguments']['nid']['relationship'] = 'field_notebok_nid';
-  $handler->display->display_options['arguments']['nid']['default_action'] = 'empty';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'field_notebok_target_id';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'not found';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
@@ -10561,47 +10575,11 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Notebook */
-  $handler->display->display_options['fields']['field_notebok']['id'] = 'field_notebok';
-  $handler->display->display_options['fields']['field_notebok']['table'] = 'field_data_field_notebok';
-  $handler->display->display_options['fields']['field_notebok']['field'] = 'field_notebok';
-  $handler->display->display_options['fields']['field_notebok']['hide_alter_empty'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = 'Note title';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Field: Content: Work noted */
-  $handler->display->display_options['fields']['field_work_noted']['id'] = 'field_work_noted';
-  $handler->display->display_options['fields']['field_work_noted']['table'] = 'field_data_field_work_noted';
-  $handler->display->display_options['fields']['field_work_noted']['field'] = 'field_work_noted';
-  $handler->display->display_options['fields']['field_work_noted']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_work_noted']['settings'] = array(
-    'node_reference_view_mode' => 'search_result',
-  );
-  $handler->display->display_options['fields']['field_work_noted']['delta_offset'] = '0';
-  /* Field: Content: Critical Writing noted */
-  $handler->display->display_options['fields']['field_cw_noted']['id'] = 'field_cw_noted';
-  $handler->display->display_options['fields']['field_cw_noted']['table'] = 'field_data_field_cw_noted';
-  $handler->display->display_options['fields']['field_cw_noted']['field'] = 'field_cw_noted';
-  $handler->display->display_options['fields']['field_cw_noted']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_cw_noted']['settings'] = array(
-    'node_reference_view_mode' => 'search_result',
-  );
-  $handler->display->display_options['fields']['field_cw_noted']['delta_offset'] = '0';
-  /* Field: Content: Your notes */
-  $handler->display->display_options['fields']['field_your_notes']['id'] = 'field_your_notes';
-  $handler->display->display_options['fields']['field_your_notes']['table'] = 'field_data_field_your_notes';
-  $handler->display->display_options['fields']['field_your_notes']['field'] = 'field_your_notes';
-  $handler->display->display_options['fields']['field_your_notes']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['entity_type'] = 'node';
   $handler->display->display_options['bundles'] = array(
     0 => 'notebook',
   );
+  $handler->display->display_options['show_title'] = 1;
   $translatables['notes_in_this_notebook'] = array(
     t('Master'),
     t('Notes in this notebook'),
@@ -10618,12 +10596,12 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('field_notebok'),
+    t('Content entity referenced from field_notebok'),
     t('Notebook'),
     t('Note title'),
-    t('Your notes'),
     t('Work noted'),
     t('Critical Writing noted'),
+    t('Your notes'),
     t('All'),
     t('Entity content'),
   );
