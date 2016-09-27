@@ -1,11 +1,17 @@
 # How to deploy a new version in production
-Before attempting to upgrade and deploy a new version, make sure that you have read and performed steps found in [How to create a release] (create_release.md).
+Before attempting to upgrade and deploy a new version, make sure that you have read and performed steps found in [How to create a release] (create_release.md). Deploying a new version of ELMCIP consist in only three steps.
+
+1. Set Drupal into maintainance mode. This stop changes to the db.
+2. Create a backup of the database.
+3. Upgrade to newest version.
 
 ## Choose your installation
-ELMCIP have three different sites running. Make sure to pick the right site to deploy to.
- - http://elmcip.net Production site.
- - http://test.elmcip.net Copy of production site. A new version should be applied to this to make sure it works.
- - http://beta.elmcip.net Development site. Anything goes. Mostly used to test out new functionality or to enable us to stage certain issue to give it a broader public access to test it out.
+
+ELMCIP have three different sites running. Make sure to pick the right site before deploying.
+
+ 1. http://elmcip.net Production site.
+ 2. http://test.elmcip.net Copy of production site. A new version should be applied to this to make sure it works.
+ 3. http://beta.elmcip.net Development site. Anything goes. Mostly used to test out new functionality or to enable us to stage certain issue to give it a broader public access to test it out.
  
     cd /applications/
 And pick your site.
@@ -14,7 +20,10 @@ And pick your site.
 Always make sure to have a up to date backup of the database before attempting to do anything on a live site. A backup allow you to recover in case something goes wrong.
 
     bin/site-drush sql-dump --result-file=~/`date +"%d.%m.%Y"`.elmcip.sql
-This create a up to date copy of the database in your home directory. `ls -l $HOME/`date +"%d.%m.%Y"`.elmcip.sql` to list the file you just created.
+This create a up to date copy of the database in your home directory. 
+
+    ls -l $HOME/`date +"%d.%m.%Y"`.elmcip.sql
+to list the file you just created.
 
 ### Update our two main git branches
 Our production site always run on the production branch. This branch only track the versions tagged by [How to create a release] (create_release.md).
