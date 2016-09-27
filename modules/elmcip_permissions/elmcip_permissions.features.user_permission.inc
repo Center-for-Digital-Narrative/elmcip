@@ -796,34 +796,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: 'create field_author_noted'.
-  $permissions['create field_author_noted'] = array(
-    'name' => 'create field_author_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'create field_cw_noted'.
-  $permissions['create field_cw_noted'] = array(
-    'name' => 'create field_cw_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: 'create field_editorial_notes'.
   $permissions['create field_editorial_notes'] = array(
     'name' => 'create field_editorial_notes',
@@ -832,35 +804,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'create field_event_noted'.
-  $permissions['create field_event_noted'] = array(
-    'name' => 'create field_event_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'create field_notebok'.
-  $permissions['create field_notebok'] = array(
-    'name' => 'create field_notebok',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-      'teacher' => 'teacher',
     ),
     'module' => 'field_permissions',
   );
@@ -896,21 +839,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'teacher' => 'teacher',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'create field_work_noted'.
-  $permissions['create field_work_noted'] = array(
-    'name' => 'create field_work_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'field_permissions',
   );
@@ -1909,57 +1837,9 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: 'edit field_author_noted'.
-  $permissions['edit field_author_noted'] = array(
-    'name' => 'edit field_author_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit field_cw_noted'.
-  $permissions['edit field_cw_noted'] = array(
-    'name' => 'edit field_cw_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: 'edit field_editorial_notes'.
   $permissions['edit field_editorial_notes'] = array(
     'name' => 'edit field_editorial_notes',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit field_event_noted'.
-  $permissions['edit field_event_noted'] = array(
-    'name' => 'edit field_event_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit field_notebok'.
-  $permissions['edit field_notebok'] = array(
-    'name' => 'edit field_notebok',
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
@@ -2003,18 +1883,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'teacher' => 'teacher',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit field_work_noted'.
-  $permissions['edit field_work_noted'] = array(
-    'name' => 'edit field_work_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'field_permissions',
   );
@@ -2118,34 +1986,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: 'edit own field_author_noted'.
-  $permissions['edit own field_author_noted'] = array(
-    'name' => 'edit own field_author_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit own field_cw_noted'.
-  $permissions['edit own field_cw_noted'] = array(
-    'name' => 'edit own field_cw_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: 'edit own field_editorial_notes'.
   $permissions['edit own field_editorial_notes'] = array(
     'name' => 'edit own field_editorial_notes',
@@ -2156,29 +1996,6 @@ function elmcip_permissions_user_default_permissions() {
       'editor' => 'editor',
       'submitter' => 'submitter',
       'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit own field_event_noted'.
-  $permissions['edit own field_event_noted'] = array(
-    'name' => 'edit own field_event_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit own field_notebok'.
-  $permissions['edit own field_notebok'] = array(
-    'name' => 'edit own field_notebok',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'field_permissions',
   );
@@ -2215,21 +2032,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'teacher' => 'teacher',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'edit own field_work_noted'.
-  $permissions['edit own field_work_noted'] = array(
-    'name' => 'edit own field_work_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'field_permissions',
   );
@@ -2855,31 +2657,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: 'view field_author_noted'.
-  $permissions['view field_author_noted'] = array(
-    'name' => 'view field_author_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view field_cw_noted'.
-  $permissions['view field_cw_noted'] = array(
-    'name' => 'view field_cw_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: 'view field_editorial_notes'.
   $permissions['view field_editorial_notes'] = array(
     'name' => 'view field_editorial_notes',
@@ -2888,30 +2665,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view field_event_noted'.
-  $permissions['view field_event_noted'] = array(
-    'name' => 'view field_event_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view field_notebok'.
-  $permissions['view field_notebok'] = array(
-    'name' => 'view field_notebok',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
       'supereditor' => 'supereditor',
     ),
     'module' => 'field_permissions',
@@ -2947,19 +2700,6 @@ function elmcip_permissions_user_default_permissions() {
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'teacher' => 'teacher',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view field_work_noted'.
-  $permissions['view field_work_noted'] = array(
-    'name' => 'view field_work_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'field_permissions',
   );
@@ -3011,29 +2751,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: 'view own field_author_noted'.
-  $permissions['view own field_author_noted'] = array(
-    'name' => 'view own field_author_noted',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view own field_cw_noted'.
-  $permissions['view own field_cw_noted'] = array(
-    'name' => 'view own field_cw_noted',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: 'view own field_editorial_notes'.
   $permissions['view own field_editorial_notes'] = array(
     'name' => 'view own field_editorial_notes',
@@ -3044,24 +2761,6 @@ function elmcip_permissions_user_default_permissions() {
       'editor' => 'editor',
       'submitter' => 'submitter',
       'supereditor' => 'supereditor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view own field_event_noted'.
-  $permissions['view own field_event_noted'] = array(
-    'name' => 'view own field_event_noted',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view own field_notebok'.
-  $permissions['view own field_notebok'] = array(
-    'name' => 'view own field_notebok',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'field_permissions',
   );
@@ -3096,15 +2795,6 @@ function elmcip_permissions_user_default_permissions() {
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'teacher' => 'teacher',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: 'view own field_work_noted'.
-  $permissions['view own field_work_noted'] = array(
-    'name' => 'view own field_work_noted',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'field_permissions',
   );
