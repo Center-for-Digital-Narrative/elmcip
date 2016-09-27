@@ -722,3 +722,27 @@ function elmcip_setup_update_7045() {
   module_disable(array('entityreference_migration'), FALSE);
   drupal_uninstall_modules(array('entityreference_migration'), FALSE);
 }
+
+/**
+ * Migrate notebook entry record to entity reference.
+ */
+function elmcip_setup_update_7046() {
+  module_enable(array('entityreference_migration'), FALSE);
+  /**
+   * Fields to be converted:
+   *
+   * Notebook field_notebok
+   * Work noted field_work_noted
+   * Critical Writing noted field_cw_noted
+   * Author noted field_author_noted
+   * Event noted field_event_noted
+   */
+  print ("Migrating fields" . PHP_EOL);
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_notebok"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_work_noted"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_cw_noted"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_author_noted"), array("verbose"));
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_event_noted"), array("verbose"));
+  module_disable(array('entityreference_migration'), FALSE);
+  drupal_uninstall_modules(array('entityreference_migration'), FALSE);
+}
