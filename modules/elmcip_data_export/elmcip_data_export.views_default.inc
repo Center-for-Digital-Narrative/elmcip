@@ -3486,6 +3486,13 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h2>Sorry, no results were found</h2>';
+  $handler->display->display_options['empty']['area']['format'] = '3';
   /* Relationship: Taxonomy term: Content using Tags */
   $handler->display->display_options['relationships']['reverse_taxonomy_vocabulary_1_node']['id'] = 'reverse_taxonomy_vocabulary_1_node';
   $handler->display->display_options['relationships']['reverse_taxonomy_vocabulary_1_node']['table'] = 'taxonomy_term_data';
@@ -3531,19 +3538,18 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   $handler->display->display_options['sorts']['title']['relationship'] = 'reverse_taxonomy_vocabulary_1_node';
-  /* Contextual filter: Taxonomy term: Name */
-  $handler->display->display_options['arguments']['name']['id'] = 'name';
-  $handler->display->display_options['arguments']['name']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['arguments']['name']['field'] = 'name';
-  $handler->display->display_options['arguments']['name']['default_action'] = 'summary';
-  $handler->display->display_options['arguments']['name']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['name']['title'] = 'Content tagged with %1';
-  $handler->display->display_options['arguments']['name']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['name']['summary']['sort_order'] = 'desc';
-  $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '1';
-  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['name']['limit'] = '0';
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'summary';
+  $handler->display->display_options['arguments']['tid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['title'] = 'Content tagged with %1';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['tid']['summary']['sort_order'] = 'desc';
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '1';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published or admin */
   $handler->display->display_options['filters']['status_extra']['id'] = 'status_extra';
   $handler->display->display_options['filters']['status_extra']['table'] = 'node';
@@ -3610,6 +3616,7 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('<h2>Sorry, no results were found</h2>'),
     t('taxonomy_vocabulary_1'),
     t('Title'),
     t('Author'),
