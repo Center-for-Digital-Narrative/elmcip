@@ -29,7 +29,7 @@ function elmcip_setup_filter_default_formats() {
         'weight' => 1,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <ul> <ol> <li> <dl> <dt> <dd> <h2> <h3> <h4> <h5> <img>',
+          'allowed_html' => '<a> <em> <strong> <cite> <ul> <ol> <li> <dl> <dt> <dd> <h2> <h3> <h4> <h5> <img> <s>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
@@ -104,7 +104,7 @@ function elmcip_setup_filter_default_formats() {
         'weight' => 10,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd> <img> <h2> <h3> <h4> <br> <p>',
+          'allowed_html' => '<a> <em> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd> <img> <h2> <h3> <h4> <br> <p> <s>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
@@ -152,7 +152,7 @@ function elmcip_setup_filter_default_formats() {
         'weight' => -10,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd><p><br>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd><p><br> <s>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
