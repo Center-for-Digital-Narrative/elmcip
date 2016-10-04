@@ -42,6 +42,7 @@ stylesheets[all][]        = css/panels.css
 stylesheets[all][]        = yui/cssbutton.css
 stylesheets[all][]        = css/table.css
 stylesheets[all][]        = css/search.css
+stylesheets[all][]        = css/media.css
 stylesheets[print][]      = css/print.css
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type

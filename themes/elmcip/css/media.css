@@ -1,0 +1,16 @@
+.content >img,
+.field img {
+  max-width: 100%;
+  height: auto;
+}
+
+.media-vimeo-player,
+.media-youtube-player {
+  max-width: 100%;
+}
+
+video,
+.file-video-flickr object {
+  width: 100%;
+  height: auto;
+}

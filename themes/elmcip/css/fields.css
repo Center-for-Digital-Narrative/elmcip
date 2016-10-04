@@ -23,17 +23,6 @@
 .field-type-image {
 }
 
-.content >img,
-.field img {
-  max-width: 100%;
-  height: auto;
-}
-
-.media-vimeo-player,
-.media-youtube-player {
-  max-width: 100%;
-}
-
 .field-type-file {
 }
 
@@ -105,8 +94,4 @@ fieldset .fieldset-description {
 }
 
 .field-name-field-tags {
-}
-
-.file-video-flickr object {
-  width: 100%;
 }
