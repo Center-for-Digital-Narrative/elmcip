@@ -5474,7 +5474,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 35,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -5981,7 +5981,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 36,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -6033,7 +6033,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -6111,7 +6111,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -6232,7 +6232,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'search_result' => array(
         'label' => 'above',

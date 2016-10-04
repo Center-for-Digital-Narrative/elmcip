@@ -11756,11 +11756,13 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'field_database_platform_ref_target_id';
+  $handler->display->display_options['fields']['title']['label'] = 'Platform';
   /* Field: Content: Developers */
   $handler->display->display_options['fields']['field_platform_developers']['id'] = 'field_platform_developers';
   $handler->display->display_options['fields']['field_platform_developers']['table'] = 'field_data_field_platform_developers';
   $handler->display->display_options['fields']['field_platform_developers']['field'] = 'field_platform_developers';
   $handler->display->display_options['fields']['field_platform_developers']['relationship'] = 'field_database_platform_ref_target_id';
+  $handler->display->display_options['fields']['field_platform_developers']['label'] = 'Developer';
   $handler->display->display_options['fields']['field_platform_developers']['settings'] = array(
     'link' => 1,
   );
@@ -11825,8 +11827,8 @@ function elmcip_data_export_views_default_views() {
     t('last »'),
     t('Add new <a href="/node/add/databases-and-archives" target="_blank">platform</a>.'),
     t('Content entity referenced from field_database_platform_ref'),
-    t('Title'),
-    t('Developers'),
+    t('Platform'),
+    t('Developer'),
     t('Year initiated'),
     t('All'),
     t('Entity content'),

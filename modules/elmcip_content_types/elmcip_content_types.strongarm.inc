@@ -1557,6 +1557,12 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'platform_db_archive_entity_view_1' => array(
+          'full' => array(
+            'weight' => '19',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
   );

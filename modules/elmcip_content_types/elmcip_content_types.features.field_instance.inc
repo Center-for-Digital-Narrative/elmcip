@@ -340,7 +340,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="node/add/platform-software">add a record for the platform or software</a> before completing this record.',
+    'description' => 'Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -355,7 +355,7 @@ function elmcip_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 31,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1355,7 +1355,7 @@ function elmcip_content_types_field_default_field_instances() {
   t('Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.');
   t('Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
-  t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="node/add/platform-software">add a record for the platform or software</a> before completing this record.');
+  t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
   t('Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
   t('Use this field to link to a stable URL documenting the version history of the software or platform, if available. Provide a title and URL.');
   t('Version history (link)');
