@@ -163,7 +163,7 @@ function elmcip_search_default_search_api_server() {
       "log_query" : 0,
       "log_response" : 0
     },
-    "enabled" : "1",
+    "enabled" : "0",
     "rdf_mapping" : []
   }');
   $items['zarquon_db'] = entity_import('search_api_server', '{
