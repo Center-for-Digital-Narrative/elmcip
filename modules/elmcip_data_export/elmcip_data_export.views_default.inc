@@ -3459,8 +3459,13 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
-    'name' => 'name',
-    'field_record_status_tax' => 'field_record_status_tax',
+    'field_tr_author' => 'field_tr_author',
+    'field_author_name' => 'field_author_name',
+    'nothing' => 'nothing',
+    'field_work_year' => 'field_work_year',
+    'field_tr_year' => 'field_tr_year',
+    'field_critical_writing_year' => 'field_critical_writing_year',
+    'nothing_1' => 'nothing_1',
   );
   $handler->display->display_options['style_options']['default'] = 'title';
   $handler->display->display_options['style_options']['info'] = array(
@@ -3471,16 +3476,43 @@ function elmcip_data_export_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'name' => array(
+    'field_tr_author' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_author_name' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'nothing' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_work_year' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_record_status_tax' => array(
+    'field_tr_year' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_critical_writing_year' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'nothing_1' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -3533,6 +3565,62 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Author custom text';
   $handler->display->display_options['fields']['nothing']['label'] = 'Author';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_tr_author][field_author_name]';
+  /* Field: Year work */
+  $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['relationship'] = 'reverse_taxonomy_vocabulary_1_node';
+  $handler->display->display_options['fields']['field_work_year']['ui_name'] = 'Year work';
+  $handler->display->display_options['fields']['field_work_year']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_work_year']['settings'] = array(
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Year teaching resource */
+  $handler->display->display_options['fields']['field_tr_year']['id'] = 'field_tr_year';
+  $handler->display->display_options['fields']['field_tr_year']['table'] = 'field_data_field_tr_year';
+  $handler->display->display_options['fields']['field_tr_year']['field'] = 'field_tr_year';
+  $handler->display->display_options['fields']['field_tr_year']['relationship'] = 'reverse_taxonomy_vocabulary_1_node';
+  $handler->display->display_options['fields']['field_tr_year']['ui_name'] = 'Year teaching resource';
+  $handler->display->display_options['fields']['field_tr_year']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_tr_year']['settings'] = array(
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Year critial writing */
+  $handler->display->display_options['fields']['field_critical_writing_year']['id'] = 'field_critical_writing_year';
+  $handler->display->display_options['fields']['field_critical_writing_year']['table'] = 'field_data_field_critical_writing_year';
+  $handler->display->display_options['fields']['field_critical_writing_year']['field'] = 'field_critical_writing_year';
+  $handler->display->display_options['fields']['field_critical_writing_year']['relationship'] = 'reverse_taxonomy_vocabulary_1_node';
+  $handler->display->display_options['fields']['field_critical_writing_year']['ui_name'] = 'Year critial writing';
+  $handler->display->display_options['fields']['field_critical_writing_year']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_critical_writing_year']['settings'] = array(
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = 'Year';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_work_year]
+[field_tr_year]
+[field_critical_writing_year]';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -3623,6 +3711,10 @@ function elmcip_data_export_views_default_views() {
     t('[field_tr_author]
 [field_author_name]'),
     t('[field_tr_author][field_author_name]'),
+    t('Year'),
+    t('[field_work_year]
+[field_tr_year]
+[field_critical_writing_year]'),
     t('All'),
     t('Content tagged with %1'),
     t('Type'),
