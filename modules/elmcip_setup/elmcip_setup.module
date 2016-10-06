@@ -37,6 +37,8 @@ function elmcip_setup_block_info() {
  * Implements hook_block_view().
  */
 function elmcip_setup_block_view($delta = '') {
+  $block = array();
+
   switch ($delta) {
     case 'sosical_networks':
       $content =  array(
@@ -56,34 +58,57 @@ function elmcip_setup_block_view($delta = '') {
     default:
       break;
   }
+
+  return $block;
 }
 
 /**
  * Implements hook_node_presave().
  */
 function elmcip_setup_node_presave($node) {
-  $content_types = array('person');
-  foreach ($content_types as $content_type) {
-    if ($node->type == $content_type) {
-      if ($content_type = 'person') {
-        $person = entity_metadata_wrapper('node', $node);
-        $name = FALSE;
-        if ($person->field_first_name->value()) {
-          $name .= trim($person->field_first_name->value());
-          $person->field_first_name->set(trim($person->field_first_name->value()));
-        }
-        if ($person->field_middle_name->value()) {
-          $name .= ' ' . trim($person->field_middle_name->value());
-          $person->field_middle_name->set(trim($person->field_middle_name->value()));
-        }
-        if ($person->field_last_name->value()) {
-          $name .= ' ' . trim($person->field_last_name->value());
-          $person->field_last_name->set(trim($person->field_last_name->value()));
-        }
-        if ($name) {
-          $person->title->set($name);
-        }
+  if ($node->type == 'person') {
+    $entity_updated = entity_metadata_wrapper('node', $node);
+    $nodeTitle = FALSE;
+    $firstName = trim($entity_updated->field_first_name->value());
+    $middleName = trim($entity_updated->field_middle_name->value());
+    $lastName = trim($entity_updated->field_last_name->value());
+
+    if ($firstName) {
+      $nodeTitle = $firstName;
+      $entity_updated->field_first_name->set($firstName);
+    }
+    else {
+      $entity_updated->field_first_name->set(NULL);
+    }
+
+    if ($middleName) {
+      if ($firstName) {
+        $nodeTitle .= ' ' . $middleName;
       }
+      else {
+        $nodeTitle = $middleName;
+      }
+      $entity_updated->field_middle_name->set($middleName);
+    }
+    else {
+      $entity_updated->field_middle_name->set(NULL);
+    }
+
+    if ($lastName) {
+      if ($firstName || $middleName) {
+        $nodeTitle .= ' ' . $lastName;
+      }
+      else {
+        $nodeTitle = $lastName;
+      }
+      $entity_updated->field_last_name->set($lastName);
+    }
+    else {
+      $entity_updated->field_last_name->set(NULL);
+    }
+
+    if ($nodeTitle) {
+      $entity_updated->title->set($nodeTitle);
     }
   }
 }

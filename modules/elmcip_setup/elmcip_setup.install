@@ -746,3 +746,22 @@ function elmcip_setup_update_7046() {
   module_disable(array('entityreference_migration'), FALSE);
   drupal_uninstall_modules(array('entityreference_migration'), FALSE);
 }
+
+/**
+ * Remove any extra white space from person name fields and rewrite node title.
+ */
+function elmcip_setup_update_7047() {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'person');
+
+  $result = $query->execute();
+  $person_items_nids = array_keys($result['node']);
+
+  foreach ($person_items_nids as $nid) {
+    print("Update person node ID: $nid" . PHP_EOL);
+    $node = node_load($nid);
+    $person = entity_metadata_wrapper('node', $node);
+    $person->save();
+  }
+}
