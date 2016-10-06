@@ -9,6 +9,7 @@ dependencies[] = search_api_db
 dependencies[] = search_api_facetapi
 dependencies[] = search_api_solr
 dependencies[] = search_api_views
+dependencies[] = search_api_page
 dependencies[] = views
 features[ctools][] = facetapi:facetapi_defaults:1
 features[ctools][] = views:views_default:3.0

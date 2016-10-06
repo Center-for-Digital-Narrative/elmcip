@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Run maintainance tasks related to the search system.
+ *
+ */
+
+/*
+ * Enable Search page module.
+ */
+function elmcip_search_update_7000() {
+  module_enable(array('search_api_page'), TRUE);
+}
