@@ -28,7 +28,7 @@ function elmcip_search_default_search_api_index() {
   $items['kb_content'] = entity_import('search_api_index', '{
     "name" : "KB content",
     "machine_name" : "kb_content",
-    "description" : null,
+    "description" : "Index storing all knowledge base knowledge.",
     "server" : "zarquon_db",
     "item_type" : "node",
     "options" : {
@@ -51,10 +51,20 @@ function elmcip_search_default_search_api_index() {
         "author" : { "type" : "integer", "entity_type" : "user" },
         "changed" : { "type" : "date" },
         "created" : { "type" : "date" },
-        "field_abstract:value" : { "type" : "text" },
+        "field_abstract:value" : { "type" : "text", "boost" : "2.0" },
+        "field_critical_writing_year" : { "type" : "date" },
+        "field_db_description_english:value" : { "type" : "text", "boost" : "2.0" },
+        "field_node_ref_event" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
+        "field_node_ref_work" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
+        "field_platform_year" : { "type" : "date" },
+        "field_ps_description:value" : { "type" : "text", "boost" : "2.0" },
+        "field_rc_description:value" : { "type" : "text", "boost" : "2.0" },
+        "field_textfield:value" : { "type" : "text" },
+        "field_tr_critical" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
         "field_tr_org" : { "type" : "integer", "entity_type" : "node" },
         "field_tr_year" : { "type" : "date" },
-        "field_yeardied" : { "type" : "date" },
+        "field_work_year" : { "type" : "date" },
+        "field_year_initiated" : { "type" : "date" },
         "search_api_language" : { "type" : "string" },
         "taxonomy_vocabulary_1" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "taxonomy_vocabulary_2" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
@@ -136,6 +146,32 @@ function elmcip_search_default_search_api_index() {
 }
 
 /**
+ * Implements hook_default_search_api_page().
+ */
+function elmcip_search_default_search_api_page() {
+  $items = array();
+  $items['search_knowledge_base'] = entity_import('search_api_page', '{
+    "index_id" : "kb_content",
+    "path" : "search2",
+    "name" : "Search knowledge Base",
+    "machine_name" : "search_knowledge_base",
+    "description" : "Search content of the knowledge base.",
+    "options" : {
+      "mode" : "terms",
+      "fields" : [],
+      "per_page" : "10",
+      "result_page_search_form" : 1,
+      "get_per_page" : 0,
+      "view_mode" : "search_api_page_result",
+      "empty_behavior" : ""
+    },
+    "enabled" : "1",
+    "rdf_mapping" : []
+  }');
+  return $items;
+}
+
+/**
  * Implements hook_default_search_api_server().
  */
 function elmcip_search_default_search_api_server() {
@@ -176,84 +212,6 @@ function elmcip_search_default_search_api_server() {
       "min_chars" : "1",
       "partial_matches" : 0,
       "indexes" : {
-        "kb_content" : {
-          "type" : {
-            "table" : "search_api_db_kb_content",
-            "column" : "type",
-            "type" : "string",
-            "boost" : "1.0"
-          },
-          "title" : {
-            "table" : "search_api_db_kb_content_text",
-            "type" : "text",
-            "boost" : "5.0"
-          },
-          "created" : {
-            "table" : "search_api_db_kb_content",
-            "column" : "created",
-            "type" : "date",
-            "boost" : "1.0"
-          },
-          "changed" : {
-            "table" : "search_api_db_kb_content",
-            "column" : "changed",
-            "type" : "date",
-            "boost" : "1.0"
-          },
-          "author" : {
-            "table" : "search_api_db_kb_content",
-            "column" : "author",
-            "type" : "integer",
-            "boost" : "1.0"
-          },
-          "taxonomy_vocabulary_2" : {
-            "table" : "search_api_db_kb_content_taxonomy_vocabulary_2",
-            "column" : "value",
-            "type" : "list\\u003Cinteger\\u003E",
-            "boost" : "1.0"
-          },
-          "taxonomy_vocabulary_1" : {
-            "table" : "search_api_db_kb_content_taxonomy_vocabulary_1",
-            "column" : "value",
-            "type" : "list\\u003Cinteger\\u003E",
-            "boost" : "1.0"
-          },
-          "taxonomy_vocabulary_4" : {
-            "table" : "search_api_db_kb_content_taxonomy_vocabulary_4",
-            "column" : "value",
-            "type" : "list\\u003Cinteger\\u003E",
-            "boost" : "1.0"
-          },
-          "field_tr_year" : {
-            "table" : "search_api_db_kb_content",
-            "column" : "field_tr_year",
-            "type" : "date",
-            "boost" : "1.0"
-          },
-          "field_tr_org" : {
-            "table" : "search_api_db_kb_content",
-            "column" : "field_tr_org",
-            "type" : "integer",
-            "boost" : "1.0"
-          },
-          "field_yeardied" : {
-            "table" : "search_api_db_kb_content",
-            "column" : "field_yeardied",
-            "type" : "date",
-            "boost" : "1.0"
-          },
-          "search_api_language" : {
-            "table" : "search_api_db_kb_content",
-            "column" : "search_api_language",
-            "type" : "string",
-            "boost" : "1.0"
-          },
-          "field_abstract:value" : {
-            "table" : "search_api_db_kb_content_text",
-            "type" : "text",
-            "boost" : "1.0"
-          }
-        },
         "default_node_index" : {
           "type" : {
             "table" : "search_api_db_default_node_index",
@@ -311,6 +269,164 @@ function elmcip_search_default_search_api_server() {
           "body:value" : {
             "table" : "search_api_db_default_node_index_text",
             "type" : "text",
+            "boost" : "1.0"
+          }
+        },
+        "kb_content" : {
+          "type" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "type",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "title" : {
+            "table" : "search_api_db_kb_content_text",
+            "type" : "text",
+            "boost" : "5.0"
+          },
+          "created" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "created",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "changed" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "changed",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "author" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "author",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "taxonomy_vocabulary_2" : {
+            "table" : "search_api_db_kb_content_taxonomy_vocabulary_2",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "taxonomy_vocabulary_1" : {
+            "table" : "search_api_db_kb_content_taxonomy_vocabulary_1",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "taxonomy_vocabulary_4" : {
+            "table" : "search_api_db_kb_content_taxonomy_vocabulary_4",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_tr_year" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "field_tr_year",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "field_tr_critical" : {
+            "table" : "search_api_db_kb_content_field_tr_critical",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_tr_org" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "field_tr_org",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "field_node_ref_event" : {
+            "table" : "search_api_db_kb_content_field_node_ref_event",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_node_ref_work" : {
+            "table" : "search_api_db_kb_content_field_node_ref_work",
+            "column" : "value",
+            "type" : "list\\u003Cinteger\\u003E",
+            "boost" : "1.0"
+          },
+          "field_critical_writing_year" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "field_critical_writing_year",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "field_work_year" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "field_work_year",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "field_year_initiated" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "field_year_initiated",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "field_platform_year" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "field_platform_year",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "search_api_language" : {
+            "table" : "search_api_db_kb_content",
+            "column" : "search_api_language",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "field_textfield:value" : {
+            "table" : "search_api_db_kb_content_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "field_abstract:value" : {
+            "table" : "search_api_db_kb_content_text",
+            "type" : "text",
+            "boost" : "2.0"
+          },
+          "field_db_description_english:value" : {
+            "table" : "search_api_db_kb_content_text",
+            "type" : "text",
+            "boost" : "2.0"
+          },
+          "field_ps_description:value" : {
+            "table" : "search_api_db_kb_content_text",
+            "type" : "text",
+            "boost" : "2.0"
+          },
+          "field_rc_description:value" : {
+            "table" : "search_api_db_kb_content_text",
+            "type" : "text",
+            "boost" : "2.0"
+          }
+        },
+        "test_tag" : {
+          "tid" : {
+            "table" : "search_api_db_test_tag",
+            "column" : "tid",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "name" : {
+            "table" : "search_api_db_test_tag_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "description" : {
+            "table" : "search_api_db_test_tag_text",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "search_api_language" : {
+            "table" : "search_api_db_test_tag",
+            "column" : "search_api_language",
+            "type" : "string",
             "boost" : "1.0"
           }
         }

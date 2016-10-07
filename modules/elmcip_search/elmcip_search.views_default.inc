@@ -24,7 +24,7 @@ function elmcip_search_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Beta search ';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -86,6 +86,7 @@ function elmcip_search_views_default_views() {
     4 => 0,
     9 => 0,
   );
+  $handler->display->display_options['filters']['search_api_views_fulltext']['mode'] = 'filter';
   $handler->display->display_options['filters']['search_api_views_fulltext']['fields'] = array(
     'field_abstract:value' => 'field_abstract:value',
     'title' => 'title',
@@ -94,6 +95,16 @@ function elmcip_search_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'beta.search';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Indexed Node: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'search_api_index_kb_content';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['link_to_entity'] = 0;
+  $handler->display->display_options['block_description'] = 'New search';
   $translatables['kb_search'] = array(
     t('Master'),
     t('Beta search '),
@@ -115,6 +126,9 @@ function elmcip_search_views_default_views() {
     t('Abstract'),
     t('Search'),
     t('Page'),
+    t('Block'),
+    t('Title'),
+    t('New search'),
   );
   $export['kb_search'] = $view;
 
