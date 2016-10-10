@@ -4,6 +4,8 @@
  * Form Styling
  */
 
+.block-search-api-page input.form-text,
+#search-api-page-search-form input.form-text,
 .form-item-search-block-form input {
   color: #999;
   font-size: 1em;

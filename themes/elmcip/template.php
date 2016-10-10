@@ -145,13 +145,14 @@ function localhost_smb_ev_preprocess_block(&$variables, $hook) {
  * Implement hook_form_alter().
  */
 function elmcip_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'search_block_form') {
-    $form['actions']['submit']['#attributes']['class'][] = 'yui3-button';
-    $form['search_block_form']['#size'] = 30;
-    // Add extra attributes to the text box
-    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
-    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
-    $form['search_block_form']['#attributes']['placeholder'] = t('Search');
+  if ($form_id == 'search_api_page_search_form_search_knowledge_base') {
+    $form['submit_2']['#attributes']['class'][] = 'yui3-button';
+    $form['keys_2']['#size'] = 30;
+    // Add extra attributes to the text box.
+    $form['keys_2']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
+    $form['keys_2']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
+    $form['keys_2']['#attributes']['placeholder'] = t('Search');
+    $form['#attributes']['class'][] = 'container-inline';
   }
 }
 

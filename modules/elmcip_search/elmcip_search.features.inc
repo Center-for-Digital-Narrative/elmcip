@@ -59,7 +59,7 @@ function elmcip_search_default_search_api_index() {
         "field_platform_year" : { "type" : "date" },
         "field_ps_description:value" : { "type" : "text", "boost" : "2.0" },
         "field_rc_description:value" : { "type" : "text", "boost" : "2.0" },
-        "field_textfield:value" : { "type" : "text" },
+        "field_textfield:value" : { "type" : "text", "boost" : "2.0" },
         "field_tr_critical" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
         "field_tr_org" : { "type" : "integer", "entity_type" : "node" },
         "field_tr_year" : { "type" : "date" },
@@ -383,7 +383,7 @@ function elmcip_search_default_search_api_server() {
           "field_textfield:value" : {
             "table" : "search_api_db_kb_content_text",
             "type" : "text",
-            "boost" : "1.0"
+            "boost" : "2.0"
           },
           "field_abstract:value" : {
             "table" : "search_api_db_kb_content_text",
