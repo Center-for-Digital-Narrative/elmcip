@@ -6,8 +6,9 @@
  */
 
 /*
- * Enable Search page module.
+ * Enable Search page module and disable core search.
  */
 function elmcip_search_update_7000() {
   module_enable(array('search_api_page'), TRUE);
+  module_disable(array('search'), FALSE);
 }
