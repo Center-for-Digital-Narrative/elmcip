@@ -125,13 +125,13 @@ function elmcip_search_default_search_api_index() {
           }
         },
         "search_api_highlighting" : {
-          "status" : 0,
+          "status" : 1,
           "weight" : "35",
           "settings" : {
             "prefix" : "\\u003Cstrong\\u003E",
             "suffix" : "\\u003C\\/strong\\u003E",
             "excerpt" : 1,
-            "excerpt_length" : "256",
+            "excerpt_length" : "768",
             "exclude_fields" : [],
             "highlight" : "always"
           }
@@ -152,7 +152,7 @@ function elmcip_search_default_search_api_page() {
   $items = array();
   $items['search_knowledge_base'] = entity_import('search_api_page', '{
     "index_id" : "kb_content",
-    "path" : "search2",
+    "path" : "search",
     "name" : "Search knowledge Base",
     "machine_name" : "search_knowledge_base",
     "description" : "Search content of the knowledge base.",
