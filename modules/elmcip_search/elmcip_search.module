@@ -5,3 +5,51 @@
  */
 
 include_once 'elmcip_search.features.inc';
+
+/**
+ * Implements hook_block_info_alter().
+ */
+function elmcip_search_block_info_alter(&$blocks, $theme, $code_blocks) {
+  if ($theme = 'elmcip') {
+
+    // Define facet blocks status and position.
+    $blocksPositions = array(
+      array('delta' => 'LG0kjGobrXOBMWllcxB76mua5XM22OO6', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -5), // Year.
+      array('delta' => 'PAN2k2V6rCprZwLtj4QGWZWCAN7mJ0H6', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -5), // Year.
+      array('delta' => 'gaMufy1dctH3RTGOluB9CRugtYyX0XYr', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -5), // Year.
+      array('delta' => '3OifnJv0PB8vYlJjXa3UcjGPLibLPXbv', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -5), // Year initiated.
+      array('delta' => 'AIWeW0lUy1bJbHvHOyuTN4oEVX5DYxCa', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -8), // Presented at Event.
+      array('delta' => '9saSdOPaQz1ZugF1a1iEXK3nDQq3i4gD', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -9), // Event type.
+      array('delta' => 'r0lYNQoWzUDDXXEUCtxM2xCOXMIXW9Pj', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -10), // Tags.
+      array('delta' => 'QAXbqTEi1PkIsmoBp9hx6HVXi0SZ79Y9', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -33), // Type.
+      array('delta' => '7HHSF0jcotsWhL0fRm79OcF01hTZ2S9V', 'status' => 1, 'region' => 'sidebar_first', 'weight' => -36), // Filter by content type.
+    );
+    foreach ($blocks['facetapi'] as $block) {
+      foreach ($blocksPositions as $blockPosition ) {
+        if ($block['delta'] == $blockPosition['delta']) {
+          $blocks['facetapi'][$blockPosition['delta']]['status'] = $blockPosition['status'];
+          $blocks['facetapi'][$blockPosition['delta']]['region'] = $blockPosition['region'];
+          $blocks['facetapi'][$blockPosition['delta']]['weight'] = $blockPosition['weight'];
+        }
+      }
+    }
+
+    // Define search blocks.
+    $searchBlocks = array(
+      array('delta' => 'search_knowledge_base', 'title' => '<none>', 'status' => 1, 'region' => 'header', 'weight' => 0), // Search block in page header.
+    );
+    if ($blocks['search_api_page']) {
+      foreach ($blocks['search_api_page'] as $page) {
+        foreach ($searchBlocks as $block) {
+          if ($block['delta'] == $page['delta']) {
+            print 'search block from search page';
+            $blocks['search_api_page'][$block['delta']]['status'] = $block['status'];
+            $blocks['search_api_page'][$block['delta']]['region'] = $block['region'];
+            $blocks['search_api_page'][$block['delta']]['weight'] = $block['weight'];
+            $blocks['search_api_page'][$block['delta']]['title'] = $block['title'];
+          }
+        }
+      }
+    }
+  }
+}
