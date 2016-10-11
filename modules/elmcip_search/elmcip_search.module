@@ -42,7 +42,6 @@ function elmcip_search_block_info_alter(&$blocks, $theme, $code_blocks) {
       foreach ($blocks['search_api_page'] as $page) {
         foreach ($searchBlocks as $block) {
           if ($block['delta'] == $page['delta']) {
-            print 'search block from search page';
             $blocks['search_api_page'][$block['delta']]['status'] = $block['status'];
             $blocks['search_api_page'][$block['delta']]['region'] = $block['region'];
             $blocks['search_api_page'][$block['delta']]['weight'] = $block['weight'];
