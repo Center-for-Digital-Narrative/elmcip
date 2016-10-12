@@ -47,3 +47,20 @@ p:last-child {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.front h2 {
+  font-weight: normal;
+}
+
+/* Search */
+.facetapi-facetapi-links {
+  font-weight: bold;
+}
+
+.facetapi-facetapi-links a {
+  font-weight: normal;
+}
+
+table thead th {
+  font-weight: bold;
+}

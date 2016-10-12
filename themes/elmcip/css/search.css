@@ -1,7 +1,3 @@
-.facetapi-facetapi-links {
-  font-weight: bold;
-}
-
 ul.facetapi-facetapi-links {
   padding: 0;
 }
@@ -11,7 +7,6 @@ ul.facetapi-facetapi-links li {
 }
 
 .facetapi-facetapi-links a {
-  font-weight: normal;
   color: #333333;
 }
 
