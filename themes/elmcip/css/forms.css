@@ -26,14 +26,14 @@
   border: 1px solid #c00;
 }
 
-.form-item label /* The label for a form element */ {
+/* The label for a form element */
+.form-item label {
   display: block;
-  font-weight: bold;
 }
 
-.form-item label.option /* The label for a radio button or checkbox */ {
+/* The label for a radio button or checkbox */
+.form-item label.option {
   display: inline;
-  font-weight: normal;
 }
 
 .form-required /* The part of the label that indicates a required field */ {

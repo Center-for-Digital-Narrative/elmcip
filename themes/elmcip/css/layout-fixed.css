@@ -315,7 +315,7 @@ body {
 
 #kbpage div.view-footer,
 #kbpage div.view-content {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 /* Removing top margin from Add new content links aka view footer on KB front page. */
@@ -333,7 +333,7 @@ body {
   width: 300px;
 }
 
-.group-right { /*Sets the width and float for the record content */
+.group-right {
   float: left;
   margin: 10px 0 0 10px;
   width: 620px;
@@ -345,16 +345,23 @@ body {
 }
 
 .group-left .field-name-field-record-status-tax {
-  font-style: italic;
   margin: 20px 0 0 0;
 }
 
-.group-right .label-above{ /*Bolds the Tags header*/
-  font-weight: bold;
+.group-left .inner > div {
+  margin: 0 0 1.5em 0;
 }
 
-.group-right .view {
+.group-left .inner > div:last-child {
+  margin: 0;
+}
+
+.group-right > div {
   margin: 0 0 1.5em 0;
+}
+
+.group-right > div:first-child {
+  margin-bottom: 0;
 }
 
 /**

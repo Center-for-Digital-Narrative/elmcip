@@ -57,11 +57,6 @@ h2.block-title /* Block title */ {
 
 #header a {
   color: #fff;
-  font-size: 1.142em;
-}
-
-#header .social a {
-  font-size: 34px;
 }
 
 #header a:hover {

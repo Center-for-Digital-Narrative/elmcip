@@ -34,7 +34,6 @@ stylesheets[all][]        = css/pages.css
 stylesheets[all][]        = css/blocks.css
 stylesheets[all][]        = css/navigation.css
 stylesheets[all][]        = css/views-styles.css
-stylesheets[all][]        = css/nodes.css
 stylesheets[all][]        = css/comments.css
 stylesheets[all][]        = css/forms.css
 stylesheets[all][]        = css/fields.css
@@ -43,6 +42,7 @@ stylesheets[all][]        = yui/cssbutton.css
 stylesheets[all][]        = css/table.css
 stylesheets[all][]        = css/search.css
 stylesheets[all][]        = css/media.css
+stylesheets[all][]        = css/typography.css
 stylesheets[print][]      = css/print.css
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type

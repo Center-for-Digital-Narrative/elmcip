@@ -1,0 +1,49 @@
+#header a {
+  font-size: 1.142em;
+}
+
+#header .social a {
+  font-size: 34px;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.group-left .field-name-field-record-status-tax {
+  font-style: italic;
+}
+
+.view-header {
+  font-weight: bold;
+}
+
+.group-right h2 {
+  font-size: 1.0em;
+}
+
+.form-item label {
+  font-weight: bold;
+}
+
+.form-item label.option {
+  font-weight: normal;
+}
+
+.label-above {
+  font-weight: bold;
+}
+
+/* Node. */
+.group-left {
+  font-size: 0.929em;
+}
+
+.group-left .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
