@@ -658,7 +658,7 @@ function elmcip_content_types_field_default_field_instances() {
     'label' => 'Year initiated',
     'required' => 0,
     'settings' => array(
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -673,6 +673,7 @@ function elmcip_content_types_field_default_field_instances() {
         'input_format' => 'd.m.Y - H:i:s',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'no_fieldset' => 0,
         'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
