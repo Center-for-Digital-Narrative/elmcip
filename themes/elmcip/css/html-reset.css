@@ -38,8 +38,8 @@ body {
    */
 
   /* Use a 12px base font size with a 18px line height */
-  font-size: 0.75em; /* 16px x .75 = 12px */
-  line-height: 1.5em; /* 12px x 1.5 = 18px */
+  /* font-size: 0.75em; /* 16px x .75 = 12px */
+  /* line-height: 1.5em; /* 12px x 1.5 = 18px */
 
   /* Use a 14px base font size with a 21px line height */
   font-size: 0.875em; /* 16px x .875 = 14px */
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5,
 p, blockquote, pre,
 ul, ol, dl,
 hr, table, fieldset {
-  margin: 0 0 1.2em 0;
+  margin: 1.5em 0;
   color: #333333;
 }
 
@@ -159,8 +159,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4em; /*Was 1.429em, but reduced the size to accommodate OSX view*/
-  /* margin: 1em 0; Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
+  font-size: 1.5em;
+   margin: 1em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.5 = 1em */
 }
 
 h3 {
@@ -183,7 +183,7 @@ blockquote {
 }
 
 pre {
-  font-size: 1.1em; /* Monospace fonts can be hard to read */
+  font-size: 1.1em;
   margin: 1.364em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
 }
 
@@ -202,8 +202,8 @@ address {
  */
 ul,
 ol {
-  margin-left: 0; /* LTR */
-  padding-left: 20px;  /*LTR */
+  margin-left: 0;
+  padding-left: 2em;
 }
 
 .item-list ul {
@@ -334,7 +334,6 @@ button {}
  */
 a:link {
   color: #AC0009;
-  font-weight: none;
 }
 
 a:visited {
