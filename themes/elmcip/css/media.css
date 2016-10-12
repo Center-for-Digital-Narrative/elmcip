@@ -1,16 +1,34 @@
 .content >img,
 .field img {
-  max-width: 100%;
+  display: block;
   height: auto;
+  max-width: 100%;
 }
 
-.media-vimeo-player,
-.media-youtube-player {
-  max-width: 100%;
+.field img.file-icon {
+  display: inline;
+}
+
+.media-youtube-video,
+.media-vimeo-video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0;
+  position: relative;
+}
+
+.media-youtube-video .media-youtube-player,
+.media-vimeo-video .media-vimeo-player {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 video,
 .file-video-flickr object {
-  width: 100%;
+  display: block;
   height: auto;
+  width: 100%;
 }
