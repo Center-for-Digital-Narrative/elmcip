@@ -851,7 +851,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '20',
+      'weight' => '21',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -861,7 +861,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '21',
+      'weight' => '22',
       'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
@@ -2415,11 +2415,12 @@ function elmcip_layout_ds_layout_settings_info() {
         14 => 'teaching_ressource_tr_entity_view_1',
         15 => 'database_listed_on_teaching_resource_entity_view_1',
         16 => 'research_collection_teaching_resource_entity_view_1',
-        17 => 'field_image',
-        18 => 'field_media_asset',
-        19 => 'field_files',
-        20 => 'purl',
-        21 => 'author',
+        17 => 'platform_tr_entity_view_1',
+        18 => 'field_image',
+        19 => 'field_media_asset',
+        20 => 'field_files',
+        21 => 'purl',
+        22 => 'author',
       ),
     ),
     'fields' => array(
@@ -2440,6 +2441,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'teaching_ressource_tr_entity_view_1' => 'right',
       'database_listed_on_teaching_resource_entity_view_1' => 'right',
       'research_collection_teaching_resource_entity_view_1' => 'right',
+      'platform_tr_entity_view_1' => 'right',
       'field_image' => 'right',
       'field_media_asset' => 'right',
       'field_files' => 'right',

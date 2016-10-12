@@ -1013,6 +1013,57 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-teaching_resource-field_platform_software_referenc'.
+  $field_instances['node-teaching_resource-field_platform_software_referenc'] = array(
+    'bundle' => 'teaching_resource',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 38,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 31,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_platform_software_referenc',
+    'label' => 'Platform/Software referenced',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 30,
+    ),
+  );
+
   // Exported field_instance: 'node-work-field_authoring_software_entry'.
   $field_instances['node-work-field_authoring_software_entry'] = array(
     'bundle' => 'work',
@@ -1346,6 +1397,7 @@ function elmcip_content_types_field_default_field_instances() {
   t('Platform');
   t('Platform referenced');
   t('Platform/Software');
+  t('Platform/Software referenced');
   t('Po-ex.net entry');
   t('Po.Ex entry');
   t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.');

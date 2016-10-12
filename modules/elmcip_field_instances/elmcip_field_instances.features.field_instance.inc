@@ -14146,7 +14146,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 37,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -14198,7 +14198,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 33,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -14352,7 +14352,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'region' => array(
         'label' => 'hidden',
@@ -14402,7 +14402,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'progress_indicator' => 'bar',
       ),
       'type' => 'file_generic',
-      'weight' => 32,
+      'weight' => 33,
     ),
     'widget_type' => 'filefield_widget',
   );
@@ -14504,7 +14504,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'region' => array(
         'label' => 'hidden',
@@ -14574,7 +14574,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'progress_indicator' => 'bar',
       ),
       'type' => 'image_image',
-      'weight' => 30,
+      'weight' => 31,
     ),
     'widget_type' => 'imagefield_widget',
   );
@@ -14650,7 +14650,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -14703,7 +14703,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 31,
+      'weight' => 32,
     ),
   );
 
@@ -14971,7 +14971,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 36,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15342,7 +15342,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 34,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -15452,7 +15452,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 35,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -15735,13 +15735,13 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 21,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tr_year',
     'label' => 'Year',
     'required' => 0,
     'settings' => array(
-      'default_format' => 'medium',
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -15757,6 +15757,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'input_format' => 'Y M j - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'none',
+        'no_fieldset' => 0,
         'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-20:+0',

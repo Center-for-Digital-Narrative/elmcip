@@ -1962,6 +1962,7 @@ function elmcip_field_instances_field_group_info() {
       4 => 'field_database_or_archive_refere',
       5 => 'field_tr_work',
       6 => 'field_tr_tr',
+      7 => 'field_platform_software_referenc',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
