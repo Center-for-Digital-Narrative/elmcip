@@ -17617,7 +17617,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'module' => 'file_entity',
         'settings' => array(
-          'file_view_mode' => 'full',
+          'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
         'weight' => 38,

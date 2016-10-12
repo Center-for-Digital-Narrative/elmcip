@@ -23,7 +23,9 @@ function elmcip_field_instances_file_default_displays() {
   $file_display->name = 'video__default__file_field_media_large_icon';
   $file_display->weight = -38;
   $file_display->status = FALSE;
-  $file_display->settings = '';
+  $file_display->settings = array(
+    'image_style' => '',
+  );
   $export['video__default__file_field_media_large_icon'] = $file_display;
 
   $file_display = new stdClass();
@@ -33,6 +35,7 @@ function elmcip_field_instances_file_default_displays() {
   $file_display->status = FALSE;
   $file_display->settings = array(
     'image_style' => '',
+    'link_to_flickr' => 0,
   );
   $export['video__default__media_flickr_image'] = $file_display;
 

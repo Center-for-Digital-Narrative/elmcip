@@ -1080,9 +1080,8 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
+        'type' => 'hidden',
         'weight' => 56,
       ),
       'full' => array(
