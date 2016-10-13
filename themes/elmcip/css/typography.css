@@ -38,11 +38,6 @@ p:last-child {
   font-weight: bold;
 }
 
-/* Node. */
-.group-left {
-  font-size: 0.929em;
-}
-
 .group-left .title {
   font-weight: bold;
   text-transform: uppercase;

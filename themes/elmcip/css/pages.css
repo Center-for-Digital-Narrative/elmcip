@@ -115,6 +115,10 @@ h4.title {
   margin: 0;
 }
 
+h1.title {
+  margin: 0;
+}
+
 div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
   margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
 }
@@ -133,8 +137,9 @@ div.tabs /* See also the tabs.css file. */ {
 .more-help-link /* Link to more help */ {
 }
 
-.region-content /* Wrapper for the actual page content */ {
-  margin: 20px 0 0 0;
+/* Wrapper for the actual page content */
+.region-content {
+  padding: 1.5em 0 0 0;
 }
 
 ul.links /* List of links */ {
