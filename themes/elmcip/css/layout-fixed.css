@@ -368,6 +368,14 @@ body {
   margin-bottom: 0;
 }
 
+.group-right .field-item {
+  margin-bottom: 1.5em;
+}
+
+.group-right .field-name-field-files .field-item {
+  margin-bottom: 0;
+}
+
 /**
  * Navigation
  */
