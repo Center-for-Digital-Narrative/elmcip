@@ -753,6 +753,8 @@ function elmcip_field_instances_field_default_field_bases() {
     'locked' => 0,
     'module' => 'date',
     'settings' => array(
+      'cache_count' => 4,
+      'cache_enabled' => 0,
       'default_format' => 'long',
       'granularity' => array(
         'day' => 'day',
