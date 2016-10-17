@@ -795,3 +795,30 @@ function elmcip_setup_update_7050() {
   module_disable(array('search', 'user_reference'), FALSE);
   drupal_uninstall_modules(array('search', 'user_reference'), FALSE);
 }
+
+/**
+ * Change event field_date to ISO date.
+ */
+function elmcip_setup_update_7051() {
+  module_enable(array('helper'), FALSE);
+  if (module_exists('helper')) {
+    // Get a list of all fields.
+    $fields = field_info_field_map();
+
+    // Obtain the machine name of all image fields and store them in an array.
+    foreach ($fields as $name => $field) {
+      if ($field['type'] == 'datetime') {
+        $date_fields[$name] = $field;
+      }
+    }
+
+    // Loop through the list and convert them into file field.
+    if (!empty($date_fields)) {
+      foreach ($date_fields as $name => $field) {
+        $results[$name] = FieldChangeHelper::changeType($name, 'date');
+      }
+    }
+    module_disable(array('helper'), FALSE);
+    drupal_uninstall_modules(array('helper'), FALSE);
+  }
+}

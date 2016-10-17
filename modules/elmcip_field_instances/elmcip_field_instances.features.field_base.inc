@@ -775,9 +775,6 @@ function elmcip_field_instances_field_default_field_bases() {
     'locked' => 0,
     'module' => 'date',
     'settings' => array(
-      'cache_count' => 4,
-      'cache_enabled' => 0,
-      'default_format' => 'long',
       'granularity' => array(
         'day' => 'day',
         'hour' => 0,
@@ -787,13 +784,12 @@ function elmcip_field_instances_field_default_field_bases() {
         'year' => 'year',
       ),
       'repeat' => 0,
-      'repeat_collapsed' => 0,
       'timezone_db' => '',
       'todate' => 'optional',
       'tz_handling' => 'none',
     ),
     'translatable' => 0,
-    'type' => 'datetime',
+    'type' => 'date',
     'type_name' => 'event',
   );
 
@@ -4099,8 +4095,6 @@ function elmcip_field_instances_field_default_field_bases() {
     'locked' => 0,
     'module' => 'date',
     'settings' => array(
-      'cache_count' => 4,
-      'cache_enabled' => 0,
       'granularity' => array(
         'day' => 0,
         'hour' => 0,
@@ -4115,7 +4109,7 @@ function elmcip_field_instances_field_default_field_bases() {
       'tz_handling' => 'none',
     ),
     'translatable' => 0,
-    'type' => 'datetime',
+    'type' => 'date',
   );
 
   // Exported field_base: 'field_yearborn'.
