@@ -3910,36 +3910,37 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_userid_reference',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
-      'uid' => array(
-        0 => 'uid',
+      'target_entity' => array(
+        0 => 'target_id',
+      ),
+      'target_id' => array(
+        0 => 'target_id',
       ),
     ),
     'locked' => 0,
-    'module' => 'user_reference',
+    'module' => 'entityreference',
     'settings' => array(
-      'field_permissions' => NULL,
-      'referenceable_roles' => array(
-        2 => 2,
-        3 => 0,
-        4 => 0,
-        5 => 0,
-        6 => 0,
-        7 => 0,
-        8 => 0,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(),
       ),
-      'referenceable_status' => array(
-        0 => 0,
-        1 => 1,
-      ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'user',
     ),
     'translatable' => 0,
-    'type' => 'user_reference',
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_venue_tax'.

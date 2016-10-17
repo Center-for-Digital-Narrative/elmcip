@@ -10765,35 +10765,51 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 39,
       ),
       'search_result' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 11,
       ),
       'user_attach_person_refs' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => TRUE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 13,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_userid_reference',
     'label' => 'KB User ID',
@@ -10803,13 +10819,13 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'user_reference',
+      'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'user_reference/autocomplete',
+        'match_operator' => 'CONTAINS',
+        'path' => '',
         'size' => 60,
       ),
-      'type' => 'user_reference_autocomplete',
+      'type' => 'entityreference_autocomplete',
       'weight' => 8,
     ),
   );

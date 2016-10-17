@@ -773,3 +773,17 @@ function elmcip_setup_update_7048() {
   module_disable(array('node_reference'), FALSE);
   drupal_uninstall_modules(array('node_reference'), FALSE);
 }
+
+/**
+ * Migrate notebook entry record to entity reference.
+ */
+function elmcip_setup_update_7049() {
+  module_enable(array('entityreference_migration'), FALSE);
+  /**
+   * Fields to be converted: field_userid_reference
+   *
+   */
+  drush_invoke_process("@site", "entityreference-migrate-references", array("field_userid_reference"), array("verbose"));
+  module_disable(array('entityreference_migration'), FALSE);
+  drupal_uninstall_modules(array('entityreference_migration'), FALSE);
+}
