@@ -7482,28 +7482,27 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name']['type'] = 'node_reference_plain';
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Creative Works referenced */
   $handler->display->display_options['fields']['field_node_ref_work']['id'] = 'field_node_ref_work';
   $handler->display->display_options['fields']['field_node_ref_work']['table'] = 'field_data_field_node_ref_work';
   $handler->display->display_options['fields']['field_node_ref_work']['field'] = 'field_node_ref_work';
-  $handler->display->display_options['fields']['field_node_ref_work']['type'] = 'node_reference_plain';
   $handler->display->display_options['fields']['field_node_ref_work']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_work']['delta_offset'] = '0';
   /* Field: Content: Creative Works referenced */
   $handler->display->display_options['fields']['field_node_ref_work_1']['id'] = 'field_node_ref_work_1';
   $handler->display->display_options['fields']['field_node_ref_work_1']['table'] = 'field_data_field_node_ref_work';
   $handler->display->display_options['fields']['field_node_ref_work_1']['field'] = 'field_node_ref_work';
-  $handler->display->display_options['fields']['field_node_ref_work_1']['type'] = 'node_reference_nid';
   $handler->display->display_options['fields']['field_node_ref_work_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_work_1']['delta_offset'] = '0';
   /* Field: Content: Author */
   $handler->display->display_options['fields']['field_author_name_2']['id'] = 'field_author_name_2';
   $handler->display->display_options['fields']['field_author_name_2']['table'] = 'field_data_field_author_name';
   $handler->display->display_options['fields']['field_author_name_2']['field'] = 'field_author_name';
-  $handler->display->display_options['fields']['field_author_name_2']['relationship'] = 'field_node_ref_work_nid';
   $handler->display->display_options['fields']['field_author_name_2']['label'] = 'Creative Work Author';
+  $handler->display->display_options['fields']['field_author_name_2']['settings'] = array(
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_author_name_2']['delta_offset'] = '0';
   /* Field: Content: Year */
   $handler->display->display_options['fields']['field_critical_writing_year']['id'] = 'field_critical_writing_year';
@@ -15686,7 +15685,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_contributor']['table'] = 'field_data_field_contributor';
   $handler->display->display_options['fields']['field_contributor']['field'] = 'field_contributor';
   $handler->display->display_options['fields']['field_contributor']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_contributor']['type'] = 'node_reference_plain';
   $handler->display->display_options['fields']['field_contributor']['delta_offset'] = '0';
   /* Field: Content: Publication Type */
   $handler->display->display_options['fields']['field_venue_tax']['id'] = 'field_venue_tax';
@@ -15701,7 +15699,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
   $handler->display->display_options['fields']['field_node_ref']['field'] = 'field_node_ref';
   $handler->display->display_options['fields']['field_node_ref']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['field_node_ref']['type'] = 'node_reference_plain';
   $handler->display->display_options['fields']['field_node_ref']['delta_offset'] = '0';
   /* Field: Content: Language */
   $handler->display->display_options['fields']['field_language_tax']['id'] = 'field_language_tax';
