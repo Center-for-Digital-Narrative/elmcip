@@ -24,6 +24,7 @@ function elmcip_search_user_default_permissions() {
     'name' => 'access search_knowledge_base search_api_page',
     'roles' => array(
       'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'search_api_page',
   );
