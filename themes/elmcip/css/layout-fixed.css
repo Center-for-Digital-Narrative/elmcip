@@ -286,36 +286,11 @@ body {
 /* End of front page panel */
 
 /**
- * Unlinking edge background images that formed the previous rounded panel boxes
- * on kb front page from as defined in Drupal system css.
- */
-#kbpage .t-edge,
-#kbpage .b-edge,
-#kbpage .l-edge,
-#kbpage .r-edge {
-  background: none;
-}
-
-/**
  * Unlinking rounded corner background images that formed the previous rounded
  * panel boxes on kb front page from as defined in Drupal system css.
  */
-#kbpage .wrap-corner .l,
-#kbpage .wrap-corner .r {
-  background: none;
-}
-
-#kbpage .rounded-corner {
-  margin-bottom: 0;
-}
-
-#kbpage div.more-link {
+#kbpage .more-link {
   margin: -2.9em 0 0 0;
-}
-
-#kbpage div.view-footer,
-#kbpage div.view-content {
-  padding-bottom: 0;
 }
 
 /* Removing top margin from Add new content links aka view footer on KB front page. */
@@ -337,19 +312,8 @@ body {
   padding: 1.5em 10px;
 }
 
-.group-right {
-  float: left;
-  margin: 1.5em 0 0 10px;
-  width: 620px;
-}
-
 .group-left .title {
   border-bottom: 1px solid #bbb;
-  margin: 0 0 20px 0;
-}
-
-.group-left .field-name-field-record-status-tax {
-  margin: 20px 0 0 0;
 }
 
 .group-left .inner > div {
@@ -358,6 +322,12 @@ body {
 
 .group-left .inner > div:last-child {
   margin: 0;
+}
+
+.group-right {
+  float: left;
+  margin: 1.5em 0 0 10px;
+  width: 620px;
 }
 
 .group-right > div {
@@ -394,9 +364,6 @@ body {
 .with-navigation .region-sidebar-first,
 .with-navigation .region-sidebar-second {
   margin-top: 3em; /* Set this to the same value as the navigation height above. */
-}
-
-#navigation .section {
 }
 
 /**
