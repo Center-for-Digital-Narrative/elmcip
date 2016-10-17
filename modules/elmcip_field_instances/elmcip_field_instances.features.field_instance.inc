@@ -2346,30 +2346,38 @@ function elmcip_field_instances_field_default_field_instances() {
     'display' => array(
       2 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       3 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       4 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       'default' => array(
@@ -2383,16 +2391,20 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'ds_weight' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       'format' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       'full' => array(
@@ -2406,16 +2418,20 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'reference' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       'region' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       'search_result' => array(
@@ -2429,9 +2445,11 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'sticky' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       'teaser' => array(
@@ -2445,9 +2463,11 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'test' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 36,
       ),
       'token' => array(
@@ -3708,30 +3728,38 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       2 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       3 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       4 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       'default' => array(
@@ -3742,16 +3770,20 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       'format' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       'full' => array(
@@ -3762,16 +3794,20 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'reference' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       'region' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       'search_result' => array(
@@ -3782,9 +3818,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'sticky' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       'teaser' => array(
@@ -3798,9 +3836,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'test' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 40,
       ),
       'token' => array(
@@ -4594,30 +4634,38 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       2 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       3 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       4 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       'default' => array(
@@ -4631,16 +4679,20 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       'format' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       'full' => array(
@@ -4651,16 +4703,20 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'reference' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       'region' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       'search_result' => array(
@@ -4674,9 +4730,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'sticky' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 42,
       ),
       'teaser' => array(
@@ -4801,30 +4859,38 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       2 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       3 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       4 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       'default' => array(
@@ -4835,16 +4901,20 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       'format' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       'full' => array(
@@ -4855,16 +4925,20 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'reference' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       'region' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       'search_result' => array(
@@ -4875,9 +4949,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'sticky' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 41,
       ),
       'teaser' => array(
@@ -12700,8 +12776,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -12827,8 +12901,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -12888,8 +12960,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -13097,8 +13167,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -13158,8 +13226,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -13219,8 +13285,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -13280,8 +13344,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -13434,8 +13496,6 @@ Note: Before adding a new person record, check to see if he or she is already li
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'autocomplete_match' => 'contains',
-        'autocomplete_path' => 'node_reference/autocomplete',
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -14923,30 +14983,38 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       2 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       3 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       4 => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       'css-class' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       'default' => array(
@@ -14957,16 +15025,20 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'ds_weight' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       'format' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       'full' => array(
@@ -14977,16 +15049,20 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'reference' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       'region' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       'search_result' => array(
@@ -14997,9 +15073,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'sticky' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
       'teaser' => array(
@@ -15010,9 +15088,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'token' => array(
         'label' => 'hidden',
-        'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 26,
       ),
     ),
