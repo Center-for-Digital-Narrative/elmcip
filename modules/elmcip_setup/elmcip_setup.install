@@ -765,3 +765,11 @@ function elmcip_setup_update_7047() {
     $person->save();
   }
 }
+
+/**
+ * Remove node reference module.
+ */
+function elmcip_setup_update_7048() {
+  module_disable(array('node_reference'), FALSE);
+  drupal_uninstall_modules(array('node_reference'), FALSE);
+}
