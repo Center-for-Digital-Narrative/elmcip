@@ -818,6 +818,34 @@ function elmcip_setup_update_7051() {
         $results[$name] = FieldChangeHelper::changeType($name, 'date');
       }
     }
+
+    /**
+     * Update all event nodes to re-save new date format.
+     */
+    $query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'event');
+
+    $result = $query->execute();
+    $event_items_nids = array_keys($result['node']);
+
+    foreach ($event_items_nids as $nid) {
+      $dates = FALSE;
+      print("Update event node ID: $nid" . PHP_EOL);
+      $node = node_load($nid);
+      $event = entity_metadata_wrapper('node', $node);
+      $dates = $event->field_date->value();
+      if ($dates) {
+        $date = new DateTime($dates['value']);
+        $date2 = new DateTime($dates['value2']);
+        $event->field_date->set(array(
+          'value' => $date->format('Y-m-d') . 'T' . $date->format('H:i:s'),
+          'value2' => $date2->format('Y-m-d') . 'T' . $date2->format('H:i:s'),
+        ));
+        $event->save();
+      }
+    }
+
     module_disable(array('helper'), FALSE);
     drupal_uninstall_modules(array('helper'), FALSE);
   }
