@@ -787,3 +787,11 @@ function elmcip_setup_update_7049() {
   module_disable(array('entityreference_migration'), FALSE);
   drupal_uninstall_modules(array('entityreference_migration'), FALSE);
 }
+
+/**
+ * Uninstall core search and user reference module.
+ */
+function elmcip_setup_update_7050() {
+  module_disable(array('search', 'user_reference'), FALSE);
+  drupal_uninstall_modules(array('search', 'user_reference'), FALSE);
+}
