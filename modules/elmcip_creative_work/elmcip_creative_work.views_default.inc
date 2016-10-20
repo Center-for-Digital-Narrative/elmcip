@@ -11,6 +11,120 @@ function elmcip_creative_work_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'Creative_works_in_anthology';
+  $view->description = 'Creative works in an Anthology';
+  $view->tag = 'Critical Writing, Anthology, Work';
+  $view->base_table = 'node';
+  $view->human_name = 'Creative works in an Anthology';
+  $view->core = 0;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Defaults */
+  $handler = $view->new_display('default', 'Defaults', 'default');
+  $handler->display->display_options['title'] = 'Contents (Creative Works)';
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = 50;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_author_name_nid' => 'field_author_name_nid',
+    'title' => 'title',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_author_name_nid' => array(
+      'separator' => '',
+    ),
+    'title' => array(
+      'sortable' => 0,
+      'separator' => '',
+    ),
+  );
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['label'] = 'Contents: Creative Works';
+  $handler->display->display_options['header']['area']['format'] = '1';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_in_anthology_nid';
+  $handler->display->display_options['fields']['title']['label'] = 'Work title';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Contextual filter: Content: Appears in (field_in_anthology) */
+  $handler->display->display_options['arguments']['field_in_anthology_target_id']['id'] = 'field_in_anthology_target_id';
+  $handler->display->display_options['arguments']['field_in_anthology_target_id']['table'] = 'field_data_field_in_anthology';
+  $handler->display->display_options['arguments']['field_in_anthology_target_id']['field'] = 'field_in_anthology_target_id';
+  $handler->display->display_options['arguments']['field_in_anthology_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_in_anthology_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_in_anthology_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_in_anthology_target_id']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = '0';
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'work' => 'work',
+  );
+  $handler->display->display_options['filters']['type']['group'] = '0';
+  $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
+
+  /* Display: Entity content */
+  $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
+  $handler->display->display_options['entity_type'] = 'node';
+  $handler->display->display_options['bundles'] = array(
+    0 => 'critical_writing',
+  );
+  $handler->display->display_options['show_title'] = 1;
+  $translatables['Creative_works_in_anthology'] = array(
+    t('Defaults'),
+    t('Contents (Creative Works)'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Contents: Creative Works'),
+    t('Work title'),
+    t('Author'),
+    t('All'),
+    t('Entity content'),
+  );
+  $export['Creative_works_in_anthology'] = $view;
+
+  $view = new view();
   $view->name = 'creative_work_oai_pmh';
   $view->description = '';
   $view->tag = 'default';
