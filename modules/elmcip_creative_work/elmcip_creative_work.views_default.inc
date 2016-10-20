@@ -102,6 +102,125 @@ function elmcip_creative_work_views_default_views() {
     0 => 'critical_writing',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_in_anthology_nid';
+  $handler->display->display_options['fields']['title']['label'] = 'Work title';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'NID';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  /* Field: Content: Author uid */
+  $handler->display->display_options['fields']['uid']['id'] = 'uid';
+  $handler->display->display_options['fields']['uid']['table'] = 'node';
+  $handler->display->display_options['fields']['uid']['field'] = 'uid';
+  $handler->display->display_options['fields']['uid']['label'] = 'Author ID';
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['settings'] = array(
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Platform/Software */
+  $handler->display->display_options['fields']['field_work_platform_software']['id'] = 'field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['table'] = 'field_data_field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['field'] = 'field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_work_platform_software']['delta_offset'] = '0';
+  /* Field: Content: Platform/Software */
+  $handler->display->display_options['fields']['field_work_platform_software_1']['id'] = 'field_work_platform_software_1';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['table'] = 'field_data_field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['field'] = 'field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['label'] = 'Platform/Software ID';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_work_platform_software_1']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref']['id'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref_1']['id'] = 'field_node_ref_1';
+  $handler->display->display_options['fields']['field_node_ref_1']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref_1']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref_1']['label'] = 'Publisher ID';
+  $handler->display->display_options['fields']['field_node_ref_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_1']['delta_offset'] = '0';
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['field_language_tax']['id'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['label'] = 'Event';
+  $handler->display->display_options['fields']['field_node_ref_event']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
+  /* Field: Content: Presented at Event */
+  $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event_1']['delta_offset'] = '0';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['delta_offset'] = '0';
+  $handler->display->display_options['path'] = 'data/creative_work';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
   $translatables['Creative_works_in_anthology'] = array(
     t('Defaults'),
     t('Contents (Creative Works)'),
@@ -123,6 +242,17 @@ function elmcip_creative_work_views_default_views() {
     t('Author'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
+    t('NID'),
+    t('Author ID'),
+    t('Year'),
+    t('Platform/Software'),
+    t('Platform/Software ID'),
+    t('Publisher'),
+    t('Publisher ID'),
+    t('Language'),
+    t('Event'),
+    t('Tags'),
   );
   $export['Creative_works_in_anthology'] = $view;
 
