@@ -15,7 +15,6 @@ dependencies[] = views_data_export
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[views_view][] = Author_page
-features[views_view][] = Creative_works_in_anthology
 features[views_view][] = Critical_writing
 features[views_view][] = Critical_writing_in_book
 features[views_view][] = Critical_writing_organization
