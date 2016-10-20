@@ -616,7 +616,7 @@ function elmcip_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_notebook_entry';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['comment_notebook_entry'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -3780,6 +3780,7 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_databases_and_archives';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_databases_and_archives'] = $strongarm;
 
@@ -3789,6 +3790,7 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_event';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_event'] = $strongarm;
 
@@ -3798,6 +3800,7 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_notebook';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_notebook'] = $strongarm;
 
@@ -3807,6 +3810,7 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_notebook_entry';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_notebook_entry'] = $strongarm;
 
@@ -3845,6 +3849,7 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_platform_software';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_platform_software'] = $strongarm;
 
@@ -3864,6 +3869,7 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_research_collection';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_research_collection'] = $strongarm;
 
@@ -3884,6 +3890,7 @@ function elmcip_content_types_strongarm() {
   $strongarm->name = 'node_options_teaching_resource';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_teaching_resource'] = $strongarm;
 
