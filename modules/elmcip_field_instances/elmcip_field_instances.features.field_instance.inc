@@ -6587,7 +6587,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Year Initiated',
     'required' => 0,
     'settings' => array(
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -6602,6 +6602,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'input_format' => 'd.m.Y - H:i:s',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'no_fieldset' => 0,
         'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-25:+3',
