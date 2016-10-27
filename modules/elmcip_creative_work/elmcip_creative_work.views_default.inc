@@ -191,6 +191,13 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
   $handler->display->display_options['fields']['field_language_tax']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['field_language_tax_1']['id'] = 'field_language_tax_1';
+  $handler->display->display_options['fields']['field_language_tax_1']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax_1']['field'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax_1']['label'] = 'Language ID';
+  $handler->display->display_options['fields']['field_language_tax_1']['type'] = 'elmcip_setup_term_name_with_tid';
+  $handler->display->display_options['fields']['field_language_tax_1']['delta_offset'] = '0';
   /* Field: Content: Presented at Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
@@ -204,7 +211,7 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
-  $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event ID';
   $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_event_1']['settings'] = array(
     'link' => 0,
@@ -216,6 +223,13 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
   $handler->display->display_options['fields']['taxonomy_vocabulary_1']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['taxonomy_vocabulary_1']['delta_offset'] = '0';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['id'] = 'taxonomy_vocabulary_1_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['label'] = 'Tags ID';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['type'] = 'elmcip_setup_term_name_with_tid';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'data/creative_work';
   $handler->display->display_options['displays'] = array(
     'entity_view_1' => 'entity_view_1',
@@ -251,8 +265,11 @@ function elmcip_creative_work_views_default_views() {
     t('Publisher'),
     t('Publisher ID'),
     t('Language'),
+    t('Language ID'),
     t('Event'),
+    t('Event ID'),
     t('Tags'),
+    t('Tags ID'),
   );
   $export['Creative_works_in_anthology'] = $view;
 
