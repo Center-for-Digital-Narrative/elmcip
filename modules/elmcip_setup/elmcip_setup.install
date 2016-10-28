@@ -850,3 +850,40 @@ function elmcip_setup_update_7051() {
     drupal_uninstall_modules(array('helper'), FALSE);
   }
 }
+
+/**
+ * Delete {system} records for long-lost modules.
+ */
+function elmcip_setup_update_7052() {
+  $modules = array(
+    'content',
+    'fieldgroup',
+    'nodereference',
+    'optionwidgets',
+    'userreference',
+    'content_copy',
+    'content_permissions',
+    'emimage',
+    'emthumb',
+    'emvideo',
+    'emfield',
+    'filefield',
+    'emaudio',
+    'embonus',
+    'date_timezone',
+    'eminline',
+    'filefield_meta',
+    'vertical_tabs',
+    'location_cck',
+    'calendar_ical',
+    'jcalendar',
+    'date_locale',
+    '',
+    '',
+    '',
+  );
+  db_delete('system')
+    ->condition('name', $modules, 'IN')
+    ->condition('type', 'module')
+    ->execute();
+}
