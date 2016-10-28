@@ -878,9 +878,6 @@ function elmcip_setup_update_7052() {
     'calendar_ical',
     'jcalendar',
     'date_locale',
-    '',
-    '',
-    '',
   );
   db_delete('system')
     ->condition('name', $modules, 'IN')
