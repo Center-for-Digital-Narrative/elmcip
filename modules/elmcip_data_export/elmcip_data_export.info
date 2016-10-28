@@ -80,7 +80,6 @@ features[views_view][] = organizations_listed_in_research_collection
 features[views_view][] = other_editions
 features[views_view][] = people_afil_on_organization
 features[views_view][] = people_listed_in_research_collection
-features[views_view][] = platform_db_archive
 features[views_view][] = publisher_on_critical_writing
 features[views_view][] = publisher_page
 features[views_view][] = publisher_presented_at_event

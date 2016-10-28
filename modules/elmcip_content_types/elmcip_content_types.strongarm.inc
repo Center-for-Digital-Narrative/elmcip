@@ -1505,7 +1505,7 @@ function elmcip_content_types_strongarm() {
       'display' => array(
         'research_collection_db_arcive_entity_view_1' => array(
           'full' => array(
-            'weight' => '18',
+            'weight' => '19',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1523,7 +1523,7 @@ function elmcip_content_types_strongarm() {
         ),
         'teaching_resource_db_archive_entity_view_1' => array(
           'full' => array(
-            'weight' => '17',
+            'weight' => '18',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1541,7 +1541,7 @@ function elmcip_content_types_strongarm() {
         ),
         'critical_writing_db_archive_entity_view_1' => array(
           'full' => array(
-            'weight' => '16',
+            'weight' => '17',
             'visible' => TRUE,
           ),
           'default' => array(
@@ -1559,7 +1559,7 @@ function elmcip_content_types_strongarm() {
         ),
         'platform_db_archive_entity_view_1' => array(
           'full' => array(
-            'weight' => '19',
+            'weight' => '20',
             'visible' => TRUE,
           ),
         ),
