@@ -333,6 +333,7 @@ body {
   margin-bottom: 0;
 }
 
+.field-type-location .field-item,
 .group-right .field-item {
   margin-bottom: 1.5em;
 }
