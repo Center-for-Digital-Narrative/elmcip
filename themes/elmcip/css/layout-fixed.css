@@ -208,10 +208,6 @@ body {
   margin: 0 0 0 10px;
 }
 
-/**
- * Knowledge base section.
- */
-/* Terrible hack. Remove this when panel layout have changed for the better. */
 .panels-flexible-row.kb-header {
   margin: 0;
 }
@@ -224,7 +220,6 @@ body {
 .kb-header .pane-content {
   display: none;
 }
-/* End of terrible CSS. */
 
 .kb .panels-flexible-region {
   float: left;
@@ -300,7 +295,7 @@ body {
 
 /**
  * Knowledge base records. Specific styles for views and fields can be found in
- * fields.css and views-styles.css respectively
+ * fields.css and views-styles.css respectively.
  */
 .group-left {
   float: left;
@@ -347,7 +342,7 @@ body {
 }
 
 /**
- * Navigation
+ * Navigation.
  */
 #navigation {
   float: left; /* LTR */
@@ -367,7 +362,7 @@ body {
 }
 
 /**
- * First sidebar
+ * First sidebar.
  */
 .region-sidebar-first {
   float: left; /* LTR */
@@ -383,7 +378,7 @@ body {
 }
 
 /*
- * Second sidebar
+ * Second sidebar.
  */
 .region-sidebar-second {
   float: left; /* LTR */
@@ -399,7 +394,7 @@ body {
 }
 
 /*
- * Footer
+ * Footer.
  */
 .region-footer {
   margin: 0 10px;
@@ -410,13 +405,13 @@ body {
 }
 
 /*
- * Page bottom
+ * Page bottom.
  */
 .region-bottom /* See also the #page-wrapper declaration above that this div shares. */ {
 }
 
 /*
- * Prevent overflowing content
+ * Prevent overflowing content.
  */
 #header,
 #content,
@@ -432,17 +427,3 @@ body {
 .field-tags-inline {
   margin: 0 0 20px 0;
 }
-
-/*
- * If a div.clearfix doesn't have any content after it and its bottom edge
- * touches the bottom of the viewport, Firefox and Safari will mistakenly
- * place several pixels worth of space between the bottom of the div and the
- * bottom of the viewport. Uncomment this CSS property to fix this.
- * Note: with some over-large content, this property might cause scrollbars
- * to appear on the #page-wrapper div.
- */
-/*
-#page-wrapper {
-  overflow-y: hidden;
-}
-*/
