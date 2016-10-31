@@ -777,7 +777,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_documentation_vt|node|work|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_documentation|node|event|default';
   $field_group->group_name = 'group_documentation';
@@ -1008,15 +1008,15 @@ function elmcip_field_instances_field_group_info() {
     'children' => array(
       0 => 'taxonomy_vocabulary_2',
       1 => 'field_url',
-      2 => 'field_node_ref',
-      3 => 'field_archiveurl',
-      4 => 'field_date',
-      5 => 'field_location',
-      6 => 'field_email',
-      7 => 'field_associated_event',
-      8 => 'field_event_series',
-      9 => 'field_curator',
-      10 => 'field_individual_organizers',
+      2 => 'field_archiveurl',
+      3 => 'field_date',
+      4 => 'field_location',
+      5 => 'field_email',
+      6 => 'field_node_ref',
+      7 => 'field_individual_organizers',
+      8 => 'field_curator',
+      9 => 'field_associated_event',
+      10 => 'field_event_series',
       11 => 'title',
     ),
     'format_type' => 'tab',
@@ -1088,7 +1088,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_eventdoc_vt|node|event|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_eventinfo|node|event|default';
   $field_group->group_name = 'group_eventinfo';

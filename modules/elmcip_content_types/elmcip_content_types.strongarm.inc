@@ -1614,11 +1614,14 @@ function elmcip_content_types_strongarm() {
         'Event_critical_writing_node_content_1' => array(
           'weight' => '3',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'Event_critical_writing_entity_view_1' => array(
           'default' => array(
-            'weight' => '12',
+            'weight' => '16',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1636,7 +1639,7 @@ function elmcip_content_types_strongarm() {
         ),
         'cw_reference_event_entity_view_1' => array(
           'default' => array(
-            'weight' => '13',
+            'weight' => '18',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1654,7 +1657,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Event_work_entity_view_1' => array(
           'default' => array(
-            'weight' => '11',
+            'weight' => '17',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1680,7 +1683,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '15',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1694,8 +1697,8 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '10',
-            'visible' => TRUE,
+            'weight' => '36',
+            'visible' => FALSE,
           ),
           'search_result' => array(
             'weight' => '10',
@@ -1708,8 +1711,8 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '10',
-            'visible' => TRUE,
+            'weight' => '34',
+            'visible' => FALSE,
           ),
           'search_result' => array(
             'weight' => '10',
@@ -1723,7 +1726,7 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,

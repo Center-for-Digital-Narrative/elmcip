@@ -6652,7 +6652,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -6767,7 +6767,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 14,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'above',
@@ -6831,7 +6831,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -6930,7 +6930,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -7161,11 +7161,10 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 2,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'email',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'email_default',
-        'weight' => 7,
+        'type' => 'hidden',
+        'weight' => 33,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -7249,7 +7248,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -7339,7 +7338,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 10,
+        'weight' => 19,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -7429,7 +7428,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -7505,7 +7504,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'location_cck',
         'settings' => array(),
         'type' => 'location_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -7583,9 +7582,12 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'media_original',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 21,
       ),
       'full' => array(
         'label' => 'above',
@@ -7658,13 +7660,19 @@ Note: Before adding a new person record, check to see if he or she is already li
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'colorbox',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => '',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'large',
+          'colorbox_node_style_first' => '',
         ),
-        'type' => 'image',
-        'weight' => 15,
+        'type' => 'colorbox',
+        'weight' => 20,
       ),
       'full' => array(
         'label' => 'above',
@@ -7777,7 +7785,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -7879,7 +7887,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 13,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -7944,7 +7952,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 14,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -8043,7 +8051,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -8142,7 +8150,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
@@ -8195,11 +8203,11 @@ Note: Before adding a new person record, check to see if he or she is already li
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
