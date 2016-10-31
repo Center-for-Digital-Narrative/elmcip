@@ -287,7 +287,7 @@ function elmcip_layout_ds_field_settings_info() {
       'format' => 'default',
     ),
     'purl' => array(
-      'weight' => '22',
+      'weight' => '24',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -1681,8 +1681,9 @@ function elmcip_layout_ds_layout_settings_info() {
         19 => 'field_files',
         20 => 'field_multi_images',
         21 => 'field_media_asset',
-        22 => 'purl',
-        23 => 'author',
+        22 => 'author',
+        23 => 'purl',
+        24 => 'group_meta',
       ),
     ),
     'fields' => array(
@@ -1708,8 +1709,9 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_files' => 'right',
       'field_multi_images' => 'right',
       'field_media_asset' => 'right',
-      'purl' => 'right',
       'author' => 'right',
+      'purl' => 'right',
+      'group_meta' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(

@@ -190,6 +190,7 @@ features[field_group][] = group_eventdesc_vt|node|event|form
 features[field_group][] = group_eventdoc_vt|node|event|form
 features[field_group][] = group_eventinfo|node|event|default
 features[field_group][] = group_eventinfo|node|event|teaser
+features[field_group][] = group_meta|node|event|default
 features[field_group][] = group_orgdesc_vt|node|organization|form
 features[field_group][] = group_orgdescription|node|organization|default
 features[field_group][] = group_orgdescription|node|organization|teaser

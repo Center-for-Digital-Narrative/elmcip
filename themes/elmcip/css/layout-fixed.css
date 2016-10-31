@@ -338,6 +338,11 @@ body {
   margin-bottom: 1.5em;
 }
 
+div.group-meta {
+  margin-top: 3em;
+}
+
+.group-meta .field-item,
 .group-right .field-name-field-files .field-item {
   margin-bottom: 0;
 }
