@@ -878,6 +878,19 @@ function elmcip_setup_update_7052() {
     'calendar_ical',
     'jcalendar',
     'date_locale',
+    'views_attach',
+    'token_actions',
+    'tokenSTARTER',
+    'media_flickr_xspf',
+    'imagefield',
+    'imagecache',
+    'imagecache_ui',
+    'recaptcha_mailhide',
+    'record_status',
+    'nd_cck',
+    'nd_faq',
+    'nd_switch_bm',
+    'vd',
   );
   db_delete('system')
     ->condition('name', $modules, 'IN')
