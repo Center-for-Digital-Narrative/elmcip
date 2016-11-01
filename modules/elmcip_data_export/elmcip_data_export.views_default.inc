@@ -17186,6 +17186,158 @@ function elmcip_data_export_views_default_views() {
     0 => 'research_collection',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_creative_works_target_id';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'field_creative_works_target_id';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name']['id'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_author_name']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author_name_2']['id'] = 'field_author_name_2';
+  $handler->display->display_options['fields']['field_author_name_2']['table'] = 'field_data_field_author_name';
+  $handler->display->display_options['fields']['field_author_name_2']['field'] = 'field_author_name';
+  $handler->display->display_options['fields']['field_author_name_2']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_author_name_2']['label'] = 'Author ID';
+  $handler->display->display_options['fields']['field_author_name_2']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_author_name_2']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_author_name_2']['delta_offset'] = '0';
+  /* Field: Content: Year */
+  $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
+  $handler->display->display_options['fields']['field_work_year']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_work_year']['settings'] = array(
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Platform/Software */
+  $handler->display->display_options['fields']['field_work_platform_software']['id'] = 'field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['table'] = 'field_data_field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['field'] = 'field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_work_platform_software']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_work_platform_software']['delta_offset'] = '0';
+  /* Field: Content: Platform/Software */
+  $handler->display->display_options['fields']['field_work_platform_software_1']['id'] = 'field_work_platform_software_1';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['table'] = 'field_data_field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['field'] = 'field_work_platform_software';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['label'] = 'Platform/Software ID';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_work_platform_software_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_work_platform_software_1']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref']['id'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_node_ref']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref']['delta_offset'] = '0';
+  /* Field: Content: Publisher */
+  $handler->display->display_options['fields']['field_node_ref_1']['id'] = 'field_node_ref_1';
+  $handler->display->display_options['fields']['field_node_ref_1']['table'] = 'field_data_field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref_1']['field'] = 'field_node_ref';
+  $handler->display->display_options['fields']['field_node_ref_1']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_node_ref_1']['label'] = 'Publisher ID';
+  $handler->display->display_options['fields']['field_node_ref_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_1']['delta_offset'] = '0';
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['field_language_tax']['id'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['field'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_language_tax']['delta_offset'] = '0';
+  /* Field: Content: Language */
+  $handler->display->display_options['fields']['field_language_tax_1']['id'] = 'field_language_tax_1';
+  $handler->display->display_options['fields']['field_language_tax_1']['table'] = 'field_data_field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax_1']['field'] = 'field_language_tax';
+  $handler->display->display_options['fields']['field_language_tax_1']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_language_tax_1']['label'] = 'Language ID';
+  $handler->display->display_options['fields']['field_language_tax_1']['type'] = 'elmcip_setup_term_name_with_tid';
+  $handler->display->display_options['fields']['field_language_tax_1']['delta_offset'] = '0';
+  /* Field: Content: Event */
+  $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_node_ref_event']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
+  /* Field: Content: Event */
+  $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event ID';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'entityreference_entity_id';
+  $handler->display->display_options['fields']['field_node_ref_event_1']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_node_ref_event_1']['delta_offset'] = '0';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['delta_offset'] = '0';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['id'] = 'taxonomy_vocabulary_1_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['relationship'] = 'field_creative_works_target_id';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['label'] = 'Tags ID';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['type'] = 'elmcip_setup_term_name_with_tid';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
+  $handler->display->display_options['path'] = 'data/work_research_collection';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['works_listed_on_research_collection'] = array(
     t('Defaults'),
     t('Creative works'),
@@ -17208,6 +17360,19 @@ function elmcip_data_export_views_default_views() {
     t('Year'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
+    t('Nid'),
+    t('Author ID'),
+    t('Platform/Software'),
+    t('Platform/Software ID'),
+    t('Publisher'),
+    t('Publisher ID'),
+    t('Language'),
+    t('Language ID'),
+    t('Event'),
+    t('Event ID'),
+    t('Tags'),
+    t('Tags ID'),
   );
   $export['works_listed_on_research_collection'] = $view;
 
