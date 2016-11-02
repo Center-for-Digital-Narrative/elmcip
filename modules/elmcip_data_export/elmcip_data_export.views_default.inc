@@ -1596,14 +1596,6 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['show_title'] = 1;
 
-  /* Display: Entity content */
-  $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_2');
-  $handler->display->display_options['entity_type'] = 'node';
-  $handler->display->display_options['bundles'] = array(
-    0 => 'event',
-  );
-  $handler->display->display_options['show_title'] = 0;
-
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
   $handler->display->display_options['defaults']['access'] = FALSE;
