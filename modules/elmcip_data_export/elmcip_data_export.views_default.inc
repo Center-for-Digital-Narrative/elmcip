@@ -1547,10 +1547,6 @@ function elmcip_data_export_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_node_ref_event_target_id']['id'] = 'field_node_ref_event_target_id';
-  $handler->display->display_options['relationships']['field_node_ref_event_target_id']['table'] = 'field_data_field_node_ref_event';
-  $handler->display->display_options['relationships']['field_node_ref_event_target_id']['field'] = 'field_node_ref_event_target_id';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1772,7 +1768,6 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Content entity referenced from field_node_ref_event'),
     t('Work title'),
     t('Author'),
     t('All'),
