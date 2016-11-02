@@ -11,4 +11,5 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[views_view][] = Creative_works_in_anthology
 features[views_view][] = creative_work_oai_pmh
+features[views_view][] = timeline_data_export_all_works
 features_exclude[dependencies][ctools] = ctools
