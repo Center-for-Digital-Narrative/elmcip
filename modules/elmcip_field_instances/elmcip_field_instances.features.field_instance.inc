@@ -8247,91 +8247,6 @@ Note: Before adding a new person record, check to see if he or she is already li
     ),
   );
 
-  // Exported field_instance: 'node-faq-body'.
-  $field_instances['node-faq-body'] = array(
-    'bundle' => 'faq',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'trim_length' => 1200,
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
-    'settings' => array(
-      'display_summary' => TRUE,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => -4,
-    ),
-  );
-
-  // Exported field_instance: 'node-faq-taxonomyextra'.
-  $field_instances['node-faq-taxonomyextra'] = array(
-    'bundle' => 'faq',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Debris left over after upgrade from Drupal 6',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'taxonomyextra',
-    'label' => 'Taxonomy upgrade extras',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 0,
-    ),
-  );
-
   // Exported field_instance: 'node-notebook_entry-field_author_noted'.
   $field_instances['node-notebook_entry-field_author_noted'] = array(
     'bundle' => 'notebook_entry',
@@ -19676,7 +19591,6 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Database or Archive Referenced');
   t('Database or Archive reference');
   t('Date');
-  t('Debris left over after upgrade from Drupal 6');
   t('Describe the contents of the file.');
   t('Description');
   t('Description (English)');
@@ -19867,7 +19781,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Short description');
   t('Students');
   t('Tags');
-  t('Taxonomy upgrade extras');
   t('Teacher');
   t('Teaching Resource Referenced');
   t('Teaching Resources');
