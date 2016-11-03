@@ -45,12 +45,9 @@ body {
   width: 960px;
 }
 
-#page {}
-
 /*
  * Header
  */
-#header {}
 
 #header .block .content {
   margin: 0 10px;

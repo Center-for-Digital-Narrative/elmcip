@@ -9,10 +9,6 @@
  *   http://www.alistapart.com/articles/fauxcolumns/
  */
 
-
-body {
-}
-
 #page-wrapper {
   background-color: #fff;
 }
@@ -20,25 +16,6 @@ body {
 .is-admin {
   background-image: url(../images/12_col.gif);
   background-repeat: repeat-y;
-}
-
-#page {
-}
-
-#header {
-}
-
-
-#header .section {
-}
-
-#main-wrapper {
-}
-
-#main {
-}
-
-.region-footer {
 }
 
 .group-left,

@@ -16,12 +16,6 @@ body {
   padding: 0;
 }
 
-#page-wrapper {
-}
-
-#page {
-}
-
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
@@ -34,15 +28,6 @@ body {
   text-align: center;
   background-color: #666;
   color: #fff;
-}
-
-/*
- * Header
- */
-#header {
-}
-
-#header .section {
 }
 
 #logo {
@@ -69,34 +54,8 @@ div#site-name {
   text-decoration: underline;
 }
 
-#site-slogan /* The slogan (or tagline) of a website */ {
-}
-
-.region-header /* Wrapper for any blocks placed in the header region */ {
-}
-
 #header {
   background-color:#E2E2D2;
-}
-
-/*
- * Main (container for everything else)
- */
-#main-wrapper {
-}
-
-#main {
-}
-
-/*
- * Content
- */
-#content {}
-
-#content .section {
-}
-
-.region-highlighted {
 }
 
 .breadcrumb /* The path to the current page in the form of a list of links */ {
@@ -116,23 +75,15 @@ h4.title {
 h1.title {
   margin: 0;
 }
-
-div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
-  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+/* Important messages (status, warning, and error) for the user. */
+/* See also the declarations in messages.css. */
+div.messages {
+  margin: 1.5em 0;
 }
 
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-div.tabs /* See also the tabs.css file. */ {
-}
-
-.region-help /* Help text on a page */ {
-}
-
-.more-help-link /* Link to more help */ {
 }
 
 /* Wrapper for the actual page content */
@@ -160,45 +111,9 @@ ul.links li {
   text-align: center;
 }
 
-.feed-icon /* The link to the RSS or Atom feed for the current list of content */ {
-}
-
-.more-link /* Aggregator, blog, and forum more link */ {
-}
-
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-.region-sidebar-first {
-}
-
-.region-sidebar-first .section {
-}
-
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-.region-sidebar-second {
-}
-
-.region-sidebar-second .section {
-}
-
 /*
  * Footer
  */
 .region-footer {
   text-align: center;
-}
-
-/*
- * Page bottom
- */
-.region-bottom /* Wrapper for any blocks placed in the page bottom region */ {
 }
