@@ -42,6 +42,7 @@ stylesheets[all][]        = yui/cssbutton.css
 stylesheets[all][]        = css/table.css
 stylesheets[all][]        = css/search.css
 stylesheets[all][]        = css/media.css
+stylesheets[all][]        = css/quote.css
 stylesheets[all][]        = css/typography.css
 stylesheets[print][]      = css/print.css
 
