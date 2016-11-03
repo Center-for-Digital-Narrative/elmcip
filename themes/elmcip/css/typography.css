@@ -6,6 +6,20 @@
   font-size: 34px;
 }
 
+blockquote {
+  font-size: 1.2857em;
+}
+
+h1#site-name,
+div#site-name {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.group-right h2 {
+  font-size: 1.0em;
+}
+
 p:first-child {
   margin-top: 0;
 }
@@ -21,11 +35,6 @@ p:last-child {
 .view-header {
   font-weight: bold;
 }
-
-.group-right h2 {
-  font-size: 1.0em;
-}
-
 .form-item label {
   font-weight: bold;
 }

@@ -54,10 +54,8 @@ body {
 }
 
 h1#site-name,
-div#site-name /* The name of the website */ {
+div#site-name {
   margin: 0;
-  font-size: 2em;
-  line-height: 1.5em;
 }
 
 #site-name a:link,
