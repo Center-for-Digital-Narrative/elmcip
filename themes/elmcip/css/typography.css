@@ -1,13 +1,10 @@
+blockquote,
 #header a {
-  font-size: 1.142em;
+  font-size: 1.1428em; /* 16px */
 }
 
 #header .social a {
   font-size: 34px;
-}
-
-blockquote {
-  font-size: 1.2857em;
 }
 
 h1#site-name,
@@ -17,7 +14,7 @@ div#site-name {
 }
 
 .group-right h2 {
-  font-size: 1.0em;
+  font-size: 1em;
 }
 
 p:first-child {
