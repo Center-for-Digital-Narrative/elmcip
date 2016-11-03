@@ -23,3 +23,82 @@ function elmcip_data_export_views_pre_render(&$view) {
     $view->result = $nids;
   }
 }
+
+/**
+ * Implements hook_menu().
+ */
+function elmcip_data_export_menu() {
+  $items['data'] = array(
+    'title' => 'Views containing landing pages and exports',
+    'page callback' => 'elmcip_get_view_pages',
+    'access arguments' => array('administer users'),
+  );
+
+  return $items;
+}
+
+/**
+ * Build unordered lists of views having a path.
+ *
+ * @return array $content.
+ */
+function elmcip_get_view_pages() {
+  $args = func_get_args();
+
+  if (count($args) > 1) {
+    drupal_not_found();
+  }
+
+  $views = views_get_enabled_views();
+  $view_pages = '<h2>Views data exports</h2>';
+  $view_pages .= _elmcip_get_views($views, 'views_data_export');
+
+  $view_pages .= '<h2>Views pages</h2>';
+  $view_pages .= _elmcip_get_views($views, 'page');
+
+
+  $content['raw_markup'] = array(
+    '#type' => 'markup',
+    '#markup' => $view_pages,
+  );
+
+  return $content;
+}
+
+/**
+ * @param $views object
+ * @param $type string of view display to search for.
+ *
+ * @return string $view_page a unordered list.
+ */
+function _elmcip_get_views($views, $type) {
+  $view_pages = '';
+  $view_pages .= '<ul>';
+  foreach($views as $view) {
+    foreach($view->display as $display) {
+      if ($display->display_plugin == $type) {
+
+        global $base_url;
+        global $base_path;
+        $name = $display->display_title . '. ';
+        if (isset($view->human_name)) {
+          $name .= $view->human_name;
+        }
+        if ($view->description) {
+          $name .= '. <br>' .$view->description . ': ';
+        }
+        else {
+          $name .= ': ';
+        }
+
+        $view_pages .= '<li>' . $name;
+        $view_pages .= '<a href="' . $base_url . $base_path . $display->display_options['path'] . '">' . $display->display_title . '</a>';
+        $view_pages .=  '</li>';
+      }
+    }
+
+  };
+  $view_pages .= '</ul>';
+
+  return $view_pages;
+}
