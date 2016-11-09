@@ -225,8 +225,8 @@ function elmcip_layout_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'front';
   $page->task = 'page';
-  $page->admin_title = 'testfront2';
-  $page->admin_description = '';
+  $page->admin_title = 'Frontpage';
+  $page->admin_description = 'ELMCIP front page';
   $page->path = 'front';
   $page->access = array(
     'type' => 'none',
@@ -778,7 +778,7 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 1,
+    'override_pager_settings' => 0,
     'use_pager' => 0,
     'nodes_per_page' => '8',
     'pager_id' => '0',
@@ -792,6 +792,7 @@ function elmcip_layout_default_page_manager_pages() {
     'display' => 'block_2',
     'override_title' => 0,
     'override_title_text' => '',
+    'override_title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
