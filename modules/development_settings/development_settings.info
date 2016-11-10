@@ -33,5 +33,5 @@ features[variable][] = devel_use_uncompressed_jquery
 features[variable][] = devel_xhprof_directory
 features[variable][] = devel_xhprof_enabled
 features[variable][] = devel_xhprof_url
+features[variable][] = error_level
 features[variable][] = googleanalytics_cache
-features[variable][] = page_cache_maximum_age
