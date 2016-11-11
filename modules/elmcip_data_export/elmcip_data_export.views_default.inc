@@ -16440,6 +16440,13 @@ function elmcip_data_export_views_default_views() {
     'record_status' => 0,
     'vocabulary_4' => 0,
   );
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['label'] = 'Tags ID';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['type'] = 'elmcip_setup_term_name_with_tid';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'work/%/export';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
@@ -16498,6 +16505,7 @@ function elmcip_data_export_views_default_views() {
     t('2000[field_language_tax_1-tid]'),
     t('Event'),
     t('Event ID'),
+    t('Tags ID'),
   );
   $export['work_page'] = $view;
 
