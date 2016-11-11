@@ -891,6 +891,7 @@ function elmcip_setup_update_7052() {
     'nd_faq',
     'nd_switch_bm',
     'vd',
+    'nd',
   );
   db_delete('system')
     ->condition('name', $modules, 'IN')
