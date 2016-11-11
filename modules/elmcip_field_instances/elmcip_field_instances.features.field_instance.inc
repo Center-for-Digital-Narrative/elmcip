@@ -14392,7 +14392,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'settings' => array(
       'description_field' => 1,
       'file_directory' => 'files/attachments/teaching',
-      'file_extensions' => 'txt pdf ppt mp3 html htm rtf',
+      'file_extensions' => 'txt pdf ppt mp3 html htm rtf zip',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
