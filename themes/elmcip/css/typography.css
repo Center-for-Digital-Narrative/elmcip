@@ -3,6 +3,10 @@ blockquote,
   font-size: 1.1428em; /* 16px */
 }
 
+blockquote {
+  font-family: Georgia, serif;
+}
+
 #header .social a {
   font-size: 34px;
 }
