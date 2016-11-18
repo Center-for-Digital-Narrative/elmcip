@@ -19447,7 +19447,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
-        'type' => 'link_separate',
+        'type' => 'link_default',
         'weight' => 14,
       ),
       'search_result' => array(
