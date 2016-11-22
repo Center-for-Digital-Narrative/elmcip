@@ -653,6 +653,12 @@ function elmcip_field_instances_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'wysiwyg' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'file',
