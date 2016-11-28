@@ -898,3 +898,11 @@ function elmcip_setup_update_7052() {
     ->condition('type', 'module')
     ->execute();
 }
+
+/**
+ * Uninstall aggregator module.
+ */
+function elmcip_setup_update_7053() {
+  module_disable(array('aggregator'), FALSE);
+  drupal_uninstall_modules(array('aggregator'), FALSE);
+}

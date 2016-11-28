@@ -104,23 +104,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'mollom',
   );
 
-  // Exported permission: 'access news feeds'.
-  $permissions['access news feeds'] = array(
-    'name' => 'access news feeds',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
-      'teacher' => 'teacher',
-    ),
-    'module' => 'aggregator',
-  );
-
   // Exported permission: 'access printer-friendly version'.
   $permissions['access printer-friendly version'] = array(
     'name' => 'access printer-friendly version',
@@ -427,16 +410,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'mollom',
-  );
-
-  // Exported permission: 'administer news feeds'.
-  $permissions['administer news feeds'] = array(
-    'name' => 'administer news feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'aggregator',
   );
 
   // Exported permission: 'administer nodes'.
