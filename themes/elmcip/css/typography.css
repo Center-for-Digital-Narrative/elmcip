@@ -21,6 +21,21 @@ div#site-name {
   font-size: 1em;
 }
 
+.view-elmcip-taxonomy-term .term_present {
+  display: block;
+  margin: 0 0 1.5em 0;
+}
+
+.term_present {
+  font-weight: normal;
+}
+
+.term_missing {
+  color: #999;
+  font-style: italic;
+  font-weight: normal;
+}
+
 p:first-child {
   margin-top: 0;
 }

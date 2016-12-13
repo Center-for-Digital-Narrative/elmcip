@@ -122,7 +122,25 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       $form['title']['#type'] = 'hidden';
       $form['title']['#default_value'] = 'ELMCIP auto generated - dummy';
       break;
+    case 'taxonomy_form_term':
+      $form['description']['#format'] = 4;
+      $form['#after_build'][] = 'configure_term_form';
+      break;
   }
+}
+
+/**
+ * Remove input format selector and markup guidelines.
+ *
+ * @param $form
+ * @return mixed
+ */
+function configure_term_form($form) {
+  $form['description']['format']['format']['#access'] = FALSE;
+  $form['description']['format']['help']['#access'] = FALSE;
+  $form['description']['format']['guidelines']['#access'] = FALSE;
+
+  return $form;
 }
 
 /**
