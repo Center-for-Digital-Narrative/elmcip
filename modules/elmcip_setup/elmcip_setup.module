@@ -114,11 +114,15 @@ function elmcip_setup_node_presave($node) {
 }
 
 /**
- * Implements hook_form_FORM_ID_alter().
+ * Implements hook_form_alter().
  */
-function elmcip_setup_form_person_node_form_alter(&$form, &$form_state, $form_id) {
-  $form['title']['#type'] = 'hidden';
-  $form['title']['#default_value'] = 'ELMCIP auto generated - dummy';
+function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'person_node_form':
+      $form['title']['#type'] = 'hidden';
+      $form['title']['#default_value'] = 'ELMCIP auto generated - dummy';
+      break;
+  }
 }
 
 /**
