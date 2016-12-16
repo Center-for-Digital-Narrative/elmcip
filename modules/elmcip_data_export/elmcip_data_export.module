@@ -131,7 +131,7 @@ function elmcip_data_export_views_pre_view($view, &$display_id, &$args) {
 
       // Section that run if user can add or edit existing term.
       if (taxonomy_term_edit_access($term)) {
-        $edit_link = url('taxonomy/term/' . $term->tid . '/edit');
+        $edit_link = url('taxonomy/term/' . $term->tid . '/edit', array('query' => array('destination' => current_path())));
         if ($term->description) {
           $content = t('@description <a href="@url">Edit term</a>', array(
             '@description' => $term->description,
