@@ -170,3 +170,72 @@ function elmcip_setup_field_formatter_view($entity_type, $entity, $field, $insta
 
   return $element;
 }
+
+/**
+ * hook_field_attach_presave(),
+ */
+function elmcip_setup_field_attach_presave($entity_type, $entity) {
+  if ($entity->vocabulary_machine_name == 'vocabulary_1') {
+    if (!$entity->tid) {
+      drupal_goto('taxonomy/vocabulary/term', array('query'=>drupal_get_destination()));
+      $entity->description = 'Machine populate description.';
+    }
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function elmcip_setup_menu() {
+  $items = array();
+
+  $items['taxonomy/vocabulary/term'] = array(
+    'page callback' => 'elmcip_setup_description',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+function elmcip_setup_description() {
+ return drupal_get_form('mymodule_form');
+}
+
+/**
+ * Drupal form.
+ */
+function mymodule_form($form, $form_state) {
+  $form = array();
+
+  $form['new_link_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Taxonomy term description'),
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+
+  return $form;
+}
+
+/**
+ * Implements form_submit().
+ *
+ * Validate the form.
+ */
+function mymodule_form_validate($form, &$form_state) {
+  if ($form_state['values']['new_link_text'] == '') {
+    form_set_error('new_link_text', t('Please fill out the description.'));
+  }
+}
+
+/**
+ * Handle post-validation form submission.
+ */
+function mymodule_form_submit($form, &$form_state) {
+  $description = $form_state['values']['new_link_text'];
+  drupal_set_message(t('Term description: %description', array('%description' => $description)));
+}
