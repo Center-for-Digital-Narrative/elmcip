@@ -906,3 +906,11 @@ function elmcip_setup_update_7053() {
   module_disable(array('aggregator'), FALSE);
   drupal_uninstall_modules(array('aggregator'), FALSE);
 }
+
+/**
+ * Uninstall color module.
+ */
+function elmcip_setup_update_7054() {
+  module_disable(array('color'), FALSE);
+  drupal_uninstall_modules(array('color'), FALSE);
+}
