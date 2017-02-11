@@ -6169,7 +6169,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '1';
-  $handler->display->display_options['filters']['status']['group'] = '0';
+  $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
@@ -6178,20 +6178,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'critical_writing' => 'critical_writing',
   );
-  $handler->display->display_options['filters']['type']['group'] = '0';
+  $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Publication Type (field_pubtype_tax) */
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['id'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['table'] = 'field_data_field_pubtype_tax';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['field'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['group'] = '0';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator_id'] = 'field_pubtype_tax_tid_op';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['label'] = 'Publication Type (field_pubtype_tax)';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator'] = 'field_pubtype_tax_tid_op';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['identifier'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['vocabulary'] = 'publication_type';
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
@@ -6222,7 +6210,6 @@ function elmcip_data_export_views_default_views() {
     t('Year'),
     t('Publication Type'),
     t('All'),
-    t('Publication Type (field_pubtype_tax)'),
     t('Entity content'),
   );
   $export['critical_writing_on_publisher'] = $view;
@@ -13484,18 +13471,6 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Publication Type (field_pubtype_tax) */
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['id'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['table'] = 'field_data_field_pubtype_tax';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['field'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator_id'] = 'field_pubtype_tax_tid_op';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['label'] = 'Publication Type (field_pubtype_tax)';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator'] = 'field_pubtype_tax_tid_op';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['identifier'] = 'field_pubtype_tax_tid';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_pubtype_tax_tid']['vocabulary'] = 'publication_type';
 
   /* Display: Entity content */
   $handler = $view->new_display('entity_view', 'Entity content', 'entity_view_1');
@@ -13523,7 +13498,6 @@ function elmcip_data_export_views_default_views() {
     t('Work title'),
     t('Editors'),
     t('All'),
-    t('Publication Type (field_pubtype_tax)'),
     t('Entity content'),
   );
   $export['series_on_publisher'] = $view;
