@@ -2435,17 +2435,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: 'translate content'.
-  $permissions['translate content'] = array(
-    'name' => 'translate content',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'translation',
-  );
-
   // Exported permission: 'translate interface'.
   $permissions['translate interface'] = array(
     'name' => 'translate interface',

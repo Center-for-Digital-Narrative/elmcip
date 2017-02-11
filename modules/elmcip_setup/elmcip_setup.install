@@ -914,3 +914,11 @@ function elmcip_setup_update_7054() {
   module_disable(array('color'), FALSE);
   drupal_uninstall_modules(array('color'), FALSE);
 }
+
+/**
+ * Uninstall core content translation.
+ */
+function elmcip_setup_update_7055() {
+  module_disable(array('translation'), FALSE);
+  drupal_uninstall_modules(array('translation'), FALSE);
+}
