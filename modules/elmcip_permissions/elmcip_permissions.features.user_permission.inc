@@ -511,8 +511,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -1461,6 +1459,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete terms in gender'] = array(
     'name' => 'delete terms in gender',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -1472,8 +1471,16 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'delete terms in news_tags'.
+  $permissions['delete terms in news_tags'] = array(
+    'name' => 'delete terms in news_tags',
+    'roles' => array(
+      'administrative editor' => 'administrative editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -1484,8 +1491,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -1496,8 +1501,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -1508,8 +1511,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -1520,8 +1521,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -1532,8 +1531,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -1544,8 +1541,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -1556,8 +1551,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -1568,8 +1561,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -2171,6 +2162,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit terms in gender'] = array(
     'name' => 'edit terms in gender',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -2182,8 +2174,16 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in news_tags'.
+  $permissions['edit terms in news_tags'] = array(
+    'name' => 'edit terms in news_tags',
+    'roles' => array(
+      'administrative editor' => 'administrative editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -2194,8 +2194,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -2206,8 +2204,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -2218,8 +2214,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -2230,8 +2224,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -2242,6 +2234,7 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
       'editor' => 'editor',
       'supereditor' => 'supereditor',
     ),
@@ -2254,8 +2247,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -2266,8 +2257,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
@@ -2278,8 +2267,6 @@ function elmcip_permissions_user_default_permissions() {
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'taxonomy',
   );
