@@ -922,3 +922,11 @@ function elmcip_setup_update_7055() {
   module_disable(array('translation'), FALSE);
   drupal_uninstall_modules(array('translation'), FALSE);
 }
+
+/**
+ * Uninstall comment module.
+ */
+function elmcip_setup_update_7056() {
+  module_disable(array('comment'), FALSE);
+  drupal_uninstall_modules(array('comment'), FALSE);
+}

@@ -3,7 +3,6 @@ description = Knowledge base data views configurations.
 core = 7.x
 package = ELMCIP
 dependencies[] = calendar
-dependencies[] = comment
 dependencies[] = ds
 dependencies[] = eva
 dependencies[] = location

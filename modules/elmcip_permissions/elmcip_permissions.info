@@ -5,7 +5,6 @@ package = ELMCIP
 dependencies[] = better_formats
 dependencies[] = book
 dependencies[] = bulk_export
-dependencies[] = comment
 dependencies[] = contact
 dependencies[] = contextual
 dependencies[] = ctools_access_ruleset
