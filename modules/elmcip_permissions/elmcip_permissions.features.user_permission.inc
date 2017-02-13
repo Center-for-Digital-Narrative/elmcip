@@ -28,15 +28,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: 'access comments'.
-  $permissions['access comments'] = array(
-    'name' => 'access comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'comment',
-  );
-
   // Exported permission: 'access content'.
   $permissions['access content'] = array(
     'name' => 'access content',
@@ -257,18 +248,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'book',
-  );
-
-  // Exported permission: 'administer comments'.
-  $permissions['administer comments'] = array(
-    'name' => 'administer comments',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'comment',
   );
 
   // Exported permission: 'administer contact forms'.
@@ -1877,15 +1856,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own comments'.
-  $permissions['edit own comments'] = array(
-    'name' => 'edit own comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'comment',
-  );
-
   // Exported permission: 'edit own critical_writing content'.
   $permissions['edit own critical_writing content'] = array(
     'name' => 'edit own critical_writing content',
@@ -2303,15 +2273,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'googleanalytics',
   );
 
-  // Exported permission: 'post comments'.
-  $permissions['post comments'] = array(
-    'name' => 'post comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'comment',
-  );
-
   // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -2329,15 +2290,6 @@ function elmcip_permissions_user_default_permissions() {
     'name' => 'select account cancellation method',
     'roles' => array(),
     'module' => 'user',
-  );
-
-  // Exported permission: 'show format selection for comment'.
-  $permissions['show format selection for comment'] = array(
-    'name' => 'show format selection for comment',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
   );
 
   // Exported permission: 'show format selection for file'.
@@ -2404,15 +2356,6 @@ function elmcip_permissions_user_default_permissions() {
       'supereditor' => 'supereditor',
     ),
     'module' => 'better_formats',
-  );
-
-  // Exported permission: 'skip comment approval'.
-  $permissions['skip comment approval'] = array(
-    'name' => 'skip comment approval',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'comment',
   );
 
   // Exported permission: 'submit latitude/longitude'.
