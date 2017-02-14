@@ -908,15 +908,12 @@ function elmcip_setup_update_7053() {
 }
 
 /**
- * Uninstall color module.
+ * Do nothing
  */
-function elmcip_setup_update_7054() {
-  module_disable(array('color'), FALSE);
-  drupal_uninstall_modules(array('color'), FALSE);
-}
+function elmcip_setup_update_7054() {}
 
 /**
- * Uninstall core content translation.
+ * Uninstall core content translation module.
  */
 function elmcip_setup_update_7055() {
   module_disable(array('translation'), FALSE);
@@ -929,4 +926,12 @@ function elmcip_setup_update_7055() {
 function elmcip_setup_update_7056() {
   module_disable(array('comment'), FALSE);
   drupal_uninstall_modules(array('comment'), FALSE);
+}
+
+/**
+ * Uninstall color and styllizer module.
+ */
+function elmcip_setup_update_7057() {
+  module_disable(array('stylizer', 'color', 'aggregator'), TRUE);
+  drupal_uninstall_modules(array('stylizer', 'color', 'aggregator'), TRUE);
 }

@@ -477,13 +477,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer stylizer'.
-  $permissions['administer stylizer'] = array(
-    'name' => 'administer stylizer',
-    'roles' => array(),
-    'module' => 'stylizer',
-  );
-
   // Exported permission: 'administer taxonomy'.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
