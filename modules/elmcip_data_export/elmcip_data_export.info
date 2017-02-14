@@ -6,7 +6,6 @@ dependencies[] = calendar
 dependencies[] = ds
 dependencies[] = eva
 dependencies[] = location
-dependencies[] = references
 dependencies[] = taxonomy
 dependencies[] = views
 dependencies[] = views_content

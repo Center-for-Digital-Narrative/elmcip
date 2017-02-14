@@ -929,9 +929,17 @@ function elmcip_setup_update_7056() {
 }
 
 /**
- * Uninstall color and styllizer module.
+ * Uninstall color and stylizer module.
  */
 function elmcip_setup_update_7057() {
   module_disable(array('stylizer', 'color', 'aggregator'), TRUE);
   drupal_uninstall_modules(array('stylizer', 'color', 'aggregator'), TRUE);
+}
+
+/**
+ * Uninstall node and user ref. module.
+ */
+function elmcip_setup_update_7058() {
+  module_disable(array('node_reference', 'user_reference', 'reference'), TRUE);
+  drupal_uninstall_modules(array('node_reference', 'user_reference', 'reference'), TRUE);
 }
