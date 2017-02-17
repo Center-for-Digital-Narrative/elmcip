@@ -49,7 +49,6 @@ features[views_view][] = critical_writing_on_referenced_publisher
 features[views_view][] = critical_writing_page
 features[views_view][] = critical_writing_tr
 features[views_view][] = curator_of
-features[views_view][] = current_user_s_notebooks
 features[views_view][] = cw_listed_in_research_collection
 features[views_view][] = cw_ref_work
 features[views_view][] = cw_reference_critical_writing
