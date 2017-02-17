@@ -13,902 +13,6 @@ function elmcip_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_book';
-  $strongarm->value = 0;
-  $export['comment_anonymous_book'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_class_group';
-  $strongarm->value = 0;
-  $export['comment_anonymous_class_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_critical_writing';
-  $strongarm->value = 0;
-  $export['comment_anonymous_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_databases_and_archives';
-  $strongarm->value = 0;
-  $export['comment_anonymous_databases_and_archives'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_event';
-  $strongarm->value = 0;
-  $export['comment_anonymous_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_notebook';
-  $strongarm->value = 0;
-  $export['comment_anonymous_notebook'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_notebook_entry';
-  $strongarm->value = 0;
-  $export['comment_anonymous_notebook_entry'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_organization';
-  $strongarm->value = 0;
-  $export['comment_anonymous_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_page';
-  $strongarm->value = 0;
-  $export['comment_anonymous_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_person';
-  $strongarm->value = 0;
-  $export['comment_anonymous_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_platform_software';
-  $strongarm->value = 0;
-  $export['comment_anonymous_platform_software'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_publisher';
-  $strongarm->value = 0;
-  $export['comment_anonymous_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_research_collection';
-  $strongarm->value = 0;
-  $export['comment_anonymous_research_collection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_story';
-  $strongarm->value = 0;
-  $export['comment_anonymous_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_teaching_resource';
-  $strongarm->value = 0;
-  $export['comment_anonymous_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_work';
-  $strongarm->value = 0;
-  $export['comment_anonymous_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_book';
-  $strongarm->value = '2';
-  $export['comment_book'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_class_group';
-  $strongarm->value = '1';
-  $export['comment_class_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_controls_critical_writing';
-  $strongarm->value = '3';
-  $export['comment_controls_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_controls_event';
-  $strongarm->value = '3';
-  $export['comment_controls_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_controls_organization';
-  $strongarm->value = '3';
-  $export['comment_controls_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_controls_person';
-  $strongarm->value = '3';
-  $export['comment_controls_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_controls_publisher';
-  $strongarm->value = '3';
-  $export['comment_controls_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_controls_story';
-  $strongarm->value = '3';
-  $export['comment_controls_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_controls_teaching_resource';
-  $strongarm->value = '3';
-  $export['comment_controls_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_controls_work';
-  $strongarm->value = '3';
-  $export['comment_controls_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_critical_writing';
-  $strongarm->value = '1';
-  $export['comment_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_databases_and_archives';
-  $strongarm->value = '1';
-  $export['comment_databases_and_archives'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_book';
-  $strongarm->value = 1;
-  $export['comment_default_mode_book'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_class_group';
-  $strongarm->value = 1;
-  $export['comment_default_mode_class_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_critical_writing';
-  $strongarm->value = 1;
-  $export['comment_default_mode_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_databases_and_archives';
-  $strongarm->value = 1;
-  $export['comment_default_mode_databases_and_archives'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_event';
-  $strongarm->value = 1;
-  $export['comment_default_mode_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_notebook';
-  $strongarm->value = 1;
-  $export['comment_default_mode_notebook'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_notebook_entry';
-  $strongarm->value = 1;
-  $export['comment_default_mode_notebook_entry'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_organization';
-  $strongarm->value = 1;
-  $export['comment_default_mode_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_page';
-  $strongarm->value = 1;
-  $export['comment_default_mode_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_person';
-  $strongarm->value = 1;
-  $export['comment_default_mode_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_platform_software';
-  $strongarm->value = 1;
-  $export['comment_default_mode_platform_software'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_publisher';
-  $strongarm->value = 1;
-  $export['comment_default_mode_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_research_collection';
-  $strongarm->value = 1;
-  $export['comment_default_mode_research_collection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_story';
-  $strongarm->value = 1;
-  $export['comment_default_mode_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_teaching_resource';
-  $strongarm->value = 1;
-  $export['comment_default_mode_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_work';
-  $strongarm->value = 1;
-  $export['comment_default_mode_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_order_critical_writing';
-  $strongarm->value = '1';
-  $export['comment_default_order_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_order_event';
-  $strongarm->value = '1';
-  $export['comment_default_order_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_order_organization';
-  $strongarm->value = '1';
-  $export['comment_default_order_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_order_person';
-  $strongarm->value = '1';
-  $export['comment_default_order_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_order_publisher';
-  $strongarm->value = '1';
-  $export['comment_default_order_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_order_story';
-  $strongarm->value = '1';
-  $export['comment_default_order_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_order_teaching_resource';
-  $strongarm->value = '1';
-  $export['comment_default_order_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_order_work';
-  $strongarm->value = '1';
-  $export['comment_default_order_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_book';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_book'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_class_group';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_class_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_critical_writing';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_databases_and_archives';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_databases_and_archives'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_event';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_notebook';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_notebook'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_notebook_entry';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_notebook_entry'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_organization';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_page';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_person';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_platform_software';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_platform_software'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_publisher';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_research_collection';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_research_collection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_story';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_teaching_resource';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_work';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_event';
-  $strongarm->value = '2';
-  $export['comment_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_book';
-  $strongarm->value = 1;
-  $export['comment_form_location_book'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_class_group';
-  $strongarm->value = 1;
-  $export['comment_form_location_class_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_critical_writing';
-  $strongarm->value = 0;
-  $export['comment_form_location_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_databases_and_archives';
-  $strongarm->value = 1;
-  $export['comment_form_location_databases_and_archives'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_event';
-  $strongarm->value = 0;
-  $export['comment_form_location_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_notebook';
-  $strongarm->value = 1;
-  $export['comment_form_location_notebook'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_notebook_entry';
-  $strongarm->value = 1;
-  $export['comment_form_location_notebook_entry'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_organization';
-  $strongarm->value = 0;
-  $export['comment_form_location_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_page';
-  $strongarm->value = 1;
-  $export['comment_form_location_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_person';
-  $strongarm->value = 0;
-  $export['comment_form_location_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_platform_software';
-  $strongarm->value = 1;
-  $export['comment_form_location_platform_software'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_publisher';
-  $strongarm->value = 0;
-  $export['comment_form_location_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_research_collection';
-  $strongarm->value = 1;
-  $export['comment_form_location_research_collection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_story';
-  $strongarm->value = 0;
-  $export['comment_form_location_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_teaching_resource';
-  $strongarm->value = 0;
-  $export['comment_form_location_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_work';
-  $strongarm->value = 0;
-  $export['comment_form_location_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_notebook';
-  $strongarm->value = '1';
-  $export['comment_notebook'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_notebook_entry';
-  $strongarm->value = '1';
-  $export['comment_notebook_entry'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_organization';
-  $strongarm->value = '1';
-  $export['comment_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_page';
-  $strongarm->value = '1';
-  $export['comment_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_person';
-  $strongarm->value = '1';
-  $export['comment_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_platform_software';
-  $strongarm->value = '2';
-  $export['comment_platform_software'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_book';
-  $strongarm->value = '1';
-  $export['comment_preview_book'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_class_group';
-  $strongarm->value = '1';
-  $export['comment_preview_class_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_critical_writing';
-  $strongarm->value = '2';
-  $export['comment_preview_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_databases_and_archives';
-  $strongarm->value = '1';
-  $export['comment_preview_databases_and_archives'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_event';
-  $strongarm->value = '2';
-  $export['comment_preview_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_notebook';
-  $strongarm->value = '1';
-  $export['comment_preview_notebook'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_notebook_entry';
-  $strongarm->value = '1';
-  $export['comment_preview_notebook_entry'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_organization';
-  $strongarm->value = '2';
-  $export['comment_preview_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_page';
-  $strongarm->value = '2';
-  $export['comment_preview_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_person';
-  $strongarm->value = '2';
-  $export['comment_preview_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_platform_software';
-  $strongarm->value = '1';
-  $export['comment_preview_platform_software'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_publisher';
-  $strongarm->value = '2';
-  $export['comment_preview_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_research_collection';
-  $strongarm->value = '1';
-  $export['comment_preview_research_collection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_story';
-  $strongarm->value = '2';
-  $export['comment_preview_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_teaching_resource';
-  $strongarm->value = '2';
-  $export['comment_preview_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_work';
-  $strongarm->value = '2';
-  $export['comment_preview_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_publisher';
-  $strongarm->value = '1';
-  $export['comment_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_research_collection';
-  $strongarm->value = '2';
-  $export['comment_research_collection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_story';
-  $strongarm->value = '1';
-  $export['comment_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_book';
-  $strongarm->value = 1;
-  $export['comment_subject_field_book'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_class_group';
-  $strongarm->value = 1;
-  $export['comment_subject_field_class_group'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_critical_writing';
-  $strongarm->value = 1;
-  $export['comment_subject_field_critical_writing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_databases_and_archives';
-  $strongarm->value = 1;
-  $export['comment_subject_field_databases_and_archives'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_event';
-  $strongarm->value = 1;
-  $export['comment_subject_field_event'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_notebook';
-  $strongarm->value = 1;
-  $export['comment_subject_field_notebook'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_notebook_entry';
-  $strongarm->value = 1;
-  $export['comment_subject_field_notebook_entry'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_organization';
-  $strongarm->value = 1;
-  $export['comment_subject_field_organization'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_page';
-  $strongarm->value = 1;
-  $export['comment_subject_field_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_person';
-  $strongarm->value = 1;
-  $export['comment_subject_field_person'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_platform_software';
-  $strongarm->value = 1;
-  $export['comment_subject_field_platform_software'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_publisher';
-  $strongarm->value = 1;
-  $export['comment_subject_field_publisher'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_research_collection';
-  $strongarm->value = 1;
-  $export['comment_subject_field_research_collection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_story';
-  $strongarm->value = 1;
-  $export['comment_subject_field_story'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_teaching_resource';
-  $strongarm->value = 1;
-  $export['comment_subject_field_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_work';
-  $strongarm->value = 1;
-  $export['comment_subject_field_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_teaching_resource';
-  $strongarm->value = '1';
-  $export['comment_teaching_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_work';
-  $strongarm->value = '1';
-  $export['comment_work'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__book';
   $strongarm->value = array(
     'view_modes' => array(
@@ -937,6 +41,15 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'teaser_abbreviated' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -1002,6 +115,9 @@ function elmcip_content_types_strongarm() {
         'path' => array(
           'weight' => '30',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -1032,9 +148,6 @@ function elmcip_content_types_strongarm() {
         ),
         'options' => array(
           'weight' => '27',
-        ),
-        'comment_settings' => array(
-          'weight' => '31',
         ),
         'menu' => array(
           'weight' => '28',
@@ -1085,7 +198,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '54',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '10',
@@ -1107,7 +220,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '56',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '9',
@@ -1129,7 +242,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '55',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '11',
@@ -1151,7 +264,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '57',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '13',
@@ -1173,7 +286,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '53',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '12',
@@ -1195,7 +308,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '52',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '10',
@@ -1221,7 +334,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '43',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'search_result' => array(
             'weight' => '44',
@@ -1239,7 +352,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '42',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '10',
@@ -1257,7 +370,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '41',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'default' => array(
             'weight' => '5',
@@ -1279,7 +392,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '44',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'default' => array(
             'weight' => '3',
@@ -1305,7 +418,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '24',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '10',
@@ -1327,7 +440,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '23',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '10',
@@ -1349,7 +462,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '25',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '10',
@@ -1371,7 +484,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '27',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'token' => array(
             'weight' => '10',
@@ -1393,7 +506,7 @@ function elmcip_content_types_strongarm() {
           ),
           'teaser' => array(
             'weight' => '26',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'search_result' => array(
             'weight' => '7',
@@ -1589,9 +702,6 @@ function elmcip_content_types_strongarm() {
         ),
         'options' => array(
           'weight' => '10',
-        ),
-        'comment_settings' => array(
-          'weight' => '11',
         ),
         'menu' => array(
           'weight' => '7',
@@ -1810,6 +920,9 @@ function elmcip_content_types_strongarm() {
         'path' => array(
           'weight' => '30',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(
         'notes_in_this_notebook_entity_view_1' => array(
@@ -1820,6 +933,10 @@ function elmcip_content_types_strongarm() {
           'search_result' => array(
             'weight' => '0',
             'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => TRUE,
           ),
         ),
       ),
@@ -1878,6 +995,9 @@ function elmcip_content_types_strongarm() {
         'path' => array(
           'weight' => '7',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -1906,9 +1026,6 @@ function elmcip_content_types_strongarm() {
         'options' => array(
           'weight' => '4',
         ),
-        'comment_settings' => array(
-          'weight' => '5',
-        ),
         'menu' => array(
           'weight' => '1',
         ),
@@ -1920,6 +1037,9 @@ function elmcip_content_types_strongarm() {
         ),
         'Event_organizer_node_content_1' => array(
           'weight' => '0',
+        ),
+        'locations' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(
@@ -2036,6 +1156,14 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
@@ -2093,6 +1221,9 @@ function elmcip_content_types_strongarm() {
         'path' => array(
           'weight' => '30',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -2121,6 +1252,15 @@ function elmcip_content_types_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'teaser_abbreviated' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
   );
   $export['field_bundle_settings_node__page'] = $strongarm;
@@ -2146,9 +1286,6 @@ function elmcip_content_types_strongarm() {
         ),
         'options' => array(
           'weight' => '13',
-        ),
-        'comment_settings' => array(
-          'weight' => '15',
         ),
         'menu' => array(
           'weight' => '10',
@@ -2573,9 +1710,6 @@ function elmcip_content_types_strongarm() {
         'options' => array(
           'weight' => '4',
         ),
-        'comment_settings' => array(
-          'weight' => '5',
-        ),
         'menu' => array(
           'weight' => '1',
         ),
@@ -2590,6 +1724,9 @@ function elmcip_content_types_strongarm() {
         ),
         'Critical_writing_publisher_node_content_1' => array(
           'weight' => '0',
+        ),
+        'locations' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(
@@ -2688,6 +1825,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '21',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'critical_writing_about_publisher_entity_view_1' => array(
           'full' => array(
@@ -2709,11 +1850,23 @@ function elmcip_content_types_strongarm() {
             'weight' => '19',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'organization_platform_entity_view_1' => array(
           'full' => array(
             'weight' => '10',
             'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -2987,9 +2140,6 @@ function elmcip_content_types_strongarm() {
         'options' => array(
           'weight' => '4',
         ),
-        'comment_settings' => array(
-          'weight' => '7',
-        ),
         'menu' => array(
           'weight' => '1',
         ),
@@ -3001,6 +2151,9 @@ function elmcip_content_types_strongarm() {
         ),
         'creativecommons' => array(
           'weight' => '8',
+        ),
+        'locations' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),
@@ -3042,6 +2195,9 @@ function elmcip_content_types_strongarm() {
       'teaser_abbreviated' => array(
         'custom_settings' => TRUE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
   );
   $export['field_bundle_settings_node__story'] = $strongarm;
@@ -3067,9 +2223,6 @@ function elmcip_content_types_strongarm() {
         ),
         'options' => array(
           'weight' => '21',
-        ),
-        'comment_settings' => array(
-          'weight' => '23',
         ),
         'menu' => array(
           'weight' => '18',
@@ -3192,6 +2345,14 @@ function elmcip_content_types_strongarm() {
             'weight' => '17',
             'visible' => TRUE,
           ),
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
@@ -3254,9 +2415,6 @@ function elmcip_content_types_strongarm() {
         ),
         'options' => array(
           'weight' => '8',
-        ),
-        'comment_settings' => array(
-          'weight' => '12',
         ),
         'menu' => array(
           'weight' => '9',

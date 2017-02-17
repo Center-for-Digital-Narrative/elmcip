@@ -30,7 +30,6 @@ features[ctools][] = file_entity:file_default_displays:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_base][] = body
-features[field_base][] = comment_body
 features[field_base][] = field_abstract
 features[field_base][] = field_abstract_lang
 features[field_base][] = field_abstract_lang_tax

@@ -449,9 +449,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 29,
       ),
       'test' => array(
@@ -583,9 +582,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 32,
       ),
       'token' => array(
@@ -646,9 +644,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'elmcip_creative_work',
         'settings' => array(),
-        'type' => 'elmcip_creative_work_oai_pmh',
+        'type' => 'hidden',
         'weight' => 39,
       ),
       'token' => array(
@@ -769,9 +766,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
+        'type' => 'hidden',
         'weight' => 24,
       ),
       'token' => array(
@@ -1009,11 +1005,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 30,
       ),
       'token' => array(
@@ -1137,9 +1130,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 27,
       ),
       'token' => array(
@@ -1292,11 +1284,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 15,
       ),
       'test' => array(
@@ -1369,9 +1358,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 35,
       ),
       'token' => array(
@@ -1494,9 +1482,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 38,
       ),
       'token' => array(
@@ -1560,9 +1547,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
+        'type' => 'hidden',
         'weight' => 16,
       ),
       'token' => array(
@@ -1702,9 +1688,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'file',
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'hidden',
         'weight' => 42,
       ),
       'test' => array(
@@ -1864,11 +1849,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 28,
       ),
       'test' => array(
@@ -2006,9 +1988,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 26,
       ),
       'test' => array(
@@ -2141,9 +2122,8 @@ function elmcip_field_instances_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 36,
       ),
       'test' => array(
@@ -2279,9 +2259,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 34,
       ),
       'test' => array(
@@ -2351,9 +2330,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'elmcip_creative_work',
         'settings' => array(),
-        'type' => 'elmcip_creative_work_oai_pmh',
+        'type' => 'hidden',
         'weight' => 38,
       ),
       'token' => array(
@@ -2468,9 +2446,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'list',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 25,
       ),
       'test' => array(
@@ -2537,9 +2514,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'file',
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'hidden',
         'weight' => 47,
       ),
       'token' => array(
@@ -2726,18 +2702,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'colorbox',
-        'settings' => array(
-          'colorbox_caption' => 'auto',
-          'colorbox_caption_custom' => '',
-          'colorbox_gallery' => 'post',
-          'colorbox_gallery_custom' => '',
-          'colorbox_image_style' => '',
-          'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => '',
-          'colorbox_node_style_first' => '',
-        ),
-        'type' => 'colorbox',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 41,
       ),
       'test' => array(
@@ -2918,11 +2884,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 28,
       ),
       'test' => array(
@@ -3082,11 +3045,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 16,
       ),
       'test' => array(
@@ -3237,11 +3197,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 35,
       ),
       'test' => array(
@@ -3319,11 +3276,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 9,
       ),
       'token' => array(
@@ -3387,11 +3341,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 37,
       ),
       'token' => array(
@@ -3542,11 +3493,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 40,
       ),
       'token' => array(
@@ -3673,9 +3621,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 29,
       ),
       'test' => array(
@@ -3748,11 +3695,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 10,
       ),
       'token' => array(
@@ -3937,9 +3881,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 32,
       ),
       'token' => array(
@@ -4006,9 +3949,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'elmcip_creative_work',
         'settings' => array(),
-        'type' => 'elmcip_creative_work_oai_pmh',
+        'type' => 'hidden',
         'weight' => 36,
       ),
       'token' => array(
@@ -4149,11 +4091,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 39,
       ),
       'token' => array(
@@ -4225,11 +4164,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 34,
       ),
       'token' => array(
@@ -4368,11 +4304,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 37,
       ),
       'token' => array(
@@ -4444,11 +4377,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 31,
       ),
       'token' => array(
@@ -4518,11 +4448,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'token' => array(
@@ -4639,9 +4566,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
+        'type' => 'hidden',
         'weight' => 40,
       ),
       'test' => array(
@@ -4728,9 +4654,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
+        'type' => 'hidden',
         'weight' => 33,
       ),
       'token' => array(
@@ -4808,9 +4733,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'elmcip_creative_work',
         'settings' => array(),
-        'type' => 'elmcip_creative_work_oai_pmh',
+        'type' => 'hidden',
         'weight' => 50,
       ),
       'token' => array(
@@ -11204,11 +11128,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => -1,
       ),
       'test' => array(
@@ -11572,11 +11493,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -13247,9 +13165,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'teaser' => array(
         'label' => 'above',
         'module' => 'file',
-        'settings' => array(
-          'file_view_mode' => 'default',
-        ),
+        'settings' => array(),
         'type' => 'file_default',
         'weight' => 2,
       ),

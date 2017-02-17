@@ -122,11 +122,6 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_critical_writing_year' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
   );
   $export['node|critical_writing|full'] = $ds_fieldsetting;
 
@@ -237,11 +232,6 @@ function elmcip_layout_ds_field_settings_info() {
           'fis-at' => '',
           'fis-def-at' => FALSE,
         ),
-      ),
-    ),
-    'field_database_platform_ref' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
       ),
     ),
     'field_db_cross_event' => array(
@@ -644,11 +634,6 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_platform_year' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
   );
   $export['node|platform_software|full'] = $ds_fieldsetting;
 
@@ -795,11 +780,6 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '16',
       'label' => 'inline',
       'format' => 'ds_post_date_short',
-    ),
-    'field_collection_platform_ref' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
     ),
   );
   $export['node|research_collection|full'] = $ds_fieldsetting;
@@ -1052,11 +1032,6 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_media_asset' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
     'field_worldcat_link' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -1247,8 +1222,6 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 1,
-    'hide_sidebars' => 0,
     'regions' => array(
       'left' => array(
         0 => 'title',
@@ -1256,9 +1229,9 @@ function elmcip_layout_ds_layout_settings_info() {
         2 => 'field_tr_link',
       ),
       'right' => array(
-        0 => 'field_teacher_link',
-        1 => 'field_students',
-        2 => 'post_date',
+        3 => 'field_teacher_link',
+        4 => 'field_students',
+        5 => 'post_date',
       ),
     ),
     'fields' => array(
@@ -1270,6 +1243,16 @@ function elmcip_layout_ds_layout_settings_info() {
       'post_date' => 'right',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|class_group|default'] = $ds_layout;
 
@@ -1307,6 +1290,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|class_group|full'] = $ds_layout;
 
@@ -1457,15 +1441,13 @@ function elmcip_layout_ds_layout_settings_info() {
         0 => 'content_type',
         1 => 'title',
         2 => 'field_author_name',
-        3 => 'field_number',
-        4 => 'field_pubtype_tax',
+        3 => 'field_pubtype_tax',
       ),
     ),
     'fields' => array(
       'content_type' => 'ds_content',
       'title' => 'ds_content',
       'field_author_name' => 'ds_content',
-      'field_number' => 'ds_content',
       'field_pubtype_tax' => 'ds_content',
     ),
     'classes' => array(),
@@ -1477,6 +1459,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|critical_writing|teaser'] = $ds_layout;
 
@@ -1564,12 +1547,11 @@ function elmcip_layout_ds_layout_settings_info() {
         17 => 'critical_writing_db_archive_entity_view_1',
         18 => 'teaching_resource_db_archive_entity_view_1',
         19 => 'research_collection_db_arcive_entity_view_1',
-        20 => 'platform_db_archive_entity_view_1',
-        21 => 'field_image',
-        22 => 'field_multi_images',
-        23 => 'field_files',
-        24 => 'purl',
-        25 => 'author',
+        20 => 'field_image',
+        21 => 'field_multi_images',
+        22 => 'field_files',
+        23 => 'purl',
+        24 => 'author',
       ),
     ),
     'fields' => array(
@@ -1593,7 +1575,6 @@ function elmcip_layout_ds_layout_settings_info() {
       'critical_writing_db_archive_entity_view_1' => 'right',
       'teaching_resource_db_archive_entity_view_1' => 'right',
       'research_collection_db_arcive_entity_view_1' => 'right',
-      'platform_db_archive_entity_view_1' => 'right',
       'field_image' => 'right',
       'field_multi_images' => 'right',
       'field_files' => 'right',
@@ -1872,6 +1853,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|notebook_entry|default'] = $ds_layout;
 
@@ -1919,6 +1901,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|notebook_entry|full'] = $ds_layout;
 
@@ -1944,14 +1927,13 @@ function elmcip_layout_ds_layout_settings_info() {
         7 => 'Event_organizer_entity_view_1',
         8 => 'Critical_writing_organization_entity_view_1',
         9 => 'work_organization_entity_view_1',
-        10 => 'tr_org_entity_view_1',
-        11 => 'organization_platform_entity_view_1',
-        12 => 'people_afil_on_organization_entity_view_1',
-        13 => 'research_collection_organization_entity_view_1',
-        14 => 'field_multi_images',
-        15 => 'field_files',
-        16 => 'purl',
-        17 => 'author',
+        10 => 'organization_platform_entity_view_1',
+        11 => 'people_afil_on_organization_entity_view_1',
+        12 => 'research_collection_organization_entity_view_1',
+        13 => 'field_multi_images',
+        14 => 'field_files',
+        15 => 'purl',
+        16 => 'author',
       ),
     ),
     'fields' => array(
@@ -1965,7 +1947,6 @@ function elmcip_layout_ds_layout_settings_info() {
       'Event_organizer_entity_view_1' => 'right',
       'Critical_writing_organization_entity_view_1' => 'right',
       'work_organization_entity_view_1' => 'right',
-      'tr_org_entity_view_1' => 'right',
       'organization_platform_entity_view_1' => 'right',
       'people_afil_on_organization_entity_view_1' => 'right',
       'research_collection_organization_entity_view_1' => 'right',
@@ -2015,6 +1996,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|organization|teaser'] = $ds_layout;
 
@@ -2196,6 +2178,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|platform_software|full'] = $ds_layout;
 
@@ -2213,10 +2196,10 @@ function elmcip_layout_ds_layout_settings_info() {
         1 => 'field_eissn',
         2 => 'title',
         3 => 'field_url',
-        4 => 'field_record_status_tax',
-        5 => 'field_location',
-        6 => 'field_editorial_notes',
-        7 => 'field_editor_name',
+        4 => 'field_location',
+        5 => 'field_record_status_tax',
+        6 => 'field_editor_name',
+        7 => 'field_editorial_notes',
         9 => 'field_email',
         11 => 'field_issn_text',
       ),
@@ -2231,10 +2214,10 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_eissn' => 'left',
       'title' => 'left',
       'field_url' => 'left',
-      'field_record_status_tax' => 'left',
       'field_location' => 'left',
-      'field_editorial_notes' => 'left',
+      'field_record_status_tax' => 'left',
       'field_editor_name' => 'left',
+      'field_editorial_notes' => 'left',
       'field_textfield' => 'right',
       'field_email' => 'left',
       'critical_writing_on_publisher_entity_view_1' => 'right',
@@ -2331,8 +2314,6 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'teaser';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
       'ds_content' => array(
         0 => 'content_type',
@@ -2344,6 +2325,15 @@ function elmcip_layout_ds_layout_settings_info() {
       'title' => 'ds_content',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|publisher|teaser'] = $ds_layout;
 
@@ -2419,8 +2409,6 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'teaser_abbreviated';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
       'ds_content' => array(
         0 => 'title',
@@ -2430,6 +2418,15 @@ function elmcip_layout_ds_layout_settings_info() {
       'title' => 'ds_content',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|story|teaser_abbreviated'] = $ds_layout;
 
@@ -2608,6 +2605,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|teaching_resource|teaser'] = $ds_layout;
 
@@ -2670,8 +2668,8 @@ function elmcip_layout_ds_layout_settings_info() {
         21 => 'field_abstract_lang',
         22 => 'field_electronic_literature_dire',
         23 => 'field_i_e_poetry_entry',
-        24 => 'field_nt2_entry',
-        25 => 'field_authoring_software_entry',
+        24 => 'field_authoring_software_entry',
+        25 => 'field_nt2_entry',
         26 => 'field_po_ex_entry',
         27 => 'field_other_lang_ver_link',
         28 => 'field_part_of_another_work',
@@ -2681,8 +2679,8 @@ function elmcip_layout_ds_layout_settings_info() {
         32 => 'field_tech_notes',
         33 => 'Critical_writing_work_entity_view_1',
         34 => 'Tr_work_entity_view_1',
-        35 => 'clone_of_research_collection_creative_work_entity_view_1',
-        36 => 'field_multi_image',
+        35 => 'field_multi_image',
+        36 => 'clone_of_research_collection_creative_work_entity_view_1',
         37 => 'field_media_asset',
         38 => 'field_files',
         39 => 'purl',
@@ -2714,8 +2712,8 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_abstract_lang' => 'right',
       'field_electronic_literature_dire' => 'right',
       'field_i_e_poetry_entry' => 'right',
-      'field_nt2_entry' => 'right',
       'field_authoring_software_entry' => 'right',
+      'field_nt2_entry' => 'right',
       'field_po_ex_entry' => 'right',
       'field_other_lang_ver_link' => 'right',
       'field_part_of_another_work' => 'right',
@@ -2725,8 +2723,8 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_tech_notes' => 'right',
       'Critical_writing_work_entity_view_1' => 'right',
       'Tr_work_entity_view_1' => 'right',
-      'clone_of_research_collection_creative_work_entity_view_1' => 'right',
       'field_multi_image' => 'right',
+      'clone_of_research_collection_creative_work_entity_view_1' => 'right',
       'field_media_asset' => 'right',
       'field_files' => 'right',
       'purl' => 'right',
@@ -2778,6 +2776,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|work|teaser'] = $ds_layout;
 
