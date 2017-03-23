@@ -22,7 +22,7 @@ function development_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'devel_error_handlers';
   $strongarm->value = array(
-    4 => '4',
+    1 => '1',
   );
   $export['devel_error_handlers'] = $strongarm;
 
@@ -121,7 +121,7 @@ function development_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'error_level';
-  $strongarm->value = '2';
+  $strongarm->value = 2;
   $export['error_level'] = $strongarm;
 
   $strongarm = new stdClass();
