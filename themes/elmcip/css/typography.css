@@ -36,6 +36,11 @@ div#site-name {
   font-weight: normal;
 }
 
+.front .views-field-field-author-name a,
+.facetapi-facetapi-links a {
+  color: #333333;
+}
+
 p:first-child {
   margin-top: 0;
 }
@@ -44,6 +49,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
+.front .views-field-field-author-name,
 .group-left .field-name-field-record-status-tax {
   font-style: italic;
 }
