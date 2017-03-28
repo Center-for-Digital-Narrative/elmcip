@@ -12952,6 +12952,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => -1,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_files',
     'label' => 'Attachment',
@@ -12966,11 +12967,29 @@ Note: Before adding a new person record, check to see if he or she is already li
     'weight' => -1,
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
-        'progress_indicator' => 'bar',
+        'allowed_schemes' => array(
+          'flickr' => 0,
+          'private' => 0,
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 0,
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => -1,
     ),
     'widget_type' => 'filefield_widget',
@@ -13110,8 +13129,15 @@ Note: Before adding a new person record, check to see if he or she is already li
     'weight' => -4,
     'widget' => array(
       'active' => 0,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'filefield_source_attach_absolute' => 0,
         'filefield_source_attach_mode' => 'move',
         'filefield_source_attach_path' => 'file_attach',
@@ -13126,7 +13152,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'progress_indicator' => 'bar',
         'use_default_image' => 0,
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => -4,
     ),
     'widget_type' => 'imagefield_widget',
@@ -13189,8 +13215,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp mp3 mov m4v mp4 mpeg avi ogg wmv ico',
+      'file_directory' => 'media/news/media',
+      'file_extensions' => 'mp3 mov m4v mp4 mpeg ogg',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
@@ -13200,15 +13226,15 @@ Note: Before adding a new person record, check to see if he or she is already li
       'settings' => array(
         'allowed_schemes' => array(
           'flickr' => 'flickr',
-          'private' => 'private',
+          'private' => 0,
           'public' => 'public',
           'vimeo' => 'vimeo',
           'youtube' => 'youtube',
         ),
         'allowed_types' => array(
-          'audio' => 'audio',
+          'audio' => 0,
           'document' => 0,
-          'image' => 'image',
+          'image' => 0,
           'video' => 'video',
         ),
         'browser_plugins' => array(
@@ -13327,8 +13353,15 @@ Note: Before adding a new person record, check to see if he or she is already li
     'weight' => -2,
     'widget' => array(
       'active' => 0,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'filefield_source_attach_absolute' => 0,
         'filefield_source_attach_mode' => 'move',
         'filefield_source_attach_path' => 'file_attach',
@@ -13343,7 +13376,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'progress_indicator' => 'bar',
         'use_default_image' => 0,
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => -2,
     ),
     'widget_type' => 'imagefield_widget',
