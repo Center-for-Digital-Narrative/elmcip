@@ -1002,6 +1002,47 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-story-field_news_tags'.
+  $field_instances['node-story-field_news_tags'] = array(
+    'bundle' => 'story',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_news_tags',
+    'label' => 'Tags',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-teaching_resource-field_platform_software_referenc'.
   $field_instances['node-teaching_resource-field_platform_software_referenc'] = array(
@@ -1389,6 +1430,7 @@ function elmcip_content_types_field_default_field_instances() {
   t('Publisher or organization');
   t('Record Status');
   t('Repository');
+  t('Tags');
   t('Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.');
   t('Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');

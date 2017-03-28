@@ -55,6 +55,29 @@ function elmcip_field_instances_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'news_tags' => array(
+      'name' => 'News tags',
+      'machine_name' => 'news_tags',
+      'description' => 'Tags used in news related articles',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'project_type' => array(
       'name' => 'Project Type',
       'machine_name' => 'project_type',

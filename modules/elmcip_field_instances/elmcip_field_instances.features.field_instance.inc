@@ -12812,7 +12812,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -12869,7 +12869,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -3,
+      'weight' => 3,
     ),
   );
 
@@ -12906,7 +12906,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -12987,7 +12987,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         ),
       ),
       'type' => 'media_generic',
-      'weight' => -1,
+      'weight' => 5,
     ),
     'widget_type' => 'filefield_widget',
   );
@@ -13037,7 +13037,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -13144,7 +13144,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'use_default_image' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => -4,
+      'weight' => 2,
     ),
     'widget_type' => 'imagefield_widget',
   );
@@ -13162,7 +13162,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -13238,7 +13238,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -13267,7 +13267,7 @@ Note: Before adding a new person record, check to see if he or she is already li
           'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
@@ -13370,9 +13370,50 @@ Note: Before adding a new person record, check to see if he or she is already li
         'use_default_image' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => -2,
+      'weight' => 4,
     ),
     'widget_type' => 'imagefield_widget',
+  );
+
+  // Exported field_instance: 'node-story-field_news_tags'.
+  $field_instances['node-story-field_news_tags'] = array(
+    'bundle' => 'story',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_news_tags',
+    'label' => 'Tags',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 1,
+    ),
   );
 
   // Exported field_instance: 'node-teaching_resource-field_abstract_lang'.

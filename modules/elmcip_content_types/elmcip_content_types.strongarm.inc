@@ -2378,7 +2378,7 @@ function elmcip_content_types_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'body' => array(
           'weight' => '-3',
@@ -2405,7 +2405,7 @@ function elmcip_content_types_strongarm() {
           'weight' => '8',
         ),
         'locations' => array(
-          'weight' => '30',
+          'weight' => '8',
         ),
       ),
       'display' => array(),
