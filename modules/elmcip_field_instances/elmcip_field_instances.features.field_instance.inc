@@ -12810,11 +12810,9 @@ Note: Before adding a new person record, check to see if he or she is already li
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_trimmed',
-        'weight' => -3,
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -12834,7 +12832,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'trim_length' => 600,
+          'trim_length' => 1000,
         ),
         'type' => 'text_trimmed',
         'weight' => 1,
@@ -12908,7 +12906,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => -2,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -12926,9 +12924,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'file',
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser_600' => array(
@@ -13033,7 +13030,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => -4,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -13070,18 +13067,12 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'colorbox',
+        'module' => 'image',
         'settings' => array(
-          'colorbox_caption' => 'auto',
-          'colorbox_caption_custom' => '',
-          'colorbox_gallery' => 'post',
-          'colorbox_gallery_custom' => '',
-          'colorbox_image_style' => 'large',
-          'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => 'medium',
-          'colorbox_node_style_first' => '',
+          'image_link' => 'content',
+          'image_style' => '',
         ),
-        'type' => 'colorbox',
+        'type' => 'image',
         'weight' => 0,
       ),
       'teaser_600' => array(
@@ -13165,10 +13156,13 @@ Note: Before adding a new person record, check to see if he or she is already li
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
@@ -13190,9 +13184,8 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'file',
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'teaser_600' => array(
@@ -13267,14 +13260,14 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => -2,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
           'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => -1,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
