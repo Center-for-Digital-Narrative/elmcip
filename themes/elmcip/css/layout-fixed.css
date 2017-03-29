@@ -291,40 +291,28 @@ body {
   border-bottom: 1px solid #bbb;
 }
 
-.group-left .inner > div {
-  margin: 0 0 1.5em 0;
-}
-
-.group-left .inner > div:last-child {
-  margin: 0;
-}
-
 .group-right {
   float: left;
   margin: 1.5em 0 0 10px;
   width: 620px;
 }
 
-.group-right > div {
-  margin: 0 0 1.5em 0;
-}
-
-.group-right > div:first-child {
-  margin-bottom: 0;
-}
-
+.group-right > div,
+.group-left .inner > div,
 .field-type-location .field-item,
 .group-right .field-item {
   margin-bottom: 1.5em;
 }
 
-div.group-meta {
-  margin-top: 3em;
-}
-
+.group-right > div:first-child,
+.group-left .inner > div:last-child,
 .group-meta .field-item,
 .group-right .field-name-field-files .field-item {
   margin-bottom: 0;
+}
+
+div.group-meta {
+  margin-top: 3em;
 }
 
 /**
