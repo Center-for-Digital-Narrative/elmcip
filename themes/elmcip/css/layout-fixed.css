@@ -243,23 +243,6 @@ body {
 }
 
 /**
- * Anthology secton.
- */
-.anthology .panels-flexible-region-first {
-  margin: 0 10px 0 0;
-  width: 620px;
-}
-
-.anthology .panels-flexible-region-last {
-  margin: 0 0 0 10px;
-  width: 300px;
-}
-
-.anthology .panels-flexible-region-last p {
-  margin: 0;
-}
-
-/**
  * Conference secton.
  */
 .conference .panels-flexible-region-first p {
