@@ -41,11 +41,11 @@ div#site-name {
   color: #333333;
 }
 
-p:first-child {
+.group-right p:first-child {
   margin-top: 0;
 }
 
-p:last-child {
+group-right p:last-child {
   margin-bottom: 0;
 }
 

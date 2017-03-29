@@ -300,7 +300,7 @@ body {
 .group-right > div,
 .group-left .inner > div,
 .field-type-location .field-item,
-.group-right .field-item {
+.field-item {
   margin-bottom: 1.5em;
 }
 
@@ -314,6 +314,13 @@ body {
 div.group-meta {
   margin-top: 3em;
 }
+
+
+/**
+ * Generic style for all other nodes the kb.
+ */
+
+
 
 /**
  * Navigation.

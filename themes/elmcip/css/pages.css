@@ -75,6 +75,13 @@ h4.title {
 h1.title {
   margin: 0;
 }
+
+.node-type-page h1.title,
+.node-type-story h1.title {
+  line-height: 1;
+  margin: 0 0 0.5em 0;
+}
+
 /* Important messages (status, warning, and error) for the user. */
 /* See also the declarations in messages.css. */
 div.messages {
@@ -89,6 +96,11 @@ div.messages ul {
 /* Wrapper for the actual page content */
 .region-content {
   padding: 1.5em 0 0 0;
+}
+
+.node-type-page .region-content,
+.node-type-story .region-content {
+  padding: 0;
 }
 
 ul.links /* List of links */ {
