@@ -304,23 +304,16 @@ body {
   margin-bottom: 1.5em;
 }
 
+.field-items .field-item,
 .group-right > div:first-child,
 .group-left .inner > div:last-child,
-.group-meta .field-item,
-.group-right .field-name-field-files .field-item {
+.group-meta .field-item {
   margin-bottom: 0;
 }
 
 div.group-meta {
   margin-top: 3em;
 }
-
-
-/**
- * Generic style for all other nodes the kb.
- */
-
-
 
 /**
  * Navigation.
