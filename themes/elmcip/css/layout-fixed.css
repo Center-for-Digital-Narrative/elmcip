@@ -298,16 +298,12 @@ body {
 }
 
 .group-right > div,
-.group-left .inner > div,
-.field-type-location .field-item,
-.field-item {
+.group-left .inner > div {
   margin-bottom: 1.5em;
 }
 
-.field-items .field-item,
 .group-right > div:first-child,
-.group-left .inner > div:last-child,
-.group-meta .field-item {
+.group-left .inner > div:last-child {
   margin-bottom: 0;
 }
 
@@ -379,12 +375,6 @@ div.group-meta {
 }
 
 /*
- * Page bottom.
- */
-.region-bottom /* See also the #page-wrapper declaration above that this div shares. */ {
-}
-
-/*
  * Prevent overflowing content.
  */
 #header,
@@ -396,8 +386,4 @@ div.group-meta {
 .region-bottom {
   overflow: visible;
   word-wrap: break-word; /* A very nice CSS3 property */
-}
-
-.field-tags-inline {
-  margin: 0 0 20px 0;
 }

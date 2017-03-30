@@ -10,10 +10,42 @@
 
 .field-tags-inline a {
   display: inline-block;
-  margin-right: 1.5em;
   white-space: nowrap;
 }
 
-fieldset .fieldset-description {
+.field-label-inline a,
+.field-tags-inline a {
+  margin-right: 1.5em;
+}
+
+.fieldset .fieldset-description {
   margin-top: 15px;
+}
+
+.field-tags-inline {
+  margin: 0 0 20px 0;
+}
+
+
+.field-item,
+.field-items .field-item,
+.field-type-location .field-item {
+  margin-bottom: 1.5em;
+}
+
+/* Exceptions where margin is not wanted */
+.field-name-field-files .field-item,
+.group-left .field-item,
+.group-meta .field-item {
+  margin-bottom: 0;
+}
+
+/* Files attached to nodes */
+.field-name-field-files .field-item {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 0.5em;
+}
+
+.file-icon {
+  margin-right: 0.5em;
 }
