@@ -13031,12 +13031,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => 'large',
+          'file_view_mode' => 'default',
         ),
-        'type' => 'image',
+        'type' => 'file_rendered',
         'weight' => 1,
       ),
       'full' => array(
@@ -13261,12 +13260,11 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => 'large',
+          'file_view_mode' => 'default',
         ),
-        'type' => 'image',
+        'type' => 'file_rendered',
         'weight' => 3,
       ),
       'full' => array(
