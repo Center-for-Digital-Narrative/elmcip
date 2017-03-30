@@ -5710,7 +5710,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Using the pulldown menu, identify whether the resource is an archive, database, or special collection. <br><br>In the "Title" field, just above, enter the official name of the resource. If the resource is commonly referred to by an acronymn (e.g. <i>ELD</i> for the <i>Electronic Literature Directory</i>), this can be specified in description.',
+    'description' => 'Using the pull down menu, identify whether the resource is an archive, database, or special collection.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -19239,7 +19239,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Use this field to indicate URLs associated with the platform (e.g. download, documentation sites, etc.) Indicate the nature of the link using the title field. Multiple URLs are permitted.');
   t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The field will autocomplete. If the person is not yet in the database first <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Use this field to link to your syllabus or other material you have created as a teaching resource in the Knowledge Base. The field will autocomplete. If the teaching resource is not yet in the Knowledge Base, first <a href="node/add/teaching-resource">add the teaching resource</a>.');
-  t('Using the pulldown menu, identify whether the resource is an archive, database, or special collection. <br><br>In the "Title" field, just above, enter the official name of the resource. If the resource is commonly referred to by an acronymn (e.g. <i>ELD</i> for the <i>Electronic Literature Directory</i>), this can be specified in description.');
+  t('Using the pull down menu, identify whether the resource is an archive, database, or special collection.');
   t('Work noted');
   t('WorldCat Permalink');
   t('Year');
