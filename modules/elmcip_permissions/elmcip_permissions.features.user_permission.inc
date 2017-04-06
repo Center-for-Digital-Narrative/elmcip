@@ -1636,16 +1636,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'delete terms in vocabulary_5'.
-  $permissions['delete terms in vocabulary_5'] = array(
-    'name' => 'delete terms in vocabulary_5',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'download any audio files'.
   $permissions['download any audio files'] = array(
     'name' => 'download any audio files',
@@ -2476,16 +2466,6 @@ function elmcip_permissions_user_default_permissions() {
   // Exported permission: 'edit terms in vocabulary_4'.
   $permissions['edit terms in vocabulary_4'] = array(
     'name' => 'edit terms in vocabulary_4',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in vocabulary_5'.
-  $permissions['edit terms in vocabulary_5'] = array(
-    'name' => 'edit terms in vocabulary_5',
     'roles' => array(
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',

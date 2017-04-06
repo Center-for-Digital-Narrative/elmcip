@@ -239,28 +239,5 @@ function elmcip_field_instances_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'vocabulary_5' => array(
-      'name' => 'FAQ Categories',
-      'machine_name' => 'vocabulary_5',
-      'description' => 'List of categories for FAQ',
-      'hierarchy' => 1,
-      'module' => 'features_faq_categories',
-      'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
-    ),
   );
 }

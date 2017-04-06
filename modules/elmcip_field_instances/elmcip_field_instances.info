@@ -522,5 +522,4 @@ features[variable][] = media_youtube__zend_path
 features[variable][] = pathauto_taxonomy_term_vocabulary_1_pattern
 features[variable][] = pathauto_taxonomy_term_vocabulary_2_pattern
 features[variable][] = pathauto_taxonomy_term_vocabulary_4_pattern
-features[variable][] = pathauto_taxonomy_term_vocabulary_5_pattern
 features_exclude[dependencies][ctools] = ctools
