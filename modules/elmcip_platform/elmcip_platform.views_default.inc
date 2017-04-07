@@ -176,6 +176,12 @@ function elmcip_platform_views_default_views() {
   /* Display: Export preview */
   $handler = $view->new_display('page', 'Export preview', 'page_1');
   $handler->display->display_options['display_description'] = 'Preview of data export';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'See all Platform/Software';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'mini';
   $handler->display->display_options['pager']['options']['items_per_page'] = '50';
@@ -308,8 +314,8 @@ function elmcip_platform_views_default_views() {
     t('Updated'),
     t('Export preview'),
     t('Preview of data export'),
-    t('more'),
     t('Data export'),
+    t('more'),
     t('Content pane'),
     t('Used on KB front page'),
     t('View panes'),
