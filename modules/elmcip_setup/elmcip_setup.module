@@ -126,6 +126,8 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       $form['description']['#format'] = 4;
       $form['#after_build'][] = 'configure_term_form';
       break;
+    case 'work_node_form':
+      $form['title']['#description'] = t('Indicate the title of the work. If it has a subtitle, place the subtitle text after a colon.', array('type' => $form['type']['#value']));
   }
 }
 

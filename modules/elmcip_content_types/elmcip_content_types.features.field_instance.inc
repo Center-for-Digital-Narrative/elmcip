@@ -1055,7 +1055,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'If there is a record for this work in the Narrabase project, enter the URL of the entry.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -1137,7 +1137,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a description of this work in the Po.Ex database, add a cross reference to it here.',
+    'description' => 'If there is a record for this work in the PO.EX database, enter the URL of the entry.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -1303,7 +1303,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.',
+    'description' => 'Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). The platform or software will autocomplete if it is in the database. If the platform or software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -1373,7 +1373,8 @@ function elmcip_content_types_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Add notes about editorial status here.');
   t('Developers');
-  t('If there is a description of this work in the Po.Ex database, add a cross reference to it here.');
+  t('If there is a record for this work in the Narrabase project, enter the URL of the entry.');
+  t('If there is a record for this work in the PO.EX database, enter the URL of the entry.');
   t('If this critical writing has an entry in the Po.Ex database, add a reference here by linking the complete URL of the page.');
   t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
   t('Indicate the year that this platform was first released.');
@@ -1393,7 +1394,7 @@ function elmcip_content_types_field_default_field_instances() {
   t('Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
-  t('Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
+  t('Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). The platform or software will autocomplete if it is in the database. If the platform or software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
   t('Use this field to link to a stable URL documenting the version history of the software or platform, if available. Provide a title and URL.');
   t('Version history (link)');
   t('Version history (text)');

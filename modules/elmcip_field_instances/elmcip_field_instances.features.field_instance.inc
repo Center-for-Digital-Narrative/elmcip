@@ -15449,7 +15449,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<b>If the work is not written in English</b>, write a short description, fewer than 350 words, in the original language. Leave this field empty if the original language of the work is English.',
+    'description' => '<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -15560,6 +15560,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Description (in original language)',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -15581,7 +15615,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language of the additional language description.',
+    'description' => 'Select the human language used in the original language description field.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -15635,7 +15669,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 31,
     ),
   );
 
@@ -15937,7 +15971,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If a person\'s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. If the contributor\'s name does not auto-complete, <a href="/node/add/person" target="_blank">add the contributor</a> first. Use the contributors notes field to describe the different roles individuals played.',
+    'description' => 'If a person\'s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.',
     'display' => array(
       'data_export' => array(
         'label' => 'inline',
@@ -15988,6 +16022,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 24,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_contributor',
     'label' => 'Contributor',
@@ -16013,7 +16048,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please enter information about different author/contributor roles in this field (e.g. Sound designer:, programmer: etc.)',
+    'description' => 'Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -16117,6 +16152,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Contributors note',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -16128,7 +16197,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 33,
+      'weight' => 32,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -16138,7 +16207,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter a URL where the entire work or source files may be downloaded, if applicable. <b>Note: submissions to the ELMCIP anthology should include this information, indicating a URL where the work may be downloaded as a .zip or .tar file.</b>',
+    'description' => 'Enter a URL where the entire work or source files may be downloaded, if applicable.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -16437,7 +16506,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => '',
     'deleted' => 0,
-    'description' => 'Attach relevant files here.',
+    'description' => 'Attach relevant files here, such as collateral materials or source code.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -16535,6 +16604,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 2,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_files',
     'label' => 'Attachment',
@@ -16564,7 +16634,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a description of this work in the I ♥ E-Poetry project, add a cross reference to it here.',
+    'description' => 'If there is a record for this work in the I ♥ E-Poetry project, enter the URL of the entry.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -16647,7 +16717,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the work was published in an anthology, collection, or special issue of a journal link to it here using the autocomplete field. If the field does not complete, <a href="/node/add/critical-writing">add the anthology</a> to the Knowledge Base.',
+    'description' => 'If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing">add the anthology</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -16779,6 +16849,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 1,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_in_anthology',
     'label' => 'Appears in',
@@ -16795,7 +16866,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 39,
+      'weight' => 35,
     ),
   );
 
@@ -16804,7 +16875,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the creative work has an ISBN, add it here.',
+    'description' => 'If the creative work has an ISBN, add it here. If there are multiple ISBNs, indicate type after number e.g. 978-3-11-027239-0 (e-ISBN).',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -16851,6 +16922,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'ISBN',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -16870,7 +16975,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language the work was written in. Select multiple if the work includes multiple languages. Note: this is a taxonomy field, which will replace the previous Language field, which will be deleted once the data is migrated from it. For new records, disregard the other Language field above and use this one.',
+    'description' => 'Select the human language the work was written in. Select multiple if the work includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.',
     'display' => array(
       'data_export' => array(
         'label' => 'inline',
@@ -16913,6 +17018,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 29,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_language_tax',
     'label' => 'Language',
@@ -17052,7 +17158,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-work-field_media_asset'] = array(
     'bundle' => 'work',
     'deleted' => 0,
-    'description' => 'Use this field to display Vimeo and YouTube videos, and other multimedia content.',
+    'description' => 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -17314,7 +17420,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization\'s name will autocomplete if it is in the database. If it does not autocomplete, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.',
+    'description' => 'If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization\'s name will autocomplete if it is in the database. If the publisher or organization is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -17437,6 +17543,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => -1,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_node_ref',
     'label' => 'Publisher',
@@ -17462,7 +17569,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Mark the event(s) where the work has been presented. If an event is missing from the list follow the link to add a new <a href="/node/add/event" target="_blank">event</a>.',
+    'description' => 'Mark the event(s) where the work has been presented. The event’s name will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -17611,7 +17718,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a description of this work in the NT2 Répertoire des arts et littératures hypermédiatiques, add a cross reference to it here.',
+    'description' => 'If there is a record for this work in the NT2 Répertoire des arts et littératures hypermédiatiques, enter the URL of the entry.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -17694,7 +17801,8 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for another edition of this work in the same language in the knowledge base, link to it here. ',
+    'description' => 'If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.
+',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -17745,6 +17853,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 26,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_other_edition_work',
     'label' => 'Other edition',
@@ -17761,7 +17870,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 35,
+      'weight' => 34,
     ),
   );
 
@@ -17770,7 +17879,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is version of this creative work in the knowledge base published in another language, link to it here. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.',
+    'description' => 'If there is a record in the knowledge base of a version of this creative work published in another language, link to it here.The other language version will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -17902,6 +18011,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 5,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_other_lang_ver_link',
     'label' => 'Other language version',
@@ -17918,7 +18028,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 34,
+      'weight' => 33,
     ),
   );
 
@@ -17927,7 +18037,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this work is part of another creative work (e.g. one piece in a trilogy) reference that work here. The title will autocomplete if in the KB, otherwise first <a href="node/add/work">add the new work</a>.',
+    'description' => 'If this work is part of another creative work (e.g. one piece in a trilogy) reference that work here. The title of the other work will autocomplete if it is in the database.  If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -17978,6 +18088,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_part_of_another_work',
     'label' => 'Part of another work',
@@ -18003,7 +18114,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter a significant passage (1-2 sentences) excerpted from the text that will help to contextualize it. The quote may displayed on the Knowledge Base and should be representative of the text, so as to entice readers to access and read the work. ',
+    'description' => 'Enter representative passages of text (1-3 sentences) excerpted from the work.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -18114,6 +18225,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Pull Quotes',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -18202,7 +18347,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter relevant notes about the platform, etc. used in the creation of the work, and in particular any plug-ins  or other information required for the user to access the work.',
+    'description' => 'Enter technical information or instructions required for the user to access the work.',
     'display' => array(
       3 => array(
         'label' => 'hidden',
@@ -18299,6 +18444,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Technical notes',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -18438,7 +18617,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this work is a translation, please use this autocomplete field to indicate the translator. If the translator is not yet in the KB, <a href="/node/add/person" target="_blank">add the translator</a> first.',
+    'description' => 'If this work is a translation, please use this field to indicate the translator. The author\'s name will autocomplete if it is in the database. If the translator is not yet in the KB, <a href="/node/add/person" target="_blank">add the translator</a>.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -18489,6 +18668,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_translator',
     'label' => 'Translator',
@@ -18514,7 +18694,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Indicate the title of the work in the title field, which will display as the link label. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.',
+    'description' => 'Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.',
     'display' => array(
       3 => array(
         'label' => 'hidden',
@@ -18650,7 +18830,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Indicate the types of publication. Multiple selections permitted. ',
+    'description' => 'Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.',
     'display' => array(
       'data_export' => array(
         'label' => 'inline',
@@ -18714,7 +18894,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-work-field_work_year'] = array(
     'bundle' => 'work',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -18816,7 +18996,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the title field of the URL (e.g. 1996. ed.) Multiple entries are allowed.',
+    'description' => 'If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the title field of the URL (e.g. 1996. ed.)',
     'display' => array(
       'data_export' => array(
         'label' => 'inline',
@@ -18901,7 +19081,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag.',
+    'description' => 'A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.',
     'display' => array(
       'data_export' => array(
         'label' => 'inline',
@@ -18968,11 +19148,11 @@ Note: Before adding a new person record, check to see if he or she is already li
   // Included for use with string extractors like potx.
   t('<b>If the teaching resource is not written in English</b> write an description of fewer than 500 words in the original language. Leave this field empty if the language of the teaching resource is English.');
   t('<b>If the work is not written in English</b> write an abstract of fewer than 350 words in the original language. Leave this field empty if the language of the work is English.');
-  t('<b>If the work is not written in English</b>, write a short description, fewer than 350 words, in the original language. Leave this field empty if the original language of the work is English.');
   t('<b>Note:</b> If the teaching resource is a syllabus for a course, enter the title of the course in the "Title of Resource" field in the following format: Title: Subtitle (Course number, Semester year). For example, <i>Digital Genres: Digital Art, Electronic Literature, and Computer Games (DIKULT 103, Spring 2011)</i>. ');
+  t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.');
   t('A brief description (fewer than 350 words) in English about the database or resource.');
   t('A brief description (fewer than 350 words) of the database or resource in the resource\'s original language. ');
-  t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag.');
+  t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this piece of critical writing. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this resource. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality.
 ');
@@ -18992,6 +19172,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Attach an image of the book cover or other images.');
   t('Attach documentation such as user\'s manuals or source code in a .zip file.');
   t('Attach relevant files from the event, such as .pdfs of printed program or posters, or audio recordings in mp3 format.');
+  t('Attach relevant files here, such as collateral materials or source code.');
   t('Attach relevant files here.');
   t('Attach relevant files here. Examples include PDFs of handouts, mp3 file of audio recordings, and slides used in lectures.');
   t('Attach relevant images, such as screenshots of the development environment or other useful images.');
@@ -19042,11 +19223,11 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Editors should use this field to provide short indications of revisions required. The field will only be visible to KB editors and to the original authors of the record. This field should be wiped once the record is marked as approved.');
   t('Electronic Literature Directory entry');
   t('Email');
-  t('Enter a URL where the entire work or source files may be downloaded, if applicable. <b>Note: submissions to the ELMCIP anthology should include this information, indicating a URL where the work may be downloaded as a .zip or .tar file.</b>');
+  t('Enter a URL where the entire work or source files may be downloaded, if applicable.');
   t('Enter a significant passage (1-2 sentences) excerpted from the text that will help to contextualize it. The quote may displayed on the Knowledge Base and should be representative of the text, pinpointing its primary claim(s) or identifying a key topic, so as to entice readers to access and read the work. <i>Note</i>: Do <b>not</b> put quotation marks around the pull quote.');
-  t('Enter a significant passage (1-2 sentences) excerpted from the text that will help to contextualize it. The quote may displayed on the Knowledge Base and should be representative of the text, so as to entice readers to access and read the work. ');
   t('Enter editors if applicable. The name will autocomplete if the editor is in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now.');
-  t('Enter relevant notes about the platform, etc. used in the creation of the work, and in particular any plug-ins  or other information required for the user to access the work.');
+  t('Enter representative passages of text (1-3 sentences) excerpted from the work.');
+  t('Enter technical information or instructions required for the user to access the work.');
   t('Enter the ISBN-13 (preferred) or ISBN-10, including the hyphens, if listed. If a book is published in hardcover and paperback editions, enter the hardcover edition first. Note: The International Standard Book Number (ISBN) is a numeric identifier assigned to each edition and variation of a book. You will only enter this number you are entering a book. The number is typically found on the copyright page and on the back cover or jacket of the book. You can also find the ISBN by looking the book up in WorldCat, a library catalog, or an online bookstore, such as Amazon.com.');
   t('Enter the editor if applicable. The name will autocomplete if the editor is already in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now. If you are entering an article or chapter from an anthology, do <i>not</i> enter the editor of the volume here.');
   t('Enter the name of organizations this person is closely affiliated with. Examples include: artist-and-writer collectives, employers, nonprofit organizations, research groups, universities. The text in the short biography can elaborate and clarify the nature and duration of the person\'s affiliation with this organization. If the organization is not yet in the KB, first <a href="/node/add/organization" target="_blank">add the organization</a>.');
@@ -19078,7 +19259,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('I ♥ E-Poetry entry');
   t('ISBN');
   t('ISSN');
-  t('If a person\'s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. If the contributor\'s name does not auto-complete, <a href="/node/add/person" target="_blank">add the contributor</a> first. Use the contributors notes field to describe the different roles individuals played.');
+  t('If a person\'s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.');
   t('If a publication has an e-ISSN number enter it here.');
   t('If a publication has an eISSN number enter it here.');
   t('If a record for this item is available on the WorldCat library database, enter the Permalink here. Use the URL title field to indicate the edition year (e.g. 1996 ed.). Multiple entries allowed.');
@@ -19091,7 +19272,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If one work of critical writing references another in a substantial way (sustained critical engagement) cross-reference it here by entering the title in the autocomplete field. If it is not yet in the knowledge base, first <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
   t('If the author is a contributor to the ELMCIP Knowledge Base, enter the author\'s KB username here, usually first and last name. The field will autocomplete. Please only enter if you are the author, or an editor of the KB. Identifying the KB user ID will allow us to display works entered by others on each individual author\'s profile page.');
   t('If the author\'s name has another spelling in the author\'s native language (e.g. a Russian name in Cyrillic) enter it in this field.');
-  t('If the creative work has an ISBN, add it here.');
+  t('If the creative work has an ISBN, add it here. If there are multiple ISBNs, indicate type after number e.g. 978-3-11-027239-0 (e-ISBN).');
   t('If the critical article was presented at a conference, select here. The event will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
   t('If the critical work was published as part of a series, enter the series title here.  The series title will autocomplete if a node record for it exists in the database. If the series is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the series</a>. <b>Note:</b> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</I>, are series).');
   t('If the critical writing is <b>about an event</b>, e.g. a review or trip report of a conference, enter the event here. The field will autocomplete if the event is in the KB, otherwise add the <a href="/node/add/event" target="_blank">event</a> first.');
@@ -19106,16 +19287,17 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the note discusses an event, enter the name of the event here. This is an autocomplete field that will only reference records of events that are already in the Knowledge Base. If the name of the event does not autocomplete, first <a href="/node/add/event" target="_blank">add the event</a>.');
   t('If the resource was developed as part of a curriculum, enter the organization responsible (for example University of Bergen, program in Digital Culture). The field will autocomplete if you have already added the organization. if If the work is not in the knowledge base, first <a href="/node/add/organization" target="_blank">add the organization</a> before completing this record.');
   t('If the work is available at a web-based archive, such as the Internet Archive, or a university open-research archive, link here.');
-  t('If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization\'s name will autocomplete if it is in the database. If it does not autocomplete, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.');
-  t('If the work was published in an anthology, collection, or special issue of a journal link to it here using the autocomplete field. If the field does not complete, <a href="/node/add/critical-writing">add the anthology</a> to the Knowledge Base.');
-  t('If there is a description of this work in the I ♥ E-Poetry project, add a cross reference to it here.');
-  t('If there is a description of this work in the NT2 Répertoire des arts et littératures hypermédiatiques, add a cross reference to it here.');
-  t('If there is a record for another edition of this work in the same language in the knowledge base, link to it here. ');
+  t('If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization\'s name will autocomplete if it is in the database. If the publisher or organization is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.');
+  t('If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing">add the anthology</a>.');
+  t('If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.
+');
   t('If there is a record for this work in the Electronic Literature Directory, enter the URL of the entry here (for example http://directory.eliterature.org/node/407) to create a cross-reference between the databases.');
-  t('If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the title field of the URL (e.g. 1996. ed.) Multiple entries are allowed.');
+  t('If there is a record for this work in the I ♥ E-Poetry project, enter the URL of the entry.');
+  t('If there is a record for this work in the NT2 Répertoire des arts et littératures hypermédiatiques, enter the URL of the entry.');
+  t('If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the title field of the URL (e.g. 1996. ed.)');
   t('If there is a record in the Knowledge Base of another edition of this item, cross reference it here.');
+  t('If there is a record in the knowledge base of a version of this creative work published in another language, link to it here.The other language version will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('If there is a record in the knowledge base of another version of this item published in another language, link to it here.');
-  t('If there is version of this creative work in the knowledge base published in another language, link to it here. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('If this critical writing has an entry in the ELO\'s Electronic Literature Directory, add a reference here by linking the complete URL of the page.');
   t('If this critical writing has been published in multiple editions, enter information about this edition here (e.g. 2nd edition).');
   t('If this critical writing references a database or archive, enter it using this autocomplete field, otherwise first add the database.');
@@ -19124,14 +19306,15 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If this item is a translation, indicate the translator here by typing the name, If the translator is in the Knowledge Base, the field will autocomplete. Otherwise, first  <a href="/node/add/person" target="_blank">add the translator</a>. before completing the record.');
   t('If this teaching resource is connected to another teaching resource (e.g. an assignment connected to syllabus), cross-reference it using this autocomplete field. The other teaching resource must already be in the Knowledge Base before you can reference it.');
   t('If this teaching resource references a database or archive link to it with this node reference field. If the resource is already in Knowledge Base it will autocomplete as you type, otherwise first <a href="node/add/databases-and-archives">add the database or archive</a> before completing this record.');
-  t('If this work is a translation, please use this autocomplete field to indicate the translator. If the translator is not yet in the KB, <a href="/node/add/person" target="_blank">add the translator</a> first.');
-  t('If this work is part of another creative work (e.g. one piece in a trilogy) reference that work here. The title will autocomplete if in the KB, otherwise first <a href="node/add/work">add the new work</a>.');
+  t('If this work is a translation, please use this field to indicate the translator. The author\'s name will autocomplete if it is in the database. If the translator is not yet in the KB, <a href="/node/add/person" target="_blank">add the translator</a>.');
+  t('If this work is part of another creative work (e.g. one piece in a trilogy) reference that work here. The title of the other work will autocomplete if it is in the database.  If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.');
   t('Image');
   t('Image (Screenshot)');
   t('Images');
   t('Important technical notes about the database or archive.');
-  t('Indicate the title of the work in the title field, which will display as the link label. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.');
-  t('Indicate the types of publication. Multiple selections permitted. ');
+  t('Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.');
+  t('Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.');
+  t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
   t('Individual Organizers');
   t('Journal volume and issue');
   t('KB Editor Notes');
@@ -19145,7 +19328,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Last name');
   t('License');
   t('Location');
-  t('Mark the event(s) where the work has been presented. If an event is missing from the list follow the link to add a new <a href="/node/add/event" target="_blank">event</a>.');
+  t('Mark the event(s) where the work has been presented. The event’s name will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
   t('Media');
   t('Middle name');
   t('More pictures');
@@ -19169,7 +19352,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('People');
   t('Personal website');
   t('Please enter a brief abstract in English describing the critical work or article in fewer than 350 words. ');
-  t('Please enter information about different author/contributor roles in this field (e.g. Sound designer:, programmer: etc.)');
+  t('Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)');
   t('Please include physical location information for the publisher. The city name is particularly important for bibliographic citation.');
   t('Please provide about the author\'s location.  Only city, state, and country will be publicly displayed.');
   t('Please provide notes about the various roles key people (indicated above) played in this project.');
@@ -19200,9 +19383,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Screenshots of the database or archive.');
   t('Select the human language of the additional language abstract. ');
   t('Select the human language of the additional language abstract.  Note: this is a taxonomy field, which will replace the previous Language of abstract field, which will be deleted once the data is migrated from it. For new records, disregard the other Language of abstract field above and use this one.');
-  t('Select the human language of the additional language description.');
   t('Select the human language of the teaching resource. Select multiple if the work includes multiple languages.');
+  t('Select the human language the work was written in. Select multiple if the work includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
   t('Select the human language the work was written in. Select multiple if the work includes multiple languages. Note: this is a taxonomy field, which will replace the previous Language field, which will be deleted once the data is migrated from it. For new records, disregard the other Language field above and use this one.');
+  t('Select the human language used in the original language description field.');
   t('Select the license that the platform is released under from the list.');
   t('Select the primary human language(s) of the database or resource. Select multiple using the Crtl (or Apple) key.');
   t('Select the publication type of this critical writing. Multiple selections may apply if the same item fits multiple categories (e.g. a conference paper that is also published as a journal publication), but a single selection is usually adequate. 
@@ -19236,6 +19420,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Use this field to display Vimeo and YouTube videos, Flickr sets, and other multimedia content. ');
   t('Use this field to display Vimeo and YouTube videos, and other multimedia content.');
   t('Use this field to display Vimeo and YouTube videos, and other multimedia content. Note: flickr photo sets are not currently working with this field. We are waiting for an update to the module, so please wait until the issue is resolved before adding them.');
+  t('Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.');
   t('Use this field to indicate URLs associated with the platform (e.g. download, documentation sites, etc.) Indicate the nature of the link using the title field. Multiple URLs are permitted.');
   t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The field will autocomplete. If the person is not yet in the database first <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Use this field to link to your syllabus or other material you have created as a teaching resource in the Knowledge Base. The field will autocomplete. If the teaching resource is not yet in the Knowledge Base, first <a href="node/add/teaching-resource">add the teaching resource</a>.');
