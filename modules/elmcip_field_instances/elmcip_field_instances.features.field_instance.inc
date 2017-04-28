@@ -10924,7 +10924,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-platform_software-field_media'] = array(
     'bundle' => 'platform_software',
     'deleted' => 0,
-    'description' => 'Attach remote media, such as video tutorials on Vimeo or YouTube.',
+    'description' => 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -11011,7 +11011,9 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-platform_software-field_ps_attachment'] = array(
     'bundle' => 'platform_software',
     'deleted' => 0,
-    'description' => 'Attach documentation such as user\'s manuals or source code in a .zip file.',
+    'description' => 'Attach documentation such as user\'s manuals or source code in a .zip file.
+<br>Files must be less than <strong>600 MB</strong>.
+<br>Allowed file types: <strong>txt pdf zip</strong>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -11069,7 +11071,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'platform_software',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide a written description of the platform and its distinguishing features. Indicate the source of the description.',
+    'description' => 'Provide a written description of the platform and its distinguishing features. If you source the description from elsewhere, indicate the source in parentheses after the description.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -19456,14 +19458,15 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Archive URL');
   t('Associated with another event');
   t('Attach an image of the book cover or other images.');
-  t('Attach documentation such as user\'s manuals or source code in a .zip file.');
+  t('Attach documentation such as user\'s manuals or source code in a .zip file.
+<br>Files must be less than <strong>600 MB</strong>.
+<br>Allowed file types: <strong>txt pdf zip</strong>.');
   t('Attach relevant files from the event, such as .pdfs of printed program or posters, or audio recordings in mp3 format.');
   t('Attach relevant files here, such as collateral materials or source code.');
   t('Attach relevant files here.');
   t('Attach relevant files here. Examples include PDFs of handouts, mp3 file of audio recordings, and slides used in lectures.');
   t('Attach relevant images, such as screenshots of the development environment or other useful images.');
   t('Attach relevant text or pdf documents here, such as a CV.');
-  t('Attach remote media, such as video tutorials on Vimeo or YouTube.');
   t('Attachment');
   t('Attachments');
   t('Author');
@@ -19659,7 +19662,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Provide a brief description of the work in English, up to 350 words.');
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available.. If you source the biography from elsewhere, indicate the source in parentheses after the biography.');
-  t('Provide a written description of the platform and its distinguishing features. Indicate the source of the description.');
+  t('Provide a written description of the platform and its distinguishing features. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide references to creative works included in this collection. If the work is not yet in the KB, first <a href="http://elmcip.net/node/add/work">add the creative work</a>.');
   t('Provide references to database or archives included in this collection. If they are not yet in the KB, first <a href="http://elmcip.net/node/add/databases-and-archives">add the database</a>.');
   t('Provide references to events included in this collection. If the event is not yet in the KB, first <a href="http://elmcip.net/node/add/critical-writing">add the event</a>.');

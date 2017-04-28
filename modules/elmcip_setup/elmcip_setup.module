@@ -132,6 +132,9 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
     case 'critical_writing_node_form':
       $form['title']['#description'] = t('Indicate the title of the work. If it has a subtitle, place the subtitle text after a colon.', array('type' => $form['type']['#value']));
       break;
+    case 'platform_software_node_form':
+      $form['title']['#description'] = t('Enter the name of the platform/software,', array('type' => $form['type']['#value']));
+      break;
   }
 }
 

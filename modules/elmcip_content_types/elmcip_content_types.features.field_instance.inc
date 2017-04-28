@@ -471,7 +471,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'platform_software',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.',
+    'description' => 'Enter the individuals who were key to the development of this platform/software, if applicable (e.g. Daniel Howe for RITA libraries). The person will autocomplete if they are in the database. If person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -527,7 +527,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'platform_software',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this field to link to a stable URL documenting the version history of the software or platform, if available. Provide a title and URL.',
+    'description' => 'Link to a stable URL documenting the version history of the software or platform, if available. Indicate the nature of the link using the title field (e.g. Wikipedia version history of WordPerfect).',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -592,7 +592,8 @@ function elmcip_content_types_field_default_field_instances() {
   $field_instances['node-platform_software-field_platform_year'] = array(
     'bundle' => 'platform_software',
     'deleted' => 0,
-    'description' => 'Indicate the year that this platform was first released.',
+    'description' => 'Indicate the year that this platform/software was first released.
+<br>Format: 2017',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -677,7 +678,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'platform_software',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.',
+    'description' => 'Enter the publisher or organization responsible for this platform/software.The publisher or organization will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/organization" target="_blank">add the organization</a> or <a href="/node/add/organization" target="_blank">add the publisher</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -783,7 +784,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'platform_software',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.',
+    'description' => 'Add a URL to a repository or version control system such as Github or bitbucket where source code can be accessed.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -855,7 +856,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'platform_software',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.',
+    'description' => 'Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. If you source the version history from elsewhere, indicate the source in parentheses after the version history.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1371,16 +1372,21 @@ function elmcip_content_types_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add a URL to a repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Add notes about editorial status here.');
   t('Developers');
+  t('Enter the individuals who were key to the development of this platform/software, if applicable (e.g. Daniel Howe for RITA libraries). The person will autocomplete if they are in the database. If person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
+  t('Enter the publisher or organization responsible for this platform/software.The publisher or organization will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/organization" target="_blank">add the organization</a> or <a href="/node/add/organization" target="_blank">add the publisher</a>.');
   t('If there is a record for this critical writing in the PO.EX database, enter the URL of the entry.');
   t('If there is a record for this work in the Narrabase project, enter the URL of the entry.');
   t('If there is a record for this work in the PO.EX database, enter the URL of the entry.');
   t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
   t('If this critical writing references a platform/software, link to it here. The platform or software will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
   t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
-  t('Indicate the year that this platform was first released.');
+  t('Indicate the year that this platform/software was first released.
+<br>Format: 2017');
   t('KB Editor Notes');
+  t('Link to a stable URL documenting the version history of the software or platform, if available. Indicate the nature of the link using the title field (e.g. Wikipedia version history of WordPerfect).');
   t('Narrabase.net entry');
   t('Platform');
   t('Platform referenced');
@@ -1388,16 +1394,13 @@ function elmcip_content_types_field_default_field_instances() {
   t('Platform/Software referenced');
   t('Po-ex.net entry');
   t('Po.Ex entry');
-  t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. Cite the source of the version history.');
+  t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. If you source the version history from elsewhere, indicate the source in parentheses after the version history.');
   t('Publisher or organization');
   t('Record Status');
   t('Repository');
-  t('Use the autocomplete field to credit individuals who were key tot he development of this platform, if applicable (e.g. Daniel Howe for RITA libraries). If the person is not yet in the database, first <a href="/node/add/person" target="_blank">create the new person record</a>.');
-  t('Use the autocomplete field to indicate the publisher or organization responsible for this platform. If they are not yet in the database, first <a href="/node/add/organization" target="_blank">create the new organization or <a href="/node/add/organization" target="_blank">publisher</a> record.');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
   t('Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). The platform or software will autocomplete if it is in the database. If the platform or software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
-  t('Use this field to link to a stable URL documenting the version history of the software or platform, if available. Provide a title and URL.');
   t('Version history (link)');
   t('Version history (text)');
   t('Year');
