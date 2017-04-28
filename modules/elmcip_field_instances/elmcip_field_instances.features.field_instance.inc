@@ -11303,7 +11303,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter editors if applicable. The name will autocomplete if the editor is in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now.',
+    'description' => 'Enter editors if applicable. The name will autocomplete if the editor is in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -11644,7 +11644,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Provide the email address of the publisher.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -11730,6 +11730,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_email',
     'label' => 'Email',
@@ -11755,7 +11756,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. If the event is not yet in the database, first add it before completing the record.',
+    'description' => 'Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the eventis not yet in the database, <a href="/node/add/event" target="">add the event</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -11785,6 +11786,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_events',
     'label' => 'Events',
@@ -11810,7 +11812,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the ISSN of the publisher.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -11917,11 +11919,46 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 1,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_issn_text',
     'label' => 'ISSN',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -11943,7 +11980,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please include physical location information for the publisher. The city name is particularly important for bibliographic citation.',
+    'description' => 'Enter the URL of the publisher or journal homepage. Indicate the nature of the link using the title field.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -12094,7 +12131,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Provide a brief description of the publisher in English. If you source the description from elsewhere, indicate the source in parentheses after the description.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -12172,6 +12209,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Short decription',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -12193,7 +12264,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'URL of the publisher or journal homepage.',
+    'description' => 'Enter the URL of the publisher or journal homepage. Indicate the nature of the link using the title field.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -19572,10 +19643,12 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Electronic Literature Directory entry');
   t('Email');
   t('Enter a URL where the entire work or source files may be downloaded, if applicable.');
-  t('Enter editors if applicable. The name will autocomplete if the editor is in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now.');
+  t('Enter editors if applicable. The name will autocomplete if the editor is in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>.');
   t('Enter information about the person’s location. Only city, state, and country will be publicly displayed.');
   t('Enter representative passages of text (1-3 sentences) excerpted from the work.');
   t('Enter technical information or instructions required for the user to access the work.');
+  t('Enter the ISSN of the publisher.');
+  t('Enter the URL of the publisher or journal homepage. Indicate the nature of the link using the title field.');
   t('Enter the editor if applicable. The name will autocomplete if the editor is already in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>. If you are entering an article or chapter from an anthology, do not enter the editor of the volume here.');
   t('Enter the email address of the person. The author\'s email will not be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.');
   t('Enter the family name of the person (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.');
@@ -19715,12 +19788,12 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('People');
   t('Personal website');
   t('Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)');
-  t('Please include physical location information for the publisher. The city name is particularly important for bibliographic citation.');
   t('Please provide notes about the various roles key people (indicated above) played in this project.');
   t('Presented at Event');
   t('Project Type');
   t('Provide a brief abstract of the critical writing in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
   t('Provide a brief abstract of the teaching resource in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
+  t('Provide a brief description of the publisher in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a brief description of the work in English, up to 350 words.');
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available.. If you source the biography from elsewhere, indicate the source in parentheses after the biography.');
@@ -19733,6 +19806,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Provide references to publishers included in this collection. If the publisher is not yet in the KB, first <a href="http://elmcip.net/node/add/publisher">add the publisher</a>.');
   t('Provide references to teaching resources included in this collection. If the teaching resource is not yet in the KB, first <a href="http://elmcip.net/node/add/teaching-resource">add the teaching resource</a>.');
   t('Provide references to the critical writing included in this collection. If the critical writing is not yet in the KB, first <a href="http://elmcip.net/node/add/critical-writing">add the critical writing</a>.');
+  t('Provide the email address of the publisher.');
   t('Publication Type');
   t('Publisher');
   t('Publisher Referenced');
@@ -19770,14 +19844,13 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Translator');
   t('Type');
   t('URL');
-  t('URL of the publisher or journal homepage.');
   t('University');
   t('Upload a photo of the person.
 <br>Files must be less than <strong>600 MB</strong>.
 <br>Allowed file types: <strong>png gif jpg jpeg</strong>.');
   t('Upload screenshots or other images related to the organization.');
   t('Upload screenshots or other relevant imagery of the work here.');
-  t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. If the event is not yet in the database, first add it before completing the record.');
+  t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the eventis not yet in the database, <a href="/node/add/event" target="">add the event</a>.');
   t('Use this field to display Vimeo and YouTube videos, and other multimedia content.');
   t('Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.');
   t('Use this field to indicate URLs associated with the platform (e.g. download, documentation sites, etc.) Indicate the nature of the link using the title field. Multiple URLs are permitted.');
