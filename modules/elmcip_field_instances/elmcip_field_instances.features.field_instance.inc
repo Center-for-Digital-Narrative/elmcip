@@ -8140,7 +8140,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the email address of the organization.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -8226,6 +8226,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => -2,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_email',
     'label' => 'Email',
@@ -8308,7 +8309,11 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Please include physical location information for the organization.
+
+<p>
+If you wish to supply your own latitude and longitude, you may enter them above. If you leave these fields blank, the system will attempt to determine a latitude and longitude for you from the entered address. To have the system recalculate your location from the address, for example if you change the address, delete the values for these fields.
+</p>',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -8536,7 +8541,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Provide a brief description of the organization in English. If you source the description from elsewhere, indicate the source in parentheses after the description.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -8614,6 +8619,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Short description',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -8635,7 +8674,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the URL of the organization homepage. Indicate the nature of the link using the title field.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -19648,8 +19687,10 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Enter representative passages of text (1-3 sentences) excerpted from the work.');
   t('Enter technical information or instructions required for the user to access the work.');
   t('Enter the ISSN of the publisher.');
+  t('Enter the URL of the organization homepage. Indicate the nature of the link using the title field.');
   t('Enter the URL of the publisher or journal homepage. Indicate the nature of the link using the title field.');
   t('Enter the editor if applicable. The name will autocomplete if the editor is already in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>. If you are entering an article or chapter from an anthology, do not enter the editor of the volume here.');
+  t('Enter the email address of the organization.');
   t('Enter the email address of the person. The author\'s email will not be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.');
   t('Enter the family name of the person (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.');
   t('Enter the given name of the person (e.g. "John" in "John Smith").');
@@ -19788,11 +19829,17 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('People');
   t('Personal website');
   t('Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)');
+  t('Please include physical location information for the organization.
+
+<p>
+If you wish to supply your own latitude and longitude, you may enter them above. If you leave these fields blank, the system will attempt to determine a latitude and longitude for you from the entered address. To have the system recalculate your location from the address, for example if you change the address, delete the values for these fields.
+</p>');
   t('Please provide notes about the various roles key people (indicated above) played in this project.');
   t('Presented at Event');
   t('Project Type');
   t('Provide a brief abstract of the critical writing in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
   t('Provide a brief abstract of the teaching resource in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
+  t('Provide a brief description of the organization in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a brief description of the publisher in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a brief description of the work in English, up to 350 words.');
   t('Provide a general description of the research collection.');
