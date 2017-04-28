@@ -1009,7 +1009,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => ' If the teaching resource references a platform/software, link to it here. The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/add/platform-software" target="_blank">add the platform/software</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1372,6 +1372,7 @@ function elmcip_content_types_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t(' If the teaching resource references a platform/software, link to it here. The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/add/platform-software" target="_blank">add the platform/software</a>.');
   t('Add a URL to a repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Add notes about editorial status here.');
   t('Developers');

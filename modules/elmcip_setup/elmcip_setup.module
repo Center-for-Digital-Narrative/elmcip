@@ -133,7 +133,10 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       $form['title']['#description'] = t('Indicate the title of the work. If it has a subtitle, place the subtitle text after a colon.', array('type' => $form['type']['#value']));
       break;
     case 'platform_software_node_form':
-      $form['title']['#description'] = t('Enter the name of the platform/software,', array('type' => $form['type']['#value']));
+      $form['title']['#description'] = t('Enter the name of the platform/software.', array('type' => $form['type']['#value']));
+      break;
+    case 'teaching_resource_node_form':
+      $form['title']['#description'] = t('Enter the title of the teaching resource. If the teaching resource is a syllabus for a course, enter the title of the course in the following format: Title: Subtitle (Course number, Semester year). For example, <i>Digital Genres: Digital Art, Electronic Literature, and Computer Games (DIKULT 103, Spring 2011)</i>.', array('type' => $form['type']['#value']));
       break;
   }
 }

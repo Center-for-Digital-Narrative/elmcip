@@ -13704,15 +13704,9 @@ Note: Before adding a new person record, check to see if he or she is already li
   // Exported field_instance: 'node-teaching_resource-field_abstract_lang'.
   $field_instances['node-teaching_resource-field_abstract_lang'] = array(
     'bundle' => 'teaching_resource',
-    'default_value' => array(
-      0 => array(
-        'value' => '',
-        'format' => 3,
-        '_error_element' => 'default_value_widget][field_abstract_lang][0][value',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<b>If the teaching resource is not written in English</b> write an description of fewer than 500 words in the original language. Leave this field empty if the language of the teaching resource is English.',
+    'description' => '<strong>If the teaching resource is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -13812,23 +13806,55 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 22,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang',
     'label' => 'Abstract (in original language)',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'weight' => 22,
     'widget' => array(
-      'active' => 0,
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'default_value_php' => NULL,
-        'multistep' => 0,
         'rows' => 5,
-        'size' => 60,
       ),
       'type' => 'text_textarea',
       'weight' => 13,
@@ -13841,7 +13867,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language of the additional language abstract.  Note: this is a taxonomy field, which will replace the previous Language of abstract field, which will be deleted once the data is migrated from it. For new records, disregard the other Language of abstract field above and use this one.',
+    'description' => 'Select the human language of the additional language abstract.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -13868,6 +13894,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 14,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
     'label' => 'Language of abstract (Taxonomy)',
@@ -13890,7 +13917,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this teaching resource references a database or archive link to it with this node reference field. If the resource is already in Knowledge Base it will autocomplete as you type, otherwise first <a href="node/add/databases-and-archives">add the database or archive</a> before completing this record.',
+    'description' => 'If the teaching resource references a database or archive, link to it here. The database or archive will autocomplete if it is in the database. If the database or archive is not yet in the database, <a href="node/add/databases-and-archives">add the database or archive</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -14119,7 +14146,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => '',
     'deleted' => 0,
-    'description' => 'Add an image file by using the "Choose File" button to select it from your hard drive. Then press the "Upload" button.',
+    'description' => 'Add any relevant image files.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -14291,7 +14318,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language of the teaching resource. Select multiple if the work includes multiple languages.',
+    'description' => 'Select the human language of the teaching resource. Select multiple if the teaching resource includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -14321,6 +14348,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 11,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_language_tax',
     'label' => 'Language',
@@ -14341,7 +14369,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-teaching_resource-field_media_asset'] = array(
     'bundle' => 'teaching_resource',
     'deleted' => 0,
-    'description' => 'Use this field to display Vimeo and YouTube videos, and other multimedia content. Note: flickr photo sets are not currently working with this field. We are waiting for an update to the module, so please wait until the issue is resolved before adding them.',
+    'description' => 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -14624,7 +14652,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the titles of critical writing in the teaching resource. If it is not in the knowledge base, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
+    'description' => 'If the teaching resource references a critical writing, link to it here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -14767,14 +14795,9 @@ Note: Before adding a new person record, check to see if he or she is already li
   // Exported field_instance: 'node-teaching_resource-field_tr_description'.
   $field_instances['node-teaching_resource-field_tr_description'] = array(
     'bundle' => 'teaching_resource',
-    'default_value' => array(
-      0 => array(
-        'value' => '',
-        '_error_element' => 'default_value_widget][field_tr_description][0][value',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Briefly describe this teaching resource -- its purpose, intended audience, and content. If this is a resource produced for a course, please also include the name of the institution and program in the description.',
+    'description' => 'Provide a brief abstract of the teaching resource in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -14874,22 +14897,55 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 21,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tr_description',
     'label' => 'Abstract (in English)',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'weight' => 21,
     'widget' => array(
-      'active' => 0,
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'default_value_php' => NULL,
         'rows' => 5,
-        'size' => 60,
       ),
       'type' => 'text_textarea',
       'weight' => 12,
@@ -14902,7 +14958,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the resource was developed as part of a curriculum, enter the organization responsible (for example University of Bergen, program in Digital Culture). The field will autocomplete if you have already added the organization. if If the work is not in the knowledge base, first <a href="/node/add/organization" target="_blank">add the organization</a> before completing this record.',
+    'description' => 'If the resource was developed as part of a curriculum, enter the organization responsible (for example University of Bergen, program in Digital Culture). The field will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -15054,7 +15110,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this teaching resource is connected to another teaching resource (e.g. an assignment connected to syllabus), cross-reference it using this autocomplete field. The other teaching resource must already be in the Knowledge Base before you can reference it.',
+    'description' => 'If the teaching resource references another teaching resource, link to it here. The teaching resource will autocomplete if it is in the database. If the teaching resource is not yet in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -15113,7 +15169,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter titles of works of electronic literature or digital art referenced in the teaching resource. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.',
+    'description' => 'If the teaching resource references  a work of electronic literature or digital art, link to it here. The work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -15258,7 +15314,8 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-teaching_resource-field_tr_year'] = array(
     'bundle' => 'teaching_resource',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Indicate the year the teaching resource was created.    
+<br>Format: 2017',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -15500,7 +15557,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the link to the teaching resource. Indicate the nature of the link using the title field.',
     'display' => array(
       3 => array(
         'label' => 'hidden',
@@ -15630,7 +15687,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this teaching resource. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -15660,14 +15717,16 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 19,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'taxonomy_vocabulary_1',
     'label' => 'Tags',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 0,
       'module' => 'taxonomy',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
@@ -15683,7 +15742,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<b>Note:</b> If the teaching resource is a syllabus for a course, enter the title of the course in the "Title of Resource" field in the following format: Title: Subtitle (Course number, Semester year). For example, <i>Digital Genres: Digital Art, Electronic Literature, and Computer Games (DIKULT 103, Spring 2011)</i>. ',
+    'description' => 'Select the type of the teaching resource.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -19433,9 +19492,8 @@ Note: Before adding a new person record, check to see if he or she is already li
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('<b>If the teaching resource is not written in English</b> write an description of fewer than 500 words in the original language. Leave this field empty if the language of the teaching resource is English.');
-  t('<b>Note:</b> If the teaching resource is a syllabus for a course, enter the title of the course in the "Title of Resource" field in the following format: Title: Subtitle (Course number, Semester year). For example, <i>Digital Genres: Digital Art, Electronic Literature, and Computer Games (DIKULT 103, Spring 2011)</i>. ');
   t('<strong>For dissertations and theses only</strong>, indicate the university in which the thesis was produced.The university’s will autocomplete if it is in the database. If the university is not yet in the database, <a href="/node/add/organization" target="_blank">add the university as an organization</a>.');
+  t('<strong>If the teaching resource is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.');
   t('A brief description (fewer than 350 words) in English about the database or resource.');
@@ -19444,9 +19502,10 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this piece of critical writing. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this resource. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality.
 ');
+  t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this teaching resource. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('Abstract (in English)');
   t('Abstract (in original language)');
-  t('Add an image file by using the "Choose File" button to select it from your hard drive. Then press the "Upload" button.');
+  t('Add any relevant image files.');
   t('Add links to additional contributors to this collection.');
   t('Add links to the author record of the primary contributors to curating and developing this Research Collection.');
   t('Add the URL where the resource where the resource can be accessed online. For example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP Electronic Literature Knowledge Base). Enter the name of the resource in the "Tltle" field just to the left.');
@@ -19475,7 +19534,6 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Author photo');
   t('Body');
   t('Born');
-  t('Briefly describe this teaching resource -- its purpose, intended audience, and content. If this is a resource produced for a course, please also include the name of the institution and program in the description.');
   t('Collection contributors');
   t('Collection curated by');
   t('Contact e-mail');
@@ -19522,6 +19580,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Enter the email address of the person. The author\'s email will not be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.');
   t('Enter the family name of the person (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.');
   t('Enter the given name of the person (e.g. "John" in "John Smith").');
+  t('Enter the link to the teaching resource. Indicate the nature of the link using the title field.');
   t('Enter the name of organizations this person is affiliated with. Examples include: artist-and-writer collectives, employers, nonprofit organizations, research groups, universities. The text in the short biography can elaborate and clarify the nature and duration of the person\'s affiliation with this organization. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('Enter the name of the author discussed in this note. This is an autocomplete field that will only complete on authors that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/person" target="_blank">add the person</a>. ');
   t('Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.');
@@ -19534,11 +19593,9 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Enter the person\'s nationality (passport country).');
   t('Enter the title of the creative work or works discussed in this note. This is an autocomplete field that will only complete on works that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/work" target="_blank">add the creative work</a>. ');
   t('Enter the title of the critical writing discussed in this note. This is an autocomplete field that will only complete on items that already have records in the knowledge base. If the critical writing is not in the KB, first <a href="/node/add/critical_writing" target="_blank">add the critical writing</a>');
-  t('Enter the titles of critical writing in the teaching resource. If it is not in the knowledge base, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
   t('Enter the website of the person here. Indicate the source of the website (e.g. “Personal website”, “University Profile”) in the title field and the web address in the URL field.');
   t('Enter the year of birth.
 <br>Format: 2017');
-  t('Enter titles of works of electronic literature or digital art referenced in the teaching resource. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('Enter your notes here.');
   t('Event');
   t('Event Referenced');
@@ -19585,7 +19642,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the license of the work is known, select it from the pull-down menu.');
   t('If the license of the work is known, select it here. ');
   t('If the note discusses an event, enter the name of the event here. This is an autocomplete field that will only reference records of events that are already in the Knowledge Base. If the name of the event does not autocomplete, first <a href="/node/add/event" target="_blank">add the event</a>.');
-  t('If the resource was developed as part of a curriculum, enter the organization responsible (for example University of Bergen, program in Digital Culture). The field will autocomplete if you have already added the organization. if If the work is not in the knowledge base, first <a href="/node/add/organization" target="_blank">add the organization</a> before completing this record.');
+  t('If the resource was developed as part of a curriculum, enter the organization responsible (for example University of Bergen, program in Digital Culture). The field will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
+  t('If the teaching resource references  a work of electronic literature or digital art, link to it here. The work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
+  t('If the teaching resource references a critical writing, link to it here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
+  t('If the teaching resource references a database or archive, link to it here. The database or archive will autocomplete if it is in the database. If the database or archive is not yet in the database, <a href="node/add/databases-and-archives">add the database or archive</a>.');
+  t('If the teaching resource references another teaching resource, link to it here. The teaching resource will autocomplete if it is in the database. If the teaching resource is not yet in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.');
   t('If the work is available at a web-based archive, such as the Internet Archive, or a university open-research archive, link here.');
   t('If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization\'s name will autocomplete if it is in the database. If the publisher or organization is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing">add the anthology</a>.');
@@ -19604,8 +19665,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If this event is an exhibition, curated by an individual or multiple people, please indicate the curator using the autocomplete field here. If the curator is not yet in the KB,  <a href="/node/add/person" target="_blank">add the person</a> first.');
   t('If this event is associated with another event (for instance a night of readings presented at a conference), link to that event here. The event will autocomplete if it is database. If it is not, first <a href="/node/add/event" target="_blank">add the event</a>');
   t('If this item is a translation, enter the translator. The name will autocomplete if the translator is already in the database. If the translator is not yet in the database, <a href="/node/add/person" target="_blank">add the translator</a>.');
-  t('If this teaching resource is connected to another teaching resource (e.g. an assignment connected to syllabus), cross-reference it using this autocomplete field. The other teaching resource must already be in the Knowledge Base before you can reference it.');
-  t('If this teaching resource references a database or archive link to it with this node reference field. If the resource is already in Knowledge Base it will autocomplete as you type, otherwise first <a href="node/add/databases-and-archives">add the database or archive</a> before completing this record.');
   t('If this work is a translation, please use this field to indicate the translator. The author\'s name will autocomplete if it is in the database. If the translator is not yet in the KB, <a href="/node/add/person" target="_blank">add the translator</a>.');
   t('If this work is part of another creative work (e.g. one piece in a trilogy) reference that work here. The title of the other work will autocomplete if it is in the database.  If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.');
   t('Image');
@@ -19618,6 +19677,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.
 <br><strong>Note</strong>: Only select the term that describes the specific record type. For instance, a review is a review no matter where it is published. An article in a special issue of a print journal is an article in a print publication. The special issue as a whole that contains the article is the special issue, and has a separate record from the article itself.');
   t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
+  t('Indicate the year the teaching resource was created.    
+<br>Format: 2017');
   t('Individual Organizers');
   t('Journal volume and issue');
   t('KB Editor Notes');
@@ -19659,6 +19720,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Presented at Event');
   t('Project Type');
   t('Provide a brief abstract of the critical writing in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
+  t('Provide a brief abstract of the teaching resource in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
   t('Provide a brief description of the work in English, up to 350 words.');
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available.. If you source the biography from elsewhere, indicate the source in parentheses after the biography.');
@@ -19681,14 +19743,15 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Screen shots');
   t('Screenshot');
   t('Screenshots of the database or archive.');
-  t('Select the human language of the additional language abstract.  Note: this is a taxonomy field, which will replace the previous Language of abstract field, which will be deleted once the data is migrated from it. For new records, disregard the other Language of abstract field above and use this one.');
-  t('Select the human language of the teaching resource. Select multiple if the work includes multiple languages.');
+  t('Select the human language of the additional language abstract.');
+  t('Select the human language of the teaching resource. Select multiple if the teaching resource includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
   t('Select the human language the work was written in. Select multiple if the work includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
   t('Select the human language used in the original language abstract field.');
   t('Select the human language used in the original language description field.');
   t('Select the license that the platform is released under from the list.');
   t('Select the person’s gender.');
   t('Select the primary human language(s) of the database or resource. Select multiple using the Crtl (or Apple) key.');
+  t('Select the type of the teaching resource.');
   t('Select the year this resource was first made available. A more detailed chronology can be provided in the description.');
   t('Select which of your notebooks you want the note to be attached to.');
   t('Series');
@@ -19716,7 +19779,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Upload screenshots or other relevant imagery of the work here.');
   t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. If the event is not yet in the database, first add it before completing the record.');
   t('Use this field to display Vimeo and YouTube videos, and other multimedia content.');
-  t('Use this field to display Vimeo and YouTube videos, and other multimedia content. Note: flickr photo sets are not currently working with this field. We are waiting for an update to the module, so please wait until the issue is resolved before adding them.');
   t('Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.');
   t('Use this field to indicate URLs associated with the platform (e.g. download, documentation sites, etc.) Indicate the nature of the link using the title field. Multiple URLs are permitted.');
   t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The field will autocomplete. If the person is not yet in the database first <a href="/node/add/person" target="_blank">add the person</a>.');
