@@ -15,7 +15,7 @@ function elmcip_content_types_field_default_field_instances() {
   $field_instances['node-critical_writing-field_critical_writing_year'] = array(
     'bundle' => 'critical_writing',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -112,7 +112,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Platform/Software',
+    'description' => 'If this critical writing references a platform/software, link to it here. The platform or software will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -178,7 +178,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.',
+    'description' => 'If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -246,7 +246,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this critical writing has an entry in the Po.Ex database, add a reference here by linking the complete URL of the page.',
+    'description' => 'If there is a record for this critical writing in the PO.EX database, enter the URL of the entry.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1373,10 +1373,12 @@ function elmcip_content_types_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Add notes about editorial status here.');
   t('Developers');
+  t('If there is a record for this critical writing in the PO.EX database, enter the URL of the entry.');
   t('If there is a record for this work in the Narrabase project, enter the URL of the entry.');
   t('If there is a record for this work in the PO.EX database, enter the URL of the entry.');
-  t('If this critical writing has an entry in the Po.Ex database, add a reference here by linking the complete URL of the page.');
-  t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
+  t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
+  t('If this critical writing references a platform/software, link to it here. The platform or software will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
+  t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
   t('Indicate the year that this platform was first released.');
   t('KB Editor Notes');
   t('Narrabase.net entry');

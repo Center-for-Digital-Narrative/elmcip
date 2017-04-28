@@ -361,7 +361,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please enter a brief abstract in English describing the critical work or article in fewer than 350 words. ',
+    'description' => 'Provide a brief abstract of the critical writing in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -468,11 +468,46 @@ function elmcip_field_instances_field_default_field_instances() {
         'weight' => 36,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract',
     'label' => 'Abstract (in English)',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -494,7 +529,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<b>If the work is not written in English</b> write an abstract of fewer than 350 words in the original language. Leave this field empty if the language of the work is English.',
+    'description' => '<strong>If the work is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -594,11 +629,46 @@ function elmcip_field_instances_field_default_field_instances() {
         'weight' => 37,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang',
     'label' => 'Abstract (in original language)',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -620,7 +690,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language of the additional language abstract. ',
+    'description' => 'Select the human language used in the original language abstract field.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -822,7 +892,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.',
+    'description' => 'Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>. Use additional fields for co-authors.',
     'display' => array(
       3 => array(
         'label' => 'hidden',
@@ -951,6 +1021,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'weight' => 5,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_author_name',
     'label' => 'Author',
@@ -977,7 +1048,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this critical writing references a database or archive, enter it using this autocomplete field, otherwise first add the database.',
+    'description' => 'If this critical writing references a database or archive, link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/databases-and-archives" target="_blank">add the database or archive</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1162,7 +1233,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 30,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 8,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -1172,7 +1243,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the editor if applicable. The name will autocomplete if the editor is already in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now. If you are entering an article or chapter from an anthology, do <i>not</i> enter the editor of the volume here.',
+    'description' => 'Enter the editor if applicable. The name will autocomplete if the editor is already in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>. If you are entering an article or chapter from an anthology, do not enter the editor of the volume here.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -1394,7 +1465,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If a publication has an eISSN number enter it here.',
+    'description' => 'If the critical writing has an eISSN number, add it here.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -1500,6 +1571,40 @@ function elmcip_field_instances_field_default_field_instances() {
     'label' => 'eISSN',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1511,7 +1616,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 25,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 6,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -1522,7 +1627,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this critical writing has an entry in the ELO\'s Electronic Literature Directory, add a reference here by linking the complete URL of the page.',
+    'description' => 'If there is a record for this critical writing in the Electronic Literature Directory, enter the URL of the entry.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1737,7 +1842,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. If the publication is not yet in the Knowledge Base, you should first <a href="/node/add/critical-writing">add the critical writing</a>.',
+    'description' => 'If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. The name will autocomplete if it is in the database. If the publication is not yet in the database <a href="/node/add/critical-writing">add the critical writing</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -1890,7 +1995,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 13,
     ),
     'widget_type' => 'nodereference_autocomplete',
   );
@@ -1900,7 +2005,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the ISBN-13 (preferred) or ISBN-10, including the hyphens, if listed. If a book is published in hardcover and paperback editions, enter the hardcover edition first. Note: The International Standard Book Number (ISBN) is a numeric identifier assigned to each edition and variation of a book. You will only enter this number you are entering a book. The number is typically found on the copyright page and on the back cover or jacket of the book. You can also find the ISBN by looking the book up in WorldCat, a library catalog, or an online bookstore, such as Amazon.com.',
+    'description' => 'If the critical writing has an ISBN, add it here. Enter the ISBN-13 (preferred) or ISBN-10, including the hyphens, if listed. If a book is published in hardcover and paperback editions, enter the hardcover edition first.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -2013,6 +2118,40 @@ function elmcip_field_instances_field_default_field_instances() {
     'label' => 'ISBN',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2032,9 +2171,9 @@ function elmcip_field_instances_field_default_field_instances() {
   // Exported field_instance: 'node-critical_writing-field_issn_text'.
   $field_instances['node-critical_writing-field_issn_text'] = array(
     'bundle' => 'critical_writing',
-    'default_value' => '',
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'If the critical writing has an ISSN, add it here.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -2141,26 +2280,58 @@ function elmcip_field_instances_field_default_field_instances() {
         'weight' => 40,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_issn_text',
     'label' => 'ISSN',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'weight' => 40,
     'widget' => array(
-      'active' => 0,
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'default_value' => NULL,
-        'default_value_php' => NULL,
-        'rows' => 5,
         'size' => 25,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 5,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -2295,7 +2466,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -2305,7 +2476,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language the work was written in. Select multiple if the work includes multiple languages. Note: this is a taxonomy field, which will replace the previous Language field, which will be deleted once the data is migrated from it. For new records, disregard the other Language field above and use this one.',
+    'description' => 'Select the human language the work was written in. Select multiple if the work includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2342,6 +2513,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'weight' => 41,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_language_tax',
     'label' => 'Language',
@@ -2489,7 +2661,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   $field_instances['node-critical_writing-field_media_asset'] = array(
     'bundle' => 'critical_writing',
     'deleted' => 0,
-    'description' => 'Use this field to display Vimeo and YouTube videos, Flickr sets, and other multimedia content. ',
+    'description' => 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2772,7 +2944,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the name of the <b>publisher of book, title of journal</b>, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.',
+    'description' => 'Enter the name of the publisher of book, title of journal, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -2933,7 +3105,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the critical article was presented at a conference, select here. The event will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.',
+    'description' => 'If the critical writing was presented at a conference, select here. The event will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -3094,7 +3266,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the title of a work of electronic literature or digital art referenced in the critical writing. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.',
+    'description' => 'If the critical writing references  a work of electronic literature or digital art, link to it here. The creative work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -3248,7 +3420,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If an organization is referenced in the article, select the organization in the autocomplete field. If the organization is not yet in the KB, first add the <a href="/node/add/organiztion" target="_blank">organization</a>.',
+    'description' => 'If the critical writing references an organization is referenced in the article, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organiztion" target="_blank">add the organization</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3313,7 +3485,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record in the Knowledge Base of another edition of this item, cross reference it here.',
+    'description' => 'If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3372,7 +3544,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -3381,7 +3553,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record in the knowledge base of another version of this item published in another language, link to it here.',
+    'description' => 'If there is another version of this critical writing published in another language, link to it here.The other language version will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the work</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -3656,7 +3828,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 14,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 12,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -3667,7 +3839,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the critical writing references a particular publisher or journal (for example, a conference paper about a particular online journal), use this node reference field to add the publisher. If it is not yet in the Knowledge Base, first add the <a href="/node/add/publisher" target="_blank">publisher</a>.',
+    'description' => 'If the critical writing references a particular publisher or journal (for example, a conference paper about a particular online journal), link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3732,8 +3904,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the publication type of this critical writing. Multiple selections may apply if the same item fits multiple categories (e.g. a conference paper that is also published as a journal publication), but a single selection is usually adequate. 
-<b>Note:</B> Only select the term that describes the specific record type. For instance, a review is a review no matter where it is published. An article in a special issue of a print journal is an article in a print publication. The special issue as a whole that contains the article is the special issue, and has a separate record from the article itself.',
+    'description' => 'Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.
+<br><strong>Note</strong>: Only select the term that describes the specific record type. For instance, a review is a review no matter where it is published. An article in a special issue of a print journal is an article in a print publication. The special issue as a whole that contains the article is the special issue, and has a separate record from the article itself.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3793,7 +3965,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter a significant passage (1-2 sentences) excerpted from the text that will help to contextualize it. The quote may displayed on the Knowledge Base and should be representative of the text, pinpointing its primary claim(s) or identifying a key topic, so as to entice readers to access and read the work. <i>Note</i>: Do <b>not</b> put quotation marks around the pull quote.',
+    'description' => 'Enter representative passages of text (1-3 sentences) excerpted from the work.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -3899,6 +4071,40 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'label' => 'Pull Quotes',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -3982,7 +4188,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the critical writing is <b>about an event</b>, e.g. a review or trip report of a conference, enter the event here. The field will autocomplete if the event is in the KB, otherwise add the <a href="/node/add/event" target="_blank">event</a> first.',
+    'description' => 'If the critical writing references an event, e.g. a review or trip report of a conference,  link to it here. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -4133,7 +4339,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the critical work was published as part of a series, enter the series title here.  The series title will autocomplete if a node record for it exists in the database. If the series is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the series</a>. <b>Note:</b> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</I>, are series).',
+    'description' => 'If the critical work was published as part of a series, enter the series title here. The name will autocomplete if the series is already in the database. If the series is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the series</a>. <strong>Note:</strong> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</i>, are series).
+',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4192,7 +4399,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -4201,7 +4408,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If one work of critical writing references another in a substantial way (sustained critical engagement) cross-reference it here by entering the title in the autocomplete field. If it is not yet in the knowledge base, first <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
+    'description' => 'If the critical writing references  other critical writing, cross-reference it with a  link  here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database,  <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -4346,7 +4553,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this item is a translation, indicate the translator here by typing the name, If the translator is in the Knowledge Base, the field will autocomplete. Otherwise, first  <a href="/node/add/person" target="_blank">add the translator</a>. before completing the record.',
+    'description' => 'If this item is a translation, enter the translator. The name will autocomplete if the translator is already in the database. If the translator is not yet in the database, <a href="/node/add/person" target="_blank">add the translator</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4417,7 +4624,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Note: for dissertations and theses only, indicate the university in which the thesis was produced. If the university is not yet in the database, first add the <a href="/node/add/organization">university as an organization</a>.',
+    'description' => '<strong>For dissertations and theses only</strong>, indicate the university in which the thesis was produced.The university’s will autocomplete if it is in the database. If the university is not yet in the database, <a href="/node/add/organization" target="_blank">add the university as an organization</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4485,7 +4692,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Locating the Literary in New Media (Contemporary Literature), Locating the Literary in New Media  (ebr), etc.',
+    'description' => 'Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Locating the Literary in New Media (Contemporary Literature), Locating the Literary in New Media (ebr), etc.',
     'display' => array(
       3 => array(
         'label' => 'hidden',
@@ -4629,7 +4836,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If a record for this item is available on the WorldCat library database, enter the Permalink here. Use the URL title field to indicate the edition year (e.g. 1996 ed.). Multiple entries allowed.',
+    'description' => 'If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the URL title field to indicate the edition year (e.g. 1996 ed.). ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4699,7 +4906,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -19147,8 +19354,9 @@ Note: Before adding a new person record, check to see if he or she is already li
   // Translatables
   // Included for use with string extractors like potx.
   t('<b>If the teaching resource is not written in English</b> write an description of fewer than 500 words in the original language. Leave this field empty if the language of the teaching resource is English.');
-  t('<b>If the work is not written in English</b> write an abstract of fewer than 350 words in the original language. Leave this field empty if the language of the work is English.');
   t('<b>Note:</b> If the teaching resource is a syllabus for a course, enter the title of the course in the "Title of Resource" field in the following format: Title: Subtitle (Course number, Semester year). For example, <i>Digital Genres: Digital Art, Electronic Literature, and Computer Games (DIKULT 103, Spring 2011)</i>. ');
+  t('<strong>For dissertations and theses only</strong>, indicate the university in which the thesis was produced.The university’s will autocomplete if it is in the database. If the university is not yet in the database, <a href="/node/add/organization" target="_blank">add the university as an organization</a>.');
+  t('<strong>If the work is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.');
   t('A brief description (fewer than 350 words) in English about the database or resource.');
   t('A brief description (fewer than 350 words) of the database or resource in the resource\'s original language. ');
@@ -19224,21 +19432,19 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Electronic Literature Directory entry');
   t('Email');
   t('Enter a URL where the entire work or source files may be downloaded, if applicable.');
-  t('Enter a significant passage (1-2 sentences) excerpted from the text that will help to contextualize it. The quote may displayed on the Knowledge Base and should be representative of the text, pinpointing its primary claim(s) or identifying a key topic, so as to entice readers to access and read the work. <i>Note</i>: Do <b>not</b> put quotation marks around the pull quote.');
   t('Enter editors if applicable. The name will autocomplete if the editor is in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now.');
   t('Enter representative passages of text (1-3 sentences) excerpted from the work.');
   t('Enter technical information or instructions required for the user to access the work.');
-  t('Enter the ISBN-13 (preferred) or ISBN-10, including the hyphens, if listed. If a book is published in hardcover and paperback editions, enter the hardcover edition first. Note: The International Standard Book Number (ISBN) is a numeric identifier assigned to each edition and variation of a book. You will only enter this number you are entering a book. The number is typically found on the copyright page and on the back cover or jacket of the book. You can also find the ISBN by looking the book up in WorldCat, a library catalog, or an online bookstore, such as Amazon.com.');
-  t('Enter the editor if applicable. The name will autocomplete if the editor is already in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now. If you are entering an article or chapter from an anthology, do <i>not</i> enter the editor of the volume here.');
+  t('Enter the editor if applicable. The name will autocomplete if the editor is already in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>. If you are entering an article or chapter from an anthology, do not enter the editor of the volume here.');
   t('Enter the name of organizations this person is closely affiliated with. Examples include: artist-and-writer collectives, employers, nonprofit organizations, research groups, universities. The text in the short biography can elaborate and clarify the nature and duration of the person\'s affiliation with this organization. If the organization is not yet in the KB, first <a href="/node/add/organization" target="_blank">add the organization</a>.');
-  t('Enter the name of the <b>publisher of book, title of journal</b>, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
   t('Enter the name of the author discussed in this note. This is an autocomplete field that will only complete on authors that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/person" target="_blank">add the person</a>. ');
   t('Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.');
+  t('Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>. Use additional fields for co-authors.');
   t('Enter the name of the organization that arranged the event. If the organization does not autocomplete, <a href="/node/add/organization" target="_blank">add the organization</a> now before completing this record.');
   t('Enter the name of the person or people who developed this resource. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.');
+  t('Enter the name of the publisher of book, title of journal, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
   t('Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is already in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.<br><br>
 Note: Before adding a new person record, check to see if he or she is already listed as an author.');
-  t('Enter the title of a work of electronic literature or digital art referenced in the critical writing. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('Enter the title of the creative work or works discussed in this note. This is an autocomplete field that will only complete on works that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/work" target="_blank">add the creative work</a>. ');
   t('Enter the title of the critical writing discussed in this note. This is an autocomplete field that will only complete on items that already have records in the knowledge base. If the critical writing is not in the KB, first <a href="/node/add/critical_writing" target="_blank">add the critical writing</a>');
   t('Enter the titles of critical writing in the teaching resource. If it is not in the knowledge base, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
@@ -19261,25 +19467,28 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('ISSN');
   t('If a person\'s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.');
   t('If a publication has an e-ISSN number enter it here.');
-  t('If a publication has an eISSN number enter it here.');
-  t('If a record for this item is available on the WorldCat library database, enter the Permalink here. Use the URL title field to indicate the edition year (e.g. 1996 ed.). Multiple entries allowed.');
+  t('If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the URL title field to indicate the edition year (e.g. 1996 ed.). ');
   t('If an article appears in a numbered and/or dated serial, enter the volume number first, followed by a period and the issue number. For a publication paginated by issue, e.g. (volume 42, issue 1), simply enter: 42.1.
 For an article published in a weekly or monthly periodical, enter the day first, then the month (abbreviated except for May, June, and July), e.g. 20 Oct. or 01 May. ');
-  t('If an organization is referenced in the article, select the organization in the autocomplete field. If the organization is not yet in the KB, first add the <a href="/node/add/organiztion" target="_blank">organization</a>.');
   t('If an organization is responsible for developing and maintaining this project, indicate which one using the autocomplete field. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('If information about the event is available at a web-based archive, such as the Internet Archive, or a university open research archive, link here.');
-  t('If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Locating the Literary in New Media (Contemporary Literature), Locating the Literary in New Media  (ebr), etc.');
-  t('If one work of critical writing references another in a substantial way (sustained critical engagement) cross-reference it here by entering the title in the autocomplete field. If it is not yet in the knowledge base, first <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
   t('If the author is a contributor to the ELMCIP Knowledge Base, enter the author\'s KB username here, usually first and last name. The field will autocomplete. Please only enter if you are the author, or an editor of the KB. Identifying the KB user ID will allow us to display works entered by others on each individual author\'s profile page.');
   t('If the author\'s name has another spelling in the author\'s native language (e.g. a Russian name in Cyrillic) enter it in this field.');
   t('If the creative work has an ISBN, add it here. If there are multiple ISBNs, indicate type after number e.g. 978-3-11-027239-0 (e-ISBN).');
-  t('If the critical article was presented at a conference, select here. The event will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
-  t('If the critical work was published as part of a series, enter the series title here.  The series title will autocomplete if a node record for it exists in the database. If the series is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the series</a>. <b>Note:</b> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</I>, are series).');
-  t('If the critical writing is <b>about an event</b>, e.g. a review or trip report of a conference, enter the event here. The field will autocomplete if the event is in the KB, otherwise add the <a href="/node/add/event" target="_blank">event</a> first.');
+  t('If the critical work was published as part of a series, enter the series title here. The name will autocomplete if the series is already in the database. If the series is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the series</a>. <strong>Note:</strong> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</i>, are series).
+');
+  t('If the critical writing has an ISBN, add it here. Enter the ISBN-13 (preferred) or ISBN-10, including the hyphens, if listed. If a book is published in hardcover and paperback editions, enter the hardcover edition first.');
+  t('If the critical writing has an ISSN, add it here.');
+  t('If the critical writing has an eISSN number, add it here.');
   t('If the critical writing is available at a web-based archive, such as the Internet Archive, or a university open research archive, link here.');
   t('If the critical writing is published in a journal or book, enter the start and end page numbers, separated by a hyphen (e.g. 65-77). Use the complete number (e.g. 277-297).');
-  t('If the critical writing references a particular publisher or journal (for example, a conference paper about a particular online journal), use this node reference field to add the publisher. If it is not yet in the Knowledge Base, first add the <a href="/node/add/publisher" target="_blank">publisher</a>.');
-  t('If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. If the publication is not yet in the Knowledge Base, you should first <a href="/node/add/critical-writing">add the critical writing</a>.');
+  t('If the critical writing references  a work of electronic literature or digital art, link to it here. The creative work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
+  t('If the critical writing references  other critical writing, cross-reference it with a  link  here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database,  <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
+  t('If the critical writing references a particular publisher or journal (for example, a conference paper about a particular online journal), link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
+  t('If the critical writing references an event, e.g. a review or trip report of a conference,  link to it here. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
+  t('If the critical writing references an organization is referenced in the article, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organiztion" target="_blank">add the organization</a>.');
+  t('If the critical writing was presented at a conference, select here. The event will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
+  t('If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. The name will autocomplete if it is in the database. If the publication is not yet in the database <a href="/node/add/critical-writing">add the critical writing</a>.');
   t('If the event is part of a series, link to it by typing the name of the series. The name will autocomplete if it is in the database. If the series has not yet been added, first <a href="/node/add/event" target="_blank">create an event record for the series</a>.');
   t('If the license of the work is known, select here.');
   t('If the license of the work is known, select it from the pull-down menu.');
@@ -19291,19 +19500,19 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing">add the anthology</a>.');
   t('If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.
 ');
+  t('If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
+  t('If there is a record for this critical writing in the Electronic Literature Directory, enter the URL of the entry.');
   t('If there is a record for this work in the Electronic Literature Directory, enter the URL of the entry here (for example http://directory.eliterature.org/node/407) to create a cross-reference between the databases.');
   t('If there is a record for this work in the I ♥ E-Poetry project, enter the URL of the entry.');
   t('If there is a record for this work in the NT2 Répertoire des arts et littératures hypermédiatiques, enter the URL of the entry.');
   t('If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the title field of the URL (e.g. 1996. ed.)');
-  t('If there is a record in the Knowledge Base of another edition of this item, cross reference it here.');
   t('If there is a record in the knowledge base of a version of this creative work published in another language, link to it here.The other language version will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
-  t('If there is a record in the knowledge base of another version of this item published in another language, link to it here.');
-  t('If this critical writing has an entry in the ELO\'s Electronic Literature Directory, add a reference here by linking the complete URL of the page.');
+  t('If there is another version of this critical writing published in another language, link to it here.The other language version will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the work</a>.');
   t('If this critical writing has been published in multiple editions, enter information about this edition here (e.g. 2nd edition).');
-  t('If this critical writing references a database or archive, enter it using this autocomplete field, otherwise first add the database.');
+  t('If this critical writing references a database or archive, link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/databases-and-archives" target="_blank">add the database or archive</a>.');
   t('If this event is an exhibition, curated by an individual or multiple people, please indicate the curator using the autocomplete field here. If the curator is not yet in the KB,  <a href="/node/add/person" target="_blank">add the person</a> first.');
   t('If this event is associated with another event (for instance a night of readings presented at a conference), link to that event here. The event will autocomplete if it is database. If it is not, first <a href="/node/add/event" target="_blank">add the event</a>');
-  t('If this item is a translation, indicate the translator here by typing the name, If the translator is in the Knowledge Base, the field will autocomplete. Otherwise, first  <a href="/node/add/person" target="_blank">add the translator</a>. before completing the record.');
+  t('If this item is a translation, enter the translator. The name will autocomplete if the translator is already in the database. If the translator is not yet in the database, <a href="/node/add/person" target="_blank">add the translator</a>.');
   t('If this teaching resource is connected to another teaching resource (e.g. an assignment connected to syllabus), cross-reference it using this autocomplete field. The other teaching resource must already be in the Knowledge Base before you can reference it.');
   t('If this teaching resource references a database or archive link to it with this node reference field. If the resource is already in Knowledge Base it will autocomplete as you type, otherwise first <a href="node/add/databases-and-archives">add the database or archive</a> before completing this record.');
   t('If this work is a translation, please use this field to indicate the translator. The author\'s name will autocomplete if it is in the database. If the translator is not yet in the KB, <a href="/node/add/person" target="_blank">add the translator</a>.');
@@ -19313,7 +19522,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Images');
   t('Important technical notes about the database or archive.');
   t('Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.');
+  t('Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Locating the Literary in New Media (Contemporary Literature), Locating the Literary in New Media (ebr), etc.');
   t('Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.');
+  t('Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.
+<br><strong>Note</strong>: Only select the term that describes the specific record type. For instance, a review is a review no matter where it is published. An article in a special issue of a print journal is an article in a print publication. The special issue as a whole that contains the article is the special issue, and has a separate record from the article itself.');
   t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
   t('Individual Organizers');
   t('Journal volume and issue');
@@ -19338,7 +19550,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('NT2 entry');
   t('Nationality');
   t('Note: You may add multiple locations here. Note that the form appears twice. <b>Unless you are entering more than one location, only fill out the first location field.</b> If you are adding more than two locations, hit the add another button, fill out the fields, and repeat for all locations.');
-  t('Note: for dissertations and theses only, indicate the university in which the thesis was produced. If the university is not yet in the database, first add the <a href="/node/add/organization">university as an organization</a>.');
   t('Notebook');
   t('Organization');
   t('Organization referenced');
@@ -19351,7 +19562,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Part of another work');
   t('People');
   t('Personal website');
-  t('Please enter a brief abstract in English describing the critical work or article in fewer than 350 words. ');
   t('Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)');
   t('Please include physical location information for the publisher. The city name is particularly important for bibliographic citation.');
   t('Please provide about the author\'s location.  Only city, state, and country will be publicly displayed.');
@@ -19359,6 +19569,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Please provide the person\'s nationality (passport country).');
   t('Presented at Event');
   t('Project Type');
+  t('Provide a brief abstract of the critical writing in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
   t('Provide a brief description of the work in English, up to 350 words.');
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available. Provide basic professional details, as well as year of birth, etc.');
@@ -19381,16 +19592,13 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Screen shots');
   t('Screenshot');
   t('Screenshots of the database or archive.');
-  t('Select the human language of the additional language abstract. ');
   t('Select the human language of the additional language abstract.  Note: this is a taxonomy field, which will replace the previous Language of abstract field, which will be deleted once the data is migrated from it. For new records, disregard the other Language of abstract field above and use this one.');
   t('Select the human language of the teaching resource. Select multiple if the work includes multiple languages.');
   t('Select the human language the work was written in. Select multiple if the work includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
-  t('Select the human language the work was written in. Select multiple if the work includes multiple languages. Note: this is a taxonomy field, which will replace the previous Language field, which will be deleted once the data is migrated from it. For new records, disregard the other Language field above and use this one.');
+  t('Select the human language used in the original language abstract field.');
   t('Select the human language used in the original language description field.');
   t('Select the license that the platform is released under from the list.');
   t('Select the primary human language(s) of the database or resource. Select multiple using the Crtl (or Apple) key.');
-  t('Select the publication type of this critical writing. Multiple selections may apply if the same item fits multiple categories (e.g. a conference paper that is also published as a journal publication), but a single selection is usually adequate. 
-<b>Note:</B> Only select the term that describes the specific record type. For instance, a review is a review no matter where it is published. An article in a special issue of a print journal is an article in a print publication. The special issue as a whole that contains the article is the special issue, and has a separate record from the article itself.');
   t('Select the year this resource was first made available. A more detailed chronology can be provided in the description.');
   t('Select which of your notebooks you want the note to be attached to.');
   t('Series');
@@ -19417,7 +19625,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Upload screenshots or other relevant imagery of the work here.');
   t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. If the event is not yet in the database, first add it before completing the record.');
   t('Use this field to attach a text or pdf document, such as a CV.');
-  t('Use this field to display Vimeo and YouTube videos, Flickr sets, and other multimedia content. ');
   t('Use this field to display Vimeo and YouTube videos, and other multimedia content.');
   t('Use this field to display Vimeo and YouTube videos, and other multimedia content. Note: flickr photo sets are not currently working with this field. We are waiting for an update to the module, so please wait until the issue is resolved before adding them.');
   t('Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.');
