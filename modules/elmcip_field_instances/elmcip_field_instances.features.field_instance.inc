@@ -8845,7 +8845,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the name of organizations this person is closely affiliated with. Examples include: artist-and-writer collectives, employers, nonprofit organizations, research groups, universities. The text in the short biography can elaborate and clarify the nature and duration of the person\'s affiliation with this organization. If the organization is not yet in the KB, first <a href="/node/add/organization" target="_blank">add the organization</a>.',
+    'description' => 'Enter the name of organizations this person is affiliated with. Examples include: artist-and-writer collectives, employers, nonprofit organizations, research groups, universities. The text in the short biography can elaborate and clarify the nature and duration of the person\'s affiliation with this organization. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8881,6 +8881,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_affiliation',
     'label' => 'Affiliations - Organizations',
@@ -8995,7 +8996,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'The author\'s email will <I>not</i> be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.',
+    'description' => 'Enter the email address of the person. The author\'s email will not be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -9100,6 +9101,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 8,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_auth_email',
     'label' => 'Author email',
@@ -9124,7 +9126,9 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-person-field_authorphoto'] = array(
     'bundle' => 'person',
     'deleted' => 0,
-    'description' => 'Upload a photo of the author.',
+    'description' => 'Upload a photo of the person.
+<br>Files must be less than <strong>600 MB</strong>.
+<br>Allowed file types: <strong>png gif jpg jpeg</strong>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -9188,7 +9192,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       'file_directory' => 'media/author_photos',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '400x400',
+      'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 1,
       'user_register_form' => FALSE,
@@ -9263,7 +9267,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-person-field_files'] = array(
     'bundle' => 'person',
     'deleted' => 0,
-    'description' => 'Use this field to attach a text or pdf document, such as a CV.',
+    'description' => 'Attach relevant text or pdf documents here, such as a CV.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -9321,7 +9325,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Given name (e.g. "John" in "John Smith")',
+    'description' => 'Enter the given name of the person (e.g. "John" in "John Smith").',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -9397,11 +9401,46 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 4,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_first_name',
     'label' => 'First name',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -9423,7 +9462,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select the person’s gender.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -9475,7 +9514,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Family name of the individual (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.',
+    'description' => 'Enter the family name of the person (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -9612,7 +9651,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'If applicable, enter the middle name of the person. ',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -9763,7 +9802,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please provide the person\'s nationality (passport country).',
+    'description' => 'Enter the person\'s nationality (passport country).',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -9919,7 +9958,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please provide about the author\'s location.  Only city, state, and country will be publicly displayed.',
+    'description' => 'Enter information about the person’s location. Only city, state, and country will be publicly displayed.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -9996,6 +10035,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 5,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_residency',
     'label' => 'Residency',
@@ -10019,7 +10059,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide a short biography of the author if available. Provide basic professional details, as well as year of birth, etc.',
+    'description' => 'Provide a short biography of the author if available.. If you source the biography from elsewhere, indicate the source in parentheses after the biography.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -10103,6 +10143,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Short biography',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -10124,7 +10198,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the website of the person here. Indicate the source of the website (e.g. “Personal website”, “University Profile”) in the title field and the web address in the URL field.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -10247,7 +10321,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the author is a contributor to the ELMCIP Knowledge Base, enter the author\'s KB username here, usually first and last name. The field will autocomplete. Please only enter if you are the author, or an editor of the KB. Identifying the KB user ID will allow us to display works entered by others on each individual author\'s profile page.',
+    'description' => 'If the author is a contributor to the ELMCIP Knowledge Base, enter the author\'s KB username here, usually first and last name. The field will autocomplete.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -10320,7 +10394,8 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-person-field_yearborn'] = array(
     'bundle' => 'person',
     'deleted' => 0,
-    'description' => 'Year of birth.',
+    'description' => 'Enter the year of birth.
+<br>Format: 2017',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -10543,6 +10618,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'input_format' => 'd.m.Y - H:i:s',
         'input_format_custom' => '\'Y\'',
         'label_position' => 'above',
+        'no_fieldset' => 0,
         'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-130:+0',
@@ -10557,7 +10633,8 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-person-field_yeardied'] = array(
     'bundle' => 'person',
     'deleted' => 0,
-    'description' => 'Year of death.',
+    'description' => 'If applicable, enter the year of death.
+<br>Format: 2017',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -10780,6 +10857,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'input_format' => 'd.m.Y - H:i:s',
         'input_format_custom' => '\'Y\'',
         'label_position' => 'above',
+        'no_fieldset' => 0,
         'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-80:+0',
@@ -19384,6 +19462,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Attach relevant files here.');
   t('Attach relevant files here. Examples include PDFs of handouts, mp3 file of audio recordings, and slides used in lectures.');
   t('Attach relevant images, such as screenshots of the development environment or other useful images.');
+  t('Attach relevant text or pdf documents here, such as a CV.');
   t('Attach remote media, such as video tutorials on Vimeo or YouTube.');
   t('Attachment');
   t('Attachments');
@@ -19433,10 +19512,14 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Email');
   t('Enter a URL where the entire work or source files may be downloaded, if applicable.');
   t('Enter editors if applicable. The name will autocomplete if the editor is in the database. Otherwise <a href="/node/add/person" target="_blank">add the editor</a> now.');
+  t('Enter information about the person’s location. Only city, state, and country will be publicly displayed.');
   t('Enter representative passages of text (1-3 sentences) excerpted from the work.');
   t('Enter technical information or instructions required for the user to access the work.');
   t('Enter the editor if applicable. The name will autocomplete if the editor is already in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>. If you are entering an article or chapter from an anthology, do not enter the editor of the volume here.');
-  t('Enter the name of organizations this person is closely affiliated with. Examples include: artist-and-writer collectives, employers, nonprofit organizations, research groups, universities. The text in the short biography can elaborate and clarify the nature and duration of the person\'s affiliation with this organization. If the organization is not yet in the KB, first <a href="/node/add/organization" target="_blank">add the organization</a>.');
+  t('Enter the email address of the person. The author\'s email will not be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.');
+  t('Enter the family name of the person (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.');
+  t('Enter the given name of the person (e.g. "John" in "John Smith").');
+  t('Enter the name of organizations this person is affiliated with. Examples include: artist-and-writer collectives, employers, nonprofit organizations, research groups, universities. The text in the short biography can elaborate and clarify the nature and duration of the person\'s affiliation with this organization. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('Enter the name of the author discussed in this note. This is an autocomplete field that will only complete on authors that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/person" target="_blank">add the person</a>. ');
   t('Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.');
   t('Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>. Use additional fields for co-authors.');
@@ -19445,9 +19528,13 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Enter the name of the publisher of book, title of journal, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
   t('Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is already in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.<br><br>
 Note: Before adding a new person record, check to see if he or she is already listed as an author.');
+  t('Enter the person\'s nationality (passport country).');
   t('Enter the title of the creative work or works discussed in this note. This is an autocomplete field that will only complete on works that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/work" target="_blank">add the creative work</a>. ');
   t('Enter the title of the critical writing discussed in this note. This is an autocomplete field that will only complete on items that already have records in the knowledge base. If the critical writing is not in the KB, first <a href="/node/add/critical_writing" target="_blank">add the critical writing</a>');
   t('Enter the titles of critical writing in the teaching resource. If it is not in the knowledge base, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
+  t('Enter the website of the person here. Indicate the source of the website (e.g. “Personal website”, “University Profile”) in the title field and the web address in the URL field.');
+  t('Enter the year of birth.
+<br>Format: 2017');
   t('Enter titles of works of electronic literature or digital art referenced in the teaching resource. If the work is not in the knowledge base, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('Enter your notes here.');
   t('Event');
@@ -19457,11 +19544,9 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('Event type');
   t('Events');
   t('Events where this resource or database has been featured. Only events can be referenced on this node.');
-  t('Family name of the individual (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.');
   t('Field to add screenshot to book pages.');
   t('First name');
   t('Gender');
-  t('Given name (e.g. "John" in "John Smith")');
   t('I ♥ E-Poetry entry');
   t('ISBN');
   t('ISSN');
@@ -19471,8 +19556,11 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('If an article appears in a numbered and/or dated serial, enter the volume number first, followed by a period and the issue number. For a publication paginated by issue, e.g. (volume 42, issue 1), simply enter: 42.1.
 For an article published in a weekly or monthly periodical, enter the day first, then the month (abbreviated except for May, June, and July), e.g. 20 Oct. or 01 May. ');
   t('If an organization is responsible for developing and maintaining this project, indicate which one using the autocomplete field. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
+  t('If applicable, enter the middle name of the person. ');
+  t('If applicable, enter the year of death.
+<br>Format: 2017');
   t('If information about the event is available at a web-based archive, such as the Internet Archive, or a university open research archive, link here.');
-  t('If the author is a contributor to the ELMCIP Knowledge Base, enter the author\'s KB username here, usually first and last name. The field will autocomplete. Please only enter if you are the author, or an editor of the KB. Identifying the KB user ID will allow us to display works entered by others on each individual author\'s profile page.');
+  t('If the author is a contributor to the ELMCIP Knowledge Base, enter the author\'s KB username here, usually first and last name. The field will autocomplete.');
   t('If the author\'s name has another spelling in the author\'s native language (e.g. a Russian name in Cyrillic) enter it in this field.');
   t('If the creative work has an ISBN, add it here. If there are multiple ISBNs, indicate type after number e.g. 978-3-11-027239-0 (e-ISBN).');
   t('If the critical work was published as part of a series, enter the series title here. The name will autocomplete if the series is already in the database. If the series is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the series</a>. <strong>Note:</strong> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</i>, are series).
@@ -19564,15 +19652,13 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Personal website');
   t('Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)');
   t('Please include physical location information for the publisher. The city name is particularly important for bibliographic citation.');
-  t('Please provide about the author\'s location.  Only city, state, and country will be publicly displayed.');
   t('Please provide notes about the various roles key people (indicated above) played in this project.');
-  t('Please provide the person\'s nationality (passport country).');
   t('Presented at Event');
   t('Project Type');
   t('Provide a brief abstract of the critical writing in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
   t('Provide a brief description of the work in English, up to 350 words.');
   t('Provide a general description of the research collection.');
-  t('Provide a short biography of the author if available. Provide basic professional details, as well as year of birth, etc.');
+  t('Provide a short biography of the author if available.. If you source the biography from elsewhere, indicate the source in parentheses after the biography.');
   t('Provide a written description of the platform and its distinguishing features. Indicate the source of the description.');
   t('Provide references to creative works included in this collection. If the work is not yet in the KB, first <a href="http://elmcip.net/node/add/work">add the creative work</a>.');
   t('Provide references to database or archives included in this collection. If they are not yet in the KB, first <a href="http://elmcip.net/node/add/databases-and-archives">add the database</a>.');
@@ -19598,6 +19684,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Select the human language used in the original language abstract field.');
   t('Select the human language used in the original language description field.');
   t('Select the license that the platform is released under from the list.');
+  t('Select the person’s gender.');
   t('Select the primary human language(s) of the database or resource. Select multiple using the Crtl (or Apple) key.');
   t('Select the year this resource was first made available. A more detailed chronology can be provided in the description.');
   t('Select which of your notebooks you want the note to be attached to.');
@@ -19612,7 +19699,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Teaching Resources');
   t('Technical Notes');
   t('Technical notes');
-  t('The author\'s email will <I>not</i> be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.');
   t('The teacher of the course. This is an autocomplete field. The teacher must be a Knowledge Base user who has been assigned "teacher" permissions by a KB administrator. Multiple teachers may be added to a class group.');
   t('This is the editorial status of a record, now a taxonomy. This value can only be changed by KB editors. ');
   t('Translator');
@@ -19620,11 +19706,12 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('URL');
   t('URL of the publisher or journal homepage.');
   t('University');
-  t('Upload a photo of the author.');
+  t('Upload a photo of the person.
+<br>Files must be less than <strong>600 MB</strong>.
+<br>Allowed file types: <strong>png gif jpg jpeg</strong>.');
   t('Upload screenshots or other images related to the organization.');
   t('Upload screenshots or other relevant imagery of the work here.');
   t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. If the event is not yet in the database, first add it before completing the record.');
-  t('Use this field to attach a text or pdf document, such as a CV.');
   t('Use this field to display Vimeo and YouTube videos, and other multimedia content.');
   t('Use this field to display Vimeo and YouTube videos, and other multimedia content. Note: flickr photo sets are not currently working with this field. We are waiting for an update to the module, so please wait until the issue is resolved before adding them.');
   t('Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.');
@@ -19636,8 +19723,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('WorldCat Permalink');
   t('Year');
   t('Year Initiated');
-  t('Year of birth.');
-  t('Year of death.');
   t('You may attach files, such as PDFs, to this record.');
   t('You may upload and attach individual images (20MB max) documenting the event here. Note: use multimedia field to link flickr sets or video.');
   t('Your notes');

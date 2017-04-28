@@ -3301,6 +3301,7 @@ function elmcip_field_instances_field_default_field_bases() {
               'collect' => 1,
               'default' => '',
               'weight' => 10,
+              'widget' => 'autocomplete',
             ),
             'street' => array(
               'collect' => 1,
