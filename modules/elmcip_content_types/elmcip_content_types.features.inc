@@ -52,8 +52,8 @@ If you are creating a record for a chapter or article published in a book, first
       'base' => 'node_content',
       'description' => t('Databases that document electronic literature and its cultural context, and archives or repositories that preserve and make available related materials.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => t('In the "Title" field, enter the official name of the resource. If the resource is commonly referred to by an acronym (e.g. ELD for the Electronic Literature Directory), this can be specified in description.'),
+      'title_label' => t('Name of resource'),
+      'help' => '',
     ),
     'event' => array(
       'name' => t('Event'),

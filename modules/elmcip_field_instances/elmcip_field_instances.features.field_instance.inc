@@ -4977,7 +4977,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add the resource\'s primary e-mail address (often listed on an "about" page) or the email of an administrator or another person closely affiliated with the resource.',
+    'description' => 'Enter the resource\'s primary e-mail address (often listed on an "about" page) or the email of an administrator or another person closely affiliated with the resource.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5203,7 +5203,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'A brief description (fewer than 350 words) in English about the database or resource.',
+    'description' => 'Provide a brief description of the work in English. If you source the description from elsewhere, indicate the source in parentheses after the description.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5237,6 +5237,40 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'label' => 'Description (English)',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -5257,7 +5291,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'A brief description (fewer than 350 words) of the database or resource in the resource\'s original language. ',
+    'description' => '<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5291,6 +5325,40 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'label' => 'Description (Original Language)',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -5310,7 +5378,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the primary human language(s) of the database or resource. Select multiple using the Crtl (or Apple) key.',
+    'description' => 'Select the primary human language(s) of the database or archive.  Select multiple if the database or archive includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5360,7 +5428,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If an organization is responsible for developing and maintaining this project, indicate which one using the autocomplete field. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.',
+    'description' => 'If an organization is responsible for developing and maintaining this project, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5422,8 +5490,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is already in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.<br><br>
-Note: Before adding a new person record, check to see if he or she is already listed as an author.',
+    'description' => 'Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5485,8 +5552,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this resource. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality.
-',
+    'description' => 'A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this database or archive. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5539,7 +5605,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Important technical notes about the database or archive.',
+    'description' => 'Add important technical notes about the database or archive, such as software dependencies or necessary plug-ins.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5573,6 +5639,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Technical Notes',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -5917,7 +6017,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Using the pull down menu, identify whether the resource is an archive, database, or special collection.',
+    'description' => 'Select the type of database or archive.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6023,7 +6123,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add the URL where the resource where the resource can be accessed online. For example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP Electronic Literature Knowledge Base). Enter the name of the resource in the "Tltle" field just to the left.',
+    'description' => 'Select the type of database or archive, for example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP (Electronic Literature Knowledge Base). Enter the name of the resource in the "Tltle" field just to the left.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6095,7 +6195,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-databases_and_archives-field_year_initiated'] = array(
     'bundle' => 'databases_and_archives',
     'deleted' => 0,
-    'description' => 'Select the year this resource was first made available. A more detailed chronology can be provided in the description.',
+    'description' => 'Enter the year this database or archive was first made available. A more detailed chronology can be provided in the description.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -19649,21 +19749,17 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('<strong>If the teaching resource is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.');
-  t('A brief description (fewer than 350 words) in English about the database or resource.');
-  t('A brief description (fewer than 350 words) of the database or resource in the resource\'s original language. ');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
+  t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this database or archive. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this event. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this piece of critical writing. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
-  t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this resource. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality.
-');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this teaching resource. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('Abstract (in English)');
   t('Abstract (in original language)');
   t('Add any relevant image files.');
+  t('Add important technical notes about the database or archive, such as software dependencies or necessary plug-ins.');
   t('Add links to additional contributors to this collection.');
   t('Add links to the author record of the primary contributors to curating and developing this Research Collection.');
-  t('Add the URL where the resource where the resource can be accessed online. For example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP Electronic Literature Knowledge Base). Enter the name of the resource in the "Tltle" field just to the left.');
-  t('Add the resource\'s primary e-mail address (often listed on an "about" page) or the email of an administrator or another person closely affiliated with the resource.');
   t('Add the students to the class group, by entering their knowledge base usernames in this field. Add a new item for each student. ');
   t('Affiliations - Organizations');
   t('Alternative spelling of name in original language alphabet');
@@ -19750,14 +19846,15 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Enter the name of the organization that arranged the event. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('Enter the name of the person or people who developed this resource. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.');
   t('Enter the name of the publisher of book, title of journal, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
-  t('Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is already in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.<br><br>
-Note: Before adding a new person record, check to see if he or she is already listed as an author.');
+  t('Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Enter the person\'s nationality (passport country).');
+  t('Enter the resource\'s primary e-mail address (often listed on an "about" page) or the email of an administrator or another person closely affiliated with the resource.');
   t('Enter the title of the creative work or works discussed in this note. This is an autocomplete field that will only complete on works that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/work" target="_blank">add the creative work</a>. ');
   t('Enter the title of the critical writing discussed in this note. This is an autocomplete field that will only complete on items that already have records in the knowledge base. If the critical writing is not in the KB, first <a href="/node/add/critical_writing" target="_blank">add the critical writing</a>');
   t('Enter the website of the person here. Indicate the source of the website (e.g. “Personal website”, “University Profile”) in the title field and the web address in the URL field.');
   t('Enter the year of birth.
 <br>Format: 2017');
+  t('Enter the year this database or archive was first made available. A more detailed chronology can be provided in the description.');
   t('Enter your notes here.');
   t('Event');
   t('Event Referenced');
@@ -19777,7 +19874,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   t('If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the URL title field to indicate the edition year (e.g. 1996 ed.). ');
   t('If an article appears in a numbered and/or dated serial, enter the volume number first, followed by a period and the issue number. For a publication paginated by issue, e.g. (volume 42, issue 1), simply enter: 42.1.
 For an article published in a weekly or monthly periodical, enter the day first, then the month (abbreviated except for May, June, and July), e.g. 20 Oct. or 01 May. ');
-  t('If an organization is responsible for developing and maintaining this project, indicate which one using the autocomplete field. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
+  t('If an organization is responsible for developing and maintaining this project, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('If applicable, enter the middle name of the person. ');
   t('If applicable, enter the year of death.
 <br>Format: 2017');
@@ -19832,7 +19929,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Image');
   t('Image (Screenshot)');
   t('Images');
-  t('Important technical notes about the database or archive.');
   t('Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Lexia to Perplexia (ebr Electronic Book Review), Lexia to Perpexia (The Iowa Review Web), etc.');
   t('Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Locating the Literary in New Media (Contemporary Literature), Locating the Literary in New Media (ebr), etc.');
   t('Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.');
@@ -19891,6 +19987,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Provide a brief description of the organization in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a brief description of the publisher in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a brief description of the work in English, up to 350 words.');
+  t('Provide a brief description of the work in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available.. If you source the biography from elsewhere, indicate the source in parentheses after the biography.');
   t('Provide a written description of the platform and its distinguishing features. If you source the description from elsewhere, indicate the source in parentheses after the description.');
@@ -19920,10 +20017,11 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Select the human language used in the original language description field.');
   t('Select the license that the platform is released under from the list.');
   t('Select the person’s gender.');
-  t('Select the primary human language(s) of the database or resource. Select multiple using the Crtl (or Apple) key.');
+  t('Select the primary human language(s) of the database or archive.  Select multiple if the database or archive includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
+  t('Select the type of database or archive, for example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP (Electronic Literature Knowledge Base). Enter the name of the resource in the "Tltle" field just to the left.');
+  t('Select the type of database or archive.');
   t('Select the type of event.');
   t('Select the type of the teaching resource.');
-  t('Select the year this resource was first made available. A more detailed chronology can be provided in the description.');
   t('Select which of your notebooks you want the note to be attached to.');
   t('Series');
   t('Short biography');
@@ -19952,7 +20050,6 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Use this field to indicate URLs associated with the platform (e.g. download, documentation sites, etc.) Indicate the nature of the link using the title field. Multiple URLs are permitted.');
   t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The person’s name will autocomplete if it is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Use this field to link to your syllabus or other material you have created as a teaching resource in the Knowledge Base. The field will autocomplete. If the teaching resource is not yet in the Knowledge Base, first <a href="node/add/teaching-resource">add the teaching resource</a>.');
-  t('Using the pull down menu, identify whether the resource is an archive, database, or special collection.');
   t('Work noted');
   t('WorldCat Permalink');
   t('Year');

@@ -230,6 +230,13 @@ function elmcip_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_databases_and_archives';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_databases_and_archives'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'diff_view_mode_preview_node_event';
   $strongarm->value = 'full';
   $export['diff_view_mode_preview_node_event'] = $strongarm;

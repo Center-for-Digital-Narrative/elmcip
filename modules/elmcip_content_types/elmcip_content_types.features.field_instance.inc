@@ -325,7 +325,7 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.',
+    'description' => 'Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1400,7 +1400,7 @@ function elmcip_content_types_field_default_field_instances() {
   t('Record Status');
   t('Repository');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
-  t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). This is an autocomplete field. Type the name of the platform or software in the field. If the platform is in the database, the name will autocomplete. If it is not, first <a href="/node/add/platform-software">add a record for the platform or software</a> before completing this record.');
+  t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
   t('Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). The platform or software will autocomplete if it is in the database. If the platform or software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
   t('Version history (link)');
   t('Version history (text)');
