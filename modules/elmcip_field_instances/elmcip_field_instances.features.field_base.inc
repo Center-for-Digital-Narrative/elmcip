@@ -231,6 +231,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_associated_event',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -244,6 +247,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'event' => 'event',
         ),
@@ -649,6 +660,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_curator',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -662,6 +676,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'person' => 'person',
         ),
@@ -771,6 +793,8 @@ function elmcip_field_instances_field_default_field_bases() {
     'locked' => 0,
     'module' => 'date',
     'settings' => array(
+      'cache_count' => 4,
+      'cache_enabled' => 0,
       'granularity' => array(
         'day' => 'day',
         'hour' => 0,
@@ -1670,6 +1694,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_individual_organizers',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_entity' => array(
         0 => 'target_id',
@@ -1683,6 +1710,14 @@ function elmcip_field_instances_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(
           'person' => 'person',
         ),
@@ -4322,6 +4357,9 @@ function elmcip_field_instances_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'taxonomy_vocabulary_2',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',

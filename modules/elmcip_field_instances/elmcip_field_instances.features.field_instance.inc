@@ -6311,7 +6311,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this event is associated with another event (for instance a night of readings presented at a conference), link to that event here. The event will autocomplete if it is database. If it is not, first <a href="/node/add/event" target="_blank">add the event</a>',
+    'description' => 'If this event is associated with another event (for instance a night of readings presented at a conference), link to that event here. The event will autocomplete if it is database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6350,6 +6350,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_associated_event',
     'label' => 'Associated with another event',
@@ -6375,7 +6376,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If this event is an exhibition, curated by an individual or multiple people, please indicate the curator using the autocomplete field here. If the curator is not yet in the KB,  <a href="/node/add/person" target="_blank">add the person</a> first.',
+    'description' => 'If this event is an exhibition, curated by an individual or multiple people, please indicate the curator. The person’s name will autocomplete if it is in the database. If the person is not yet in the database,  <a href="/node/add/person" target="_blank">add the person</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6414,6 +6415,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_curator',
     'label' => 'Curator',
@@ -6438,7 +6440,8 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-event-field_date'] = array(
     'bundle' => 'event',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter or select the (starting) date of the event.
+<br>E.g., 2017-02-18',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -6683,7 +6686,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the email address of the event or event organizers.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -6767,6 +6770,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 2,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_email',
     'label' => 'Email',
@@ -6972,7 +6976,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The field will autocomplete. If the person is not yet in the database first <a href="/node/add/person" target="_blank">add the person</a>.',
+    'description' => 'Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The person’s name will autocomplete if it is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7011,6 +7015,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_individual_organizers',
     'label' => 'Individual Organizers',
@@ -7131,7 +7136,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-event-field_media_asset'] = array(
     'bundle' => 'event',
     'deleted' => 0,
-    'description' => 'Use this field to display Vimeo and YouTube videos, and other multimedia content.',
+    'description' => 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7209,7 +7214,7 @@ Note: Before adding a new person record, check to see if he or she is already li
   $field_instances['node-event-field_multi_images'] = array(
     'bundle' => 'event',
     'deleted' => 0,
-    'description' => 'You may upload and attach individual images (20MB max) documenting the event here. Note: use multimedia field to link flickr sets or video.',
+    'description' => 'You may upload and attach individual images (20MB max) documenting the event here.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7293,7 +7298,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the name of the organization that arranged the event. If the organization does not autocomplete, <a href="/node/add/organization" target="_blank">add the organization</a> now before completing this record.',
+    'description' => 'Enter the name of the organization that arranged the event. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -7404,6 +7409,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 1,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_node_ref',
     'label' => 'Organization',
@@ -7484,7 +7490,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Provide a brief description of the event in English. If you source the description from elsewhere, indicate the source in parentheses after the description.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -7562,6 +7568,40 @@ Note: Before adding a new person record, check to see if he or she is already li
     'label' => 'Short description',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -7583,7 +7623,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the URL of the event homepage. Indicate the nature of the link using the title field.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -7699,7 +7739,7 @@ Note: Before adding a new person record, check to see if he or she is already li
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this event. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7729,14 +7769,16 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 16,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'taxonomy_vocabulary_1',
     'label' => 'Tags',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 0,
       'module' => 'taxonomy',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
@@ -7756,7 +7798,7 @@ Note: Before adding a new person record, check to see if he or she is already li
       ),
     ),
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select the type of event.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -7787,6 +7829,7 @@ Note: Before adding a new person record, check to see if he or she is already li
         'weight' => 2,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'taxonomy_vocabulary_2',
     'label' => 'Event type',
@@ -19609,6 +19652,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('A brief description (fewer than 350 words) in English about the database or resource.');
   t('A brief description (fewer than 350 words) of the database or resource in the resource\'s original language. ');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
+  t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this event. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this piece of critical writing. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this resource. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality.
 ');
@@ -19684,12 +19728,16 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Enter a URL where the entire work or source files may be downloaded, if applicable.');
   t('Enter editors if applicable. The name will autocomplete if the editor is in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>.');
   t('Enter information about the person’s location. Only city, state, and country will be publicly displayed.');
+  t('Enter or select the (starting) date of the event.
+<br>E.g., 2017-02-18');
   t('Enter representative passages of text (1-3 sentences) excerpted from the work.');
   t('Enter technical information or instructions required for the user to access the work.');
   t('Enter the ISSN of the publisher.');
+  t('Enter the URL of the event homepage. Indicate the nature of the link using the title field.');
   t('Enter the URL of the organization homepage. Indicate the nature of the link using the title field.');
   t('Enter the URL of the publisher or journal homepage. Indicate the nature of the link using the title field.');
   t('Enter the editor if applicable. The name will autocomplete if the editor is already in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>. If you are entering an article or chapter from an anthology, do not enter the editor of the volume here.');
+  t('Enter the email address of the event or event organizers.');
   t('Enter the email address of the organization.');
   t('Enter the email address of the person. The author\'s email will not be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.');
   t('Enter the family name of the person (e.g. "Smith" in "John Smith"). If the work is authored by a collective, indicate the name of the collective in the last name field.');
@@ -19699,7 +19747,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Enter the name of the author discussed in this note. This is an autocomplete field that will only complete on authors that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/person" target="_blank">add the person</a>. ');
   t('Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.');
   t('Enter the name of the author. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>. Use additional fields for co-authors.');
-  t('Enter the name of the organization that arranged the event. If the organization does not autocomplete, <a href="/node/add/organization" target="_blank">add the organization</a> now before completing this record.');
+  t('Enter the name of the organization that arranged the event. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('Enter the name of the person or people who developed this resource. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.');
   t('Enter the name of the publisher of book, title of journal, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
   t('Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is already in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.<br><br>
@@ -19776,8 +19824,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If there is another version of this critical writing published in another language, link to it here.The other language version will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the work</a>.');
   t('If this critical writing has been published in multiple editions, enter information about this edition here (e.g. 2nd edition).');
   t('If this critical writing references a database or archive, link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/databases-and-archives" target="_blank">add the database or archive</a>.');
-  t('If this event is an exhibition, curated by an individual or multiple people, please indicate the curator using the autocomplete field here. If the curator is not yet in the KB,  <a href="/node/add/person" target="_blank">add the person</a> first.');
-  t('If this event is associated with another event (for instance a night of readings presented at a conference), link to that event here. The event will autocomplete if it is database. If it is not, first <a href="/node/add/event" target="_blank">add the event</a>');
+  t('If this event is an exhibition, curated by an individual or multiple people, please indicate the curator. The person’s name will autocomplete if it is in the database. If the person is not yet in the database,  <a href="/node/add/person" target="_blank">add the person</a>.');
+  t('If this event is associated with another event (for instance a night of readings presented at a conference), link to that event here. The event will autocomplete if it is database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
   t('If this item is a translation, enter the translator. The name will autocomplete if the translator is already in the database. If the translator is not yet in the database, <a href="/node/add/person" target="_blank">add the translator</a>.');
   t('If this work is a translation, please use this field to indicate the translator. The author\'s name will autocomplete if it is in the database. If the translator is not yet in the KB, <a href="/node/add/person" target="_blank">add the translator</a>.');
   t('If this work is part of another creative work (e.g. one piece in a trilogy) reference that work here. The title of the other work will autocomplete if it is in the database.  If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.');
@@ -19839,6 +19887,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Project Type');
   t('Provide a brief abstract of the critical writing in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
   t('Provide a brief abstract of the teaching resource in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.');
+  t('Provide a brief description of the event in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a brief description of the organization in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a brief description of the publisher in English. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('Provide a brief description of the work in English, up to 350 words.');
@@ -19872,6 +19921,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Select the license that the platform is released under from the list.');
   t('Select the person’s gender.');
   t('Select the primary human language(s) of the database or resource. Select multiple using the Crtl (or Apple) key.');
+  t('Select the type of event.');
   t('Select the type of the teaching resource.');
   t('Select the year this resource was first made available. A more detailed chronology can be provided in the description.');
   t('Select which of your notebooks you want the note to be attached to.');
@@ -19898,10 +19948,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Upload screenshots or other images related to the organization.');
   t('Upload screenshots or other relevant imagery of the work here.');
   t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the eventis not yet in the database, <a href="/node/add/event" target="">add the event</a>.');
-  t('Use this field to display Vimeo and YouTube videos, and other multimedia content.');
   t('Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.');
   t('Use this field to indicate URLs associated with the platform (e.g. download, documentation sites, etc.) Indicate the nature of the link using the title field. Multiple URLs are permitted.');
-  t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The field will autocomplete. If the person is not yet in the database first <a href="/node/add/person" target="_blank">add the person</a>.');
+  t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The person’s name will autocomplete if it is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Use this field to link to your syllabus or other material you have created as a teaching resource in the Knowledge Base. The field will autocomplete. If the teaching resource is not yet in the Knowledge Base, first <a href="node/add/teaching-resource">add the teaching resource</a>.');
   t('Using the pull down menu, identify whether the resource is an archive, database, or special collection.');
   t('Work noted');
@@ -19909,7 +19958,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Year');
   t('Year Initiated');
   t('You may attach files, such as PDFs, to this record.');
-  t('You may upload and attach individual images (20MB max) documenting the event here. Note: use multimedia field to link flickr sets or video.');
+  t('You may upload and attach individual images (20MB max) documenting the event here.');
   t('Your notes');
   t('e-ISSN');
   t('eISSN');

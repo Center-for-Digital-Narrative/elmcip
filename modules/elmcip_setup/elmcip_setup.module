@@ -144,6 +144,9 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
     case 'organization_node_form':
       $form['title']['#description'] = t('Enter the name of the organization.', array('type' => $form['type']['#value']));
       break;
+    case 'event_node_form':
+      $form['title']['#description'] = t('Enter the name of the event.', array('type' => $form['type']['#value']));
+      break;
   }
 }
 
