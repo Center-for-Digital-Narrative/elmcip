@@ -12563,7 +12563,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add links to additional contributors to this collection.',
+    'description' => 'Enter the names of additional contributors to this collection. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -12626,7 +12626,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add links to the author record of the primary contributors to curating and developing this Research Collection.',
+    'description' => 'Enter the names of the primary contributors to curating and developing this Research Collection. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -12691,7 +12691,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide references to creative works included in this collection. If the work is not yet in the KB, first <a href="http://elmcip.net/node/add/work">add the creative work</a>.',
+    'description' => 'Use this field to include creative works in this collection. The creative work will autocomplete if it is in the database. If the creative work is not in the database, <a href="/node/add/work">add the creative work</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -12750,7 +12750,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide references to the critical writing included in this collection. If the critical writing is not yet in the KB, first <a href="http://elmcip.net/node/add/critical-writing">add the critical writing</a>.',
+    'description' => 'Use this field to include critical writings in this collection. The critical writing will autocomplete if it is in the database. If the critical writing is not in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -12809,7 +12809,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide references to events included in this collection. If the event is not yet in the KB, first <a href="http://elmcip.net/node/add/critical-writing">add the event</a>.',
+    'description' => 'Use this field to include events in this collection. The event will autocomplete if it is in the database. If the event is not in the database, <a href="/node/add/critical-writing" target="_blank">add the event</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -12845,6 +12845,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_events',
     'label' => 'Events',
@@ -12869,7 +12870,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   $field_instances['node-research_collection-field_media'] = array(
     'bundle' => 'research_collection',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -12957,7 +12958,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide references to organizations included in this collection. If the organization is not yet in the KB, first <a href="http://elmcip.net/node/add/organization">add the organization</a>.',
+    'description' => 'Use this field to include organizations in this collection. The organization will autocomplete if it is in the database. If the organization is not in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -13016,7 +13017,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide references to person records included in this collection. If the person is not yet in the KB, first <a href="http://elmcip.net/node/add/person">add the person</a>.',
+    'description' => 'Use this field to include people in this collection. The person’s name will autocomplete if it is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -13075,7 +13076,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide references to publishers included in this collection. If the publisher is not yet in the KB, first <a href="http://elmcip.net/node/add/publisher">add the publisher</a>.',
+    'description' => 'Use this field to include publishers in this collection. The publisher will autocomplete if it is in the database. If the publisher is not in the database, <a href="/node/add/publisher" target="_target">add the publisher</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -13134,7 +13135,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide references to database or archives included in this collection. If they are not yet in the KB, first <a href="http://elmcip.net/node/add/databases-and-archives">add the database</a>.',
+    'description' => 'Use this field to include database or archive in this collection. The database or archive will autocomplete if it is in the database. If the database or archive is not in the database, <a href="/node/add/databases-and-archives" target="_blank">add the database or archive</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -13286,7 +13287,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'research_collection',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide references to teaching resources included in this collection. If the teaching resource is not yet in the KB, first <a href="http://elmcip.net/node/add/teaching-resource">add the teaching resource</a>.',
+    'description' => 'Use this field to include teaching resources in this collection. The teaching resource will autocomplete if it is in the database. If the teaching resource is not in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -19758,8 +19759,6 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Abstract (in original language)');
   t('Add any relevant image files.');
   t('Add important technical notes about the database or archive, such as software dependencies or necessary plug-ins.');
-  t('Add links to additional contributors to this collection.');
-  t('Add links to the author record of the primary contributors to curating and developing this Research Collection.');
   t('Add the students to the class group, by entering their knowledge base usernames in this field. Add a new item for each student. ');
   t('Affiliations - Organizations');
   t('Alternative spelling of name in original language alphabet');
@@ -19846,7 +19845,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Enter the name of the organization that arranged the event. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('Enter the name of the person or people who developed this resource. The author\'s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.');
   t('Enter the name of the publisher of book, title of journal, or other publishing entity. The publisher\'s name will autocomplete if it is in the database. If the publisher is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
+  t('Enter the names of additional contributors to this collection. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.');
   t('Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
+  t('Enter the names of the primary contributors to curating and developing this Research Collection. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.');
   t('Enter the person\'s nationality (passport country).');
   t('Enter the resource\'s primary e-mail address (often listed on an "about" page) or the email of an administrator or another person closely affiliated with the resource.');
   t('Enter the title of the creative work or works discussed in this note. This is an autocomplete field that will only complete on works that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/work" target="_blank">add the creative work</a>. ');
@@ -19991,14 +19992,6 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available.. If you source the biography from elsewhere, indicate the source in parentheses after the biography.');
   t('Provide a written description of the platform and its distinguishing features. If you source the description from elsewhere, indicate the source in parentheses after the description.');
-  t('Provide references to creative works included in this collection. If the work is not yet in the KB, first <a href="http://elmcip.net/node/add/work">add the creative work</a>.');
-  t('Provide references to database or archives included in this collection. If they are not yet in the KB, first <a href="http://elmcip.net/node/add/databases-and-archives">add the database</a>.');
-  t('Provide references to events included in this collection. If the event is not yet in the KB, first <a href="http://elmcip.net/node/add/critical-writing">add the event</a>.');
-  t('Provide references to organizations included in this collection. If the organization is not yet in the KB, first <a href="http://elmcip.net/node/add/organization">add the organization</a>.');
-  t('Provide references to person records included in this collection. If the person is not yet in the KB, first <a href="http://elmcip.net/node/add/person">add the person</a>.');
-  t('Provide references to publishers included in this collection. If the publisher is not yet in the KB, first <a href="http://elmcip.net/node/add/publisher">add the publisher</a>.');
-  t('Provide references to teaching resources included in this collection. If the teaching resource is not yet in the KB, first <a href="http://elmcip.net/node/add/teaching-resource">add the teaching resource</a>.');
-  t('Provide references to the critical writing included in this collection. If the critical writing is not yet in the KB, first <a href="http://elmcip.net/node/add/critical-writing">add the critical writing</a>.');
   t('Provide the email address of the publisher.');
   t('Publication Type');
   t('Publisher');
@@ -20047,6 +20040,14 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Upload screenshots or other relevant imagery of the work here.');
   t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the eventis not yet in the database, <a href="/node/add/event" target="">add the event</a>.');
   t('Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.');
+  t('Use this field to include creative works in this collection. The creative work will autocomplete if it is in the database. If the creative work is not in the database, <a href="/node/add/work">add the creative work</a>.');
+  t('Use this field to include critical writings in this collection. The critical writing will autocomplete if it is in the database. If the critical writing is not in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
+  t('Use this field to include database or archive in this collection. The database or archive will autocomplete if it is in the database. If the database or archive is not in the database, <a href="/node/add/databases-and-archives" target="_blank">add the database or archive</a>.');
+  t('Use this field to include events in this collection. The event will autocomplete if it is in the database. If the event is not in the database, <a href="/node/add/critical-writing" target="_blank">add the event</a>.');
+  t('Use this field to include organizations in this collection. The organization will autocomplete if it is in the database. If the organization is not in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
+  t('Use this field to include people in this collection. The person’s name will autocomplete if it is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
+  t('Use this field to include publishers in this collection. The publisher will autocomplete if it is in the database. If the publisher is not in the database, <a href="/node/add/publisher" target="_target">add the publisher</a>.');
+  t('Use this field to include teaching resources in this collection. The teaching resource will autocomplete if it is in the database. If the teaching resource is not in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.');
   t('Use this field to indicate URLs associated with the platform (e.g. download, documentation sites, etc.) Indicate the nature of the link using the title field. Multiple URLs are permitted.');
   t('Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The person’s name will autocomplete if it is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Use this field to link to your syllabus or other material you have created as a teaching resource in the Knowledge Base. The field will autocomplete. If the teaching resource is not yet in the Knowledge Base, first <a href="node/add/teaching-resource">add the teaching resource</a>.');
