@@ -10462,7 +10462,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_url',
-    'label' => 'Personal website',
+    'label' => 'URL',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -19972,7 +19972,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Page Numbers');
   t('Part of another work');
   t('People');
-  t('Personal website');
   t('Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)');
   t('Please include physical location information for the organization.
 
