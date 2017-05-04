@@ -157,6 +157,34 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
 }
 
 /**
+ * Implements hook_element_info_alter().
+ *
+ * @param $type
+ */
+function elmcip_setup_element_info_alter(&$type) {
+  if (isset($type['link_field'])) {
+    $type['link_field']['#process'][] = 'elmcip_setup_link_field_process';
+  }
+}
+
+/**
+ * @param $element
+ * @param $form_state
+ * @param $complete_form
+ * @return mixed
+ */
+function elmcip_setup_link_field_process($element) {
+  if ($element['#bundle'] == 'work') {
+    if ($element['#field_name'] == 'field_worldcat_link') {
+      $element['title']['#title'] = t('Year of publication');
+      unset($element['title']['#description']);
+    }
+  }
+
+  return $element;
+}
+
+/**
  * Remove input format selector and markup guidelines.
  *
  * @param $form

@@ -19596,7 +19596,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the title field of the URL (e.g. 1996. ed.)',
+    'description' => 'If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the year of publication field of the URL (e.g. 1996. ed.)',
     'display' => array(
       'data_export' => array(
         'label' => 'inline',
@@ -19917,7 +19917,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If there is a record for this work in the Electronic Literature Directory, enter the URL of the entry here (for example http://directory.eliterature.org/node/407) to create a cross-reference between the databases.');
   t('If there is a record for this work in the I ♥ E-Poetry project, enter the URL of the entry.');
   t('If there is a record for this work in the NT2 Répertoire des arts et littératures hypermédiatiques, enter the URL of the entry.');
-  t('If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the title field of the URL (e.g. 1996. ed.)');
+  t('If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the year of publication field of the URL (e.g. 1996. ed.)');
   t('If there is a record in the knowledge base of a version of this creative work published in another language, link to it here.The other language version will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('If there is another version of this critical writing published in another language, link to it here.The other language version will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the work</a>.');
   t('If this critical writing has been published in multiple editions, enter information about this edition here (e.g. 2nd edition).');
