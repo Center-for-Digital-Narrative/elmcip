@@ -181,6 +181,13 @@ function elmcip_setup_link_field_process($element) {
     }
   }
 
+  if ($element['#bundle'] == 'critical_writing') {
+    if ($element['#field_name'] == 'field_worldcat_link') {
+      $element['title']['#title'] = t('Edition year');
+      unset($element['title']['#description']);
+    }
+  }
+
   return $element;
 }
 

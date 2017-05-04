@@ -4836,7 +4836,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the URL title field to indicate the edition year (e.g. 1996 ed.). ',
+    'description' => 'If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the edition year field to indicate the edition year (e.g. 1996 ed.). ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -19872,7 +19872,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('ISSN');
   t('If a person\'s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.');
   t('If a publication has an e-ISSN number enter it here.');
-  t('If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the URL title field to indicate the edition year (e.g. 1996 ed.). ');
+  t('If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the edition year field to indicate the edition year (e.g. 1996 ed.). ');
   t('If an article appears in a numbered and/or dated serial, enter the volume number first, followed by a period and the issue number. For a publication paginated by issue, e.g. (volume 42, issue 1), simply enter: 42.1.
 For an article published in a weekly or monthly periodical, enter the day first, then the month (abbreviated except for May, June, and July), e.g. 20 Oct. or 01 May. ');
   t('If an organization is responsible for developing and maintaining this project, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
