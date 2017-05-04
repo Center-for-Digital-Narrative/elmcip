@@ -285,7 +285,7 @@ function elmcip_content_types_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_po_ex_entry',
-    'label' => 'Po.Ex entry',
+    'label' => 'PO.EX entry',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -1182,7 +1182,7 @@ function elmcip_content_types_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_po_ex_entry',
-    'label' => 'Po-ex.net entry',
+    'label' => 'PO.EX entry',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -1389,12 +1389,11 @@ function elmcip_content_types_field_default_field_instances() {
   t('KB Editor Notes');
   t('Link to a stable URL documenting the version history of the software or platform, if available. Indicate the nature of the link using the title field (e.g. Wikipedia version history of WordPerfect).');
   t('Narrabase.net entry');
+  t('PO.EX entry');
   t('Platform');
   t('Platform referenced');
   t('Platform/Software');
   t('Platform/Software referenced');
-  t('Po-ex.net entry');
-  t('Po.Ex entry');
   t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. If you source the version history from elsewhere, indicate the source in parentheses after the version history.');
   t('Publisher or organization');
   t('Record Status');

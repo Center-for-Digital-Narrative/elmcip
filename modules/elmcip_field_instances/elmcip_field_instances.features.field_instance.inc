@@ -11147,7 +11147,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_media',
-    'label' => 'Media',
+    'label' => 'Multimedia',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
