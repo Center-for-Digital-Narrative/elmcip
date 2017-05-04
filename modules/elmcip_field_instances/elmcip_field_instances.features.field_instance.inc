@@ -12911,7 +12911,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_media',
-    'label' => 'Media',
+    'label' => 'Multimedia',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -19952,7 +19952,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('License');
   t('Location');
   t('Mark the event(s) where the work has been presented. The event’s name will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
-  t('Media');
   t('Middle name');
   t('More pictures');
   t('Multimedia');
