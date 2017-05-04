@@ -34,6 +34,7 @@ th:first-child {
 table tr td {
   border-top: 1px solid rgba(34, 36, 38, 0.1);
   padding: 0.714286em;
+  vertical-align: top;
 }
 
 table tr th,
