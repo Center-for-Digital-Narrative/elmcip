@@ -6123,7 +6123,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the type of database or archive, for example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP (Electronic Literature Knowledge Base). Enter the name of the resource in the "Tltle" field just to the left.',
+    'description' => 'Select the type of database or archive, for example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP (Electronic Literature Knowledge Base). Enter the name of the resource in the "Name of resource" field just to the left.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -20011,7 +20011,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Select the license that the platform is released under from the list.');
   t('Select the person’s gender.');
   t('Select the primary human language(s) of the database or archive.  Select multiple if the database or archive includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
-  t('Select the type of database or archive, for example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP (Electronic Literature Knowledge Base). Enter the name of the resource in the "Tltle" field just to the left.');
+  t('Select the type of database or archive, for example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP (Electronic Literature Knowledge Base). Enter the name of the resource in the "Name of resource" field just to the left.');
   t('Select the type of database or archive.');
   t('Select the type of event.');
   t('Select the type of the teaching resource.');

@@ -188,6 +188,12 @@ function elmcip_setup_link_field_process($element) {
     }
   }
 
+  if ($element['#bundle'] == 'databases_and_archives') {
+    if ($element['#field_name'] == 'field_url') {
+      $element['title']['#title'] = t('Name of resource');
+    }
+  }
+
   return $element;
 }
 
