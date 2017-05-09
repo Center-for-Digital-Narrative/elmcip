@@ -9046,11 +9046,18 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => 32,
     ),
   );
