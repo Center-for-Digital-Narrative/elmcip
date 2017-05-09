@@ -28,6 +28,7 @@ features[views_view][] = Work
 features[views_view][] = Work_critical_writing
 features[views_view][] = Work_publisher
 features[views_view][] = Work_tr
+features[views_view][] = activity
 features[views_view][] = all_tags
 features[views_view][] = all_tags_by_frequency
 features[views_view][] = author_data_export
