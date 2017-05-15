@@ -171,7 +171,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
-      'file_directory' => '',
+      'file_directory' => 'media/book/images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -181,12 +181,29 @@ function elmcip_field_instances_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
+        'allowed_schemes' => array(
+          'flickr' => 0,
+          'private' => 0,
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 33,
     ),
   );
@@ -1827,11 +1844,18 @@ function elmcip_field_instances_field_default_field_instances() {
     'weight' => 46,
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'bar',
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => 19,
     ),
     'widget_type' => 'filefield_widget',
@@ -2932,41 +2956,48 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'weight' => 44,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_multi_images',
     'label' => 'Images',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
       'file_directory' => 'media/critical-writing/images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => 0,
-      'min_resolution' => 0,
+      'max_resolution' => '',
+      'min_resolution' => '',
       'title_field' => 1,
       'user_register_form' => FALSE,
     ),
     'weight' => 44,
     'widget' => array(
-      'active' => 0,
-      'module' => 'image',
+      'active' => 1,
+      'module' => 'media',
       'settings' => array(
-        'filefield_source_attach_absolute' => 0,
-        'filefield_source_attach_mode' => 'move',
-        'filefield_source_attach_path' => 'file_attach',
-        'filefield_source_autocomplete' => 0,
-        'filefield_sources' => array(
-          'attach' => 0,
-          'imce' => 0,
-          'reference' => 'reference',
-          'remote' => 'remote',
+        'allowed_schemes' => array(
+          'flickr' => 0,
+          'private' => 0,
+          'public' => 'public',
+          'vimeo' => 0,
+          'youtube' => 0,
         ),
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'bar',
-        'use_default_image' => 0,
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 16,
     ),
     'widget_type' => 'imagefield_widget',
@@ -5901,12 +5932,19 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'bar',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 9,
     ),
   );
@@ -7094,11 +7132,18 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'weight' => 2,
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'bar',
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => 11,
     ),
     'widget_type' => 'filefield_widget',
@@ -7416,12 +7461,19 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 12,
     ),
   );
@@ -8471,11 +8523,18 @@ For an article published in a weekly or monthly periodical, enter the day first,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => 8,
     ),
   );
@@ -8647,12 +8706,19 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 7,
     ),
   );
@@ -9421,12 +9487,19 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'medium',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 6,
     ),
   );
@@ -9533,11 +9606,18 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => 8,
     ),
   );
@@ -11279,11 +11359,18 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => 5,
     ),
   );
@@ -11438,12 +11525,19 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 4,
     ),
   );
@@ -14425,11 +14519,18 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'weight' => 28,
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'bar',
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => 33,
     ),
     'widget_type' => 'filefield_widget',
@@ -14596,12 +14697,19 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'weight' => 27,
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'bar',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 31,
     ),
     'widget_type' => 'imagefield_widget',
@@ -17259,11 +17367,18 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'weight' => 2,
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'progress_indicator' => 'bar',
       ),
-      'type' => 'file_generic',
+      'type' => 'media_generic',
       'weight' => 13,
     ),
     'widget_type' => 'filefield_widget',
@@ -18077,12 +18192,19 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'weight' => 0,
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'bar',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 11,
     ),
     'widget_type' => 'imagefield_widget',
