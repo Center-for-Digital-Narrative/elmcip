@@ -252,3 +252,5 @@ $databases = array (
   ),
 );
 $drupal_hash_salt = 'u88QUvFhoGqAWAvesXw8ciztKMlaFMARIkdMhWPOMww';
+
+$conf['stage_file_proxy_origin'] = 'https://elmcip.net';
