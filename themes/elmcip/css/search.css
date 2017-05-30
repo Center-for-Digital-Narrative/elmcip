@@ -1,9 +1,14 @@
-ul.facetapi-facetapi-links {
+/**
+ * @file
+ * Style to control search related content.
+ */
+
+.block-facetapi ul {
   padding: 0;
 }
 
-ul.facetapi-facetapi-links li {
-  margin: 0;
+.block-facetapi ul li {
+  margin-left: 0;
 }
 
 .view-kb-search ul {

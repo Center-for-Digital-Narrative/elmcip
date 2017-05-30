@@ -37,7 +37,7 @@ div#site-name {
 }
 
 .front .views-field-field-author-name a,
-.facetapi-facetapi-links a {
+.block-facetapi a {
   color: #333333;
 }
 
