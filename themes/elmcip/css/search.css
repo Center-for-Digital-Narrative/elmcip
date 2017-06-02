@@ -4,11 +4,22 @@
  */
 
 .block-facetapi ul {
-  padding: 0;
+  padding: 0 0 0 16px;
 }
-
 .block-facetapi ul li {
+  list-style: none;
   margin-left: 0;
+  position: relative;
+}
+input.facetapi-checkbox {
+  left: -16px;
+  margin: 0;
+  position: absolute;
+  top: 5px;
+}
+.facetapi-limit-link {
+  display: block;
+  text-align: right;
 }
 
 .view-kb-search ul {

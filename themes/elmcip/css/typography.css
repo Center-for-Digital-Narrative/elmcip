@@ -30,14 +30,22 @@ div#site-name {
   font-weight: normal;
 }
 
+a.facetapi-limit-link {
+  color: #ac0009;
+}
+
+.lighter,
 .term_missing {
   color: #999;
+}
+
+.term_missing {
   font-style: italic;
   font-weight: normal;
 }
 
 .front .views-field-field-author-name a,
-.block-facetapi a {
+a.facetapi-inactive {
   color: #333333;
 }
 

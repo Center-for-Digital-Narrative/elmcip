@@ -1,6 +1,7 @@
 <?php
 /**
- * @file Theme override functions and preprocess functions for the theme.
+ * @file
+ * Theme override functions and preprocess functions for the theme.
  */
 
 /**
@@ -94,4 +95,54 @@ function elmcip_field__field_pullquote($variables) {
   $output = '<div class="' . $variables['classes'] . '"' . $variables['attributes'] . '>' . $output . '</div>';
 
   return $output;
+}
+
+/**
+ * Implements theme_facetapi_link_inactive.
+ * Returns HTML for an inactive facet item. Used in here to wrap count in a
+ * separate CSS class.
+ *
+ * @param $variables
+ *   An associative array containing the keys 'text', 'path', 'options', and
+ *   'count'. See the l() and theme_facetapi_count() functions for information
+ *   about these variables.
+ *
+ * @ingroup themeable
+ */
+function elmcip_facetapi_link_inactive($variables) {
+  // Sanitizes the link text if necessary.
+  $sanitize = empty($variables['options']['html']);
+  $text = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
+  // Adds count to link if one was passed.
+
+  if (isset($variables['count'])) {
+    $text .= '<span class="lighter"> ' . theme('facetapi_count', $variables) . '</span>';
+  }
+
+  // Zero elements. Make non-clickable element.
+  if (isset($variables['count']) && $variables['count'] == 0) {
+    $variables['element'] = array(
+      '#value' => $text,
+      '#tag' => 'span',
+      '#attributes' => $variables['options']['attributes']
+    );
+    return theme_html_tag($variables);
+  }
+  // More than zero elements.
+  else {
+    // Builds accessible markup.
+    // @see http://drupal.org/node/1316580
+    $accessible_vars = array(
+      'text' => $variables['text'],
+      'active' => FALSE,
+    );
+    $accessible_markup = theme('facetapi_accessible_markup', $accessible_vars);
+
+    // Resets link text, sets to options to HTML since we already sanitized the
+    // link text and are providing additional markup for accessibility.
+    $variables['text'] = $text . $accessible_markup;
+    $variables['options']['html'] = TRUE;
+
+    return theme_link($variables);
+  }
 }

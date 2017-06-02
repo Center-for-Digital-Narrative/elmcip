@@ -25,10 +25,6 @@
  * 6 col (50%) = 460px
  */
 
-
-/**
- * Body.
- */
 body {
   background-color: #F3F2EA;
 }
@@ -45,10 +41,13 @@ body {
   width: 960px;
 }
 
+.sidebar .block {
+  margin-bottom: 1.5em;
+}
+
 /*
  * Header
  */
-
 #header .block .content {
   margin: 0 10px;
 }
