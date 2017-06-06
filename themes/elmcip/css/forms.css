@@ -59,7 +59,11 @@
   display: inline;
 }
 
-.tips {
+/* Prevent views exposed filters from float. */
+.views-exposed-widget.views-widget-filter-field_venue_tax_tid,
+.views-exposed-widget.views-widget-filter-field_work_year_value,
+.views-exposed-widget.views-submit-button {
+  clear: left;
 }
 
 /**
@@ -69,11 +73,6 @@
 .confirm-parent {
   margin: 0;
 }
-
-/**
- * Search (search-block-form.tpl.php).
- */
-#block-search-form {}
 
 /**
  * Drupal's default login form block.
