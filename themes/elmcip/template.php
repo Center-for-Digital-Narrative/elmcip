@@ -25,18 +25,52 @@ function elmcip_preprocess_page(&$variables, $hook) {
  */
 function elmcip_preprocess_node(&$variables) {
   if ($variables['view_mode'] == 'full') {
-    if ($variables['type'] == 'critical_writing' || $variables['type'] == 'work') {
-      if ($variables['field_abstract_lang_tax']) {
-        $term = taxonomy_term_load($variables['field_abstract_lang_tax']['und'][0]['tid']);
-        if ($variables['type'] == 'critical_writing') {
-          $title = t("Abstract (in @term_name)", array('@term_name' => $term->name));
+    $content_types = array('critical_writing', 'databases_and_archives', 'event', 'teaching_resource', 'work');
+    $title = '';
+    foreach ($content_types as $content_type) {
+      if ($variables['type'] == $content_type) {
+        $entity = entity_metadata_wrapper('node', $variables['node']);
+        $fields = field_info_instances('node', $content_type);
+        $references = array('field_abstract_lang_tax', 'field_event_abstract_lang_tax');
+
+        foreach ($references as $reference) {
+          if (array_key_exists($reference, $fields)) {
+            $label = $entity->$reference->value()->name;
+
+            if ($label) {
+              switch ($content_type) {
+                case 'critical_writing':
+                  $field = 'field_abstract_lang';
+                  $title = t("Abstract (in @term_name)", array('@term_name' => $label));
+                  break;
+                case 'databases_and_archives':
+                  $field = 'field_db_description_original';
+                  $title = t("Description (in @term_name)", array('@term_name' => $label));
+                  break;
+                case 'event':
+                  $field = 'field_event_abstract_lang';
+                  $title = t("Description (in @term_name)", array('@term_name' => $label));
+                  break;
+                case 'teaching_resource':
+                  $field = 'field_abstract_lang';
+                  $title = t("Abstract (in @term_name)", array('@term_name' => $label));
+                  break;
+                case 'work':
+                  $field = 'field_abstract_lang';
+                  $title = t("Description (in @term_name)", array('@term_name' => $label));
+                  break;
+              }
+            }
+          }
         }
-        else {
-          $title = t("Description (in @term_name)", array('@term_name' => $term->name));
-        }
-        $variables['content']['field_abstract_lang']['#title'] = $title;
+
       }
     }
+
+    if ($title) {
+      $variables['content'][$field]['#title'] = $title;
+    }
+
   }
 }
 
