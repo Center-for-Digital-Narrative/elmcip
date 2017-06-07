@@ -997,7 +997,7 @@ function elmcip_content_types_strongarm() {
       'display' => array(
         'Event_critical_writing_entity_view_1' => array(
           'default' => array(
-            'weight' => '16',
+            'weight' => '18',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1015,7 +1015,7 @@ function elmcip_content_types_strongarm() {
         ),
         'cw_reference_event_entity_view_1' => array(
           'default' => array(
-            'weight' => '18',
+            'weight' => '20',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1033,7 +1033,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Event_work_entity_view_1' => array(
           'default' => array(
-            'weight' => '17',
+            'weight' => '19',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1059,7 +1059,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '15',
+            'weight' => '17',
             'visible' => TRUE,
           ),
           'search_result' => array(

@@ -6991,6 +6991,71 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'widget_type' => 'email_textfield',
   );
 
+  // Exported field_instance: 'node-event-field_event_abstract_lang'.
+  $field_instances['node-event-field_event_abstract_lang'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_abstract_lang',
+    'label' => 'Description (in original language)',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-event-field_event_abstract_lang_tax'.
+  $field_instances['node-event-field_event_abstract_lang_tax'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 15,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_event_abstract_lang_tax',
+    'label' => 'Language of description',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-event-field_event_series'.
   $field_instances['node-event-field_event_series'] = array(
     'bundle' => 'event',
@@ -7095,7 +7160,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 19,
+        'weight' => 21,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -7363,7 +7428,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'file_view_mode' => 'media_original',
         ),
         'type' => 'file_rendered',
-        'weight' => 21,
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'above',
@@ -7448,7 +7513,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 20,
+        'weight' => 22,
       ),
       'full' => array(
         'label' => 'above',
@@ -20302,6 +20367,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Key People');
   t('Language');
   t('Language of abstract (Taxonomy)');
+  t('Language of description');
   t('Language of description (Taxonomy)');
   t('Last name');
   t('License');

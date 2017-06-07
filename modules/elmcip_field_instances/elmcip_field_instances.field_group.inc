@@ -1047,6 +1047,8 @@ function elmcip_field_instances_field_group_info() {
     'children' => array(
       0 => 'taxonomy_vocabulary_1',
       1 => 'field_textfield',
+      2 => 'field_event_abstract_lang',
+      3 => 'field_event_abstract_lang_tax',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -1155,7 +1157,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Meta data',
-    'weight' => '36',
+    'weight' => '24',
     'children' => array(
       0 => 'purl',
       1 => 'author',
