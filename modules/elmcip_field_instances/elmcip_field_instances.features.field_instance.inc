@@ -8091,11 +8091,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   // Exported field_instance: 'node-event-taxonomy_vocabulary_2'.
   $field_instances['node-event-taxonomy_vocabulary_2'] = array(
     'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'tid' => 6,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Select the type of event.',
     'display' => array(
@@ -8132,7 +8128,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'entity_type' => 'node',
     'field_name' => 'taxonomy_vocabulary_2',
     'label' => 'Event type',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
