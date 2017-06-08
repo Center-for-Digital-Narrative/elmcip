@@ -128,15 +128,30 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       break;
     case 'work_node_form':
       $form['title']['#description'] = t('Indicate the title of the work. If it has a subtitle, place the subtitle text after a colon.', array('type' => $form['type']['#value']));
+      $form['field_abstract_lang']['#states'] = array(
+        'invisible' => array(
+          'select[name="field_abstract_lang_tax[und]"]' => array('value' => '_none'),
+        ),
+      );
       break;
     case 'critical_writing_node_form':
       $form['title']['#description'] = t('Indicate the title of the work. If it has a subtitle, place the subtitle text after a colon.', array('type' => $form['type']['#value']));
+      $form['field_abstract_lang']['#states'] = array(
+        'invisible' => array(
+          'select[name="field_abstract_lang_tax[und]"]' => array('value' => '_none'),
+        ),
+      );
       break;
     case 'platform_software_node_form':
       $form['title']['#description'] = t('Enter the name of the platform/software.', array('type' => $form['type']['#value']));
       break;
     case 'teaching_resource_node_form':
       $form['title']['#description'] = t('Enter the title of the teaching resource. If the teaching resource is a syllabus for a course, enter the title of the course in the following format: Title: Subtitle (Course number, Semester year). For example, <i>Digital Genres: Digital Art, Electronic Literature, and Computer Games (DIKULT 103, Spring 2011)</i>.', array('type' => $form['type']['#value']));
+      $form['field_abstract_lang']['#states'] = array(
+        'invisible' => array(
+          'select[name="field_abstract_lang_tax[und]"]' => array('value' => '_none'),
+        ),
+      );
       break;
     case 'publisher_node_form':
       $form['title']['#description'] = t('Enter the name of the publisher.', array('type' => $form['type']['#value']));
@@ -146,6 +161,11 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       break;
     case 'event_node_form':
       $form['title']['#description'] = t('Enter the name of the event.', array('type' => $form['type']['#value']));
+      $form['field_event_abstract_lang']['#states'] = array(
+        'invisible' => array(
+          'select[name="field_event_abstract_lang_tax[und]"]' => array('value' => '_none'),
+        ),
+      );
       break;
     case 'databases_and_archives_node_form':
       $form['title']['#description'] = t('Enter the official name of the database or archive. If the resource is commonly referred to by an acronym (e.g. ELD for the Electronic Literature Directory), this can be specified in description.', array('type' => $form['type']['#value']));

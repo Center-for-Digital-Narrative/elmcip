@@ -697,7 +697,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 12,
+      'weight' => 13,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -756,7 +756,7 @@ function elmcip_field_instances_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -14429,7 +14429,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 13,
+      'weight' => 14,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -14479,7 +14479,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -16558,7 +16558,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 30,
+      'weight' => 31,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -16622,7 +16622,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 31,
+      'weight' => 30,
     ),
   );
 
