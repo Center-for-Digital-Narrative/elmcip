@@ -219,6 +219,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -228,6 +229,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -237,6 +239,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -274,6 +277,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -283,6 +287,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -292,6 +297,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -329,6 +335,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -338,6 +345,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -347,6 +355,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -746,7 +755,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
-    'label' => 'Language of abstract (Taxonomy)',
+    'label' => 'Language of abstract in the original language',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -915,6 +924,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -924,6 +934,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -933,6 +944,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -942,6 +954,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -951,6 +964,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -960,6 +974,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -969,6 +984,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -978,6 +994,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -987,6 +1004,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -996,6 +1014,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1005,6 +1024,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1014,6 +1034,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1023,6 +1044,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1032,6 +1054,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1071,6 +1094,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1086,6 +1110,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1266,6 +1291,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1275,6 +1301,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1284,6 +1311,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1293,6 +1321,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1302,6 +1331,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1311,6 +1341,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1320,6 +1351,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1329,6 +1361,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1338,6 +1371,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1347,6 +1381,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1356,6 +1391,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1365,6 +1401,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1380,6 +1417,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1389,6 +1427,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -1883,6 +1922,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1892,6 +1932,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1901,6 +1942,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1910,6 +1952,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1919,6 +1962,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1928,6 +1972,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1937,6 +1982,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1946,6 +1992,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => 1,
         ),
         'type' => 'entityreference_label',
@@ -1955,6 +2002,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1964,6 +2012,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1973,6 +2022,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1982,6 +2032,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1997,6 +2048,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -2006,6 +2058,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3025,6 +3078,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3034,6 +3088,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3043,6 +3098,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3052,6 +3108,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3061,6 +3118,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3070,6 +3128,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3079,6 +3138,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3088,6 +3148,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3097,6 +3158,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3106,6 +3168,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3115,6 +3178,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3124,6 +3188,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3139,6 +3204,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3148,6 +3214,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3186,6 +3253,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3195,6 +3263,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3204,6 +3273,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3213,6 +3283,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3222,6 +3293,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3231,6 +3303,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3240,6 +3313,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3249,6 +3323,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3258,6 +3333,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3267,6 +3343,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3276,6 +3353,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3285,6 +3363,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3300,6 +3379,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3309,6 +3389,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3347,6 +3428,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3356,6 +3438,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3365,6 +3448,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3374,6 +3458,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3389,6 +3474,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3398,6 +3484,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3413,6 +3500,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3422,6 +3510,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3437,6 +3526,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3452,6 +3542,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3461,6 +3552,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3501,6 +3593,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3516,6 +3609,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3566,6 +3660,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3581,6 +3676,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3596,6 +3692,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3634,6 +3731,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3643,6 +3741,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3652,6 +3751,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3661,6 +3761,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3670,6 +3771,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3679,6 +3781,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3688,6 +3791,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3697,6 +3801,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3706,6 +3811,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3715,6 +3821,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3724,6 +3831,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3733,6 +3841,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3748,6 +3857,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -3920,6 +4030,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -3935,6 +4046,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4269,6 +4381,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4278,6 +4391,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4287,6 +4401,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4296,6 +4411,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4305,6 +4421,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4314,6 +4431,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4323,6 +4441,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4338,6 +4457,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4347,6 +4467,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4356,6 +4477,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4365,6 +4487,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4380,6 +4503,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4421,6 +4545,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4430,6 +4555,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => 1,
         ),
         'type' => 'entityreference_label',
@@ -4439,6 +4565,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4489,6 +4616,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4498,6 +4626,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4507,6 +4636,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4516,6 +4646,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4531,6 +4662,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4540,6 +4672,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4555,6 +4688,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4564,6 +4698,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4579,6 +4714,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4594,6 +4730,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4634,6 +4771,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -4643,6 +4781,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -4652,6 +4791,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -4667,6 +4807,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -4705,6 +4846,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -4714,6 +4856,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => 1,
         ),
         'type' => 'entityreference_label',
@@ -4723,6 +4866,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -5179,6 +5323,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -5230,6 +5375,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -5239,6 +5385,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -5509,6 +5656,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -5518,6 +5666,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -5527,6 +5676,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -5571,6 +5721,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -5580,6 +5731,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -5589,6 +5741,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -6517,6 +6670,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -6526,6 +6680,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -6535,6 +6690,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -6544,6 +6700,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -6582,6 +6739,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -6591,6 +6749,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -6600,6 +6759,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -6609,6 +6769,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7029,7 +7190,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select the human language used in the original language description field.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7041,7 +7202,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_event_abstract_lang_tax',
-    'label' => 'Language of description',
+    'label' => 'Language of original description ',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -7066,6 +7227,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7075,6 +7237,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7084,6 +7247,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7093,6 +7257,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7264,6 +7429,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7273,6 +7439,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7282,6 +7449,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7291,6 +7459,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7603,6 +7772,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7612,6 +7782,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7621,6 +7792,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7630,6 +7802,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7639,6 +7812,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7648,6 +7822,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7657,6 +7832,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7666,6 +7842,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7675,6 +7852,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7684,6 +7862,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7693,6 +7872,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -7702,6 +7882,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8152,6 +8333,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8161,6 +8343,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8199,6 +8382,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8208,6 +8392,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8246,6 +8431,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8255,6 +8441,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8293,6 +8480,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8302,6 +8490,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8336,6 +8525,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -8345,6 +8535,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -9281,6 +9472,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -9296,6 +9488,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -9305,6 +9498,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -10790,6 +10984,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -10799,6 +10994,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -10808,6 +11004,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -10817,6 +11014,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -10826,6 +11024,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11805,6 +12004,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11814,6 +12014,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11823,6 +12024,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11832,6 +12034,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11841,6 +12044,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11850,6 +12054,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11859,6 +12064,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11868,6 +12074,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11877,6 +12084,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11886,6 +12094,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11895,6 +12104,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11904,6 +12114,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11919,6 +12130,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -11928,6 +12140,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -12264,6 +12477,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => 1,
         ),
         'type' => 'entityreference_label',
@@ -12883,6 +13097,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -12892,6 +13107,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => 1,
         ),
         'type' => 'entityreference_label',
@@ -12901,6 +13117,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -12946,6 +13163,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -12955,6 +13173,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => 1,
         ),
         'type' => 'entityreference_label',
@@ -12964,6 +13183,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -12973,6 +13193,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13011,6 +13232,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13026,6 +13248,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13070,6 +13293,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13085,6 +13309,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13129,6 +13354,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -13144,6 +13370,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -13153,6 +13380,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -13278,6 +13506,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13293,6 +13522,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13337,6 +13567,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13352,6 +13583,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13396,6 +13628,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13411,6 +13644,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13455,6 +13689,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13470,6 +13705,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13607,6 +13843,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -13622,6 +13859,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -14465,7 +14703,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
-    'label' => 'Language of abstract (Taxonomy)',
+    'label' => 'Language of abstract in the original language',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -14491,6 +14729,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -14506,6 +14745,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15109,6 +15349,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15118,6 +15359,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15127,6 +15369,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15136,6 +15379,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15145,6 +15389,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15154,6 +15399,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15163,6 +15409,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15172,6 +15419,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15181,6 +15429,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15190,6 +15439,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15199,6 +15449,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15208,6 +15459,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15223,6 +15475,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15261,6 +15514,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15270,6 +15524,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15279,6 +15534,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15288,6 +15544,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15303,6 +15560,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15312,6 +15570,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15327,6 +15586,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15336,6 +15596,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15351,6 +15612,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15366,6 +15628,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -15567,6 +15830,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15576,6 +15840,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15585,6 +15850,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15594,6 +15860,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15603,6 +15870,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15612,6 +15880,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15621,6 +15890,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15630,6 +15900,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15639,6 +15910,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15648,6 +15920,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15657,6 +15930,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15666,6 +15940,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15681,6 +15956,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15719,6 +15995,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15734,6 +16011,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15778,6 +16056,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15787,6 +16066,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15796,6 +16076,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15805,6 +16086,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15820,6 +16102,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15829,6 +16112,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15844,6 +16128,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15853,6 +16138,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15862,6 +16148,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15871,6 +16158,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -15886,6 +16174,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16608,7 +16897,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
-    'label' => 'Language of description (Taxonomy)',
+    'label' => 'Language of original description',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -16783,6 +17072,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16792,6 +17082,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16801,6 +17092,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16810,6 +17102,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16825,6 +17118,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16834,6 +17128,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16843,6 +17138,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16852,6 +17148,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16861,6 +17158,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16870,6 +17168,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -16879,6 +17178,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16888,6 +17188,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16926,6 +17227,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16941,6 +17243,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -16950,6 +17253,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -16965,6 +17269,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17690,6 +17995,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17699,6 +18005,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17708,6 +18015,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17717,6 +18025,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17726,6 +18035,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17741,6 +18051,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17750,6 +18061,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17759,6 +18071,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17768,6 +18081,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17777,6 +18091,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17786,6 +18101,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -17795,6 +18111,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -17810,6 +18127,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18443,6 +18761,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18452,6 +18771,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18461,6 +18781,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18470,6 +18791,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18479,6 +18801,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18494,6 +18817,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18503,6 +18827,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18512,6 +18837,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18521,6 +18847,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18530,6 +18857,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18539,6 +18867,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -18554,6 +18883,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18592,6 +18922,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18601,6 +18932,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18610,6 +18942,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18619,6 +18952,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18628,6 +18962,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18643,6 +18978,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18652,6 +18988,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18661,6 +18998,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18670,6 +19008,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18679,6 +19018,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18688,6 +19028,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -18703,6 +19044,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18825,6 +19167,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18840,6 +19183,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18849,6 +19193,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -18864,6 +19209,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18902,6 +19248,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18911,6 +19258,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18920,6 +19268,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18929,6 +19278,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18938,6 +19288,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18953,6 +19304,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18962,6 +19314,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18971,6 +19324,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18980,6 +19334,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18989,6 +19344,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -18998,6 +19354,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -19007,6 +19364,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -19022,6 +19380,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -19060,6 +19419,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -19075,6 +19435,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -19084,6 +19445,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -19099,6 +19461,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -19640,6 +20003,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -19655,6 +20019,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -19664,6 +20029,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -19679,6 +20045,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
@@ -20361,9 +20728,9 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('KB editors should use this field to provide a brief indication of revisions required. This field will only be visible to KB editor and to original authors of the record. This field should be wiped when the record is marked as approved.');
   t('Key People');
   t('Language');
-  t('Language of abstract (Taxonomy)');
-  t('Language of description');
-  t('Language of description (Taxonomy)');
+  t('Language of abstract in the original language');
+  t('Language of original description');
+  t('Language of original description ');
   t('Last name');
   t('License');
   t('Location');
