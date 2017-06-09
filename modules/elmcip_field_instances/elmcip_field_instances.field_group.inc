@@ -1206,7 +1206,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_orgdesc_vt|node|organization|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_orgdescription|node|organization|default';
   $field_group->group_name = 'group_orgdescription';
@@ -1312,7 +1312,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_orginfo_vt|node|organization|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_orginfo|node|organization|default';
   $field_group->group_name = 'group_orginfo';

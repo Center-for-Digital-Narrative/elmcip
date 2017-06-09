@@ -1311,7 +1311,7 @@ function elmcip_content_types_strongarm() {
       'display' => array(
         'Event_organizer_entity_view_1' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '7',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1329,7 +1329,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Critical_writing_organization_entity_view_1' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '8',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1373,7 +1373,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '9',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1391,7 +1391,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1409,7 +1409,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '12',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1435,10 +1435,10 @@ function elmcip_content_types_strongarm() {
     ),
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,

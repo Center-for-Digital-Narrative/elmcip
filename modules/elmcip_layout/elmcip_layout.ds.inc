@@ -438,6 +438,41 @@ function elmcip_layout_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|organization|default';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'organization';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'content_type' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'purl' => array(
+      'weight' => '17',
+      'label' => 'inline',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+    ),
+    'author' => array(
+      'weight' => '16',
+      'label' => 'inline',
+      'format' => 'author',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
+      ),
+    ),
+  );
+  $export['node|organization|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|organization|full';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'organization';
@@ -1906,6 +1941,72 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_disable_css' => 0,
   );
   $export['node|notebook_entry|full'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|organization|default';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'organization';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'ds_2col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'left' => array(
+        0 => 'content_type',
+        1 => 'field_url',
+        2 => 'field_location',
+        3 => 'field_email',
+        4 => 'field_record_status_tax',
+        5 => 'field_editorial_notes',
+      ),
+      'right' => array(
+        6 => 'field_textfield',
+        7 => 'Event_organizer_entity_view_1',
+        8 => 'Critical_writing_organization_entity_view_1',
+        9 => 'work_organization_entity_view_1',
+        10 => 'organization_platform_entity_view_1',
+        11 => 'people_afil_on_organization_entity_view_1',
+        12 => 'research_collection_organization_entity_view_1',
+        13 => 'field_multi_images',
+        14 => 'field_files',
+        15 => 'group_meta',
+        16 => 'author',
+        17 => 'purl',
+      ),
+    ),
+    'fields' => array(
+      'content_type' => 'left',
+      'field_url' => 'left',
+      'field_location' => 'left',
+      'field_email' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_editorial_notes' => 'left',
+      'field_textfield' => 'right',
+      'Event_organizer_entity_view_1' => 'right',
+      'Critical_writing_organization_entity_view_1' => 'right',
+      'work_organization_entity_view_1' => 'right',
+      'organization_platform_entity_view_1' => 'right',
+      'people_afil_on_organization_entity_view_1' => 'right',
+      'research_collection_organization_entity_view_1' => 'right',
+      'field_multi_images' => 'right',
+      'field_files' => 'right',
+      'group_meta' => 'right',
+      'author' => 'right',
+      'purl' => 'right',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => 0,
+  );
+  $export['node|organization|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;

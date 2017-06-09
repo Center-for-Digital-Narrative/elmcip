@@ -8704,7 +8704,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -8787,7 +8787,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 7,
+        'weight' => 14,
       ),
       'full' => array(
         'label' => 'above',
@@ -8881,7 +8881,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'location_cck',
         'settings' => array(),
         'type' => 'location_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -8959,13 +8959,19 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'colorbox',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => '',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'large',
+          'colorbox_node_style_first' => '',
         ),
-        'type' => 'image',
-        'weight' => 8,
+        'type' => 'colorbox',
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
@@ -9061,7 +9067,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -9126,7 +9132,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 6,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -9259,7 +9265,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
