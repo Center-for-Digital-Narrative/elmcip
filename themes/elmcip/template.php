@@ -34,7 +34,7 @@ function elmcip_preprocess_node(&$variables) {
         $references = array('field_abstract_lang_tax', 'field_event_abstract_lang_tax');
 
         foreach ($references as $reference) {
-          if (array_key_exists($reference, $fields)) {
+          if (array_key_exists($reference, $fields) && $entity->$reference->value()) {
             $label = $entity->$reference->value()->name;
 
             if ($label) {
