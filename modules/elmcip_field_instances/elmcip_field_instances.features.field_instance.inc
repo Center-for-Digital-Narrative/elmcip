@@ -16380,7 +16380,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'entity_type' => 'node',
     'field_name' => 'taxonomy_vocabulary_4',
     'label' => 'Type',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
