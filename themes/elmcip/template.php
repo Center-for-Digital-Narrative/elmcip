@@ -79,7 +79,6 @@ function elmcip_preprocess_node(&$variables) {
  */
 function elmcip_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_api_page_search_form_search_knowledge_base') {
-    $form['submit_1']['#attributes']['class'][] = 'yui3-button';
     $form['keys_1']['#size'] = 30;
     // Add extra attributes to the text box.
     $form['keys_1']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
