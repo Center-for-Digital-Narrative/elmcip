@@ -1,18 +1,61 @@
 /**
  * @file
- *
- * Form Styling
+ * Forms, button, checkboxs styles.
  */
+a:link.button,
+.diff-links a.active,
+.diff-links a:link {
+  color: #71A400;
+}
+.button,
+.diff-links a,
+.form-submit {
+  color: #71A400;
+  background: #fff;
+  border: 1px solid #71A400;
+  font-size: 1em;
+  line-height: 1em;
+  padding: 7px 12px;
+  font-weight: normal;
+  margin: 6px 0;
+  margin-right: 12px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  min-width: 120px;
+}
+a.button:hover,
+a.button:active,
+.diff-links a:hover,
+.diff-links a.active,
+.form-submit:hover,
+.form-submit:active {
+  color:#fff;
+  background:#71A400;
+  text-decoration: none;
+}
+#edit-delete {
+  border: 1px solid #D30008;
+  color: #D30008;
+}
+#edit-delete:hover,
+#edit-delete:active {
+  background:#D30008;
+  color:#fff;
+}
+
+.region-content .form-type-textfield {
+  display: inline-block;
+}
 
 .block-search-api-page input.form-text,
 #search-api-page-search-form input.form-text,
 .form-item-search-block-form input {
-  color: #999;
   font-size: 1em;
   padding: 3px 5px;
 }
 
-#header input:focus {
+input:focus {
   color: #333333;
 }
 
@@ -47,11 +90,6 @@
 .form-checkboxes .form-item,
 .form-radios .form-item /* Pack groups of checkboxes and radio buttons closer together */ {
   margin: 0;
-}
-
-.form-submit {
-	margin-top: 4px;
-	vertical-align: top; /* aligning search text field with button-image */
 }
 
 .container-inline div,
