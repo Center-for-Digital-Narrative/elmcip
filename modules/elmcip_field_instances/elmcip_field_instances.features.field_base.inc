@@ -919,6 +919,35 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_db_description_org_lang'.
+  $field_bases['field_db_description_org_lang'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_db_description_org_lang',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'language',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_db_description_original'.
   $field_bases['field_db_description_original'] = array(
     'active' => 1,

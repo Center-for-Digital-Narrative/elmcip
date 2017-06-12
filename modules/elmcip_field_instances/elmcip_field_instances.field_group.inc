@@ -636,6 +636,7 @@ function elmcip_field_instances_field_group_info() {
       1 => 'field_db_description_english',
       2 => 'field_db_description_original',
       3 => 'field_db_technotes',
+      4 => 'field_db_description_org_lang',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

@@ -165,6 +165,10 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       break;
     case 'databases_and_archives_node_form':
       $form['title']['#description'] = t('Enter the official name of the database or archive. If the resource is commonly referred to by an acronym (e.g. ELD for the Electronic Literature Directory), this can be specified in description.', array('type' => $form['type']['#value']));
+      $form['#custom_togle'] = 'field_db_description_org_lang';
+      $form['#custom_field'] = 'field_db_description_original';
+      $form['#validate'][] = 'elmcip_form_validate';
+      _elmcip_form_helper($form);
       break;
     case 'research_collection_node_form':
       $form['title']['#description'] = t('Create a title for the resource collection', array('type' => $form['type']['#value']));

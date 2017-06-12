@@ -5508,12 +5508,57 @@ For an article published in a weekly or monthly periodical, enter the day first,
   );
 
   // Exported field_instance:
+  // 'node-databases_and_archives-field_db_description_org_lang'.
+  $field_instances['node-databases_and_archives-field_db_description_org_lang'] = array(
+    'bundle' => 'databases_and_archives',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select the human language used in the original language description field.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 36,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_db_description_org_lang',
+    'label' => 'Language of original description',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-databases_and_archives-field_db_description_original'.
   $field_instances['node-databases_and_archives-field_db_description_original'] = array(
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.',
+    'description' => '<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5591,7 +5636,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -5911,7 +5956,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -20539,6 +20584,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('<strong>For dissertations and theses only</strong>, indicate the university in which the thesis was produced.The university’s will autocomplete if it is in the database. If the university is not yet in the database, <a href="/node/add/organization" target="_blank">add the university as an organization</a>.');
   t('<strong>If the teaching resource is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
+  t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this database or archive. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');

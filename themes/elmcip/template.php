@@ -31,7 +31,7 @@ function elmcip_preprocess_node(&$variables) {
       if ($variables['type'] == $content_type) {
         $entity = entity_metadata_wrapper('node', $variables['node']);
         $fields = field_info_instances('node', $content_type);
-        $references = array('field_abstract_lang_tax', 'field_event_abstract_lang_tax');
+        $references = array('field_abstract_lang_tax', 'field_event_abstract_lang_tax', 'field_db_description_org_lang');
 
         foreach ($references as $reference) {
           if (array_key_exists($reference, $fields) && $entity->$reference->value()) {
