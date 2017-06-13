@@ -7,6 +7,14 @@
 include_once 'elmcip_data_export.features.inc';
 
 function elmcip_data_export_views_pre_render(&$view) {
+  // Add a ':' to the end of title if it is missing from the view display.
+  if ($view->display_handler->plugin_name == 'entity_view') {
+    $title = $view->get_title();
+    if (substr($title, -1) !=':') {
+      $view->set_title($title . ':');
+    }
+  }
+
   if ($view->name == 'Event_organizer') {
 
     $nids = array();
