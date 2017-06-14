@@ -9078,10 +9078,10 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
           'media_internet' => 0,
-          'upload' => 0,
+          'upload' => 'upload',
         ),
       ),
       'type' => 'media_generic',
@@ -11698,7 +11698,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'allowed_types' => array(
           'audio' => 'audio',
           'document' => 0,
-          'image' => 'image',
+          'image' => 0,
           'video' => 'video',
         ),
         'browser_plugins' => array(
@@ -11709,7 +11709,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -11772,19 +11772,19 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         ),
         'allowed_types' => array(
           'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
+          'document' => 'document',
+          'image' => 0,
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
           'media_internet' => 0,
-          'upload' => 0,
+          'upload' => 'upload',
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -11954,10 +11954,10 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
           'media_internet' => 0,
-          'upload' => 0,
+          'upload' => 'upload',
         ),
       ),
       'type' => 'media_generic',
