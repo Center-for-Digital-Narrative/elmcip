@@ -34,10 +34,13 @@ a.button:active,
   background:#71A400;
   text-decoration: none;
 }
+.remove.form-submit,
 #edit-delete {
   border: 1px solid #D30008;
   color: #D30008;
 }
+.remove.form-submit:hover,
+.remove.form-submit:active,
 #edit-delete:hover,
 #edit-delete:active {
   background:#D30008;
