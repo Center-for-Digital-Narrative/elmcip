@@ -16922,7 +16922,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 51,
+        'weight' => 50,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -17029,7 +17029,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17414,7 +17414,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17574,7 +17574,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -17681,7 +17681,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 18,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18126,7 +18126,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18230,7 +18230,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 14,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18331,7 +18331,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -18433,7 +18433,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 17,
+        'weight' => 16,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -18542,7 +18542,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'weight' => 37,
       ),
       'full' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'default',
@@ -18892,7 +18892,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -19053,7 +19053,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -19238,7 +19238,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -19379,7 +19379,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -19490,7 +19490,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -19606,7 +19606,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'reference' => array(
         'label' => 'hidden',
@@ -19734,7 +19734,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -20285,7 +20285,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 12,
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -20356,7 +20356,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -20451,7 +20451,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 14,
+        'weight' => 13,
       ),
       'search_result' => array(
         'label' => 'above',

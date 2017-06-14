@@ -2762,7 +2762,7 @@ function elmcip_content_types_strongarm() {
         ),
         'clone_of_research_collection_creative_work_entity_view_1' => array(
           'full' => array(
-            'weight' => '36',
+            'weight' => '37',
             'visible' => TRUE,
           ),
           'default' => array(
