@@ -1975,6 +1975,7 @@ function elmcip_field_instances_field_default_field_bases() {
       'allowed_values' => array(
         0 => 'Public Domain',
         1 => 'GPL',
+        14 => 'Apache',
         2 => 'CC Attribution',
         3 => 'CC Attribution Share Alike',
         4 => 'CC Attribution No Derivatives',
