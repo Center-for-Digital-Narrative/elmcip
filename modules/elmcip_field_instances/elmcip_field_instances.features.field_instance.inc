@@ -7195,7 +7195,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<strong>If the event was not in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7205,15 +7205,51 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'weight' => 16,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_event_abstract_lang',
     'label' => 'Description (in original language)',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 5,
@@ -20575,6 +20611,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   // Translatables
   // Included for use with string extractors like potx.
   t('<strong>For dissertations and theses only</strong>, indicate the university in which the thesis was produced.The university’s will autocomplete if it is in the database. If the university is not yet in the database, <a href="/node/add/organization" target="_blank">add the university as an organization</a>.');
+  t('<strong>If the event was not in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.');
   t('<strong>If the teaching resource is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.');
