@@ -1,19 +1,23 @@
 # Reset local installation to production
 It will take a while the very first time you run it. You minimum need a copy of the database. Syncing media files with production is optional and not really needed to work with your local copy. There is also a offline mode allowing you to work even with no network connection. Read about [working offline](offline.md), note that running offline mode also have a time saver option restoring the database.
 
-    bin/reset2production <norestore username> <full | none>
+    bin/reset2production <norestore username> <all | none>
     
 `reset2production` takes two optional parameters. Omit these to use your local username and skip large files during sync.
 
 1. Your norstore username.
-2. Sync modes: `full` omit non files. Grab it all. Takes a long time to run. `none` only grabs a copy of the database.
+2. Sync modes: `all` sync all files and takes a long time to run. `none` transfare no files, only the needed database.
+
+Typical use is:
+
+  bin/reset2production username none
 
 ## Get clean
 Make sure you don't have any local changes applied to your file system before continuing. GIT will tell you if you have.
 
     git status
 
-If your system is clean, run: `git reset --hard`. This remove any local changes to files. Note this will not remove files GIT do not know. Rerun `git status` to verify that your system are really clean. Want to learn more about GIt, try reading [Pro Git](http://progit.org) or any git book available.
+If your system is not clean, run: `git reset --hard`. This remove any local changes to files. Note this will not remove files unknown to GIT. Rerun `git status` to verify that your system are really clean. Want to learn more about GIT, try reading [Pro Git](http://progit.org) or any git book available.
 
 ## Grab a copy of production (elmcip.net)
 This will automagically update your local installation. It grabs copy of the database and any if wanted newly added files added since last time you did this.
