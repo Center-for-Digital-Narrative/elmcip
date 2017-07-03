@@ -11,7 +11,6 @@ $fields = [
   'field_media_asset',
   'field_ps_attachment',
 ];
-
 $storage = 'public';
 
 foreach ($fields as $field) {
@@ -22,13 +21,9 @@ foreach ($fields as $field) {
     ->condition('fdata.entity_type', 'node', '=');
 
   $query->join("field_data_$field", 'fdata', "f.fid = $field" . "_fid");
-
-//  print_r($query->__toString());
-//  print_r($query->arguments());
-
   $result = $query->execute();
-  foreach ($result as $source) {
 
+  foreach ($result as $source) {
     if ($field == 'field_ps_attachment' || $field == 'field_files') {
       $new_destination = 'public://media/' . $source->bundle . '/attachments/' . $source->filename;
     }
@@ -46,7 +41,7 @@ foreach ($fields as $field) {
         drupal_mkdir($target_directory, NULL, TRUE);
       }
 
-      $result = file_move($source, $new_destination, FILE_EXIST_ERROR);
+      $result = file_move($source, $new_destination, FILE_EXISTS_ERROR);
       print_r($result);
     }
   }
