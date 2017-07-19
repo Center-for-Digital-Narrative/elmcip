@@ -18,13 +18,15 @@ ELMCIP have three different sites running. Make sure to pick the right site befo
 And pick your site.
 
 ## Create backup!
+
 Always make sure to have a up to date backup of the database before attempting to do anything on a live site. A backup allow you to recover in case something goes wrong. This create a up to date copy of the database in your home directory.
 
     bin/site-drush sql-dump --result-file=~/`date +"%d.%m.%Y"`.elmcip.sql
 
-In case you have problem with the large views_oai_pmh cache entry or you simply want to save time:
-
-    mysqldump -u steinmb -p --lock-tables=false --ignore-table=elmcip.cache_views_oai_pmh elmcip > ~/`date +"%d.%m.%Y"`.elmcip.sql
+In case you have problem with the large cache entries or you simply want to save time:
+    
+    mysqldump -u <user name> -p --no-data --lock-tables=false elmcip > ~/`date +"%d.%m.%Y"`.elmcip.sql &&
+    mysqldump -u <user name> -p --lock-tables=false --no-create-info --ignore-table=elmcip.cache_views_oai_pmh --ignore-table=elmcip.cache_views elmcip >> ~/`date +"%d.%m.%Y"`.elmcip.sql
 
 to list the file you just created.
 
