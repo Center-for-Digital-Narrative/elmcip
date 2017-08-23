@@ -275,6 +275,18 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => 'title',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
+        ),
+      ),
     ),
     'purl' => array(
       'weight' => '24',
@@ -546,10 +558,10 @@ function elmcip_layout_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|person|full';
+  $ds_fieldsetting->id = 'node|person|default';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'person';
-  $ds_fieldsetting->view_mode = 'full';
+  $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
       'weight' => '0',
@@ -558,22 +570,23 @@ function elmcip_layout_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => 'title',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => 'title',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
     'full_name' => array(
-      'weight' => '27',
+      'weight' => '28',
       'label' => 'inline',
       'format' => 'default',
     ),
     'purl' => array(
-      'weight' => '28',
+      'weight' => '29',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -583,7 +596,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '29',
+      'weight' => '30',
       'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
@@ -595,37 +608,12 @@ function elmcip_layout_ds_field_settings_info() {
     'field_alternative_spelling_of_na' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'lb' => 'Name (original lang)',
+          'lb' => 'Name (original language)',
         ),
       ),
     ),
   );
-  $export['node|person|full'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|person|teaser';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'person';
-  $ds_fieldsetting->view_mode = 'teaser';
-  $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => '',
-        'class' => '',
-      ),
-    ),
-  );
-  $export['node|person|teaser'] = $ds_fieldsetting;
+  $export['node|person|default'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -2105,10 +2093,10 @@ function elmcip_layout_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|person|full';
+  $ds_layout->id = 'node|person|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'person';
-  $ds_layout->view_mode = 'full';
+  $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
@@ -2120,13 +2108,13 @@ function elmcip_layout_ds_layout_settings_info() {
         4 => 'field_residency',
         5 => 'field_nationality',
         6 => 'field_gender_sel',
-        7 => 'field_record_status_tax',
-        8 => 'field_editorial_notes',
+        7 => 'field_yearborn',
+        8 => 'field_yeardied',
+        9 => 'field_record_status_tax',
+        10 => 'field_editorial_notes',
       ),
       'right' => array(
-        9 => 'field_authorphoto',
-        10 => 'field_yearborn',
-        11 => 'field_yeardied',
+        11 => 'field_authorphoto',
         12 => 'field_textfield',
         13 => 'organization_platform_person_entity_view_1',
         14 => 'Work_entity_view_1',
@@ -2142,9 +2130,10 @@ function elmcip_layout_ds_layout_settings_info() {
         24 => 'org_affil_person_affiliation_person',
         25 => 'research_collection_person_entity_view_1',
         26 => 'field_files',
-        27 => 'full_name',
-        28 => 'purl',
-        29 => 'author',
+        27 => 'group_meta',
+        28 => 'full_name',
+        29 => 'purl',
+        30 => 'author',
       ),
     ),
     'fields' => array(
@@ -2155,11 +2144,11 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_residency' => 'left',
       'field_nationality' => 'left',
       'field_gender_sel' => 'left',
+      'field_yearborn' => 'left',
+      'field_yeardied' => 'left',
       'field_record_status_tax' => 'left',
       'field_editorial_notes' => 'left',
       'field_authorphoto' => 'right',
-      'field_yearborn' => 'right',
-      'field_yeardied' => 'right',
       'field_textfield' => 'right',
       'organization_platform_person_entity_view_1' => 'right',
       'Work_entity_view_1' => 'right',
@@ -2175,6 +2164,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'org_affil_person_affiliation_person' => 'right',
       'research_collection_person_entity_view_1' => 'right',
       'field_files' => 'right',
+      'group_meta' => 'right',
       'full_name' => 'right',
       'purl' => 'right',
       'author' => 'right',
@@ -2191,33 +2181,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['node|person|full'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|person|teaser';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'person';
-  $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'content_type',
-        1 => 'title',
-        2 => 'field_textfield',
-      ),
-    ),
-    'fields' => array(
-      'content_type' => 'ds_content',
-      'title' => 'ds_content',
-      'field_textfield' => 'ds_content',
-    ),
-    'classes' => array(),
-  );
-  $export['node|person|teaser'] = $ds_layout;
+  $export['node|person|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;

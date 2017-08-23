@@ -9550,13 +9550,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 17,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 39,
       ),
       'full' => array(
         'label' => 'above',
@@ -9618,7 +9614,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'above',
@@ -9732,9 +9728,10 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'email',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 8,
+        'type' => 'email_default',
+        'weight' => 3,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -9833,10 +9830,20 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'description' => 'Upload a photo of the person.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 12,
+        'label' => 'hidden',
+        'module' => 'colorbox',
+        'settings' => array(
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => '',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'large',
+          'colorbox_node_style_first' => '',
+        ),
+        'type' => 'colorbox',
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -9940,7 +9947,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'above',
@@ -9993,7 +10000,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 16,
+        'weight' => 26,
       ),
       'full' => array(
         'label' => 'above',
@@ -10082,7 +10089,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 41,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10206,7 +10213,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 21,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -10271,7 +10278,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 40,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10422,7 +10429,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 42,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10557,9 +10564,10 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'location_cck',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
+        'type' => 'location_default',
+        'weight' => 5,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10651,7 +10659,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 15,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -10713,9 +10721,10 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'location_cck',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
+        'type' => 'location_default',
+        'weight' => 4,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10814,9 +10823,10 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
+        'type' => 'text_default',
+        'weight' => 12,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10956,7 +10966,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -11062,13 +11072,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 13,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 38,
       ),
       'full' => array(
         'label' => 'above',
@@ -11201,9 +11207,18 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       ),
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 9,
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 7,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -11440,9 +11455,18 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       ),
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 10,
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 8,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
