@@ -80,7 +80,8 @@ function elmcip_field_instances_field_group_info() {
       2 => 'field_yearborn',
       3 => 'field_authorphoto',
       4 => 'field_files',
-      5 => 'field_gender_sel',
+      5 => 'field_gender',
+      6 => 'field_gender_sel',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -94,7 +95,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_bio_vt|node|person|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_bio|node|person|default';
   $field_group->group_name = 'group_bio';
@@ -1385,9 +1386,9 @@ function elmcip_field_instances_field_group_info() {
       4 => 'field_nationality',
       5 => 'field_middle_name',
       6 => 'field_auth_email',
-      7 => 'field_alternative_spelling_of_na',
+      7 => 'field_userid_reference',
       8 => 'field_affiliation',
-      9 => 'field_userid_reference',
+      9 => 'field_alternative_spelling_of_na',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -1401,7 +1402,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_personinfo_vt|node|person|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_personinfo|node|person|default';
   $field_group->group_name = 'group_personinfo';
