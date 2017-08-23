@@ -11,7 +11,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups = array();
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_abstracttags|node|critical_writing|default';
   $field_group->group_name = 'group_abstracttags';
@@ -147,7 +147,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_bio|node|person|teaser'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_bookjournal|node|critical_writing|default';
   $field_group->group_name = 'group_bookjournal';
@@ -250,7 +250,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_core_vt|node|work|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_coreinfo_critical|node|critical_writing|default';
   $field_group->group_name = 'group_coreinfo_critical';
@@ -1674,7 +1674,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_pubinfo|node|publisher|teaser'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_references_crit|node|critical_writing|default';
   $field_group->group_name = 'group_references_crit';

@@ -5,6 +5,7 @@ package = ELMCIP
 dependencies[] = colorbox
 dependencies[] = date
 dependencies[] = elmcip_creative_work
+dependencies[] = elmcip_layout
 dependencies[] = email
 dependencies[] = entityreference
 dependencies[] = features

@@ -62,10 +62,10 @@ function elmcip_layout_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|critical_writing|full';
+  $ds_fieldsetting->id = 'node|critical_writing|default';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'critical_writing';
-  $ds_fieldsetting->view_mode = 'full';
+  $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
       'weight' => '0',
@@ -74,17 +74,18 @@ function elmcip_layout_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => 'title',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => 'title',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
     'purl' => array(
-      'weight' => '50',
+      'weight' => '49',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -94,7 +95,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '51',
+      'weight' => '50',
       'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
@@ -115,40 +116,8 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_worldcat_link' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'WorldCat',
-        ),
-      ),
-    ),
   );
-  $export['node|critical_writing|full'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|critical_writing|teaser';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'critical_writing';
-  $ds_fieldsetting->view_mode = 'teaser';
-  $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'title' => array(
-      'weight' => '1',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => '',
-        'class' => '',
-      ),
-    ),
-  );
-  $export['node|critical_writing|teaser'] = $ds_fieldsetting;
+  $export['node|critical_writing|default'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -1252,10 +1221,10 @@ function elmcip_layout_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|critical_writing|full';
+  $ds_layout->id = 'node|critical_writing|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'critical_writing';
-  $ds_layout->view_mode = 'full';
+  $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
@@ -1308,12 +1277,13 @@ function elmcip_layout_ds_layout_settings_info() {
         43 => 'database_on_critical_writing_entity_view_1',
         44 => 'event_ref_on_cw_entity_view_1',
         45 => 'cw_reference_critical_writing_entity_view_1',
-        46 => 'field_media_asset',
-        47 => 'Tr_critical_writing_entity_view_1',
-        48 => 'research_collection_critical_writing_entity_view_1',
-        49 => 'field_files',
-        50 => 'purl',
-        51 => 'author',
+        46 => 'Tr_critical_writing_entity_view_1',
+        47 => 'research_collection_critical_writing_entity_view_1',
+        48 => 'purl',
+        49 => 'field_media_asset',
+        50 => 'author',
+        51 => 'field_files',
+        52 => 'group_meta',
       ),
     ),
     'fields' => array(
@@ -1363,12 +1333,13 @@ function elmcip_layout_ds_layout_settings_info() {
       'database_on_critical_writing_entity_view_1' => 'right',
       'event_ref_on_cw_entity_view_1' => 'right',
       'cw_reference_critical_writing_entity_view_1' => 'right',
-      'field_media_asset' => 'right',
       'Tr_critical_writing_entity_view_1' => 'right',
       'research_collection_critical_writing_entity_view_1' => 'right',
-      'field_files' => 'right',
       'purl' => 'right',
+      'field_media_asset' => 'right',
       'author' => 'right',
+      'field_files' => 'right',
+      'group_meta' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -1382,42 +1353,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['node|critical_writing|full'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|critical_writing|teaser';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'critical_writing';
-  $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'content_type',
-        1 => 'title',
-        2 => 'field_author_name',
-        3 => 'field_pubtype_tax',
-      ),
-    ),
-    'fields' => array(
-      'content_type' => 'ds_content',
-      'title' => 'ds_content',
-      'field_author_name' => 'ds_content',
-      'field_pubtype_tax' => 'ds_content',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'ds_content' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
-  );
-  $export['node|critical_writing|teaser'] = $ds_layout;
+  $export['node|critical_writing|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
