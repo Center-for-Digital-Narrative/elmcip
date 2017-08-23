@@ -157,80 +157,28 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'databases_and_archives';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '0',
-      'label' => 'above',
-      'format' => 'default',
-    ),
-    'links' => array(
-      'weight' => '10',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'author' => array(
-      'weight' => '1',
-      'label' => 'above',
-      'format' => 'author_linked',
-    ),
-    'post_date' => array(
-      'weight' => '6',
-      'label' => 'above',
-      'format' => 'ds_post_date_long',
-    ),
-  );
-  $export['node|databases_and_archives|default'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|databases_and_archives|full';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'databases_and_archives';
-  $ds_fieldsetting->view_mode = 'full';
-  $ds_fieldsetting->settings = array(
     'content_type' => array(
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
     ),
     'purl' => array(
-      'weight' => '24',
-      'label' => 'above',
+      'weight' => '25',
+      'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
-          'lb' => 'Permanent URL of this page',
+          'lb' => 'The permanent URL of this page',
         ),
       ),
     ),
     'author' => array(
-      'weight' => '25',
-      'label' => 'inline',
+      'weight' => '26',
+      'label' => 'above',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
-        ),
-      ),
-    ),
-    'field_db_tags' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'field-tags-inline',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
         ),
       ),
     ),
@@ -242,27 +190,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
   );
-  $export['node|databases_and_archives|full'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|databases_and_archives|teaser';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'databases_and_archives';
-  $ds_fieldsetting->view_mode = 'teaser';
-  $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'title' => array(
-      'weight' => '1',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-  );
-  $export['node|databases_and_archives|teaser'] = $ds_fieldsetting;
+  $export['node|databases_and_archives|default'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -302,6 +230,11 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '23',
       'label' => 'inline',
       'format' => 'author',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Record posted by',
+        ),
+      ),
     ),
   );
   $export['node|event|default'] = $ds_fieldsetting;
@@ -1496,58 +1429,6 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'title',
-        1 => 'author',
-        2 => 'field_url',
-        3 => 'field_db_org',
-        4 => 'field_database_platform_ref',
-        5 => 'field_license',
-        6 => 'post_date',
-      ),
-      'right' => array(
-        7 => 'field_db_people',
-        8 => 'field_contributors',
-        9 => 'field_contact_email',
-        10 => 'links',
-      ),
-    ),
-    'fields' => array(
-      'title' => 'left',
-      'author' => 'left',
-      'field_url' => 'left',
-      'field_db_org' => 'left',
-      'field_database_platform_ref' => 'left',
-      'field_license' => 'left',
-      'post_date' => 'left',
-      'field_db_people' => 'right',
-      'field_contributors' => 'right',
-      'field_contact_email' => 'right',
-      'links' => 'right',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'left' => 'div',
-      'right' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
-  );
-  $export['node|databases_and_archives|default'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|databases_and_archives|full';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'databases_and_archives';
-  $ds_layout->view_mode = 'full';
-  $ds_layout->layout = 'ds_2col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'left' => array(
         0 => 'content_type',
         1 => 'field_url',
         2 => 'field_project_type',
@@ -1559,22 +1440,24 @@ function elmcip_layout_ds_layout_settings_info() {
         8 => 'field_year_initiated',
         9 => 'field_db_cross_event',
         10 => 'field_license',
-        11 => 'field_record_status_tax',
+        11 => 'field_editorial_notes',
+        12 => 'field_record_status_tax',
       ),
       'right' => array(
-        12 => 'field_db_tags',
-        13 => 'field_db_description_english',
-        14 => 'field_db_description_original',
-        15 => 'field_contributors',
-        16 => 'field_db_technotes',
-        17 => 'critical_writing_db_archive_entity_view_1',
-        18 => 'teaching_resource_db_archive_entity_view_1',
-        19 => 'research_collection_db_arcive_entity_view_1',
-        20 => 'field_image',
-        21 => 'field_multi_images',
-        22 => 'field_files',
-        23 => 'purl',
-        24 => 'author',
+        13 => 'field_db_tags',
+        14 => 'field_db_description_english',
+        15 => 'field_db_description_original',
+        16 => 'field_contributors',
+        17 => 'field_db_technotes',
+        18 => 'critical_writing_db_archive_entity_view_1',
+        19 => 'teaching_resource_db_archive_entity_view_1',
+        20 => 'research_collection_db_arcive_entity_view_1',
+        21 => 'field_image',
+        22 => 'field_multi_images',
+        23 => 'field_files',
+        24 => 'group_meta',
+        25 => 'purl',
+        26 => 'author',
       ),
     ),
     'fields' => array(
@@ -1589,6 +1472,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_year_initiated' => 'left',
       'field_db_cross_event' => 'left',
       'field_license' => 'left',
+      'field_editorial_notes' => 'left',
       'field_record_status_tax' => 'left',
       'field_db_tags' => 'right',
       'field_db_description_english' => 'right',
@@ -1601,6 +1485,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_image' => 'right',
       'field_multi_images' => 'right',
       'field_files' => 'right',
+      'group_meta' => 'right',
       'purl' => 'right',
       'author' => 'right',
     ),
@@ -1616,40 +1501,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['node|databases_and_archives|full'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|databases_and_archives|teaser';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'databases_and_archives';
-  $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'content_type',
-        1 => 'title',
-        2 => 'field_project_type',
-      ),
-    ),
-    'fields' => array(
-      'content_type' => 'ds_content',
-      'title' => 'ds_content',
-      'field_project_type' => 'ds_content',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'ds_content' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
-  );
-  $export['node|databases_and_archives|teaser'] = $ds_layout;
+  $export['node|databases_and_archives|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;

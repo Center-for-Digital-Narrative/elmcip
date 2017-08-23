@@ -5203,7 +5203,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 9,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -5257,7 +5257,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 16,
       ),
       'full' => array(
         'label' => 'above',
@@ -5311,7 +5311,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 35,
       ),
       'full' => array(
         'label' => 'above',
@@ -5367,9 +5367,13 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 32,
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => 0,
+          'link' => 0,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -5429,9 +5433,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 26,
+        'type' => 'text_default',
+        'weight' => 14,
       ),
       'full' => array(
         'label' => 'above',
@@ -5517,9 +5522,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 36,
       ),
       'full' => array(
@@ -5562,9 +5566,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 27,
+        'type' => 'text_default',
+        'weight' => 15,
       ),
       'full' => array(
         'label' => 'above',
@@ -5649,9 +5654,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -5770,7 +5776,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -5829,9 +5835,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 25,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
@@ -5882,9 +5889,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 28,
+        'type' => 'text_default',
+        'weight' => 17,
       ),
       'full' => array(
         'label' => 'above',
@@ -5970,9 +5978,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 35,
+        'type' => 'text_default',
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -6021,9 +6030,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'file',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 30,
+        'type' => 'file_default',
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'above',
@@ -6094,9 +6104,19 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 29,
+        'module' => 'colorbox',
+        'settings' => array(
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => '',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'large',
+          'colorbox_node_style_first' => '',
+        ),
+        'type' => 'colorbox',
+        'weight' => 21,
       ),
       'full' => array(
         'label' => 'above',
@@ -6184,7 +6204,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 5,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'above',
@@ -6232,9 +6252,12 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 31,
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 22,
       ),
       'full' => array(
         'label' => 'above',
@@ -6312,9 +6335,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 22,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
@@ -6368,9 +6392,10 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 34,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'above',
@@ -6421,7 +6446,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'above',
@@ -6490,9 +6515,18 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 23,
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',

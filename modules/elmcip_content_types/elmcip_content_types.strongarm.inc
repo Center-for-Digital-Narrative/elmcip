@@ -833,10 +833,10 @@ function elmcip_content_types_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -889,7 +889,7 @@ function elmcip_content_types_strongarm() {
           ),
           'default' => array(
             'weight' => '20',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
           'search_result' => array(
             'weight' => '20',
@@ -907,7 +907,7 @@ function elmcip_content_types_strongarm() {
           ),
           'default' => array(
             'weight' => '19',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
           'search_result' => array(
             'weight' => '19',
@@ -924,8 +924,8 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '21',
-            'visible' => FALSE,
+            'weight' => '18',
+            'visible' => TRUE,
           ),
           'search_result' => array(
             'weight' => '21',

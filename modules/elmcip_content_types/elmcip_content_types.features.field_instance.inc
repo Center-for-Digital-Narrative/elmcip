@@ -340,7 +340,7 @@ function elmcip_content_types_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',

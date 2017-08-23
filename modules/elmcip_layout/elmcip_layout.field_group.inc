@@ -220,6 +220,37 @@ function elmcip_layout_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_meta|node|databases_and_archives|default';
+  $field_group->group_name = 'group_meta';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'databases_and_archives';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Meta data',
+    'weight' => '24',
+    'children' => array(
+      0 => 'purl',
+      1 => 'author',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Meta data',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-meta',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => '',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_meta|node|databases_and_archives|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_meta|node|organization|default';
   $field_group->group_name = 'group_meta';
   $field_group->entity_type = 'node';
