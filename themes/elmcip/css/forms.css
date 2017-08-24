@@ -129,6 +129,14 @@ div.vertical-tabs {
   margin: 0;
 }
 
+fieldset {
+  border: 1px solid rgba(34, 36, 38, 0.1);
+  padding: 20px;
+}
+legend {
+  padding: 0 10px;
+}
+
 .container-inline div,
 .container-inline label {
   display: inline;
