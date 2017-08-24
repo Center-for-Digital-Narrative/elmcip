@@ -4,14 +4,11 @@
  * Tabs Styling.
  *
  * Adds styles for the primary and secondary tabs.
- *
- * Compare this with default CSS found in the system module's stylesheet (a copy
- * of which is in drupal6-reference.css, line 510).
  */
 
 
 .logged-in .region-content {
-  border-top: 1px solid #DDDDDD;
+  border-top: 1px solid #dddddd;
 }
 
 ul.primary {
@@ -41,12 +38,12 @@ ul.primary li a:before {
 ul.primary li a:hover {
   background-color: transparent;
   border: 1px solid transparent;
-  color: #888;
+  color: #888888;
 }
 
 ul.primary li.active a {
   background-color: transparent;
-  border: 1px solid #DDDDDDD;
+  border: 1px solid #dddddd;
   border-top: 2px solid #AC0009;;
   border-bottom: 1px solid #FFFFFF;
   color: #555;
