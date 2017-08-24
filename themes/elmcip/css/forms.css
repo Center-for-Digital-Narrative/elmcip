@@ -1,7 +1,8 @@
 /**
  * @file
- * Forms, button, checkboxs styles.
+ * Forms, button, checkboxes styles.
  */
+
 a:link.button,
 .diff-links a.active,
 .diff-links a:link {
@@ -17,8 +18,7 @@ a:link.button,
   line-height: 1em;
   padding: 7px 12px;
   font-weight: normal;
-  margin: 6px 0;
-  margin-right: 12px;
+  margin: 6px 12px 6px 0;
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -47,10 +47,6 @@ a.button:active,
   color:#fff;
 }
 
-.region-content .form-type-textfield {
-  display: inline-block;
-}
-
 .block-search-api-page input.form-text,
 #search-api-page-search-form input.form-text,
 .form-item-search-block-form input {
@@ -60,6 +56,44 @@ a.button:active,
 
 input:focus {
   color: #333333;
+}
+div.vertical-tabs {
+  border: 1px solid rgba(34, 36, 38, 0.1);
+  margin-left: 300px;
+}
+.vertical-tabs ul.vertical-tabs-list {
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+  margin-left: -300px;
+  width: 300px;
+}
+.vertical-tabs fieldset.vertical-tabs-pane {
+  padding: 20px;
+}
+.vertical-tabs ul.vertical-tabs-list li {
+  background-color: #efefef;
+  /*background-color: transparent;*/
+  border-bottom: none;
+  border-top: none;
+  /*border-right: 1px solid red;*/
+  border-right: rgba(34, 36, 38, 0.1);
+  border-left: 1px solid rgba(34, 36, 38, 0.1);
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+}
+.vertical-tabs ul.vertical-tabs-list li:last-child {
+  border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+}
+.vertical-tabs ul.vertical-tabs-list li:first-child {
+  border-top: none;
+}
+.vertical-tabs ul.vertical-tabs-list li a {
+  color: #333333;
+}
+.vertical-tabs ul.vertical-tabs-list li a:hover {
+  outline: none;
+  background-color: #f7f7f7;
+}
+.vertical-tabs ul.vertical-tabs-list li.selected a:hover {
+  background-color: inherit;
 }
 
 .form-item /* Wrapper for a form element (or group of form elements) and its label */ {
