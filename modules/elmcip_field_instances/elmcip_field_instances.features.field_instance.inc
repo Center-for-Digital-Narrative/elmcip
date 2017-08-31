@@ -7588,7 +7588,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Note: You may add multiple locations here. Note that the form appears twice. <b>Unless you are entering more than one location, only fill out the first location field.</b> If you are adding more than two locations, hit the add another button, fill out the fields, and repeat for all locations.',
+    'description' => 'Provide location information for this event. Multiple locations for an event can be added by clicking on the Add Another Item button.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -20870,7 +20870,6 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Multimedia content related to the database or archive. For example, screencasts or tutorials.');
   t('NT2 entry');
   t('Nationality');
-  t('Note: You may add multiple locations here. Note that the form appears twice. <b>Unless you are entering more than one location, only fill out the first location field.</b> If you are adding more than two locations, hit the add another button, fill out the fields, and repeat for all locations.');
   t('Notebook');
   t('Organization');
   t('Organization referenced');
@@ -20901,6 +20900,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Provide a general description of the research collection.');
   t('Provide a short biography of the author if available.. If you source the biography from elsewhere, indicate the source in parentheses after the biography.');
   t('Provide a written description of the platform and its distinguishing features. If you source the description from elsewhere, indicate the source in parentheses after the description.');
+  t('Provide location information for this event. Multiple locations for an event can be added by clicking on the Add Another Item button.');
   t('Provide the email address of the publisher.');
   t('Publication Type');
   t('Publisher');

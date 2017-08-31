@@ -138,6 +138,14 @@ div.vertical-tabs {
   margin: 0;
 }
 
+/* Location module form fixes */
+.location .form-item label {
+  float: none;
+}
+.location .form-item input {
+  width: 100%;
+}
+
 fieldset {
   border: 1px solid rgba(34, 36, 38, 0.1);
   padding: 20px;
