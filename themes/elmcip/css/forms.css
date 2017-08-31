@@ -47,16 +47,16 @@ a.button:active,
   color:#fff;
 }
 
-.block-search-api-page input.form-text,
-#search-api-page-search-form input.form-text,
-.form-item-search-block-form input {
+input {
+  border: 1px solid #cccccc;
+  color: #333333;
   font-size: 1em;
-  padding: 3px 5px;
+  padding: 0.5em;
 }
-
 input:focus {
   color: #333333;
 }
+
 div.vertical-tabs {
   border: 1px solid rgba(34, 36, 38, 0.1);
   margin-left: 300px;
@@ -71,10 +71,8 @@ div.vertical-tabs {
 }
 .vertical-tabs ul.vertical-tabs-list li {
   background-color: #efefef;
-  /*background-color: transparent;*/
   border-bottom: none;
   border-top: none;
-  /*border-right: 1px solid red;*/
   border-right: rgba(34, 36, 38, 0.1);
   border-left: 1px solid rgba(34, 36, 38, 0.1);
   border-top: 1px solid rgba(34, 36, 38, 0.1);
@@ -197,15 +195,15 @@ html.js #user-login-form li.openid-link,
 form th {
   text-align: left; /* LTR */
   padding-right: 1em; /* LTR */
-  border-bottom: 3px solid #ccc;
+  border-bottom: 3px solid #cccccc;
 }
 
 form tbody {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
 }
 
 form tr.even {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 form table .item-list ul {
