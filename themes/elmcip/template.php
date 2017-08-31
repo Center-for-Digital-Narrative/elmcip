@@ -81,9 +81,9 @@ function elmcip_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_api_page_search_form_search_knowledge_base') {
     $form['keys_1']['#size'] = 30;
     // Add extra attributes to the text box.
-    $form['keys_1']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
-    $form['keys_1']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
-    $form['keys_1']['#attributes']['placeholder'] = t('Search');
+    $form['keys_1']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search Knowledge Base';}";
+    $form['keys_1']['#attributes']['onfocus'] = "if (this.value == 'Search Knowledge Base') {this.value = '';}";
+    $form['keys_1']['#attributes']['placeholder'] = t('Search Knowledge Base');
     $form['#attributes']['class'][] = 'container-inline';
   }
 }
