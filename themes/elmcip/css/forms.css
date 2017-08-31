@@ -47,6 +47,7 @@ a.button:active,
   color:#fff;
 }
 
+select,
 input {
   border: 1px solid #cccccc;
   color: #333333;
@@ -55,6 +56,13 @@ input {
 }
 input:focus {
   color: #333333;
+}
+select {
+  padding: 0;
+  width: 100%;
+}
+option {
+  padding: 0.3333em 0.5em;
 }
 
 div.vertical-tabs {
@@ -122,7 +130,7 @@ div.vertical-tabs {
 }
 
 .form-item .description /* The descriptive help text (separate from the label) */ {
-  font-size: 0.85em;
+  font-size: 0.857em;
 }
 
 .form-checkboxes .form-item,
