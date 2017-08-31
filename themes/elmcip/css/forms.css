@@ -93,6 +93,9 @@ div.vertical-tabs {
 .vertical-tabs ul.vertical-tabs-list li.selected a:hover {
   background-color: inherit;
 }
+.vertical-tabs ul.vertical-tabs-list .summary {
+  font-size: 0.857em;
+}
 
 .form-item /* Wrapper for a form element (or group of form elements) and its label */ {
   margin: 1.5em 0;
