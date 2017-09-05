@@ -14849,7 +14849,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the teaching resource references a database or archive, link to it here. The database or archive will autocomplete if it is in the database. If the database or archive is not yet in the database, <a href="node/add/databases-and-archives">add the database or archive</a>.',
+    'description' => 'If the teaching resource references a database or archive, link to it here. The database or archive will autocomplete if it is in the database. If the database or archive is not yet in the database, <a href="/node/add/databases-and-archives">add the database or archive</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -20815,7 +20815,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the resource was developed as part of a curriculum, enter the organization responsible (for example University of Bergen, program in Digital Culture). The field will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('If the teaching resource references  a work of electronic literature or digital art, link to it here. The work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('If the teaching resource references a critical writing, link to it here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
-  t('If the teaching resource references a database or archive, link to it here. The database or archive will autocomplete if it is in the database. If the database or archive is not yet in the database, <a href="node/add/databases-and-archives">add the database or archive</a>.');
+  t('If the teaching resource references a database or archive, link to it here. The database or archive will autocomplete if it is in the database. If the database or archive is not yet in the database, <a href="/node/add/databases-and-archives">add the database or archive</a>.');
   t('If the teaching resource references another teaching resource, link to it here. The teaching resource will autocomplete if it is in the database. If the teaching resource is not yet in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.');
   t('If the work is available at a web-based archive, such as the Internet Archive, or a university open-research archive, link here.');
   t('If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization\'s name will autocomplete if it is in the database. If the publisher or organization is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.');
