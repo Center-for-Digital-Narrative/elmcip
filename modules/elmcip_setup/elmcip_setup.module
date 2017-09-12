@@ -320,3 +320,27 @@ function elmcip_setup_field_formatter_view($entity_type, $entity, $field, $insta
 function elmcip_setup_menu_alter(&$items) {
   unset($items['node']); // Remove Drupal hardcoded front page.
 }
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function elmcip_setup_form_node_form_alter(&$form) {
+  // Only content type story can be promoted or sticky.
+  if ($form['#node']->type !== 'story') {
+    $options = array('promote', 'sticky');
+    foreach ($options as $key) {
+      $form['options'][$key]['#access'] = FALSE;
+    }
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function elmcip_setup_form_node_admin_content_alter(&$form) {
+  // Content overview page no longer have these batch options.
+  $options = array('demote', 'promote', 'sticky', 'unsticky', );
+  foreach ($options as $key) {
+    unset($form['admin']['options']['operation']['#options'][$key]);
+  }
+}
