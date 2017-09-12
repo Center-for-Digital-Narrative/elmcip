@@ -313,3 +313,10 @@ function elmcip_setup_field_formatter_view($entity_type, $entity, $field, $insta
 
   return $element;
 }
+
+/**
+ * Implements hook_menu_alter().
+ */
+function elmcip_setup_menu_alter(&$items) {
+  unset($items['node']); // Remove Drupal hardcoded front page.
+}

@@ -14940,7 +14940,7 @@ function elmcip_data_export_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'views-recent-posts';
+  $handler->display->display_options['path'] = 'news';
 
   /* Display: News block */
   $handler = $view->new_display('block', 'News block', 'block_2');
