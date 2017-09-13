@@ -16,7 +16,7 @@ a:link.button,
   border: 1px solid #71A400;
   font-size: 1em;
   line-height: 1em;
-  padding: 7px 12px;
+  padding: 9px 12px;
   font-weight: normal;
   margin: 6px 12px 6px 0;
   display: inline-block;
@@ -204,6 +204,12 @@ legend {
 .container-inline div,
 .container-inline label {
   display: inline;
+}
+
+.search-api-page-form {}
+
+.page-search .container-inline label {
+  display: block;
 }
 
 /* Prevent views exposed filters from float. */

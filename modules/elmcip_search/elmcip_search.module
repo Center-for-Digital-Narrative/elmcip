@@ -52,3 +52,12 @@ function elmcip_search_block_info_alter(&$blocks, $theme, $code_blocks) {
     }
   }
 }
+
+/**
+ * Processes variables for search-api-page-full-page.tpl.php
+ */
+function elmcip_search_preprocess_search_api_page_full_page(&$variables) {
+  $variables['form']['#attributes'] = ['class' => 'container-inline search-api-page-form'];
+  $variables['form']['text']['#weight'] = 1;
+  unset($variables['form']['form']['keys_1']['#title']);
+}

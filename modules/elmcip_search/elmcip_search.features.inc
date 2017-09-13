@@ -153,7 +153,7 @@ function elmcip_search_default_search_api_page() {
   $items['search_knowledge_base'] = entity_import('search_api_page', '{
     "index_id" : "kb_content",
     "path" : "search",
-    "name" : "Search knowledge Base",
+    "name" : "Search Knowledge Base",
     "machine_name" : "search_knowledge_base",
     "description" : "Search content of the knowledge base.",
     "options" : {
