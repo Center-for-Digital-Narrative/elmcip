@@ -25,13 +25,23 @@ function elmcip_preprocess_page(&$variables, $hook) {
  */
 function elmcip_preprocess_node(&$variables) {
   if ($variables['view_mode'] == 'full') {
-    $content_types = array('critical_writing', 'databases_and_archives', 'event', 'teaching_resource', 'work');
+    $content_types = [
+      'critical_writing',
+      'databases_and_archives',
+      'event',
+      'teaching_resource',
+      'work',
+    ];
     $title = '';
     foreach ($content_types as $content_type) {
       if ($variables['type'] == $content_type) {
         $entity = entity_metadata_wrapper('node', $variables['node']);
         $fields = field_info_instances('node', $content_type);
-        $references = array('field_abstract_lang_tax', 'field_event_abstract_lang_tax', 'field_db_description_org_lang');
+        $references = [
+          'field_abstract_lang_tax',
+          'field_event_abstract_lang_tax',
+          'field_db_description_org_lang',
+        ];
 
         foreach ($references as $reference) {
           if (array_key_exists($reference, $fields) && $entity->$reference->value()) {
