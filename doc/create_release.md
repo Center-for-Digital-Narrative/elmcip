@@ -20,7 +20,7 @@ It is important to understand that this tag is not public. It only live inside y
 ### Reset production branch
 We have now tagged our release and need to reset the tip of production to this version, but make sure your production branch is up to date.
 
-    git co production
+    git checkout production
     git pull
 
 We are now ready to reset to our new version.
