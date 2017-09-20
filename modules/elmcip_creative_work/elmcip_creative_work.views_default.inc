@@ -1130,7 +1130,6 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
     'vocabulary_1' => 'vocabulary_1',
     'vocabulary_2' => 0,
-    'vocabulary_5' => 0,
     'language' => 0,
     'publication_type' => 0,
     'publication_venue' => 0,

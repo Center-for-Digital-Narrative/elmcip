@@ -459,7 +459,6 @@ features[taxonomy][] = record_status
 features[taxonomy][] = vocabulary_1
 features[taxonomy][] = vocabulary_2
 features[taxonomy][] = vocabulary_4
-features[taxonomy][] = vocabulary_5
 features[user_permission][] = create field_auth_email
 features[user_permission][] = create field_editorial_notes
 features[user_permission][] = create field_record_status_tax

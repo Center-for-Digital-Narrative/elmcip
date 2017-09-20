@@ -14013,7 +14013,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
     'vocabulary_4' => 'vocabulary_4',
     'vocabulary_2' => 0,
-    'vocabulary_5' => 0,
     'vocabulary_1' => 0,
   );
   /* Field: Content: Updated date */
@@ -15205,7 +15204,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
     'vocabulary_1' => 'vocabulary_1',
     'vocabulary_2' => 0,
-    'vocabulary_5' => 0,
     'language' => 0,
     'publication_type' => 0,
     'publication_venue' => 0,
@@ -15976,7 +15974,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
     'vocabulary_1' => 'vocabulary_1',
     'vocabulary_2' => 0,
-    'vocabulary_5' => 0,
     'record_status' => 0,
     'vocabulary_4' => 0,
   );
@@ -16574,7 +16571,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
     'vocabulary_1' => 'vocabulary_1',
     'vocabulary_2' => 0,
-    'vocabulary_5' => 0,
     'record_status' => 0,
     'vocabulary_4' => 0,
   );
