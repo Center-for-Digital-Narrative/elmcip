@@ -8,6 +8,7 @@
    float: left;
 }
 
+.field-name-field-news-tags .field-item,
 .field-tags-inline a {
   display: inline-block;
   white-space: nowrap;
