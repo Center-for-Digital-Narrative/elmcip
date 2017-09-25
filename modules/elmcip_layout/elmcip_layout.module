@@ -5,3 +5,45 @@
  */
 
 include_once 'elmcip_layout.features.inc';
+
+/**
+ * Implements hook_process_node().
+ */
+function elmcip_layout_process_node(&$build) {
+  if ($build["view_mode"] == 'full') {
+    $bundles = entity_get_info('node');
+
+    foreach ($bundles['bundles'] as $key => $bundle) {
+
+      if ($build['node']->type == $key) {
+        hide($build['content_type']);
+        $content_type = [
+          '#type' => 'markup',
+          '#markup' => '<div class="title">' . $bundle['label'] . '</div>',
+          '#weight' => '-20',
+        ];
+
+        $build['content']['group_left']['content_type'] = $content_type;
+      }
+    }
+  }
+}
+
+$demos = array(
+  t('Super simple #markup')  => array(
+    '#markup' => t('Some basic text in a #markup (shows basic markup and how it is rendered)'),
+  ),
+  'prefix_suffix' => array(
+    '#markup' => t('This one adds a prefix and suffix, which put a div around the item'),
+    '#prefix' => '(prefix)',
+    '#suffix' => '(suffix)',
+  ),
+  'theme for an element' => array(
+    'child' => array(
+      t('This is some text that should be put together'),
+      t('This is some more text that we need'),
+    ),
+    '#separator' => ' | ',  // Made up for this theme function.
+    '#theme' => 'render_example_aggregate',
+  ),
+);
