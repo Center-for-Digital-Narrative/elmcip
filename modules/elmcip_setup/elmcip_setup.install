@@ -943,3 +943,11 @@ function elmcip_setup_update_7058() {
   module_disable(array('node_reference', 'user_reference', 'references'), TRUE);
   drupal_uninstall_modules(array('node_reference', 'user_reference', 'references'), TRUE);
 }
+
+/**
+ * Uninstall Taxonomy Manager module.
+ */
+function elmcip_setup_update_7059() {
+  module_disable(array('taxonomy_manager'), TRUE);
+  drupal_uninstall_modules(array('taxonomy_manager'), TRUE);
+}
