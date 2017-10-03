@@ -12,48 +12,50 @@ drush --version || exit $?
 
 # Copy default database settings to Drupal.
 if [ -f $DRUPAL/sites/default/settings.php ]; then
-    echo "Site already exist. Unable to int. a exiting site."
+    echo "Site already exist. Unable to initialize exiting sites."
     exit 1
 fi
 
 cp -v site/settings.php $DRUPAL/sites/default || exit 1
+cp -v site/settings.local.php $DRUPAL/sites/default || exit 1
 
-# Make sure we are on master branch, production and submodule checked out at the
-# production tag.
+# Make sure master and production and git submodules are up to date.
 git checkout master
 git pull --rebase --quiet || exit $?
 git checkout production --quiet || exit $?
 git submodule update --quiet || exit $?
 
-# Sync images and grab nightly backup of production database.
+# Sync nightly database backup from production.
+# If this script got called with username as a parameter it tries
+# use it, else it uses your local user name.
 if [ -z "$1" ]
-  then
+    then
     RESULT=`rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/`
     if [ $? != 0 ]; then
     {
-      echo "ERROR: problem syncing DB"
-      echo $RESULT
-      exit 1
+        echo "ERROR: Problem syncing DB"
+        echo $RESULT
+        exit 1
     }
-  fi
-  else
+    fi
+else
     echo "Connecting to $DB_SITE as user: $1"
     RESULT=`rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/`
     if [ $? != 0 ]; then
     {
-      echo "ERROR: problem syncing DB"
-      echo $RESULT
-      exit 1
+        echo "ERROR: Problem syncing DB"
+        echo $RESULT
+        exit 1
     }
-  fi
+    fi
 fi
 
 cd $DRUPAL
 
-# Copy sandbox setting file to installation.
+# Populate the local database.
 gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
 
-# Normalize all synced files and directories to make sure they are locally writable.
+# Create Drupal public directory.
 cd $HOMEDIR/$DRUPAL/sites/default || exit 1
 mkdir files
 chmod 777 files

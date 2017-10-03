@@ -3,7 +3,7 @@
 # Sync files and grab the nightly backup of the production database.
 # Takes two optional parameters.
 #
-# <user_name> : The username used norstore.
+# <user_name> : The username used at Norstore.
 # <all | none> : Sync all files or none. Omit parameter to skip larger files (default).
 
 set -x
@@ -93,3 +93,4 @@ find . -type d -exec chmod -v 777 '{}' \;
 # Flush all drupal caches.
 drush cc all -v
 drush status
+drush fl
