@@ -3,11 +3,21 @@
  * Drupal core block Styling.
  */
 
-#header a {
-  color: #fff;
+.header ul li.leaf {
+  list-style: none;
 }
-#header a:hover {
-  color: #d30008;
+.header li a.active,
+.header a:visited,
+.header a:link {
+  color: #ffffff;
+  opacity: 0.85;
+  transition: all .2s;
+}
+.header a:hover {
+  opacity: 1;
+}
+.header li a.active {
+  text-decoration: underline;
 }
 
 /**
@@ -29,10 +39,6 @@
 
 #block-menu-primary-links li.leaf a {
   color: blue;
-}
-
-#block-menu-secondary-menu .first.leaf {
-  color: red;
 }
 
 /**

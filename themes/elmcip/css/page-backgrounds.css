@@ -21,17 +21,18 @@
   background-color: #bebdae;
 }
 
+.header {
+  background: #f3f2ea;
+}
+
 .kb .pane-title a,
-.kb .pane-title {
+.kb .pane-title,
+.region-header-bottom,
+.region-header-top {
   background-color: #333;
-  color: #fff;
+  color: #ffffff;
 }
 
 .sponsors {
   background-color: #bebdae;
-}
-
-.region-header-top,
-.region-header-bottom {
-  background-color: #333;
 }

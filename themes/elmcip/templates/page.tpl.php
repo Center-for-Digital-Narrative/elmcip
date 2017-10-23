@@ -70,7 +70,7 @@
 ?>
 
 <div id="page-wrapper"><div id="page" class="<?php print implode(' ', $classes_array); ?>">
-  <div id="header"><div class="section clearfix">
+  <div id="header"><div class="section clearfix header">
     <?php print render($page['header_top']); ?>
 
     <?php if ($site_name || $site_slogan): ?>
