@@ -61,11 +61,6 @@ body {
   margin: 10px;
 }
 
-.region-header-top,
-.region-header-bottom {
-  background-color: #bebdae;
-}
-
 .region-header-bottom {
   margin: 0 0 1em 0;
 }
