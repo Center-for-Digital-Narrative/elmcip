@@ -22,7 +22,7 @@ function elmcip_search_default_search_api_index() {
     "name" : "KB content",
     "machine_name" : "kb_content",
     "description" : "Index storing all knowledge base knowledge.",
-    "server" : null,
+    "server" : "sql",
     "item_type" : "node",
     "options" : {
       "datasource" : { "bundles" : [
@@ -131,7 +131,7 @@ function elmcip_search_default_search_api_index() {
         }
       }
     },
-    "enabled" : "0",
+    "enabled" : "1",
     "read_only" : "0",
     "rdf_mapping" : []
   }');
@@ -158,7 +158,7 @@ function elmcip_search_default_search_api_page() {
       "view_mode" : "search_api_page_result",
       "empty_behavior" : ""
     },
-    "enabled" : "0",
+    "enabled" : "1",
     "rdf_mapping" : []
   }');
   return $items;
