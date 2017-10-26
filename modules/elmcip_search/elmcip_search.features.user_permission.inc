@@ -19,16 +19,6 @@ function elmcip_search_user_default_permissions() {
     'module' => 'search_api_page',
   );
 
-  // Exported permission: 'access search_knowledge_base search_api_page'.
-  $permissions['access search_knowledge_base search_api_page'] = array(
-    'name' => 'access search_knowledge_base search_api_page',
-    'roles' => array(
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'search_api_page',
-  );
-
   // Exported permission: 'administer search_api'.
   $permissions['administer search_api'] = array(
     'name' => 'administer search_api',
