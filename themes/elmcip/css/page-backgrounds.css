@@ -3,8 +3,13 @@
  * Page Background Styling.
  */
 
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
 #page-wrapper {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .is-admin {
