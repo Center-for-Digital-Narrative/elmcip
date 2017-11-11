@@ -5970,16 +5970,25 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_inbook_1']['id'] = 'field_inbook_1';
   $handler->display->display_options['fields']['field_inbook_1']['table'] = 'field_data_field_inbook';
   $handler->display->display_options['fields']['field_inbook_1']['field'] = 'field_inbook';
-  $handler->display->display_options['fields']['field_inbook_1']['label'] = 'Journal NID';
+  $handler->display->display_options['fields']['field_inbook_1']['label'] = 'Journal ID';
   $handler->display->display_options['fields']['field_inbook_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_inbook_1']['alter']['text'] = '[field_inbook_1-nid]';
-  $handler->display->display_options['fields']['field_inbook_1']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_inbook_1']['alter']['text'] = '[field_inbook_1-target_id]';
+  $handler->display->display_options['fields']['field_inbook_1']['settings'] = array(
+    'bypass_access' => 0,
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_inbook_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_inbook_1']['delta_offset'] = '0';
   /* Field: Content: Tags */
   $handler->display->display_options['fields']['taxonomy_vocabulary_1']['id'] = 'taxonomy_vocabulary_1';
   $handler->display->display_options['fields']['taxonomy_vocabulary_1']['table'] = 'field_data_taxonomy_vocabulary_1';
   $handler->display->display_options['fields']['taxonomy_vocabulary_1']['field'] = 'taxonomy_vocabulary_1';
+  /* Field: Content: Tags */
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['id'] = 'taxonomy_vocabulary_1_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['table'] = 'field_data_taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['field'] = 'taxonomy_vocabulary_1';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['type'] = 'elmcip_setup_term_name_with_tid';
+  $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'cw_ref_works_data';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
@@ -6102,8 +6111,8 @@ function elmcip_data_export_views_default_views() {
     t('Publication Type ID'),
     t('2000[field_pubtype_tax_1-tid]'),
     t('Publisher ID'),
-    t('Journal NID'),
-    t('[field_inbook_1-nid]'),
+    t('Journal ID'),
+    t('[field_inbook_1-target_id]'),
     t('Content pane'),
     t('Example used on KB front page'),
     t('View panes'),
