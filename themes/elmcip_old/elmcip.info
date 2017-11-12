@@ -10,8 +10,8 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = elmcip
-description = zen subtheme for elmcip
+name        = elmcip_old
+description = Deprecated zen subtheme for elmcip
 
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
 core        = 7.x
