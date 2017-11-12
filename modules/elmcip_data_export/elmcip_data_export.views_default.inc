@@ -16589,8 +16589,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-      2 => '2',
-    );
+    2 => '2',
+  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
@@ -16613,8 +16613,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name']['field'] = 'field_author_name';
   $handler->display->display_options['fields']['field_author_name']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['settings'] = array(
-      'link' => 1,
-    );
+    'link' => 1,
+  );
   $handler->display->display_options['fields']['field_author_name']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name']['delta_offset'] = '0';
   /* Field: Content: Author */
@@ -16624,8 +16624,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_author_name_1']['label'] = 'Author ID';
   $handler->display->display_options['fields']['field_author_name_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_author_name_1']['settings'] = array(
-      'link' => 0,
-    );
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_author_name_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_author_name_1']['delta_offset'] = '0';
   /* Field: Content: Year */
@@ -16633,20 +16633,20 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
   $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
   $handler->display->display_options['fields']['field_work_year']['settings'] = array(
-      'format_type' => 'year',
-      'fromto' => 'both',
-      'multiple_number' => '',
-      'multiple_from' => '',
-      'multiple_to' => '',
-      'show_repeat_rule' => 'show',
-    );
+    'format_type' => 'year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
   /* Field: Content: Platform/Software */
   $handler->display->display_options['fields']['field_work_platform_software']['id'] = 'field_work_platform_software';
   $handler->display->display_options['fields']['field_work_platform_software']['table'] = 'field_data_field_work_platform_software';
   $handler->display->display_options['fields']['field_work_platform_software']['field'] = 'field_work_platform_software';
   $handler->display->display_options['fields']['field_work_platform_software']['settings'] = array(
-      'link' => 0,
-    );
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_work_platform_software']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_work_platform_software']['delta_offset'] = '0';
   /* Field: Content: Platform/Software */
@@ -16656,8 +16656,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_work_platform_software_1']['label'] = 'Platform ID';
   $handler->display->display_options['fields']['field_work_platform_software_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_work_platform_software_1']['settings'] = array(
-      'link' => 0,
-    );
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_work_platform_software_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_work_platform_software_1']['delta_offset'] = '0';
   /* Field: Content: Publisher */
@@ -16665,8 +16665,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref']['table'] = 'field_data_field_node_ref';
   $handler->display->display_options['fields']['field_node_ref']['field'] = 'field_node_ref';
   $handler->display->display_options['fields']['field_node_ref']['settings'] = array(
-      'link' => 0,
-    );
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_node_ref']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref']['delta_offset'] = '0';
   /* Field: Content: Publisher */
@@ -16676,8 +16676,8 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref_1']['label'] = 'Publisher ID';
   $handler->display->display_options['fields']['field_node_ref_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_1']['settings'] = array(
-      'link' => 0,
-    );
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_node_ref_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_1']['delta_offset'] = '0';
   /* Field: Content: Language */
@@ -16696,24 +16696,24 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_language_tax_1']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_language_tax_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_language_tax_1']['delta_offset'] = '0';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['settings'] = array(
-      'link' => 0,
-    );
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_node_ref_event']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['label'] = 'Event ID';
   $handler->display->display_options['fields']['field_node_ref_event_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_event_1']['settings'] = array(
-      'link' => 0,
-    );
+    'link' => 0,
+  );
   $handler->display->display_options['fields']['field_node_ref_event_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_event_1']['delta_offset'] = '0';
   /* Field: Content: Tags */
@@ -16736,10 +16736,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'work/%/export2';
   $handler->display->display_options['displays'] = array(
-      'page_1' => 'page_1',
-      'default' => 0,
-      'block_1' => 0,
-    );
+    'page_1' => 'page_1',
+    'default' => 0,
+    'block_1' => 0,
+  );
   $handler->display->display_options['use_batch'] = 'batch';
   $handler->display->display_options['segment_size'] = '50';
   $translatables['work_page'] = array(
@@ -16793,6 +16793,10 @@ function elmcip_data_export_views_default_views() {
     t('Event'),
     t('Event ID'),
     t('Tags ID'),
+    t('Data export--Extended'),
+    t('Tag'),
+    t('Tag ID'),
+    t('2000[taxonomy_vocabulary_1_1-tid]'),
   );
   $export['work_page'] = $view;
 
