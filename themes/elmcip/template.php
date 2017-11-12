@@ -7,132 +7,181 @@
  * @see https://drupal.org/node/1728096
  */
 
-
-/**
- * Override or insert variables into the maintenance page template.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("maintenance_page" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_maintenance_page(&$variables, $hook) {
-  // When a variable is manipulated or added in preprocess_html or
-  // preprocess_page, that same work is probably needed for the maintenance page
-  // as well, so we can just re-use those functions to do that work here.
-  STARTERKIT_preprocess_html($variables, $hook);
-  STARTERKIT_preprocess_page($variables, $hook);
+function elmcip_preprocess_page(&$variables, $hook) {
+  if ($variables['user']->uid == 1) {
+    $variables['classes_array'][] = 'is-admin';
+  }
 }
-// */
 
 /**
- * Override or insert variables into the html templates.
+ * Implements template_preprocess_node().
  *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("html" in this case.)
+ * @param $variables
  */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+function elmcip_preprocess_node(&$variables) {
+  if ($variables['view_mode'] == 'full') {
+    $content_types = [
+      'critical_writing',
+      'databases_and_archives',
+      'event',
+      'teaching_resource',
+      'work',
+    ];
+    $title = '';
+    foreach ($content_types as $content_type) {
+      if ($variables['type'] == $content_type) {
+        $entity = entity_metadata_wrapper('node', $variables['node']);
+        $fields = field_info_instances('node', $content_type);
+        $references = [
+          'field_abstract_lang_tax',
+          'field_event_abstract_lang_tax',
+          'field_db_description_org_lang',
+        ];
 
-  // The body tag's classes are controlled by the $classes_array variable. To
-  // remove a class from $classes_array, use array_diff().
-  $variables['classes_array'] = array_diff($variables['classes_array'],
-    array('class-to-remove')
-  );
+        foreach ($references as $reference) {
+          if (array_key_exists($reference, $fields) && $entity->$reference->value()) {
+            $label = $entity->$reference->value()->name;
+
+            if ($label) {
+              switch ($content_type) {
+                case 'critical_writing':
+                  $field = 'field_abstract_lang';
+                  $title = t("Abstract (in @term_name)", array('@term_name' => $label));
+                  break;
+                case 'databases_and_archives':
+                  $field = 'field_db_description_original';
+                  $title = t("Description (in @term_name)", array('@term_name' => $label));
+                  break;
+                case 'event':
+                  $field = 'field_event_abstract_lang';
+                  $title = t("Description (in @term_name)", array('@term_name' => $label));
+                  break;
+                case 'teaching_resource':
+                  $field = 'field_abstract_lang';
+                  $title = t("Abstract (in @term_name)", array('@term_name' => $label));
+                  break;
+                case 'work':
+                  $field = 'field_abstract_lang';
+                  $title = t("Description (in @term_name)", array('@term_name' => $label));
+                  break;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    if ($title) {
+      $variables['content'][$field]['#title'] = $title;
+    }
+
+  }
 }
-// */
 
 /**
- * Override or insert variables into the page templates.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("page" in this case.)
+ * Implement hook_form_alter().
  */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_page(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+function elmcip_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_api_page_search_form_search_knowledge_base') {
+    $form['keys_1']['#size'] = 30;
+    // Add extra attributes to the text box.
+    $form['keys_1']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search Knowledge Base';}";
+    $form['keys_1']['#attributes']['onfocus'] = "if (this.value == 'Search Knowledge Base') {this.value = '';}";
+    $form['keys_1']['#attributes']['placeholder'] = t('Search Knowledge Base');
+    $form['#attributes']['class'][] = 'container-inline';
+  }
 }
-// */
 
 /**
- * Override or insert variables into the region templates.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("region" in this case.)
+ * Implements template_preprocess_region().
  */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_region(&$variables, $hook) {
-  // Don't use Zen's region--no-wrapper.tpl.php template for sidebars.
-  if (strpos($variables['region'], 'sidebar_') === 0) {
-    $variables['theme_hook_suggestions'] = array_diff(
-      $variables['theme_hook_suggestions'], array('region__no_wrapper')
+function elmcip_preprocess_region(&$variables, $hook) {
+  if ($variables['region'] == 'header' || 'header-top') {
+    $variables['classes_array'][] = 'clearfix';
+  }
+}
+
+/**
+ * Panels render callback. Removes panel separator.
+ *
+ * @ingroup themeable
+ */
+function elmcip_panels_default_style_render_region($variables) {
+  $output = '';
+  $output .= implode('', $variables['panes']);
+  return $output;
+}
+
+/**
+ * implement theme_field().
+ */
+function elmcip_field__field_pullquote($variables) {
+  $output = '';
+
+  // Render the label, if it's not hidden.
+  if (!$variables['label_hidden']) {
+    $output .= '<div class="field-label"' . $variables['title_attributes'] . '>' . $variables['label'] . ':&nbsp;</div>';
+  }
+
+  // Render the items.
+  foreach ($variables['items'] as $delta => $item) {
+    $output .= '<blockquote ' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</blockquote>';
+  }
+
+  // Render the top-level DIV.
+  $output = '<div class="' . $variables['classes'] . '"' . $variables['attributes'] . '>' . $output . '</div>';
+
+  return $output;
+}
+
+/**
+ * Implements theme_facetapi_link_inactive.
+ * Returns HTML for an inactive facet item. Used in here to wrap count in a
+ * separate CSS class.
+ *
+ * @param $variables
+ *   An associative array containing the keys 'text', 'path', 'options', and
+ *   'count'. See the l() and theme_facetapi_count() functions for information
+ *   about these variables.
+ *
+ * @ingroup themeable
+ */
+function elmcip_facetapi_link_inactive($variables) {
+  // Sanitizes the link text if necessary.
+  $sanitize = empty($variables['options']['html']);
+  $text = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
+  // Adds count to link if one was passed.
+
+  if (isset($variables['count'])) {
+    $text .= '<span class="lighter"> ' . theme('facetapi_count', $variables) . '</span>';
+  }
+
+  // Zero elements. Make non-clickable element.
+  if (isset($variables['count']) && $variables['count'] == 0) {
+    $variables['element'] = array(
+      '#value' => $text,
+      '#tag' => 'span',
+      '#attributes' => $variables['options']['attributes']
     );
+    return theme_html_tag($variables);
   }
-}
-// */
-
-/**
- * Override or insert variables into the block templates.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("block" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_block(&$variables, $hook) {
-  // Add a count to all the blocks in the region.
-  // $variables['classes_array'][] = 'count-' . $variables['block_id'];
-
-  // By default, Zen will use the block--no-wrapper.tpl.php for the main
-  // content. This optional bit of code undoes that:
-  if ($variables['block_html_id'] == 'block-system-main') {
-    $variables['theme_hook_suggestions'] = array_diff(
-      $variables['theme_hook_suggestions'], array('block__no_wrapper')
+  // More than zero elements.
+  else {
+    // Builds accessible markup.
+    // @see http://drupal.org/node/1316580
+    $accessible_vars = array(
+      'text' => $variables['text'],
+      'active' => FALSE,
     );
+    $accessible_markup = theme('facetapi_accessible_markup', $accessible_vars);
+
+    // Resets link text, sets to options to HTML since we already sanitized the
+    // link text and are providing additional markup for accessibility.
+    $variables['text'] = $text . $accessible_markup;
+    $variables['options']['html'] = TRUE;
+
+    return theme_link($variables);
   }
 }
-// */
 
-/**
- * Override or insert variables into the node templates.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("node" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // Optionally, run node-type-specific preprocess functions, like
-  // STARTERKIT_preprocess_node_page() or STARTERKIT_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
-  }
-}
-// */
-
-/**
- * Override or insert variables into the comment templates.
- *
- * @param array $variables
- *   Variables to pass to the theme template.
- * @param string $hook
- *   The name of the template being rendered ("comment" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_comment(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-}
-// */
