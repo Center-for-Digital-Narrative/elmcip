@@ -1,24 +1,6 @@
-; Drupal's .info files allow themers to easily specify some of the static
-; properties of your theme. Properties such as its name, stylesheets,
-; javascripts, and block regions.
-;
-; Drupal 7 stores a cache of the data in this .info files. If you modify any
-; lines in this file, you MUST refresh Drupal 7's cache by simply visiting the
-; Appearance page at admin/appearance.
-
-
-
-; The name, description and screenshot used for this theme on the Appearance
-; page at admin/appearance.
-
 screenshot  = screenshot.png
-name        = Zen Sub-theme Starter Kit
-description = Read the <a href="https://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
-
-
-
-; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
-
+name        = ELMCIP
+description = ELMCIP theme
 core        = 7.x
 base theme  = zen
 
