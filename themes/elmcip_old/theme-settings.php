@@ -7,6 +7,6 @@
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function elmcip_form_system_theme_settings_alter(&$form, &$form_state) {
+function elmcip_old__form_system_theme_settings_alter(&$form, &$form_state) {
   unset($form['themedev']['zen_layout']);
 }

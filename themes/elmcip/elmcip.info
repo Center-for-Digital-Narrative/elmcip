@@ -4,8 +4,6 @@ description = ELMCIP theme
 core        = 7.x
 base theme  = zen
 
-
-
 ; This section controls the CSS files for your theme. There are 3 different
 ; things you can do with a "stylesheets" line:
 ; - Add a new stylesheet for your theme.
