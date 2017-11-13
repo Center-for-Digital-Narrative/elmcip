@@ -5293,7 +5293,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Critical Writing about the database or resource.',
+    'description' => 'If the database was featured in a critical writing, link to it here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5351,7 +5351,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'databases_and_archives',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Events where this resource or database has been featured. Only events can be referenced on this node.',
+    'description' => 'If the database or archive has been featured at an event, link to it here. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -20705,7 +20705,6 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Creative works');
   t('Critical Writing');
   t('Critical Writing Referenced');
-  t('Critical Writing about the database or resource.');
   t('Critical Writing noted');
   t('Critical Writing referenced');
   t('Critical writing');
@@ -20773,7 +20772,6 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Event series');
   t('Event type');
   t('Events');
-  t('Events where this resource or database has been featured. Only events can be referenced on this node.');
   t('Field to add screenshot to book pages.');
   t('First name');
   t('Gender');
@@ -20806,6 +20804,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the critical writing references an event, e.g. a review or trip report of a conference,  link to it here. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
   t('If the critical writing references an organization is referenced in the article, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('If the critical writing was presented at a conference, select here. The event will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
+  t('If the database or archive has been featured at an event, link to it here. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
+  t('If the database was featured in a critical writing, link to it here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
   t('If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. The name will autocomplete if it is in the database. If the publication is not yet in the database <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
   t('If the event is part of a series, link to it by typing the name of the series. The name will autocomplete if it is in the database. If the series has not yet been added, first <a href="/node/add/event" target="_blank">create an event record for the series</a>.');
   t('If the license of the work is known, select here.');
