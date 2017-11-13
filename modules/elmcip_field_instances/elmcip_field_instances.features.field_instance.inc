@@ -18115,7 +18115,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing">add the anthology</a>.',
+    'description' => 'If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the anthology</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -20819,7 +20819,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the teaching resource references another teaching resource, link to it here. The teaching resource will autocomplete if it is in the database. If the teaching resource is not yet in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.');
   t('If the work is available at a web-based archive, such as the Internet Archive, or a university open-research archive, link here.');
   t('If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization\'s name will autocomplete if it is in the database. If the publisher or organization is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.');
-  t('If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing">add the anthology</a>.');
+  t('If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the anthology</a>.');
   t('If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.
 ');
   t('If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
