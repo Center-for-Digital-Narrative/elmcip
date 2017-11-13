@@ -1911,7 +1911,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. The name will autocomplete if it is in the database. If the publication is not yet in the database <a href="/node/add/critical-writing">add the critical writing</a>.',
+    'description' => 'If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. The name will autocomplete if it is in the database. If the publication is not yet in the database <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -3591,7 +3591,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the critical writing references an organization is referenced in the article, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organiztion" target="_blank">add the organization</a>.',
+    'description' => 'If the critical writing references an organization is referenced in the article, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -20804,9 +20804,9 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the critical writing references  other critical writing, cross-reference it with a  link  here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database,  <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
   t('If the critical writing references a particular publisher or journal (for example, a conference paper about a particular online journal), link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
   t('If the critical writing references an event, e.g. a review or trip report of a conference,  link to it here. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
-  t('If the critical writing references an organization is referenced in the article, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organiztion" target="_blank">add the organization</a>.');
+  t('If the critical writing references an organization is referenced in the article, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
   t('If the critical writing was presented at a conference, select here. The event will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
-  t('If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. The name will autocomplete if it is in the database. If the publication is not yet in the database <a href="/node/add/critical-writing">add the critical writing</a>.');
+  t('If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. The name will autocomplete if it is in the database. If the publication is not yet in the database <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
   t('If the event is part of a series, link to it by typing the name of the series. The name will autocomplete if it is in the database. If the series has not yet been added, first <a href="/node/add/event" target="_blank">create an event record for the series</a>.');
   t('If the license of the work is known, select here.');
   t('If the license of the work is known, select it from the pull-down menu.');
