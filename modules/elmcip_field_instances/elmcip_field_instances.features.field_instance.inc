@@ -12591,7 +12591,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the eventis not yet in the database, <a href="/node/add/event" target="">add the event</a>.',
+    'description' => 'Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -20945,7 +20945,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Upload a photo of the person.');
   t('Upload screenshots or other images related to the organization.');
   t('Upload screenshots or other relevant imagery of the work here.');
-  t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the eventis not yet in the database, <a href="/node/add/event" target="">add the event</a>.');
+  t('Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.');
   t('Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.');
   t('Use this field to include creative works in this collection. The creative work will autocomplete if it is in the database. If the creative work is not in the database, <a href="/node/add/work">add the creative work</a>.');
   t('Use this field to include critical writings in this collection. The critical writing will autocomplete if it is in the database. If the critical writing is not in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
