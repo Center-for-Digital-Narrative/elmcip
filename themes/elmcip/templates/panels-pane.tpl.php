@@ -17,70 +17,74 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
+
 <?php if ($pane_prefix): ?>
-    <?php print $pane_prefix; ?>
+  <?php print $pane_prefix; ?>
 <?php endif; ?>
+
 <div class="<?php print $classes; ?>" <?php print $id; ?> <?php print $attributes; ?>>
-    <?php if ($admin_links): ?>
-        <?php print $admin_links; ?>
-    <?php endif; ?>
+  <?php if ($admin_links): ?>
+    <?php print $admin_links; ?>
+  <?php endif; ?>
 
-    <?php
-    print render($title_prefix);
-    switch ($pane->panel) {
-        case 'kbleft':
-            if ($title) {
-                print '<' . $title_heading . $title_attributes . '>';
-                print '<a href="/knowledgebase">' . $title . '</a>';
-                print '</' . $title_heading . '>';
-            }
-            break;
-        case 'kbmiddle':
-            if ($title) {
-                print '<' . $title_heading . $title_attributes . '>';
-                print '<a href="/work">' . $title . '</a>';
-                print '</' . $title_heading . '>';
-            }
-            break;
-        case 'kbright':
-            if ($title) {
-                print '<' . $title_heading . $title_attributes . '>';
-                print '<a href="critical_writing">' . $title . '</a>';
-                print '</' . $title_heading . '>';
-            }
-            break;
-        default:
-            if ($title) {
-                print '<' . $title_heading . $title_attributes . '>';
-                print $title;
-                print '</' . $title_heading . '>';
-            }
-    }
-    print render($title_suffix);
-    ?>
+  <?php
+  print render($title_prefix);
+  switch ($pane->panel) {
+    case 'kbleft':
+      if ($title) {
+        print '<' . $title_heading . $title_attributes . '>';
+        print '<a href="/knowledgebase">' . $title . '</a>';
+        print '</' . $title_heading . '>';
+      }
+      break;
+    case 'kbmiddle':
+      if ($title) {
+        print '<' . $title_heading . $title_attributes . '>';
+        print '<a href="/work">' . $title . '</a>';
+        print '</' . $title_heading . '>';
+      }
+      break;
+    case 'kbright':
+      if ($title) {
+        print '<' . $title_heading . $title_attributes . '>';
+        print '<a href="critical_writing">' . $title . '</a>';
+        print '</' . $title_heading . '>';
+      }
+      break;
+    default:
+      if ($title) {
+        print '<' . $title_heading . $title_attributes . '>';
+        print $title;
+        print '</' . $title_heading . '>';
+      }
+  }
+  print render($title_suffix);
+  ?>
 
-<?php if ($feeds): ?>
+  <?php if ($feeds): ?>
     <div class="feed">
-        <?php print $feeds; ?>
+      <?php print $feeds; ?>
     </div>
-<?php endif; ?>
+  <?php endif; ?>
 
-<div class="pane-content">
+  <div class="pane-content">
     <?php print render($content); ?>
-</div>
+  </div>
 
-<?php if ($links): ?>
+  <?php if ($links): ?>
     <div class="links">
         <?php print $links; ?>
     </div>
-<?php endif; ?>
+  <?php endif; ?>
 
-<?php if ($more): ?>
+  <?php if ($more): ?>
     <div class="more-link">
         <?php print $more; ?>
     </div>
-<?php endif; ?>
+  <?php endif; ?>
+
 </div>
+
 <?php if ($pane_suffix): ?>
-    <?php print $pane_suffix; ?>
+  <?php print $pane_suffix; ?>
 <?php endif; ?>
