@@ -85,16 +85,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'media',
   );
 
-  // Exported permission: 'access mollom statistics'.
-  $permissions['access mollom statistics'] = array(
-    'name' => 'access mollom statistics',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mollom',
-  );
-
   // Exported permission: 'access printer-friendly version'.
   $permissions['access printer-friendly version'] = array(
     'name' => 'access printer-friendly version',
@@ -399,15 +389,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer mollom'.
-  $permissions['administer mollom'] = array(
-    'name' => 'administer mollom',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mollom',
-  );
-
   // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
@@ -619,16 +600,6 @@ function elmcip_permissions_user_default_permissions() {
     'name' => 'bypass file access',
     'roles' => array(),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'bypass mollom protection'.
-  $permissions['bypass mollom protection'] = array(
-    'name' => 'bypass mollom protection',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'mollom',
   );
 
   // Exported permission: 'bypass node access'.

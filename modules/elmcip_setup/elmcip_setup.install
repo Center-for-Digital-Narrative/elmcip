@@ -951,3 +951,11 @@ function elmcip_setup_update_7059() {
   module_disable(array('taxonomy_manager'), TRUE);
   drupal_uninstall_modules(array('taxonomy_manager'), TRUE);
 }
+
+/**
+ * Uninstall Mollom module.
+ */
+function elmcip_setup_update_7060() {
+  module_disable(array('mollom'), FALSE);
+  drupal_uninstall_modules(array('mollom'), TRUE);
+}
