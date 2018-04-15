@@ -24,15 +24,13 @@ function elmcip_setup_update_7001() {
  */
 function elmcip_setup_block_info() {
   $blocks['sosical_networks'] = array(
-    'info' => t('Social networks assosiated with ELMCIP'),
+    'info' => t('Social networks associated with ELMCIP'),
     'cache' => DRUPAL_CACHE_GLOBAL,
-    'status' => 1,
-    'region' => 'header_top',
+    'status' => 0,
   );
 
   $blocks['sponsors'] = array(
     'info' => t('ELMCIP sponsors'),
-    'visibility' => BLOCK_VISIBILITY_NOTLISTED,
     'cache' => DRUPAL_CACHE_GLOBAL,
     'status' => 0,
   );
