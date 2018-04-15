@@ -7,19 +7,6 @@
 include_once 'elmcip_setup.features.inc';
 
 /**
- * Remove temporary index tables from views_export.
- *
- * Temporary index tables that have been left
- * behind. This is caused by batch processes which are
- * started but never finished.
- */
-function elmcip_setup_update_7001() {
-  if (module_exists('views_data_export')) {
-    views_data_export_garbage_collect(0, -1);
-  }
-}
-
-/**
  * Implements hook_block_info().
  */
 function elmcip_setup_block_info() {
@@ -241,10 +228,11 @@ function elmcip_setup_element_info_alter(&$type) {
 }
 
 /**
+ * Implements template_link_field_process().
+ *
  * @param $element
- * @param $form_state
- * @param $complete_form
- * @return mixed
+ *
+ * @return mixed $element
  */
 function elmcip_setup_link_field_process($element) {
   if ($element['#bundle'] == 'work') {
