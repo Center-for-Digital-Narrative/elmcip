@@ -99,7 +99,6 @@ features[user_permission][] = assign teacher role
 features[user_permission][] = block IP addresses
 features[user_permission][] = bypass file access
 features[user_permission][] = bypass node access
-features[user_permission][] = bypass node access
 features[user_permission][] = cancel account
 features[user_permission][] = change layouts in place editing
 features[user_permission][] = change own username
