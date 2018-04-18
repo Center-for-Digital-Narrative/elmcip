@@ -2,6 +2,8 @@ name = Development settings
 description = Turn on and enable setting used in development.
 core = 7.x
 package = ELMCIP
+scripts[] = tests/tota11y/build/tota11y.min.js
+
 dependencies[] = advanced_help
 dependencies[] = dblog
 dependencies[] = devel

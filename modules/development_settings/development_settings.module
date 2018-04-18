@@ -5,5 +5,3 @@
  */
 
 include_once 'development_settings.features.inc';
-
-drupal_add_js(drupal_get_path('module', 'development_settings') . '/tests/tota11y/build/tota11y.min.js');
