@@ -969,6 +969,22 @@ function elmcip_setup_update_7059() {
  * Uninstall Mollom module.
  */
 function elmcip_setup_update_7060() {
-  module_disable(array('mollom'), TRUE);
-  drupal_uninstall_modules(array('mollom'), TRUE);
+  elmcip_disable_and_uninstall(['mollom']);
+  var_dump(module_exists('mollom'));
+}
+
+/**
+ * Helper function that disable and uninstall unwanted modules.
+ *
+ * @param array $modules
+ * @throws \DrupalUpdateException
+ */
+function elmcip_disable_and_uninstall(array $modules) {
+  module_disable($modules, FALSE);
+  foreach ($modules as $module) {
+    if (module_exists($module)) {
+      throw new DrupalUpdateException(implode(', ', $modules) . ' or dependencies could not be disabled.');
+    }
+  }
+  drupal_uninstall_modules($modules, TRUE);
 }
