@@ -1079,9 +1079,10 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 56,
+        'type' => 'link_default',
+        'weight' => 27,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1161,9 +1162,10 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 52,
+        'type' => 'link_default',
+        'weight' => 28,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1244,9 +1246,10 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 53,
+        'type' => 'link_default',
+        'weight' => 20,
       ),
       'full' => array(
         'label' => 'above',
@@ -1327,9 +1330,13 @@ function elmcip_content_types_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 54,
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => 0,
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',

@@ -11,29 +11,6 @@ function elmcip_layout_field_group_info() {
   $field_groups = array();
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_core_vt|node|work|data_export';
-  $field_group->group_name = 'group_core_vt';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'work';
-  $field_group->mode = 'data_export';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Core Information',
-    'weight' => '23',
-    'children' => array(),
-    'format_type' => 'hidden',
-    'format_settings' => array(
-      'formatter' => '',
-      'instance_settings' => array(
-        'classes' => ' group-core-vt field-group-hidden',
-      ),
-    ),
-  );
-  $field_groups['group_core_vt|node|work|data_export'] = $field_group;
-
-  $field_group = new stdClass();
   $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_editorial_crit|node|critical_writing|default';
@@ -57,7 +34,7 @@ function elmcip_layout_field_group_info() {
   $field_groups['group_editorial_crit|node|critical_writing|default'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_editorial|node|work|default';
   $field_group->group_name = 'group_editorial';
@@ -78,29 +55,6 @@ function elmcip_layout_field_group_info() {
     ),
   );
   $field_groups['group_editorial|node|work|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_editorial|node|work|teaser';
-  $field_group->group_name = 'group_editorial';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'work';
-  $field_group->mode = 'teaser';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Editorial',
-    'weight' => '44',
-    'children' => array(),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'formatter' => 'collapsible',
-      'instance_settings' => array(
-        'classes' => ' group-editorial field-group-fieldset',
-      ),
-    ),
-  );
-  $field_groups['group_editorial|node|work|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -277,29 +231,6 @@ function elmcip_layout_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_workdoc|node|work|data_export';
-  $field_group->group_name = 'group_workdoc';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'work';
-  $field_group->mode = 'data_export';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Documentation',
-    'weight' => '26',
-    'children' => array(),
-    'format_type' => 'hidden',
-    'format_settings' => array(
-      'formatter' => '',
-      'instance_settings' => array(
-        'classes' => ' group-workdoc field-group-hidden',
-      ),
-    ),
-  );
-  $field_groups['group_workdoc|node|work|data_export'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_workdoc|node|work|form';
   $field_group->group_name = 'group_workdoc';
   $field_group->entity_type = 'node';
@@ -319,29 +250,6 @@ function elmcip_layout_field_group_info() {
     ),
   );
   $field_groups['group_workdoc|node|work|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
-  $field_group->identifier = 'group_worksubmit|node|work|data_export';
-  $field_group->group_name = 'group_worksubmit';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'work';
-  $field_group->mode = 'data_export';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Submit to ELMCIP Anthology',
-    'weight' => '28',
-    'children' => array(),
-    'format_type' => 'hidden',
-    'format_settings' => array(
-      'formatter' => '',
-      'instance_settings' => array(
-        'classes' => ' group-worksubmit field-group-hidden',
-      ),
-    ),
-  );
-  $field_groups['group_worksubmit|node|work|data_export'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -368,7 +276,6 @@ function elmcip_layout_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Core Information');
   t('Documentation');
   t('Editorial');
   t('Meta data');

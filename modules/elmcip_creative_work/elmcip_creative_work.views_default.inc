@@ -198,7 +198,7 @@ function elmcip_creative_work_views_default_views() {
   $handler->display->display_options['fields']['field_language_tax_1']['label'] = 'Language ID';
   $handler->display->display_options['fields']['field_language_tax_1']['type'] = 'elmcip_setup_term_name_with_tid';
   $handler->display->display_options['fields']['field_language_tax_1']['delta_offset'] = '0';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event']['id'] = 'field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event']['field'] = 'field_node_ref_event';
@@ -206,7 +206,7 @@ function elmcip_creative_work_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_node_ref_event']['delta_offset'] = '0';
-  /* Field: Content: Presented at Event */
+  /* Field: Content: Event */
   $handler->display->display_options['fields']['field_node_ref_event_1']['id'] = 'field_node_ref_event_1';
   $handler->display->display_options['fields']['field_node_ref_event_1']['table'] = 'field_data_field_node_ref_event';
   $handler->display->display_options['fields']['field_node_ref_event_1']['field'] = 'field_node_ref_event';
@@ -265,7 +265,7 @@ function elmcip_creative_work_views_default_views() {
     t('Publisher ID'),
     t('Language'),
     t('Language ID'),
-    t('Presented at Event'),
+    t('Event'),
     t('Event ID'),
     t('Tags'),
     t('Tags ID'),

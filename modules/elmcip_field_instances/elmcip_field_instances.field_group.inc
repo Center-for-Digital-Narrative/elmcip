@@ -650,7 +650,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_description|node|databases_and_archives|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_description|node|work|default';
   $field_group->group_name = 'group_description';
@@ -1176,6 +1176,37 @@ function elmcip_field_instances_field_group_info() {
     ),
   );
   $field_groups['group_meta|node|event|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_meta|node|work|default';
+  $field_group->group_name = 'group_meta';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'work';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Meta data',
+    'weight' => '41',
+    'children' => array(
+      0 => 'purl',
+      1 => 'author',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Meta data',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-meta',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => '',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_meta|node|work|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -2009,7 +2040,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_trref_vt|node|teaching_resource|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_workdoc|node|work|default';
   $field_group->group_name = 'group_workdoc';
@@ -2060,7 +2091,7 @@ function elmcip_field_instances_field_group_info() {
   $field_groups['group_workdoc|node|work|teaser'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_workinfo|node|work|default';
   $field_group->group_name = 'group_workinfo';

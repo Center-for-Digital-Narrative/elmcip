@@ -2717,8 +2717,8 @@ function elmcip_content_types_strongarm() {
       'display' => array(
         'Critical_writing_work_entity_view_1' => array(
           'default' => array(
-            'weight' => '36',
-            'visible' => FALSE,
+            'weight' => '37',
+            'visible' => TRUE,
           ),
           'full' => array(
             'weight' => '34',
@@ -2751,8 +2751,8 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '34',
-            'visible' => FALSE,
+            'weight' => '35',
+            'visible' => TRUE,
           ),
           'data_export' => array(
             'weight' => '41',
@@ -2773,8 +2773,8 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '35',
-            'visible' => FALSE,
+            'weight' => '36',
+            'visible' => TRUE,
           ),
           'teaser' => array(
             'weight' => '21',
@@ -2797,10 +2797,10 @@ function elmcip_content_types_strongarm() {
     ),
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -2812,13 +2812,13 @@ function elmcip_content_types_strongarm() {
         'custom_settings' => TRUE,
       ),
       'data_export' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'ical' => array(
         'custom_settings' => FALSE,
       ),
       'token' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'print' => array(
         'custom_settings' => FALSE,

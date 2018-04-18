@@ -97,7 +97,7 @@ function elmcip_layout_ds_field_settings_info() {
     'author' => array(
       'weight' => '50',
       'label' => 'inline',
-      'format' => 'author',
+      'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
@@ -886,30 +886,10 @@ function elmcip_layout_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|work|data_export';
+  $ds_fieldsetting->id = 'node|work|default';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'work';
-  $ds_fieldsetting->view_mode = 'data_export';
-  $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '1',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '0',
-        'wrapper' => '',
-        'class' => '',
-      ),
-    ),
-  );
-  $export['node|work|data_export'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|work|full';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'work';
-  $ds_fieldsetting->view_mode = 'full';
+  $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
       'weight' => '0',
@@ -927,17 +907,17 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '40',
+      'weight' => '0',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
-          'lb' => 'The permanent URL of this page ',
+          'lb' => 'The permanent URL of this page',
         ),
       ),
     ),
     'author' => array(
-      'weight' => '41',
+      'weight' => '1',
       'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
@@ -958,103 +938,8 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_url' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'Web URL',
-        ),
-      ),
-    ),
-    'field_downloadurl' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'Download URL',
-        ),
-      ),
-    ),
-    'field_files' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'Attachments',
-        ),
-      ),
-    ),
-    'field_worldcat_link' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'WorldCat',
-        ),
-      ),
-    ),
-    'field_electronic_literature_dire' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'See also',
-        ),
-      ),
-    ),
-    'field_i_e_poetry_entry' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'See also',
-        ),
-      ),
-    ),
-    'field_nt2_entry' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'See also',
-        ),
-      ),
-    ),
-    'field_po_ex_entry' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'See also',
-        ),
-      ),
-    ),
-    'field_node_ref_event' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'Exhibited at',
-        ),
-      ),
-    ),
-    'field_authoring_software_entry' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'See also',
-        ),
-      ),
-    ),
   );
-  $export['node|work|full'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|work|teaser';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'work';
-  $ds_fieldsetting->view_mode = 'teaser';
-  $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'title' => array(
-      'weight' => '1',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => '',
-        'class' => '',
-      ),
-    ),
-  );
-  $export['node|work|teaser'] = $ds_fieldsetting;
+  $export['node|work|default'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -1495,10 +1380,10 @@ function elmcip_layout_ds_layout_settings_info() {
         19 => 'cw_reference_event_entity_view_1',
         20 => 'field_files',
         21 => 'field_multi_images',
-        22 => 'field_media_asset',
-        23 => 'author',
-        24 => 'group_meta',
-        25 => 'purl',
+        22 => 'author',
+        23 => 'field_media_asset',
+        24 => 'purl',
+        25 => 'group_meta',
       ),
     ),
     'fields' => array(
@@ -1524,10 +1409,10 @@ function elmcip_layout_ds_layout_settings_info() {
       'cw_reference_event_entity_view_1' => 'right',
       'field_files' => 'right',
       'field_multi_images' => 'right',
-      'field_media_asset' => 'right',
       'author' => 'right',
-      'group_meta' => 'right',
+      'field_media_asset' => 'right',
       'purl' => 'right',
+      'group_meta' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -2494,78 +2379,59 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
-    'classes' => array(),
-    'wrappers' => array(
-      'left' => 'div',
-      'right' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
-  );
-  $export['node|work|default'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|work|full';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'work';
-  $ds_layout->view_mode = 'full';
-  $ds_layout->layout = 'ds_2col';
-  $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
         0 => 'content_type',
-        1 => 'field_author_name',
-        2 => 'field_translator',
-        3 => 'field_contributor',
-        4 => 'field_work_year',
-        5 => 'field_in_anthology',
-        6 => 'field_node_ref',
-        7 => 'field_archiveurl',
-        8 => 'field_url',
-        9 => 'field_downloadurl',
-        10 => 'field_language_tax',
-        11 => 'field_venue_tax',
-        12 => 'field_work_platform_software',
-        13 => 'field_worldcat_link',
-        14 => 'field_isbn_text',
-        15 => 'field_node_ref_event',
-        16 => 'field_license',
-        17 => 'field_record_status_tax',
-        18 => 'field_editorial_notes',
-        19 => 'field_repository',
+        3 => 'field_author_name',
+        4 => 'field_translator',
+        5 => 'field_contributor',
+        6 => 'field_work_year',
+        7 => 'field_in_anthology',
+        8 => 'field_node_ref',
+        9 => 'field_archiveurl',
+        10 => 'field_url',
+        11 => 'field_downloadurl',
+        12 => 'field_language_tax',
+        13 => 'field_venue_tax',
+        14 => 'field_work_platform_software',
+        15 => 'field_worldcat_link',
+        16 => 'field_isbn_text',
+        17 => 'field_node_ref_event',
+        18 => 'field_license',
+        19 => 'field_record_status_tax',
+        20 => 'field_editorial_notes',
+        21 => 'field_repository',
       ),
       'right' => array(
-        20 => 'taxonomy_vocabulary_1',
-        21 => 'field_textfield',
-        22 => 'field_abstract_lang',
-        23 => 'field_electronic_literature_dire',
-        24 => 'field_i_e_poetry_entry',
-        25 => 'field_nt2_entry',
-        26 => 'field_authoring_software_entry',
-        27 => 'field_po_ex_entry',
-        28 => 'field_other_lang_ver_link',
-        29 => 'field_part_of_another_work',
-        30 => 'field_other_edition_work',
-        31 => 'field_pullquote',
-        32 => 'field_tech_notes',
-        33 => 'field_contributors',
-        34 => 'Critical_writing_work_entity_view_1',
-        35 => 'Tr_work_entity_view_1',
-        36 => 'field_multi_image',
+        1 => 'purl',
+        2 => 'author',
+        22 => 'taxonomy_vocabulary_1',
+        23 => 'field_textfield',
+        24 => 'field_abstract_lang',
+        25 => 'field_electronic_literature_dire',
+        26 => 'field_i_e_poetry_entry',
+        27 => 'field_nt2_entry',
+        28 => 'field_authoring_software_entry',
+        29 => 'field_po_ex_entry',
+        30 => 'field_other_lang_ver_link',
+        31 => 'field_part_of_another_work',
+        32 => 'field_other_edition_work',
+        33 => 'field_pullquote',
+        34 => 'field_tech_notes',
+        35 => 'field_contributors',
+        36 => 'Tr_work_entity_view_1',
         37 => 'clone_of_research_collection_creative_work_entity_view_1',
-        38 => 'field_media_asset',
-        39 => 'field_files',
-        40 => 'purl',
-        41 => 'author',
+        38 => 'Critical_writing_work_entity_view_1',
+        39 => 'field_multi_image',
+        40 => 'field_media_asset',
+        41 => 'field_files',
+        42 => 'group_meta',
       ),
     ),
     'fields' => array(
       'content_type' => 'left',
+      'purl' => 'right',
+      'author' => 'right',
       'field_author_name' => 'left',
       'field_translator' => 'left',
       'field_contributor' => 'left',
@@ -2599,14 +2465,13 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_pullquote' => 'right',
       'field_tech_notes' => 'right',
       'field_contributors' => 'right',
-      'Critical_writing_work_entity_view_1' => 'right',
       'Tr_work_entity_view_1' => 'right',
-      'field_multi_image' => 'right',
       'clone_of_research_collection_creative_work_entity_view_1' => 'right',
+      'Critical_writing_work_entity_view_1' => 'right',
+      'field_multi_image' => 'right',
       'field_media_asset' => 'right',
       'field_files' => 'right',
-      'purl' => 'right',
-      'author' => 'right',
+      'group_meta' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -2620,42 +2485,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['node|work|full'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|work|teaser';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'work';
-  $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'content_type',
-        1 => 'title',
-        2 => 'field_author_name',
-        3 => 'field_work_year',
-      ),
-    ),
-    'fields' => array(
-      'content_type' => 'ds_content',
-      'title' => 'ds_content',
-      'field_author_name' => 'ds_content',
-      'field_work_year' => 'ds_content',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'ds_content' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
-  );
-  $export['node|work|teaser'] = $ds_layout;
+  $export['node|work|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
