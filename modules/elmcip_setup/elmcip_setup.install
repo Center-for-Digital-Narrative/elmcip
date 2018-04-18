@@ -969,6 +969,6 @@ function elmcip_setup_update_7059() {
  * Uninstall Mollom module.
  */
 function elmcip_setup_update_7060() {
-  module_disable(array('mollom'), FALSE);
+  module_disable(array('mollom'), TRUE);
   drupal_uninstall_modules(array('mollom'), TRUE);
 }
