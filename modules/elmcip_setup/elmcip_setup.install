@@ -970,7 +970,6 @@ function elmcip_setup_update_7059() {
  */
 function elmcip_setup_update_7060() {
   elmcip_disable_and_uninstall(['mollom']);
-  var_dump(module_exists('mollom'));
 }
 
 /**
