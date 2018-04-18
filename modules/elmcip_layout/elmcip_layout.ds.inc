@@ -133,7 +133,7 @@ function elmcip_layout_ds_field_settings_info() {
     ),
     'purl' => array(
       'weight' => '25',
-      'label' => 'hidden',
+      'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
@@ -143,11 +143,23 @@ function elmcip_layout_ds_field_settings_info() {
     ),
     'author' => array(
       'weight' => '26',
-      'label' => 'above',
+      'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
+        ),
+      ),
+    ),
+    'field_db_tags' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'field-tags-inline',
+          'fis-at' => '',
+          'fis-def-at' => FALSE,
         ),
       ),
     ),
