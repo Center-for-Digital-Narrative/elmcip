@@ -130,6 +130,16 @@ function elmcip_layout_ds_field_settings_info() {
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'title',
+          'fis-at' => '',
+          'fis-def-at' => FALSE,
+        ),
+      ),
     ),
     'purl' => array(
       'weight' => '25',
