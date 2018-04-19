@@ -13232,11 +13232,11 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
+          'bypass_access' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 19,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
@@ -13298,11 +13298,11 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
+          'bypass_access' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 10,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'above',
@@ -13365,13 +13365,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 3,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 28,
       ),
       'full' => array(
         'label' => 'above',
@@ -13426,13 +13422,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 4,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 29,
       ),
       'full' => array(
         'label' => 'above',
@@ -13487,13 +13479,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => TRUE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 5,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 26,
       ),
       'full' => array(
         'label' => 'above',
@@ -13550,14 +13538,20 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'description' => 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'image',
+        'label' => 'above',
+        'module' => 'colorbox',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => '',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'large',
+          'colorbox_node_style_first' => '',
         ),
-        'type' => 'image',
-        'weight' => 1,
+        'type' => 'colorbox',
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -13639,13 +13633,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
       ),
       'full' => array(
         'label' => 'above',
@@ -13700,13 +13690,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 2,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 27,
       ),
       'full' => array(
         'label' => 'above',
@@ -13761,13 +13747,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 7,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'above',
@@ -13822,13 +13804,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 9,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
       ),
       'full' => array(
         'label' => 'above',
@@ -13886,7 +13864,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -13976,13 +13954,9 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 8,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
       ),
       'full' => array(
         'label' => 'above',

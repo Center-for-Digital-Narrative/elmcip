@@ -265,6 +265,13 @@ function elmcip_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_research_collection';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_research_collection'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'diff_view_mode_preview_node_story';
   $strongarm->value = 'full';
   $export['diff_view_mode_preview_node_story'] = $strongarm;
@@ -2189,10 +2196,10 @@ function elmcip_content_types_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -2252,7 +2259,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '17',
+            'weight' => '7',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2270,7 +2277,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '18',
+            'weight' => '8',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2288,7 +2295,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '16',
+            'weight' => '10',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2306,7 +2313,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '15',
+            'weight' => '6',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2324,7 +2331,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '11',
+            'weight' => '9',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2342,7 +2349,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '12',
+            'weight' => '11',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2360,7 +2367,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '13',
+            'weight' => '12',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2378,7 +2385,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '14',
+            'weight' => '13',
             'visible' => TRUE,
           ),
           'search_result' => array(

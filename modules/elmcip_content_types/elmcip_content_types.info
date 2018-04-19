@@ -94,6 +94,7 @@ features[variable][] = diff_view_mode_preview_node_event
 features[variable][] = diff_view_mode_preview_node_page
 features[variable][] = diff_view_mode_preview_node_person
 features[variable][] = diff_view_mode_preview_node_platform_software
+features[variable][] = diff_view_mode_preview_node_research_collection
 features[variable][] = diff_view_mode_preview_node_story
 features[variable][] = diff_view_mode_preview_node_work
 features[variable][] = field_bundle_settings_node__book

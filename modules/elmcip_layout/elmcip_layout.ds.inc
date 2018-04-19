@@ -556,10 +556,10 @@ function elmcip_layout_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|research_collection|full';
+  $ds_fieldsetting->id = 'node|research_collection|default';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'research_collection';
-  $ds_fieldsetting->view_mode = 'full';
+  $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
       'weight' => '0',
@@ -577,7 +577,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '14',
+      'weight' => '25',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -587,22 +587,42 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '15',
+      'weight' => '26',
       'label' => 'inline',
-      'format' => 'author',
+      'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
-          'lb' => 'Posted by',
+          'lb' => 'Record posted by',
         ),
       ),
     ),
     'post_date' => array(
-      'weight' => '16',
+      'weight' => '27',
       'label' => 'inline',
       'format' => 'ds_post_date_short',
     ),
+    'field_media' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
+    'field_collection_platform_ref' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
+    'field_collection_curated_by' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
+    'field_collection_contributors' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
   );
-  $export['node|research_collection|full'] = $ds_fieldsetting;
+  $export['node|research_collection|default'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -1786,10 +1806,10 @@ function elmcip_layout_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|research_collection|full';
+  $ds_layout->id = 'node|research_collection|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'research_collection';
-  $ds_layout->view_mode = 'full';
+  $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
@@ -1810,9 +1830,10 @@ function elmcip_layout_ds_layout_settings_info() {
         11 => 'publishers_listed_in_research_collection_entity_view_1',
         12 => 'databases_archives_listed_in_research_collection_entity_view_1',
         13 => 'events_listed_in_research_collection_entity_view_1',
-        14 => 'purl',
-        15 => 'author',
-        16 => 'post_date',
+        14 => 'group_meta',
+        15 => 'purl',
+        16 => 'author',
+        17 => 'post_date',
       ),
     ),
     'fields' => array(
@@ -1830,6 +1851,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'publishers_listed_in_research_collection_entity_view_1' => 'right',
       'databases_archives_listed_in_research_collection_entity_view_1' => 'right',
       'events_listed_in_research_collection_entity_view_1' => 'right',
+      'group_meta' => 'right',
       'purl' => 'right',
       'author' => 'right',
       'post_date' => 'right',
@@ -1846,7 +1868,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['node|research_collection|full'] = $ds_layout;
+  $export['node|research_collection|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
