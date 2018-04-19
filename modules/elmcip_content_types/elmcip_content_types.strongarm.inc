@@ -2005,7 +2005,7 @@ function elmcip_content_types_strongarm() {
       'display' => array(
         'Work_publisher_entity_view_1' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '13',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -2041,7 +2041,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '5',
+            'weight' => '11',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2063,8 +2063,8 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '20',
-            'visible' => FALSE,
+            'weight' => '14',
+            'visible' => TRUE,
           ),
           'search_result' => array(
             'weight' => '20',
@@ -2091,8 +2091,8 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '21',
-            'visible' => FALSE,
+            'weight' => '15',
+            'visible' => TRUE,
           ),
           'search_result' => array(
             'weight' => '21',
@@ -2116,8 +2116,8 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '19',
-            'visible' => FALSE,
+            'weight' => '12',
+            'visible' => TRUE,
           ),
           'search_result' => array(
             'weight' => '19',
@@ -2135,7 +2135,7 @@ function elmcip_content_types_strongarm() {
           ),
           'default' => array(
             'weight' => '10',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
           'teaser' => array(
             'weight' => '10',
@@ -2146,10 +2146,10 @@ function elmcip_content_types_strongarm() {
     ),
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,

@@ -12311,7 +12311,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -12393,7 +12393,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -12600,9 +12600,13 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 22,
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => 0,
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 16,
       ),
       'full' => array(
         'label' => 'above',
@@ -12842,7 +12846,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'location_cck',
         'settings' => array(),
         'type' => 'location_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -12928,7 +12932,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -12989,11 +12993,11 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'weight' => -2,
       ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 9,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -13126,7 +13130,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
