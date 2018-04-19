@@ -11668,7 +11668,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -11716,13 +11716,12 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'file_entity',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'file_view_mode' => 'default',
         ),
-        'type' => 'image',
-        'weight' => 8,
+        'type' => 'file_rendered',
+        'weight' => 14,
       ),
       'full' => array(
         'label' => 'above',
@@ -11759,7 +11758,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'alt_field' => 0,
       'default_image' => 0,
       'file_directory' => 'media/platform_software/media',
-      'file_extensions' => 'mp3',
+      'file_extensions' => 'mp3 mov m4v mp4 mpeg ogg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -11806,7 +11805,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 7,
+        'weight' => 15,
       ),
       'full' => array(
         'label' => 'above',
@@ -11882,7 +11881,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -11967,13 +11966,19 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'colorbox',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => '',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'large',
+          'colorbox_node_style_first' => '',
         ),
-        'type' => 'image',
-        'weight' => 6,
+        'type' => 'colorbox',
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
@@ -12059,7 +12064,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',

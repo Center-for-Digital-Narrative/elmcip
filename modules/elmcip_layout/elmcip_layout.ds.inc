@@ -232,88 +232,6 @@ function elmcip_layout_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|event|full';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'event';
-  $ds_fieldsetting->view_mode = 'full';
-  $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '22',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
-    'author' => array(
-      'weight' => '23',
-      'label' => 'inline',
-      'format' => 'author',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'Record posted by',
-        ),
-      ),
-    ),
-    'taxonomy_vocabulary_1' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'field-tags-inline',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-  );
-  $export['node|event|full'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|event|teaser';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'event';
-  $ds_fieldsetting->view_mode = 'teaser';
-  $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'title' => array(
-      'weight' => '1',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => '',
-        'class' => '',
-      ),
-    ),
-  );
-  $export['node|event|teaser'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|notebook_entry|default';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'notebook_entry';
@@ -541,10 +459,10 @@ function elmcip_layout_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|platform_software|full';
+  $ds_fieldsetting->id = 'node|platform_software|default';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'platform_software';
-  $ds_fieldsetting->view_mode = 'full';
+  $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
       'weight' => '0',
@@ -562,17 +480,17 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'purl' => array(
-      'weight' => '16',
+      'weight' => '17',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
-          'lb' => 'The Permanent URL of this record',
+          'lb' => 'The permanent URL of this page',
         ),
       ),
     ),
     'author' => array(
-      'weight' => '17',
+      'weight' => '18',
       'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
@@ -582,7 +500,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
   );
-  $export['node|platform_software|full'] = $ds_fieldsetting;
+  $export['node|platform_software|default'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -1880,10 +1798,10 @@ function elmcip_layout_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|platform_software|full';
+  $ds_layout->id = 'node|platform_software|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'platform_software';
-  $ds_layout->view_mode = 'full';
+  $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
@@ -1906,8 +1824,9 @@ function elmcip_layout_ds_layout_settings_info() {
         13 => 'field_ps_image',
         14 => 'field_media',
         15 => 'field_ps_attachment',
-        16 => 'purl',
-        17 => 'author',
+        16 => 'group_meta',
+        17 => 'purl',
+        18 => 'author',
       ),
     ),
     'fields' => array(
@@ -1927,6 +1846,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_ps_image' => 'right',
       'field_media' => 'right',
       'field_ps_attachment' => 'right',
+      'group_meta' => 'right',
       'purl' => 'right',
       'author' => 'right',
     ),
@@ -1942,7 +1862,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['node|platform_software|full'] = $ds_layout;
+  $export['node|platform_software|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
