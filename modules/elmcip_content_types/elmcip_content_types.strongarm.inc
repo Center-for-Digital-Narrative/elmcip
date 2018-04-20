@@ -2532,7 +2532,7 @@ function elmcip_content_types_strongarm() {
       'display' => array(
         'critical_writing_tr_entity_view_1' => array(
           'default' => array(
-            'weight' => '16',
+            'weight' => '13',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -2550,7 +2550,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Work_tr_entity_view_1' => array(
           'default' => array(
-            'weight' => '15',
+            'weight' => '12',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -2572,8 +2572,8 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '31',
-            'visible' => FALSE,
+            'weight' => '14',
+            'visible' => TRUE,
           ),
           'teaser' => array(
             'weight' => '10',
@@ -2590,8 +2590,8 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '30',
-            'visible' => FALSE,
+            'weight' => '16',
+            'visible' => TRUE,
           ),
           'teaser' => array(
             'weight' => '10',
@@ -2608,8 +2608,8 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '29',
-            'visible' => FALSE,
+            'weight' => '15',
+            'visible' => TRUE,
           ),
           'teaser' => array(
             'weight' => '10',
@@ -2626,8 +2626,8 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
-            'visible' => FALSE,
+            'weight' => '17',
+            'visible' => TRUE,
           ),
           'teaser' => array(
             'weight' => '10',
@@ -2638,10 +2638,10 @@ function elmcip_content_types_strongarm() {
     ),
     'view_modes' => array(
       'teaser' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,

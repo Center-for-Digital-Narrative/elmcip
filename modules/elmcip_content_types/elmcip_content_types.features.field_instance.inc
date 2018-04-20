@@ -1028,7 +1028,7 @@ function elmcip_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 37,
       ),
       'full' => array(
         'label' => 'above',

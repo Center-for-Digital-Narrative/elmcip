@@ -666,47 +666,8 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
-    'author' => array(
-      'weight' => '5',
-      'label' => 'hidden',
-      'format' => 'author',
-    ),
-    'taxonomy_vocabulary_4' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_reset',
-        ),
-      ),
-    ),
-  );
-  $export['node|teaching_resource|default'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|teaching_resource|full';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'teaching_resource';
-  $ds_fieldsetting->view_mode = 'full';
-  $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fi' => TRUE,
-          'fi-el' => 'div',
-          'fi-cl' => 'title',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
-        ),
-      ),
-    ),
     'purl' => array(
-      'weight' => '21',
+      'weight' => '22',
       'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
@@ -716,13 +677,18 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
     'author' => array(
-      'weight' => '22',
+      'weight' => '23',
       'label' => 'inline',
-      'format' => 'author',
+      'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
+      ),
+    ),
+    'taxonomy_vocabulary_4' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
     'taxonomy_vocabulary_1' => array(
@@ -745,37 +711,7 @@ function elmcip_layout_ds_field_settings_info() {
       ),
     ),
   );
-  $export['node|teaching_resource|full'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|teaching_resource|teaser';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'teaching_resource';
-  $ds_fieldsetting->view_mode = 'teaser';
-  $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'title' => array(
-      'weight' => '1',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => '',
-        'class' => '',
-      ),
-    ),
-    'author' => array(
-      'weight' => '6',
-      'label' => 'inline',
-      'format' => 'author',
-    ),
-  );
-  $export['node|teaching_resource|teaser'] = $ds_fieldsetting;
+  $export['node|teaching_resource|default'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -1910,74 +1846,6 @@ function elmcip_layout_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         0 => 'content_type',
-        1 => 'field_tr_year',
-        2 => 'field_url',
-        3 => 'field_tr_author',
-        4 => 'field_tr_org',
-        5 => 'author',
-        6 => 'taxonomy_vocabulary_4',
-        7 => 'field_language_tax',
-        8 => 'field_editorial_notes',
-      ),
-      'right' => array(
-        9 => 'field_tr_description',
-        10 => 'field_abstract_lang',
-        11 => 'field_files',
-        12 => 'field_image',
-        13 => 'field_media_asset',
-        14 => 'taxonomy_vocabulary_1',
-        15 => 'Work_tr_entity_view_1',
-        16 => 'critical_writing_tr_entity_view_1',
-        17 => 'field_tr_tr',
-        18 => 'field_database_or_archive_refere',
-      ),
-    ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_tr_year' => 'left',
-      'field_url' => 'left',
-      'field_tr_author' => 'left',
-      'field_tr_org' => 'left',
-      'author' => 'left',
-      'taxonomy_vocabulary_4' => 'left',
-      'field_language_tax' => 'left',
-      'field_editorial_notes' => 'left',
-      'field_tr_description' => 'right',
-      'field_abstract_lang' => 'right',
-      'field_files' => 'right',
-      'field_image' => 'right',
-      'field_media_asset' => 'right',
-      'taxonomy_vocabulary_1' => 'right',
-      'Work_tr_entity_view_1' => 'right',
-      'critical_writing_tr_entity_view_1' => 'right',
-      'field_tr_tr' => 'right',
-      'field_database_or_archive_refere' => 'right',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'left' => 'div',
-      'right' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
-  );
-  $export['node|teaching_resource|default'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|teaching_resource|full';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'teaching_resource';
-  $ds_layout->view_mode = 'full';
-  $ds_layout->layout = 'ds_2col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'left' => array(
-        0 => 'content_type',
         1 => 'taxonomy_vocabulary_4',
         2 => 'field_language_tax',
         3 => 'field_tr_author',
@@ -2000,8 +1868,9 @@ function elmcip_layout_ds_layout_settings_info() {
         18 => 'field_image',
         19 => 'field_media_asset',
         20 => 'field_files',
-        21 => 'purl',
-        22 => 'author',
+        21 => 'group_meta',
+        22 => 'purl',
+        23 => 'author',
       ),
     ),
     'fields' => array(
@@ -2026,6 +1895,7 @@ function elmcip_layout_ds_layout_settings_info() {
       'field_image' => 'right',
       'field_media_asset' => 'right',
       'field_files' => 'right',
+      'group_meta' => 'right',
       'purl' => 'right',
       'author' => 'right',
     ),
@@ -2041,42 +1911,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
   );
-  $export['node|teaching_resource|full'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|teaching_resource|teaser';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'teaching_resource';
-  $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'content_type',
-        1 => 'title',
-        2 => 'taxonomy_vocabulary_4',
-        3 => 'author',
-      ),
-    ),
-    'fields' => array(
-      'content_type' => 'ds_content',
-      'title' => 'ds_content',
-      'taxonomy_vocabulary_4' => 'ds_content',
-      'author' => 'ds_content',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'ds_content' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
-  );
-  $export['node|teaching_resource|teaser'] = $ds_layout;
+  $export['node|teaching_resource|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
