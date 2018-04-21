@@ -43,6 +43,7 @@ stylesheets[all][]        = css/search.css
 stylesheets[all][]        = css/media.css
 stylesheets[all][]        = css/quote.css
 stylesheets[all][]        = css/typography.css
+stylesheets[all][]        = css/fullwidth.css
 stylesheets[print][]      = css/print.css
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type

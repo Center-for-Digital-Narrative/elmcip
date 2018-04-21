@@ -101,9 +101,13 @@ function elmcip_form_alter(&$form, &$form_state, $form_id) {
 /**
  * Implements template_preprocess_region().
  */
-function elmcip_preprocess_region(&$variables, $hook) {
-  if ($variables['region'] == 'header' || 'header-top') {
+function elmcip_preprocess_region(&$variables) {
+  if ($variables['region'] == 'header' || 'header_bottom') {
     $variables['classes_array'][] = 'clearfix';
+  }
+  if ($variables['region'] == 'header_top') {
+    $variables['classes_array'][] = 'clearfix';
+    $variables['classes_array'][] = 'full-width';
   }
 }
 

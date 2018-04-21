@@ -52,6 +52,10 @@
   margin: 0;
 }
 
+.region-header-top .region-wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
 .region-header {
   position: relative;
   margin: 10px;
