@@ -588,9 +588,10 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->configuration = array(
     'admin_title' => 'Conference1',
     'title' => '',
-    'body' => '<img src="./sites/default/files/media/news/images/rts.jpg" alt="Remediating the Social" title="Remediating the Social" />',
+    'body' => '<img src="./sites/default/files/media/story/images/rts.jpg" alt="Remediating the Social" title="Remediating the Social" />',
     'format' => '1',
     'substitute' => TRUE,
+    'title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
