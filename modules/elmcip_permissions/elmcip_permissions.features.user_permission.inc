@@ -744,6 +744,7 @@ function elmcip_permissions_user_default_permissions() {
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'submitter' => 'submitter',
       'supereditor' => 'supereditor',
       'teacher' => 'teacher',
     ),
