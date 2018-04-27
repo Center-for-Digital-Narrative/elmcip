@@ -13109,7 +13109,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'publisher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the URL of the publisher or journal homepage. Indicate the nature of the link using the title field.',
+    'description' => 'Enter the URL of the publisher or journal homepage. Generally enter the publisher\'s name as title. If you have multiple URLS, please indicate the nature of the link using the title field.',
     'display' => array(
       4 => array(
         'label' => 'hidden',
@@ -20795,6 +20795,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Enter the ISSN of the publisher.');
   t('Enter the URL of the event homepage. Indicate the nature of the link using the title field.');
   t('Enter the URL of the organization homepage. Indicate the nature of the link using the title field.');
+  t('Enter the URL of the publisher or journal homepage. Generally enter the publisher\'s name as title. If you have multiple URLS, please indicate the nature of the link using the title field.');
   t('Enter the URL of the publisher or journal homepage. Indicate the nature of the link using the title field.');
   t('Enter the editor if applicable. The name will autocomplete if the editor is already in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>. If you are entering an article or chapter from an anthology, do not enter the editor of the volume here.');
   t('Enter the email address of the event or event organizers.');
