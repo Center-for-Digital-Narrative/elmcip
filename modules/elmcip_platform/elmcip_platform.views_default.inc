@@ -26,7 +26,7 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'See all Platform/Software';
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
@@ -173,9 +173,8 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['expose']['operator'] = FALSE;
 
-  /* Display: Export preview */
-  $handler = $view->new_display('page', 'Export preview', 'page_1');
-  $handler->display->display_options['display_description'] = 'Preview of data export';
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
@@ -184,18 +183,60 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['use_more_text'] = 'See all Platform/Software';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '2';
-  $handler->display->display_options['path'] = 'data/platform';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  /* Field: Content: Publisher or organization */
+  $handler->display->display_options['fields']['field_publisher_or_organization']['id'] = 'field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['table'] = 'field_data_field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['field'] = 'field_publisher_or_organization';
+  $handler->display->display_options['fields']['field_publisher_or_organization']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_publisher_or_organization']['delta_offset'] = '0';
+  /* Field: Content: Developers */
+  $handler->display->display_options['fields']['field_platform_developers']['id'] = 'field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['table'] = 'field_data_field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['field'] = 'field_platform_developers';
+  $handler->display->display_options['fields']['field_platform_developers']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_platform_developers']['delta_offset'] = '0';
+  /* Field: Content: Year initiated */
+  $handler->display->display_options['fields']['field_platform_year']['id'] = 'field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['table'] = 'field_data_field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['field'] = 'field_platform_year';
+  $handler->display->display_options['fields']['field_platform_year']['settings'] = array(
+    'format_type' => 'year_only',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['label'] = 'Updated';
+  $handler->display->display_options['fields']['changed']['alter']['max_length'] = '10';
+  $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['changed']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['changed']['date_format'] = 'short';
+  $handler->display->display_options['path'] = 'platform';
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    7 => '7',
-    3 => '3',
+    2 => '2',
   );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -207,9 +248,8 @@ function elmcip_platform_views_default_views() {
   $handler->display->display_options['path'] = 'data/platform/export';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
-    'page_2' => 'page_2',
     'default' => 0,
-    'block_1' => 0,
+    'panel_pane_1' => 0,
   );
   $handler->display->display_options['sitename_title'] = 0;
   $handler->display->display_options['use_batch'] = 'batch';
@@ -312,8 +352,7 @@ function elmcip_platform_views_default_views() {
     t('Developers'),
     t('Year initiated'),
     t('Updated'),
-    t('Export preview'),
-    t('Preview of data export'),
+    t('Page'),
     t('Data export'),
     t('more'),
     t('Content pane'),
