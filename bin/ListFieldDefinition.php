@@ -8,7 +8,11 @@
 
 class ListFieldDefinition {
 
-  protected $field_information = ['label', 'field_name', 'description', 'type'];
+  const FIELD_INFORMATION = [
+    'Title' => 'label',
+    'Field name' => 'field_name',
+    'Description' => 'description',
+    ];
   protected $entity_type = '';
   protected $bundles = [];
   protected $info = [];
@@ -17,7 +21,6 @@ class ListFieldDefinition {
 
     $this->entity_type = $entity_type;
     $this->bundles = $bundles;
-    $this->createList();
   }
 
   /**
@@ -33,7 +36,7 @@ class ListFieldDefinition {
   }
 
   /**
-   * Get a list of field names.
+   * Get a list of field names of a specific bundle.
    *
    * @param $bundle
    *
@@ -41,63 +44,44 @@ class ListFieldDefinition {
    *   A list of fields, a empty array if no fields was found.
    */
   public function getFieldNames($bundle): array {
+    $this->info = field_info_instances($this->entity_type, $bundle);
 
-    return array_keys(field_info_instances($this->entity_type, $bundle));
+    return array_keys($this->info);
   }
 
   /**
-   * Create list of fields.
-   */
-  protected function createList() {
-    entity_get_all_property_info($this->entity_type);
-
-    $info = entity_get_property_info($this->entity_type);
-    $info += [
-      'properties' => [],
-      'bundles' => [],
-    ];
-    // Add all bundle properties.
-    foreach ($info['bundles'] as $bundle => $bundle_info) {
-      $bundle_info += array('properties' => []);
-      $info['properties'] += $bundle_info['properties'];
-    }
-
-    $this->info = $info;
-  }
-
-
-  /**
-   * Extract all field definitions needed.
+   * Extract field information for a given bundle.
    *
-   * @param $extract
+   * @param string $bundle
    *
    * @return array
    */
-  protected function extractInfo($bundle) {
+  protected function extractFieldInfo($bundle): array {
 
-    $extracted = [];
-    $fields = array_keys($bundle['properties']);
+    $info = [];
+    $fields = $this->getFieldNames($bundle);
 
     foreach ($fields as $field) {
-      foreach ($this->field_information as $foo) {
-        $extracted[] = $bundle['properties'][$field][$foo];
+
+      foreach (self::FIELD_INFORMATION as $key => $property) {
+        $info[] = [$key => $this->info[$field][$property]];
       }
     }
 
-    return $extracted;
+    return $info;
   }
 
   /**
-   * Get list of definitions.
+   * Get field definitions.
    *
    * @return array
    */
-  public function getFieldList($bundle): array {
+  public function getFieldProperties(): array {
 
     $list = [];
 
     foreach ($this->bundles as $bundle) {
-      $list[] = $this->extractInfo($this->info['bundles'][$bundle]);
+      $list[$bundle] = $this->extractFieldInfo($bundle);
     }
 
     return $list;
@@ -106,7 +90,29 @@ class ListFieldDefinition {
 
 $list = new ListFieldDefinition('node', [
   'critical_writing',
+  'work',
+  'organization',
+  'publisher',
+  'platform_software',
+  'book',
 ]);
 
-print_r($list->getAllBundleNames());
-print_r($list->getFieldNames('event'));
+$fields = $list->getFieldProperties();
+foreach ($fields as $bundle => $field) {
+
+  print PHP_EOL . '----------------------------------' . PHP_EOL;
+  print "$bundle \n";
+  print '----------------------------------' . PHP_EOL;
+
+  foreach ($field as $property) {
+    $key = key($property);
+
+    if ($key === 'Title') {
+      print PHP_EOL;
+    }
+
+    $string = $key . ': ' . $property[$key];
+    print $string . PHP_EOL;
+  }
+
+}
