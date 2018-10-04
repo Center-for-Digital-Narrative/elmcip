@@ -116,7 +116,7 @@ An attached view of all works created using a given platform will appear on the 
 
 Versions of given platforms (e.g. HTML 2.0, HTML 5) will not have individual records, though tags can be used to indicate versions used on individual works. '),
       'has_title' => '1',
-      'title_label' => t('Platform name'),
+      'title_label' => t('Platform/Software'),
       'help' => '',
     ),
     'publisher' => array(

@@ -368,7 +368,7 @@ function elmcip_content_types_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_database_platform_ref',
-    'label' => 'Platform',
+    'label' => 'Platform/Software',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1413,7 +1413,6 @@ function elmcip_content_types_field_default_field_instances() {
   t('Link to a stable URL documenting the version history of the software or platform, if available. Indicate the nature of the link using the title field (e.g. Wikipedia version history of WordPerfect).');
   t('Narrabase.net entry');
   t('PO.EX entry');
-  t('Platform');
   t('Platform referenced');
   t('Platform/Software');
   t('Platform/Software referenced');
