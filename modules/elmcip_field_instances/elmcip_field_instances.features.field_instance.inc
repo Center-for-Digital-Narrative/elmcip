@@ -555,7 +555,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<strong>If the work is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.',
+    'description' => '',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -716,7 +716,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language used in the original language abstract field.',
+    'description' => 'If the work was produced in another language (for example French, German, etc.) add a description in the original language by first selecting the language and then adding the description in that language in the field that appears.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -754,7 +754,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
-    'label' => 'Language of abstract in the original language',
+    'label' => 'Description in original language',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -7217,7 +7217,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<strong>If the event was not in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7286,7 +7286,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language used in the original language description field.',
+    'description' => 'If the work was produced in another language (for example French, German, etc.) add a description in the original language by first selecting the language and then adding the description in that language in the field that appears.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7298,7 +7298,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_event_abstract_lang_tax',
-    'label' => 'Language of original description ',
+    'label' => 'Description in original language',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -14620,7 +14620,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<strong>If the teaching resource is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.',
+    'description' => '',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -14781,7 +14781,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'teaching_resource',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language of the additional language abstract.',
+    'description' => 'If the work was produced in another language (for example French, German, etc.) add a description in the original language by first selecting the language and then adding the description in that language in the field that appears.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -14811,7 +14811,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
-    'label' => 'Language of abstract in the original language',
+    'label' => 'Description in original language',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -16790,7 +16790,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.',
+    'description' => '',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -16957,7 +16957,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the human language used in the original language description field.',
+    'description' => 'If the work was produced in another language (for example French, German, etc.) add a description in the original language by first selecting the language and then adding the description in that language in the field that appears.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -17001,7 +17001,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_abstract_lang_tax',
-    'label' => 'Language of original description',
+    'label' => 'Description in original language',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -20712,11 +20712,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   // Translatables
   // Included for use with string extractors like potx.
   t('<strong>For dissertations and theses only</strong>, indicate the university in which the thesis was produced.The university’s will autocomplete if it is in the database. If the university is not yet in the database, <a href="/node/add/organization" target="_blank">add the university as an organization</a>.');
-  t('<strong>If the event was not in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.');
-  t('<strong>If the teaching resource is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
-  t('<strong>If the work is not written in English</strong>, write a brief abstract in the original language. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract. Leave this field empty if the original language of the work is English.');
   t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.');
-  t('<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description. Leave this field empty if the original language of the work is English.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this database or archive. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this event. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
@@ -20773,6 +20769,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Description (Original Language)');
   t('Description (in English)');
   t('Description (in original language)');
+  t('Description in original language');
   t('Died');
   t('Download URL');
   t('Edition');
@@ -20875,6 +20872,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the teaching resource references another teaching resource, link to it here. The teaching resource will autocomplete if it is in the database. If the teaching resource is not yet in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.');
   t('If the work is available at a web-based archive, such as the Internet Archive, or a university open-research archive, link here.');
   t('If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization\'s name will autocomplete if it is in the database. If the publisher or organization is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.');
+  t('If the work was produced in another language (for example French, German, etc.) add a description in the original language by first selecting the language and then adding the description in that language in the field that appears.');
   t('If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the anthology</a>.');
   t('If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.
 ');
@@ -20912,9 +20910,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('KB editors should use this field to provide a brief indication of revisions required. This field will only be visible to KB editor and to original authors of the record. This field should be wiped when the record is marked as approved.');
   t('Key People');
   t('Language');
-  t('Language of abstract in the original language');
   t('Language of original description');
-  t('Language of original description ');
   t('Last name');
   t('License');
   t('Location');
@@ -20968,10 +20964,8 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Screen shots');
   t('Screenshot');
   t('Screenshots of the database or archive.');
-  t('Select the human language of the additional language abstract.');
   t('Select the human language of the teaching resource. Select multiple if the teaching resource includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
   t('Select the human language the work was written in. Select multiple if the work includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
-  t('Select the human language used in the original language abstract field.');
   t('Select the human language used in the original language description field.');
   t('Select the license that the platform is released under from the list.');
   t('Select the person’s gender. Note: this information will not be publicly displayed on the author page but may be used in faceted search for quantitative research.');
