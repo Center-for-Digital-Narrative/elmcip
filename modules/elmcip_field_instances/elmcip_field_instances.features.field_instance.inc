@@ -10228,7 +10228,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the person’s gender.',
+    'description' => 'Select the person’s gender. Note: this information will not be publicly displayed on the author page but may be used in faceted search for quantitative research.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -20974,7 +20974,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Select the human language used in the original language abstract field.');
   t('Select the human language used in the original language description field.');
   t('Select the license that the platform is released under from the list.');
-  t('Select the person’s gender.');
+  t('Select the person’s gender. Note: this information will not be publicly displayed on the author page but may be used in faceted search for quantitative research.');
   t('Select the primary human language(s) of the database or archive.  Select multiple if the database or archive includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.');
   t('Select the type of database or archive, for example, <i>http://elmcip.net/knowledgebase</i> for the ELMCIP (Electronic Literature Knowledge Base). Enter the name of the resource in the "Name of resource" field just to the left.');
   t('Select the type of database or archive.');
