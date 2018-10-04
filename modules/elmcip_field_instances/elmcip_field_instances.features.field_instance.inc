@@ -5358,7 +5358,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'entityreference',
         'settings' => array(
           'bypass_access' => 0,
-          'link' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 9,
