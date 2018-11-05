@@ -2,16 +2,16 @@
 
 set -x
 
-SITE=elmcip01.norstore.uio.no
-DB_SITE=elmcip02.norstore.uio.no
 DRUPAL=drupal
-URI=elmcip.dev
+URI=elmcip.local
 HOMEDIR=${PWD}
 
 drush --version || exit $?
 
-# Pull latest code the master branch and selected branch before running upgrades.
-if [ -z "$1" ]; then
+# Pull latest code the master branch and selected branch before running
+# upgrades.
+
+if [[ -z "$1" ]]; then
   git checkout master
   git pull --rebase
 else
@@ -22,7 +22,7 @@ fi
 git submodule update --quiet || exit $?
 
 # Flush all drupal caches and revert all feature modules
-cd $HOMEDIR/$DRUPAL
+cd ${HOMEDIR}/${DRUPAL}
 drush cc all
 drush updatedb --yes
 drush features-revert-all --yes
