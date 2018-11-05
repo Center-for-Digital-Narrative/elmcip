@@ -1,16 +1,17 @@
 #!/bin/bash
 
-# Remove all data not really needed. Speeding up staging and working with the database.
+# Remove all data not really needed in database you use.
+# Improve time it take to stage the database.
 
 set -x
 
 DRUPAL=drupal
-URI=elmcip.dev
+URI=elmcip.local
 HOMEDIR=${PWD}
 
 drush --version || exit $?
 
-cd $DRUPAL
+cd ${DRUPAL}
 
 # Optimize database.
 drush scr ../bin/cleanup.php

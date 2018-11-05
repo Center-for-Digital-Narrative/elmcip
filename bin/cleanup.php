@@ -2,6 +2,7 @@
 
 /**
  * @file cleanup.php
+ *
  * Small tool that clean out any views_data_export tables and cache objects.
  */
 
@@ -9,12 +10,12 @@ $result = Database::getConnection()->query("show tables like '%views_data_export
 if ($result) {
   while ($row = $result->fetchAssoc()) {
     $table = $row['Tables_in_elmcip (%views_data_export_index%)'];
-    Database::getConnection()->query("DROP TABLE $table");
+    Database::getConnection()->exec("DROP TABLE $table");
     print "Dropped table $table from database" . PHP_EOL;
   }
 }
 
-$tables = array(
+$tables = [
   'cache',
   'cache_block',
   'cache_bootstrap',
@@ -38,25 +39,21 @@ $tables = array(
   'ctools_object_cache',
   'views_data_export_object_cache',
   'views_data_export',
-);
+];
 
 foreach ($tables as $table) {
-  Database::getConnection()->query("TRUNCATE $table ;");
+  Database::getConnection()->exec("TRUNCATE $table ;");
   print "Flushed cache: $table from database" . PHP_EOL;
 }
 
-$tables_extra = array(
+$tables_extra = [
   'batch',
   'history',
   'queue',
   'sessions',
-  'search_dataset',
-  'search_index',
-  'search_node_links',
-  'search_total',
-);
+];
 
 foreach ($tables_extra as $table) {
-  Database::getConnection()->query("TRUNCATE $table ;");
+  Database::getConnection()->exec("TRUNCATE $table ;");
   print "Flushed all extra table: $table from database" . PHP_EOL;
 }
