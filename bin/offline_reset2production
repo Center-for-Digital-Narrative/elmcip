@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# Off-line version of reset2production. Does no attempt to pull data from
-# external services. Useful to be able reset to last known production while
-# your machine have no Internet connection or github/Norstore servers are down.
+# Off-line version of reset2production.
+#
+# Does no attempt to pull data from any external services.
+# Useful to be able reset to last known production while your machine
+# have no Internet connection.
 
 set -x
 
-SITE=elmcip01.norstore.uio.no
-DB_SITE=elmcip02.norstore.uio.no
 DRUPAL=drupal
-URI=elmcip.dev
+URI=elmcip.local
 HOMEDIR=${PWD}
 
 drush --version || exit $?
@@ -17,18 +17,18 @@ drush --version || exit $?
 git checkout production --quiet || exit $?
 git submodule update --quiet || exit $?
 
-cd $DRUPAL
+cd ${DRUPAL}
 
-if [ -z "$1" ]; then
+if [[ -z "$1" ]]; then
   # Drop all data and populate database with the latest backup.
   echo "Running normal mode."
-  drush --uri=$URI sql-drop --yes
-  gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
+  drush --uri=${URI} sql-drop --yes
+  gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=${URI} sql-cli
 else
   # Run the fast version.
   echo "Running fast mode."
-  drush --uri=$URI sql-drop --yes
-  drush --uri=$URI sql-cli < ../site/latest.elmcip.sql
+  drush --uri=${URI} sql-drop --yes
+  drush --uri=${URI} sql-cli < ../site/latest.elmcip.sql
 fi
 
 # Flush all drupal caches.
