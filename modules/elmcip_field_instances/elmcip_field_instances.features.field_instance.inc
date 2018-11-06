@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * elmcip_field_instances.features.field_instance.inc
@@ -9574,7 +9575,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 37,
       ),
       'full' => array(
         'label' => 'above',
@@ -9620,7 +9621,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -10111,7 +10112,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 41,
+        'weight' => 39,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10234,7 +10235,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 35,
       ),
       'full' => array(
         'label' => 'above',
@@ -10299,7 +10300,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 38,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10450,7 +10451,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 42,
+        'weight' => 40,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10588,7 +10589,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'location_cck',
         'settings' => array(),
         'type' => 'location_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10659,9 +10660,62 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'location_cck',
       'settings' => array(),
       'type' => 'location',
-      'weight' => 10,
+      'weight' => 11,
     ),
     'widget_type' => 'location',
+  );
+
+  // Exported field_instance: 'node-person-field_orcid'.
+  $field_instances['node-person-field_orcid'] = array(
+    'bundle' => 'person',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'ORCiD is a database of researchers that gives out a unique ID number for every researcher. <a target="_blank" href="https://orcid.org/about">about ORCID</a>.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 4,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_orcid',
+    'label' => 'ORCID',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_allowed_values' => '',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 9,
+    ),
   );
 
   // Exported field_instance: 'node-person-field_record_status_tax'.
@@ -10745,7 +10799,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'location_cck',
         'settings' => array(),
         'type' => 'location_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10816,7 +10870,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'location_cck',
       'settings' => array(),
       'type' => 'location',
-      'weight' => 9,
+      'weight' => 10,
     ),
     'widget_type' => 'location',
   );
@@ -11095,7 +11149,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 36,
       ),
       'full' => array(
         'label' => 'above',
@@ -20923,6 +20977,8 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('NT2 entry');
   t('Nationality');
   t('Notebook');
+  t('ORCID');
+  t('ORCiD is a database of researchers that gives out a unique ID number for every researcher. <a target="_blank" href="https://orcid.org/about">about ORCID</a>.');
   t('Organization');
   t('Organization referenced');
   t('Organizations');

@@ -180,8 +180,10 @@ div.vertical-tabs {
   font-size: 0.857em;
 }
 
+/* Pack groups of checkboxes and radio buttons closer together. */
+.form-type-link-field .form-type-textfield,
 .form-checkboxes .form-item,
-.form-radios .form-item /* Pack groups of checkboxes and radio buttons closer together */ {
+.form-radios .form-item {
   margin: 0;
 }
 

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * elmcip_field_instances.field_group.inc
@@ -1419,6 +1420,7 @@ function elmcip_field_instances_field_group_info() {
       7 => 'field_alternative_spelling_of_na',
       8 => 'field_affiliation',
       9 => 'field_userid_reference',
+      10 => 'field_orcid',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

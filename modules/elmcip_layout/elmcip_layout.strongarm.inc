@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * elmcip_layout.strongarm.inc
