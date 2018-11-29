@@ -26,6 +26,7 @@ features[field_group][] = group_platform_editorial_status|node|platform_software
 features[field_instance][] = node-critical_writing-field_critical_writing_year
 features[field_instance][] = node-critical_writing-field_criticalw_platform_ref
 features[field_instance][] = node-critical_writing-field_cw_in_platform_software
+features[field_instance][] = node-critical_writing-field_doi
 features[field_instance][] = node-critical_writing-field_po_ex_entry
 features[field_instance][] = node-databases_and_archives-field_database_platform_ref
 features[field_instance][] = node-platform_software-field_editorial_notes

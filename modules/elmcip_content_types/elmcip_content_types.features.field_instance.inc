@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * elmcip_content_types.features.field_instance.inc
@@ -186,7 +187,7 @@ function elmcip_content_types_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'full' => array(
         'label' => 'above',
@@ -242,6 +243,81 @@ function elmcip_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-critical_writing-field_doi'.
+  $field_instances['node-critical_writing-field_doi'] = array(
+    'bundle' => 'critical_writing',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_doi',
+    'label' => 'DOI',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 44,
+    ),
+  );
+
   // Exported field_instance: 'node-critical_writing-field_po_ex_entry'.
   $field_instances['node-critical_writing-field_po_ex_entry'] = array(
     'bundle' => 'critical_writing',
@@ -254,7 +330,7 @@ function elmcip_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'full' => array(
         'label' => 'above',
@@ -1337,7 +1413,7 @@ function elmcip_content_types_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 13,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'above',
@@ -1389,7 +1465,7 @@ function elmcip_content_types_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -1398,6 +1474,7 @@ function elmcip_content_types_field_default_field_instances() {
   t(' If the teaching resource references a platform/software, link to it here. The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
   t('Add a URL to a repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Add notes about editorial status here.');
+  t('DOI');
   t('Developers');
   t('Enter the individuals who were key to the development of this platform/software, if applicable (e.g. Daniel Howe for RITA libraries). The person will autocomplete if they are in the database. If person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Enter the publisher or organization responsible for this platform/software.The publisher or organization will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/organization" target="_blank">add the organization</a> or <a href="/node/add/organization" target="_blank">add the publisher</a>.');

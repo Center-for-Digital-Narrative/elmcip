@@ -237,7 +237,8 @@ function elmcip_field_instances_field_group_info() {
       12 => 'field_node_ref_event',
       13 => 'field_work_platform_software',
       14 => 'field_work_year',
-      15 => 'title',
+      15 => 'field_doi',
+      16 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -369,6 +370,7 @@ function elmcip_field_instances_field_group_info() {
       7 => 'field_other_edition_link',
       8 => 'field_series_ref',
       9 => 'field_inbook',
+      10 => 'field_doi',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

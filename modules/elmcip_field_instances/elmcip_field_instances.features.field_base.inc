@@ -1159,6 +1159,30 @@ function elmcip_field_instances_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_doi'.
+  $field_bases['field_doi'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_doi',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 32,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_downloadurl'.
   $field_bases['field_downloadurl'] = array(
     'active' => 1,

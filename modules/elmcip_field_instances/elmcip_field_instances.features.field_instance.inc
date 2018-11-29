@@ -423,7 +423,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -591,7 +591,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -1186,7 +1186,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -1271,7 +1271,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 30,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 49,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -1463,7 +1463,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'full' => array(
         'label' => 'above',
@@ -1552,7 +1552,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -1668,7 +1668,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 25,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 47,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -1686,7 +1686,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'full' => array(
         'label' => 'above',
@@ -1962,7 +1962,7 @@ function elmcip_field_instances_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -2079,7 +2079,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 54,
     ),
     'widget_type' => 'nodereference_autocomplete',
   );
@@ -2124,7 +2124,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -2247,7 +2247,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 25,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 45,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -2292,7 +2292,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -2415,7 +2415,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'size' => 25,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 46,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -2461,7 +2461,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -2550,7 +2550,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 52,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -2649,7 +2649,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -2920,7 +2920,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -3713,7 +3713,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 9,
+      'weight' => 50,
     ),
   );
 
@@ -3772,7 +3772,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'link' => TRUE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -3922,7 +3922,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -4010,7 +4010,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 14,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 53,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -4180,7 +4180,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -4317,7 +4317,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'full' => array(
         'label' => 'above',
@@ -4590,7 +4590,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 10,
+      'weight' => 51,
     ),
   );
 
@@ -5114,7 +5114,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 7,
+      'weight' => 48,
     ),
   );
 
@@ -5130,7 +5130,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'full' => array(
         'label' => 'above',
@@ -17116,7 +17116,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -17215,7 +17215,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 11,
+      'weight' => 10,
     ),
     'widget_type' => 'link',
   );
@@ -17404,7 +17404,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
@@ -17624,6 +17624,75 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'widget_type' => 'text_textarea',
   );
 
+  // Exported field_instance: 'node-work-field_doi'.
+  $field_instances['node-work-field_doi'] = array(
+    'bundle' => 'work',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_doi',
+    'label' => 'DOI',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-work-field_downloadurl'.
   $field_instances['node-work-field_downloadurl'] = array(
     'bundle' => 'work',
@@ -17671,7 +17740,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -17770,7 +17839,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 10,
+      'weight' => 9,
     ),
     'widget_type' => 'link',
   );
@@ -18222,7 +18291,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -18452,7 +18521,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'above',
@@ -19008,7 +19077,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -19104,7 +19173,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -20235,7 +20304,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
@@ -20335,7 +20404,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20427,7 +20496,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 8,
     ),
     'widget_type' => 'link',
   );
@@ -20451,7 +20520,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 12,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -20494,7 +20563,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -20523,7 +20592,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',
@@ -20604,7 +20673,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -20627,7 +20696,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 14,
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
@@ -20690,7 +20759,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -20814,6 +20883,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Critical Writing referenced');
   t('Critical writing');
   t('Curator');
+  t('DOI');
   t('Database or Archive Referenced');
   t('Database or Archive reference');
   t('Date');
