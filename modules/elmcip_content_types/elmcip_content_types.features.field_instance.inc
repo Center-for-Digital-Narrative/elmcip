@@ -248,13 +248,14 @@ function elmcip_content_types_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A digital object identifier <a target="_blank" href="https://www.doi.org">(DOI)</a> is a unique alphanumeric string assigned by a registration agency to identify content and provide a persistent link to its location on the Internet. The publisher assigns a DOI when your article is published and made available electronically.
+All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a slash. Example: 10.1000/182',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'elmcip_setup',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'elmcip_setup_doi',
         'weight' => 14,
       ),
       'token' => array(
@@ -1472,6 +1473,8 @@ function elmcip_content_types_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t(' If the teaching resource references a platform/software, link to it here. The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
+  t('A digital object identifier <a target="_blank" href="https://www.doi.org">(DOI)</a> is a unique alphanumeric string assigned by a registration agency to identify content and provide a persistent link to its location on the Internet. The publisher assigns a DOI when your article is published and made available electronically.
+All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a slash. Example: 10.1000/182');
   t('Add a URL to a repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Add notes about editorial status here.');
   t('DOI');

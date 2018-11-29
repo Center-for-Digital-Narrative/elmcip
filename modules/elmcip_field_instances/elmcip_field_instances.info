@@ -6,6 +6,7 @@ dependencies[] = colorbox
 dependencies[] = date
 dependencies[] = elmcip_creative_work
 dependencies[] = elmcip_layout
+dependencies[] = elmcip_setup
 dependencies[] = email
 dependencies[] = entityreference
 dependencies[] = features

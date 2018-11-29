@@ -17629,13 +17629,14 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'A digital object identifier <a target="_blank" href="https://www.doi.org">(DOI)</a> is a unique alphanumeric string assigned by a registration agency to identify content and provide a persistent link to its location on the Internet. The publisher assigns a DOI when your article is published and made available electronically.
+All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a slash. Example: 10.1000/182',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'elmcip_setup',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'elmcip_setup_doi',
         'weight' => 14,
       ),
     ),
@@ -20841,6 +20842,8 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this event. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this piece of critical writing. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
   t('A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this teaching resource. Example: digital poetics, poetry, procedural poetics, generative, intentionality, materiality, structuralism. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people\'s names as tags.');
+  t('A digital object identifier <a target="_blank" href="https://www.doi.org">(DOI)</a> is a unique alphanumeric string assigned by a registration agency to identify content and provide a persistent link to its location on the Internet. The publisher assigns a DOI when your article is published and made available electronically.
+All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a slash. Example: 10.1000/182');
   t('Abstract (in English)');
   t('Abstract (in original language)');
   t('Add any relevant image files.');

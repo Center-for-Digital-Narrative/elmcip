@@ -143,14 +143,20 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       $form['title']['#description'] = t('Indicate the title of the work. If it has a subtitle, place the subtitle text after a colon.', array('type' => $form['type']['#value']));
       $form['#custom_togle'] = 'field_abstract_lang_tax';
       $form['#custom_field'] = 'field_abstract_lang';
-      $form['#validate'][] = 'elmcip_form_validate';
+      $form['#validate'] = [
+        'elmcip_form_validate',
+        'elmcip_setup_doi_field_validate',
+      ];
       _elmcip_form_helper($form);
       break;
     case 'critical_writing_node_form':
       $form['title']['#description'] = t('Indicate the title of the work. If it has a subtitle, place the subtitle text after a colon.', array('type' => $form['type']['#value']));
       $form['#custom_togle'] = 'field_abstract_lang_tax';
       $form['#custom_field'] = 'field_abstract_lang';
-      $form['#validate'][] = 'elmcip_form_validate';
+      $form['#validate'] = [
+        'elmcip_form_validate',
+        'elmcip_setup_doi_field_validate',
+      ];
       _elmcip_form_helper($form);
       break;
     case 'platform_software_node_form':
@@ -187,6 +193,33 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       $form['title']['#description'] = t('Create a title for the resource collection', array('type' => $form['type']['#value']));
       break;
   }
+}
+
+/**
+ * DOI custom validator. Make sure DOI is not a URL.
+ *
+ * @param $form
+ * @param $form_state
+ */
+function elmcip_setup_doi_field_validate($form, &$form_state) {
+  if ($form_state['values']['field_doi']['und'][0]['value']) {
+    foreach ($form_state['values']['field_doi']['und'] as $delta => $value) {
+
+      if (!elmcip_setup_doi_validate($value['value'])) {
+        form_set_error('field_doi', 'DOI cannot be a URL. DOI always start with the numeric value 10.');
+      }
+    }
+  }
+}
+
+/**
+ * Check if DOI starts with the value 10.
+ *
+ * @param $value
+ * @return bool
+ */
+function elmcip_setup_doi_validate($value) {
+  return strpos(trim($value), '10') === 0;
 }
 
 /**
@@ -281,6 +314,11 @@ function elmcip_setup_field_formatter_info() {
       'label' => t('Term tid'),
       'field types' => array('taxonomy_term_reference'),
     ),
+    'elmcip_setup_doi' => [
+      'label' => t('Digital Object Identifier'),
+      'field types' => ['text'],
+      'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+    ],
   );
 }
 
@@ -295,9 +333,22 @@ function elmcip_setup_field_formatter_view($entity_type, $entity, $field, $insta
         );
       }
       break;
+    case 'elmcip_setup_doi':
+      foreach ($items as $delta => $item) {
+        $element[$delta] = [
+          '#markup' => elmcip_setup_doi_formatter($item['safe_value']),
+        ];
+      }
+      break;
   }
 
   return $element;
+}
+
+function elmcip_setup_doi_formatter(string $url) {
+  $url = trim($url);
+
+  return l($url, 'https://dx.doi.org/' . $url);
 }
 
 /**
