@@ -119,7 +119,7 @@ function elmcip_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 61,
+        'weight' => 62,
       ),
       'full' => array(
         'label' => 'above',
@@ -331,7 +331,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'full' => array(
         'label' => 'above',
@@ -1159,7 +1159,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1243,7 +1243,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1327,7 +1327,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'full' => array(
         'label' => 'above',

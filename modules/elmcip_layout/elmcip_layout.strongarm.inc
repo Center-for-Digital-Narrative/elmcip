@@ -43,7 +43,6 @@ function elmcip_layout_strongarm() {
     'zen_breadcrumb_trailing' => 1,
     'zen_breadcrumb_title' => 0,
     'zen_rebuild_registry' => 0,
-    'zen_layout' => 'zen-columns-fixed',
     'zen_jump_link_target' => 'main-menu',
     'zen_jump_link_text' => 'Jump to navigation',
     'zen_wireframes' => 0,

@@ -1191,7 +1191,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Meta data',
-    'weight' => '41',
+    'weight' => '42',
     'children' => array(
       0 => 'purl',
       1 => 'author',
