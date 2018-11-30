@@ -498,3 +498,21 @@ function elmcip_setup_form_node_admin_content_alter(&$form) {
     unset($form['admin']['options']['operation']['#options'][$key]);
   }
 }
+
+function elmcip_setup_flag_access($flag, $entity_id, $action, $account) {
+  echo '';
+//  return false;
+
+}
+
+function elmcip_setup_preprocess_node(&$variables) {
+
+  if ($variables['view_mode'] === 'full' && !empty($variables['content']['flag_liberian'])) {
+    echo 'Flag debugging in progress';
+
+    if (!in_array('Liberian', $variables['user']->roles, TRUE)) {
+      $variables['content']['flag_liberian']['#access'] = false;
+    }
+
+  }
+}
