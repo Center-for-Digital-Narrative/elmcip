@@ -162,7 +162,7 @@ function elmcip_layout_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Meta data',
-    'weight' => '27',
+    'weight' => '28',
     'children' => array(
       0 => 'full_name',
       1 => 'purl',
@@ -335,7 +335,7 @@ function elmcip_layout_field_group_info() {
   $field_groups['group_tr_editorial|node|teaching_resource|default'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_workdoc|node|work|form';
   $field_group->group_name = 'group_workdoc';
@@ -358,7 +358,7 @@ function elmcip_layout_field_group_info() {
   $field_groups['group_workdoc|node|work|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_worksubmit|node|work|form';
   $field_group->group_name = 'group_worksubmit';

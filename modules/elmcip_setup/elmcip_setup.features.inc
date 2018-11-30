@@ -33,7 +33,7 @@ function elmcip_setup_flag_default_flags() {
   $flags['librarian_approved'] = array(
     'entity_type' => 'node',
     'title' => 'Librarian approved',
-    'global' => 0,
+    'global' => 1,
     'types' => array(
       0 => 'work',
       1 => 'critical_writing',
@@ -73,11 +73,11 @@ function elmcip_setup_flag_default_flags() {
     'i18n' => 0,
     'flag_confirmation' => 'Confirm approvement',
     'unflag_confirmation' => 'Confirm revoking approvement',
-    'api_version' => 3,
     'module' => 'elmcip_setup',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   return $flags;
 

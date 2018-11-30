@@ -796,6 +796,10 @@ function elmcip_content_types_strongarm() {
             'weight' => '26',
             'visible' => TRUE,
           ),
+          'token' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
         ),
       ),
     ),
@@ -1597,11 +1601,14 @@ function elmcip_content_types_strongarm() {
         'locations' => array(
           'weight' => '30',
         ),
+        'flag' => array(
+          'weight' => '12',
+        ),
       ),
       'display' => array(
         'Critical_writing_entity_view_1' => array(
           'default' => array(
-            'weight' => '16',
+            'weight' => '17',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1623,7 +1630,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Work_entity_view_1' => array(
           'default' => array(
-            'weight' => '14',
+            'weight' => '15',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1645,7 +1652,7 @@ function elmcip_content_types_strongarm() {
         ),
         'Journal_Editedby_entity_view_1' => array(
           'default' => array(
-            'weight' => '19',
+            'weight' => '20',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1667,7 +1674,7 @@ function elmcip_content_types_strongarm() {
         ),
         'TeachingResourceby_entity_view_1' => array(
           'default' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -1711,7 +1718,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '18',
+            'weight' => '19',
             'visible' => TRUE,
           ),
           'user_attach_person_refs' => array(
@@ -1737,7 +1744,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '17',
+            'weight' => '18',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1755,7 +1762,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '24',
+            'weight' => '25',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1773,7 +1780,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '21',
+            'weight' => '22',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1794,7 +1801,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '25',
+            'weight' => '26',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1808,7 +1815,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '15',
+            'weight' => '16',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1822,7 +1829,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '20',
+            'weight' => '21',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1836,7 +1843,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '23',
+            'weight' => '24',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1856,7 +1863,13 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '13',
+            'weight' => '14',
+            'visible' => TRUE,
+          ),
+        ),
+        'flag_librarian_approved' => array(
+          'default' => array(
+            'weight' => '11',
             'visible' => TRUE,
           ),
         ),
@@ -2810,6 +2823,12 @@ function elmcip_content_types_strongarm() {
         'flag_liberian' => array(
           'default' => array(
             'weight' => '19',
+            'visible' => TRUE,
+          ),
+        ),
+        'flag_librarian_approved' => array(
+          'default' => array(
+            'weight' => '21',
             'visible' => TRUE,
           ),
         ),

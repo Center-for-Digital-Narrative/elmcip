@@ -1327,7 +1327,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 21,
+        'weight' => 18,
       ),
       'full' => array(
         'label' => 'above',

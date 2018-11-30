@@ -9575,7 +9575,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 38,
       ),
       'full' => array(
         'label' => 'above',
@@ -9866,7 +9866,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -10008,7 +10008,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'size' => 200,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 14,
     ),
   );
 
@@ -10023,7 +10023,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'full' => array(
         'label' => 'above',
@@ -10112,7 +10112,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 40,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10235,7 +10235,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'full' => array(
         'label' => 'above',
@@ -10300,7 +10300,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 39,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10451,7 +10451,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 40,
+        'weight' => 41,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -10769,7 +10769,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 13,
     ),
   );
 
@@ -10901,7 +10901,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -11149,7 +11149,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'full' => array(
         'label' => 'above',
@@ -19962,7 +19962,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'full' => array(
         'label' => 'above',
