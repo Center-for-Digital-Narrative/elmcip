@@ -311,3 +311,4 @@ features[user_permission][] = view private files
 features[user_permission][] = view revisions
 features[user_permission][] = view the administration theme
 features[user_permission][] = view user location table
+features[user_role][] = Librarian

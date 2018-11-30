@@ -69,6 +69,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -628,12 +629,14 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
       'editor' => 'editor',
       'submitter' => 'submitter',
       'supereditor' => 'supereditor',
+      'teacher' => 'teacher',
     ),
     'module' => 'user',
   );
@@ -651,6 +654,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create book content'] = array(
     'name' => 'create book content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -674,6 +678,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create critical_writing content'] = array(
     'name' => 'create critical_writing content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -688,6 +693,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create databases_and_archives content'] = array(
     'name' => 'create databases_and_archives content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -702,6 +708,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create event content'] = array(
     'name' => 'create event content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -716,6 +723,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create field_auth_email'] = array(
     'name' => 'create field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -730,6 +738,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create field_editorial_notes'] = array(
     'name' => 'create field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -742,6 +751,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create field_record_status_tax'] = array(
     'name' => 'create field_record_status_tax',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -778,6 +788,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create field_your_notes'] = array(
     'name' => 'create field_your_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -818,6 +829,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create notebook content'] = array(
     'name' => 'create notebook content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -832,6 +844,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create notebook_entry content'] = array(
     'name' => 'create notebook_entry content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -846,6 +859,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create organization content'] = array(
     'name' => 'create organization content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -860,6 +874,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -872,7 +887,6 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create panel content'] = array(
     'name' => 'create panel content',
     'roles' => array(
-      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -882,6 +896,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create person content'] = array(
     'name' => 'create person content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -896,6 +911,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create platform_software content'] = array(
     'name' => 'create platform_software content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -909,6 +925,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create publisher content'] = array(
     'name' => 'create publisher content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -923,6 +940,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create research_collection content'] = array(
     'name' => 'create research_collection content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -936,6 +954,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create story content'] = array(
     'name' => 'create story content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -948,6 +967,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create teaching_resource content'] = array(
     'name' => 'create teaching_resource content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -972,6 +992,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['create work content'] = array(
     'name' => 'create work content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1005,6 +1026,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any book content'] = array(
     'name' => 'delete any book content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrator' => 'administrator',
       'editor' => 'editor',
       'supereditor' => 'supereditor',
@@ -1026,6 +1048,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any critical_writing content'] = array(
     'name' => 'delete any critical_writing content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1039,6 +1062,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any databases_and_archives content'] = array(
     'name' => 'delete any databases_and_archives content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1061,6 +1085,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any event content'] = array(
     'name' => 'delete any event content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1083,6 +1108,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any notebook content'] = array(
     'name' => 'delete any notebook content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1095,6 +1121,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any notebook_entry content'] = array(
     'name' => 'delete any notebook_entry content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1107,6 +1134,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any organization content'] = array(
     'name' => 'delete any organization content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1119,6 +1147,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1131,12 +1160,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any panel content'] = array(
     'name' => 'delete any panel content',
     'roles' => array(
-      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
-      'contributor' => 'contributor',
-      'editor' => 'editor',
-      'submitter' => 'submitter',
-      'supereditor' => 'supereditor',
     ),
     'module' => 'node',
   );
@@ -1145,6 +1169,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any person content'] = array(
     'name' => 'delete any person content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1157,6 +1182,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any platform_software content'] = array(
     'name' => 'delete any platform_software content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1169,6 +1195,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any publisher content'] = array(
     'name' => 'delete any publisher content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1181,6 +1208,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any research_collection content'] = array(
     'name' => 'delete any research_collection content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1193,6 +1221,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any story content'] = array(
     'name' => 'delete any story content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1207,6 +1236,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any teaching_resource content'] = array(
     'name' => 'delete any teaching_resource content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1229,6 +1259,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete any work content'] = array(
     'name' => 'delete any work content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1250,6 +1281,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own book content'] = array(
     'name' => 'delete own book content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1273,6 +1305,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own critical_writing content'] = array(
     'name' => 'delete own critical_writing content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1287,6 +1320,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own databases_and_archives content'] = array(
     'name' => 'delete own databases_and_archives content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1310,6 +1344,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own event content'] = array(
     'name' => 'delete own event content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1333,6 +1368,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own notebook content'] = array(
     'name' => 'delete own notebook content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1347,6 +1383,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own notebook_entry content'] = array(
     'name' => 'delete own notebook_entry content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1361,6 +1398,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own organization content'] = array(
     'name' => 'delete own organization content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1375,6 +1413,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1387,7 +1426,6 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own panel content'] = array(
     'name' => 'delete own panel content',
     'roles' => array(
-      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1397,6 +1435,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own person content'] = array(
     'name' => 'delete own person content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1411,6 +1450,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own platform_software content'] = array(
     'name' => 'delete own platform_software content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1424,6 +1464,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own publisher content'] = array(
     'name' => 'delete own publisher content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1438,6 +1479,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own research_collection content'] = array(
     'name' => 'delete own research_collection content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1451,6 +1493,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own story content'] = array(
     'name' => 'delete own story content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1464,6 +1507,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own teaching_resource content'] = array(
     'name' => 'delete own teaching_resource content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1487,6 +1531,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete own work content'] = array(
     'name' => 'delete own work content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1501,6 +1546,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1696,6 +1742,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any book content'] = array(
     'name' => 'edit any book content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1718,6 +1765,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any critical_writing content'] = array(
     'name' => 'edit any critical_writing content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1732,6 +1780,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any databases_and_archives content'] = array(
     'name' => 'edit any databases_and_archives content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1757,6 +1806,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any event content'] = array(
     'name' => 'edit any event content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1782,6 +1832,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any notebook content'] = array(
     'name' => 'edit any notebook content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1794,6 +1845,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any notebook_entry content'] = array(
     'name' => 'edit any notebook_entry content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1806,6 +1858,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any organization content'] = array(
     'name' => 'edit any organization content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1819,6 +1872,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1831,7 +1885,6 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any panel content'] = array(
     'name' => 'edit any panel content',
     'roles' => array(
-      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1841,6 +1894,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any person content'] = array(
     'name' => 'edit any person content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1854,6 +1908,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any platform_software content'] = array(
     'name' => 'edit any platform_software content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1867,6 +1922,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any publisher content'] = array(
     'name' => 'edit any publisher content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1880,6 +1936,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any research_collection content'] = array(
     'name' => 'edit any research_collection content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1893,6 +1950,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any story content'] = array(
     'name' => 'edit any story content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1905,6 +1963,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any teaching_resource content'] = array(
     'name' => 'edit any teaching_resource content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1928,6 +1987,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit any work content'] = array(
     'name' => 'edit any work content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -1942,6 +2002,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit field_auth_email'] = array(
     'name' => 'edit field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -1954,6 +2015,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit field_editorial_notes'] = array(
     'name' => 'edit field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2004,6 +2066,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit field_your_notes'] = array(
     'name' => 'edit field_your_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2025,6 +2088,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own book content'] = array(
     'name' => 'edit own book content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2048,6 +2112,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own critical_writing content'] = array(
     'name' => 'edit own critical_writing content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2061,6 +2126,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own databases_and_archives content'] = array(
     'name' => 'edit own databases_and_archives content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2084,6 +2150,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own event content'] = array(
     'name' => 'edit own event content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2098,6 +2165,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own field_auth_email'] = array(
     'name' => 'edit own field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2112,6 +2180,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own field_editorial_notes'] = array(
     'name' => 'edit own field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2126,6 +2195,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own field_record_status_tax'] = array(
     'name' => 'edit own field_record_status_tax',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2180,6 +2250,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own notebook content'] = array(
     'name' => 'edit own notebook content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2194,6 +2265,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own notebook_entry content'] = array(
     'name' => 'edit own notebook_entry content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2208,6 +2280,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own organization content'] = array(
     'name' => 'edit own organization content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2222,6 +2295,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2234,7 +2308,6 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own panel content'] = array(
     'name' => 'edit own panel content',
     'roles' => array(
-      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -2244,6 +2317,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own person content'] = array(
     'name' => 'edit own person content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2258,6 +2332,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own platform_software content'] = array(
     'name' => 'edit own platform_software content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2271,6 +2346,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own publisher content'] = array(
     'name' => 'edit own publisher content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2285,6 +2361,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own research_collection content'] = array(
     'name' => 'edit own research_collection content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2298,6 +2375,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own story content'] = array(
     'name' => 'edit own story content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2310,6 +2388,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own teaching_resource content'] = array(
     'name' => 'edit own teaching_resource content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2333,6 +2412,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['edit own work content'] = array(
     'name' => 'edit own work content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2491,6 +2571,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2722,6 +2803,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['use text format basic_text_editor'] = array(
     'name' => 'use text format basic_text_editor',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2755,6 +2837,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view field_auth_email'] = array(
     'name' => 'view field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2767,6 +2850,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view field_editorial_notes'] = array(
     'name' => 'view field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2814,6 +2898,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view field_your_notes'] = array(
     'name' => 'view field_your_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -2864,6 +2949,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view own field_auth_email'] = array(
     'name' => 'view own field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2877,6 +2963,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view own field_editorial_notes'] = array(
     'name' => 'view own field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2952,6 +3039,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -2980,6 +3068,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
