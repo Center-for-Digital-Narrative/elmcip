@@ -507,12 +507,51 @@ function elmcip_setup_flag_access($flag, $entity_id, $action, $account) {
 
 function elmcip_setup_preprocess_node(&$variables) {
 
-  if ($variables['view_mode'] === 'full' && !empty($variables['content']['flag_liberian'])) {
-    echo 'Flag debugging in progress';
+  $allowed_to_flag = $variables['user']->uid === '1' || in_array('Librarian', $variables['user']->roles, TRUE);
 
-    if (!in_array('Liberian', $variables['user']->roles, TRUE)) {
-      $variables['content']['flag_liberian']['#access'] = false;
+  if (!$allowed_to_flag && $variables['view_mode'] === 'full') {
+    echo 'Flag debugging in progress';
+    $flagged = elmcip_setup_is_it_flagged($variables);
+
+
+    if ($flagged) {
+      $variables['content']['Librarian'] = [
+        '#markup' => 'Not approved by librarian',
+      ];
     }
 
+
   }
+}
+
+function elmcip_setup_is_it_flagged(array $variables) {
+  $flagged = FALSE;
+  $allowed_to_view  = elmcip_setup_allowed_to_view_flag($variables);
+
+  if ($allowed_to_view) {
+    $flag = flag_get_flag('librarian_approved');
+    $flagged = $flag->is_flagged($variables['nid']);
+  }
+
+  return $flagged;
+}
+
+/**
+ * Is user allowed to view flag status.
+ *
+ * @param array $variables
+ *
+ * @return bool $result
+ *   Returns true of the user is allowed, false if not.
+ */
+function elmcip_setup_allowed_to_view_flag(array $variables) {
+  $allowed_to_view = FALSE;
+  $roles_allowed = ['editor', 'administrator', 'administrative editor'];
+  foreach ($roles_allowed as $role_allowed) {
+    if (in_array($role_allowed, $variables['user']->roles, true)) {
+      $allowed_to_view = TRUE;
+    }
+  }
+
+  return $allowed_to_view;
 }
