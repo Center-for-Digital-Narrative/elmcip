@@ -499,14 +499,13 @@ function elmcip_setup_form_node_admin_content_alter(&$form) {
   }
 }
 
-function elmcip_setup_preprocess_node(&$variables) {
+function elmcip_setup_ds_pre_render_alter(&$layout_render_array, $context, &$variables) {
 
   $allowed_to_flag = $variables['user']->uid === '1' || in_array('Librarian', $variables['user']->roles, TRUE);
 
   if (!$allowed_to_flag && $variables['view_mode'] === 'full') {
-    echo 'Flag debugging in progress';
     $allowed_to_view  = elmcip_setup_allowed_to_view_flag($variables);
-    $message = 'Not approved by librarian';
+    $message = '<div class="not-approved">Not approved by librarian</div>';
 
     if (!$allowed_to_view) {
       return;
@@ -515,11 +514,13 @@ function elmcip_setup_preprocess_node(&$variables) {
     $flagged = elmcip_setup_is_it_flagged($variables);
 
     if ($flagged) {
-      $message = 'Approved by librarian';
+      $message = '<div class="approved">Approved by librarian</div>';
     }
 
-    $variables['content']['Librarian'] = [
+    $layout_render_array['left']['Librarian'] = [
+      '#type' => 'markup',
       '#markup' => $message,
+      '#weight' => 100,
     ];
   }
 }

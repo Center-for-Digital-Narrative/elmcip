@@ -73,6 +73,8 @@ group-right p:last-child {
   font-weight: normal;
 }
 
+.not-approved,
+.approved,
 .label-above {
   font-weight: bold;
 }
