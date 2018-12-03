@@ -15,6 +15,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['create field_auth_email'] = array(
     'name' => 'create field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -29,6 +30,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['create field_editorial_notes'] = array(
     'name' => 'create field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -41,6 +43,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['create field_record_status_tax'] = array(
     'name' => 'create field_record_status_tax',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -77,6 +80,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['create field_your_notes'] = array(
     'name' => 'create field_your_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -91,6 +95,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['edit field_auth_email'] = array(
     'name' => 'edit field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -103,6 +108,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['edit field_editorial_notes'] = array(
     'name' => 'edit field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -153,6 +159,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['edit field_your_notes'] = array(
     'name' => 'edit field_your_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -165,6 +172,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['edit own field_auth_email'] = array(
     'name' => 'edit own field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -179,6 +187,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['edit own field_editorial_notes'] = array(
     'name' => 'edit own field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -193,6 +202,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['edit own field_record_status_tax'] = array(
     'name' => 'edit own field_record_status_tax',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -238,6 +248,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['view field_auth_email'] = array(
     'name' => 'view field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -250,6 +261,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['view field_editorial_notes'] = array(
     'name' => 'view field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -297,6 +309,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['view field_your_notes'] = array(
     'name' => 'view field_your_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -309,6 +322,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['view own field_auth_email'] = array(
     'name' => 'view own field_auth_email',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',
@@ -322,6 +336,7 @@ function elmcip_field_instances_user_default_permissions() {
   $permissions['view own field_editorial_notes'] = array(
     'name' => 'view own field_editorial_notes',
     'roles' => array(
+      'Librarian' => 'Librarian',
       'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
       'contributor' => 'contributor',

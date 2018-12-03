@@ -499,41 +499,38 @@ function elmcip_setup_form_node_admin_content_alter(&$form) {
   }
 }
 
-function elmcip_setup_flag_access($flag, $entity_id, $action, $account) {
-  echo '';
-//  return false;
-
-}
-
 function elmcip_setup_preprocess_node(&$variables) {
 
   $allowed_to_flag = $variables['user']->uid === '1' || in_array('Librarian', $variables['user']->roles, TRUE);
 
   if (!$allowed_to_flag && $variables['view_mode'] === 'full') {
     echo 'Flag debugging in progress';
-    $flagged = elmcip_setup_is_it_flagged($variables);
+    $allowed_to_view  = elmcip_setup_allowed_to_view_flag($variables);
+    $message = 'Not approved by librarian';
 
-
-    if ($flagged) {
-      $variables['content']['Librarian'] = [
-        '#markup' => 'Not approved by librarian',
-      ];
+    if (!$allowed_to_view) {
+      return;
     }
 
+    $flagged = elmcip_setup_is_it_flagged($variables);
 
+    if ($flagged) {
+      $message = 'Approved by librarian';
+    }
+
+    $variables['content']['Librarian'] = [
+      '#markup' => $message,
+    ];
   }
 }
 
+/**
+ * @param array $variables
+ * @return bool
+ */
 function elmcip_setup_is_it_flagged(array $variables) {
-  $flagged = FALSE;
-  $allowed_to_view  = elmcip_setup_allowed_to_view_flag($variables);
-
-  if ($allowed_to_view) {
-    $flag = flag_get_flag('librarian_approved');
-    $flagged = $flag->is_flagged($variables['nid']);
-  }
-
-  return $flagged;
+  $flag = flag_get_flag('librarian_approved');
+  return $flag->is_flagged($variables['nid']);
 }
 
 /**

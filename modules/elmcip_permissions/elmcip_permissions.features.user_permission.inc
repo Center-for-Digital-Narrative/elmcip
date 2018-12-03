@@ -2530,7 +2530,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['flag librarian_approved'] = array(
     'name' => 'flag librarian_approved',
     'roles' => array(
-      'administrator' => 'administrator',
+      'Librarian' => 'Librarian',
     ),
     'module' => 'flag',
   );
@@ -2687,7 +2687,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['unflag librarian_approved'] = array(
     'name' => 'unflag librarian_approved',
     'roles' => array(
-      'administrator' => 'administrator',
+      'Librarian' => 'Librarian',
     ),
     'module' => 'flag',
   );
