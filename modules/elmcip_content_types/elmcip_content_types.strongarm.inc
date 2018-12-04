@@ -1113,6 +1113,12 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'flag_librarian_approved' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
       ),
     ),
     'view_modes' => array(
