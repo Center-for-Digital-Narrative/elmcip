@@ -228,6 +228,18 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
+    'taxonomy_vocabulary_1' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'fis' => TRUE,
+          'fis-el' => 'div',
+          'fis-cl' => 'field-tags-inline',
+          'fis-at' => '',
+          'fis-def-at' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['node|event|default'] = $ds_fieldsetting;
 
