@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * elmcip_search.facetapi_defaults.inc
