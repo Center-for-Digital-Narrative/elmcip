@@ -1679,7 +1679,7 @@ function elmcip_field_instances_field_default_field_instances() {
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this critical writing in the Electronic Literature Directory, enter the URL of the entry.',
+    'description' => 'If there is a record for this critical writing in the <a href="http://directory.eliterature.org/" target="_blank">Electronic Literature Directory</a>, enter the URL of the entry.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1736,6 +1736,7 @@ function elmcip_field_instances_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => 'Electronic Literature Directory entry',
@@ -5044,7 +5045,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the edition year field to indicate the edition year (e.g. 1996 ed.). ',
+    'description' => 'If a record for this critical writing is available on the <a href="https://www.worldcat.org" target="_blank">WorldCat library database</a>, enter the Permalink here. Use the edition year field to indicate the edition year (e.g. 1996 ed.). ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5102,6 +5103,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'optional',
+      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
@@ -17917,7 +17919,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this work in the Electronic Literature Directory, enter the URL of the entry here (for example http://directory.eliterature.org/node/407) to create a cross-reference between the databases.',
+    'description' => 'If there is a record for this work in the <a href="http://directory.eliterature.org/" target="_blank">Electronic Literature Directory</a>, enter the URL of the entry here (for example http://directory.eliterature.org/node/409) to create a cross-reference between the databases.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -17980,6 +17982,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => 'Electronic Literature Directory entry',
@@ -18148,7 +18151,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this work in the I ♥ E-Poetry project, enter the URL of the entry.',
+    'description' => 'If there is a record for this work in the <a href="https://iloveepoetry.org/" target="_blank">I ♥ E-Poetry project</a>, enter the URL of the entry.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -18211,6 +18214,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => 'I ♥ E-Poetry entry',
@@ -19348,7 +19352,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this work in the NT2 Répertoire des arts et littératures hypermédiatiques, enter the URL of the entry.',
+    'description' => 'If there is a record for this work in the <a href="http://nt2.uqam.ca/en/search/site/" target="_blank">NT2 Répertoire des arts et littératures hypermédiatiques</a>, enter the URL of the entry.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -19411,6 +19415,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => 'NT2 entry (français)',
@@ -20683,7 +20688,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the year of publication field of the URL (e.g. 1996. ed.)',
+    'description' => 'If there is a record for this work in the <a href="https://www.worldcat.org" target="_blank">WorldCat library database</a>, enter the Permalink here. Please indicate the year of publication in the year of publication field of the URL (e.g. 1996. ed.)',
     'display' => array(
       'data_export' => array(
         'label' => 'inline',
@@ -20748,6 +20753,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'optional',
+      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
@@ -20960,7 +20966,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
   t('ISSN');
   t('If a person\'s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.');
   t('If a publication has an e-ISSN number enter it here.');
-  t('If a record for this critical writing is available on the WorldCat library database, enter the Permalink here. Use the edition year field to indicate the edition year (e.g. 1996 ed.). ');
+  t('If a record for this critical writing is available on the <a href="https://www.worldcat.org" target="_blank">WorldCat library database</a>, enter the Permalink here. Use the edition year field to indicate the edition year (e.g. 1996 ed.). ');
   t('If an article appears in a numbered and/or dated serial, enter the volume number first, followed by a period and the issue number. For a publication paginated by issue, e.g. (volume 42, issue 1), simply enter: 42.1.
 For an article published in a weekly or monthly periodical, enter the day first, then the month (abbreviated except for May, June, and July), e.g. 20 Oct. or 01 May. ');
   t('If an organization is responsible for developing and maintaining this project, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.');
@@ -21004,11 +21010,11 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.
 ');
   t('If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
-  t('If there is a record for this critical writing in the Electronic Literature Directory, enter the URL of the entry.');
-  t('If there is a record for this work in the Electronic Literature Directory, enter the URL of the entry here (for example http://directory.eliterature.org/node/407) to create a cross-reference between the databases.');
-  t('If there is a record for this work in the I ♥ E-Poetry project, enter the URL of the entry.');
-  t('If there is a record for this work in the NT2 Répertoire des arts et littératures hypermédiatiques, enter the URL of the entry.');
-  t('If there is a record for this work in the WorldCat library database, enter the Permalink here. Please indicate the year of publication in the year of publication field of the URL (e.g. 1996. ed.)');
+  t('If there is a record for this critical writing in the <a href="http://directory.eliterature.org/" target="_blank">Electronic Literature Directory</a>, enter the URL of the entry.');
+  t('If there is a record for this work in the <a href="http://directory.eliterature.org/" target="_blank">Electronic Literature Directory</a>, enter the URL of the entry here (for example http://directory.eliterature.org/node/409) to create a cross-reference between the databases.');
+  t('If there is a record for this work in the <a href="http://nt2.uqam.ca/en/search/site/" target="_blank">NT2 Répertoire des arts et littératures hypermédiatiques</a>, enter the URL of the entry.');
+  t('If there is a record for this work in the <a href="https://iloveepoetry.org/" target="_blank">I ♥ E-Poetry project</a>, enter the URL of the entry.');
+  t('If there is a record for this work in the <a href="https://www.worldcat.org" target="_blank">WorldCat library database</a>, enter the Permalink here. Please indicate the year of publication in the year of publication field of the URL (e.g. 1996. ed.)');
   t('If there is a record in the knowledge base of a version of this creative work published in another language, link to it here.The other language version will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('If there is another version of this critical writing published in another language, link to it here.The other language version will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the work</a>.');
   t('If this critical writing has been published in multiple editions, enter information about this edition here (e.g. 2nd edition).');

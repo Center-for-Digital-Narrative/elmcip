@@ -324,7 +324,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this critical writing in the PO.EX database, enter the URL of the entry.',
+    'description' => 'If there is a record for this critical writing in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -381,6 +381,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => 'Po.Ex record',
@@ -1146,7 +1147,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this work in the Narrabase project, enter the URL of the entry.',
+    'description' => 'If there is a record for this work in the <a href="http://narrabase.net/" target="_blank">Narrabase project</a>, enter the URL of the entry.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -1230,7 +1231,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     'bundle' => 'work',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If there is a record for this work in the PO.EX database, enter the URL of the entry.',
+    'description' => 'If there is a record for this work in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.',
     'display' => array(
       'data_export' => array(
         'label' => 'above',
@@ -1293,6 +1294,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'enable_tokens' => 0,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_allowed_values' => '',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => 'Po-ex.net entry',
@@ -1481,9 +1483,9 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
   t('Developers');
   t('Enter the individuals who were key to the development of this platform/software, if applicable (e.g. Daniel Howe for RITA libraries). The person will autocomplete if they are in the database. If person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
   t('Enter the publisher or organization responsible for this platform/software.The publisher or organization will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/organization" target="_blank">add the organization</a> or <a href="/node/add/organization" target="_blank">add the publisher</a>.');
-  t('If there is a record for this critical writing in the PO.EX database, enter the URL of the entry.');
-  t('If there is a record for this work in the Narrabase project, enter the URL of the entry.');
-  t('If there is a record for this work in the PO.EX database, enter the URL of the entry.');
+  t('If there is a record for this critical writing in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.');
+  t('If there is a record for this work in the <a href="http://narrabase.net/" target="_blank">Narrabase project</a>, enter the URL of the entry.');
+  t('If there is a record for this work in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.');
   t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
   t('If this critical writing references a platform/software, link to it here. The platform or software will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
   t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
