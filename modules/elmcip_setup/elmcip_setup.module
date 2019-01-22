@@ -136,7 +136,7 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       $form['title']['#default_value'] = 'ELMCIP auto generated - dummy';
       break;
     case 'taxonomy_form_term':
-      $form['description']['#format'] = 4;
+      $form['description']['#format'] = filter_fallback_format();
       $form['#after_build'][] = 'configure_term_form';
       break;
     case 'work_node_form':
