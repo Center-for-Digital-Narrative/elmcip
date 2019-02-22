@@ -144,6 +144,7 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['access toolbar'] = array(
     'name' => 'access toolbar',
     'roles' => array(
+      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'toolbar',
@@ -256,7 +257,6 @@ function elmcip_permissions_user_default_permissions() {
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
-      'administrative editor' => 'administrative editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
