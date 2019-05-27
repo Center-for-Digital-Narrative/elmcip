@@ -323,15 +323,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'administer google analytics'.
-  $permissions['administer google analytics'] = array(
-    'name' => 'administer google analytics',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'googleanalytics',
-  );
-
   // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
