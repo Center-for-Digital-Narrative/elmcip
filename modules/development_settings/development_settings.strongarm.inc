@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * development_settings.strongarm.inc
@@ -123,13 +124,6 @@ function development_settings_strongarm() {
   $strongarm->name = 'error_level';
   $strongarm->value = 2;
   $export['error_level'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'googleanalytics_cache';
-  $strongarm->value = 0;
-  $export['googleanalytics_cache'] = $strongarm;
 
   return $export;
 }
