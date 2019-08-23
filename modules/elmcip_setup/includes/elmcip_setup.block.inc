@@ -6,7 +6,7 @@ declare(strict_types = 1);
  * Implements hook_block_info().
  */
 function elmcip_setup_block_info() {
-  $blocks = [
+  return [
     'sosical_networks' => [
       'info' => t('Social networks associated with ELMCIP'),
       'cache' => DRUPAL_CACHE_GLOBAL,
@@ -19,7 +19,6 @@ function elmcip_setup_block_info() {
     ],
   ];
 
-  return $blocks;
 }
 
 /**
