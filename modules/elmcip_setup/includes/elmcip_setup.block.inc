@@ -69,3 +69,74 @@ function elmcip_setup_block_view($delta = '') {
 
   return $block;
 }
+
+/**
+ * Create sponsors list.
+ *
+ * @return array
+ *   Drupal render array of sponsors.
+ */
+function elmcip_setup_sponsors_content() {
+  global $theme_path;
+  $sponsors_render_array = [];
+  $sponsor_image_path = $theme_path . '/images/sponsors/';
+  $sponsors = [
+    [
+      'title' => 'HERA',
+      'alt' => 'HERA (Humanities in the European Research Area)',
+      'image' => 'BTHlogo.gif',
+      'url' => 'http://www.heranet.info/',
+    ],
+    [
+      'title' => 'NorStore',
+      'alt' => 'NorStore',
+      'image' => 'BTHlogo.gif',
+      'url' => 'https://www.norstore.no/',
+    ],
+    [
+      'title' => 'CLARINO (Common Language Resources and Technology Infrastructure Norway)',
+      'alt' => 'CLARINO (Common Language Resources and Technology Infrastructure Norway)',
+      'image' => 'BTHlogo.gif',
+      'url' => 'https://clarin.w.uib.no/',
+    ],
+    [
+      'title' => 'University of Bergen, Department of Linguistic, Literary and Aesthetic Studies',
+      'alt' => 'University of Bergen, Department of Linguistic, Literary and Aesthetic Studies',
+      'image' => 'BTHlogo.gif',
+      'url' => 'https://www.uib.no/en/lle',
+    ],
+    [
+      'title' => 'Bergen Electronic Literature Research Group',
+      'alt' => 'Bergen Electronic Literature Research Group',
+      'image' => 'BTHlogo.gif',
+      'url' => 'https://www.uib.no/en/rg/electronicliterature',
+    ],
+    [
+      'title' => 'European Commission, European Research Area',
+      'alt' => 'European Commission, European Research Area',
+      'image' => 'BTHlogo.gif',
+      'url' => 'https://ec.europa.eu/research/era/index_en.htm',
+    ],
+  ];
+
+  foreach ($sponsors as $id => $sponsor) {
+    $sponsors_render_array[] = [
+      '#theme' => 'image_formatter',
+      '#item' => [
+        'uri' => $sponsor_image_path . $sponsor['image'],
+      ],
+      '#suffix' => '<br />',
+      '#path' => [
+        'path' => $sponsor['url'],
+        'options' => [
+          'attributes' => [
+            'title' => $sponsor['title'],
+            'alt' => $sponsor['alt'],
+          ],
+        ],
+      ],
+    ];
+  }
+
+  return $sponsors_render_array;
+}

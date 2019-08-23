@@ -165,10 +165,6 @@
 
   <?php print render($page['footer']); ?>
 
-  <div class="sponsors">
-    <?php print $sponsors; ?>
-  </div>
-
-    </div></div><!-- /#page, /#page-wrapper -->
+</div></div><!-- /#page, /#page-wrapper -->
 
 <?php print render($page['bottom']); ?>
