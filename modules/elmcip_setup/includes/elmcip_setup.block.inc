@@ -38,9 +38,7 @@ function elmcip_setup_block_view($delta = '') {
           <li><a href="https://www.facebook.com/groups/480202502024095"><i class="fa fa-facebook-square"></i></a></li>
         </ul>',
       ];
-      $block = [
-        'content' => render($content),
-      ];
+      $block ['content'] = $content;
       break;
     case 'sponsors':
       $content =  [
@@ -61,9 +59,7 @@ function elmcip_setup_block_view($delta = '') {
           </p>
       </p>',
       ];
-      $block = [
-        'content' => render($content),
-      ];
+      $block ['content'] = $content;
       break;
   }
 
