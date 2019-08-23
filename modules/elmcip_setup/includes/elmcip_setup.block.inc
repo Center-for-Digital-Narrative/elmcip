@@ -41,6 +41,10 @@ function elmcip_setup_block_view($delta = '') {
       $block ['content'] = $content;
       break;
     case 'sponsors':
+      $sponsorImage = 'elmcip_sponsors.png';
+      global $base_root;
+      global $base_path;
+      $themePath = $base_root . $base_path . drupal_get_path('theme', $GLOBALS['theme']);
       $content =  [
         '#type' => 'markup',
         '#markup' => '
@@ -53,7 +57,7 @@ function elmcip_setup_block_view($delta = '') {
             <area alt="Bergen Electronic Literature Research Group" coords="254,77,422,147" href="http://www.uib.no/en/rg/electronicliterature" shape="rect" target="_blank" title="Bergen Electronic Literature Research Group">
             <area alt="European Commission, European Research Area" coords="189,8,331,63" href="http://ec.europa.eu/research/era/index_en.htm" shape="rect" target="_blank" title="European Commission, European Research Area">
           </map>
-          <img alt="ELMCIP sponsors" src="/sites/all/themes/elmcip/images/sponsors/elmcip_sponsors.png" usemap="#sponsorblock" />
+          <img alt="ELMCIP sponsors" src="' . $themePath . '/images/sponsors/' . $sponsorImage . '" usemap="#sponsorblock" />
           <p>
               This Work, ELMCIP, is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/" target="_blank">Creative Commons Attribution-ShareAlike license <img alt="creative commons" src="/sites/all/themes/elmcip/images/sponsors/cc_logo.png" /></a>, although certain works referenced herein may be separately licensed.
           </p>
