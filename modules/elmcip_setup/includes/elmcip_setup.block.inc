@@ -6,17 +6,18 @@ declare(strict_types = 1);
  * Implements hook_block_info().
  */
 function elmcip_setup_block_info() {
-  $blocks['sosical_networks'] = array(
-    'info' => t('Social networks associated with ELMCIP'),
-    'cache' => DRUPAL_CACHE_GLOBAL,
-    'status' => 0,
-  );
-
-  $blocks['sponsors'] = array(
-    'info' => t('ELMCIP sponsors'),
-    'cache' => DRUPAL_CACHE_GLOBAL,
-    'status' => 0,
-  );
+  $blocks = [
+    'sosical_networks' => [
+      'info' => t('Social networks associated with ELMCIP'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'status' => 0,
+    ],
+    'sponsors' => [
+      'info' => t('ELMCIP sponsors'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'status' => 0,
+    ],
+  ];
 
   return $blocks;
 }
