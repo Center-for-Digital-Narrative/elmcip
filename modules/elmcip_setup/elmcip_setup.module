@@ -29,11 +29,11 @@ function elmcip_setup_block_info() {
  * Implements hook_block_view().
  */
 function elmcip_setup_block_view($delta = '') {
-  $block = array();
+  $block = [];
 
   switch ($delta) {
     case 'sosical_networks':
-      $content =  array(
+      $content =  [
         '#type' => 'markup',
         '#markup' => '
         <ul class="menu social">
@@ -41,14 +41,13 @@ function elmcip_setup_block_view($delta = '') {
           <li><a href="https://twitter.com/elmcip"><i class="fa fa-twitter-square"></i></a></li>
           <li><a href="https://www.facebook.com/groups/480202502024095"><i class="fa fa-facebook-square"></i></a></li>
         </ul>',
-      );
-      $block = array(
+      ];
+      $block = [
         'content' => render($content),
-      );
+      ];
       break;
-
     case 'sponsors':
-      $content =  array(
+      $content =  [
         '#type' => 'markup',
         '#markup' => '
         <p>
@@ -65,10 +64,10 @@ function elmcip_setup_block_view($delta = '') {
               This Work, ELMCIP, is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/" target="_blank">Creative Commons Attribution-ShareAlike license <img alt="creative commons" src="/sites/all/themes/elmcip/images/sponsors/cc_logo.png" /></a>, although certain works referenced herein may be separately licensed.
           </p>
       </p>',
-      );
-      $block = array(
+      ];
+      $block = [
         'content' => render($content),
-      );
+      ];
       break;
   }
 
