@@ -55,44 +55,45 @@ function elmcip_setup_block_view($delta = '') {
  *   Drupal render array of sponsors.
  */
 function elmcip_setup_sponsors_content() {
-  global $theme_path;
+  global $base_path;
+  $path = $base_path . drupal_get_path('module', 'elmcip_setup');
   $sponsors_render_array = [];
-  $sponsor_image_path = $theme_path . '/images/sponsors/';
+  $sponsor_image_path = $path . '/images/sponsors/';
   $sponsors = [
     [
       'title' => 'HERA',
       'alt' => 'HERA (Humanities in the European Research Area)',
-      'image' => 'BTHlogo.gif',
+      'image' => 'hera.png',
       'url' => 'http://www.heranet.info/',
     ],
     [
-      'title' => 'NorStore',
-      'alt' => 'NorStore',
-      'image' => 'BTHlogo.gif',
-      'url' => 'https://www.norstore.no/',
+      'title' => 'Consortium on Electronic Literature ',
+      'alt' => 'Consortium on Electronic Literature ',
+      'image' => 'cell.png',
+      'url' => 'http://cellnetwork.net/',
     ],
     [
       'title' => 'CLARINO (Common Language Resources and Technology Infrastructure Norway)',
       'alt' => 'CLARINO (Common Language Resources and Technology Infrastructure Norway)',
-      'image' => 'BTHlogo.gif',
+      'image' => 'clarino.png',
       'url' => 'https://clarin.w.uib.no/',
     ],
     [
       'title' => 'University of Bergen, Department of Linguistic, Literary and Aesthetic Studies',
       'alt' => 'University of Bergen, Department of Linguistic, Literary and Aesthetic Studies',
-      'image' => 'BTHlogo.gif',
+      'image' => 'uib.png',
       'url' => 'https://www.uib.no/en/lle',
     ],
     [
       'title' => 'Bergen Electronic Literature Research Group',
       'alt' => 'Bergen Electronic Literature Research Group',
-      'image' => 'BTHlogo.gif',
+      'image' => 'bel.png',
       'url' => 'https://www.uib.no/en/rg/electronicliterature',
     ],
     [
       'title' => 'European Commission, European Research Area',
       'alt' => 'European Commission, European Research Area',
-      'image' => 'BTHlogo.gif',
+      'image' => 'european_commission.png',
       'url' => 'https://ec.europa.eu/research/era/index_en.htm',
     ],
   ];
