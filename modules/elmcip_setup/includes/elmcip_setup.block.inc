@@ -41,29 +41,7 @@ function elmcip_setup_block_view($delta = '') {
       $block ['content'] = $content;
       break;
     case 'sponsors':
-      $sponsorImage = 'elmcip_sponsors.png';
-      global $base_root;
-      global $base_path;
-      $themePath = $base_root . $base_path . drupal_get_path('theme', $GLOBALS['theme']);
-      $content =  [
-        '#type' => 'markup',
-        '#markup' => '
-        <p>
-          <map id="sponsorblock" name="sponsorblock">
-            <area alt="HERA (Humanities in the European Research Area)" coords="9,16,180,61" href="http://www.heranet.info" shape="rect" target="_blank" title="HERA (Humanities in the European Research Area)">
-            <area alt="NorStore" coords="417,19,545,53" href="https://www.norstore.no/" shape="rect" target="_blank" title="NorStore">
-            <area alt="CLARINO (Common Language Resources and Technology Infrastructure Norway)" coords="557,20,665,52" href="http://clarin.b.uib.no/" shape="rect" target="_blank" title="CLARINO (Common Language Resources and Technology Infrastructure Norway)">
-            <area alt="University of Bergen, Department of Linguistic, Literary and Aesthetic Studies" coords="373,37,33" href="http://www.uib.no/en/lle" shape="circle" target="_blank" title="University of Bergen, Department of Linguistic, Literary and Aesthetic Studies">
-            <area alt="Bergen Electronic Literature Research Group" coords="254,77,422,147" href="http://www.uib.no/en/rg/electronicliterature" shape="rect" target="_blank" title="Bergen Electronic Literature Research Group">
-            <area alt="European Commission, European Research Area" coords="189,8,331,63" href="http://ec.europa.eu/research/era/index_en.htm" shape="rect" target="_blank" title="European Commission, European Research Area">
-          </map>
-          <img alt="ELMCIP sponsors" src="' . $themePath . '/images/sponsors/' . $sponsorImage . '" usemap="#sponsorblock" />
-          <p>
-              This Work, ELMCIP, is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/" target="_blank">Creative Commons Attribution-ShareAlike license <img alt="creative commons" src="/sites/all/themes/elmcip/images/sponsors/cc_logo.png" /></a>, although certain works referenced herein may be separately licensed.
-          </p>
-      </p>',
-      ];
-      $block ['content'] = $content;
+      $block ['content'] = elmcip_setup_sponsors_content();
       break;
   }
 
