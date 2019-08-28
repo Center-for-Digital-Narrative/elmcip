@@ -111,6 +111,7 @@ function elmcip_setup_sponsors_content() {
           'attributes' => [
             'title' => $sponsor['title'],
             'alt' => $sponsor['alt'],
+            'class' => 'sponsor',
           ],
         ],
       ],
