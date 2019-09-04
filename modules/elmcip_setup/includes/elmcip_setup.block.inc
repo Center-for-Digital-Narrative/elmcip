@@ -41,7 +41,7 @@ function elmcip_setup_block_view($delta = '') {
       $block ['content'] = $content;
       break;
     case 'sponsors':
-      $block ['content'] = elmcip_setup_sponsors_content();
+      $block['content'] = elmcip_setup_sponsors_content();
       break;
   }
 
@@ -70,7 +70,7 @@ function elmcip_setup_sponsors_content() {
       'title' => 'Consortium on Electronic Literature ',
       'alt' => 'Consortium on Electronic Literature ',
       'image' => 'cell.png',
-      'url' => 'http://cellnetwork.net/',
+      'url' => 'http://cellproject.net/',
     ],
     [
       'title' => 'CLARINO (Common Language Resources and Technology Infrastructure Norway)',
@@ -104,7 +104,6 @@ function elmcip_setup_sponsors_content() {
       '#item' => [
         'uri' => $sponsor_image_path . $sponsor['image'],
       ],
-      '#suffix' => '<br />',
       '#path' => [
         'path' => $sponsor['url'],
         'options' => [
@@ -118,5 +117,21 @@ function elmcip_setup_sponsors_content() {
     ];
   }
 
+  $sponsors_render_array['#attached'] = [
+    'css' => [
+      drupal_get_path('module', 'elmcip_setup') . '/css/sponsor_block.css',
+    ],
+  ];
+
   return $sponsors_render_array;
+}
+
+/**
+ * Implements template_preprocess_block().
+ * @param $variables
+ */
+function elmcip_setup_preprocess_block(&$variables) {
+  if ($variables['block_html_id'] === 'block-elmcip-setup-sponsors') {
+    $variables['classes_array'][] = drupal_html_class('block sponsor');
+  }
 }

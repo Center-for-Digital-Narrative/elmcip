@@ -1,0 +1,12 @@
+.block-sponsor {
+  text-align: left;
+}
+a:link.sponsor {
+  display: inline-block;
+  width: 220px;
+}
+.sponsor img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
