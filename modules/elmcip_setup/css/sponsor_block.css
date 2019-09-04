@@ -1,9 +1,15 @@
 .block-sponsor {
   text-align: left;
 }
+.block-sponsor .content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
 a:link.sponsor {
-  display: inline-block;
-  width: 220px;
+  width: 120px;
+  margin: auto;
 }
 .sponsor img {
   display: block;
