@@ -35,7 +35,7 @@ function elmcip_layout_strongarm() {
     'logo_path' => '',
     'logo_upload' => '',
     'default_favicon' => 0,
-    'favicon_path' => 'sites/all/themes/elmcip/favicon.png',
+    'favicon_path' => 'sites/all/themes/custom_themes/elmcip/favicon.png',
     'favicon_upload' => '',
     'zen_breadcrumb' => 'no',
     'zen_breadcrumb_separator' => ' › ',
