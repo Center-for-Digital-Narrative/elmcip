@@ -4,3 +4,6 @@
 [submodule "tota11y"]
 	path = modules/development_settings/tests/tota11y
 	url = https://github.com/Khan/tota11y.git
+[submodule "themes/elmcip_base"]
+	path = themes/elmcip_base
+	url = git@github.com:elmcip/elmcip_base.git
