@@ -31,7 +31,12 @@ function elmcip_layout_default_page_manager_handlers() {
   $display = new panels_display();
   $display->layout = 'onecol';
   $display->layout_settings = array();
-  $display->panel_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
   $display->cache = array();
   $display->title = '';
   $display->uuid = '4cfe7846-fd86-4562-acc9-af6927dd4d62';
@@ -54,7 +59,9 @@ function elmcip_layout_default_page_manager_handlers() {
     'substitute' => TRUE,
   );
   $pane->cache = array();
-  $pane->style = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
   $pane->css = array();
   $pane->extras = array();
   $pane->position = 0;
@@ -62,6 +69,44 @@ function elmcip_layout_default_page_manager_handlers() {
   $pane->uuid = '515c87a4-2751-4f45-871e-29170efe6b4d';
   $display->content['new-515c87a4-2751-4f45-871e-29170efe6b4d'] = $pane;
   $display->panels['middle'][0] = 'new-515c87a4-2751-4f45-871e-29170efe6b4d';
+  $pane = new stdClass();
+  $pane->pid = 'new-4e8ba9f4-bfa6-4b12-91b2-e463df31dfb3';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'content_by_contributor-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = '4e8ba9f4-bfa6-4b12-91b2-e463df31dfb3';
+  $display->content['new-4e8ba9f4-bfa6-4b12-91b2-e463df31dfb3'] = $pane;
+  $display->panels['middle'][1] = 'new-4e8ba9f4-bfa6-4b12-91b2-e463df31dfb3';
+  $pane = new stdClass();
+  $pane->pid = 'new-4a1c05d2-f336-43f0-9409-b5a330ba8420';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'content_by_contributor-panel_pane_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = '4a1c05d2-f336-43f0-9409-b5a330ba8420';
+  $display->content['new-4a1c05d2-f336-43f0-9409-b5a330ba8420'] = $pane;
+  $display->panels['middle'][2] = 'new-4a1c05d2-f336-43f0-9409-b5a330ba8420';
   $pane = new stdClass();
   $pane->pid = 'new-563e6b28-5ea8-4cb9-8f09-f501550b1a52';
   $pane->panel = 'middle';
@@ -75,14 +120,16 @@ function elmcip_layout_default_page_manager_handlers() {
     'override_title_text' => '',
   );
   $pane->cache = array();
-  $pane->style = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 1;
+  $pane->position = 3;
   $pane->locks = '';
   $pane->uuid = '563e6b28-5ea8-4cb9-8f09-f501550b1a52';
   $display->content['new-563e6b28-5ea8-4cb9-8f09-f501550b1a52'] = $pane;
-  $display->panels['middle'][1] = 'new-563e6b28-5ea8-4cb9-8f09-f501550b1a52';
+  $display->panels['middle'][3] = 'new-563e6b28-5ea8-4cb9-8f09-f501550b1a52';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-515c87a4-2751-4f45-871e-29170efe6b4d';
   $handler->conf['display'] = $display;

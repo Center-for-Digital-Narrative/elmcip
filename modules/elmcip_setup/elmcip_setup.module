@@ -383,7 +383,7 @@ function elmcip_autocomplete_callback_get_matches($type, $field, $instance, $ent
 
   if (isset($tag_last)) {
     // Get an array of matching entities.
-    $entity_labels = $handler->getReferencableEntities($tag_last, $instance['widget']['settings']['match_operator'], 20);
+    $entity_labels = $handler->getReferencableEntities($tag_last, $instance['widget']['settings']['match_operator'], 60);
     $denied_label = t(ENTITYREFERENCE_DENIED);
     // Loop through the products and convert them into autocomplete output.
     foreach ($entity_labels as $values) {
