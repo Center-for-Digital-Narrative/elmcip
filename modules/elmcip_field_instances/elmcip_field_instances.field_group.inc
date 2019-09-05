@@ -1635,7 +1635,8 @@ function elmcip_field_instances_field_group_info() {
       4 => 'field_email',
       5 => 'field_editor_name',
       6 => 'field_events',
-      7 => 'title',
+      7 => 'field_publishing_type',
+      8 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

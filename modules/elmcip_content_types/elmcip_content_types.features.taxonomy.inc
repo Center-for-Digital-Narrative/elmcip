@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * elmcip_content_types.features.taxonomy.inc
@@ -9,10 +10,10 @@
  */
 function elmcip_content_types_taxonomy_default_vocabularies() {
   return array(
-    'news_tags' => array(
-      'name' => 'News tags',
-      'machine_name' => 'news_tags',
-      'description' => 'Tags used in news related articles',
+    'publisher_and_journal_types' => array(
+      'name' => 'Publisher and Journal types',
+      'machine_name' => 'publisher_and_journal_types',
+      'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,

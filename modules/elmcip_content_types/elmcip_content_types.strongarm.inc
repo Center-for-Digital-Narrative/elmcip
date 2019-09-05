@@ -2034,11 +2034,14 @@ function elmcip_content_types_strongarm() {
         'locations' => array(
           'weight' => '30',
         ),
+        'flag' => array(
+          'weight' => '10',
+        ),
       ),
       'display' => array(
         'Work_publisher_entity_view_1' => array(
           'default' => array(
-            'weight' => '13',
+            'weight' => '14',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -2074,7 +2077,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '11',
+            'weight' => '12',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -2096,7 +2099,7 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '14',
+            'weight' => '15',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2124,7 +2127,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '15',
+            'weight' => '16',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2149,7 +2152,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '12',
+            'weight' => '13',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -2167,11 +2170,17 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
             'visible' => TRUE,
           ),
           'teaser' => array(
             'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
+        'flag_librarian_approved' => array(
+          'default' => array(
+            'weight' => '27',
             'visible' => FALSE,
           ),
         ),

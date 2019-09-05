@@ -12350,7 +12350,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -12366,7 +12366,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -12529,7 +12529,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'size' => 25,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -12641,7 +12641,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 4,
+      'weight' => 5,
     ),
     'widget_type' => 'email_textfield',
   );
@@ -12661,7 +12661,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'full' => array(
         'label' => 'above',
@@ -12703,7 +12703,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -12870,7 +12870,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'size' => 25,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
     'widget_type' => 'text_textfield',
   );
@@ -12966,9 +12966,41 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'location_cck',
       'settings' => array(),
       'type' => 'location',
-      'weight' => 1,
+      'weight' => 2,
     ),
     'widget_type' => 'location',
+  );
+
+  // Exported field_instance: 'node-publisher-field_publishing_type'.
+  $field_instances['node-publisher-field_publishing_type'] = array(
+    'bundle' => 'publisher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_publishing_type',
+    'label' => 'Publishing type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
   );
 
   // Exported field_instance: 'node-publisher-field_record_status_tax'.
@@ -12987,7 +13019,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -13052,7 +13084,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -13270,7 +13302,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 2,
+      'weight' => 3,
     ),
     'widget_type' => 'link',
   );
@@ -21093,6 +21125,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Publisher');
   t('Publisher Referenced');
   t('Publishers');
+  t('Publishing type');
   t('Pull Quotes');
   t('Record Status');
   t('Residency');

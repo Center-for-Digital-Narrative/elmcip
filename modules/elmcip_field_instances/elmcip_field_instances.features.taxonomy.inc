@@ -148,6 +148,29 @@ function elmcip_field_instances_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'publisher_and_journal_types' => array(
+      'name' => 'Publisher and Journal types',
+      'machine_name' => 'publisher_and_journal_types',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'record_status' => array(
       'name' => 'Record status',
       'machine_name' => 'record_status',
