@@ -5046,13 +5046,30 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Link to edit content */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<span class="editing"><a href="[path]">[title]</a><span class="edit">[edit_node]</span></span>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
@@ -5085,22 +5102,13 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['sorts']['created_1']['table'] = 'node';
   $handler->display->display_options['sorts']['created_1']['field'] = 'created';
   $handler->display->display_options['sorts']['created_1']['order'] = 'DESC';
-  /* Sort criterion: Content: Updated date */
-  $handler->display->display_options['sorts']['changed']['id'] = 'changed';
-  $handler->display->display_options['sorts']['changed']['table'] = 'node';
-  $handler->display->display_options['sorts']['changed']['field'] = 'changed';
-  $handler->display->display_options['sorts']['changed']['granularity'] = 'minute';
-  /* Sort criterion: User: Created date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'users';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['relationship'] = 'uid_1';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Contextual filter: Content: Author uid */
   $handler->display->display_options['arguments']['uid']['id'] = 'uid';
   $handler->display->display_options['arguments']['uid']['table'] = 'node';
   $handler->display->display_options['arguments']['uid']['field'] = 'uid';
   $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['uid']['title'] = 'Records created by %1';
   $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'user';
   $handler->display->display_options['arguments']['uid']['default_argument_options']['user'] = FALSE;
   $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
@@ -5123,13 +5131,28 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['relationships']['nid']['field'] = 'nid';
   $handler->display->display_options['relationships']['nid']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  /* Field: Content: Link to edit content */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<span class="editing"><a href="[path]">[title]</a><span class="edit">[edit_node]</span></span>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
@@ -5162,19 +5185,16 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['arguments']['uid_revision']['id'] = 'uid_revision';
   $handler->display->display_options['arguments']['uid_revision']['table'] = 'node';
   $handler->display->display_options['arguments']['uid_revision']['field'] = 'uid_revision';
-  $handler->display->display_options['arguments']['uid_revision']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['uid_revision']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid_revision']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['uid_revision']['title'] = 'Records editited %1';
+  $handler->display->display_options['arguments']['uid_revision']['default_argument_type'] = 'user';
+  $handler->display->display_options['arguments']['uid_revision']['default_argument_options']['user'] = FALSE;
   $handler->display->display_options['arguments']['uid_revision']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['uid_revision']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['uid_revision']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: User has a revision */
-  $handler->display->display_options['filters']['uid_revision']['id'] = 'uid_revision';
-  $handler->display->display_options['filters']['uid_revision']['table'] = 'node';
-  $handler->display->display_options['filters']['uid_revision']['field'] = 'uid_revision';
-  $handler->display->display_options['filters']['uid_revision']['value'] = array(
-    0 => '34',
-  );
 
   /* Display: Content pane - created */
   $handler = $view->new_display('panel_pane', 'Content pane - created', 'panel_pane_2');
@@ -5199,14 +5219,18 @@ function elmcip_data_export_views_default_views() {
     t('revision user'),
     t('author'),
     t('Title'),
+    t('<span class="editing"><a href="[path]">[title]</a><span class="edit">[edit_node]</span></span>'),
     t('Type'),
     t('Last revised by'),
     t('Updated'),
     t('Created'),
     t('All'),
+    t('Records created by %1'),
     t('Content pane - edited'),
     t('Records edited'),
     t('Get the actual content from a content revision.'),
+    t('Path'),
+    t('Records editited %1'),
     t('View panes'),
     t('Content pane - created'),
     t('Records created by user'),

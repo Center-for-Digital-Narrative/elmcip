@@ -66,7 +66,15 @@ table tbody a:visited {
 
 table tbody .edit a:link {
   color: #AC0009;
-  float: right;
+}
+.editing {
+  display: flex;
+}
+.edit {
+  justify-content: right;
+  padding-left: 1em;
+  margin-top: auto;
+  margin-left: auto;
 }
 
 /* Used to force fixed with to table cells with short data elements. Example the Year YYYY. */
