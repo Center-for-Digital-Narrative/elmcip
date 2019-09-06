@@ -1,0 +1,11 @@
+#autocomplete {
+  border: 1px solid #ccc;
+  height: 200px;
+  max-height: 300px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#autocomplete li {
+  padding: 0.5em 1em;
+}
