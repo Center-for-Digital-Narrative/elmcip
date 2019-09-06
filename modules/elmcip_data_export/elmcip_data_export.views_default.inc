@@ -26,7 +26,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['title'] = 'Authors';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'See all authors';
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
@@ -96,7 +96,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
   $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
   $handler->display->display_options['fields']['field_last_name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_last_name']['alter']['text'] = '<a href="[path]">[field_last_name]</a>';
+  $handler->display->display_options['fields']['field_last_name']['alter']['text'] = '<span class="editing"><a href="[path]">[field_last_name]</a><span class="edit">[edit_node]</span></span>';
   $handler->display->display_options['fields']['field_last_name']['alter']['path'] = '[view_node]';
   $handler->display->display_options['fields']['field_last_name']['alter']['absolute'] = TRUE;
   /* Field: Content: Middle name */
@@ -116,12 +116,13 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['changed']['table'] = 'node';
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
   $handler->display->display_options['fields']['changed']['label'] = 'Updated';
-  $handler->display->display_options['fields']['changed']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['changed']['alter']['text'] = '[changed] [edit_node]';
+  $handler->display->display_options['fields']['changed']['alter']['text'] = '<span class="editing">
+  [changed]<span class="edit">[edit_node]</span>
+</span>';
   $handler->display->display_options['fields']['changed']['alter']['max_length'] = '10';
   $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['changed']['date_format'] = 'short';
+  $handler->display->display_options['fields']['changed']['date_format'] = 'dmy';
   $handler->display->display_options['fields']['changed']['second_date_format'] = 'long';
   /* Sort criterion: Content: Last name (field_last_name) */
   $handler->display->display_options['sorts']['field_last_name_value']['id'] = 'field_last_name_value';
@@ -150,15 +151,21 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'path' => 'path',
+    'edit_node' => 'edit_node',
     'field_last_name' => 'field_last_name',
     'field_middle_name' => 'field_middle_name',
     'field_first_name' => 'field_first_name',
     'changed' => 'changed',
-    'title' => 'title',
   );
-  $handler->display->display_options['style_options']['default'] = 'field_last_name';
+  $handler->display->display_options['style_options']['class'] = '';
+  $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'path' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'edit_node' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -191,13 +198,6 @@ function elmcip_data_export_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
   );
   $handler->display->display_options['style_options']['sticky'] = TRUE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -224,35 +224,111 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = TRUE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['style_options']['columns'] = array(
-    'title' => 'title',
-    'changed' => 'changed',
+    'path' => 'path',
     'edit_node' => 'edit_node',
+    'field_last_name' => 'field_last_name',
+    'field_middle_name' => 'field_middle_name',
+    'field_first_name' => 'field_first_name',
+    'changed' => 'changed',
   );
-  $handler->display->display_options['style_options']['default'] = 'changed';
+  $handler->display->display_options['style_options']['class'] = '';
+  $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
+    'path' => array(
       'align' => '',
       'separator' => '',
-    ),
-    'changed' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'desc',
-      'align' => '',
-      'separator' => '',
+      'empty_column' => 0,
     ),
     'edit_node' => array(
       'align' => '',
       'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_last_name' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_middle_name' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_first_name' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'changed' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'desc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
     ),
   );
-  $handler->display->display_options['style_options']['order'] = 'desc';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['absolute'] = TRUE;
+  /* Field: Content: Link to edit content */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['edit_node']['alter']['absolute'] = TRUE;
+  /* Field: Content: Last name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_last_name']['alter']['text'] = '<a href="[path]">[field_last_name]</a>';
+  $handler->display->display_options['fields']['field_last_name']['alter']['path'] = '[view_node]';
+  $handler->display->display_options['fields']['field_last_name']['alter']['absolute'] = TRUE;
+  /* Field: Content: Middle name */
+  $handler->display->display_options['fields']['field_middle_name']['id'] = 'field_middle_name';
+  $handler->display->display_options['fields']['field_middle_name']['table'] = 'field_data_field_middle_name';
+  $handler->display->display_options['fields']['field_middle_name']['field'] = 'field_middle_name';
+  $handler->display->display_options['fields']['field_middle_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_middle_name']['alter']['text'] = '<a href="[path]">[field_middle_name]</a>';
+  /* Field: Content: First name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_first_name']['alter']['text'] = '<a href="[path]">[field_first_name]</a>';
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['label'] = 'Updated';
+  $handler->display->display_options['fields']['changed']['alter']['text'] = '<span class="editing">
+  [changed]<span class="edit">[edit_node]</span>
+</span>';
+  $handler->display->display_options['fields']['changed']['alter']['max_length'] = '10';
+  $handler->display->display_options['fields']['changed']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['changed']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['changed']['date_format'] = 'dmy';
+  $handler->display->display_options['fields']['changed']['second_date_format'] = 'long';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Updated date */
+  $handler->display->display_options['sorts']['changed']['id'] = 'changed';
+  $handler->display->display_options['sorts']['changed']['table'] = 'node';
+  $handler->display->display_options['sorts']['changed']['field'] = 'changed';
+  $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
   $translatables['Author_page'] = array(
     t('Defaults'),
     t('Authors'),
@@ -275,16 +351,19 @@ function elmcip_data_export_views_default_views() {
     t('Path'),
     t('Link to edit content'),
     t('Last name'),
-    t('<a href="[path]">[field_last_name]</a>'),
+    t('<span class="editing"><a href="[path]">[field_last_name]</a><span class="edit">[edit_node]</span></span>'),
     t('Middle name'),
     t('<a href="[path]">[field_middle_name]</a>'),
     t('First name'),
     t('<a href="[path]">[field_first_name]</a>'),
     t('Updated'),
-    t('[changed] [edit_node]'),
+    t('<span class="editing">
+  [changed]<span class="edit">[edit_node]</span>
+</span>'),
     t('Page'),
     t('more'),
     t('Block'),
+    t('<a href="[path]">[field_last_name]</a>'),
   );
   $export['Author_page'] = $view;
 
