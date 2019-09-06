@@ -13,7 +13,6 @@ declare(strict_types = 1);
  * @param $entity_type
  * @param $bundle_name
  * @param string $entity_id
- * @param string $string
  * @return int
  */
 function elmcip_autocomplete_callback(
@@ -105,7 +104,7 @@ function elmcip_autocomplete_callback_get_matches(
     // Get an array of matching entities.
     $entity_labels = $handler->getReferencableEntities(
       $tag_last,
-      $instance['widget']['settings']['match_operator']
+      $instance['widget']['settings']['match_operator'], 800
     );
 
     foreach ($entity_labels as $values) {
