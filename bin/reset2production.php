@@ -87,6 +87,12 @@ final class Kubernetes {
 
 
 exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
+
+if (!$results) {
+  exec('kubed -renew ' . CLUSTER, $login);
+  exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
+}
+
 $pods = Pods::getPods($results);
 $elmcip = new Kubernetes($pods);
 $elmcip->createSnapshot();
