@@ -104,26 +104,44 @@ function elmcip_autocomplete_callback_get_matches(
 
   if (isset($tag_last)) {
     // Get an array of matching entities.
-    $entity_labels = $handler->getReferencableEntities($tag_last, $instance['widget']['settings']['match_operator'], 100);
-    $denied_label = t(ENTITYREFERENCE_DENIED);
-    // Loop through the products and convert them into autocomplete output.
+    $entity_labels = $handler->getReferencableEntities(
+      $tag_last,
+      $instance['widget']['settings']['match_operator']
+    );
+
     foreach ($entity_labels as $values) {
-      foreach ($values as $entity_id => $label) {
-        // Never autocomplete entities that aren't accessible.
-        if ($label == $denied_label) {
-          continue;
-        }
-        $key = "$label ($entity_id)";
-        // Strip starting/trailing white spaces, line breaks and tags.
-        $key = preg_replace('/\s\s+/', ' ', str_replace("\n", '', trim(decode_entities(strip_tags($key)))));
-        // Names containing commas or quotes must be wrapped in quotes.
-        if (strpos($key, ',') !== FALSE || strpos($key, '"') !== FALSE) {
-          $key = '"' . str_replace('"', '""', $key) . '"';
-        }
-        $matches[$prefix . $key] = '<div class="reference-autocomplete">' . $label . '</div>';
-      }
+      $matches = elmcip_setup_autocomplete_convert($values, $prefix);
     }
   }
 
   drupal_json_output($matches);
+}
+
+/**
+ * Loop through the products and convert them into autocomplete output.
+ * @param array $values
+ * @param string $prefix
+ * @return array
+ */
+function elmcip_setup_autocomplete_convert(array $values, string $prefix): array {
+  $denied_label = t(ENTITYREFERENCE_DENIED);
+  $matches = [];
+
+  foreach ($values as $entity_id => $label) {
+    // Never autocomplete entities that aren't accessible.
+    if ($label === $denied_label) {
+      continue;
+    }
+
+    $key = "$label ($entity_id)";
+    // Strip starting/trailing white spaces, line breaks and tags.
+    $key = preg_replace('/\s\s+/', ' ', str_replace("\n", '', trim(decode_entities(strip_tags($key)))));
+    // Names containing commas or quotes must be wrapped in quotes.
+    if (strpos($key, ',') !== FALSE || strpos($key, '"') !== FALSE) {
+      $key = '"' . str_replace('"', '""', $key) . '"';
+    }
+    $matches[$prefix . $key] = '<div class="reference-autocomplete">' . $label . '</div>';
+  }
+
+  return $matches;
 }
