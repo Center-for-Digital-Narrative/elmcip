@@ -21,8 +21,7 @@ function elmcip_autocomplete_callback(
   $field_name,
   $entity_type,
   $bundle_name,
-  $entity_id = '',
-  $string = ''
+  $entity_id = ''
 ) {
   // If the request has a '/' in the search text, then the menu system will have
   // split it into multiple arguments and $string will only be a partial.
@@ -88,7 +87,7 @@ function elmcip_autocomplete_callback_get_matches(
 
   $handler = entityreference_get_selection_handler($field, $instance, $entity_type, $entity);
 
-  if ($type == 'tags') {
+  if ($type === 'tags') {
     // The user enters a comma-separated list of tags.
     // We only autocomplete the last tag.
     $tags_typed = drupal_explode_tags($string);
