@@ -24,9 +24,6 @@ stylesheets[all][]        = css/typography.css
 stylesheets[all][]        = css/autocomplete.css
 stylesheets[print][]      = css/print.css
 
-stylesheets-conditional[lte IE 7][all][]  = css/ie7.css
-stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
-
 regions[help]           = Help
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
