@@ -94,7 +94,7 @@ function elmcip_setup_sponsors_content() {
       'title' => 'European Commission, European Research Area',
       'alt' => 'European Commission, European Research Area',
       'image' => 'european_commission.png',
-      'url' => 'https://ec.europa.eu/research/era/index_en.htm',
+      'url' => 'https://ec.europa.eu/',
     ],
   ];
 
