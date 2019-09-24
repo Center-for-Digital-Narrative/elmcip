@@ -5086,7 +5086,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
-        'type' => 'link_separate',
+        'type' => 'link_default',
         'weight' => 13,
       ),
       'full' => array(
