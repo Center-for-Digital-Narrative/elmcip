@@ -53,7 +53,7 @@ a.facetapi-inactive {
   margin: 0;
 }
 
-group-right p:last-child {
+.group-right p:last-child {
   margin-bottom: 0;
 }
 
