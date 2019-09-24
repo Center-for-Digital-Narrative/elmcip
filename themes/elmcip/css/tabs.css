@@ -6,7 +6,6 @@
  * Adds styles for the primary and secondary tabs.
  */
 
-
 .logged-in .region-content {
   border-top: 1px solid #dddddd;
 }
@@ -30,7 +29,7 @@ ul.primary li a {
 }
 
 ul.primary li a:before {
-  font-family: fontawesome;
+  font-family: fontawesome, serif;
   font-weight: normal;
   margin-right: 10px;
 }
