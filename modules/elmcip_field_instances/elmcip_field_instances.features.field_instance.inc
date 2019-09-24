@@ -3888,7 +3888,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'bundle' => 'critical_writing',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If the critical writing is published in a journal or book, enter the start and end page numbers, separated by a hyphen (e.g. 65-77). Use the complete number (e.g. 277-297).',
+    'description' => 'If the critical writing is published in a journal or book, enter the start and end page numbers, separated by a hyphen (e.g. 65-77). Use the complete number (e.g. 277-297). If the critical writing is a whole book, enter the total number of pages (e.g. 235).',
     'display' => array(
       2 => array(
         'label' => 'hidden',
@@ -3995,11 +3995,46 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'weight' => 37,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pagenumbers',
     'label' => 'Page Numbers',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          1 => 1,
+          2 => 2,
+          3 => 3,
+          4 => 4,
+          'basic_text_editor' => 'basic_text_editor',
+          'ds_code' => 'ds_code',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            1 => array(
+              'weight' => -5,
+            ),
+            2 => array(
+              'weight' => -8,
+            ),
+            3 => array(
+              'weight' => -9,
+            ),
+            4 => array(
+              'weight' => -7,
+            ),
+            'basic_text_editor' => array(
+              'weight' => -10,
+            ),
+            'ds_code' => array(
+              'weight' => -6,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -21015,7 +21050,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If the critical writing has an ISSN, add it here.');
   t('If the critical writing has an eISSN number, add it here.');
   t('If the critical writing is available at a web-based archive, such as the Internet Archive, or a university open research archive, link here.');
-  t('If the critical writing is published in a journal or book, enter the start and end page numbers, separated by a hyphen (e.g. 65-77). Use the complete number (e.g. 277-297).');
+  t('If the critical writing is published in a journal or book, enter the start and end page numbers, separated by a hyphen (e.g. 65-77). Use the complete number (e.g. 277-297). If the critical writing is a whole book, enter the total number of pages (e.g. 235).');
   t('If the critical writing references  a work of electronic literature or digital art, link to it here. The creative work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('If the critical writing references  other critical writing, cross-reference it with a  link  here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database,  <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.');
   t('If the critical writing references a particular publisher or journal (for example, a conference paper about a particular online journal), link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.');
