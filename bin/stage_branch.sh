@@ -50,7 +50,7 @@ then
     elif [ $1 = "normal" ]
     then
         echo "Upgrading site to latest development version"
-        git reset --hard
+        git submodule foreach git reset --hard \\ exit
         bin/site-upgrade master
     else
         echo echo "Error: Valid parameter: stage_branch normal|reset"
