@@ -45,6 +45,13 @@ then
 
         drush sql-drop || exit
         gunzip -c /elmcip/latest.elmcip.sql | /elmcip/applications/elmcip.net/vendor/drush/drush/drush sql-cli
+
+        ## Enable us to load file and images on demand into staging area from prod.
+        drush pm-enable --yes stage_file_proxy
+        drush variable-set stage_file_proxy_origin "https://elmcip.net"
+
+        ## Password protect site. Stop content from getting picked up by spider bots.
+        cat /elmcip/applications/htaccess.txt >> .htaccess
         cd $HOMEDIR || exit
 
     elif [ $1 = "normal" ]
