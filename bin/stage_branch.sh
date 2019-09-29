@@ -1,11 +1,12 @@
 #!/bin/bash
 
-# set -x
+set +x
 
 HOMEDIR=${PWD}
 DRUPAL=drupal
 DB_DIR=/elmcip
 alias drush="${HOMEDIR}/vendor/drush/drush/drush"
+source "$HOMEDIR"/bin/drush.sh
 
 if [ $# -eq 0 ]
 then
@@ -49,7 +50,6 @@ then
     elif [ $1 = "normal" ]
     then
         echo "Upgrading site to latest development version"
-        ## Upgrade application
         git reset --hard
         bin/site-upgrade master
     else

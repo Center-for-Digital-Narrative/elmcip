@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 original_head=$(git rev-parse HEAD) || exit
 git pull origin || exit

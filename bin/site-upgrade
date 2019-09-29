@@ -4,11 +4,12 @@ set -x
 
 DRUPAL=drupal
 HOMEDIR=${PWD}
+# shellcheck source=bin/drush.sh
+source "$HOMEDIR"/bin/drush.sh
 
 drush --version || exit $?
-
-# Pull latest code the master branch and selected branch before running
-# upgrades.
+exit
+## Pull any updates from select branch before running upgrades.
 
 if [[ -z "$1" ]]; then
   git checkout master
@@ -20,7 +21,7 @@ fi
 
 git submodule update --quiet || exit $?
 
-# Flush all drupal caches and revert all feature modules
+## Flush all drupal caches and revert all feature modules.
 cd "${HOMEDIR}"/${DRUPAL} || exit
 drush cc all
 drush updatedb --yes
