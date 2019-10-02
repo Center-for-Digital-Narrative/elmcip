@@ -5,8 +5,7 @@ set +x
 HOMEDIR=${PWD}
 DRUPAL=drupal
 DB_DIR=/elmcip
-alias drush="${HOMEDIR}/vendor/drush/drush/drush"
-source "$HOMEDIR"/bin/drush.sh
+source bin/drush.sh
 
 if [ $# -eq 0 ]
 then
