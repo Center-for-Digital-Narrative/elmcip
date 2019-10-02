@@ -8,7 +8,7 @@ HOMEDIR=${PWD}
 source "$HOMEDIR"/bin/drush.sh
 
 drush --version || exit $?
-exit
+
 ## Pull any updates from select branch before running upgrades.
 
 if [[ -z "$1" ]]; then
@@ -16,7 +16,7 @@ if [[ -z "$1" ]]; then
   git pull --rebase
 else
   git pull --rebase
-  git checkout "$1"
+  git checkout "$1" || exit 1
 fi
 
 git submodule update --quiet || exit $?
