@@ -1,8 +1,8 @@
 #!/bin/bash
 
-original_head=$(git rev-parse HEAD) || exit
-git pull origin || exit
-updated_head=$(git rev-parse HEAD) || exit
+original_head=$(git rev-parse HEAD) || exit 1
+git pull origin || exit 1
+updated_head=$(git rev-parse HEAD) || exit 1
 
 if test "$updated_head" = "$original_head"; then
   echo Upstream is idling
