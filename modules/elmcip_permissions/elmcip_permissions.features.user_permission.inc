@@ -174,16 +174,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'add content to books'.
-  $permissions['add content to books'] = array(
-    'name' => 'add content to books',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'book',
-  );
-
   // Exported permission: 'add media from remote sources'.
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
@@ -231,16 +221,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'block',
-  );
-
-  // Exported permission: 'administer book outlines'.
-  $permissions['administer book outlines'] = array(
-    'name' => 'administer book outlines',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'book',
   );
 
   // Exported permission: 'administer contact forms'.
@@ -641,19 +621,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'media_flickr',
   );
 
-  // Exported permission: 'create book content'.
-  $permissions['create book content'] = array(
-    'name' => 'create book content',
-    'roles' => array(
-      'Librarian' => 'Librarian',
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create class_group content'.
   $permissions['create class_group content'] = array(
     'name' => 'create class_group content',
@@ -804,16 +771,6 @@ function elmcip_permissions_user_default_permissions() {
     'name' => 'create mini panels',
     'roles' => array(),
     'module' => 'panels_mini',
-  );
-
-  // Exported permission: 'create new books'.
-  $permissions['create new books'] = array(
-    'name' => 'create new books',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'book',
   );
 
   // Exported permission: 'create notebook content'.
@@ -1011,18 +968,6 @@ function elmcip_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete any book content'.
-  $permissions['delete any book content'] = array(
-    'name' => 'delete any book content',
-    'roles' => array(
-      'Librarian' => 'Librarian',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete any class_group content'.
@@ -1266,19 +1211,6 @@ function elmcip_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete own book content'.
-  $permissions['delete own book content'] = array(
-    'name' => 'delete own book content',
-    'roles' => array(
-      'Librarian' => 'Librarian',
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete own class_group content'.
@@ -1729,19 +1661,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit any book content'.
-  $permissions['edit any book content'] = array(
-    'name' => 'edit any book content',
-    'roles' => array(
-      'Librarian' => 'Librarian',
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any class_group content'.
   $permissions['edit any class_group content'] = array(
     'name' => 'edit any class_group content',
@@ -2073,19 +1992,6 @@ function elmcip_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit own book content'.
-  $permissions['edit own book content'] = array(
-    'name' => 'edit own book content',
-    'roles' => array(
-      'Librarian' => 'Librarian',
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'supereditor' => 'supereditor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit own class_group content'.
