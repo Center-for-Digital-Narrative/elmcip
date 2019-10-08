@@ -13,11 +13,10 @@ then
     exit 1
 fi
 
-drush --version || exit 1
-
 if [ "$1" = "reset" ]
 then
     date
+    drush --version || exit 1
     echo "Tear down site and upgrade from database snapshot."
 
     # Test if $DB_DIR exists
@@ -60,6 +59,7 @@ then
     fi
 
     date
+    drush --version || exit 1
     echo "Upgrading site to latest development version."
 
     git submodule foreach git reset --hard || exit 1
