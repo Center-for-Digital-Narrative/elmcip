@@ -44,6 +44,9 @@ then
     ## Enable us to load file and images on demand into staging area from prod.
     drush pm-enable --yes stage_file_proxy
     drush variable-set stage_file_proxy_origin "https://elmcip.net"
+    drush dis captcha --yes
+    drush pmu recaptcha --yes
+    drush pmu captcha --yes
 
     ## Password protect site. Stop content from getting picked up by spider bots.
     cat /elmcip/applications/htaccess.txt >> .htaccess
@@ -61,6 +64,10 @@ then
 
     git submodule foreach git reset --hard || exit 1
     bin/site-upgrade master
+    cd $DRUPAL || exit 1
+    drush dis captcha --yes
+    drush pmu recaptcha --yes
+    drush pmu captcha --yes
 else
     echo echo "Error: Valid parameter: stage_branch normal|reset"
     exit 1
