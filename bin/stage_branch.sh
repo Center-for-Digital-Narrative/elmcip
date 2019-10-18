@@ -55,7 +55,7 @@ elif [ "$1" = "normal" ]
 then
     if ! bin/branch_changed.sh
     then
-      exit 1
+      exit 0
     fi
 
     date
