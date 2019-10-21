@@ -50,7 +50,7 @@ then
     ## Password protect site. Stop content from getting picked up by spider bots.
     cat /elmcip/applications/htaccess.txt >> .htaccess
     cd "$HOMEDIR" || exit 1
-
+    exit 0
 elif [ "$1" = "normal" ]
 then
     if ! bin/branch_changed.sh
