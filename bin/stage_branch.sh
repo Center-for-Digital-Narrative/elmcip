@@ -53,8 +53,7 @@ then
     exit 0
 elif [ "$1" = "normal" ]
 then
-    env
-    /usr/bin/php --version
+    php --version
     if ! bin/branch_changed.sh
     then
       exit 0
