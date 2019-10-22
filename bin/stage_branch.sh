@@ -53,12 +53,12 @@ then
     exit 0
 elif [ "$1" = "normal" ]
 then
-    php --version
     if ! bin/branch_changed.sh
     then
       exit 0
     fi
 
+    php --version || exit 1
     date +'%Y-%m-%d %H:%M'
     drush --version || exit 1
     echo "Upgrading site to latest development version."
@@ -66,6 +66,8 @@ then
     git submodule foreach git reset --hard || exit 1
     bin/site-upgrade master
     cd $DRUPAL || exit 1
+    pwd
+    drush status
     drush dis captcha --yes
     drush pmu recaptcha --yes
     drush pmu captcha --yes
