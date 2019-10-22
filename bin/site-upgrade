@@ -23,8 +23,8 @@ git submodule update --quiet || exit 1
 ## Flush all drupal caches and revert all feature modules.
 cd "${HOMEDIR}"/${DRUPAL} || exit 1
 pwd
-drush status
-drush cc all
+drush status -d
+drush cc all -d
 drush updatedb --yes
 drush features-revert-all --yes
 drush updatedb --yes
