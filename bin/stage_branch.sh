@@ -15,7 +15,7 @@ fi
 
 if [ "$1" = "reset" ]
 then
-    date +'%Y-%m-%d'
+    date +'%Y-%m-%d %H:%M'
     drush --version || exit 1
     echo "Tear down site and upgrade from database snapshot."
 
@@ -58,7 +58,7 @@ then
       exit 0
     fi
 
-    date +'%Y-%m-%d'
+    date +'%Y-%m-%d %H:%M'
     drush --version || exit 1
     echo "Upgrading site to latest development version."
 
