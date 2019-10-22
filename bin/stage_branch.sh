@@ -53,6 +53,7 @@ then
     exit 0
 elif [ "$1" = "normal" ]
 then
+    env
     if ! bin/branch_changed.sh
     then
       exit 0
