@@ -5,6 +5,7 @@ set +x
 HOMEDIR=${PWD}
 DRUPAL=drupal
 DB_DIR=/elmcip
+DB_DUMP=latest.elmcip.sql
 source bin/drush.sh
 
 if [ $# -eq 0 ]
@@ -19,26 +20,23 @@ then
     drush --version || exit 1
     echo "Tear down site and upgrade from database snapshot."
 
-    # Test if $DB_DIR exists
     if [ ! -d $DB_DIR ]
     then
         echo "Error: Database snapshot directory: $DB_DIR does not exists"
         exit 1
     fi
 
-    ## Create db. snapshot
     cd $DRUPAL || exit
-    drush sql-dump --result-file="${DB_DIR}/latest.elmcip.sql" --gzip || exit
+    drush sql-dump --result-file="${DB_DIR}/${DB_DUMP}" --gzip || exit
 
-    ## Empty database and re-populate from production snapshot
-    if [ ! -f "${DB_DIR}/elmcip/latest.elmcip.sql" ]
+    ## Empty database and re-populate from production snapshot.
+    if [ ! -f "${DB_DIR}/${DB_DUMP}.gz" ]
     then
-        echo "Error: Database snapshot: $DB_DIR/elmcip/latest.elmcip.sql do not exists"
+        echo "Error: Database snapshot: $DB_DIR/$DB_DUMP do not exists"
         exit 1
     fi
-
     drush sql-drop || exit
-    gunzip -c /elmcip/latest.elmcip.sql | /elmcip/applications/elmcip.net/vendor/drush/drush/drush sql-cli
+    gunzip -c "${DB_DIR}/${DB_DUMP}.gz" | drush sql-cli
 
     ## Enable us to load file and images on demand into staging area from prod.
     drush pm-enable --yes stage_file_proxy
@@ -49,7 +47,7 @@ then
 
     ## Password protect site. Stop content from getting picked up by spider bots.
     cat /elmcip/applications/htaccess.txt >> .htaccess
-    cd "$HOMEDIR" || exit 1
+    cd "${HOMEDIR}" || exit 1
     exit 0
 elif [ "$1" = "normal" ]
 then
