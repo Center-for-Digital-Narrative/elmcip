@@ -35,7 +35,7 @@ then
         echo "Error: Database snapshot: $DB_DIR/$DB_DUMP do not exists"
         exit 1
     fi
-    drush sql-drop || exit
+    drush sql-drop --yes || exit
     gunzip -c "${DB_DIR}/${DB_DUMP}.gz" | drush sql-cli
 
     ## Enable us to load file and images on demand into staging area from prod.
