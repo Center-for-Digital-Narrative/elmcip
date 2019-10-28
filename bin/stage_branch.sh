@@ -26,6 +26,7 @@ then
         exit 1
     fi
 
+    git submodule foreach git reset --hard || exit 1
     cd $DRUPAL || exit
     /elmcip/create_snapshot
 
