@@ -27,7 +27,7 @@ then
     fi
 
     cd $DRUPAL || exit
-    drush sql-dump --result-file="${DB_DIR}/${DB_DUMP}" --gzip || exit
+    /elmcip/create_snapshot
 
     ## Empty database and re-populate from production snapshot.
     if [ ! -f "${DB_DIR}/${DB_DUMP}.gz" ]
