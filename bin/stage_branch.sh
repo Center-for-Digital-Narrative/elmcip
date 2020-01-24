@@ -47,6 +47,8 @@ then
     drush pmu captcha --yes
     drush en dblog --yes
     drush variable:set error_level 2
+    git submodule foreach git reset --hard || exit 1
+    ../bin/site-upgrade master
 
     ## Password protect site. Stop content from getting picked up by spider bots.
     cat /elmcip/applications/htaccess.txt >> .htaccess
