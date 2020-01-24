@@ -45,6 +45,8 @@ then
     drush dis captcha --yes
     drush pmu recaptcha --yes
     drush pmu captcha --yes
+    drush en dblog --yes
+    drush variable:set error_level 2
 
     ## Password protect site. Stop content from getting picked up by spider bots.
     cat /elmcip/applications/htaccess.txt >> .htaccess
