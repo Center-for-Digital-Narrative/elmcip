@@ -47,6 +47,7 @@ then
     drush pmu captcha --yes
     drush en dblog --yes
     drush variable:set error_level 2
+    drush variable:set site_name 'TEST ELMCIP'
     git submodule foreach git reset --hard || exit 1
     ../bin/site-upgrade master
     drush dis captcha --yes
