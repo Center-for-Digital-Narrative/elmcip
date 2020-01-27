@@ -19,6 +19,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = '';
   $facet->facet = 'field_critical_writing_year';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'operator' => 'and',
     'hard_limit' => '50',
@@ -48,6 +49,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = '';
   $facet->facet = 'field_platform_year';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'operator' => 'and',
     'hard_limit' => '50',
@@ -77,6 +79,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = '';
   $facet->facet = 'field_tr_year';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'operator' => 'and',
     'hard_limit' => '50',
@@ -106,6 +109,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = '';
   $facet->facet = 'field_work_year';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'operator' => 'and',
     'hard_limit' => '50',
@@ -135,6 +139,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = '';
   $facet->facet = 'field_year_initiated';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'operator' => 'and',
     'hard_limit' => '50',
@@ -164,6 +169,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'author';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -200,6 +206,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'changed';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -236,6 +243,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'created';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -272,6 +280,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_abstract:value';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -308,6 +317,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_critical_writing_year';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
@@ -351,6 +361,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_db_description_english:value';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -387,6 +398,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_node_ref_event';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
@@ -430,6 +442,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_node_ref_work';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -466,6 +479,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_platform_year';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
@@ -509,6 +523,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_ps_description:value';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -545,6 +560,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_rc_description:value';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -581,6 +597,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_textfield:value';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -617,6 +634,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_tr_critical';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -653,6 +671,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_tr_org';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -689,6 +708,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_tr_year';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
@@ -732,6 +752,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_work_year';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
@@ -775,6 +796,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'field_year_initiated';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
@@ -818,6 +840,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'search_api_language';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -854,6 +877,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'taxonomy_vocabulary_1';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
@@ -897,6 +921,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'taxonomy_vocabulary_2';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
@@ -940,6 +965,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'taxonomy_vocabulary_4';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -976,6 +1002,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'title';
   $facet->enabled = FALSE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
@@ -1012,6 +1039,7 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->realm = 'block';
   $facet->facet = 'type';
   $facet->enabled = TRUE;
+  $facet->hash = '0';
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_checkbox_links',
