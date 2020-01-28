@@ -8,6 +8,7 @@
 - [Contribute changes and improvements](doc/contrib.md)
 - [How to create a release](doc/create_release.md)
 - [How to deploy a release](doc/deploy.md)
+- [Old user guide](doc/book.md)
 
 ## General usage
 ELMCIP Drupal configuration is controlled in multiple [Features](https://www.drupal.org/project/features) modules. Other changes, example housekeeping tasks are run in code by [hook_update_N()](https://api.drupal.org/api/drupal/modules!system!system.api.php/function/hook_update_N/7). Need to learn more about Features, have a look at the provided [Features documentation](https://www.drupal.org/node/580026).
