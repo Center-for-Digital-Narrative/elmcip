@@ -765,6 +765,7 @@ function elmcip_field_instances_field_group_info() {
       6 => 'field_po_ex_entry',
       7 => 'field_repository',
       8 => 'field_authoring_software_entry',
+      9 => 'field_brown_digital_repository',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -1192,7 +1193,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Meta data',
-    'weight' => '42',
+    'weight' => '43',
     'children' => array(
       0 => 'purl',
       1 => 'author',
