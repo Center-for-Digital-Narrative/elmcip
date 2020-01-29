@@ -5266,7 +5266,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['arguments']['uid_revision']['field'] = 'uid_revision';
   $handler->display->display_options['arguments']['uid_revision']['default_action'] = 'default';
   $handler->display->display_options['arguments']['uid_revision']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['uid_revision']['title'] = 'Records editited %1';
+  $handler->display->display_options['arguments']['uid_revision']['title'] = 'Edited by %1';
   $handler->display->display_options['arguments']['uid_revision']['default_argument_type'] = 'user';
   $handler->display->display_options['arguments']['uid_revision']['default_argument_options']['user'] = FALSE;
   $handler->display->display_options['arguments']['uid_revision']['summary']['number_of_records'] = '0';
@@ -5309,7 +5309,7 @@ function elmcip_data_export_views_default_views() {
     t('Records edited'),
     t('Get the actual content from a content revision.'),
     t('Path'),
-    t('Records editited %1'),
+    t('Edited by %1'),
     t('View panes'),
     t('Content pane - created'),
     t('Records created by user'),
