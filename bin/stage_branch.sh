@@ -50,7 +50,7 @@ then
     drush variable:set error_level 2
     drush variable:set site_name 'TEST ELMCIP'
     git submodule foreach git reset --hard || exit 1
-    ../bin/site-upgrade master
+    bin/site-upgrade master
     drush dis captcha --yes
     drush pmu recaptcha --yes
     drush pmu captcha --yes
