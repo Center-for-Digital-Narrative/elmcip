@@ -1028,38 +1028,6 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     ),
   );
 
-  // Exported field_instance: 'node-publisher-field_publishing_type'.
-  $field_instances['node-publisher-field_publishing_type'] = array(
-    'bundle' => 'publisher',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_publishing_type',
-    'label' => 'Publishing type',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-research_collection-field_collection_platform_ref'.
   $field_instances['node-research_collection-field_collection_platform_ref'] = array(
@@ -1520,7 +1488,6 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
   t('If there is a record for this work in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.');
   t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
   t('If this critical writing references a platform/software, link to it here. The platform or software will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
-  t('Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.');
   t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
   t('Indicate the year that this platform/software was first released.
 <br>Format: 2017');
@@ -1533,7 +1500,6 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
   t('Platform/Software referenced');
   t('Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. If you source the version history from elsewhere, indicate the source in parentheses after the version history.');
   t('Publisher or organization');
-  t('Publishing type');
   t('Record Status');
   t('Repository');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
