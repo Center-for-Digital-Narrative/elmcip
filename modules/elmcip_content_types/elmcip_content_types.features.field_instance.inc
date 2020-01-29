@@ -1244,7 +1244,62 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 40,
+      'weight' => 19,
+    ),
+  );
+
+  // Exported field_instance: 'node-work-field_brown_digital_repository'.
+  $field_instances['node-work-field_brown_digital_repository'] = array(
+    'bundle' => 'work',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If there is a record for this work in the <a href="https://repository.library.brown.edu/studio/search/?selected_facets=ir_collection_name%3ADigital+Language+Arts&search_field=" rel="noreferrer noopener" target="_blank">Brown Digital Repository</a>, enter the URL of the entry.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(
+          'custom_title' => '',
+        ),
+        'type' => 'link_default',
+        'weight' => 30,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_brown_digital_repository',
+    'label' => 'Brown Digital Repository',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'value',
+      'title_allowed_values' => '',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => 'Brown Digital Repository',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 0,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 20,
     ),
   );
 
@@ -1335,7 +1390,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 18,
+      'weight' => 17,
     ),
   );
 
@@ -1425,7 +1480,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 19,
+      'weight' => 18,
     ),
   );
 
@@ -1513,6 +1568,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
 All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a slash. Example: 10.1000/182');
   t('Add a URL to a repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Add notes about editorial status here.');
+  t('Brown Digital Repository');
   t('DOI');
   t('Developers');
   t('Enter the individuals who were key to the development of this platform/software, if applicable (e.g. Daniel Howe for RITA libraries). The person will autocomplete if they are in the database. If person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.');
@@ -1520,6 +1576,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
   t('If there is a record for this critical writing in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.');
   t('If there is a record for this work in the <a href="http://narrabase.net/" target="_blank">Narrabase project</a>, enter the URL of the entry.');
   t('If there is a record for this work in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.');
+  t('If there is a record for this work in the <a href="https://repository.library.brown.edu/studio/search/?selected_facets=ir_collection_name%3ADigital+Language+Arts&search_field=" rel="noreferrer noopener" target="_blank">Brown Digital Repository</a>, enter the URL of the entry.');
   t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
   t('If this critical writing references a platform/software, link to it here. The platform or software will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
   t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
