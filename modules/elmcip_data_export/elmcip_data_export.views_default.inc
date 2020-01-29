@@ -2836,7 +2836,9 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'mini';
-  $handler->display->display_options['pager']['options']['items_per_page'] = 50;
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
@@ -2979,9 +2981,10 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_work_year']['id'] = 'field_work_year';
   $handler->display->display_options['fields']['field_work_year']['table'] = 'field_data_field_work_year';
   $handler->display->display_options['fields']['field_work_year']['field'] = 'field_work_year';
-  $handler->display->display_options['fields']['field_work_year']['relationship'] = 'field_node_ref_work_nid';
+  $handler->display->display_options['fields']['field_work_year']['relationship'] = 'field_node_ref_work_target_id';
   $handler->display->display_options['fields']['field_work_year']['settings'] = array(
-    'format_type' => 'dmy',
+    'format_type' => 'year',
+    'custom_date_format' => '',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
