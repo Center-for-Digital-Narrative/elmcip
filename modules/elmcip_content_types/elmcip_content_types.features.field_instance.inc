@@ -1180,7 +1180,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1262,7 +1262,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 30,
+        'weight' => 31,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -1323,7 +1323,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1414,7 +1414,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'full' => array(
         'label' => 'above',
@@ -1484,6 +1484,45 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     ),
   );
 
+  // Exported field_instance: 'node-work-field_series_ref'.
+  $field_instances['node-work-field_series_ref'] = array(
+    'bundle' => 'work',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 7,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_series_ref',
+    'label' => 'Series',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 35,
+    ),
+  );
+
   // Exported field_instance: 'node-work-field_work_platform_software'.
   $field_instances['node-work-field_work_platform_software'] = array(
     'bundle' => 'work',
@@ -1505,7 +1544,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'full' => array(
         'label' => 'above',
@@ -1593,6 +1632,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
   t('Publisher or organization');
   t('Record Status');
   t('Repository');
+  t('Series');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Use this field to include platforms/software in this collection. The platform/software will autocomplete if it is in the database. If the platform/software is not in the database, <a href="/node/add/platform-software" target="_blank">add the database/software</a>.');
   t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');

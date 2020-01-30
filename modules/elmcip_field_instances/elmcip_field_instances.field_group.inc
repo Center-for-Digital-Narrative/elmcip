@@ -607,6 +607,7 @@ function elmcip_field_instances_field_group_info() {
       8 => 'field_other_edition_work',
       9 => 'field_part_of_another_work',
       10 => 'field_in_anthology',
+      11 => 'field_series_ref',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -1193,7 +1194,7 @@ function elmcip_field_instances_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Meta data',
-    'weight' => '43',
+    'weight' => '44',
     'children' => array(
       0 => 'purl',
       1 => 'author',

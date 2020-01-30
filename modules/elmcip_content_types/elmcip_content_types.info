@@ -44,6 +44,7 @@ features[field_instance][] = node-work-field_authoring_software_entry
 features[field_instance][] = node-work-field_brown_digital_repository
 features[field_instance][] = node-work-field_po_ex_entry
 features[field_instance][] = node-work-field_repository
+features[field_instance][] = node-work-field_series_ref
 features[field_instance][] = node-work-field_work_platform_software
 features[node][] = class_group
 features[node][] = critical_writing

@@ -17152,7 +17152,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -17290,7 +17290,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 52,
+        'weight' => 53,
       ),
       'full' => array(
         'label' => 'inline',
@@ -17391,7 +17391,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -17799,7 +17799,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -17926,7 +17926,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'elmcip_setup',
         'settings' => array(),
         'type' => 'elmcip_setup_doi',
-        'weight' => 14,
+        'weight' => 15,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -18038,7 +18038,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -18174,7 +18174,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'full' => array(
         'label' => 'above',
@@ -18243,7 +18243,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'full' => array(
         'label' => 'inline',
@@ -18360,7 +18360,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 42,
+        'weight' => 43,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -18481,7 +18481,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'full' => array(
         'label' => 'inline',
@@ -18723,7 +18723,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 35,
+      'weight' => 36,
     ),
   );
 
@@ -18745,7 +18745,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'full' => array(
         'label' => 'above',
@@ -18847,7 +18847,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'above',
@@ -18936,7 +18936,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -19066,7 +19066,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 41,
+        'weight' => 42,
       ),
       'full' => array(
         'label' => 'above',
@@ -19200,7 +19200,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 40,
+        'weight' => 41,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -19568,7 +19568,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -19688,7 +19688,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'full' => array(
         'label' => 'inline',
@@ -19785,7 +19785,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 33,
+        'weight' => 34,
       ),
       'full' => array(
         'label' => 'above',
@@ -19910,7 +19910,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20045,7 +20045,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'full' => array(
         'label' => 'above',
@@ -20101,7 +20101,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 36,
+      'weight' => 37,
     ),
   );
 
@@ -20151,7 +20151,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20267,7 +20267,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 37,
+      'weight' => 38,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -20294,7 +20294,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'full' => array(
         'label' => 'above',
@@ -20379,7 +20379,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20488,7 +20488,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 38,
+      'weight' => 39,
     ),
     'widget_type' => 'text_textarea',
   );
@@ -20532,7 +20532,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20743,7 +20743,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20871,7 +20871,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'above',
@@ -21049,7 +21049,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'full' => array(
         'label' => 'above',
@@ -21142,7 +21142,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'above',
