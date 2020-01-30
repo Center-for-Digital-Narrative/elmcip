@@ -5984,6 +5984,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['id'] = 'field_pubtype_tax_tid';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['table'] = 'field_data_field_pubtype_tax';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['field'] = 'field_pubtype_tax_tid';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator_id'] = 'field_pubtype_tax_tid_op';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['label'] = 'Publication Type';
@@ -6002,12 +6003,28 @@ function elmcip_data_export_views_default_views() {
   );
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['vocabulary'] = 'publication_type';
+  /* Filter criterion: Content: Record Status (field_record_status_tax) */
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['id'] = 'field_record_status_tax_tid';
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['table'] = 'field_data_field_record_status_tax';
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['field'] = 'field_record_status_tax_tid';
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['expose']['operator_id'] = 'field_record_status_tax_tid_op';
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['expose']['label'] = 'Record Status';
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['expose']['operator'] = 'field_record_status_tax_tid_op';
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['expose']['identifier'] = 'field_record_status_tax_tid';
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+  );
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_record_status_tax_tid']['vocabulary'] = 'record_status';
   /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
   $handler->display->display_options['filters']['title']['relationship'] = 'field_node_ref_target_id';
   $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['group'] = 1;
   $handler->display->display_options['filters']['title']['exposed'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['label'] = 'Publisher';
@@ -6333,6 +6350,7 @@ function elmcip_data_export_views_default_views() {
     t('Appears in'),
     t('Updated'),
     t('Language'),
+    t('Record Status'),
     t('Publisher'),
     t('Page'),
     t('Preview of data export'),
