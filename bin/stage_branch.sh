@@ -16,8 +16,8 @@ fi
 
 if [ "$1" = "reset" ]
 then
-    date +'%Y-%m-%d %H:%M'
     drush --version || exit 1
+    date +'%Y-%m-%d %H:%M'
     echo "Tear down site and upgrade from database snapshot."
 
     if [ ! -d $DB_DIR ]
@@ -49,8 +49,6 @@ then
     variable:set cache_lifetime 0
     drush variable:set error_level 2
     drush variable:set site_name 'TEST ELMCIP'
-    git submodule foreach git reset --hard || exit 1
-    bin/site-upgrade master
     drush dis captcha --yes
     drush pmu recaptcha --yes
     drush pmu captcha --yes
@@ -58,6 +56,8 @@ then
     ## Password protect site. Stop content from getting picked up by spider bots.
     cat /elmcip/applications/htaccess.txt >> .htaccess
     cd "${HOMEDIR}" || exit 1
+    git submodule foreach git reset --hard || exit 1
+    bin/site-upgrade master
     exit 0
 elif [ "$1" = "normal" ]
 then
