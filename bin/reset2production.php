@@ -3,7 +3,7 @@
 declare(strict_types = 1);
 
 define('KUBERNETES_NAME_SPACE', 'elmcip-ns9035k');
-define('CLUSTER', 'nird');
+define('CLUSTER', 'nird-trd');
 
 final class Pods
 {
