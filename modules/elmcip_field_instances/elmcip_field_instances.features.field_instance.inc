@@ -4030,7 +4030,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pagenumbers',
-    'label' => 'Page Numbers',
+    'label' => 'Pages',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -21418,7 +21418,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Other language version');
   t('PDF Attachment');
   t('PDF Attachment for the database or resource, only PDF files are allowed here.');
-  t('Page Numbers');
+  t('Pages');
   t('Part of another work');
   t('People');
   t('Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)');
