@@ -2684,15 +2684,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'use text format ds_code'.
-  $permissions['use text format ds_code'] = array(
-    'name' => 'use text format ds_code',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'filter',
-  );
-
   // Exported permission: 'view date repeats'.
   $permissions['view date repeats'] = array(
     'name' => 'view date repeats',
