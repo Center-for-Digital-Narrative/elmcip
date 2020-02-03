@@ -39,7 +39,6 @@ features[user_permission][] = access content overview
 features[user_permission][] = access contextual links
 features[user_permission][] = access dashboard
 features[user_permission][] = access media browser
-features[user_permission][] = access printer-friendly version
 features[user_permission][] = access private fields
 features[user_permission][] = access site in maintenance mode
 features[user_permission][] = access site reports

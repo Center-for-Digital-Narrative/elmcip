@@ -87,16 +87,6 @@ function elmcip_permissions_user_default_permissions() {
     'module' => 'media',
   );
 
-  // Exported permission: 'access printer-friendly version'.
-  $permissions['access printer-friendly version'] = array(
-    'name' => 'access printer-friendly version',
-    'roles' => array(
-      'administrative editor' => 'administrative editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'book',
-  );
-
   // Exported permission: 'access private fields'.
   $permissions['access private fields'] = array(
     'name' => 'access private fields',
