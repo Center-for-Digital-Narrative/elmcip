@@ -1989,6 +1989,18 @@ function elmcip_content_types_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'cw_developed_in_this_platform_entity_view_2' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
+        'flag_librarian_approved' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
+        ),
       ),
     ),
   );
