@@ -1981,7 +1981,7 @@ function elmcip_content_types_strongarm() {
             'visible' => TRUE,
           ),
           'default' => array(
-            'weight' => '10',
+            'weight' => '4',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -1991,14 +1991,14 @@ function elmcip_content_types_strongarm() {
         ),
         'cw_developed_in_this_platform_entity_view_2' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '3',
             'visible' => TRUE,
           ),
         ),
         'flag_librarian_approved' => array(
           'default' => array(
-            'weight' => '10',
-            'visible' => FALSE,
+            'weight' => '19',
+            'visible' => TRUE,
           ),
         ),
       ),

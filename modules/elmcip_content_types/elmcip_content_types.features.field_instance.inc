@@ -482,7 +482,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -569,7 +569,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -627,7 +627,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 11,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'above',
@@ -705,7 +705,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
@@ -785,7 +785,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',
@@ -845,7 +845,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -893,7 +893,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
@@ -969,7 +969,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'above',

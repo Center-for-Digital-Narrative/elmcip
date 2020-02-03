@@ -11910,7 +11910,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -11963,7 +11963,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 14,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -12047,7 +12047,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 15,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -12123,7 +12123,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',
@@ -12220,7 +12220,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 13,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -12308,7 +12308,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
           'custom_title' => '',
         ),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'above',

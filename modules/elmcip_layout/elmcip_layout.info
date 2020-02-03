@@ -81,6 +81,7 @@ features[field_group][] = group_meta|node|platform_software|default
 features[field_group][] = group_meta|node|publisher|default
 features[field_group][] = group_meta|node|research_collection|default
 features[field_group][] = group_meta|node|teaching_resource|default
+features[field_group][] = group_right|node|platform_software|default
 features[field_group][] = group_tr_editorial|node|teaching_resource|default
 features[field_group][] = group_workdoc|node|work|form
 features[field_group][] = group_worksubmit|node|work|form
