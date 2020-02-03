@@ -219,7 +219,6 @@ features[field_group][] = group_pubinfo|node|publisher|default
 features[field_group][] = group_pubinfo|node|publisher|teaser
 features[field_group][] = group_references_crit|node|critical_writing|default
 features[field_group][] = group_references_crit|node|critical_writing|teaser
-features[field_group][] = group_right|node|platform_software|default
 features[field_group][] = group_tr_attach|node|teaching_resource|default
 features[field_group][] = group_tr_attach|node|teaching_resource|teaser
 features[field_group][] = group_tr_basic|node|teaching_resource|default

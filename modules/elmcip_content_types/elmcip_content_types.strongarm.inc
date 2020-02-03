@@ -1973,6 +1973,9 @@ function elmcip_content_types_strongarm() {
         'locations' => array(
           'weight' => '5',
         ),
+        'flag' => array(
+          'weight' => '10',
+        ),
       ),
       'display' => array(
         'works_developed_in_this_platform_entity_view_1' => array(
@@ -1997,7 +2000,7 @@ function elmcip_content_types_strongarm() {
         ),
         'flag_librarian_approved' => array(
           'default' => array(
-            'weight' => '19',
+            'weight' => '2',
             'visible' => TRUE,
           ),
         ),

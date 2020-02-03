@@ -195,10 +195,7 @@ function elmcip_layout_field_group_info() {
   $field_group->data = array(
     'label' => 'Meta data',
     'weight' => '10',
-    'children' => array(
-      0 => 'purl',
-      1 => 'author',
-    ),
+    'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
       'formatter' => '',
