@@ -145,15 +145,5 @@ function elmcip_setup_filter_default_formats() {
     ),
   );
 
-  // Exported format: Display Suite code.
-  $formats['ds_code'] = array(
-    'format' => 'ds_code',
-    'name' => 'Display Suite code',
-    'cache' => 1,
-    'status' => 1,
-    'weight' => -6,
-    'filters' => array(),
-  );
-
   return $formats;
 }
