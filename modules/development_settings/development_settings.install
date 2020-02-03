@@ -19,6 +19,7 @@ function development_settings_install() {
   variable_set('error_level', 2);
   drupal_flush_all_caches();
   print("Disabled all cache setting.\n");
+  module_enable(['ds_ui']);
   module_disable(array('syslog'), FALSE);
   drupal_uninstall_modules(array('syslog'), FALSE);
 }
