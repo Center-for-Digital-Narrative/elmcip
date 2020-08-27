@@ -5,11 +5,11 @@
  */
 function elmcip_person_node_presave($node) {
   if ($node->type === 'person') {
-    $entity_updated = entity_metadata_wrapper('node', $node);
-    $person = new elmcip_person($entity_updated->field_first_name->value(),
-      $entity_updated->field_middle_name->value(),
-      $entity_updated->field_last_name->value());
-    $entity_updated->title->set($person->person_title());
+    $entity = entity_metadata_wrapper('node', $node);
+    $person = new elmcip_person($entity->field_first_name->value(),
+      $entity->field_middle_name->value(),
+      $entity->field_last_name->value());
+    $entity->title->set($person->person_title());
   }
 }
 
