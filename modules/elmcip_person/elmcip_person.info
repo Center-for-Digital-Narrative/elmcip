@@ -1,0 +1,4 @@
+name = ELMCIP person
+description = ELMCIP person records module
+core = 7.x
+package = ELMCIP
