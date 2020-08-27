@@ -2,3 +2,5 @@ name = ELMCIP person
 description = ELMCIP person records module
 core = 7.x
 package = ELMCIP
+
+files[] = includes/elmcip_person.inc

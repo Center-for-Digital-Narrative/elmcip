@@ -4,50 +4,12 @@
  * Implements hook_node_presave().
  */
 function elmcip_person_node_presave($node) {
-  if ($node->type == 'person') {
+  if ($node->type === 'person') {
     $entity_updated = entity_metadata_wrapper('node', $node);
-    $nodeTitle = FALSE;
-    $firstName = trim($entity_updated->field_first_name->value());
-    $middleName = trim($entity_updated->field_middle_name->value());
-    $lastName = trim($entity_updated->field_last_name->value());
-
-    if ($firstName) {
-      $nodeTitle = $firstName;
-      $entity_updated->field_first_name->set($firstName);
-    }
-    else {
-      $entity_updated->field_first_name->set(NULL);
-    }
-
-    if ($middleName) {
-      if ($firstName) {
-        $nodeTitle .= ' ' . $middleName;
-      }
-      else {
-        $nodeTitle = $middleName;
-      }
-      $entity_updated->field_middle_name->set($middleName);
-    }
-    else {
-      $entity_updated->field_middle_name->set(NULL);
-    }
-
-    if ($lastName) {
-      if ($firstName || $middleName) {
-        $nodeTitle .= ' ' . $lastName;
-      }
-      else {
-        $nodeTitle = $lastName;
-      }
-      $entity_updated->field_last_name->set($lastName);
-    }
-    else {
-      $entity_updated->field_last_name->set(NULL);
-    }
-
-    if ($nodeTitle) {
-      $entity_updated->title->set($nodeTitle);
-    }
+    $person = new elmcip_person($entity_updated->field_first_name->value(),
+      $entity_updated->field_middle_name->value(),
+      $entity_updated->field_last_name->value());
+    $entity_updated->title->set($person->person_title());
   }
 }
 
