@@ -987,3 +987,10 @@ function elmcip_disable_and_uninstall(array $modules) {
   }
   drupal_uninstall_modules($modules, TRUE);
 }
+
+/**
+ * Enable ELMCIP person module.
+ */
+function elmcip_setup_update_7061(&$sandbox) {
+  module_enable(['elmcip_person']);
+}
