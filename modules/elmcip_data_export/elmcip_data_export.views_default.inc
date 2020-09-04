@@ -7482,6 +7482,28 @@ function elmcip_data_export_views_default_views() {
     0 => 'research_collection',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'CSV data export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title - critical_writing_%timestamp-dd.%timestamp-mm.%timestamp-yyyy-%timestamp-hh.%timestamp-ii.%timestamp-ss.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
+  $handler->display->display_options['path'] = 'data/%/research-collection';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['cw_listed_in_research_collection'] = array(
     t('Defaults'),
     t('Critical Writing'),
@@ -7504,6 +7526,7 @@ function elmcip_data_export_views_default_views() {
     t('Year'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
   );
   $export['cw_listed_in_research_collection'] = $view;
 
@@ -8419,6 +8442,28 @@ function elmcip_data_export_views_default_views() {
     0 => 'research_collection',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'CSV data export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title - databases_and_archives_%timestamp-dd.%timestamp-mm.%timestamp-yyyy-%timestamp-hh.%timestamp-ii.%timestamp-ss.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
+  $handler->display->display_options['path'] = 'data/%/research-collection/databases_and_archives';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['databases_archives_listed_in_research_collection'] = array(
     t('Defaults'),
     t('Databases and Archives'),
@@ -8440,6 +8485,7 @@ function elmcip_data_export_views_default_views() {
     t('Project Type'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
   );
   $export['databases_archives_listed_in_research_collection'] = $view;
 
@@ -9997,7 +10043,7 @@ function elmcip_data_export_views_default_views() {
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->display->display_options['title'] = 'Events';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -10087,6 +10133,28 @@ function elmcip_data_export_views_default_views() {
     0 => 'research_collection',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'CSV data export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title - events_%timestamp-dd.%timestamp-mm.%timestamp-yyyy-%timestamp-hh.%timestamp-ii.%timestamp-ss.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
+  $handler->display->display_options['path'] = 'data/%/research-collection/event';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['events_listed_in_research_collection'] = array(
     t('Defaults'),
     t('Events'),
@@ -10111,6 +10179,7 @@ function elmcip_data_export_views_default_views() {
     t('Country'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
   );
   $export['events_listed_in_research_collection'] = $view;
 
@@ -11604,6 +11673,28 @@ function elmcip_data_export_views_default_views() {
     0 => 'research_collection',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'CSV data export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title - organizations_%timestamp-dd.%timestamp-mm.%timestamp-yyyy-%timestamp-hh.%timestamp-ii.%timestamp-ss.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
+  $handler->display->display_options['path'] = 'data/%/research-collection/organizations';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['organizations_listed_in_research_collection'] = array(
     t('Defaults'),
     t('Organizations'),
@@ -11625,6 +11716,7 @@ function elmcip_data_export_views_default_views() {
     t('Location'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
   );
   $export['organizations_listed_in_research_collection'] = $view;
 
@@ -11980,6 +12072,28 @@ function elmcip_data_export_views_default_views() {
     0 => 'research_collection',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'CSV data export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title - people_%timestamp-dd.%timestamp-mm.%timestamp-yyyy-%timestamp-hh.%timestamp-ii.%timestamp-ss.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
+  $handler->display->display_options['path'] = 'data/%/research-collection/people';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['people_listed_in_research_collection'] = array(
     t('Defaults'),
     t('People'),
@@ -12001,6 +12115,7 @@ function elmcip_data_export_views_default_views() {
     t('Residency'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
   );
   $export['people_listed_in_research_collection'] = $view;
 
@@ -12693,6 +12808,28 @@ function elmcip_data_export_views_default_views() {
     0 => 'research_collection',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'CSV data export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title - publishers_%timestamp-dd.%timestamp-mm.%timestamp-yyyy-%timestamp-hh.%timestamp-ii.%timestamp-ss.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
+  $handler->display->display_options['path'] = 'data/%/research-collection/publishers';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['publishers_listed_in_research_collection'] = array(
     t('Defaults'),
     t('Publishers'),
@@ -12714,6 +12851,7 @@ function elmcip_data_export_views_default_views() {
     t('Location'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
   );
   $export['publishers_listed_in_research_collection'] = $view;
 
@@ -14458,6 +14596,28 @@ function elmcip_data_export_views_default_views() {
     0 => 'research_collection',
   );
   $handler->display->display_options['show_title'] = 1;
+
+  /* Display: Data export */
+  $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'CSV data export';
+  $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title - teaching_resources_%timestamp-dd.%timestamp-mm.%timestamp-yyyy-%timestamp-hh.%timestamp-ii.%timestamp-ss.csv';
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
+  $handler->display->display_options['path'] = 'data/%/research-collection/teaching_resource';
+  $handler->display->display_options['displays'] = array(
+    'entity_view_1' => 'entity_view_1',
+    'default' => 0,
+  );
+  $handler->display->display_options['use_batch'] = 'batch';
+  $handler->display->display_options['segment_size'] = '100';
   $translatables['teaching_resources_listed_in_research_collection'] = array(
     t('Defaults'),
     t('Teaching Resources'),
@@ -14480,6 +14640,7 @@ function elmcip_data_export_views_default_views() {
     t('Author'),
     t('All'),
     t('Entity content'),
+    t('Data export'),
   );
   $export['teaching_resources_listed_in_research_collection'] = $view;
 
@@ -17296,16 +17457,19 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
-  $handler->display->display_options['defaults']['access'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'role';
-  $handler->display->display_options['access']['role'] = array(
-    2 => '2',
-  );
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['style_options']['attach_text'] = 'CSV data export';
   $handler->display->display_options['style_options']['provide_file'] = 1;
+  $handler->display->display_options['style_options']['filename'] = '%1-title - creative_work_%timestamp-dd.%timestamp-mm.%timestamp-yyyy-%timestamp-hh.%timestamp-ii.%timestamp-ss.csv';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['quote'] = 1;
+  $handler->display->display_options['style_options']['trim'] = 0;
+  $handler->display->display_options['style_options']['replace_newlines'] = 0;
+  $handler->display->display_options['style_options']['newline_token'] = '1';
+  $handler->display->display_options['style_options']['header'] = 1;
+  $handler->display->display_options['style_options']['keep_html'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -17439,11 +17603,12 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['label'] = 'Tags ID';
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['type'] = 'elmcip_setup_term_name_with_tid';
   $handler->display->display_options['fields']['taxonomy_vocabulary_1_1']['delta_offset'] = '0';
-  $handler->display->display_options['path'] = 'data/work_research_collection';
+  $handler->display->display_options['path'] = 'data/%/research-collection/creative_work';
   $handler->display->display_options['displays'] = array(
     'entity_view_1' => 'entity_view_1',
     'default' => 0,
   );
+  $handler->display->display_options['use_batch'] = 'batch';
   $handler->display->display_options['segment_size'] = '100';
   $translatables['works_listed_on_research_collection'] = array(
     t('Defaults'),
