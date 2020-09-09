@@ -2,37 +2,52 @@
 
 # Off-line version of reset2production.
 #
-# Does no attempt to pull data from any external services.
-# Useful to be able reset to last known production while your machine
-# have no Internet connection.
+# Reset you local installation from your latest downloaded
+# database snapshot. Does no attempt to pull data from external systems.
 
-set -x
+#set -x
 
 DRUPAL=drupal
 URI=elmcip.local
-HOMEDIR=${PWD}
+DRUSH=../vendor/bin/drush
+DB=../site/latest.elmcip.sql.gz
+DB_DECOMPRESSED=../site/latest.elmcip.sql
 
-drush --version || exit $?
+./vendor/bin/drush --version || exit $?
 
 git checkout production --quiet || exit $?
 git submodule update --quiet || exit $?
 
-cd ${DRUPAL}
+cd ${DRUPAL} || exit
 
+# Drop all data and populate database with the latest backup.
+#
 if [[ -z "$1" ]]; then
-  # Drop all data and populate database with the latest backup.
-  echo "Running normal mode."
-  drush --uri=${URI} sql-drop --yes
-  gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=${URI} sql-cli
+
+  if [ ! -f $DB ]; then
+    echo "Error. Database file $DB not found. Giving up."
+    exit 1
+  fi
+
+  echo "Running normal mode. Removing existing db tables."
+  ${DRUSH} --uri=${URI} sql-drop --yes
+  echo "Populating database with new data."
+  gunzip -c $DB | ${DRUSH} --uri=${URI} sql-cli
 else
-  # Run the fast version.
-  echo "Running fast mode."
-  drush --uri=${URI} sql-drop --yes
-  drush --uri=${URI} sql-cli < ../site/latest.elmcip.sql
+
+  if [ ! -f $DB_DECOMPRESSED ]; then
+    echo "Error. Database file $DB_DECOMPRESSED not found. Giving up."
+    exit 1
+  fi
+
+  echo "Running fast mode. Removing existing db tables."
+  ${DRUSH} --uri=${URI} sql-drop --yes
+  echo "Populating database with new data."
+  ${DRUSH} --uri=${URI} sql-cli < ../site/latest.elmcip.sql
 fi
 
 # Flush all drupal caches.
-drush cc all -v
-drush fra --yes
-drush status
-drush fl
+${DRUSH} cc all -v
+${DRUSH} fra --yes
+${DRUSH} status
+${DRUSH} fl
