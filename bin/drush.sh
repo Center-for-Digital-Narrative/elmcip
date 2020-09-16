@@ -3,5 +3,5 @@
 HOMEDIR=${PWD}
 
 drush() {
-    "${HOMEDIR}"/vendor/drush/drush/drush "$@"
+    "${HOMEDIR}"/vendor/bin/drush "$@"
 }

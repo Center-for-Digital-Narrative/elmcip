@@ -1,4 +1,6 @@
 #!/bin/bash
 
+source bin/drush.sh
+
 cd drupal || exit
-../vendor/bin/drush "$@"
+drush "$@"
