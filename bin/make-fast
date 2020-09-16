@@ -5,14 +5,14 @@
 
 set -x
 
-DRUSH=../vendor/bin/drush
+source bin/drush.sh
 DRUPAL=drupal
 
 drush --version || exit $?
 cd ${DRUPAL} || exit
 
 # Optimize database.
-${DRUSH} scr ../bin/cleanup.php
+drush scr ../bin/cleanup.php
 
 # Grab copy of optimized database.
-${DRUSH} sql-dump --result-file=../site/latest.elmcip.sql
+drush sql-dump --result-file=../site/latest.elmcip.sql

@@ -7,13 +7,13 @@
 
 #set -x
 
+source bin/drush.sh
 DRUPAL=drupal
 URI=elmcip.local
-DRUSH=../vendor/bin/drush
 DB=../site/latest.elmcip.sql.gz
 DB_DECOMPRESSED=../site/latest.elmcip.sql
 
-./vendor/bin/drush --version || exit $?
+drush --version || exit $?
 
 git checkout production --quiet || exit $?
 git submodule update --quiet || exit $?
@@ -30,9 +30,9 @@ if [[ -z "$1" ]]; then
   fi
 
   echo "Running normal mode. Removing existing db tables."
-  ${DRUSH} --uri=${URI} sql-drop --yes
+  drush --uri=${URI} sql-drop --yes
   echo "Populating database with new data."
-  gunzip -c $DB | ${DRUSH} --uri=${URI} sql-cli
+  gunzip -c $DB | drush --uri=${URI} sql-cli
 else
 
   if [ ! -f $DB_DECOMPRESSED ]; then
@@ -41,13 +41,13 @@ else
   fi
 
   echo "Running fast mode. Removing existing db tables."
-  ${DRUSH} --uri=${URI} sql-drop --yes
+  drush --uri=${URI} sql-drop --yes
   echo "Populating database with new data."
-  ${DRUSH} --uri=${URI} sql-cli < ../site/latest.elmcip.sql
+  drush --uri=${URI} sql-cli < ../site/latest.elmcip.sql
 fi
 
 # Flush all drupal caches.
-${DRUSH} cc all -v
-${DRUSH} fra --yes
-${DRUSH} status
-${DRUSH} fl
+drush cc all -v
+drush fra --yes
+drush status
+drush fl
