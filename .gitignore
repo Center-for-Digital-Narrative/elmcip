@@ -1,4 +1,4 @@
-site/latest.elmcip.sql*
+/site/
 .DS_Store
 .idea
 /vendor/
