@@ -1,23 +1,22 @@
 #!/bin/bash
-APPHOME=/applications
+APP_HOME=/applications
 
 set -x
 
 if [ -z "$1" ]; then
     echo "Removing exiting db. from test.elmcip.net"
-    cd $APPHOME/test.elmcip.net
+    cd $APP_HOME/test.elmcip.net || exit
     bin/site-drush sql-drop test
 else
-    if [ -d "$APPHOME/$1" ]; then
+    if [ -d "$APP_HOME/$1" ]; then
         echo "Removing exiting db from $1"
-        cd $APPHOME/$1
+        cd $APP_HOME/$1 || exit
         bin/site-drush sql-drop
     else
         echo "Directory $1 does not exit. Giving up."
         exit
     fi
 fi
-
 
 echo "Populate database."
 gunzip -c $HOME/latest.elmcip.sql.gz | bin/site-drush sql-cli
