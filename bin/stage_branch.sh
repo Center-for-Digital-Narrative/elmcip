@@ -53,11 +53,12 @@ then
     drush pmu recaptcha --yes
     drush pmu captcha --yes
 
-    ## Password protect site. Stop content from getting picked up by spider bots.
-    cat /elmcip/applications/htaccess.txt >> .htaccess
     cd "${HOMEDIR}" || exit 1
     git submodule foreach git reset --hard || exit 1
     bin/site-upgrade master
+
+    ## Password protect site. Stop content from getting picked up by spider bots.
+    cat /elmcip/applications/htaccess.txt >> $DRUPAL/.htaccess
     exit 0
 elif [ "$1" = "normal" ]
 then
