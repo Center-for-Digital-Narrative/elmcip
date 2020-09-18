@@ -46,7 +46,7 @@ then
     drush pmu recaptcha --yes
     drush pmu captcha --yes
     drush en dblog --yes
-    variable:set cache_lifetime 0
+    drush variable:set cache_lifetime 0
     drush variable:set error_level 2
     drush variable:set site_name 'TEST ELMCIP'
     drush dis captcha --yes
