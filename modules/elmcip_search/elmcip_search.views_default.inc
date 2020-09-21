@@ -173,6 +173,21 @@ function elmcip_search_views_default_views() {
     10 => 0,
   );
   $handler->display->display_options['filters']['type_1']['expose']['reduce'] = TRUE;
+  /* Filter criterion: Content: Publication Type (field_pubtype_tax) */
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['id'] = 'field_pubtype_tax_tid';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['table'] = 'field_data_field_pubtype_tax';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['field'] = 'field_pubtype_tax_tid';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator_id'] = 'field_pubtype_tax_tid_op';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['label'] = 'Publication Type';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['operator'] = 'field_pubtype_tax_tid_op';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['identifier'] = 'field_pubtype_tax_tid';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+  );
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_pubtype_tax_tid']['vocabulary'] = 'publication_type';
   /* Filter criterion: Flags: Flagged */
   $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
   $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
@@ -208,6 +223,7 @@ function elmcip_search_views_default_views() {
   $handler->display->display_options['filters']['field_record_status_lib_value_1']['table'] = 'field_data_field_record_status_lib';
   $handler->display->display_options['filters']['field_record_status_lib_value_1']['field'] = 'field_record_status_lib_value';
   $handler->display->display_options['filters']['field_record_status_lib_value_1']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['group'] = 1;
   $handler->display->display_options['filters']['field_record_status_lib_value_1']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['operator_id'] = 'field_record_status_lib_value_1_op';
   $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['label'] = 'Got a librarian status (new)';
@@ -249,6 +265,7 @@ function elmcip_search_views_default_views() {
     t('Approved (old)'),
     t('Librarian status (new)'),
     t('Record type'),
+    t('Publication Type'),
     t('Got a librarian status (new)'),
     t('Page'),
   );
