@@ -780,6 +780,11 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_series_ref' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
   );
   $export['node|work|default'] = $ds_fieldsetting;
 
@@ -1949,7 +1954,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'regions' => array(
       'right' => array(
         0 => 'purl',
-        3 => 'author',
+        2 => 'author',
         26 => 'taxonomy_vocabulary_1',
         27 => 'field_textfield',
         28 => 'field_abstract_lang',
@@ -1975,7 +1980,7 @@ function elmcip_layout_ds_layout_settings_info() {
       ),
       'left' => array(
         1 => 'content_type',
-        2 => 'field_author_name',
+        3 => 'field_author_name',
         4 => 'field_translator',
         5 => 'field_contributor',
         6 => 'field_work_year',
@@ -2003,8 +2008,8 @@ function elmcip_layout_ds_layout_settings_info() {
     'fields' => array(
       'purl' => 'right',
       'content_type' => 'left',
-      'field_author_name' => 'left',
       'author' => 'right',
+      'field_author_name' => 'left',
       'field_translator' => 'left',
       'field_contributor' => 'left',
       'field_work_year' => 'left',

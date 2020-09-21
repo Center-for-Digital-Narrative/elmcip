@@ -1533,8 +1533,8 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => FALSE,
+          'bypass_access' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 7,
