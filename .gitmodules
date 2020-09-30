@@ -7,3 +7,6 @@
 [submodule "themes/elmcip_base"]
 	path = themes/elmcip_base
 	url = git@github.com:elmcip/elmcip_base.git
+[submodule "cellproject.net/cellproject"]
+	path = cellproject.net/cellproject
+	url = git@github.com:smbjorklund/cellproject.git
