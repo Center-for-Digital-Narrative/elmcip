@@ -7691,7 +7691,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['fields']['field_node_ref_work_1']['table'] = 'field_data_field_node_ref_work';
   $handler->display->display_options['fields']['field_node_ref_work_1']['field'] = 'field_node_ref_work';
   $handler->display->display_options['fields']['field_node_ref_work_1']['label'] = 'Creative Works referenced ID';
-  $handler->display->display_options['fields']['field_node_ref_work_1']['type'] = 'node_reference_nid';
+  $handler->display->display_options['fields']['field_node_ref_work_1']['type'] = 'entityreference_entity_id';
   $handler->display->display_options['fields']['field_node_ref_work_1']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_node_ref_work_1']['delta_offset'] = '0';
   /* Field: Content: Author */
