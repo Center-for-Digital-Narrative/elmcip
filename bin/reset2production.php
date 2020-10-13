@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types = 1);
+<?php declare(strict_types = 1);
 
 define('KUBERNETES_NAME_SPACE', 'elmcip-ns9035k');
 define('CLUSTER', 'nird-trd');
@@ -34,7 +32,7 @@ final class Pods
     return $pods;
   }
 
-  private function podName($item, $key) {
+  private function podName($item, $key): void {
     if (strpos($item, KUBERNETES_NAME_SPACE) !== false) {
       $this->pods[] = $item;
     }
