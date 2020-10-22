@@ -1,5 +1,5 @@
-name = Development settings
-description = Turn on and enable setting used in development.
+name = ELMCIP development settings
+description = Turn on and enable setting useful in development.
 core = 7.x
 package = ELMCIP
 dependencies[] = advanced_help
