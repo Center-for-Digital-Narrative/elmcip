@@ -10,28 +10,30 @@
 - [How to deploy a release](doc/deploy.md)
 - [Old user guide](doc/book.md)
 
-## General usage
-ELMCIP Drupal configuration is controlled in multiple [Features](https://www.drupal.org/project/features) modules. Other changes, example housekeeping tasks are run in code by [hook_update_N()](https://api.drupal.org/api/drupal/modules!system!system.api.php/function/hook_update_N/7). Need to learn more about Features, have a look at the provided [Features documentation](https://www.drupal.org/node/580026).
+## General use of Drupal and drush
+Most of ELMCIP Drupal configuration get stored in configuration files and versions and changes tracked by [Git](https://git-scm.com). The Drupal module [Features](https://www.drupal.org/project/features) enable us to breake down this into multiple modules. Other changes and updates get run by [Drupal hook_update_N() tasks](https://api.drupal.org/api/drupal/modules!system!system.api.php/function/hook_update_N/7).
 
-### Log in as user 1 (site admin) without password
-    bin/site-drush uli
-Logs into to dev site as user 1 (site administrator).
+An excellent starting point to learn more about Features is the official [module documentation](https://www.drupal.org/node/580026).
 
-### Turn on development settings module.
-This enable field, views userinterface and disable all caching and much more.
+### Log in as user 1 (site admin) to site example.com without using a password
+    bin/site-drush uli --uri=example.com
 
-    bin/site-drush en development_settings
+### Enable ELMCIP development module.
+This module enables UI not needed in production, disables caching and development related modules and libraries.
 
-## GIT
-Basic usage
+    bin/site-drush en --yes development_settings
 
-Get status of your local file system
+## Basic git use
+
+Get status of your local file system. Make sure you are not having untracked or changed files in your local instance.
 
     git status
     
-See differences
+See differences between the orginal state and your installation.
 
     git diff
+
+If you whant to see the changes in a single file use `git diff <filename>`
 
 Add files to be comitted (staging).
 
