@@ -8,6 +8,7 @@
 - [Contribute changes and improvements](doc/contrib.md)
 - [How to create a release](doc/create_release.md)
 - [How to deploy a release](doc/deploy.md)
+- [How to use Git](doc/git.md)
 - [Old user guide](doc/book.md)
 
 ## General use of Drupal and drush
@@ -22,41 +23,6 @@ An excellent starting point to learn more about Features is the official [module
 This module enables UI not needed in production, disables caching and development related modules and libraries.
 
     bin/site-drush en --yes development_settings
-
-## Basic git use
-
-Get status of your local file system. Make sure you are not having untracked or changed files in your local instance.
-
-    git status
-    
-See differences between the orginal state and your installation.
-
-    git diff
-
-If you whant to see the changes in a single file use `git diff <filename>`
-
-Add files to be comitted (staging).
-
-    git add <filename> <filname xx>
-    
-If your commit has many files you could use the name of the directory they live in.
-
-    git add <directory name>
-
-Commit changes you have staged for commit
-
-    git commit
-
-Push your changes to github
-
-    git push
-
-### Best practise in git
-
-* Commit often.
-* Commit should always contain working code. Do not commit and push half baked code. That might break test and beta.elmcip.net installation and will get reverted from the repository.
-* Write informative commit messages. Write why you did the changes, not what you just changed, Git will tell us that.
-* Remember to push your changes.
 
 ## Troubleshooting
 
