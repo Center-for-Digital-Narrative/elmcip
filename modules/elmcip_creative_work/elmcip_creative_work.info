@@ -1,6 +1,6 @@
 name = ELMCIP Creative work
 core = 7.x
-package = Features
+package = ELMCIP
 dependencies[] = cell_oai_pmh
 dependencies[] = eva
 dependencies[] = views

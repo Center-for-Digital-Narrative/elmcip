@@ -1,6 +1,6 @@
-name = Platform
+name = ELMCIP platform
 core = 7.x
-package = Features
+package = ELMCIP
 dependencies[] = eva
 dependencies[] = views
 dependencies[] = views_content
