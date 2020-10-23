@@ -1,5 +1,6 @@
-# how to use Git
-This document does not try to cover all you need to know about [Git](https://git-scm.com) and version control systems (VCS) but should get you started working with git.
+# How to use Git
+
+This document does not cover all you need to know about [Git](https://git-scm.com) and version control systems (VCS) in general but it should be enought to get you started. To learn more buy a book or read online resources like [Pro Git](https://git-scm.com/book) and [Git Immersion](https://gitimmersion.com).
 
 ## Best practise in a git workflow
 
@@ -21,7 +22,7 @@ See differences between the orginal state and your installation.
 
     git diff
 
-If you whant to see the changes in a single file use `git diff <filename>`
+If you want to see the changes in a single file use `git diff <filename>`
 
 Add files to be comitted (staging).
 
@@ -39,3 +40,13 @@ Push your changes to github
 
     git push
 
+
+## Getting rid of unattended local changes
+
+If your system is not clean.
+
+    git reset --hard` 
+    
+Remove all local changes to files. Make sure you use this with care and you fully understand what you do. This do not remove files that are unknown (untracked) to Git. 
+
+Run `git status` again to verify that your system are now really is clean. 

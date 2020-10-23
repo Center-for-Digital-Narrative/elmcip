@@ -2,7 +2,7 @@
 
 The [Features](https://www.drupal.org/project/features) module allow us to export and import configuration that else would be locked in the database together with the content like nodes, taxonomy terms and so on.
 
-The easiest way of interacting with is by using the command line toool [Drush](https://www.drush.org). There is a UI for it inside Drupal, feel free to explore it (`/admin/structure/features`), it will not be documented here.
+The easiest way of interacting with is by using the command line tool [Drush](https://www.drush.org). There is a UI for it inside Drupal, feel free to explore it (`/admin/structure/features`), it will not be documented here. An excellent starting point to learn more about Features is the official [module documentation](https://www.drupal.org/node/580026).
 
 ## List all feature modules and their current state.
 

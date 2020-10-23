@@ -1,12 +1,11 @@
-# ELMCIP Offline mode
+# ELMCIP offline mode
 
- This does attempt to do any network connections.
+ Allow you to work locally without any network connections, aka flight mode.
 
-  * Enable you to work while traveling.
-  * Speeds up working with ELMCIP.
-  * Allow you to reset while traveling.
+  * Work while traveling.
+  * Speeds up your local work flow without needing to create new database copies.
 
-## What does this mean
+## What does all this mean
 
 Any changes to the development branch (master) will never pulled from github. No attempt to sync with Norstore getting files and databse. Are your local copy more and less up to date is this not a big problem.
  
@@ -16,11 +15,11 @@ Any changes to the development branch (master) will never pulled from github. No
  
 ### Getting clean 
  
-Make sure you don't have any local changes applied to your file system before continuing. GIT will tell you if you have.
+Make sure you don't have any local changes applied to your file system before continuing. Git will tell you if you so have.
  
     git status
- 
-If your system is clean, run: `git reset --hard`. This remove any local changes to files. Note this will not remove files GIT do not know. Rerun `git status` to verify that your system are really clean. Want to learn more about GIt, try reading [Pro Git](http://progit.org) or any git book available.
+
+For more read our [Git documentation](git.md)
 
 ### Reset
  
@@ -28,21 +27,19 @@ This reset you back to production and grabbing the latest local database copy.
 
     bin/offline_reset2production
      
-## Going to Ludicrous Speed
+## Optimising your local work flow
  
-This remove all cache tables, search index and other from system, greatly reducing time spent restoring database and working with in general.
+Written to speed up your local workflow though as usual you need to know what your are doing and is normally only used by more experienced users. This utility removes all database caching tables not needed. This greatly reduces the size and time spent restoring the database.
    
     bin/make-fast
    
-Changes are made to the running database but also leave a uncompressed copy of the optimized databse in the `site` directory.
+It perform these changes your running database but also create a uncompressed copy of the optimized database in `site/latest.elmcip.sql`.
  
-### Using optimized database copy
+To use this datbase copy run `offline_reset2production` with the `fast` option.
  
     bin/offline_reset2production fast
  
-### How fast is fast
-
- Benchmarks done when your local site is warm, aka there was no new files to sync. Meaning the online sync might be slower for your system.
+### How fast is make-fast
 
 * online reset (bin/reset2production): 7m
 * Offline (bin/offline_reset2production): 6m 48sec
