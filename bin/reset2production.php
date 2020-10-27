@@ -1,7 +1,22 @@
+#!/usr/bin/env php
 <?php declare(strict_types = 1);
 
 define('KUBERNETES_NAME_SPACE', 'elmcip-ns9035k');
 define('CLUSTER', 'nird-trd');
+
+
+exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
+
+if (!$results) {
+  exec('kubed -renew ' . CLUSTER, $login);
+  exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
+}
+
+$pods = Pods::getPods($results);
+$elmcip = new Kubernetes($pods);
+$elmcip->createSnapshot();
+$elmcip->getSnapshot();
+
 
 final class Pods
 {
@@ -65,8 +80,10 @@ final class Kubernetes {
 
   public function createSnapshot() {
     echo 'Creating production snapshot at POD: ' . $this->pods->FirstPod() . PHP_EOL;
-    exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- /elmcip/create_snapshot', $result);
-    print_r($result);
+    exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- /elmcip/create_snapshot', $results);
+    foreach ($results as $result) {
+      print $result . PHP_EOL;
+    }
   }
 
   public function getSnapshot() {
@@ -83,15 +100,3 @@ final class Kubernetes {
   }
 }
 
-
-exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
-
-if (!$results) {
-  exec('kubed -renew ' . CLUSTER, $login);
-  exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
-}
-
-$pods = Pods::getPods($results);
-$elmcip = new Kubernetes($pods);
-$elmcip->createSnapshot();
-$elmcip->getSnapshot();
