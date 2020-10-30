@@ -111,18 +111,10 @@ function elmcip_search_views_default_views() {
   $handler->display->display_options['fields']['changed']['label'] = 'Updated';
   $handler->display->display_options['fields']['changed']['date_format'] = 'raw time ago';
   $handler->display->display_options['fields']['changed']['second_date_format'] = 'search_api_facetapi_YEAR';
-  /* Field: Flags: Flagged */
-  $handler->display->display_options['fields']['flagged']['id'] = 'flagged';
-  $handler->display->display_options['fields']['flagged']['table'] = 'flagging';
-  $handler->display->display_options['fields']['flagged']['field'] = 'flagged';
-  $handler->display->display_options['fields']['flagged']['relationship'] = 'flag_content_rel';
-  $handler->display->display_options['fields']['flagged']['label'] = 'Approved (old)';
-  $handler->display->display_options['fields']['flagged']['not'] = 0;
   /* Field: Content: Librarian status */
   $handler->display->display_options['fields']['field_record_status_lib']['id'] = 'field_record_status_lib';
   $handler->display->display_options['fields']['field_record_status_lib']['table'] = 'field_data_field_record_status_lib';
   $handler->display->display_options['fields']['field_record_status_lib']['field'] = 'field_record_status_lib';
-  $handler->display->display_options['fields']['field_record_status_lib']['label'] = 'Librarian status (new)';
   /* Field: Content: Link to edit content */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -245,12 +237,10 @@ function elmcip_search_views_default_views() {
     t('flag'),
     t('Title'),
     t('Updated'),
-    t('Approved (old)'),
-    t('Librarian status (new)'),
+    t('Librarian status'),
     t('Record type'),
     t('Publication Type'),
     t('Got a librarian status'),
-    t('Librarian status'),
     t('Page'),
   );
   $export['flagged_librarian'] = $view;
