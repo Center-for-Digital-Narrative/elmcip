@@ -188,21 +188,18 @@ function elmcip_search_views_default_views() {
   );
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_pubtype_tax_tid']['vocabulary'] = 'publication_type';
-  /* Filter criterion: Flags: Flagged */
-  $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
-  $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
-  $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
-  $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
-  $handler->display->display_options['filters']['flagged']['value'] = '0';
-  $handler->display->display_options['filters']['flagged']['group'] = 1;
-  $handler->display->display_options['filters']['flagged']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['flagged']['expose']['operator_id'] = '';
-  $handler->display->display_options['filters']['flagged']['expose']['label'] = 'Approved (old)';
-  $handler->display->display_options['filters']['flagged']['expose']['operator'] = 'flagged_op';
-  $handler->display->display_options['filters']['flagged']['expose']['identifier'] = 'flagged';
-  $handler->display->display_options['filters']['flagged']['expose']['required'] = TRUE;
-  $handler->display->display_options['filters']['flagged']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['flagged']['expose']['remember_roles'] = array(
+  /* Filter criterion: Content: Librarian status (field_record_status_lib) */
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['id'] = 'field_record_status_lib_value_1';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['table'] = 'field_data_field_record_status_lib';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['field'] = 'field_record_status_lib_value';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['group'] = 1;
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['operator_id'] = 'field_record_status_lib_value_1_op';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['label'] = 'Got a librarian status';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['operator'] = 'field_record_status_lib_value_1_op';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['identifier'] = 'field_record_status_lib_value_1';
+  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['remember_roles'] = array(
     2 => '2',
   );
   /* Filter criterion: Content: Librarian status (field_record_status_lib) */
@@ -212,24 +209,10 @@ function elmcip_search_views_default_views() {
   $handler->display->display_options['filters']['field_record_status_lib_value']['group'] = 1;
   $handler->display->display_options['filters']['field_record_status_lib_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_record_status_lib_value']['expose']['operator_id'] = 'field_record_status_lib_value_op';
-  $handler->display->display_options['filters']['field_record_status_lib_value']['expose']['label'] = 'Librarian status (new)';
+  $handler->display->display_options['filters']['field_record_status_lib_value']['expose']['label'] = 'Librarian status';
   $handler->display->display_options['filters']['field_record_status_lib_value']['expose']['operator'] = 'field_record_status_lib_value_op';
   $handler->display->display_options['filters']['field_record_status_lib_value']['expose']['identifier'] = 'field_record_status_lib_value';
   $handler->display->display_options['filters']['field_record_status_lib_value']['expose']['remember_roles'] = array(
-    2 => '2',
-  );
-  /* Filter criterion: Content: Librarian status (field_record_status_lib) */
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['id'] = 'field_record_status_lib_value_1';
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['table'] = 'field_data_field_record_status_lib';
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['field'] = 'field_record_status_lib_value';
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['operator'] = 'not empty';
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['group'] = 1;
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['operator_id'] = 'field_record_status_lib_value_1_op';
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['label'] = 'Got a librarian status (new)';
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['operator'] = 'field_record_status_lib_value_1_op';
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['identifier'] = 'field_record_status_lib_value_1';
-  $handler->display->display_options['filters']['field_record_status_lib_value_1']['expose']['remember_roles'] = array(
     2 => '2',
   );
 
@@ -266,7 +249,8 @@ function elmcip_search_views_default_views() {
     t('Librarian status (new)'),
     t('Record type'),
     t('Publication Type'),
-    t('Got a librarian status (new)'),
+    t('Got a librarian status'),
+    t('Librarian status'),
     t('Page'),
   );
   $export['flagged_librarian'] = $view;
