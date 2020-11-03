@@ -26,7 +26,12 @@ git submodule update --quiet || exit $?
 cd $DRUPAL || exit
 
 # Populate the local database.
-gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
+if [ -f ../site/latest.elmcip.sql.gz ]; then
+    echo "No database copy found. Populate db. with, example: bin/reset2production"
+else
+    echo 'Populating database.'
+    gunzip -c ../site/latest.elmcip.sql.gz | drush sql-cli
+fi
 
 # Create Drupal public directory.
 cd $HOMEDIR/$DRUPAL/sites/default || exit 1
@@ -34,6 +39,10 @@ mkdir files
 chmod 777 files
 
 # Flush all drupal caches.
+if [ -f ../site/latest.elmcip.sql.gz ]; then
+    exit
+fi
+
 drush updatedb --yes
 drush cc all
 drush status
