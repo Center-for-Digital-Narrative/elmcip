@@ -8,7 +8,7 @@ drush --version || exit $?
 
 # Copy default database settings to Drupal.
 if [ -f $DRUPAL/sites/default/settings.php ]; then
-    echo "Site already exist. Unable to initialize exiting sites."
+    echo "Site config $DRUPAL/sites/default/settings.php already exist. Unable to initialize a new site."
     exit 1
 fi
 
