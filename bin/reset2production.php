@@ -4,36 +4,98 @@
 define('KUBERNETES_NAME_SPACE', 'elmcip-ns9035k');
 define('CLUSTER', 'nird-trd');
 
+$kubectl = new Kubectl();
+$kubed = new Kubed();
+$pod = new Pods($kubectl, $kubed);
+$pods = $pod->getPods();
 
-exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
-
-if (!$results) {
-  exec('kubed -renew ' . CLUSTER, $login);
-  exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
-}
-
-$pods = Pods::getPods($results);
 $elmcip = new Kubernetes($pods);
 $elmcip->createSnapshot();
 $elmcip->getSnapshot();
 
+final class Kubed
+{
+    private $version;
+
+    public function __construct()
+    {
+        exec('kubed version --client', $kubed);
+        if (!$kubed) {
+            throw new \RuntimeException(
+                'kubed is not installed. Read: TBD' . PHP_EOL
+            );
+        }
+
+        $this->version = $kubed;
+    }
+
+    public function version(): string
+    {
+        return $this->version;
+    }
+
+    public function renew(): string
+    {
+        return exec('kubed -renew ' . CLUSTER, $login);
+    }
+}
+
+final class Kubectl
+{
+    private $version;
+
+    public function __construct()
+    {
+        exec('kubectl version --client', $kubectl);
+        if (!$kubectl) {
+            throw new \RuntimeException(
+                'kubectl is not installed. Read:  
+                    https://kubernetes.io/docs/tasks/tools/install-kubectl'
+            );
+        }
+
+        $this->version = $kubectl;
+    }
+
+    public function version(): string
+    {
+        return $this->version;
+    }
+
+    public function pod(): string
+    {
+        return exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
+    }
+}
 
 final class Pods
 {
-  private $pods;
+    private $pods;
+    private $kubectl;
+    private $kubed;
 
-  private function __construct() {}
-
-  public static function getPods(array $results): Pods {
-    $object = new self();
-    $pods = $object->parseResult($results);
-
-    foreach ($pods as $pod) {
-      array_walk($pod, [$object, 'podName']);
+    public function __construct(Kubectl $kubectl, Kubed $kubed)
+    {
+        $this->kubectl = $kubectl;
+        $this->kubed = $kubed;
     }
 
-    return $object;
-  }
+    public function getPods(): Pods
+    {
+        if (!$this->kubectl->version()) {
+            $this->kubed->renew();
+        }
+
+        $results = $this->kubectl->pod();
+        $object = new self(new Kubectl(), new Kubed());
+        $pods = $object->parseResult($results);
+
+        foreach ($pods as $pod) {
+          array_walk($pod, [$object, 'podName']);
+        }
+
+        return $object;
+    }
 
   private function parseResult(array $results): array {
     $pods = [];
