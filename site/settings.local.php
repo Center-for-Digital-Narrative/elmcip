@@ -5,7 +5,7 @@
  * Drupal local development settings. Change to match your local config.
  */
 
-$base_url = 'http://elmcip.dev';  // NO trailing slash!
+$base_url = 'http://elmcip.local';  // NO trailing slash!
 
 $databases['default']['default'] = array (
   'driver' => 'mysql',
