@@ -29,7 +29,7 @@ final class Kubed
         $this->version = $kubed;
     }
 
-    public function version(): string
+    public function getVersion(): string
     {
         return $this->version;
     }
@@ -57,9 +57,9 @@ final class Kubectl
         $this->version = $kubectl;
     }
 
-    public function version(): string
+    public function getVersion(): string
     {
-        return $this->version;
+        return $this->version[0];
     }
 
     public function pod(): string
