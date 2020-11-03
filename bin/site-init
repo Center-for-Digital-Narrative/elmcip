@@ -2,7 +2,7 @@
 
 set -x
 
-SITE=elmcip01.norstore.uio.no
+source bin/drush.sh
 DB_SITE=elmcip02.norstore.uio.no
 DRUPAL=drupal
 URI=elmcip.dev
