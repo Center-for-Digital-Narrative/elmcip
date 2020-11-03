@@ -10,10 +10,10 @@ drush --version || exit $?
 if [ -f $DRUPAL/sites/default/settings.php ]; then
     echo "Site config $DRUPAL/sites/default/settings.php already exist. Unable to initialize a new site."
     exit 1
+else
+  cp -v site/settings.php $DRUPAL/sites/default || exit 1
+  cp -v site/settings.local.php $DRUPAL/sites/default || exit 1
 fi
-
-cp -v site/settings.php $DRUPAL/sites/default || exit 1
-cp -v site/settings.local.php $DRUPAL/sites/default || exit 1
 
 # Make sure are on the development branch all git submodules are up to date.
 git checkout master
@@ -32,7 +32,10 @@ fi
 
 # Create Drupal public directory.
 cd "$HOMEDIR"/$DRUPAL/sites/default || exit 1
-mkdir files
+echo "Creating Drupal public://"
+if [ ! -d files ]; then
+  mkdir files
+fi
 chmod 777 files
 
 # Flush all drupal caches.
