@@ -11,11 +11,13 @@ if [ -f $DRUPAL/sites/default/settings.php ]; then
     echo "Site config $DRUPAL/sites/default/settings.php already exist. Unable to initialize a new site."
     exit 1
 else
+  "Creating Drupal settings file and local setup for development."
   cp -v site/settings.php $DRUPAL/sites/default || exit 1
   cp -v site/settings.local.php $DRUPAL/sites/default || exit 1
 fi
 
 # Make sure are on the development branch all git submodules are up to date.
+echo "Update Git and all git submodules."
 git checkout master
 git pull --rebase --quiet || exit $?
 git submodule update --quiet || exit $?
@@ -44,3 +46,5 @@ if [ -f ../site/latest.elmcip.sql.gz ]; then
   drush cc all
   drush status
 fi
+
+echo "Finished settings up a black site. If needed update your local db. settings found in $DRUPAL/sites/default/settings.local.php"
