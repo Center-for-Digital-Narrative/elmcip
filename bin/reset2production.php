@@ -19,7 +19,7 @@ final class Kubed
 
     public function __construct()
     {
-        exec('kubed version --client', $kubed);
+        exec('kubed -version', $kubed);
         if (!$kubed) {
             throw new \RuntimeException(
                 'kubed is not installed. Read: TBD' . PHP_EOL
@@ -31,12 +31,13 @@ final class Kubed
 
     public function getVersion(): string
     {
-        return $this->version;
+        return $this->version[0];
     }
 
-    public function renew(): string
+    public function renew()
     {
-        return exec('kubed -renew ' . CLUSTER, $login);
+        exec('kubed -renew ' . CLUSTER, $login);
+        return $login;
     }
 }
 
@@ -62,9 +63,10 @@ final class Kubectl
         return $this->version[0];
     }
 
-    public function pod(): string
+    public function pod()
     {
-        return exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
+        exec('kubectl get pod -n ' . KUBERNETES_NAME_SPACE, $results);
+        return $results;
     }
 }
 
@@ -82,8 +84,8 @@ final class Pods
 
     public function getPods(): Pods
     {
-        if (!$this->kubectl->version()) {
-            $this->kubed->renew();
+        if (!$this->kubectl->pod()) {
+            $foo = $this->kubed->renew();
         }
 
         $results = $this->kubectl->pod();
