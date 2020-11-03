@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -x
-
 source bin/drush.sh
 DRUPAL=drupal
 HOMEDIR=${PWD}
