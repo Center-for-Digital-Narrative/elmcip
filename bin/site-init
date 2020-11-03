@@ -50,7 +50,7 @@ else
     fi
 fi
 
-cd $DRUPAL
+cd $DRUPAL || exit
 
 # Populate the local database.
 gunzip -c ../site/latest.elmcip.sql.gz | drush --uri=$URI sql-cli
