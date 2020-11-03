@@ -3,9 +3,8 @@
 set -x
 
 source bin/drush.sh
-DB_SITE=elmcip02.norstore.uio.no
 DRUPAL=drupal
-URI=elmcip.dev
+URI=elmcip.local
 HOMEDIR=${PWD}
 
 drush --version || exit $?
@@ -23,31 +22,6 @@ cp -v site/settings.local.php $DRUPAL/sites/default || exit 1
 git checkout master
 git pull --rebase --quiet || exit $?
 git submodule update --quiet || exit $?
-
-# Sync nightly database backup from production.
-# If this script got called with username as a parameter it tries
-# use it, else it uses your local user name.
-if [ -z "$1" ]
-    then
-    RESULT=`rsync -L -h --stats --progress --verbose $DB_SITE:/files/latest.elmcip.sql.gz site/`
-    if [ $? != 0 ]; then
-    {
-        echo "ERROR: Problem syncing DB"
-        echo $RESULT
-        exit 1
-    }
-    fi
-else
-    echo "Connecting to $DB_SITE as user: $1"
-    RESULT=`rsync -L -h --stats --progress --verbose $1@$DB_SITE:/files/latest.elmcip.sql.gz site/`
-    if [ $? != 0 ]; then
-    {
-        echo "ERROR: Problem syncing DB"
-        echo $RESULT
-        exit 1
-    }
-    fi
-fi
 
 cd $DRUPAL || exit
 
