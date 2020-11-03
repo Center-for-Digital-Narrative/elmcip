@@ -19,10 +19,9 @@ fi
 cp -v site/settings.php $DRUPAL/sites/default || exit 1
 cp -v site/settings.local.php $DRUPAL/sites/default || exit 1
 
-# Make sure master and production and git submodules are up to date.
+# Make sure are on the development branch all git submodules are up to date.
 git checkout master
 git pull --rebase --quiet || exit $?
-git checkout production --quiet || exit $?
 git submodule update --quiet || exit $?
 
 # Sync nightly database backup from production.
