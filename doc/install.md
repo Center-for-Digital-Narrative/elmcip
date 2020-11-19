@@ -29,7 +29,7 @@ Your webserver DocumentRoot is elmcip/drupal. Make sure your default or vhost po
 
 1. Install drush
 
-    'composer install --no-dev'
+    `composer install --no-dev`
 
 1. Initialize the new site:
 
