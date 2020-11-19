@@ -19,17 +19,21 @@ This is something you only have to do on a new machine or perhaps you want to ha
 
 1. To get the ELMCIP, Drupal core and all third party and custom modules you need to clone the `elmcip` repository.
 
-    git clone git@github.com:elmcip/elmcip.git elmcip
+    `git clone git@github.com:elmcip/elmcip.git elmcip`
 
 Your webserver DocumentRoot is elmcip/drupal. Make sure your default or vhost point to this directory.
 
 1. The elmcip use git modules and to get Drupal you need to update the submodules.
 
-    git submodule update --init
+    `git submodule update --init`
+
+1. Install drush
+
+    'composer install --no-dev'
 
 1. Initialize the new site:
 
-    bin/site-init
+    `bin/site-init`
 
 You should now have a functional copy of ELMCIP with everything except for images videos. If you locally need them is there a module named 'Stage File Proxy' that can pull on demand images directly from production.
 
