@@ -44,7 +44,7 @@ a.facetapi-limit-link {
   font-weight: normal;
 }
 
-.front .views-field-field-author-name a,
+#frontpage .views-field-field-author-name a,
 a.facetapi-inactive {
   color: #333333;
 }
@@ -57,7 +57,7 @@ a.facetapi-inactive {
   margin-bottom: 0;
 }
 
-.front .views-field-field-author-name,
+#frontpage .views-field-field-author-name,
 .group-left .field-name-field-record-status-tax {
   font-style: italic;
 }
@@ -84,7 +84,7 @@ a.facetapi-inactive {
   text-transform: uppercase;
 }
 
-.front h2 {
+#frontpage h2 {
   font-weight: normal;
 }
 

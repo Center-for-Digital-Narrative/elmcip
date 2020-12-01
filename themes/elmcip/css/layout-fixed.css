@@ -167,15 +167,15 @@ body {
   margin: 0;
 }
 
-.front .panels-flexible-row,
-.front .inside,
-.front .transparent .pane-content,
-.front .view-content {
+#frontpage .panels-flexible-row,
+#frontpage .inside,
+#frontpage .transparent .pane-content,
+#frontpage .view-content {
   padding: 0;
 }
 
 .group-left .inner,
-.front .pane-content {
+#frontpage .pane-content {
   padding: 10px;
 }
 
