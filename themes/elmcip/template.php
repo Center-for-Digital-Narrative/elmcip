@@ -24,7 +24,7 @@ function elmcip_preprocess_page(&$variables, $hook) {
  * @param $variables
  */
 function elmcip_preprocess_node(&$variables) {
-  if ($variables['view_mode'] == 'full') {
+  if ($variables['view_mode'] === 'full') {
     $content_types = [
       'critical_writing',
       'databases_and_archives',
@@ -88,7 +88,7 @@ function elmcip_preprocess_node(&$variables) {
  * Implement hook_form_alter().
  */
 function elmcip_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'search_api_page_search_form_search_knowledge_base') {
+  if ($form_id === 'search_api_page_search_form_search_knowledge_base') {
     $form['keys_1']['#size'] = 30;
     // Add extra attributes to the text box.
     $form['keys_1']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search Knowledge Base';}";
@@ -102,7 +102,7 @@ function elmcip_form_alter(&$form, &$form_state, $form_id) {
  * Implements template_preprocess_region().
  */
 function elmcip_preprocess_region(&$variables, $hook) {
-  if ($variables['region'] == 'header' || 'header-top') {
+  if ($variables['region'] === 'header' || 'header-top') {
     $variables['classes_array'][] = 'clearfix';
   }
 }
