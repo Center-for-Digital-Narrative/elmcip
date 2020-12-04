@@ -13,25 +13,21 @@
 function elmcip_data_export_views_pre_view($view, &$display_id, &$args) {
   if ($view->name === 'elmcip_taxonomy_term' || $view->name === 'all_tags_by_frequency') {
     if ($display_id === 'page' || $display_id === 'page_1') {
-      $content = '';
-      $view->set_display('page_1');
-
       $tid = arg(2);
+      $class = 'term_missing';
       if (!$tid) {
         return;
       }
 
-      $terms = entity_load('taxonomy_term', array(arg(2)));
-      $term = $terms[$tid];
+      //$view->set_display('page_1');
 
-      if ($term->description) {
+      $terms = entity_load('taxonomy_term', [$tid]);
+
+      if ($terms[$tid]->description) {
         $class = 'term_present';
       }
-      else {
-        $class = 'term_missing';
-      }
 
-      $content = elmcip_data_export_elmcip_term_description($term);
+      $content = elmcip_data_export_elmcip_term_description($terms[$tid]);
 
       // Add description and reorder description if more then one element.
       if ($content) {
@@ -55,13 +51,14 @@ function elmcip_data_export_views_pre_view($view, &$display_id, &$args) {
 }
 
 /**
- * Check for existing description.
+ * Create taxonomy term description missing if term do not have one.
  *
- * @param $term
+ * @param \stdClass $term
  *
  * @return string
+ *  Return taxonomy term description.
  */
-function elmcip_data_export_elmcip_term_description($term): string {
+function elmcip_data_export_elmcip_term_description(stdClass $term): string {
   if (taxonomy_term_edit_access($term)) {
     $edit_link = url('taxonomy/term/' . $term->tid . '/edit', array('query' => array('destination' => current_path())));
 
@@ -89,8 +86,8 @@ function elmcip_data_export_elmcip_term_description($term): string {
  */
 function elmcip_data_export_views_pre_build(&$view) {
   if ($view->name === 'elmcip_taxonomy_term' && $view->current_display === 'page') {
-    $terms = entity_load('taxonomy_term', array(arg(2)));
 
+    $terms = entity_load('taxonomy_term', [arg(2)]);
     foreach ($terms as $term) {
       if ($term->vocabulary_machine_name === 'gender') {
         unset($view->field['nothing']);
