@@ -9129,6 +9129,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['path'] = 'taxonomy/term/%/%/feed';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
+    'page_1' => 'page_1',
     'default' => 0,
   );
 
@@ -9147,6 +9148,7 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -15286,7 +15288,7 @@ function elmcip_data_export_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'NEWS';
+  $handler->display->display_options['title'] = 'News';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'All news';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -15305,10 +15307,6 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'node';
-  /* Relationship: Content: Tags (field_news_tags) */
-  $handler->display->display_options['relationships']['field_news_tags_tid']['id'] = 'field_news_tags_tid';
-  $handler->display->display_options['relationships']['field_news_tags_tid']['table'] = 'field_data_field_news_tags';
-  $handler->display->display_options['relationships']['field_news_tags_tid']['field'] = 'field_news_tags_tid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -15352,6 +15350,11 @@ function elmcip_data_export_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['path'] = 'news';
 
   /* Display: News block */
@@ -15377,9 +15380,23 @@ function elmcip_data_export_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['block_caching'] = '8';
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['row_options']['item_length'] = 'teaser';
+  $handler->display->display_options['row_options']['links'] = TRUE;
+  $handler->display->display_options['path'] = 'news/%/rss.xml';
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+    'block_2' => 0,
+  );
   $translatables['views_recent_posts'] = array(
     t('Master'),
-    t('NEWS'),
+    t('News'),
     t('All news'),
     t('Apply'),
     t('Reset'),
@@ -15393,12 +15410,12 @@ function elmcip_data_export_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('term from field_news_tags'),
     t('All'),
     t('News - %1'),
     t('Page'),
     t('more'),
     t('News block'),
+    t('Feed'),
   );
   $export['views_recent_posts'] = $view;
 
