@@ -5,7 +5,7 @@ declare(strict_types = 1);
 /**
  * Implements hook_block_info().
  */
-function elmcip_setup_block_info() {
+function elmcip_setup_block_info(): array {
   return [
     'sosical_networks' => [
       'info' => t('Social networks associated with ELMCIP'),
@@ -17,8 +17,12 @@ function elmcip_setup_block_info() {
       'cache' => DRUPAL_CACHE_GLOBAL,
       'status' => 0,
     ],
+    'copyright' => [
+      'info' => t('ELMCIP copyright'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'status' => 0,
+    ],
   ];
-
 }
 
 /**
@@ -43,9 +47,24 @@ function elmcip_setup_block_view($delta = '') {
     case 'sponsors':
       $block['content'] = elmcip_setup_sponsors_content();
       break;
+    case 'copyright':
+      $block['content'] = elmcip_setup_copyright_content();
   }
 
   return $block;
+}
+
+/**
+ *
+ */
+function elmcip_setup_copyright_content(): array {
+  return [
+    '#type' => 'markup',
+    '#markup' => 'This Work, ELMCIP, is licensed under a 
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+    Attribution-ShareAlike 4.0 International license</a>, 
+    although certain works referenced herein may be separately licensed.',
+  ];
 }
 
 /**
