@@ -33,16 +33,7 @@ function elmcip_setup_block_view($delta = '') {
 
   switch ($delta) {
     case 'sosical_networks':
-      $content =  [
-        '#type' => 'markup',
-        '#markup' => '
-        <ul class="menu social">
-          <li><a href="https://vimeo.com/elmcip"><i class="fa fa-vimeo-square"></i></a></li>
-          <li><a href="https://twitter.com/elmcip"><i class="fa fa-twitter-square"></i></a></li>
-          <li><a href="https://www.facebook.com/groups/480202502024095"><i class="fa fa-facebook-square"></i></a></li>
-        </ul>',
-      ];
-      $block ['content'] = $content;
+      $block['content'] = elmcip_setup_social_networks_content();
       break;
     case 'sponsors':
       $block['content'] = elmcip_setup_sponsors_content();
@@ -54,9 +45,18 @@ function elmcip_setup_block_view($delta = '') {
   return $block;
 }
 
-/**
- *
- */
+function elmcip_setup_social_networks_content(): array {
+  return  [
+    '#type' => 'markup',
+    '#markup' => '
+        <ul class="menu social">
+          <li><a href="https://vimeo.com/elmcip"><i class="fa fa-vimeo-square"></i></a></li>
+          <li><a href="https://twitter.com/elmcip"><i class="fa fa-twitter-square"></i></a></li>
+          <li><a href="https://www.facebook.com/groups/480202502024095"><i class="fa fa-facebook-square"></i></a></li>
+        </ul>',
+  ];
+}
+
 function elmcip_setup_copyright_content(): array {
   return [
     '#type' => 'markup',
