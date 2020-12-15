@@ -10,11 +10,11 @@ $pod = new Pods($kubectl, $kubed);
 $pods = $pod->getPods();
 
 $elmcip = new Kubernetes($pods);
-$elmcip->createSnapshot();
+//$elmcip->createSnapshot();
 
 $backupFiles = ['latest.cellproject.sql.gz', 'latest.elmcip.sql.gz'];
 foreach ($backupFiles as $backupFile) {
-  $elmcip->getSnapshot($backupFile);
+  echo $elmcip->getSnapshot($backupFile) . PHP_EOL;
 }
 
 final class Kubed
@@ -152,11 +152,13 @@ final class Kubernetes {
 
   private $pods;
 
-  public function __construct(Pods $pods) {
+  public function __construct(Pods $pods)
+  {
     $this->pods = $pods;
   }
 
-  public function renewToken(): array {
+  public function renewToken(): array
+  {
     $results = [];
     exec('kubed -renew ' . CLUSTER, $results);
 
@@ -169,7 +171,7 @@ final class Kubernetes {
     return $result;
   }
 
-  private function fileSize(string $fileName): array
+  private function nodeFileSize(string $fileName): array
   {
       return $this->nodeExecute('stat -c %s ' . $fileName);
   }
@@ -183,17 +185,27 @@ final class Kubernetes {
     }
   }
 
-  public function getSnapshot(string $fileName): void {
+  public function getSnapshot(string $fileName): string
+  {
+    $nodeMd5sum = $this->nodeMd5Sum($fileName);
 
-    echo 'Copy production snapshot from ' . $this->pods->FirstPod() . PHP_EOL;
-    $fileSize = $this->fileSize('/elmcip/' . $fileName)[0];
     exec('kubectl cp '. KUBERNETES_NAME_SPACE . '/' . $this->pods->FirstPod() . ':elmcip/' . $fileName. ' site/' . $fileName, $result);
+    $validate = $this->validateTransfer(
+            'site/' . $fileName,
+            $nodeMd5sum
+    );
 
-    exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- stat -c %s elmcip/latest.elmcip.sql.gz', $results);
+    if ($validate){
+      return $fileName . ' was successfully copied from ' . $this->pods->FirstPod();
+    }
 
-//    if ($existingSnapshot !== filemtime('site/' . $fileName)){
-//      echo $fileName . ' was successfully copied from ' . $this->pods->FirstPod() . PHP_EOL;
-//    }
+    return 'Copy of ' . $fileName . ' from ' . $this->pods->FirstPod() . ' failed';
+  }
+
+  private function nodeMd5Sum(string $fileName): string
+  {
+    $md5sum = $this->nodeExecute('md5sum /elmcip/' . $fileName)[0];
+    return explode('  ', $md5sum)[0];
   }
 
   private function fileTimeModified(string $fileName): int
@@ -201,13 +213,15 @@ final class Kubernetes {
     if (file_exists($fileName)) {
         return filemtime($fileName);
       }
-
     return 0;
   }
 
-  private function validateTransfare(string $fileName)
+  private function validateTransfer(string $fileName, string $nodeMd5sum): bool
   {
-    $existingSnapshot = filemtime('site/' . $fileName);
+    $newTime = $this->fileTimeModified($fileName);
+    $newFilesize = filesize($fileName);
+    $newMd5sum = md5_file($fileName);
+
+    return $nodeMd5sum === md5_file($fileName);
   }
 }
-
