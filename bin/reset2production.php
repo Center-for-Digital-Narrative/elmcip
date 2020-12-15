@@ -11,7 +11,11 @@ $pods = $pod->getPods();
 
 $elmcip = new Kubernetes($pods);
 $elmcip->createSnapshot();
-$elmcip->getSnapshot();
+
+$backupFiles = ['latest.cellproject.sql.gz', 'latest.elmcip.sql.gz'];
+foreach ($backupFiles as $backupFile) {
+  $elmcip->getSnapshot($backupFile);
+}
 
 final class Kubed
 {
@@ -159,25 +163,51 @@ final class Kubernetes {
     return $results;
   }
 
-  public function createSnapshot(): void {
+  private function nodeExecute(string $command): array
+  {
+    exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- ' . $command, $result);
+    return $result;
+  }
+
+  private function fileSize(string $fileName): array
+  {
+      return $this->nodeExecute('stat -c %s ' . $fileName);
+  }
+
+  public function createSnapshot(): void
+  {
     echo 'Creating production snapshot at POD: ' . $this->pods->FirstPod() . PHP_EOL;
-    exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- /elmcip/create_snapshot', $results);
+    $results = $this->nodeExecute('/elmcip/create_snapshots');
     foreach ($results as $result) {
       print $result . PHP_EOL;
     }
   }
 
-  public function getSnapshot(): void {
-    $fileName = 'latest.elmcip.sql.gz';
-    $existingSnapshot = filemtime('site/' . $fileName);
+  public function getSnapshot(string $fileName): void {
 
     echo 'Copy production snapshot from ' . $this->pods->FirstPod() . PHP_EOL;
-    exec('kubectl cp '. KUBERNETES_NAME_SPACE . '/' . $this->pods->FirstPod() . ':elmcip/latest.elmcip.sql.gz site/latest.elmcip.sql.gz', $result);
+    $fileSize = $this->fileSize('/elmcip/' . $fileName)[0];
+    exec('kubectl cp '. KUBERNETES_NAME_SPACE . '/' . $this->pods->FirstPod() . ':elmcip/' . $fileName. ' site/' . $fileName, $result);
 
-    if ($existingSnapshot !== filemtime('site/' . $fileName)){
-      echo $fileName . ' was successfully copied from ' . $this->pods->FirstPod() . PHP_EOL;
-    }
+    exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- stat -c %s elmcip/latest.elmcip.sql.gz', $results);
 
+//    if ($existingSnapshot !== filemtime('site/' . $fileName)){
+//      echo $fileName . ' was successfully copied from ' . $this->pods->FirstPod() . PHP_EOL;
+//    }
+  }
+
+  private function fileTimeModified(string $fileName): int
+  {
+    if (file_exists($fileName)) {
+        return filemtime($fileName);
+      }
+
+    return 0;
+  }
+
+  private function validateTransfare(string $fileName)
+  {
+    $existingSnapshot = filemtime('site/' . $fileName);
   }
 }
 
