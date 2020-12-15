@@ -21,7 +21,7 @@ final class Kubed
     {
         exec('kubed -version', $kubed);
         if (!$kubed) {
-            throw new \RuntimeException(
+            throw new RuntimeException(
                 'kubed is not installed. Read: https://github.com/Uninett/kubed' . PHP_EOL
             );
         }
@@ -55,7 +55,7 @@ final class Kubectl
     {
         exec('kubectl version --client', $kubectl);
         if (!$kubectl) {
-            throw new \RuntimeException(
+            throw new RuntimeException(
                 'kubectl is not installed. Read:  
                     https://kubernetes.io/docs/tasks/tools/install-kubectl'
             );
@@ -159,7 +159,7 @@ final class Kubernetes {
     return $results;
   }
 
-  public function createSnapshot() {
+  public function createSnapshot(): void {
     echo 'Creating production snapshot at POD: ' . $this->pods->FirstPod() . PHP_EOL;
     exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- /elmcip/create_snapshot', $results);
     foreach ($results as $result) {
@@ -167,7 +167,7 @@ final class Kubernetes {
     }
   }
 
-  public function getSnapshot() {
+  public function getSnapshot(): void {
     $fileName = 'latest.elmcip.sql.gz';
     $existingSnapshot = filemtime('site/' . $fileName);
 
