@@ -218,10 +218,6 @@ final class Kubernetes {
 
   private function validateTransfer(string $fileName, string $nodeMd5sum): bool
   {
-    $newTime = $this->fileTimeModified($fileName);
-    $newFilesize = filesize($fileName);
-    $newMd5sum = md5_file($fileName);
-
     return $nodeMd5sum === md5_file($fileName);
   }
 }

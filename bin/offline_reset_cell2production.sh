@@ -9,9 +9,9 @@
 
 source bin/drush.sh
 DRUPAL=drupal
-URI=elmcip.local
-DB=../site/latest.elmcip.sql.gz
-DB_DECOMPRESSED=../site/latest.elmcip.sql
+URI=cellproject.local
+DB=../site/latest.cellproject.sql.gz
+DB_DECOMPRESSED=../site/latest.cellproject.sql
 
 drush --version || exit $?
 
@@ -48,6 +48,4 @@ fi
 
 # Flush all drupal caches.
 drush --uri=${URI} cc all -v
-drush --uri=${URI} fra --yes
 drush --uri=${URI} status
-drush --uri=${URI} fl
