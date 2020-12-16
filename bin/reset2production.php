@@ -168,7 +168,6 @@ final class Kubernetes {
   private function nodeExecute(string $command): array
   {
     exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- ' . $command, $result);
-    $foo = strpos($result[0], 'OCI runtime exec failed');
 
     if (strpos($result[0], 'OCI runtime exec failed') === 0) {
         throw new RuntimeException(
