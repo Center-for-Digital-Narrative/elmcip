@@ -10,7 +10,7 @@ $pod = new Pods($kubectl, $kubed);
 $pods = $pod->getPods();
 
 $elmcip = new Kubernetes($pods);
-//$elmcip->createSnapshot();
+$elmcip->createSnapshot();
 
 $backupFiles = ['latest.cellproject.sql.gz', 'latest.elmcip.sql.gz'];
 foreach ($backupFiles as $backupFile) {
@@ -168,6 +168,13 @@ final class Kubernetes {
   private function nodeExecute(string $command): array
   {
     exec('kubectl exec -it ' . $this->pods->FirstPod() . ' -n ' . KUBERNETES_NAME_SPACE . ' -- ' . $command, $result);
+    $foo = strpos($result[0], 'OCI runtime exec failed');
+
+    if (strpos($result[0], 'OCI runtime exec failed') === 0) {
+        throw new RuntimeException(
+                'Remove command at ' . $this->pods->FirstPod() . 'failed: ' . $result[0]
+        );
+    }
     return $result;
   }
 
@@ -179,7 +186,7 @@ final class Kubernetes {
   public function createSnapshot(): void
   {
     echo 'Creating production snapshot at POD: ' . $this->pods->FirstPod() . PHP_EOL;
-    $results = $this->nodeExecute('/elmcip/create_snapshots');
+    $results = $this->nodeExecute('/elmcip/create_snapshot');
     foreach ($results as $result) {
       print $result . PHP_EOL;
     }
