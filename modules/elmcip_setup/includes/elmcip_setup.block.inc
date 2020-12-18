@@ -54,7 +54,7 @@ function elmcip_setup_block_view($delta = '') {
 }
 
 function elmcip_setup_logo_content(): array {
-  $logo = drupal_get_path('theme', 'elmcip') . '/logo.png';
+  $logo = drupal_get_path('theme', 'elmcip') . '/images/logo_text.svg';
 
   return [
     '#theme' => 'image_formatter',
