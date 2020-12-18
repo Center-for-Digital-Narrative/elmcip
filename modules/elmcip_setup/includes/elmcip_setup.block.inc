@@ -22,6 +22,11 @@ function elmcip_setup_block_info(): array {
       'cache' => DRUPAL_CACHE_GLOBAL,
       'status' => 0,
     ],
+    'logo' => [
+      'info' => t('ELMCIP logo'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+      'status' => 0,
+    ],
   ];
 }
 
@@ -38,11 +43,35 @@ function elmcip_setup_block_view($delta = '') {
     case 'sponsors':
       $block['content'] = elmcip_setup_sponsors_content();
       break;
+    case 'logo':
+      $block['content'] = elmcip_setup_logo_content();
+      break;
     case 'copyright':
       $block['content'] = elmcip_setup_copyright_content();
   }
 
   return $block;
+}
+
+function elmcip_setup_logo_content(): array {
+  $logo = drupal_get_path('theme', 'elmcip') . '/logo.png';
+
+  return [
+    '#theme' => 'image_formatter',
+    '#item' => [
+      'uri' => $logo,
+    ],
+    '#suffix'  => '<br />',
+    '#path' => [
+      'path' => '<front>',
+      'options' => [
+        'attributes' => [
+          'title' => 'ELMCIP',
+        ],
+      ],
+    ],
+  ];
+
 }
 
 function elmcip_setup_social_networks_content(): array {
