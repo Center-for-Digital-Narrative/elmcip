@@ -47,6 +47,6 @@ video {
   height: 100%;
 }
 
-.footer-logo img {
-  padding: 0 80px;
+#block-elmcip-setup-logo .content {
+  margin: 0 80px;
 }
