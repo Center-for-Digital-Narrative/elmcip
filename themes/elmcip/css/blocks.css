@@ -61,3 +61,14 @@
 .region-highlighted p:last-child {
   margin-bottom: 0;
 }
+
+.region-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.region-footer .block {
+  width: 300px;
+  margin: 0 10px;
+}

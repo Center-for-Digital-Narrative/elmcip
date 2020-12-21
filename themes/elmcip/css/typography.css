@@ -100,3 +100,13 @@ a.facetapi-inactive {
 table thead th {
   font-weight: bold;
 }
+
+.region-bottom .block {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.region-footer .block:nth-of-type(3n) ul {
+  text-align: right;
+}
