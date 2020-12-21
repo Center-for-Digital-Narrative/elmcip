@@ -1,3 +1,12 @@
+.region-footer .block {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.region-footer .block li {
+  padding: 0.5em 0;
+}
+
 blockquote,
 #header a {
   font-size: 1.1428em; /* 16px */

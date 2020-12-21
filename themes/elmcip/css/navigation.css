@@ -10,6 +10,9 @@
 li a.active {
   color: #333333;
 }
+.region-footer li a:visited {
+  color: #333333;
+}
 
 #navigation ul.links, /* Main menu and secondary menu links */
 #navigation .content ul /* Menu block links */ {
