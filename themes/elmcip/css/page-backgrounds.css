@@ -26,3 +26,9 @@
 .kb .panels-flexible-region-first {
   background-color: #bebdae;
 }
+
+.border {
+  background-image: url("../images/border.svg");
+  height: 10px;
+  margin: 1em 0;
+}

@@ -163,6 +163,7 @@
 
   </div></div><!-- /#main, /#main-wrapper -->
 
+    <div class="border"></div>
   <?php print render($page['footer']); ?>
 
 </div></div><!-- /#page, /#page-wrapper -->
