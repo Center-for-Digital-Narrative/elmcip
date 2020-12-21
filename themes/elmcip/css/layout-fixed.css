@@ -380,6 +380,7 @@ div.group-meta {
  */
 .region-footer {
   margin: 0 10px;
+  padding-bottom: 2em;
 }
 
 .region-footer p {
