@@ -67,7 +67,9 @@ function elmcip_setup_logo_content(): array {
       'options' => [
         'attributes' => [
           'title' => 'ELMCIP',
-          'class' => 'footer-logo',
+          'class' => [
+            'footer-logo'
+          ],
         ],
       ],
     ],
