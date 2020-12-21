@@ -1,3 +1,12 @@
+.region-footer .block {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.region-footer .block li {
+  padding: 0.5em 0;
+}
+
 blockquote,
 #header a {
   font-size: 1.1428em; /* 16px */
@@ -99,4 +108,14 @@ a.facetapi-inactive {
 
 table thead th {
   font-weight: bold;
+}
+
+.region-bottom .block {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.region-footer .block:nth-of-type(3n) ul {
+  text-align: right;
 }
