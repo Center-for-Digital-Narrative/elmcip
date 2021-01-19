@@ -107,8 +107,13 @@ body {
   margin: 0.714em 0 0.714em 1.5em;
 }
 
-#header .social a {
-  margin: 5px 0 0 20px;
+.region-footer .menu.social {
+  display: flex;
+  justify-content: flex-end;
+}
+.region-footer .menu.social li {
+  margin: 0;
+  padding-left: 20px;
 }
 
 /*
@@ -401,6 +406,11 @@ div.group-meta {
 
 .region-footer .block:nth-of-type(3n) h2.block-title {
   text-align: right;
+}
+
+.region-footer #block-elmcip-setup-sosical-networks {
+  margin-left: 640px;
+  margin-right: 0;
 }
 
 .region-bottom {
