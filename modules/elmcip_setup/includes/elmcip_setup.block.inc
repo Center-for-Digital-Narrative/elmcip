@@ -82,9 +82,9 @@ function elmcip_setup_social_networks_content(): array {
     '#type' => 'markup',
     '#markup' => '
         <ul class="menu social">
-          <li><a class="first" href="https://vimeo.com/elmcip"><i class="fa fa-vimeo-square"></i></a></li>
-          <li><a href="https://twitter.com/elmcip"><i class="fa fa-twitter-square"></i></a></li>
-          <li><a class="last" href="https://www.facebook.com/groups/480202502024095"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a title="Vimeo" class="first" href="https://vimeo.com/elmcip"><i class="fa fa-vimeo-square"></i></a></li>
+          <li><a title="Twitter" href="https://twitter.com/elmcip"><i class="fa fa-twitter-square"></i></a></li>
+          <li><a title="Facebook" class="last" href="https://www.facebook.com/groups/480202502024095"><i class="fa fa-facebook-square"></i></a></li>
         </ul>',
   ];
 }
