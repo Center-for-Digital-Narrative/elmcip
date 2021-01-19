@@ -16,12 +16,15 @@ blockquote {
   font-family: Georgia, serif;
 }
 
-.social a {
+.social li a:visited,
+.social li a:link {
   font-size: 40px;
+  color: #e6f14a;
 }
+
 .menu.social a:focus,
 .menu.social a:hover {
-  color: #d30008;
+  color: #daffc2;
 }
 
 h1#site-name,
