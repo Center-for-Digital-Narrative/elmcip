@@ -1,0 +1,16 @@
+{
+  "name": "elmcip/oaipmh",
+  "require": {
+    "caseyamcl/phpoaipmh": "^3.0",
+    "guzzlehttp/guzzle":   "^7.0"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "elmcip\\": "src/"
+    }
+  }
+}
