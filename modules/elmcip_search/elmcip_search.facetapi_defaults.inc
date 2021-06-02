@@ -21,8 +21,9 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'operator' => 'and',
-    'hard_limit' => '50',
+    'date_granularity' => 'YEAR',
+    'date_granularity_min' => 'YEAR',
+    'default_true' => TRUE,
     'dependencies' => array(
       'bundle' => 'none',
       'bundle_selected' => array(),
@@ -30,14 +31,13 @@ function elmcip_search_facetapi_default_facet_settings() {
     ),
     'facet_mincount' => '1',
     'facet_missing' => '0',
-    'flatten' => 0,
-    'individual_parent' => 0,
-    'query_type' => 'date',
-    'limit_active_items' => 0,
-    'default_true' => TRUE,
     'facet_search_ids' => array(),
-    'date_granularity' => 'YEAR',
-    'date_granularity_min' => 'YEAR',
+    'flatten' => 0,
+    'hard_limit' => '50',
+    'individual_parent' => 0,
+    'limit_active_items' => 0,
+    'operator' => 'and',
+    'query_type' => 'date',
   );
   $export['search_api@kb_content::field_critical_writing_year'] = $facet;
 
@@ -51,8 +51,9 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'operator' => 'and',
-    'hard_limit' => '50',
+    'date_granularity' => 'YEAR',
+    'date_granularity_min' => 'YEAR',
+    'default_true' => TRUE,
     'dependencies' => array(
       'bundle' => 'none',
       'bundle_selected' => array(),
@@ -60,14 +61,13 @@ function elmcip_search_facetapi_default_facet_settings() {
     ),
     'facet_mincount' => '1',
     'facet_missing' => '0',
-    'flatten' => 0,
-    'individual_parent' => 0,
-    'query_type' => 'date',
-    'limit_active_items' => 0,
-    'default_true' => TRUE,
     'facet_search_ids' => array(),
-    'date_granularity' => 'YEAR',
-    'date_granularity_min' => 'YEAR',
+    'flatten' => 0,
+    'hard_limit' => '50',
+    'individual_parent' => 0,
+    'limit_active_items' => 0,
+    'operator' => 'and',
+    'query_type' => 'date',
   );
   $export['search_api@kb_content::field_platform_year'] = $facet;
 
@@ -81,8 +81,9 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'operator' => 'and',
-    'hard_limit' => '50',
+    'date_granularity' => 'YEAR',
+    'date_granularity_min' => 'YEAR',
+    'default_true' => TRUE,
     'dependencies' => array(
       'bundle' => 'none',
       'bundle_selected' => array(),
@@ -90,14 +91,13 @@ function elmcip_search_facetapi_default_facet_settings() {
     ),
     'facet_mincount' => '1',
     'facet_missing' => '0',
-    'flatten' => 0,
-    'individual_parent' => 0,
-    'query_type' => 'date',
-    'limit_active_items' => 0,
-    'default_true' => TRUE,
     'facet_search_ids' => array(),
-    'date_granularity' => 'YEAR',
-    'date_granularity_min' => 'YEAR',
+    'flatten' => 0,
+    'hard_limit' => '50',
+    'individual_parent' => 0,
+    'limit_active_items' => 0,
+    'operator' => 'and',
+    'query_type' => 'date',
   );
   $export['search_api@kb_content::field_tr_year'] = $facet;
 
@@ -111,8 +111,9 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'operator' => 'and',
-    'hard_limit' => '50',
+    'date_granularity' => 'YEAR',
+    'date_granularity_min' => 'YEAR',
+    'default_true' => TRUE,
     'dependencies' => array(
       'bundle' => 'none',
       'bundle_selected' => array(),
@@ -120,14 +121,13 @@ function elmcip_search_facetapi_default_facet_settings() {
     ),
     'facet_mincount' => '1',
     'facet_missing' => '0',
-    'flatten' => 0,
-    'individual_parent' => 0,
-    'query_type' => 'date',
-    'limit_active_items' => 0,
-    'default_true' => TRUE,
     'facet_search_ids' => array(),
-    'date_granularity' => 'YEAR',
-    'date_granularity_min' => 'YEAR',
+    'flatten' => 0,
+    'hard_limit' => '50',
+    'individual_parent' => 0,
+    'limit_active_items' => 0,
+    'operator' => 'and',
+    'query_type' => 'date',
   );
   $export['search_api@kb_content::field_work_year'] = $facet;
 
@@ -141,8 +141,9 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'operator' => 'and',
-    'hard_limit' => '50',
+    'date_granularity' => 'YEAR',
+    'date_granularity_min' => 'YEAR',
+    'default_true' => TRUE,
     'dependencies' => array(
       'bundle' => 'none',
       'bundle_selected' => array(),
@@ -150,14 +151,13 @@ function elmcip_search_facetapi_default_facet_settings() {
     ),
     'facet_mincount' => '1',
     'facet_missing' => '0',
-    'flatten' => 0,
-    'individual_parent' => 0,
-    'query_type' => 'date',
-    'limit_active_items' => 0,
-    'default_true' => TRUE,
     'facet_search_ids' => array(),
-    'date_granularity' => 'YEAR',
-    'date_granularity_min' => 'YEAR',
+    'flatten' => 0,
+    'hard_limit' => '50',
+    'individual_parent' => 0,
+    'limit_active_items' => 0,
+    'operator' => 'and',
+    'query_type' => 'date',
   );
   $export['search_api@kb_content::field_year_initiated'] = $facet;
 
@@ -171,30 +171,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:author'] = $facet;
 
@@ -208,30 +208,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:changed'] = $facet;
 
@@ -245,30 +245,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:created'] = $facet;
 
@@ -282,30 +282,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:field_abstract:value'] = $facet;
 
@@ -319,14 +319,29 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'display_count' => 1,
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => '1',
+    'show_expanded' => 0,
+    'soft_limit' => '5',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -334,22 +349,10 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'title' => 'Year',
+    'title_override' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:field_critical_writing_year'] = $facet;
 
@@ -363,30 +366,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:field_db_description_english:value'] = $facet;
 
@@ -400,14 +403,29 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'display_count' => 1,
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => '1',
+    'show_expanded' => 0,
+    'soft_limit' => '5',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -415,22 +433,10 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'title' => 'Presented at Event',
+    'title_override' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:field_node_ref_event'] = $facet;
 
@@ -444,30 +450,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:field_node_ref_work'] = $facet;
 
@@ -481,14 +487,28 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => '20',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -496,22 +516,8 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:field_platform_year'] = $facet;
 
@@ -525,30 +531,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:field_ps_description:value'] = $facet;
 
@@ -562,30 +568,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:field_rc_description:value'] = $facet;
 
@@ -599,30 +605,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:field_textfield:value'] = $facet;
 
@@ -636,30 +642,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:field_tr_critical'] = $facet;
 
@@ -673,30 +679,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:field_tr_org'] = $facet;
 
@@ -710,14 +716,29 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'display_count' => 1,
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => '1',
+    'show_expanded' => 0,
+    'soft_limit' => '5',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -725,22 +746,10 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'title' => 'Year',
+    'title_override' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:field_tr_year'] = $facet;
 
@@ -754,14 +763,29 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'display_count' => 1,
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => '1',
+    'show_expanded' => 0,
+    'soft_limit' => '5',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -769,22 +793,10 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'title' => 'Year',
+    'title_override' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:field_work_year'] = $facet;
 
@@ -798,14 +810,28 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => '20',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -813,22 +839,8 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:field_year_initiated'] = $facet;
 
@@ -842,30 +854,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:search_api_language'] = $facet;
 
@@ -879,14 +891,28 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => '20',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -894,22 +920,8 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:taxonomy_vocabulary_1'] = $facet;
 
@@ -923,14 +935,28 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => '20',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -938,22 +964,8 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:taxonomy_vocabulary_2'] = $facet;
 
@@ -967,30 +979,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:taxonomy_vocabulary_4'] = $facet;
 
@@ -1004,30 +1016,30 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = FALSE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
+    ),
+    'empty_behavior' => 'none',
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => 20,
+    'sort_order' => array(
+      'active' => 3,
+      'count' => 3,
+      'display' => 4,
     ),
     'sort_weight' => array(
       'active' => -50,
       'count' => -49,
       'display' => -48,
     ),
-    'sort_order' => array(
-      'active' => 3,
-      'count' => 3,
-      'display' => 4,
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => 20,
-    'nofollow' => 1,
-    'show_expanded' => 0,
+    'weight' => 0,
+    'widget' => 'facetapi_links',
   );
   $export['search_api@kb_content:block:title'] = $facet;
 
@@ -1041,14 +1053,28 @@ function elmcip_search_facetapi_default_facet_settings() {
   $facet->enabled = TRUE;
   $facet->hash = '0';
   $facet->settings = array(
-    'weight' => 0,
-    'widget' => 'facetapi_checkbox_links',
-    'filters' => array(),
     'active_sorts' => array(
       'active' => 'active',
       'count' => 'count',
       'display' => 'display',
       'indexed' => 0,
+    ),
+    'empty_behavior' => 'none',
+    'empty_text' => array(
+      'format' => 'basic_text_editor',
+      'value' => '',
+    ),
+    'facet_fewer_text' => 'Show fewer',
+    'facet_more_text' => 'Show more',
+    'filters' => array(),
+    'nofollow' => 1,
+    'show_expanded' => 0,
+    'soft_limit' => '20',
+    'sort_order' => array(
+      'active' => '3',
+      'count' => '3',
+      'display' => '4',
+      'indexed' => '4',
     ),
     'sort_weight' => array(
       'active' => '-50',
@@ -1056,22 +1082,8 @@ function elmcip_search_facetapi_default_facet_settings() {
       'display' => '-48',
       'indexed' => '0',
     ),
-    'sort_order' => array(
-      'active' => '3',
-      'count' => '3',
-      'display' => '4',
-      'indexed' => '4',
-    ),
-    'empty_behavior' => 'none',
-    'facet_more_text' => 'Show more',
-    'facet_fewer_text' => 'Show fewer',
-    'soft_limit' => '20',
-    'nofollow' => 1,
-    'show_expanded' => 0,
-    'empty_text' => array(
-      'value' => '',
-      'format' => 'basic_text_editor',
-    ),
+    'weight' => 0,
+    'widget' => 'facetapi_checkbox_links',
   );
   $export['search_api@kb_content:block:type'] = $facet;
 
