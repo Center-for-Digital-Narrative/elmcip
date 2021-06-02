@@ -4,10 +4,10 @@
  */
 
 #header a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
 }
 #header a:hover {
-  color: #d30008;
+  color: #000;
 }
 
 /**

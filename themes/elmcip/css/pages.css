@@ -54,10 +54,6 @@ div#site-name {
   text-decoration: underline;
 }
 
-#header {
-  background-color:#E2E2D2;
-}
-
 .breadcrumb /* The path to the current page in the form of a list of links */ {
   padding-bottom: 0; /* Undo system.css */
 }
