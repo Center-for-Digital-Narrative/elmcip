@@ -70,9 +70,12 @@ body {
   margin: 0 0 1em 0;
 }
 
+#header .block.logo-container {
+  width: 33.3%;
+}
 #header .block {
   float: left;
-  width: 33.333%;
+  width: 50%;
 }
 
 #header .region-header-bottom .block {
