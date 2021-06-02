@@ -70,7 +70,7 @@
 ?>
 
 <div id="page-wrapper"><div id="page" class="<?php print implode(' ', $classes_array); ?>">
-  <div id="header"><div class="section clearfix">
+  <div id="header" class="header"><div class="section clearfix">
     <?php print render($page['header_top']); ?>
 
     <?php if ($site_name || $site_slogan): ?>
@@ -109,9 +109,8 @@
 
     <?php print render($page['header']); ?>
     <?php print render($page['header_bottom']); ?>
-
+    <div class="border"></div>
   </div></div><!-- /.section, /#header -->
-
 
   <div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu || $page['navigation']) { print ' with-navigation'; } ?>">
 
