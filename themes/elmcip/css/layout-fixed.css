@@ -66,11 +66,11 @@ body {
 }
 
 #header .block.logo-container {
-  width: 33.3%;
+  width: 220px;
 }
 #header .block {
   float: left;
-  width: 66.6667%;
+  width: 720px;
 }
 
 #header .region-header-bottom .block {
