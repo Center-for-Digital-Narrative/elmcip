@@ -11,6 +11,9 @@ li a.active {
   color: #333333;
 }
 
+.region-header .logo-container a:hover {
+  border-bottom: none;
+}
 .region-header .logo-container a {
   border-bottom: none;
 }
