@@ -3,13 +3,6 @@
  * Drupal core block Styling.
  */
 
-#header a {
-  color: #1d1d1d;
-}
-#header a:hover {
-  color: #000;
-}
-
 /**
  * Menu classes.
  */
