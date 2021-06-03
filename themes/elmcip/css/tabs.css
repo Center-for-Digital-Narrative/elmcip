@@ -5,18 +5,23 @@
  * Adds styles for the primary and secondary tabs.
  */
 
-.logged-in .region-content {
-  border-top: 1px solid #dddddd;
-}
-
 .tabs-wrapper {
   margin-bottom: 2em;
 }
 
-ul.primary {
+ul.primary,
+.tabs.primary .tab {
   display: flex;
+}
+
+ul.primary {
+  border: none;
   margin: 0;
   padding: 0;
+}
+
+ul.primary li a {
+  color: #858585;
 }
 
 ul.primary li {
@@ -25,11 +30,18 @@ ul.primary li {
 }
 
 ul.primary li a {
+  align-items: center;
   background-color: #F5F5F5;
   border: none;
-  margin: 0;
+  flex-grow: 1;
+  margin: 1px;
   padding: 0.6875em 25px;
   text-align: center;
+  transition: background-color 0.2s;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 
 ul.primary li a:before {
@@ -38,6 +50,7 @@ ul.primary li a:before {
   margin-right: 10px;
 }
 
+ul.primary li.active a:hover,
 ul.primary li a:hover {
   color: #45B045;
   background-color: #D2D2D2;
@@ -46,5 +59,17 @@ ul.primary li a:hover {
 ul.primary li.active a {
   background-color: #F5F5F5;
   border: none;
-  border-bottom: 9px solid #45B045;
+  color: #000;
+  position: relative;
+  /*border-bottom: 9px solid #45B045;*/
+}
+
+ul.primary li.active a::after {
+  width: 100%;
+  height: auto;
+  border-top: 6px solid #45B045;
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  left: 0;
 }
