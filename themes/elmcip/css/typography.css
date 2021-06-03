@@ -89,10 +89,14 @@ a.facetapi-inactive {
   font-weight: normal;
 }
 
+.field .field-label,
 .not-approved,
 .approved,
 .label-above {
-  font-weight: bold;
+  font-weight: normal;
+  font-style: italic;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
 }
 
 .group-left .title {
