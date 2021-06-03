@@ -183,7 +183,6 @@ body {
   padding: 0;
 }
 
-.group-left .inner,
 #frontpage .pane-content {
   padding: 10px;
 }
@@ -298,17 +297,13 @@ body {
   width: 300px;
 }
 
-.group-left .inner {
-  padding: 1.5em 10px;
-}
-
 .group-left .title {
   border-bottom: 1px solid #bbb;
 }
 
 .group-right {
   float: left;
-  margin: 1.5em 0 0 10px;
+  margin: 18px 0 0 10px;
   width: 620px;
 }
 
