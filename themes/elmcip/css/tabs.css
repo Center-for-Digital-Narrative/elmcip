@@ -1,6 +1,5 @@
 /**
  * @file
- *
  * Tabs Styling.
  *
  * Adds styles for the primary and secondary tabs.
@@ -10,20 +9,25 @@
   border-top: 1px solid #dddddd;
 }
 
+.tabs-wrapper {
+  margin-bottom: 2em;
+}
+
 ul.primary {
-  border: none;
-  line-height: 1.5em;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
+ul.primary li {
+  background-color: #D2D2D2;
+  display: flex;
+}
+
 ul.primary li a {
-  background-color: transparent;
-  border: 1px solid transparent;
-  color: #BBBBBB;
-  display: inline-block;
-  font-weight: 600;
-  margin: 0 0 -1px;
+  background-color: #F5F5F5;
+  border: none;
+  margin: 0;
   padding: 0.6875em 25px;
   text-align: center;
 }
@@ -35,15 +39,12 @@ ul.primary li a:before {
 }
 
 ul.primary li a:hover {
-  background-color: transparent;
-  border: 1px solid transparent;
-  color: #888888;
+  color: #45B045;
+  background-color: #D2D2D2;
 }
 
 ul.primary li.active a {
-  background-color: transparent;
-  border: 1px solid #dddddd;
-  border-top: 2px solid #AC0009;;
-  border-bottom: 1px solid #FFFFFF;
-  color: #555;
+  background-color: #F5F5F5;
+  border: none;
+  border-bottom: 9px solid #45B045;
 }

@@ -118,17 +118,19 @@
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php if ($tabs = render($tabs)): ?>
-        <div class="tabs"><?php print $tabs; ?></div>
+        <div class="tabs tabs-wrapper"><?php print $tabs; ?></div>
       <?php endif; ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
+
+        <?php print render($title_prefix); ?>
+        <?php if ($title): ?>
+            <h1 class="title" id="page-title"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
+
+        <?php print render($page['help']); ?>
+<?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
