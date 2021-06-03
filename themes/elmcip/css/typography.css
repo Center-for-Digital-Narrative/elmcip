@@ -98,12 +98,13 @@ a.facetapi-inactive {
   font-weight: normal;
   font-style: italic;
   font-family: "PT Serif", serif;
-  font-size: 16px;
+  font-size: 1.142em;
 }
 
 .group-left .title {
-  font-weight: bold;
-  text-transform: uppercase;
+  font-family: "PT Serif", serif;
+  font-size: 1.285em;
+  text-align: center;
 }
 
 #frontpage h2 {
