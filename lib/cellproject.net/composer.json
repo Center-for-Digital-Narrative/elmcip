@@ -8,7 +8,7 @@
         "autoloader-suffix": "ComposerManager",
         "vendor-dir": "../../drupal/../lib/cellproject.net/vendor",
         "platform": {
-            "php": "7.2"
+            "php": "7.3"
         }
     },
     "prefer-stable": true
