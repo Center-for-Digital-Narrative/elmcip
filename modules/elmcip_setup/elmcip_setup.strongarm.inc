@@ -23,8 +23,8 @@ function elmcip_setup_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'views_block_hashes';
   $strongarm->value = array(
-    'f2864537459f75cf830e29ad60915c2a' => 'events_on_individual_organizer_page-block_1',
     'dd455d7d81381709ba3ef90bcf5df0d2' => 'research_collection_page-block_1',
+    'f2864537459f75cf830e29ad60915c2a' => 'events_on_individual_organizer_page-block_1',
   );
   $export['views_block_hashes'] = $strongarm;
 
@@ -36,11 +36,11 @@ function elmcip_setup_strongarm() {
     '_elmcip_conference_artworks' => TRUE,
     'conference_participants' => TRUE,
     'eva_research_collection' => TRUE,
+    'oai_pmh_biblio' => TRUE,
     'series_pages_to_fix' => TRUE,
+    'taxonomy_term' => TRUE,
     'user_location_table' => FALSE,
     'works_multiple_refs' => TRUE,
-    'taxonomy_term' => TRUE,
-    'oai_pmh_biblio' => TRUE,
   );
   $export['views_defaults'] = $strongarm;
 
