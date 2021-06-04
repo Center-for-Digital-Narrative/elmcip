@@ -9,7 +9,7 @@
 	url = git@github.com:elmcip/elmcip_base.git
 [submodule "cellproject.net/cellproject"]
 	path = cellproject.net/cellproject
-	url = git@github.com:smbjorklund/cellproject.git
+	url = https://github.com/smbjorklund/cellproject.git
 [submodule "cellproject.net/themes/centum"]
 	path = cellproject.net/themes/centum
-	url = git@github.com:smbjorklund/centum.git
+	url = https://github.com/smbjorklund/centum.git
