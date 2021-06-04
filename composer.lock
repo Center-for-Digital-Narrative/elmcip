@@ -4,8 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e20ec088539af1bdf30511ccc446768",
+    "content-hash": "fcb789edf0d8ed5f1c4a79797eee907c",
     "packages": [
+        {
+            "name": "ckeditor/ckeditor",
+            "version": "dev-full/4.16.x",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor4-releases.git",
+                "reference": "87298aeaf20c5496464c9620c00f7cce93380002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor4-releases/zipball/87298aeaf20c5496464c9620c00f7cce93380002",
+                "reference": "87298aeaf20c5496464c9620c00f7cce93380002",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+",
+                "LGPL-2.1+",
+                "MPL-1.1+"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource",
+                    "homepage": "https://cksource.com"
+                }
+            ],
+            "description": "JavaScript WYSIWYG web text editor.",
+            "homepage": "https://ckeditor.com/ckeditor-4/",
+            "keywords": [
+                "CKEditor",
+                "ckeditor4",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ],
+            "support": {
+                "forum": "https://stackoverflow.com/tags/ckeditor",
+                "issues": "https://github.com/ckeditor/ckeditor4/issues",
+                "source": "https://github.com/ckeditor/ckeditor4",
+                "wiki": "https://ckeditor.com/docs/ckeditor4/latest/"
+            },
+            "time": "2021-05-20T12:06:25+00:00"
+        },
         {
             "name": "consolidation/annotated-command",
             "version": "2.12.1",
@@ -2159,6 +2207,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "ckeditor/ckeditor": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

@@ -1,5 +1,6 @@
 {
     "require": {
+        "ckeditor/ckeditor": "dev-full/4.16.x",
         "drush/drush": "^8.0"
     }
   ,
