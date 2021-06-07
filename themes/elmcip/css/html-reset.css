@@ -42,9 +42,17 @@ body {
   /* line-height: 1.5em; /* 12px x 1.5 = 18px */
 
   /* Use a 14px base font size with a 21px line height */
-  font-size: 0.875em; /* 16px x .875 = 14px */
+  font-size: 1em; /* 16px x .875 = 14px */
   line-height: 1.5em; /* 14px x 1.5 = 21px */
 }
+
+@media only screen and (min-width: 960px) {
+  #page {
+    font-size: 0.875em; /* 16px x .875 = 14px */
+    line-height: 1.5em; /* 14px x 1.5 = 21px */
+  }
+}
+
 
 /*
  * Instead of relying on the fonts that are available on a user's computer, you
