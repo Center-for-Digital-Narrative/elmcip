@@ -48,10 +48,6 @@ div#site-name {
   font-weight: normal;
 }
 
-a.facetapi-limit-link {
-  color: #ac0009;
-}
-
 .lighter,
 .term_missing {
   color: #999;
@@ -91,6 +87,7 @@ a.facetapi-inactive {
   font-weight: normal;
 }
 
+.block-facetapi .block-title,
 .field .field-label,
 .not-approved,
 .approved,

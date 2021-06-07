@@ -3,6 +3,14 @@
  * Style to control search related content.
  */
 
+.facetapi-checkbox {
+  margin-left: 0.5em;
+}
+
+a.facetapi-limit-link {
+  color: #006638;
+}
+
 .block-facetapi ul {
   padding: 0 0 0 16px;
 }
