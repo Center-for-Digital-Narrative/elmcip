@@ -48,6 +48,21 @@ body {
 /*
  * Header.
  */
+.region-header {
+  position: relative;
+  margin: 10px;
+}
+
+.region-header .block {
+  float: left;
+  width: 720px;
+}
+
+.region-header .menu a {
+  float: right;
+  margin: 0 0 0 1.5em;
+}
+
 #header .block .content {
   margin: 0 10px;
 }
@@ -56,21 +71,12 @@ body {
   margin: 0;
 }
 
-.region-header {
-  position: relative;
-  margin: 10px;
-}
-
 .region-header-bottom {
   margin: 0 0 1em 0;
 }
 
 #header .block.logo-container {
   width: 220px;
-}
-#header .block {
-  float: left;
-  width: 720px;
 }
 
 #header .region-header-bottom .block {
@@ -91,18 +97,6 @@ body {
 
 #header .logo-container > a {
   margin: 0;
-}
-
-#header a,
-#header .block.first.last a {
-  float: right;
-  margin: 0.714em 0 0.714em 1.5em;
-}
-
-#header .even a,
-#header .block.last a {
-  float: right;
-  margin: 0.714em 0 0.714em 1.5em;
 }
 
 .region-footer .menu.social {

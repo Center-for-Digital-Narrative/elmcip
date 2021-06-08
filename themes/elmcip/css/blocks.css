@@ -6,6 +6,13 @@
 /**
  * Menu classes.
  */
+
+.region-header .block-menu.last {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 #block-menu-primary-links {
   background-color: #bebdae;
   float: left;

@@ -1,6 +1,6 @@
 .region-footer .block {
-  font-size: 1.125rem;
-  line-height: 1.25rem;
+  font-size: 1.3125rem;
+  line-height: 1.3125rem;
 }
 
 .region-footer .block li {
@@ -8,8 +8,8 @@
 }
 
 blockquote,
-#header a {
-  font-size: 1.125rem; /* 16px */
+.region-header a {
+  font-size: 1.3125rem;
 }
 
 blockquote {
