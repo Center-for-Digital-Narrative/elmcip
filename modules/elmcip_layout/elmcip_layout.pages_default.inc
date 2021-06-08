@@ -20,13 +20,13 @@ function elmcip_layout_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Profile user dash',
+    'contexts' => array(),
+    'css' => '',
+    'css_id' => '',
     'no_blocks' => 0,
     'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
     'relationships' => array(),
+    'title' => 'Profile user dash',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -53,10 +53,10 @@ function elmcip_layout_default_page_manager_handlers() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => '',
-    'title' => '',
     'body' => '',
     'format' => '4',
     'substitute' => TRUE,
+    'title' => '',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -151,31 +151,31 @@ function elmcip_layout_default_page_manager_pages() {
   $page->admin_description = 'Show all content in the knowledge base but enable users to sort based on record status';
   $page->path = 'knowledgebase/status';
   $page->access = array(
+    'logic' => 'and',
     'plugins' => array(
       0 => array(
+        'context' => 'logged-in-user',
         'name' => 'perm',
+        'not' => FALSE,
         'settings' => array(
           'perm' => 'access content',
         ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
       ),
     ),
-    'logic' => 'and',
-    'type' => 'none',
     'settings' => NULL,
+    'type' => 'none',
   );
   $page->menu = array(
-    'type' => 'tab',
-    'title' => 'Record Status',
     'name' => 'primary-links',
-    'weight' => '1',
     'parent' => array(
-      'type' => 'none',
-      'title' => 'knowledgebase',
       'name' => 'navigation',
+      'title' => 'knowledgebase',
+      'type' => 'none',
       'weight' => '0',
     ),
+    'title' => 'Record Status',
+    'type' => 'tab',
+    'weight' => '1',
   );
   $page->arguments = array();
   $page->conf = array();
@@ -189,28 +189,28 @@ function elmcip_layout_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Content status',
-    'no_blocks' => 1,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
     'access' => array(
       'logic' => 'and',
     ),
+    'contexts' => array(),
+    'css' => '',
+    'css_id' => '',
+    'no_blocks' => 1,
+    'pipeline' => 'standard',
+    'relationships' => array(),
+    'title' => 'Content status',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
   $display->layout_settings = array();
   $display->panel_settings = array(
+    'middle' => array(
+      'style' => '-1',
+    ),
+    'style' => 'default',
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
-    ),
-    'style' => 'default',
-    'middle' => array(
-      'style' => '-1',
     ),
   );
   $display->cache = array();
@@ -254,8 +254,8 @@ function elmcip_layout_default_page_manager_pages() {
   $page->admin_description = 'ELMCIP front page';
   $page->path = 'front';
   $page->access = array(
-    'type' => 'none',
     'settings' => NULL,
+    'type' => 'none',
   );
   $page->menu = array();
   $page->arguments = array();
@@ -272,32 +272,101 @@ function elmcip_layout_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'FrontPanel',
+    'body_classes_to_add' => '',
+    'body_classes_to_remove' => '',
+    'contexts' => array(),
+    'css' => '',
+    'css_id' => 'frontpage',
     'no_blocks' => 0,
     'pipeline' => 'standard',
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
-    'css_id' => 'frontpage',
-    'css' => '',
-    'contexts' => array(),
     'relationships' => array(),
+    'title' => 'FrontPanel',
   );
   $display = new panels_display();
   $display->layout = 'flexible';
   $display->layout_settings = array(
     'items' => array(
+      'about' => array(
+        'class' => '',
+        'parent' => 'main-row',
+        'title' => 'about',
+        'type' => 'region',
+        'width' => 50,
+        'width_type' => '%',
+      ),
+      'anothology2' => array(
+        'class' => '',
+        'parent' => '6',
+        'title' => 'Anthology2',
+        'type' => 'region',
+        'width' => '31.06598525171712',
+        'width_type' => '%',
+      ),
+      'anthology1' => array(
+        'class' => '',
+        'parent' => '6',
+        'title' => 'Anthology1',
+        'type' => 'region',
+        'width' => '51.40670079239713',
+        'width_type' => '%',
+      ),
       'canvas' => array(
-        'type' => 'row',
-        'contains' => 'column',
         'children' => array(
           0 => 'main',
         ),
+        'contains' => 'column',
         'parent' => NULL,
+        'type' => 'row',
       ),
-      'main' => array(
-        'type' => 'column',
+      'conference' => array(
+        'class' => '',
+        'parent' => '8',
+        'title' => 'Conference1',
+        'type' => 'region',
+        'width' => '36.49959607701835',
+        'width_type' => '%',
+      ),
+      'conference2_' => array(
+        'class' => '',
+        'parent' => '8',
+        'title' => 'Conference2',
+        'type' => 'region',
+        'width' => '63.500403922981654',
+        'width_type' => '%',
+      ),
+      'kbheader_' => array(
+        'class' => '',
+        'parent' => '3',
+        'title' => 'KB header',
+        'type' => 'region',
         'width' => 100,
         'width_type' => '%',
+      ),
+      'kbleft' => array(
+        'class' => '',
+        'parent' => '4',
+        'title' => 'KBleft',
+        'type' => 'region',
+        'width' => '32.87279486222186',
+        'width_type' => '%',
+      ),
+      'kbmiddle' => array(
+        'class' => '',
+        'parent' => '4',
+        'title' => 'KBmiddle',
+        'type' => 'region',
+        'width' => '33.76515522630505',
+        'width_type' => '%',
+      ),
+      'kbright' => array(
+        'class' => '',
+        'parent' => '4',
+        'title' => 'KBright',
+        'type' => 'region',
+        'width' => '33.3620499114731',
+        'width_type' => '%',
+      ),
+      'main' => array(
         'children' => array(
           0 => 'main-row',
           1 => 3,
@@ -307,199 +376,104 @@ function elmcip_layout_default_page_manager_pages() {
           5 => 10,
         ),
         'parent' => 'canvas',
+        'type' => 'column',
+        'width' => 100,
+        'width_type' => '%',
       ),
       'main-row' => array(
-        'type' => 'row',
-        'contains' => 'region',
         'children' => array(
           0 => 'about',
           1 => 'news',
         ),
-        'parent' => 'main',
         'class' => 'general',
-      ),
-      'about' => array(
-        'type' => 'region',
-        'title' => 'about',
-        'width' => 50,
-        'width_type' => '%',
-        'parent' => 'main-row',
-        'class' => '',
+        'contains' => 'region',
+        'parent' => 'main',
+        'type' => 'row',
       ),
       'news' => array(
-        'type' => 'region',
+        'class' => '',
+        'parent' => 'main-row',
         'title' => 'news',
+        'type' => 'region',
         'width' => 50,
         'width_type' => '%',
-        'parent' => 'main-row',
+      ),
+      'sponsors' => array(
         'class' => '',
+        'parent' => '10',
+        'title' => 'Sponsors',
+        'type' => 'region',
+        'width' => 100,
+        'width_type' => '%',
       ),
       3 => array(
-        'type' => 'row',
-        'contains' => 'region',
         'children' => array(
           0 => 'kbheader_',
         ),
-        'parent' => 'main',
         'class' => 'kb-header',
-      ),
-      'kbheader_' => array(
-        'type' => 'region',
-        'title' => 'KB header',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '3',
-        'class' => '',
+        'contains' => 'region',
+        'parent' => 'main',
+        'type' => 'row',
       ),
       4 => array(
-        'type' => 'row',
-        'contains' => 'region',
         'children' => array(
           0 => 'kbleft',
           1 => 'kbmiddle',
           2 => 'kbright',
         ),
-        'parent' => 'main',
         'class' => 'kb',
-      ),
-      'kbleft' => array(
-        'type' => 'region',
-        'title' => 'KBleft',
-        'width' => '32.87279486222186',
-        'width_type' => '%',
-        'parent' => '4',
-        'class' => '',
-      ),
-      'kbmiddle' => array(
-        'type' => 'region',
-        'title' => 'KBmiddle',
-        'width' => '33.76515522630505',
-        'width_type' => '%',
-        'parent' => '4',
-        'class' => '',
-      ),
-      'kbright' => array(
-        'type' => 'region',
-        'title' => 'KBright',
-        'width' => '33.3620499114731',
-        'width_type' => '%',
-        'parent' => '4',
-        'class' => '',
+        'contains' => 'region',
+        'parent' => 'main',
+        'type' => 'row',
       ),
       6 => array(
-        'type' => 'row',
-        'contains' => 'region',
         'children' => array(
           0 => 'anthology1',
           1 => 'anothology2',
         ),
-        'parent' => 'main',
         'class' => 'anthology',
-      ),
-      'anthology1' => array(
-        'type' => 'region',
-        'title' => 'Anthology1',
-        'width' => '51.40670079239713',
-        'width_type' => '%',
-        'parent' => '6',
-        'class' => '',
-      ),
-      'anothology2' => array(
-        'type' => 'region',
-        'title' => 'Anthology2',
-        'width' => '31.06598525171712',
-        'width_type' => '%',
-        'parent' => '6',
-        'class' => '',
+        'contains' => 'region',
+        'parent' => 'main',
+        'type' => 'row',
       ),
       8 => array(
-        'type' => 'row',
-        'contains' => 'region',
         'children' => array(
           0 => 'conference',
           1 => 'conference2_',
         ),
-        'parent' => 'main',
         'class' => 'conference',
-      ),
-      'conference' => array(
-        'type' => 'region',
-        'title' => 'Conference1',
-        'width' => '36.49959607701835',
-        'width_type' => '%',
-        'parent' => '8',
-        'class' => '',
-      ),
-      'conference2_' => array(
-        'type' => 'region',
-        'title' => 'Conference2',
-        'width' => '63.500403922981654',
-        'width_type' => '%',
-        'parent' => '8',
-        'class' => '',
+        'contains' => 'region',
+        'parent' => 'main',
+        'type' => 'row',
       ),
       10 => array(
-        'type' => 'row',
-        'contains' => 'region',
         'children' => array(
           0 => 'sponsors',
         ),
-        'parent' => 'main',
         'class' => 'sponsors',
-      ),
-      'sponsors' => array(
-        'type' => 'region',
-        'title' => 'Sponsors',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '10',
-        'class' => '',
+        'contains' => 'region',
+        'parent' => 'main',
+        'type' => 'row',
       ),
     ),
   );
   $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'about' => NULL,
-      'separator1' => NULL,
-      'news' => NULL,
-      'kbheader' => NULL,
-      'conference2' => NULL,
-      'kbheader_' => NULL,
-      'kbleft' => NULL,
-      'kbmiddle' => NULL,
-      'kbright' => NULL,
-      'separator2' => NULL,
-      'anthology1' => NULL,
-      'anothology2' => NULL,
-      'separator3' => NULL,
-      'conference' => NULL,
-      'conference2_' => NULL,
-      'separator3_' => NULL,
-      'sponsors' => NULL,
-    ),
-    'conference2_' => array(
-      'style' => 'default',
-    ),
-    'conference' => array(
-      'style' => 'default',
-    ),
-    'anthology1' => array(
+    'about' => array(
       'style' => 'default',
     ),
     'anothology2' => array(
       'style' => 'default',
     ),
-    'sponsors' => array(
+    'anthology1' => array(
+      'style' => 'default',
+    ),
+    'conference' => array(
+      'style' => 'default',
+    ),
+    'conference2_' => array(
       'style' => 'default',
     ),
     'kbheader_' => array(
-      'style' => 'default',
-    ),
-    'about' => array(
-      'style' => 'default',
-    ),
-    'news' => array(
       'style' => 'default',
     ),
     'kbleft' => array(
@@ -510,6 +484,32 @@ function elmcip_layout_default_page_manager_pages() {
     ),
     'kbright' => array(
       'style' => 'default',
+    ),
+    'news' => array(
+      'style' => 'default',
+    ),
+    'sponsors' => array(
+      'style' => 'default',
+    ),
+    'style_settings' => array(
+      'about' => NULL,
+      'anothology2' => NULL,
+      'anthology1' => NULL,
+      'conference' => NULL,
+      'conference2' => NULL,
+      'conference2_' => NULL,
+      'default' => NULL,
+      'kbheader' => NULL,
+      'kbheader_' => NULL,
+      'kbleft' => NULL,
+      'kbmiddle' => NULL,
+      'kbright' => NULL,
+      'news' => NULL,
+      'separator1' => NULL,
+      'separator2' => NULL,
+      'separator3' => NULL,
+      'separator3_' => NULL,
+      'sponsors' => NULL,
     ),
   );
   $display->cache = array();
@@ -528,18 +528,18 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => 'About',
-    'title' => 'RESEARCH IN ELECTRONIC LITERATURE',
     'body' => 'Electronic Literature as a Model of Creativity and Innovation in Practice (ELMCIP) is a collaborative research project funded by Humanities in the European Research Area (HERA) JRP for Creativity and Innovation. ELMCIP involves seven European academic research partners and one non-academic partner who are investigating how creative communities of practitioners form within a transnational and transcultural context in a globalized and distributed communication environment. Focusing on the electronic literature community in Europe as a model of networked creativity and innovation in practice, ELMCIP is intended both to study the formation and interactions of that community and to further electronic literature research and practice in Europe.',
     'format' => '3',
     'substitute' => TRUE,
+    'title' => 'RESEARCH IN ELECTRONIC LITERATURE',
   );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-about',
     'css_class' => 'transparent',
+    'css_id' => 'front-page-pane-about',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -556,18 +556,18 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => 'Anthology image',
-    'title' => '',
     'body' => '<img src="/sites/default/files/logos/anthology_image.png" alt="Anthology image" width="340px" />',
     'format' => 'ds_code',
     'substitute' => TRUE,
+    'title' => '',
   );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-anthology2',
     'css_class' => 'transparent',
+    'css_id' => 'front-page-pane-anthology2',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -584,18 +584,18 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => 'Anthology1',
-    'title' => 'Anthology of European Electronic Literature',
     'body' => 'The <a href="http://anthology.elmcip.net">ELMCIP Anthology of European Electronic Literature</a>  edited by Maria Engberg, Talan Memmott, and David Prater, is now online. The anthology is intended to provide educators, students and the general public with a free curricular resource of electronic literary works produced in Europe. The works were selected, after an open call, based on four main criteria: European diversity, Formal diversity, Historical relevance, and Pedagogical relevance. The anthology includes 18 works of electronic literature, pedagogical materials, cross-links to relevant materials in the ELMCIP Knowledge Base, and video presentations. The anthology is available both online and in a USB edition available for libraries and institutions.',
     'format' => '3',
     'substitute' => TRUE,
+    'title' => 'Anthology of European Electronic Literature',
   );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-anthology1',
     'css_class' => 'transparent',
+    'css_id' => 'front-page-pane-anthology1',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -612,10 +612,10 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => 'Conference1',
-    'title' => '',
     'body' => '<img src="./sites/default/files/media/story/images/rts.jpg" alt="Remediating the Social" title="Remediating the Social" />',
     'format' => '1',
     'substitute' => TRUE,
+    'title' => '',
     'title_heading' => 'h2',
   );
   $pane->cache = array();
@@ -623,8 +623,8 @@ function elmcip_layout_default_page_manager_pages() {
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-conference1',
     'css_class' => 'transparent',
+    'css_id' => 'front-page-pane-conference1',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -641,18 +641,18 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => 'Conference2',
-    'title' => 'Remediating the Social',
     'body' => 'The final ELMCIP Conference <a href="http://elmcip.net/event/elmcip-conference-remediating-social">Remediating the Social</a> was hosted at Edinburgh College of Art (eca) of the University of Edinburgh Nov. 1-3, 2012, in collaboration with New Media Scotland and University College Falmouth. An associated exhibition was held at Inspace, a purpose-built research and exhibition facility in the University of Edinburgh\'s School of Informatics. The proceedings of the conference have been published as a beautifully produced 160 page book, including full colour artist\'s pages documenting the works show at the exhibition. The <a href="http://amzn.com/8299908906">Remediating the Social book</a> is available for purchase at Amazon, and as a free downloadable <a href="http://elmcip.net/critical-writing/remediating-social-e-book">e-book</a>. <a href="http://elmcip.net/sites/default/files/files/attachments/criticalwriting/remediating_the_social_full.pdf">(PDF download)</a> Online <a href="http://elmcip.net/event/elmcip-conference-remediating-social">documentation</a> includes abstracts and Bambuser videos of all of the academic presentations, photos, and more.',
     'format' => '3',
     'substitute' => TRUE,
+    'title' => 'Remediating the Social',
   );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-conference2',
     'css_class' => 'transparent',
+    'css_id' => 'front-page-pane-conference2',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -668,25 +668,25 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'markup' => 'h4',
     'class' => '',
     'id' => 'front-page-pane-kbheader',
+    'markup' => 'h4',
     'override_title' => 1,
     'override_title_text' => 'ELMCIP KNOWLEDGE BASE',
   );
   $pane->cache = array(
     'method' => 'simple',
     'settings' => array(
-      'lifetime' => '604800',
       'granularity' => 'none',
+      'lifetime' => '604800',
     ),
   );
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-kbheader',
     'css_class' => '',
+    'css_id' => 'front-page-pane-kbheader',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -703,18 +703,18 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => 'KBleft',
-    'title' => 'Knowledge Base',
     'body' => '<p>The <a href="knowledgebase">ELMCIP Electronic Literature Knowledge Base</a> is a research resource for electronic literature. An open-access, contributory database developed in Drupal 7, it provides cross-referenced, contextualized information about <a href="author">authors</a>, <a href="work">creative works</a>, <a href="critical_writing">critical writing</a>, <a href="event">events</a>, <a href="organization">organizations</a>, <a href="publisher">publishers</a>, <a href="teaching_resource">teaching resources</a>, <a href=" research_collections"> research collections</a>, and <a href="db_archives">databases and archives</a>. Contributors should <a href="user/login">log in</a> to the Knowledge Base to enter new records and <a href="node/add">add content</a>.</p>',
     'format' => '2',
     'substitute' => TRUE,
+    'title' => 'Knowledge Base',
   );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-kbleft',
     'css_class' => '',
+    'css_id' => 'front-page-pane-kbleft',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -730,28 +730,28 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 0,
-    'nodes_per_page' => '5',
-    'pager_id' => '0',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '5',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '0',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 0,
   );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-kbmiddle',
     'css_class' => '',
+    'css_id' => 'front-page-pane-kbmiddle',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -767,28 +767,28 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 0,
-    'nodes_per_page' => '5',
-    'pager_id' => '0',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_2',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '5',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '0',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 0,
   );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-kbright',
     'css_class' => '',
+    'css_id' => 'front-page-pane-kbright',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -804,29 +804,29 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 0,
-    'nodes_per_page' => '8',
-    'pager_id' => '0',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_2',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '8',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
-    'override_title_text' => '',
     'override_title_heading' => 'h2',
+    'override_title_text' => '',
+    'pager_id' => '0',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 0,
   );
   $pane->cache = array();
   $pane->style = array(
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => '#front-page-pane-news',
     'css_class' => 'transparent',
+    'css_id' => '#front-page-pane-news',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -850,8 +850,8 @@ function elmcip_layout_default_page_manager_pages() {
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'front-page-pane-sponsors',
     'css_class' => '',
+    'css_id' => 'front-page-pane-sponsors',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -874,31 +874,31 @@ function elmcip_layout_default_page_manager_pages() {
   $page->admin_description = 'Show all content in the knowledge base but enable users to sort based on record status';
   $page->path = 'knowledgebase/latestrevisions';
   $page->access = array(
+    'logic' => 'and',
     'plugins' => array(
       0 => array(
+        'context' => 'logged-in-user',
         'name' => 'perm',
+        'not' => FALSE,
         'settings' => array(
           'perm' => 'view revisions',
         ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
       ),
     ),
-    'logic' => 'and',
-    'type' => 'none',
     'settings' => NULL,
+    'type' => 'none',
   );
   $page->menu = array(
-    'type' => 'tab',
-    'title' => 'Latest Revisions',
     'name' => 'primary-links',
-    'weight' => '2',
     'parent' => array(
-      'type' => 'none',
-      'title' => 'knowledgebase',
       'name' => 'navigation',
+      'title' => 'knowledgebase',
+      'type' => 'none',
       'weight' => '0',
     ),
+    'title' => 'Latest Revisions',
+    'type' => 'tab',
+    'weight' => '2',
   );
   $page->arguments = array();
   $page->conf = array();
@@ -912,28 +912,28 @@ function elmcip_layout_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Content status',
-    'no_blocks' => 1,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
     'access' => array(
       'logic' => 'and',
     ),
+    'contexts' => array(),
+    'css' => '',
+    'css_id' => '',
+    'no_blocks' => 1,
+    'pipeline' => 'standard',
+    'relationships' => array(),
+    'title' => 'Content status',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
   $display->layout_settings = array();
   $display->panel_settings = array(
+    'middle' => array(
+      'style' => '-1',
+    ),
+    'style' => 'default',
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
-    ),
-    'style' => 'default',
-    'middle' => array(
-      'style' => '-1',
     ),
   );
   $display->cache = array();
@@ -977,22 +977,22 @@ function elmcip_layout_default_page_manager_pages() {
   $page->admin_description = 'Exposes literature content of the site';
   $page->path = 'knowledgebase';
   $page->access = array(
-    'plugins' => array(),
     'logic' => 'and',
-    'type' => 'none',
+    'plugins' => array(),
     'settings' => NULL,
+    'type' => 'none',
   );
   $page->menu = array(
-    'type' => 'normal',
-    'title' => 'Knowledge Base',
     'name' => 'primary-links',
-    'weight' => '0',
     'parent' => array(
-      'type' => 'none',
-      'title' => '',
       'name' => 'navigation',
+      'title' => '',
+      'type' => 'none',
       'weight' => '0',
     ),
+    'title' => 'Knowledge Base',
+    'type' => 'normal',
+    'weight' => '0',
   );
   $page->arguments = array();
   $page->conf = array();
@@ -1006,34 +1006,19 @@ function elmcip_layout_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Panel',
+    'contexts' => array(),
+    'css' => '',
+    'css_id' => 'kbpage',
     'no_blocks' => 1,
     'pipeline' => 'standard',
-    'css_id' => 'kbpage',
-    'css' => '',
-    'contexts' => array(),
     'relationships' => array(),
+    'title' => 'Panel',
   );
   $display = new panels_display();
   $display->layout = 'twocol_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
-    'style_settings' => array(
-      'top' => NULL,
-      'left' => NULL,
-      'right' => NULL,
-      'bottom' => NULL,
-      'middle' => NULL,
-      'left_above' => NULL,
-      'right_above' => NULL,
-      'left_below' => NULL,
-      'right_below' => NULL,
-      'default' => array(
-        'corner_location' => 'pane',
-      ),
-    ),
-    'style' => 'rounded_corners',
-    'top' => array(
+    'bottom' => array(
       'style' => 'default',
     ),
     'left' => array(
@@ -1042,7 +1027,22 @@ function elmcip_layout_default_page_manager_pages() {
     'right' => array(
       'style' => 'default',
     ),
-    'bottom' => array(
+    'style' => 'rounded_corners',
+    'style_settings' => array(
+      'bottom' => NULL,
+      'default' => array(
+        'corner_location' => 'pane',
+      ),
+      'left' => NULL,
+      'left_above' => NULL,
+      'left_below' => NULL,
+      'middle' => NULL,
+      'right' => NULL,
+      'right_above' => NULL,
+      'right_below' => NULL,
+      'top' => NULL,
+    ),
+    'top' => array(
       'style' => 'default',
     ),
   );
@@ -1061,20 +1061,20 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '10',
-    'pager_id' => '',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '10',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 1,
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1096,20 +1096,20 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '5',
-    'pager_id' => '0',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '5',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '0',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 1,
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1131,20 +1131,20 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '5',
-    'pager_id' => '2',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '5',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '2',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 1,
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1166,20 +1166,20 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '20',
-    'pager_id' => '',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '20',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 1,
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1200,20 +1200,20 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '20',
-    'pager_id' => '',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '20',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 1,
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1235,23 +1235,23 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array(
     'plugins' => array(
       0 => array(
+        'context' => 'logged-in-user',
         'name' => 'role',
+        'not' => FALSE,
         'settings' => array(
           'rids' => array(
             0 => 1,
           ),
         ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
       ),
     ),
   );
   $pane->configuration = array(
     'admin_title' => '',
-    'title' => '',
     'body' => '',
     'format' => 0,
     'substitute' => TRUE,
+    'title' => '',
   );
   $pane->cache = array(
     'method' => '0',
@@ -1277,24 +1277,24 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array(
     'plugins' => array(
       0 => array(
+        'context' => 'logged-in-user',
         'name' => 'role',
+        'not' => FALSE,
         'settings' => array(
           'rids' => array(
             0 => 2,
           ),
         ),
-        'context' => 'logged-in-user',
-        'not' => FALSE,
       ),
     ),
   );
   $pane->configuration = array(
     'admin_title' => 'contribute_pane',
-    'title' => 'Contribute to the Knowledge Base',
     'body' => 'Add a new ',
     'format' => '1',
-    'substitute' => TRUE,
     'name' => 'contribute_pane',
+    'substitute' => TRUE,
+    'title' => 'Contribute to the Knowledge Base',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1302,8 +1302,8 @@ function elmcip_layout_default_page_manager_pages() {
     'style' => 'default',
   );
   $pane->css = array(
-    'css_id' => '',
     'css_class' => '',
+    'css_id' => '',
   );
   $pane->extras = array();
   $pane->position = 1;
@@ -1320,10 +1320,10 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => '',
-    'title' => '',
     'body' => '',
     'format' => 0,
     'substitute' => TRUE,
+    'title' => '',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1344,20 +1344,20 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '10',
-    'pager_id' => '',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '10',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 1,
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1398,20 +1398,20 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '20',
-    'pager_id' => '',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '20',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 1,
   );
   $pane->cache = array();
   $pane->style = array(
@@ -1451,20 +1451,20 @@ function elmcip_layout_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '5',
-    'pager_id' => '',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
     'args' => '',
-    'url' => '',
     'display' => 'block_1',
+    'feed_icons' => 0,
+    'link_to_view' => 0,
+    'more_link' => 0,
+    'nodes_per_page' => '5',
+    'offset' => '0',
+    'override_pager_settings' => 0,
     'override_title' => 0,
     'override_title_text' => '',
+    'pager_id' => '',
+    'panel_args' => 0,
+    'url' => '',
+    'use_pager' => 1,
   );
   $pane->cache = array();
   $pane->style = array(

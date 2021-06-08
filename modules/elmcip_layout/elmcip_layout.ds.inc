@@ -19,19 +19,19 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
+      'format' => 'default',
+      'label' => 'hidden',
       'weight' => '1',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
     ),
     'post_date' => array(
-      'weight' => '5',
-      'label' => 'hidden',
       'format' => 'ds_post_date_long',
+      'label' => 'hidden',
+      'weight' => '5',
+    ),
+    'title' => array(
+      'format' => 'default',
+      'label' => 'hidden',
+      'weight' => '0',
     ),
   );
   $export['node|class_group|default'] = $ds_fieldsetting;
@@ -44,19 +44,19 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
           'fis-at' => '',
+          'fis-cl' => 'title',
           'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
         ),
       ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
   );
   $export['node|class_group|full'] = $ds_fieldsetting;
@@ -68,52 +68,52 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'critical_writing';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fi' => TRUE,
-          'fi-el' => 'div',
-          'fi-cl' => 'title',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '49',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '50',
-      'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '50',
+    ),
+    'content_type' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'fi' => TRUE,
+          'fi-at' => '',
+          'fi-cl' => 'title',
+          'fi-def-at' => FALSE,
+          'fi-el' => 'div',
+          'fi-first-last' => FALSE,
+          'fi-odd-even' => FALSE,
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+      'label' => 'hidden',
+      'weight' => '0',
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '49',
     ),
     'taxonomy_vocabulary_1' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'field-tags-inline',
           'fis-at' => '',
+          'fis-cl' => 'field-tags-inline',
           'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
         ),
       ),
     ),
@@ -127,52 +127,30 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'databases_and_archives';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '25',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '26',
-      'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '26',
     ),
-    'field_db_tags' => array(
+    'content_type' => array(
+      'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'field-tags-inline',
           'fis-at' => '',
+          'fis-cl' => 'title',
           'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
         ),
       ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
     'field_db_cross_event' => array(
       'formatter_settings' => array(
@@ -180,6 +158,28 @@ function elmcip_layout_ds_field_settings_info() {
           'lb' => 'Exhibited at',
         ),
       ),
+    ),
+    'field_db_tags' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'fis' => TRUE,
+          'fis-at' => '',
+          'fis-cl' => 'field-tags-inline',
+          'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '25',
     ),
   );
   $export['node|databases_and_archives|default'] = $ds_fieldsetting;
@@ -191,52 +191,52 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'event';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fi' => TRUE,
-          'fi-el' => 'div',
-          'fi-cl' => 'title',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '24',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '23',
-      'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '23',
+    ),
+    'content_type' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'fi' => TRUE,
+          'fi-at' => '',
+          'fi-cl' => 'title',
+          'fi-def-at' => FALSE,
+          'fi-el' => 'div',
+          'fi-first-last' => FALSE,
+          'fi-odd-even' => FALSE,
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+      'label' => 'hidden',
+      'weight' => '0',
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '24',
     ),
     'taxonomy_vocabulary_1' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'field-tags-inline',
           'fis-at' => '',
+          'fis-cl' => 'field-tags-inline',
           'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
         ),
       ),
     ),
@@ -251,19 +251,19 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
           'fis-at' => '',
+          'fis-cl' => 'title',
           'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
         ),
       ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
   );
   $export['node|notebook_entry|default'] = $ds_fieldsetting;
@@ -275,30 +275,30 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'notebook_entry';
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
+    'author' => array(
+      'format' => 'author',
       'label' => 'hidden',
+      'weight' => '1',
+    ),
+    'content_type' => array(
       'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
           'fis-at' => '',
+          'fis-cl' => 'title',
           'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
         ),
       ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
     'title' => array(
-      'weight' => '3',
-      'label' => 'hidden',
       'format' => 'default',
-    ),
-    'author' => array(
-      'weight' => '1',
       'label' => 'hidden',
-      'format' => 'author',
+      'weight' => '3',
     ),
   );
   $export['node|notebook_entry|full'] = $ds_fieldsetting;
@@ -310,30 +310,30 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'organization';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'purl' => array(
-      'weight' => '17',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '16',
-      'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '16',
+    ),
+    'content_type' => array(
+      'format' => 'default',
+      'label' => 'hidden',
+      'weight' => '0',
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '17',
     ),
   );
   $export['node|organization|default'] = $ds_fieldsetting;
@@ -345,40 +345,40 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'organization';
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '15',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page:',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '16',
-      'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '16',
+    ),
+    'content_type' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'fis' => TRUE,
+          'fis-at' => '',
+          'fis-cl' => 'title',
+          'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+      'label' => 'hidden',
+      'weight' => '0',
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page:',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '15',
     ),
   );
   $export['node|organization|full'] = $ds_fieldsetting;
@@ -391,22 +391,22 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(),
       ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
     'title' => array(
-      'weight' => '1',
-      'label' => 'inline',
       'format' => 'default',
       'formatter_settings' => array(
+        'class' => '',
         'link' => '1',
         'wrapper' => '',
-        'class' => '',
       ),
+      'label' => 'inline',
+      'weight' => '1',
     ),
   );
   $export['node|organization|teaser'] = $ds_fieldsetting;
@@ -418,47 +418,32 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'person';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fi' => TRUE,
-          'fi-el' => 'div',
-          'fi-cl' => 'title',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
-        ),
-      ),
-    ),
-    'full_name' => array(
-      'weight' => '28',
-      'label' => 'inline',
-      'format' => 'default',
-    ),
-    'purl' => array(
-      'weight' => '29',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '30',
-      'label' => 'inline',
       'format' => 'author',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '30',
+    ),
+    'content_type' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'fi' => TRUE,
+          'fi-at' => '',
+          'fi-cl' => 'title',
+          'fi-def-at' => FALSE,
+          'fi-el' => 'div',
+          'fi-first-last' => FALSE,
+          'fi-odd-even' => FALSE,
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
     'field_alternative_spelling_of_na' => array(
       'formatter_settings' => array(
@@ -466,6 +451,21 @@ function elmcip_layout_ds_field_settings_info() {
           'lb' => 'Name (original language)',
         ),
       ),
+    ),
+    'full_name' => array(
+      'format' => 'default',
+      'label' => 'inline',
+      'weight' => '28',
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '29',
     ),
   );
   $export['node|person|default'] = $ds_fieldsetting;
@@ -477,40 +477,40 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'platform_software';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '17',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '18',
-      'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '18',
+    ),
+    'content_type' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'fis' => TRUE,
+          'fis-at' => '',
+          'fis-cl' => 'title',
+          'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+      'label' => 'hidden',
+      'weight' => '0',
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '17',
     ),
   );
   $export['node|platform_software|default'] = $ds_fieldsetting;
@@ -522,40 +522,30 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'publisher';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '16',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '17',
-      'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '17',
+    ),
+    'content_type' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'fis' => TRUE,
+          'fis-at' => '',
+          'fis-cl' => 'title',
+          'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
     'field_events' => array(
       'formatter_settings' => array(
@@ -563,6 +553,16 @@ function elmcip_layout_ds_field_settings_info() {
           'lb' => 'Events where this publisher has been presented',
         ),
       ),
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '16',
     ),
   );
   $export['node|publisher|default'] = $ds_fieldsetting;
@@ -574,52 +574,32 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'research_collection';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '25',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '26',
-      'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
-    ),
-    'post_date' => array(
-      'weight' => '27',
       'label' => 'inline',
-      'format' => 'ds_post_date_short',
+      'weight' => '26',
     ),
-    'field_media' => array(
+    'content_type' => array(
+      'format' => 'default',
       'formatter_settings' => array(
-        'ft' => array(),
+        'ft' => array(
+          'fis' => TRUE,
+          'fis-at' => '',
+          'fis-cl' => 'title',
+          'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
+        ),
       ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
-    'field_collection_platform_ref' => array(
+    'field_collection_contributors' => array(
       'formatter_settings' => array(
         'ft' => array(),
       ),
@@ -629,10 +609,30 @@ function elmcip_layout_ds_field_settings_info() {
         'ft' => array(),
       ),
     ),
-    'field_collection_contributors' => array(
+    'field_collection_platform_ref' => array(
       'formatter_settings' => array(
         'ft' => array(),
       ),
+    ),
+    'field_media' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
+    'post_date' => array(
+      'format' => 'ds_post_date_short',
+      'label' => 'inline',
+      'weight' => '27',
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '25',
     ),
   );
   $export['node|research_collection|default'] = $ds_fieldsetting;
@@ -645,14 +645,14 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser_abbreviated';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
+        'class' => '',
         'link' => '1',
         'wrapper' => 'h2',
-        'class' => '',
       ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
   );
   $export['node|story|teaser_abbreviated'] = $ds_fieldsetting;
@@ -664,63 +664,63 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'teaching_resource';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '22',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '23',
-      'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '23',
     ),
-    'taxonomy_vocabulary_4' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
-    'taxonomy_vocabulary_1' => array(
+    'content_type' => array(
+      'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'field-tags-inline',
           'fis-at' => '',
+          'fis-cl' => 'title',
           'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
         ),
       ),
+      'label' => 'hidden',
+      'weight' => '0',
     ),
     'field_url' => array(
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Web',
         ),
+      ),
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '22',
+    ),
+    'taxonomy_vocabulary_1' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'fis' => TRUE,
+          'fis-at' => '',
+          'fis-cl' => 'field-tags-inline',
+          'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
+    'taxonomy_vocabulary_4' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
       ),
     ),
   );
@@ -733,56 +733,51 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'work';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'content_type' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'title',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'purl' => array(
-      'weight' => '0',
-      'label' => 'inline',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'lb' => 'The permanent URL of this page',
-        ),
-      ),
-    ),
     'author' => array(
-      'weight' => '1',
-      'label' => 'inline',
       'format' => 'author_linked',
       'formatter_settings' => array(
         'ft' => array(
           'lb' => 'Record posted by',
         ),
       ),
+      'label' => 'inline',
+      'weight' => '1',
+    ),
+    'content_type' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'fis' => TRUE,
+          'fis-at' => '',
+          'fis-cl' => 'title',
+          'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+      'label' => 'hidden',
+      'weight' => '0',
+    ),
+    'purl' => array(
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'The permanent URL of this page',
+        ),
+      ),
+      'label' => 'inline',
+      'weight' => '0',
     ),
     'taxonomy_vocabulary_1' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'field-tags-inline',
           'fis-at' => '',
+          'fis-cl' => 'field-tags-inline',
           'fis-def-at' => FALSE,
+          'fis-el' => 'div',
+          'func' => 'theme_ds_field_expert',
         ),
-      ),
-    ),
-    'field_series_ref' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
       ),
     ),
   );
@@ -796,9 +791,9 @@ function elmcip_layout_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
       'format' => 'default',
+      'label' => 'hidden',
+      'weight' => '0',
     ),
   );
   $export['taxonomy_term|vocabulary_1|full'] = $ds_fieldsetting;
@@ -823,8 +818,8 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
-      'value' => '<p>[node:field_author_name], <em>[node:title]</em> ([node:field_node_ref],[node:field-number]), [node:field_url].</p>',
       'format' => '2',
+      'value' => '<p>[node:field_author_name], <em>[node:title]</em> ([node:field_node_ref],[node:field-number]), [node:field_url].</p>',
     ),
     'use_token' => 1,
   );
@@ -841,8 +836,8 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
-      'value' => '[node:content-type]',
       'format' => 'ds_code',
+      'value' => '[node:content-type]',
     ),
     'use_token' => 1,
   );
@@ -859,8 +854,8 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
-      'value' => '[node:field_first_name] [node:field_middle_name] [node:field_last_name]',
       'format' => 'ds_code',
+      'value' => '[node:field_first_name] [node:field_middle_name] [node:field_last_name]',
     ),
     'use_token' => 1,
   );
@@ -877,8 +872,8 @@ function elmcip_layout_ds_custom_fields_info() {
   $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
-      'value' => '[current-page:url:unaliased]',
       'format' => '4',
+      'value' => '[current-page:url:unaliased]',
     ),
     'use_token' => 1,
   );
@@ -901,6 +896,21 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'content_type' => 'left',
+      'field_students' => 'right',
+      'field_teacher_link' => 'right',
+      'field_tr_link' => 'left',
+      'post_date' => 'right',
+      'title' => 'left',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'title',
@@ -913,25 +923,10 @@ function elmcip_layout_ds_layout_settings_info() {
         5 => 'post_date',
       ),
     ),
-    'fields' => array(
-      'title' => 'left',
-      'content_type' => 'left',
-      'field_tr_link' => 'left',
-      'field_teacher_link' => 'right',
-      'field_students' => 'right',
-      'post_date' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|class_group|default'] = $ds_layout;
 
@@ -943,6 +938,19 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'full';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'content_type' => 'left',
+      'field_students' => 'right',
+      'field_teacher_link' => 'right',
+      'field_tr_link' => 'left',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -953,23 +961,10 @@ function elmcip_layout_ds_layout_settings_info() {
         3 => 'field_students',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_tr_link' => 'left',
-      'field_teacher_link' => 'right',
-      'field_students' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|class_group|full'] = $ds_layout;
 
@@ -981,6 +976,72 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'Creative_works_in_anthology_entity_view_1' => 'right',
+      'Critical_writing_in_book_entity_view_1' => 'right',
+      'Tr_critical_writing_entity_view_1' => 'right',
+      'Work_critical_writing_entity_view_1' => 'right',
+      'author' => 'right',
+      'content_type' => 'left',
+      'critical_writin_critical_writing_entity_view_1' => 'right',
+      'cw_reference_critical_writing_entity_view_1' => 'right',
+      'database_on_critical_writing_entity_view_1' => 'right',
+      'event_ref_on_cw_entity_view_1' => 'right',
+      'field_abstract' => 'right',
+      'field_abstract_lang' => 'right',
+      'field_archiveurl' => 'left',
+      'field_author_name' => 'left',
+      'field_critical_writing_year' => 'left',
+      'field_cw_in_platform_software' => 'left',
+      'field_doi' => 'left',
+      'field_edition' => 'left',
+      'field_editor_name' => 'left',
+      'field_editorial_notes' => 'left',
+      'field_eissn' => 'left',
+      'field_electronic_literature_dire' => 'right',
+      'field_files' => 'right',
+      'field_inbook' => 'left',
+      'field_isbn_text' => 'left',
+      'field_issn_text' => 'left',
+      'field_journalissue' => 'left',
+      'field_language_tax' => 'left',
+      'field_license' => 'left',
+      'field_media_asset' => 'right',
+      'field_multi_images' => 'right',
+      'field_node_ref' => 'left',
+      'field_node_ref_event' => 'left',
+      'field_other_lang_ver_link' => 'right',
+      'field_pagenumbers' => 'left',
+      'field_po_ex_entry' => 'right',
+      'field_pubtype_tax' => 'left',
+      'field_pullquote' => 'right',
+      'field_record_status_lib' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_series_ref' => 'left',
+      'field_the_next' => 'right',
+      'field_translator' => 'left',
+      'field_university' => 'left',
+      'field_url' => 'left',
+      'field_worldcat_link' => 'left',
+      'flag_librarian_approved' => 'left',
+      'group_meta' => 'right',
+      'organization_platform_critical_writing_entity_view_1' => 'right',
+      'organization_referenced_on_critical_writing_entity_view_1' => 'right',
+      'other_editions_entity_view_1' => 'right',
+      'publisher_on_critical_writing_entity_view_1' => 'right',
+      'publisher_referenced_on_critical_writing_entity_view_1' => 'right',
+      'purl' => 'right',
+      'research_collection_critical_writing_entity_view_1' => 'right',
+      'series_reference_critical_writin_entity_view_1' => 'right',
+      'taxonomy_vocabulary_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1017,101 +1078,37 @@ function elmcip_layout_ds_layout_settings_info() {
         29 => 'field_abstract',
         30 => 'field_abstract_lang',
         31 => 'field_po_ex_entry',
-        32 => 'field_electronic_literature_dire',
-        33 => 'field_other_lang_ver_link',
-        34 => 'field_pullquote',
-        35 => 'field_multi_images',
-        36 => 'other_editions_entity_view_1',
-        37 => 'Critical_writing_in_book_entity_view_1',
-        38 => 'Creative_works_in_anthology_entity_view_1',
-        39 => 'series_reference_critical_writin_entity_view_1',
-        40 => 'Work_critical_writing_entity_view_1',
-        41 => 'critical_writin_critical_writing_entity_view_1',
-        42 => 'organization_platform_critical_writing_entity_view_1',
-        43 => 'publisher_on_critical_writing_entity_view_1',
-        44 => 'publisher_referenced_on_critical_writing_entity_view_1',
-        45 => 'organization_referenced_on_critical_writing_entity_view_1',
-        46 => 'database_on_critical_writing_entity_view_1',
-        47 => 'event_ref_on_cw_entity_view_1',
-        48 => 'cw_reference_critical_writing_entity_view_1',
-        49 => 'Tr_critical_writing_entity_view_1',
+        32 => 'field_the_next',
+        33 => 'field_electronic_literature_dire',
+        34 => 'field_other_lang_ver_link',
+        35 => 'field_pullquote',
+        36 => 'field_multi_images',
+        37 => 'other_editions_entity_view_1',
+        38 => 'Critical_writing_in_book_entity_view_1',
+        39 => 'Creative_works_in_anthology_entity_view_1',
+        40 => 'series_reference_critical_writin_entity_view_1',
+        41 => 'Work_critical_writing_entity_view_1',
+        42 => 'critical_writin_critical_writing_entity_view_1',
+        43 => 'organization_platform_critical_writing_entity_view_1',
+        44 => 'publisher_on_critical_writing_entity_view_1',
+        45 => 'publisher_referenced_on_critical_writing_entity_view_1',
+        46 => 'organization_referenced_on_critical_writing_entity_view_1',
+        47 => 'database_on_critical_writing_entity_view_1',
+        48 => 'event_ref_on_cw_entity_view_1',
+        49 => 'cw_reference_critical_writing_entity_view_1',
         50 => 'purl',
-        51 => 'author',
-        52 => 'research_collection_critical_writing_entity_view_1',
-        53 => 'field_media_asset',
-        54 => 'field_files',
-        55 => 'group_meta',
+        51 => 'Tr_critical_writing_entity_view_1',
+        52 => 'author',
+        53 => 'research_collection_critical_writing_entity_view_1',
+        54 => 'field_media_asset',
+        55 => 'field_files',
+        56 => 'group_meta',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_author_name' => 'left',
-      'field_pubtype_tax' => 'left',
-      'field_language_tax' => 'left',
-      'field_translator' => 'left',
-      'field_editor_name' => 'left',
-      'field_critical_writing_year' => 'left',
-      'field_node_ref_event' => 'left',
-      'field_node_ref' => 'left',
-      'field_university' => 'left',
-      'field_series_ref' => 'left',
-      'field_url' => 'left',
-      'field_archiveurl' => 'left',
-      'field_worldcat_link' => 'left',
-      'field_doi' => 'left',
-      'field_isbn_text' => 'left',
-      'field_edition' => 'left',
-      'field_inbook' => 'left',
-      'field_pagenumbers' => 'left',
-      'field_journalissue' => 'left',
-      'field_issn_text' => 'left',
-      'field_eissn' => 'left',
-      'field_cw_in_platform_software' => 'left',
-      'field_license' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_record_status_lib' => 'left',
-      'field_editorial_notes' => 'left',
-      'flag_librarian_approved' => 'left',
-      'taxonomy_vocabulary_1' => 'right',
-      'field_abstract' => 'right',
-      'field_abstract_lang' => 'right',
-      'field_po_ex_entry' => 'right',
-      'field_electronic_literature_dire' => 'right',
-      'field_other_lang_ver_link' => 'right',
-      'field_pullquote' => 'right',
-      'field_multi_images' => 'right',
-      'other_editions_entity_view_1' => 'right',
-      'Critical_writing_in_book_entity_view_1' => 'right',
-      'Creative_works_in_anthology_entity_view_1' => 'right',
-      'series_reference_critical_writin_entity_view_1' => 'right',
-      'Work_critical_writing_entity_view_1' => 'right',
-      'critical_writin_critical_writing_entity_view_1' => 'right',
-      'organization_platform_critical_writing_entity_view_1' => 'right',
-      'publisher_on_critical_writing_entity_view_1' => 'right',
-      'publisher_referenced_on_critical_writing_entity_view_1' => 'right',
-      'organization_referenced_on_critical_writing_entity_view_1' => 'right',
-      'database_on_critical_writing_entity_view_1' => 'right',
-      'event_ref_on_cw_entity_view_1' => 'right',
-      'cw_reference_critical_writing_entity_view_1' => 'right',
-      'Tr_critical_writing_entity_view_1' => 'right',
-      'purl' => 'right',
-      'author' => 'right',
-      'research_collection_critical_writing_entity_view_1' => 'right',
-      'field_media_asset' => 'right',
-      'field_files' => 'right',
-      'group_meta' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|critical_writing|default'] = $ds_layout;
 
@@ -1123,6 +1120,42 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'author' => 'right',
+      'content_type' => 'left',
+      'critical_writing_db_archive_entity_view_1' => 'right',
+      'field_contact_email' => 'left',
+      'field_contributors' => 'right',
+      'field_database_platform_ref' => 'left',
+      'field_db_cross_event' => 'left',
+      'field_db_description_english' => 'right',
+      'field_db_description_original' => 'right',
+      'field_db_language' => 'left',
+      'field_db_org' => 'left',
+      'field_db_people' => 'left',
+      'field_db_tags' => 'right',
+      'field_db_technotes' => 'right',
+      'field_editorial_notes' => 'left',
+      'field_files' => 'right',
+      'field_image' => 'right',
+      'field_license' => 'left',
+      'field_multi_images' => 'right',
+      'field_project_type' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_url' => 'left',
+      'field_year_initiated' => 'left',
+      'group_meta' => 'right',
+      'purl' => 'right',
+      'research_collection_db_arcive_entity_view_1' => 'right',
+      'teaching_resource_db_archive_entity_view_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1156,46 +1189,10 @@ function elmcip_layout_ds_layout_settings_info() {
         26 => 'author',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_url' => 'left',
-      'field_project_type' => 'left',
-      'field_db_org' => 'left',
-      'field_db_people' => 'left',
-      'field_contact_email' => 'left',
-      'field_db_language' => 'left',
-      'field_database_platform_ref' => 'left',
-      'field_year_initiated' => 'left',
-      'field_db_cross_event' => 'left',
-      'field_license' => 'left',
-      'field_editorial_notes' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_db_tags' => 'right',
-      'field_db_description_english' => 'right',
-      'field_db_description_original' => 'right',
-      'field_contributors' => 'right',
-      'field_db_technotes' => 'right',
-      'critical_writing_db_archive_entity_view_1' => 'right',
-      'teaching_resource_db_archive_entity_view_1' => 'right',
-      'research_collection_db_arcive_entity_view_1' => 'right',
-      'field_image' => 'right',
-      'field_multi_images' => 'right',
-      'field_files' => 'right',
-      'group_meta' => 'right',
-      'purl' => 'right',
-      'author' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|databases_and_archives|default'] = $ds_layout;
 
@@ -1207,6 +1204,41 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'Event_critical_writing_entity_view_1' => 'right',
+      'Event_work_entity_view_1' => 'right',
+      'author' => 'right',
+      'content_type' => 'left',
+      'cw_reference_event_entity_view_1' => 'right',
+      'event_series_entity_view_1' => 'right',
+      'field_archiveurl' => 'left',
+      'field_associated_event' => 'left',
+      'field_curator' => 'left',
+      'field_date' => 'left',
+      'field_editorial_notes' => 'left',
+      'field_event_abstract_lang' => 'right',
+      'field_event_series' => 'left',
+      'field_files' => 'right',
+      'field_individual_organizers' => 'left',
+      'field_location' => 'left',
+      'field_media_asset' => 'right',
+      'field_multi_images' => 'right',
+      'field_node_ref' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_textfield' => 'right',
+      'field_url' => 'left',
+      'group_meta' => 'right',
+      'purl' => 'right',
+      'taxonomy_vocabulary_1' => 'right',
+      'taxonomy_vocabulary_2' => 'left',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1239,45 +1271,10 @@ function elmcip_layout_ds_layout_settings_info() {
         25 => 'group_meta',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'taxonomy_vocabulary_2' => 'left',
-      'field_date' => 'left',
-      'field_location' => 'left',
-      'field_url' => 'left',
-      'field_archiveurl' => 'left',
-      'field_node_ref' => 'left',
-      'field_curator' => 'left',
-      'field_individual_organizers' => 'left',
-      'field_event_series' => 'left',
-      'field_associated_event' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_editorial_notes' => 'left',
-      'taxonomy_vocabulary_1' => 'right',
-      'field_textfield' => 'right',
-      'field_event_abstract_lang' => 'right',
-      'event_series_entity_view_1' => 'right',
-      'Event_critical_writing_entity_view_1' => 'right',
-      'Event_work_entity_view_1' => 'right',
-      'cw_reference_event_entity_view_1' => 'right',
-      'field_files' => 'right',
-      'field_multi_images' => 'right',
-      'author' => 'right',
-      'field_media_asset' => 'right',
-      'purl' => 'right',
-      'group_meta' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|event|default'] = $ds_layout;
 
@@ -1289,6 +1286,22 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'content_type' => 'left',
+      'field_author_noted' => 'right',
+      'field_cw_noted' => 'right',
+      'field_event_noted' => 'right',
+      'field_notebok' => 'right',
+      'field_work_noted' => 'right',
+      'field_your_notes' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1302,26 +1315,10 @@ function elmcip_layout_ds_layout_settings_info() {
         6 => 'field_your_notes',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_notebok' => 'right',
-      'field_author_noted' => 'right',
-      'field_work_noted' => 'right',
-      'field_cw_noted' => 'right',
-      'field_event_noted' => 'right',
-      'field_your_notes' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|notebook_entry|default'] = $ds_layout;
 
@@ -1333,6 +1330,24 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'full';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'author' => 'left',
+      'content_type' => 'left',
+      'field_author_noted' => 'right',
+      'field_cw_noted' => 'right',
+      'field_event_noted' => 'right',
+      'field_notebok' => 'left',
+      'field_work_noted' => 'right',
+      'field_your_notes' => 'right',
+      'title' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1348,28 +1363,10 @@ function elmcip_layout_ds_layout_settings_info() {
         8 => 'field_your_notes',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'author' => 'left',
-      'field_notebok' => 'left',
-      'title' => 'right',
-      'field_work_noted' => 'right',
-      'field_cw_noted' => 'right',
-      'field_author_noted' => 'right',
-      'field_event_noted' => 'right',
-      'field_your_notes' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|notebook_entry|full'] = $ds_layout;
 
@@ -1381,6 +1378,33 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'Critical_writing_organization_entity_view_1' => 'right',
+      'Event_organizer_entity_view_1' => 'right',
+      'author' => 'right',
+      'content_type' => 'left',
+      'field_editorial_notes' => 'left',
+      'field_email' => 'left',
+      'field_files' => 'right',
+      'field_location' => 'left',
+      'field_multi_images' => 'right',
+      'field_record_status_tax' => 'left',
+      'field_textfield' => 'right',
+      'field_url' => 'left',
+      'group_meta' => 'right',
+      'organization_platform_entity_view_1' => 'right',
+      'people_afil_on_organization_entity_view_1' => 'right',
+      'purl' => 'right',
+      'research_collection_organization_entity_view_1' => 'right',
+      'work_organization_entity_view_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1405,37 +1429,10 @@ function elmcip_layout_ds_layout_settings_info() {
         17 => 'purl',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_url' => 'left',
-      'field_location' => 'left',
-      'field_email' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_editorial_notes' => 'left',
-      'field_textfield' => 'right',
-      'Event_organizer_entity_view_1' => 'right',
-      'Critical_writing_organization_entity_view_1' => 'right',
-      'work_organization_entity_view_1' => 'right',
-      'organization_platform_entity_view_1' => 'right',
-      'people_afil_on_organization_entity_view_1' => 'right',
-      'research_collection_organization_entity_view_1' => 'right',
-      'field_multi_images' => 'right',
-      'field_files' => 'right',
-      'group_meta' => 'right',
-      'author' => 'right',
-      'purl' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|organization|default'] = $ds_layout;
 
@@ -1447,6 +1444,32 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'full';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'Critical_writing_organization_entity_view_1' => 'right',
+      'Event_organizer_entity_view_1' => 'right',
+      'author' => 'right',
+      'content_type' => 'left',
+      'field_editorial_notes' => 'left',
+      'field_email' => 'left',
+      'field_files' => 'right',
+      'field_location' => 'left',
+      'field_multi_images' => 'right',
+      'field_record_status_tax' => 'left',
+      'field_textfield' => 'right',
+      'field_url' => 'left',
+      'organization_platform_entity_view_1' => 'right',
+      'people_afil_on_organization_entity_view_1' => 'right',
+      'purl' => 'right',
+      'research_collection_organization_entity_view_1' => 'right',
+      'work_organization_entity_view_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1470,36 +1493,10 @@ function elmcip_layout_ds_layout_settings_info() {
         16 => 'author',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_url' => 'left',
-      'field_location' => 'left',
-      'field_email' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_editorial_notes' => 'left',
-      'field_textfield' => 'right',
-      'Event_organizer_entity_view_1' => 'right',
-      'Critical_writing_organization_entity_view_1' => 'right',
-      'work_organization_entity_view_1' => 'right',
-      'organization_platform_entity_view_1' => 'right',
-      'people_afil_on_organization_entity_view_1' => 'right',
-      'research_collection_organization_entity_view_1' => 'right',
-      'field_multi_images' => 'right',
-      'field_files' => 'right',
-      'purl' => 'right',
-      'author' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|organization|full'] = $ds_layout;
 
@@ -1511,26 +1508,26 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'teaser';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'content_type' => 'ds_content',
+      'title' => 'ds_content',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => FALSE,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'ds_content' => array(
         0 => 'content_type',
         1 => 'title',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'ds_content',
-      'title' => 'ds_content',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
   );
   $export['node|organization|teaser'] = $ds_layout;
 
@@ -1542,6 +1539,47 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'Critical_writing_entity_view_1' => 'right',
+      'Journal_Editedby_entity_view_1' => 'right',
+      'TeachingResourceby_entity_view_1' => 'right',
+      'Work_entity_view_1' => 'right',
+      'Work_entity_view_2' => 'right',
+      'author' => 'right',
+      'content_type' => 'left',
+      'curator_of_edited_by_person' => 'right',
+      'edited_by_person_edited_by_person' => 'right',
+      'events_on_individual_organizer_page_entity_view_1' => 'right',
+      'field_alternative_spelling_of_na' => 'left',
+      'field_auth_email' => 'left',
+      'field_authorphoto' => 'right',
+      'field_editorial_notes' => 'left',
+      'field_files' => 'right',
+      'field_nationality' => 'left',
+      'field_orcid' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_residency' => 'left',
+      'field_textfield' => 'right',
+      'field_url' => 'left',
+      'field_yearborn' => 'left',
+      'field_yeardied' => 'left',
+      'flag_librarian_approved' => 'left',
+      'full_name' => 'right',
+      'group_meta' => 'right',
+      'org_affil_person_affiliation_person' => 'right',
+      'organization_platform_person_entity_view_1' => 'right',
+      'purl' => 'right',
+      'research_collection_person_entity_view_1' => 'right',
+      'resource_collection_curated_by_person_edited_by_person' => 'right',
+      'translated_by_person_translated_by_person' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1580,51 +1618,10 @@ function elmcip_layout_ds_layout_settings_info() {
         31 => 'author',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_alternative_spelling_of_na' => 'left',
-      'field_url' => 'left',
-      'field_auth_email' => 'left',
-      'field_orcid' => 'left',
-      'field_residency' => 'left',
-      'field_nationality' => 'left',
-      'field_yearborn' => 'left',
-      'field_yeardied' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_editorial_notes' => 'left',
-      'flag_librarian_approved' => 'left',
-      'field_authorphoto' => 'right',
-      'field_textfield' => 'right',
-      'organization_platform_person_entity_view_1' => 'right',
-      'Work_entity_view_1' => 'right',
-      'Work_entity_view_2' => 'right',
-      'Critical_writing_entity_view_1' => 'right',
-      'translated_by_person_translated_by_person' => 'right',
-      'edited_by_person_edited_by_person' => 'right',
-      'Journal_Editedby_entity_view_1' => 'right',
-      'events_on_individual_organizer_page_entity_view_1' => 'right',
-      'curator_of_edited_by_person' => 'right',
-      'TeachingResourceby_entity_view_1' => 'right',
-      'resource_collection_curated_by_person_edited_by_person' => 'right',
-      'org_affil_person_affiliation_person' => 'right',
-      'research_collection_person_entity_view_1' => 'right',
-      'field_files' => 'right',
-      'group_meta' => 'right',
-      'full_name' => 'right',
-      'purl' => 'right',
-      'author' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|person|default'] = $ds_layout;
 
@@ -1636,6 +1633,35 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'author' => 'right',
+      'content_type' => 'left',
+      'cw_developed_in_this_platform_entity_view_2' => 'right',
+      'field_editorial_notes' => 'left',
+      'field_license' => 'left',
+      'field_media' => 'right',
+      'field_platform_developers' => 'left',
+      'field_platform_versions' => 'right',
+      'field_platform_year' => 'left',
+      'field_ps_attachment' => 'right',
+      'field_ps_description' => 'right',
+      'field_ps_image' => 'right',
+      'field_publisher_or_organization' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_repository' => 'left',
+      'field_url' => 'left',
+      'field_version_history' => 'right',
+      'group_meta' => 'right',
+      'purl' => 'right',
+      'works_developed_in_this_platform_entity_view_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1662,39 +1688,10 @@ function elmcip_layout_ds_layout_settings_info() {
         19 => 'author',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_repository' => 'left',
-      'field_platform_year' => 'left',
-      'field_url' => 'left',
-      'field_platform_developers' => 'left',
-      'field_publisher_or_organization' => 'left',
-      'field_license' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_editorial_notes' => 'left',
-      'field_ps_description' => 'right',
-      'cw_developed_in_this_platform_entity_view_2' => 'right',
-      'works_developed_in_this_platform_entity_view_1' => 'right',
-      'field_platform_versions' => 'right',
-      'field_version_history' => 'right',
-      'field_ps_image' => 'right',
-      'field_media' => 'right',
-      'field_ps_attachment' => 'right',
-      'group_meta' => 'right',
-      'purl' => 'right',
-      'author' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|platform_software|default'] = $ds_layout;
 
@@ -1706,6 +1703,36 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'Work_publisher_entity_view_1' => 'right',
+      'author' => 'right',
+      'content_type' => 'left',
+      'critical_writing_on_publisher_entity_view_1' => 'right',
+      'critical_writing_on_referenced_publisher_entity_view_1' => 'right',
+      'field_editor_name' => 'left',
+      'field_editorial_notes' => 'left',
+      'field_eissn' => 'left',
+      'field_email' => 'left',
+      'field_events' => 'right',
+      'field_issn_text' => 'left',
+      'field_location' => 'left',
+      'field_publishing_type' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_textfield' => 'right',
+      'field_url' => 'left',
+      'group_meta' => 'right',
+      'organization_platform_entity_view_1' => 'right',
+      'purl' => 'right',
+      'research_collection_publisher_entity_view_1' => 'right',
+      'series_on_publisher_entity_view_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1733,40 +1760,10 @@ function elmcip_layout_ds_layout_settings_info() {
         20 => 'group_meta',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_location' => 'left',
-      'field_url' => 'left',
-      'field_editor_name' => 'left',
-      'field_email' => 'left',
-      'field_issn_text' => 'left',
-      'field_eissn' => 'left',
-      'field_publishing_type' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_editorial_notes' => 'left',
-      'field_textfield' => 'right',
-      'organization_platform_entity_view_1' => 'right',
-      'critical_writing_on_publisher_entity_view_1' => 'right',
-      'critical_writing_on_referenced_publisher_entity_view_1' => 'right',
-      'Work_publisher_entity_view_1' => 'right',
-      'series_on_publisher_entity_view_1' => 'right',
-      'research_collection_publisher_entity_view_1' => 'right',
-      'purl' => 'right',
-      'field_events' => 'right',
-      'author' => 'right',
-      'group_meta' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|publisher|default'] = $ds_layout;
 
@@ -1778,6 +1775,33 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'author' => 'right',
+      'content_type' => 'left',
+      'cw_listed_in_research_collection_entity_view_1' => 'right',
+      'databases_archives_listed_in_research_collection_entity_view_1' => 'right',
+      'events_listed_in_research_collection_entity_view_1' => 'right',
+      'field_collection_contributors' => 'left',
+      'field_collection_curated_by' => 'left',
+      'field_collection_platform_ref' => 'left',
+      'field_media' => 'right',
+      'field_rc_description' => 'right',
+      'group_meta' => 'right',
+      'organizations_listed_in_research_collection_entity_view_1' => 'right',
+      'people_listed_in_research_collection_entity_view_1' => 'right',
+      'post_date' => 'right',
+      'publishers_listed_in_research_collection_entity_view_1' => 'right',
+      'purl' => 'right',
+      'teaching_resources_listed_in_research_collection_entity_view_1' => 'right',
+      'works_listed_on_research_collection_entity_view_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1802,37 +1826,10 @@ function elmcip_layout_ds_layout_settings_info() {
         17 => 'post_date',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'field_collection_curated_by' => 'left',
-      'field_collection_contributors' => 'left',
-      'field_collection_platform_ref' => 'left',
-      'field_rc_description' => 'right',
-      'field_media' => 'right',
-      'people_listed_in_research_collection_entity_view_1' => 'right',
-      'works_listed_on_research_collection_entity_view_1' => 'right',
-      'cw_listed_in_research_collection_entity_view_1' => 'right',
-      'organizations_listed_in_research_collection_entity_view_1' => 'right',
-      'teaching_resources_listed_in_research_collection_entity_view_1' => 'right',
-      'publishers_listed_in_research_collection_entity_view_1' => 'right',
-      'databases_archives_listed_in_research_collection_entity_view_1' => 'right',
-      'events_listed_in_research_collection_entity_view_1' => 'right',
-      'group_meta' => 'right',
-      'purl' => 'right',
-      'author' => 'right',
-      'post_date' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|research_collection|default'] = $ds_layout;
 
@@ -1844,24 +1841,24 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'teaser_abbreviated';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'title' => 'ds_content',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => FALSE,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'ds_content' => array(
         0 => 'title',
       ),
     ),
-    'fields' => array(
-      'title' => 'ds_content',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'ds_content' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
   );
   $export['node|story|teaser_abbreviated'] = $ds_layout;
 
@@ -1873,6 +1870,39 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'Work_tr_entity_view_1' => 'right',
+      'author' => 'right',
+      'content_type' => 'left',
+      'critical_writing_tr_entity_view_1' => 'right',
+      'database_listed_on_teaching_resource_entity_view_1' => 'right',
+      'field_abstract_lang' => 'right',
+      'field_editorial_notes' => 'left',
+      'field_files' => 'right',
+      'field_image' => 'right',
+      'field_language_tax' => 'left',
+      'field_media_asset' => 'right',
+      'field_record_status_tax' => 'left',
+      'field_tr_author' => 'left',
+      'field_tr_description' => 'right',
+      'field_tr_org' => 'left',
+      'field_tr_year' => 'left',
+      'field_url' => 'left',
+      'group_meta' => 'right',
+      'platform_tr_entity_view_1' => 'right',
+      'purl' => 'right',
+      'research_collection_teaching_resource_entity_view_1' => 'right',
+      'taxonomy_vocabulary_1' => 'right',
+      'taxonomy_vocabulary_4' => 'left',
+      'teaching_ressource_tr_entity_view_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
       'left' => array(
         0 => 'content_type',
@@ -1903,43 +1933,10 @@ function elmcip_layout_ds_layout_settings_info() {
         23 => 'author',
       ),
     ),
-    'fields' => array(
-      'content_type' => 'left',
-      'taxonomy_vocabulary_4' => 'left',
-      'field_language_tax' => 'left',
-      'field_tr_author' => 'left',
-      'field_tr_org' => 'left',
-      'field_url' => 'left',
-      'field_tr_year' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_editorial_notes' => 'left',
-      'taxonomy_vocabulary_1' => 'right',
-      'field_tr_description' => 'right',
-      'field_abstract_lang' => 'right',
-      'Work_tr_entity_view_1' => 'right',
-      'critical_writing_tr_entity_view_1' => 'right',
-      'teaching_ressource_tr_entity_view_1' => 'right',
-      'database_listed_on_teaching_resource_entity_view_1' => 'right',
-      'research_collection_teaching_resource_entity_view_1' => 'right',
-      'platform_tr_entity_view_1' => 'right',
-      'field_image' => 'right',
-      'field_media_asset' => 'right',
-      'field_files' => 'right',
-      'group_meta' => 'right',
-      'purl' => 'right',
-      'author' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|teaching_resource|default'] = $ds_layout;
 
@@ -1951,36 +1948,68 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'Critical_writing_work_entity_view_1' => 'right',
+      'Tr_work_entity_view_1' => 'right',
+      'author' => 'right',
+      'clone_of_research_collection_creative_work_entity_view_1' => 'right',
+      'content_type' => 'left',
+      'field_abstract_lang' => 'right',
+      'field_archiveurl' => 'left',
+      'field_author_name' => 'left',
+      'field_authoring_software_entry' => 'right',
+      'field_brown_digital_repository' => 'right',
+      'field_contributor' => 'left',
+      'field_contributors' => 'right',
+      'field_doi' => 'left',
+      'field_downloadurl' => 'left',
+      'field_editorial_notes' => 'left',
+      'field_electronic_literature_dire' => 'right',
+      'field_files' => 'right',
+      'field_i_e_poetry_entry' => 'right',
+      'field_in_anthology' => 'left',
+      'field_isbn_text' => 'left',
+      'field_language_tax' => 'left',
+      'field_license' => 'left',
+      'field_media_asset' => 'right',
+      'field_multi_image' => 'right',
+      'field_node_ref' => 'left',
+      'field_node_ref_event' => 'left',
+      'field_nt2_entry' => 'right',
+      'field_other_edition_work' => 'right',
+      'field_other_lang_ver_link' => 'right',
+      'field_part_of_another_work' => 'right',
+      'field_po_ex_entry' => 'right',
+      'field_pullquote' => 'right',
+      'field_record_status_lib' => 'left',
+      'field_record_status_tax' => 'left',
+      'field_repository' => 'left',
+      'field_series_ref' => 'left',
+      'field_tech_notes' => 'right',
+      'field_textfield' => 'right',
+      'field_the_next' => 'right',
+      'field_translator' => 'left',
+      'field_url' => 'left',
+      'field_venue_tax' => 'left',
+      'field_work_platform_software' => 'left',
+      'field_work_year' => 'left',
+      'field_worldcat_link' => 'left',
+      'flag_librarian_approved' => 'left',
+      'group_meta' => 'right',
+      'purl' => 'right',
+      'taxonomy_vocabulary_1' => 'right',
+    ),
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_disable_css' => 0,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_wrapper' => 'div',
     'regions' => array(
-      'right' => array(
-        0 => 'purl',
-        2 => 'author',
-        26 => 'taxonomy_vocabulary_1',
-        27 => 'field_textfield',
-        28 => 'field_abstract_lang',
-        29 => 'field_electronic_literature_dire',
-        30 => 'field_i_e_poetry_entry',
-        31 => 'field_nt2_entry',
-        32 => 'field_authoring_software_entry',
-        33 => 'field_po_ex_entry',
-        34 => 'field_brown_digital_repository',
-        35 => 'field_other_lang_ver_link',
-        36 => 'field_part_of_another_work',
-        37 => 'field_other_edition_work',
-        38 => 'field_pullquote',
-        39 => 'field_tech_notes',
-        40 => 'field_contributors',
-        41 => 'Tr_work_entity_view_1',
-        42 => 'clone_of_research_collection_creative_work_entity_view_1',
-        43 => 'Critical_writing_work_entity_view_1',
-        44 => 'field_multi_image',
-        45 => 'field_media_asset',
-        46 => 'field_files',
-        47 => 'group_meta',
-      ),
       'left' => array(
         1 => 'content_type',
-        3 => 'field_author_name',
+        2 => 'field_author_name',
         4 => 'field_translator',
         5 => 'field_contributor',
         6 => 'field_work_year',
@@ -2004,68 +2033,38 @@ function elmcip_layout_ds_layout_settings_info() {
         24 => 'field_editorial_notes',
         25 => 'flag_librarian_approved',
       ),
+      'right' => array(
+        0 => 'purl',
+        3 => 'author',
+        26 => 'taxonomy_vocabulary_1',
+        27 => 'field_textfield',
+        28 => 'field_abstract_lang',
+        29 => 'field_electronic_literature_dire',
+        30 => 'field_i_e_poetry_entry',
+        31 => 'field_nt2_entry',
+        32 => 'field_authoring_software_entry',
+        33 => 'field_po_ex_entry',
+        34 => 'field_brown_digital_repository',
+        35 => 'field_the_next',
+        36 => 'field_other_lang_ver_link',
+        37 => 'field_part_of_another_work',
+        38 => 'field_other_edition_work',
+        39 => 'field_pullquote',
+        40 => 'field_tech_notes',
+        41 => 'field_contributors',
+        42 => 'Tr_work_entity_view_1',
+        43 => 'clone_of_research_collection_creative_work_entity_view_1',
+        44 => 'Critical_writing_work_entity_view_1',
+        45 => 'field_multi_image',
+        46 => 'field_media_asset',
+        47 => 'field_files',
+        48 => 'group_meta',
+      ),
     ),
-    'fields' => array(
-      'purl' => 'right',
-      'content_type' => 'left',
-      'author' => 'right',
-      'field_author_name' => 'left',
-      'field_translator' => 'left',
-      'field_contributor' => 'left',
-      'field_work_year' => 'left',
-      'field_in_anthology' => 'left',
-      'field_node_ref' => 'left',
-      'field_series_ref' => 'left',
-      'field_archiveurl' => 'left',
-      'field_url' => 'left',
-      'field_downloadurl' => 'left',
-      'field_language_tax' => 'left',
-      'field_venue_tax' => 'left',
-      'field_work_platform_software' => 'left',
-      'field_worldcat_link' => 'left',
-      'field_doi' => 'left',
-      'field_isbn_text' => 'left',
-      'field_node_ref_event' => 'left',
-      'field_license' => 'left',
-      'field_repository' => 'left',
-      'field_record_status_tax' => 'left',
-      'field_record_status_lib' => 'left',
-      'field_editorial_notes' => 'left',
-      'flag_librarian_approved' => 'left',
-      'taxonomy_vocabulary_1' => 'right',
-      'field_textfield' => 'right',
-      'field_abstract_lang' => 'right',
-      'field_electronic_literature_dire' => 'right',
-      'field_i_e_poetry_entry' => 'right',
-      'field_nt2_entry' => 'right',
-      'field_authoring_software_entry' => 'right',
-      'field_po_ex_entry' => 'right',
-      'field_brown_digital_repository' => 'right',
-      'field_other_lang_ver_link' => 'right',
-      'field_part_of_another_work' => 'right',
-      'field_other_edition_work' => 'right',
-      'field_pullquote' => 'right',
-      'field_tech_notes' => 'right',
-      'field_contributors' => 'right',
-      'Tr_work_entity_view_1' => 'right',
-      'clone_of_research_collection_creative_work_entity_view_1' => 'right',
-      'Critical_writing_work_entity_view_1' => 'right',
-      'field_multi_image' => 'right',
-      'field_media_asset' => 'right',
-      'field_files' => 'right',
-      'group_meta' => 'right',
-    ),
-    'classes' => array(),
     'wrappers' => array(
       'left' => 'div',
       'right' => 'div',
     ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
   );
   $export['node|work|default'] = $ds_layout;
 
@@ -2077,6 +2076,11 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'full';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'description' => 'ds_content',
+      'title' => 'ds_content',
+    ),
     'hide_empty_regions' => 0,
     'hide_sidebars' => 0,
     'regions' => array(
@@ -2085,11 +2089,6 @@ function elmcip_layout_ds_layout_settings_info() {
         1 => 'description',
       ),
     ),
-    'fields' => array(
-      'title' => 'ds_content',
-      'description' => 'ds_content',
-    ),
-    'classes' => array(),
   );
   $export['taxonomy_term|vocabulary_1|full'] = $ds_layout;
 
@@ -2101,6 +2100,10 @@ function elmcip_layout_ds_layout_settings_info() {
   $ds_layout->view_mode = 'term_description';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
+    'classes' => array(),
+    'fields' => array(
+      'description' => 'ds_content',
+    ),
     'hide_empty_regions' => 0,
     'hide_sidebars' => 0,
     'regions' => array(
@@ -2108,10 +2111,6 @@ function elmcip_layout_ds_layout_settings_info() {
         0 => 'description',
       ),
     ),
-    'fields' => array(
-      'description' => 'ds_content',
-    ),
-    'classes' => array(),
   );
   $export['taxonomy_term|vocabulary_1|term_description'] = $ds_layout;
 

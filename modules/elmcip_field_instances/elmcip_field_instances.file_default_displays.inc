@@ -46,9 +46,9 @@ function elmcip_field_instances_file_default_displays() {
   $file_display->weight = -47;
   $file_display->status = TRUE;
   $file_display->settings = array(
-    'width' => '',
-    'height' => '',
     'autoplay' => 0,
+    'height' => '',
+    'width' => '',
   );
   $export['video__default__media_flickr_video'] = $file_display;
 

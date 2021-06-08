@@ -723,7 +723,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 68,
+        'weight' => 69,
       ),
       'full' => array(
         'label' => 'above',
@@ -915,6 +915,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1120,7 +1121,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 67,
+        'weight' => 68,
       ),
       'full' => array(
         'label' => 'above',
@@ -1762,6 +1763,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1825,7 +1827,7 @@ function elmcip_field_instances_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 52,
+        'weight' => 53,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -2820,7 +2822,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
           'file_view_mode' => 'full',
         ),
         'type' => 'file_rendered',
-        'weight' => 51,
+        'weight' => 52,
       ),
       'full' => array(
         'label' => 'above',
@@ -2888,7 +2890,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -3100,7 +3102,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 16,
+      'weight' => 17,
     ),
     'widget_type' => 'imagefield_widget',
   );
@@ -3506,7 +3508,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 69,
+        'weight' => 70,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -3631,7 +3633,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 66,
+        'weight' => 67,
       ),
       'full' => array(
         'label' => 'above',
@@ -3694,7 +3696,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 64,
+        'weight' => 65,
       ),
       'full' => array(
         'label' => 'above',
@@ -4095,7 +4097,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 65,
+        'weight' => 66,
       ),
       'full' => array(
         'label' => 'above',
@@ -4482,7 +4484,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 62,
+        'weight' => 63,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -4713,7 +4715,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 70,
+        'weight' => 71,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -5107,6 +5109,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -5194,6 +5197,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -6578,6 +6582,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -6827,6 +6832,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -8436,6 +8442,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -9595,6 +9602,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -10864,6 +10872,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -11303,6 +11312,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -12350,6 +12360,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -13494,6 +13505,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -16974,6 +16986,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -17290,7 +17303,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 54,
+        'weight' => 55,
       ),
       'full' => array(
         'label' => 'inline',
@@ -17485,6 +17498,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -17799,7 +17813,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 38,
+        'weight' => 39,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -18132,6 +18146,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -18291,6 +18306,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => '_blank',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -18360,7 +18376,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 44,
+        'weight' => 45,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -18529,6 +18545,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => '_blank',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -19066,7 +19083,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 43,
+        'weight' => 44,
       ),
       'full' => array(
         'label' => 'above',
@@ -19200,7 +19217,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'colorbox_node_style_first' => '',
         ),
         'type' => 'colorbox',
-        'weight' => 42,
+        'weight' => 43,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -19736,6 +19753,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -19785,7 +19803,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'full' => array(
         'label' => 'above',
@@ -19910,7 +19928,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 33,
+        'weight' => 34,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20045,7 +20063,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'full' => array(
         'label' => 'above',
@@ -20151,7 +20169,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20411,7 +20429,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 37,
+        'weight' => 38,
       ),
       'ds_weight' => array(
         'label' => 'hidden',
@@ -20644,6 +20662,62 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
     'widget_type' => 'text_textarea',
   );
 
+  // Exported field_instance: 'node-work-field_the_next'.
+  $field_instances['node-work-field_the_next'] = array(
+    'bundle' => 'work',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If there is a record for this work in the <a href="https://the-next.eliterature.org/" target="_blank">The NEXT</a>, enter the URL of the entry.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(
+          'custom_title' => '',
+        ),
+        'type' => 'link_default',
+        'weight' => 33,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_the_next',
+    'label' => 'The NEXT',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'convert_aliases' => 0,
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'value',
+      'title_allowed_values' => '',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => 'The NEXT entry',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 18,
+    ),
+  );
+
   // Exported field_instance: 'node-work-field_translator'.
   $field_instances['node-work-field_translator'] = array(
     'bundle' => 'work',
@@ -20860,6 +20934,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -21132,6 +21207,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -21399,6 +21475,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('If there is a record for this work in the <a href="http://directory.eliterature.org/" target="_blank">Electronic Literature Directory</a>, enter the URL of the entry here (for example http://directory.eliterature.org/node/409) to create a cross-reference between the databases.');
   t('If there is a record for this work in the <a href="http://nt2.uqam.ca/en/search/site/" target="_blank">NT2 Répertoire des arts et littératures hypermédiatiques</a>, enter the URL of the entry.');
   t('If there is a record for this work in the <a href="https://iloveepoetry.org/" target="_blank">I ♥ E-Poetry project</a>, enter the URL of the entry.');
+  t('If there is a record for this work in the <a href="https://the-next.eliterature.org/" target="_blank">The NEXT</a>, enter the URL of the entry.');
   t('If there is a record for this work in the <a href="https://www.worldcat.org" target="_blank">WorldCat library database</a>, enter the Permalink here. Please indicate the year of publication in the year of publication field of the URL (e.g. 1996. ed.)');
   t('If there is a record in the knowledge base of a version of this creative work published in another language, link to it here.The other language version will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.');
   t('If there is another version of this critical writing published in another language, link to it here.The other language version will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the work</a>.');
@@ -21508,6 +21585,7 @@ If you wish to supply your own latitude and longitude, you may enter them above.
   t('Teaching Resources');
   t('Technical Notes');
   t('Technical notes');
+  t('The NEXT');
   t('The teacher of the course. This is an autocomplete field. The teacher must be a Knowledge Base user who has been assigned "teacher" permissions by a KB administrator. Multiple teachers may be added to a class group.');
   t('This is the editorial status of a record, now a taxonomy. This value can only be changed by KB editors. ');
   t('Translator');

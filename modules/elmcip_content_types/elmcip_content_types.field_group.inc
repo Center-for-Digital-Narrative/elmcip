@@ -21,21 +21,21 @@ function elmcip_content_types_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Editorial Status',
-    'weight' => '3',
     'children' => array(
       0 => 'field_editorial_notes',
       1 => 'field_record_status_tax',
     ),
-    'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
       'instance_settings' => array(
-        'description' => '',
         'classes' => 'group-platform-editorial-status field-group-tab',
+        'description' => '',
         'required_fields' => 1,
       ),
     ),
+    'format_type' => 'tab',
+    'label' => 'Editorial Status',
+    'weight' => '3',
   );
   $field_groups['group_platform_editorial_status|node|platform_software|form'] = $field_group;
 
