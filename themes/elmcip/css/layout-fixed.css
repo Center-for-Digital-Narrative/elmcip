@@ -401,7 +401,16 @@ div.group-meta {
 }
 
 .region-bottom {
+  color: white;
   padding: 1em 0.5em;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  background-color: #042A2B;
+}
+
+.region-bottom a {
+  color: #DAFFC2;
 }
 
 /*
