@@ -21,16 +21,16 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Editorial',
-    'weight' => '20',
     'children' => array(),
-    'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'classes' => ' group-editorial-crit field-group-fieldset',
       ),
     ),
+    'format_type' => 'fieldset',
+    'label' => 'Editorial',
+    'weight' => '20',
   );
   $field_groups['group_editorial_crit|node|critical_writing|default'] = $field_group;
 
@@ -44,16 +44,16 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Editorial',
-    'weight' => '5',
     'children' => array(),
-    'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'classes' => ' group-editorial field-group-fieldset',
       ),
     ),
+    'format_type' => 'fieldset',
+    'label' => 'Editorial',
+    'weight' => '5',
   );
   $field_groups['group_editorial|node|work|default'] = $field_group;
 
@@ -67,25 +67,25 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Meta data',
-    'weight' => '53',
     'children' => array(
       0 => 'purl',
       1 => 'author',
     ),
-    'format_type' => 'html-element',
     'format_settings' => array(
       'formatter' => '',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-meta field-group-html-element',
         'attributes' => '',
-        'required_fields' => 1,
+        'classes' => 'group-meta field-group-html-element',
+        'element' => 'div',
         'id' => '',
+        'label_element' => 'div',
+        'required_fields' => 1,
+        'show_label' => 0,
       ),
     ),
+    'format_type' => 'html-element',
+    'label' => 'Meta data',
+    'weight' => '54',
   );
   $field_groups['group_meta|node|critical_writing|default'] = $field_group;
 
@@ -99,24 +99,24 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Meta data',
-    'weight' => '24',
     'children' => array(
       0 => 'purl',
       1 => 'author',
     ),
-    'format_type' => 'html-element',
     'format_settings' => array(
-      'label' => 'Meta data',
       'instance_settings' => array(
-        'id' => '',
+        'attributes' => '',
         'classes' => 'group-meta',
         'element' => 'div',
-        'show_label' => '0',
+        'id' => '',
         'label_element' => '',
-        'attributes' => '',
+        'show_label' => '0',
       ),
+      'label' => 'Meta data',
     ),
+    'format_type' => 'html-element',
+    'label' => 'Meta data',
+    'weight' => '24',
   );
   $field_groups['group_meta|node|databases_and_archives|default'] = $field_group;
 
@@ -130,24 +130,24 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Meta data',
-    'weight' => '15',
     'children' => array(
       0 => 'purl',
       1 => 'author',
     ),
-    'format_type' => 'html-element',
     'format_settings' => array(
-      'label' => 'Meta data',
       'instance_settings' => array(
-        'id' => '',
+        'attributes' => '',
         'classes' => 'group-meta',
         'element' => 'div',
-        'show_label' => '0',
+        'id' => '',
         'label_element' => '',
-        'attributes' => '',
+        'show_label' => '0',
       ),
+      'label' => 'Meta data',
     ),
+    'format_type' => 'html-element',
+    'label' => 'Meta data',
+    'weight' => '15',
   );
   $field_groups['group_meta|node|organization|default'] = $field_group;
 
@@ -161,25 +161,25 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Meta data',
-    'weight' => '28',
     'children' => array(
       0 => 'full_name',
       1 => 'purl',
       2 => 'author',
     ),
-    'format_type' => 'html-element',
     'format_settings' => array(
-      'label' => 'Meta data',
       'instance_settings' => array(
-        'id' => '',
+        'attributes' => '',
         'classes' => 'group-meta',
         'element' => 'div',
-        'show_label' => '0',
+        'id' => '',
         'label_element' => '',
-        'attributes' => '',
+        'show_label' => '0',
       ),
+      'label' => 'Meta data',
     ),
+    'format_type' => 'html-element',
+    'label' => 'Meta data',
+    'weight' => '28',
   );
   $field_groups['group_meta|node|person|default'] = $field_group;
 
@@ -193,25 +193,25 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Meta data',
-    'weight' => '16',
     'children' => array(
       0 => 'purl',
       1 => 'author',
     ),
-    'format_type' => 'html-element',
     'format_settings' => array(
       'formatter' => '',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-meta field-group-html-element',
         'attributes' => '',
-        'required_fields' => 1,
+        'classes' => 'group-meta field-group-html-element',
+        'element' => 'div',
         'id' => '',
+        'label_element' => 'div',
+        'required_fields' => 1,
+        'show_label' => 0,
       ),
     ),
+    'format_type' => 'html-element',
+    'label' => 'Meta data',
+    'weight' => '16',
   );
   $field_groups['group_meta|node|platform_software|default'] = $field_group;
 
@@ -225,25 +225,25 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Meta data',
-    'weight' => '18',
     'children' => array(
       0 => 'purl',
       1 => 'author',
     ),
-    'format_type' => 'html-element',
     'format_settings' => array(
       'formatter' => '',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-meta field-group-html-element',
         'attributes' => '',
-        'required_fields' => 1,
+        'classes' => 'group-meta field-group-html-element',
+        'element' => 'div',
         'id' => '',
+        'label_element' => 'div',
+        'required_fields' => 1,
+        'show_label' => 0,
       ),
     ),
+    'format_type' => 'html-element',
+    'label' => 'Meta data',
+    'weight' => '18',
   );
   $field_groups['group_meta|node|publisher|default'] = $field_group;
 
@@ -257,26 +257,26 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Meta data',
-    'weight' => '14',
     'children' => array(
       0 => 'purl',
       1 => 'author',
       2 => 'post_date',
     ),
-    'format_type' => 'html-element',
     'format_settings' => array(
       'formatter' => '',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-meta field-group-html-element',
         'attributes' => '',
-        'required_fields' => 1,
+        'classes' => 'group-meta field-group-html-element',
+        'element' => 'div',
         'id' => '',
+        'label_element' => 'div',
+        'required_fields' => 1,
+        'show_label' => 0,
       ),
     ),
+    'format_type' => 'html-element',
+    'label' => 'Meta data',
+    'weight' => '14',
   );
   $field_groups['group_meta|node|research_collection|default'] = $field_group;
 
@@ -290,24 +290,24 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Meta data',
-    'weight' => '21',
     'children' => array(
       0 => 'purl',
       1 => 'author',
     ),
-    'format_type' => 'html-element',
     'format_settings' => array(
-      'label' => 'Meta data',
       'instance_settings' => array(
-        'id' => '',
+        'attributes' => '',
         'classes' => 'group-meta',
         'element' => 'div',
-        'show_label' => '0',
+        'id' => '',
         'label_element' => '',
-        'attributes' => '',
+        'show_label' => '0',
       ),
+      'label' => 'Meta data',
     ),
+    'format_type' => 'html-element',
+    'label' => 'Meta data',
+    'weight' => '21',
   );
   $field_groups['group_meta|node|teaching_resource|default'] = $field_group;
 
@@ -321,16 +321,16 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Editorial',
-    'weight' => '35',
     'children' => array(),
-    'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'classes' => ' group-tr-editorial field-group-fieldset',
       ),
     ),
+    'format_type' => 'fieldset',
+    'label' => 'Editorial',
+    'weight' => '35',
   );
   $field_groups['group_tr_editorial|node|teaching_resource|default'] = $field_group;
 
@@ -344,16 +344,16 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Documentation',
-    'weight' => '3',
     'children' => array(),
-    'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'classes' => ' group-workdoc field-group-fieldset',
       ),
     ),
+    'format_type' => 'fieldset',
+    'label' => 'Documentation',
+    'weight' => '3',
   );
   $field_groups['group_workdoc|node|work|form'] = $field_group;
 
@@ -367,16 +367,16 @@ function elmcip_layout_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Submit to ELMCIP Anthology',
-    'weight' => '5',
     'children' => array(),
-    'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
         'classes' => ' group-worksubmit field-group-fieldset',
       ),
     ),
+    'format_type' => 'fieldset',
+    'label' => 'Submit to ELMCIP Anthology',
+    'weight' => '5',
   );
   $field_groups['group_worksubmit|node|work|form'] = $field_group;
 

@@ -119,7 +119,7 @@ function elmcip_content_types_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 63,
+        'weight' => 64,
       ),
       'full' => array(
         'label' => 'above',
@@ -381,6 +381,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => '_blank',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -439,6 +440,68 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 42,
+    ),
+  );
+
+  // Exported field_instance: 'node-critical_writing-field_the_next'.
+  $field_instances['node-critical_writing-field_the_next'] = array(
+    'bundle' => 'critical_writing',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If there is a record for this work in the <a href="https://the-next.eliterature.org/" target="_blank">The NEXT</a>, enter the URL of the entry.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(
+          'custom_title' => '',
+        ),
+        'type' => 'link_default',
+        'weight' => 31,
+      ),
+      'token' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_the_next',
+    'label' => 'The NEXT',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'convert_aliases' => 0,
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'value',
+      'title_allowed_values' => '',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => 'The NEXT entry',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 16,
     ),
   );
 
@@ -701,6 +764,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -973,6 +1037,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1263,6 +1328,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1282,7 +1348,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 19,
+      'weight' => 20,
     ),
   );
 
@@ -1318,6 +1384,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => '_blank',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1337,7 +1404,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 20,
+      'weight' => 21,
     ),
   );
 
@@ -1409,6 +1476,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1500,6 +1568,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
         'target' => 'default',
         'title' => '',
       ),
+      'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1518,7 +1587,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -1654,6 +1723,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
   t('If there is a record for this work in the <a href="http://narrabase.net/" target="_blank">Narrabase project</a>, enter the URL of the entry.');
   t('If there is a record for this work in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.');
   t('If there is a record for this work in the <a href="https://repository.library.brown.edu/studio/search/?selected_facets=ir_collection_name%3ADigital+Language+Arts&search_field=" rel="noreferrer noopener" target="_blank">Brown Digital Repository</a>, enter the URL of the entry.');
+  t('If there is a record for this work in the <a href="https://the-next.eliterature.org/" target="_blank">The NEXT</a>, enter the URL of the entry.');
   t('If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.');
   t('If this critical writing references a platform/software, link to it here. The platform or software will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');
   t('Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.');
@@ -1672,6 +1742,7 @@ All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a
   t('Record Status');
   t('Repository');
   t('Series');
+  t('The NEXT');
   t('Use this field to add a URL for link to repository or version control system such as Github or bitbucket where source code can be accessed.');
   t('Use this field to include platforms/software in this collection. The platform/software will autocomplete if it is in the database. If the platform/software is not in the database, <a href="/node/add/platform-software" target="_blank">add the database/software</a>.');
   t('Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.');

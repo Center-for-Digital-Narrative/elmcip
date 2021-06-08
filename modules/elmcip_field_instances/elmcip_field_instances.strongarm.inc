@@ -65,9 +65,9 @@ function elmcip_field_instances_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'media_vimeo__on_screen_info';
   $strongarm->value = array(
+    'byline' => 'byline',
     'portrait' => 'portrait',
     'title' => 'title',
-    'byline' => 'byline',
   );
   $export['media_vimeo__on_screen_info'] = $strongarm;
 
