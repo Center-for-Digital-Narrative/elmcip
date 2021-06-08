@@ -12,6 +12,10 @@ table {
   width: 100%;
 }
 
+.group-right table {
+  margin: 0;
+}
+
 table:first-child {
   margin-top: 0;
 }

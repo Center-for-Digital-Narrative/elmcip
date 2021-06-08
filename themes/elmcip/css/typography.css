@@ -1,5 +1,5 @@
 .region-footer .block {
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.25rem;
 }
 
@@ -9,7 +9,7 @@
 
 blockquote,
 #header a {
-  font-size: 1.1428em; /* 16px */
+  font-size: 1.125rem; /* 16px */
 }
 
 blockquote {
@@ -33,10 +33,6 @@ h1#site-name,
 div#site-name {
   font-size: 2em;
   line-height: 1.5em;
-}
-
-.group-right h2 {
-  font-size: 1em;
 }
 
 .view-elmcip-taxonomy-term .term_present {
@@ -87,6 +83,7 @@ a.facetapi-inactive {
   font-weight: normal;
 }
 
+.group-right h2,
 .block-facetapi .block-title,
 .field .field-label,
 .not-approved,
@@ -95,12 +92,12 @@ a.facetapi-inactive {
   font-weight: normal;
   font-style: italic;
   font-family: "PT Serif", serif;
-  font-size: 1.142em;
+  font-size: 1.125rem;
 }
 
 .group-left .title {
   font-family: "PT Serif", serif;
-  font-size: 1.285em;
+  font-size: 1.125rem;
   text-align: center;
 }
 
