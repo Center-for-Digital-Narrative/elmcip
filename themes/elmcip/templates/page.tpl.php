@@ -167,6 +167,7 @@
     <div class="border"></div>
   <?php print render($page['footer']); ?>
 
-</div></div><!-- /#page, /#page-wrapper -->
+    </div>
+  <?php print render($page['bottom']); ?>
+</div><!-- /#page, /#page-wrapper -->
 
-<?php print render($page['bottom']); ?>
