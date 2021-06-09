@@ -1,7 +1,9 @@
 <?php
 
 /**
- * ORCID custom validator.
+ * ORCID validator.
+ *
+ * Valid: full URL or the ORCID ID.
  *
  * @param $form
  * @param $form_state
@@ -46,8 +48,35 @@ function elmcip_setup_orcid_validate(string $value) {
 }
 
 function elmcip_orcid_formatter(string $url) {
-  $url = trim($url);
+  $orcid = trim($url);
 
-  // 0000-0002-0790-4737
-  return l($url, 'https://orcid.org/' . $url);
+  if (strpos($orcid, 'https://orcid.org/') === 0) {
+    return elmcip_orcid_link($orcid);
+  }
+
+  if (strpos($orcid, 'http://orcid.org/') === 0) {
+    return elmcip_orcid_link($orcid);
+  }
+
+  if (strpos($orcid, '0000-') === 0) {
+    return l($orcid, 'https://orcid.org/' . $orcid,
+      [
+        'attributes' => [
+          'target' => '_blank',
+        ],
+      ],
+    );
+  }
+
+  return check_plain($orcid);
+}
+
+function elmcip_orcid_link(string $orcid) {
+  return l($orcid, $orcid,
+    [
+      'attributes' => [
+        'target' => '_blank',
+      ],
+    ],
+  );
 }
