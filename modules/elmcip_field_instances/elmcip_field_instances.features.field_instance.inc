@@ -10845,15 +10845,13 @@ If you wish to supply your own latitude and longitude, you may enter them above.
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'ORCiD is a database of researchers that gives out a unique ID number for every researcher. <a target="_blank" href="https://orcid.org/about">about ORCID</a>.',
+    'description' => 'ORCiD is a database of researchers that gives out a unique ID number for every researcher. <a target="_blank" href="https://orcid.org/about">about ORCID</a>. Enter the full URL or the ORCID ID.',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'link',
-        'settings' => array(
-          'custom_title' => '',
-        ),
-        'type' => 'link_default',
+        'module' => 'elmcip_setup',
+        'settings' => array(),
+        'type' => 'elmcip_setup_orcid',
         'weight' => 4,
       ),
     ),
@@ -10869,14 +10867,14 @@ If you wish to supply your own latitude and longitude, you may enter them above.
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'convert_aliases' => 0,
       'display' => array(
         'url_cutoff' => 80,
       ),
-      'enable_tokens' => 1,
+      'enable_tokens' => 0,
       'rel_remove' => 'default',
       'title' => 'none',
       'title_allowed_values' => '',
@@ -21520,7 +21518,7 @@ For an article published in a weekly or monthly periodical, enter the day first,
   t('Nationality');
   t('Notebook');
   t('ORCID');
-  t('ORCiD is a database of researchers that gives out a unique ID number for every researcher. <a target="_blank" href="https://orcid.org/about">about ORCID</a>.');
+  t('ORCiD is a database of researchers that gives out a unique ID number for every researcher. <a target="_blank" href="https://orcid.org/about">about ORCID</a>. Enter the full URL or the ORCID ID.');
   t('Organization');
   t('Organization referenced');
   t('Organizations');
