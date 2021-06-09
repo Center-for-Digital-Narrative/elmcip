@@ -188,13 +188,18 @@ function configure_term_form($form) {
  */
 function elmcip_setup_field_formatter_info() {
   return array(
-    'elmcip_setup_term_name_with_tid' => array(
+    'elmcip_setup_term_name_with_tid' => [
       'label' => t('Term tid'),
-      'field types' => array('taxonomy_term_reference'),
-    ),
+      'field types' => ['taxonomy_term_reference'],
+    ],
     'elmcip_setup_doi' => [
       'label' => t('Digital Object Identifier'),
       'field types' => ['text'],
+      'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+    ],
+    'elmcip_setup_orcid' => [
+      'label' => t('Open Researcher and Contributor ID'),
+      'field types' => ['link_field'],
       'multiple values' => FIELD_BEHAVIOR_DEFAULT,
     ],
   );
@@ -218,9 +223,21 @@ function elmcip_setup_field_formatter_view($entity_type, $entity, $field, $insta
         ];
       }
       break;
+    case 'elmcip_setup_orcid':
+      foreach ($items as $delta => $item) {
+        $element[$delta] = [
+          '#markup' => elmcip_setup_orcid_formatter($item['url']),
+        ];
+      }
+      break;
   }
 
   return $element;
+}
+
+function elmcip_setup_orcid_formatter($url) {
+  require_once __DIR__ . '/includes/elmcip_setup_orcid.inc';
+  return elmcip_orcid_formatter($url);
 }
 
 function elmcip_setup_doi_formatter(string $url) {
