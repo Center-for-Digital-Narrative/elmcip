@@ -13,6 +13,9 @@ module_load_include('inc', 'elmcip_setup', 'includes/elmcip_setup.autocomplete')
  */
 function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
+    case 'person_node_form':
+      $form['#validate'] = ['elmcip_setup_orcid_field_validate'];
+      break;
     case 'taxonomy_form_term':
       $form['description']['#format'] = filter_fallback_format();
       $form['#after_build'][] = 'configure_term_form';
@@ -71,6 +74,11 @@ function elmcip_setup_form_alter(&$form, &$form_state, $form_id) {
       $form['title']['#description'] = t('Create a title for the resource collection', array('type' => $form['type']['#value']));
       break;
   }
+}
+
+function elmcip_setup_orcid_field_validate($form, &$form_state) {
+  require_once __DIR__ . '/includes/elmcip_setup_orcid.inc';
+  elmcip_orcid_field_validate($form, $form_state);
 }
 
 /**
@@ -188,13 +196,18 @@ function configure_term_form($form) {
  */
 function elmcip_setup_field_formatter_info() {
   return array(
-    'elmcip_setup_term_name_with_tid' => array(
+    'elmcip_setup_term_name_with_tid' => [
       'label' => t('Term tid'),
-      'field types' => array('taxonomy_term_reference'),
-    ),
+      'field types' => ['taxonomy_term_reference'],
+    ],
     'elmcip_setup_doi' => [
       'label' => t('Digital Object Identifier'),
       'field types' => ['text'],
+      'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+    ],
+    'elmcip_setup_orcid' => [
+      'label' => t('Open Researcher and Contributor ID'),
+      'field types' => ['link_field'],
       'multiple values' => FIELD_BEHAVIOR_DEFAULT,
     ],
   );
@@ -218,9 +231,21 @@ function elmcip_setup_field_formatter_view($entity_type, $entity, $field, $insta
         ];
       }
       break;
+    case 'elmcip_setup_orcid':
+      foreach ($items as $delta => $item) {
+        $element[$delta] = [
+          '#markup' => elmcip_setup_orcid_formatter($item['url']),
+        ];
+      }
+      break;
   }
 
   return $element;
+}
+
+function elmcip_setup_orcid_formatter($url) {
+  require_once __DIR__ . '/includes/elmcip_setup_orcid.inc';
+  return elmcip_orcid_formatter($url);
 }
 
 function elmcip_setup_doi_formatter(string $url) {
