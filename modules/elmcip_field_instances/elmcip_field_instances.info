@@ -2,7 +2,6 @@ name = ELMCIP field instances
 description = Store all ELMCIP field instances
 core = 7.x
 package = ELMCIP
-dependencies[] = colorbox
 dependencies[] = date
 dependencies[] = elmcip_creative_work
 dependencies[] = elmcip_layout

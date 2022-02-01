@@ -198,7 +198,7 @@ function elmcip_field_instances_taxonomy_default_vocabularies() {
       'name' => 'Tags',
       'machine_name' => 'vocabulary_1',
       'description' => '',
-      'hierarchy' => 0,
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 1,
       'rdf_mapping' => array(

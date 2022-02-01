@@ -95,6 +95,11 @@ function elmcip_layout_ds_field_settings_info() {
       'label' => 'hidden',
       'weight' => '0',
     ),
+    'field_multi_images' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'purl' => array(
       'format' => 'default',
       'formatter_settings' => array(
@@ -171,6 +176,11 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_image' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'purl' => array(
       'format' => 'default',
       'formatter_settings' => array(
@@ -217,6 +227,11 @@ function elmcip_layout_ds_field_settings_info() {
       ),
       'label' => 'hidden',
       'weight' => '0',
+    ),
+    'field_multi_images' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
     ),
     'purl' => array(
       'format' => 'default',
@@ -324,6 +339,11 @@ function elmcip_layout_ds_field_settings_info() {
       'format' => 'default',
       'label' => 'hidden',
       'weight' => '0',
+    ),
+    'field_multi_images' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
     ),
     'purl' => array(
       'format' => 'default',
@@ -452,6 +472,11 @@ function elmcip_layout_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_authorphoto' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'full_name' => array(
       'format' => 'default',
       'label' => 'inline',
@@ -501,6 +526,11 @@ function elmcip_layout_ds_field_settings_info() {
       ),
       'label' => 'hidden',
       'weight' => '0',
+    ),
+    'field_ps_image' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
     ),
     'purl' => array(
       'format' => 'default',
@@ -598,21 +628,6 @@ function elmcip_layout_ds_field_settings_info() {
       ),
       'label' => 'hidden',
       'weight' => '0',
-    ),
-    'field_collection_contributors' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
-    'field_collection_curated_by' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
-    'field_collection_platform_ref' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
     ),
     'field_media' => array(
       'formatter_settings' => array(
@@ -757,6 +772,11 @@ function elmcip_layout_ds_field_settings_info() {
       ),
       'label' => 'hidden',
       'weight' => '0',
+    ),
+    'field_multi_image' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
     ),
     'purl' => array(
       'format' => 'default',
@@ -1096,8 +1116,8 @@ function elmcip_layout_ds_layout_settings_info() {
         47 => 'database_on_critical_writing_entity_view_1',
         48 => 'event_ref_on_cw_entity_view_1',
         49 => 'cw_reference_critical_writing_entity_view_1',
-        50 => 'purl',
-        51 => 'Tr_critical_writing_entity_view_1',
+        50 => 'Tr_critical_writing_entity_view_1',
+        51 => 'purl',
         52 => 'author',
         53 => 'research_collection_critical_writing_entity_view_1',
         54 => 'field_media_asset',
@@ -1676,8 +1696,8 @@ function elmcip_layout_ds_layout_settings_info() {
       ),
       'right' => array(
         9 => 'field_ps_description',
-        10 => 'cw_developed_in_this_platform_entity_view_2',
-        11 => 'works_developed_in_this_platform_entity_view_1',
+        10 => 'works_developed_in_this_platform_entity_view_1',
+        11 => 'cw_developed_in_this_platform_entity_view_2',
         12 => 'field_platform_versions',
         13 => 'field_version_history',
         14 => 'field_ps_image',
@@ -2009,7 +2029,7 @@ function elmcip_layout_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         1 => 'content_type',
-        2 => 'field_author_name',
+        3 => 'field_author_name',
         4 => 'field_translator',
         5 => 'field_contributor',
         6 => 'field_work_year',
@@ -2035,7 +2055,7 @@ function elmcip_layout_ds_layout_settings_info() {
       ),
       'right' => array(
         0 => 'purl',
-        3 => 'author',
+        2 => 'author',
         26 => 'taxonomy_vocabulary_1',
         27 => 'field_textfield',
         28 => 'field_abstract_lang',

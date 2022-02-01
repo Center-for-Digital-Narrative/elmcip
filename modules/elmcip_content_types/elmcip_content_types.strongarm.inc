@@ -292,6 +292,9 @@ function elmcip_content_types_strongarm() {
     'extra_fields' => array(
       'display' => array(),
       'form' => array(
+        'locations' => array(
+          'weight' => '30',
+        ),
         'path' => array(
           'weight' => '30',
         ),
@@ -872,6 +875,12 @@ function elmcip_content_types_strongarm() {
             'weight' => '10',
           ),
         ),
+        'flag_librarian_approved' => array(
+          'default' => array(
+            'visible' => FALSE,
+            'weight' => '10',
+          ),
+        ),
         'platform_db_archive_entity_view_1' => array(
           'full' => array(
             'visible' => TRUE,
@@ -1338,6 +1347,12 @@ function elmcip_content_types_strongarm() {
           'teaser' => array(
             'visible' => FALSE,
             'weight' => '16',
+          ),
+        ),
+        'flag_librarian_approved' => array(
+          'default' => array(
+            'visible' => FALSE,
+            'weight' => '10',
           ),
         ),
         'organization_platform_entity_view_1' => array(
@@ -2296,6 +2311,12 @@ function elmcip_content_types_strongarm() {
             'weight' => '14',
           ),
           'teaser' => array(
+            'visible' => FALSE,
+            'weight' => '10',
+          ),
+        ),
+        'flag_librarian_approved' => array(
+          'default' => array(
             'visible' => FALSE,
             'weight' => '10',
           ),
