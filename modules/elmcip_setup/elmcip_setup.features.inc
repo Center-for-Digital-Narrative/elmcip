@@ -89,6 +89,22 @@ function elmcip_setup_flag_default_flags() {
 function elmcip_setup_image_default_styles() {
   $styles = array();
 
+  // Exported image style: content.
+  $styles['content'] = array(
+    'label' => 'Content',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 620,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: square_thumbnail.
   $styles['square_thumbnail'] = array(
     'label' => 'square_thumbnail',
