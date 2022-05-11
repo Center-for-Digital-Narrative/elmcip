@@ -91,13 +91,6 @@ function elmcip_search_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'No records found.';
   $handler->display->display_options['empty']['area']['format'] = 'basic_text_editor';
-  /* Relationship: Flags: librarian_approved */
-  $handler->display->display_options['relationships']['flag_content_rel']['id'] = 'flag_content_rel';
-  $handler->display->display_options['relationships']['flag_content_rel']['table'] = 'node';
-  $handler->display->display_options['relationships']['flag_content_rel']['field'] = 'flag_content_rel';
-  $handler->display->display_options['relationships']['flag_content_rel']['required'] = 0;
-  $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'librarian_approved';
-  $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -234,7 +227,6 @@ function elmcip_search_views_default_views() {
     t('last »'),
     t('Displaying @start - @end of @total'),
     t('No records found.'),
-    t('flag'),
     t('Title'),
     t('Updated'),
     t('Librarian status'),

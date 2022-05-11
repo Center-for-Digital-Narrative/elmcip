@@ -7,7 +7,6 @@ dependencies[] = ds
 dependencies[] = features
 dependencies[] = file_entity
 dependencies[] = filter
-dependencies[] = flag
 dependencies[] = image
 dependencies[] = locale
 dependencies[] = media

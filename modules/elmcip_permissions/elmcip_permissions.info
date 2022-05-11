@@ -14,7 +14,6 @@ dependencies[] = ds
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = field_permissions
-dependencies[] = flag
 dependencies[] = image
 dependencies[] = locale
 dependencies[] = location
