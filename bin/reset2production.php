@@ -53,11 +53,11 @@ final class Kubed
 
 final class Kubectl
 {
-    private $version;
+    private array $version;
 
     public function __construct()
     {
-        exec('kubectl version --client', $kubectl);
+        exec('kubectl version --output=json', $kubectl);
         if (!$kubectl) {
             throw new RuntimeException(
                 'kubectl is not installed. Read:  
@@ -70,7 +70,10 @@ final class Kubectl
 
     public function getVersion(): string
     {
-        return $this->version[0];
+        $major = explode(':', $this->version[2]);
+        $minor = explode(':', $this->version[3]);
+
+        return "$major[1].$minor[1]";
     }
 
     public function pod()
